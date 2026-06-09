@@ -3,733 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Family Relocation Intelligence Dashboard</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Family Relocation Dashboard</title>
   <style>
     :root {
-      --bg: #f6f7fb;
-      --panel: #ffffff;
-      --ink: #172033;
-      --muted: #647084;
-      --line: #d9deea;
-      --soft: #eef2f8;
-      --accent: #2d5be3;
-      --accent-2: #0f766e;
-      --gold: #b7791f;
-      --danger: #9f1239;
-      --good: #047857;
+      --bg: #f6f7fb; --panel: #ffffff; --ink: #172033; --muted: #647084;
+      --line: #d9deea; --accent: #2d5be3; --accent-2: #0f766e; --danger: #9f1239;
       --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
-      --radius: 18px;
     }
-
     * { box-sizing: border-box; }
-
     body {
-      margin: 0;
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: radial-gradient(circle at top left, #e7edff 0, transparent 32rem), var(--bg);
-      color: var(--ink);
-      line-height: 1.55;
+      color: var(--ink); line-height: 1.55; padding: 24px;
     }
-
-    a { color: inherit; }
-
-    .wrap {
-      width: min(1180px, calc(100% - 32px));
-      margin: 0 auto;
+    .lock {
+      width: min(420px, 100%); background: var(--panel); border: 1px solid var(--line);
+      border-radius: 22px; box-shadow: var(--shadow); padding: 34px 30px;
     }
-
-    header {
-      padding: 56px 0 32px;
+    .badge {
+      display: inline-flex; gap: 8px; align-items: center; padding: 7px 12px; border-radius: 999px;
+      background: linear-gradient(135deg, #172033, #243b72 55%, #0f766e); color: #fff;
+      font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 18px;
     }
-
-    .hero {
-      background: linear-gradient(135deg, #172033, #243b72 55%, #0f766e);
-      color: white;
-      border-radius: 30px;
-      padding: 42px;
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
+    h1 { margin: 0 0 6px; font-size: 24px; letter-spacing: -0.03em; }
+    p.sub { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+    form { display: grid; gap: 12px; }
+    input[type="password"] {
+      width: 100%; padding: 13px 14px; border: 1px solid var(--line); border-radius: 14px;
+      font-size: 15px; font-family: inherit; color: var(--ink); background: #fbfcfe; outline: none;
     }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      width: 360px;
-      height: 360px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.09);
-      right: -120px;
-      top: -120px;
+    input[type="password"]:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(45,91,227,0.15); }
+    button {
+      padding: 13px 16px; border: 0; border-radius: 14px; cursor: pointer;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: #fff;
+      font-size: 15px; font-weight: 800; font-family: inherit;
     }
-
-    .eyebrow {
-      display: inline-flex;
-      gap: 8px;
-      align-items: center;
-      padding: 7px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.13);
-      color: rgba(255,255,255,0.94);
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: .02em;
-      text-transform: uppercase;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(34px, 6vw, 64px);
-      line-height: 1.02;
-      letter-spacing: -0.05em;
-      max-width: 960px;
-    }
-
-    .subtitle {
-      margin: 20px 0 0;
-      max-width: 820px;
-      color: rgba(255,255,255,0.84);
-      font-size: 18px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-      margin-top: 34px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .stat {
-      background: rgba(255,255,255,0.11);
-      border: 1px solid rgba(255,255,255,0.16);
-      padding: 16px;
-      border-radius: 16px;
-      backdrop-filter: blur(8px);
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 26px;
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-
-    .stat span {
-      color: rgba(255,255,255,0.78);
-      font-size: 13px;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(246,247,251,0.88);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--line);
-      margin-bottom: 28px;
-    }
-
-    .nav-inner {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      padding: 12px 0;
-    }
-
-    .nav-inner a {
-      text-decoration: none;
-      color: var(--muted);
-      background: white;
-      border: 1px solid var(--line);
-      padding: 9px 12px;
-      border-radius: 999px;
-      white-space: nowrap;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    section {
-      margin: 28px 0;
-    }
-
-    .section-title {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 20px;
-      margin-bottom: 16px;
-    }
-
-    h2 {
-      margin: 0;
-      font-size: clamp(26px, 4vw, 40px);
-      line-height: 1.1;
-      letter-spacing: -0.035em;
-    }
-
-    .section-title p {
-      margin: 0;
-      max-width: 640px;
-      color: var(--muted);
-    }
-
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    .insight {
-      padding: 26px;
-      display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 24px;
-      align-items: start;
-    }
-
-    .insight h3, .card h3 {
-      margin: 0 0 10px;
-      font-size: 22px;
-      letter-spacing: -0.02em;
-    }
-
-    .insight p, .card p {
-      color: var(--muted);
-      margin: 0 0 12px;
-    }
-
-    .pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 14px;
-    }
-
-    .pill {
-      display: inline-flex;
-      padding: 7px 10px;
-      border-radius: 999px;
-      background: var(--soft);
-      color: #35415a;
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    .weights {
-      display: grid;
-      gap: 10px;
-    }
-
-    .weight {
-      display: grid;
-      grid-template-columns: 190px 1fr 48px;
-      align-items: center;
-      gap: 10px;
-      font-size: 13px;
-    }
-
-    .bar {
-      height: 10px;
-      background: #e6eaf2;
-      border-radius: 999px;
-      overflow: hidden;
-    }
-
-    .bar span {
-      display: block;
-      height: 100%;
-      border-radius: 999px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-2));
-    }
-
-    .ranking-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 14px;
-    }
-
-    .rank-card {
-      padding: 18px;
-      position: relative;
-      min-height: 220px;
-    }
-
-    .rank-num {
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border-radius: 14px;
-      background: #172033;
-      color: white;
-      font-weight: 900;
-      margin-bottom: 14px;
-    }
-
-    .rank-card.top .rank-num { background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
-    .rank-card h3 { font-size: 19px; }
-    .rank-card .state {
-      color: var(--accent);
-      font-weight: 800;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: .04em;
-      margin-bottom: 8px;
-    }
-
-    .table-card {
-      overflow: hidden;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-    }
-
-    th {
-      background: #172033;
-      color: white;
-      text-align: left;
-      padding: 13px 14px;
-      font-size: 13px;
-      letter-spacing: .02em;
-    }
-
-    td {
-      padding: 13px 14px;
-      border-bottom: 1px solid var(--line);
-      vertical-align: top;
-    }
-
-    tbody tr:nth-child(even) { background: #fafbfe; }
-    tbody tr:last-child td { border-bottom: 0; }
-
-    .tier {
-      display: inline-flex;
-      padding: 5px 9px;
-      border-radius: 999px;
-      font-weight: 800;
-      font-size: 12px;
-      white-space: nowrap;
-      background: var(--soft);
-    }
-
-    .tier.one { color: var(--good); background: #ecfdf5; }
-    .tier.two { color: #1d4ed8; background: #eff6ff; }
-    .tier.three { color: var(--gold); background: #fffbeb; }
-    .tier.four { color: var(--danger); background: #fff1f2; }
-
-    .category-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-    }
-
-    .category {
-      padding: 18px;
-    }
-
-    .category .label {
-      font-size: 12px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: .05em;
-      font-weight: 900;
-      margin-bottom: 8px;
-    }
-
-    .category strong {
-      display: block;
-      font-size: 19px;
-      margin-bottom: 4px;
-    }
-
-    .state-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-    }
-
-    .state-card {
-      padding: 18px;
-    }
-
-    .state-card h3 {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 14px;
-    }
-
-    .state-card ol {
-      margin: 0;
-      padding-left: 20px;
-      color: var(--muted);
-    }
-
-    .state-card li {
-      margin: 8px 0;
-    }
-
-    .tiers-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-    }
-
-    .tier-card {
-      padding: 20px;
-      min-height: 250px;
-    }
-
-    .tier-card h3 {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .tier-card ul {
-      margin: 12px 0 0;
-      padding-left: 18px;
-      color: var(--muted);
-    }
-
-    .recommendation {
-      padding: 30px;
-      background: linear-gradient(135deg, #ffffff, #eef7ff);
-    }
-
-    .rec-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 12px;
-      margin-top: 18px;
-    }
-
-    .rec {
-      padding: 16px;
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-    }
-
-    .rec span {
-      display: block;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: .05em;
-      margin-bottom: 6px;
-    }
-
-    footer {
-      padding: 28px 0 56px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    @media (max-width: 980px) {
-      .hero-grid, .ranking-grid, .category-grid, .state-grid, .tiers-grid, .rec-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .insight {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .wrap { width: min(100% - 22px, 1180px); }
-      .hero { padding: 28px 22px; border-radius: 22px; }
-      .hero-grid, .ranking-grid, .category-grid, .state-grid, .tiers-grid, .rec-grid {
-        grid-template-columns: 1fr;
-      }
-      .weight {
-        grid-template-columns: 1fr;
-      }
-      table {
-        min-width: 880px;
-      }
-      .table-card {
-        overflow-x: auto;
-      }
-      .section-title {
-        display: block;
-      }
-      .section-title p {
-        margin-top: 8px;
-      }
-    }
+    button:disabled { opacity: .6; cursor: progress; }
+    .error { color: var(--danger); font-size: 13px; font-weight: 700; min-height: 18px; margin: 2px 0 0; }
+    .note { margin: 18px 0 0; color: var(--muted); font-size: 12px; }
   </style>
 </head>
 <body>
-  <header class="wrap">
-    <div class="hero">
-      <div class="eyebrow">Relocation Strategy Dashboard</div>
-      <h1>Family relocation shortlist for AI career growth, schools, robotics, fitness, and long-term affordability.</h1>
-      <p class="subtitle">
-        A practical decision dashboard for Gregg’s long-term family relocation project across Texas, North Carolina, Georgia, Alabama,
-        South Carolina, Florida, Tennessee, and Virginia. High school football is treated as a lifestyle bonus, not a hard filter.
-      </p>
-      <div class="hero-grid">
-        <div class="stat"><strong>16</strong><span>areas ranked across 8 states</span></div>
-        <div class="stat"><strong>$820K</strong><span>estimated long-term 2041 buying-power target</span></div>
-        <div class="stat"><strong>2028</strong><span>rental-phase feasibility horizon</span></div>
-        <div class="stat"><strong>5</strong><span>serious finalist locations</span></div>
-      </div>
-    </div>
-  </header>
-
-  <nav>
-    <div class="wrap nav-inner">
-      <a href="#summary">Summary</a>
-      <a href="#top5">Top 5</a>
-      <a href="#ranking">Full Ranking</a>
-      <a href="#categories">Category Winners</a>
-      <a href="#states">State Picks</a>
-      <a href="#tiers">Decision Tiers</a>
-      <a href="#recommendation">Recommendation</a>
-    </div>
-  </nav>
-
-  <main class="wrap">
-    <section id="summary">
-      <div class="section-title">
-        <h2>Executive summary</h2>
-        <p>The model prioritizes career market, school quality, affordability, rental feasibility, tax burden, university proximity, and Gregg-specific AI/robotics lifestyle fit.</p>
-      </div>
-      <div class="card insight">
-        <div>
-          <h3>Core conclusion</h3>
-          <p>
-            The strongest overall shortlist is <strong>Round Rock / Cedar Park, Cary, Madison / Huntsville, Suwanee / Peachtree Corners, and Oviedo</strong>.
-            These locations balance AI/product career options, strong family infrastructure, long-term housing discipline, robotics or engineering adjacency,
-            and proximity to universities that support Gregg’s future teaching ambitions.
-          </p>
-          <p>
-            The strategic answer is Texas. The best research-and-teaching answer is Cary. The best value robotics answer is Madison / Huntsville.
-            The best Georgia family-access answer is Suwanee / Peachtree Corners. The best Florida no-income-tax answer is Oviedo.
-          </p>
-          <div class="pill-row">
-            <span class="pill">AI Product leadership path</span>
-            <span class="pill">DBA → MSAI → future teaching</span>
-            <span class="pill">Robotics + AI hardware</span>
-            <span class="pill">Running / HYROX lifestyle</span>
-            <span class="pill">School-first family planning</span>
-          </div>
-        </div>
-        <div>
-          <h3>Updated weighting</h3>
-          <div class="weights">
-            <div class="weight"><span>AI / tech PM market</span><div class="bar"><span style="width:25%"></span></div><strong>25%</strong></div>
-            <div class="weight"><span>School quality</span><div class="bar"><span style="width:20%"></span></div><strong>20%</strong></div>
-            <div class="weight"><span>Housing affordability</span><div class="bar"><span style="width:20%"></span></div><strong>20%</strong></div>
-            <div class="weight"><span>Rental feasibility</span><div class="bar"><span style="width:12%"></span></div><strong>12%</strong></div>
-            <div class="weight"><span>State tax burden</span><div class="bar"><span style="width:10%"></span></div><strong>10%</strong></div>
-            <div class="weight"><span>AACSB university proximity</span><div class="bar"><span style="width:8%"></span></div><strong>8%</strong></div>
-            <div class="weight"><span>Robotics / fitness / startup fit</span><div class="bar"><span style="width:3%"></span></div><strong>3%</strong></div>
-            <div class="weight"><span>HS football culture</span><div class="bar"><span style="width:2%"></span></div><strong>2%</strong></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="top5">
-      <div class="section-title">
-        <h2>Top 5 finalist areas</h2>
-        <p>These are the locations that should anchor the family conversation.</p>
-      </div>
-      <div class="ranking-grid">
-        <div class="card rank-card top">
-          <div class="rank-num">1</div>
-          <div class="state">Texas</div>
-          <h3>Round Rock / Cedar Park</h3>
-          <p>Best overall fit: Austin AI/product access, UT Austin adjacency, no state income tax, strong schools, and solid long-term housing logic.</p>
-        </div>
-        <div class="card rank-card top">
-          <div class="rank-num">2</div>
-          <div class="state">North Carolina</div>
-          <h3>Cary</h3>
-          <p>Best research ecosystem: elite Triangle access, NC State/Duke/UNC proximity, strong family suburb profile, and long-term AI credibility.</p>
-        </div>
-        <div class="card rank-card top">
-          <div class="rank-num">3</div>
-          <div class="state">Alabama</div>
-          <h3>Madison / Huntsville</h3>
-          <p>Best value upside: robotics, aerospace, defense, engineering, good schools, and one of the strongest affordability profiles.</p>
-        </div>
-        <div class="card rank-card top">
-          <div class="rank-num">4</div>
-          <div class="state">Georgia</div>
-          <h3>Suwanee / Peachtree Corners</h3>
-          <p>Best Georgia fit: Atlanta tech access, strong schools, Curiosity Lab/robotics angle, and better budget discipline than Alpharetta.</p>
-        </div>
-        <div class="card rank-card top">
-          <div class="rank-num">5</div>
-          <div class="state">Florida</div>
-          <h3>Oviedo</h3>
-          <p>Best Florida fit: UCF/Orlando tech, simulation and defense-adjacent AI, no state income tax, and good family affordability balance.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="ranking">
-      <div class="section-title">
-        <h2>Full 16-area ranking</h2>
-        <p>Ordered for Gregg’s actual decision model, not generic “best places to live” rankings.</p>
-      </div>
-      <div class="card table-card">
-        <table>
-          <thead>
-            <tr>
-              <th>Rank</th>
-              <th>Area</th>
-              <th>State</th>
-              <th>Tier</th>
-              <th>Primary rationale</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>1</td><td><strong>Round Rock / Cedar Park</strong></td><td>TX</td><td><span class="tier one">Serious finalist</span></td><td>Strong Austin AI/product access, UT Austin adjacency, no income tax, good schools, and strong housing fit.</td></tr>
-            <tr><td>2</td><td><strong>Cary</strong></td><td>NC</td><td><span class="tier one">Serious finalist</span></td><td>Best research ecosystem outside Texas; elite family suburb; strong Triangle university and AI environment.</td></tr>
-            <tr><td>3</td><td><strong>Madison / Huntsville</strong></td><td>AL</td><td><span class="tier one">Serious finalist</span></td><td>Best robotics and engineering value play, with strong schools, affordability, aerospace, defense, and AI adjacency.</td></tr>
-            <tr><td>4</td><td><strong>Suwanee / Peachtree Corners</strong></td><td>GA</td><td><span class="tier one">Serious finalist</span></td><td>Strong schools, Atlanta tech access, robotics/Curiosity Lab angle, and better affordability than Alpharetta.</td></tr>
-            <tr><td>5</td><td><strong>Oviedo</strong></td><td>FL</td><td><span class="tier one">Serious finalist</span></td><td>UCF/Orlando tech, simulation and defense-adjacent economy, no income tax, and balanced school/housing profile.</td></tr>
-            <tr><td>6</td><td><strong>Plano / Frisco</strong></td><td>TX</td><td><span class="tier two">Strong trade-off</span></td><td>Strong DFW tech market, elite schools, great family profile, and no income tax, but higher cost pressure.</td></tr>
-            <tr><td>7</td><td><strong>Fort Mill</strong></td><td>SC</td><td><span class="tier two">Strong trade-off</span></td><td>Excellent schools and Charlotte access; weaker direct AI market and less favorable state tax profile than Texas/Florida/Tennessee.</td></tr>
-            <tr><td>8</td><td><strong>Waxhaw</strong></td><td>NC</td><td><span class="tier two">Strong trade-off</span></td><td>Good schools, Charlotte access, and better affordability than Cary; less AI/research depth than the Triangle.</td></tr>
-            <tr><td>9</td><td><strong>Greenville</strong></td><td>SC</td><td><span class="tier two">Strong trade-off</span></td><td>Robotics/mobility sleeper via Clemson/ICAR, affordability, and lifestyle; school zoning requires diligence.</td></tr>
-            <tr><td>10</td><td><strong>Auburn / Opelika</strong></td><td>AL</td><td><span class="tier two">Strong trade-off</span></td><td>Great affordability and Auburn University proximity; weaker AI Product career market.</td></tr>
-            <tr><td>11</td><td><strong>St. Johns County</strong></td><td>FL</td><td><span class="tier three">Watch list</span></td><td>School-first Florida option with no income tax; weaker AI/product ecosystem than Orlando.</td></tr>
-            <tr><td>12</td><td><strong>Franklin</strong></td><td>TN</td><td><span class="tier three">Watch list</span></td><td>Excellent lifestyle, schools, and Nashville access, but current and future housing affordability is the concern.</td></tr>
-            <tr><td>13</td><td><strong>Alpharetta / Johns Creek</strong></td><td>GA</td><td><span class="tier three">Watch list</span></td><td>Elite Atlanta suburb with tech access and schools, but too expensive to be the most practical Georgia answer.</td></tr>
-            <tr><td>14</td><td><strong>Farragut</strong></td><td>TN</td><td><span class="tier three">Watch list</span></td><td>Strong schools and UT Knoxville adjacency, but weaker AI/product career market and relatively high cost for the metro.</td></tr>
-            <tr><td>15</td><td><strong>Glen Allen / Midlothian</strong></td><td>VA</td><td><span class="tier four">Backup only</span></td><td>Most realistic Virginia option; Richmond tech is decent, but taxes and weaker family preference keep it low.</td></tr>
-            <tr><td>16</td><td><strong>Leesburg / Ashburn</strong></td><td>VA</td><td><span class="tier four">Backup only</span></td><td>Strong data-center and NoVA tech market, but expensive, higher tax burden, and lowest family preference fit.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="categories">
-      <div class="section-title">
-        <h2>Best by category</h2>
-        <p>Winners are selected according to Gregg-specific fit, not just raw metro size.</p>
-      </div>
-      <div class="category-grid">
-        <div class="card category"><div class="label">Best overall</div><strong>Round Rock / Cedar Park</strong><p>Runner-up: Cary</p></div>
-        <div class="card category"><div class="label">AI Product career ceiling</div><strong>Round Rock / Cedar Park</strong><p>Runner-up: Cary</p></div>
-        <div class="card category"><div class="label">Robotics / AI hardware</div><strong>Madison / Huntsville</strong><p>Runner-up: Suwanee / Peachtree Corners</p></div>
-        <div class="card category"><div class="label">Schools + affordability</div><strong>Fort Mill</strong><p>Runner-up: Madison / Huntsville</p></div>
-        <div class="card category"><div class="label">Long-term home-buying fit</div><strong>Madison / Huntsville</strong><p>Runner-up: Round Rock / Cedar Park</p></div>
-        <div class="card category"><div class="label">No-income-tax state fit</div><strong>Round Rock / Cedar Park</strong><p>Runner-up: Oviedo</p></div>
-        <div class="card category"><div class="label">Future professor path</div><strong>Cary</strong><p>Runner-up: Round Rock / Cedar Park</p></div>
-        <div class="card category"><div class="label">Fitness / active lifestyle</div><strong>Cary</strong><p>Runner-up: Round Rock / Cedar Park</p></div>
-        <div class="card category"><div class="label">Family-safe practical choice</div><strong>Madison / Huntsville</strong><p>Runner-up: Fort Mill</p></div>
-      </div>
-    </section>
-
-    <section id="states">
-      <div class="section-title">
-        <h2>Top two locations by state</h2>
-        <p>Each state keeps two candidates, even if the state is not among the overall top performers.</p>
-      </div>
-      <div class="state-grid">
-        <div class="card state-card"><h3>Texas <span class="tier one">Best state</span></h3><ol><li>Round Rock / Cedar Park</li><li>Plano / Frisco</li></ol></div>
-        <div class="card state-card"><h3>North Carolina <span class="tier one">Research fit</span></h3><ol><li>Cary</li><li>Waxhaw</li></ol></div>
-        <div class="card state-card"><h3>Georgia <span class="tier one">Family access</span></h3><ol><li>Suwanee / Peachtree Corners</li><li>Alpharetta / Johns Creek</li></ol></div>
-        <div class="card state-card"><h3>Alabama <span class="tier one">Value upside</span></h3><ol><li>Madison / Huntsville</li><li>Auburn / Opelika</li></ol></div>
-        <div class="card state-card"><h3>South Carolina <span class="tier two">School/value</span></h3><ol><li>Fort Mill</li><li>Greenville</li></ol></div>
-        <div class="card state-card"><h3>Florida <span class="tier two">Tax advantage</span></h3><ol><li>Oviedo</li><li>St. Johns County</li></ol></div>
-        <div class="card state-card"><h3>Tennessee <span class="tier three">Lifestyle premium</span></h3><ol><li>Franklin</li><li>Farragut</li></ol></div>
-        <div class="card state-card"><h3>Virginia <span class="tier four">Least favored</span></h3><ol><li>Glen Allen / Midlothian</li><li>Leesburg / Ashburn</li></ol></div>
-      </div>
-    </section>
-
-    <section id="tiers">
-      <div class="section-title">
-        <h2>Decision tiers</h2>
-        <p>This is the simplest way to keep the family decision realistic.</p>
-      </div>
-      <div class="tiers-grid">
-        <div class="card tier-card">
-          <h3>Tier 1 <span class="tier one">Serious finalists</span></h3>
-          <p>These should anchor the relocation conversation.</p>
-          <ul>
-            <li>Round Rock / Cedar Park</li>
-            <li>Cary</li>
-            <li>Madison / Huntsville</li>
-            <li>Suwanee / Peachtree Corners</li>
-            <li>Oviedo</li>
-          </ul>
-        </div>
-        <div class="card tier-card">
-          <h3>Tier 2 <span class="tier two">Strong trade-offs</span></h3>
-          <p>Good choices, but each has a clear compromise.</p>
-          <ul>
-            <li>Plano / Frisco</li>
-            <li>Fort Mill</li>
-            <li>Waxhaw</li>
-            <li>Greenville</li>
-            <li>Auburn / Opelika</li>
-          </ul>
-        </div>
-        <div class="card tier-card">
-          <h3>Tier 3 <span class="tier three">Watch list</span></h3>
-          <p>Strong in some areas, weaker against the full model.</p>
-          <ul>
-            <li>St. Johns County</li>
-            <li>Franklin</li>
-            <li>Alpharetta / Johns Creek</li>
-            <li>Farragut</li>
-          </ul>
-        </div>
-        <div class="card tier-card">
-          <h3>Tier 4 <span class="tier four">Backup only</span></h3>
-          <p>Keep only if career or family circumstances change.</p>
-          <ul>
-            <li>Glen Allen / Midlothian</li>
-            <li>Leesburg / Ashburn</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="recommendation">
-      <div class="card recommendation">
-        <div class="section-title">
-          <h2>Recommendation for Gregg</h2>
-          <p>The top five can each be framed around a different family strategy.</p>
-        </div>
-        <div class="rec-grid">
-          <div class="rec"><span>Career-max</span><strong>Round Rock / Cedar Park</strong><p>Austin AI ecosystem, UT Austin path, no state income tax.</p></div>
-          <div class="rec"><span>Research / teaching</span><strong>Cary</strong><p>Triangle university density and long-term academic credibility.</p></div>
-          <div class="rec"><span>Budget-smart robotics</span><strong>Madison / Huntsville</strong><p>Robotics, defense, aerospace, affordability, and schools.</p></div>
-          <div class="rec"><span>Georgia access</span><strong>Suwanee / Peachtree Corners</strong><p>Atlanta tech access with better discipline than premium suburbs.</p></div>
-          <div class="rec"><span>Florida tax option</span><strong>Oviedo</strong><p>UCF/Orlando tech, no income tax, and balanced family fit.</p></div>
-        </div>
-        <p style="margin-top:20px;color:var(--muted);">
-          Final strategic view: Texas is the cleanest long-term career answer. Cary is the most academically aligned.
-          Madison / Huntsville is the most underrated value pick. Suwanee / Peachtree Corners is the strongest Georgia compromise.
-          Oviedo is the most sensible Florida option.
-        </p>
-      </div>
-    </section>
+  <main class="lock">
+    <div class="badge">Private Dashboard</div>
+    <h1>Sign in</h1>
+    <p class="sub">This dashboard is password protected. Enter the password to continue.</p>
+    <form id="f">
+      <input id="pw" type="password" placeholder="Password" autocomplete="current-password" autofocus />
+      <button id="btn" type="submit">Unlock</button>
+      <p class="error" id="err"></p>
+    </form>
+    <p class="note">Protected with client-side AES-256 encryption.</p>
   </main>
 
-  <footer class="wrap">
-    <p>
-      Planning note: This dashboard uses the research assumptions from the relocation project, including a 2028 rental phase,
-      long-term 2041 home-buying lens, and high school football treated as a nice-to-have rather than a hard requirement.
-      Before making a final decision, validate current school zones, rental inventory, home prices, tax policy, and job-market conditions.
-    </p>
-  </footer>
+  <script id="enc" type="application/json">{"salt":"4RemittCSctPJbPWLPmdng==","iv":"4akbXsXi4j5lKzGK","iterations":250000,"data":"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"}</script>
+  <script>
+    const ENC = JSON.parse(document.getElementById('enc').textContent);
+    const form = document.getElementById('f');
+    const pwInput = document.getElementById('pw');
+    const btn = document.getElementById('btn');
+    const err = document.getElementById('err');
+
+    function b64ToBytes(b64) {
+      const bin = atob(b64);
+      const bytes = new Uint8Array(bin.length);
+      for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+      return bytes;
+    }
+
+    async function unlock(password) {
+      const baseKey = await crypto.subtle.importKey(
+        'raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveKey']
+      );
+      const key = await crypto.subtle.deriveKey(
+        { name: 'PBKDF2', salt: b64ToBytes(ENC.salt), iterations: ENC.iterations, hash: 'SHA-256' },
+        baseKey, { name: 'AES-GCM', length: 256 }, false, ['decrypt']
+      );
+      const plain = await crypto.subtle.decrypt(
+        { name: 'AES-GCM', iv: b64ToBytes(ENC.iv) }, key, b64ToBytes(ENC.data)
+      );
+      return new TextDecoder().decode(plain);
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      err.textContent = '';
+      btn.disabled = true;
+      btn.textContent = 'Unlocking…';
+      try {
+        const html = await unlock(pwInput.value);
+        document.open();
+        document.write(html);
+        document.close();
+      } catch (_) {
+        err.textContent = 'Incorrect password. Please try again.';
+        btn.disabled = false;
+        btn.textContent = 'Unlock';
+        pwInput.select();
+      }
+    });
+  </script>
 </body>
 </html>
