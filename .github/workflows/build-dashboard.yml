@@ -1,0 +1,56 @@
+name: Build dashboard
+
+# Regenerates and re-encrypts index.html from the scoring matrix whenever the
+# source data, styles, or build script changes on main. The password is read
+# from the DASHBOARD_PASSWORD repository secret and never stored in the repo.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - relocation_location_scoring_matrix.json
+      - build/generate.js
+      - build/styles.css
+      - .github/workflows/build-dashboard.yml
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-dashboard-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build encrypted index.html
+        env:
+          DASHBOARD_PASSWORD: ${{ secrets.DASHBOARD_PASSWORD }}
+        run: |
+          if [ -z "$DASHBOARD_PASSWORD" ]; then
+            echo "::error::DASHBOARD_PASSWORD secret is not set. Add it under Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+          node build/generate.js
+
+      - name: Commit regenerated dashboard
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- index.html; then
+            echo "index.html unchanged; nothing to commit."
+          else
+            git add index.html
+            git commit -m "Rebuild dashboard from scoring matrix [skip ci]"
+            git push
+          fi

@@ -1,0 +1,653 @@
+{
+  "project": {
+    "name": "Gregg Family Relocation Scoring Matrix",
+    "version": "1.0",
+    "created_date": "2026-06-09",
+    "purpose": "Structured JSON scoring matrix for evaluating long-term relocation areas against Gregg's family, career, education, AI, robotics, fitness, tax, school, rental, and housing criteria.",
+    "user_profile_summary": {
+      "name": "Gregg",
+      "current_role": "AI Marketing Specialist with Product Owner responsibilities at Sherwin-Williams",
+      "long_term_goal": "AI Product Leader and eventual university instructor/professor in applied AI business after DBA and MSAI",
+      "education_path": [
+        "DBA",
+        "MSAI at UT Austin"
+      ],
+      "interests": [
+        "AI Product Management",
+        "Robotics + AI",
+        "AI hardware projects",
+        "fitness events",
+        "running festivals",
+        "HYROX-style events",
+        "indie builder communities",
+        "high school football as a lifestyle nice-to-have"
+      ],
+      "family_location_scope": [
+        "North Carolina",
+        "South Carolina",
+        "Georgia",
+        "Tennessee",
+        "Florida",
+        "Alabama",
+        "Texas",
+        "Virginia"
+      ],
+      "preference_note": "Virginia is the least favorite option."
+    },
+    "planning_assumptions": {
+      "rental_phase_year": 2028,
+      "rental_target": "Professionally managed 3-bedroom townhome around or under ~$2,200/month, subject to refinement.",
+      "home_purchase_year": 2041,
+      "estimated_home_budget_2041": 820000,
+      "appreciation_assumption": "2\u20133% annual appreciation planning assumption based on the user's stated May 2026 consensus framing.",
+      "football_weighting_note": "High school football culture is treated as a nice-to-have, not a hard requirement."
+    }
+  },
+  "scoring_scale": {
+    "min": 1,
+    "max": 10,
+    "interpretation": {
+      "1": "Very poor fit",
+      "3": "Weak fit",
+      "5": "Average or mixed fit",
+      "7": "Strong fit with trade-offs",
+      "9": "Excellent fit",
+      "10": "Best-in-class fit for this project"
+    },
+    "weighted_total_formula": "sum(score_1_to_10 * criterion_weight_percent) / 10"
+  },
+  "criteria": [
+    {
+      "id": "ai_tech_pm_market",
+      "label": "AI / Tech Product Management Market",
+      "weight_percent": 25,
+      "description": "Strength of nearby AI, software, SaaS, cloud, data, product management, and executive AI leadership career opportunities."
+    },
+    {
+      "id": "school_quality",
+      "label": "Elite Public School District Fit",
+      "weight_percent": 20,
+      "description": "Likelihood of accessing strong public school zones, generally targeting 7/10+ GreatSchools or equivalent quality indicators."
+    },
+    {
+      "id": "housing_affordability_2041",
+      "label": "Home Purchase Affordability by 2041",
+      "weight_percent": 20,
+      "description": "Fit against an estimated $820,000 long-term home budget by 2041, assuming broad 2\u20133% annual appreciation planning assumptions."
+    },
+    {
+      "id": "rental_feasibility_2028",
+      "label": "2028 Rental Feasibility",
+      "weight_percent": 12,
+      "description": "Likelihood of finding professionally managed 3-bedroom townhome rentals near target schools and lifestyle nodes around or near the ~$2,200/month planning target."
+    },
+    {
+      "id": "state_tax_burden",
+      "label": "State Income Tax Burden",
+      "weight_percent": 10,
+      "description": "Lower state income tax burden is better. No-income-tax states receive stronger scores, though property/insurance costs should be reviewed separately."
+    },
+    {
+      "id": "aacsb_university_proximity",
+      "label": "AACSB University / Future Teaching Proximity",
+      "weight_percent": 8,
+      "description": "Proximity to AACSB-accredited business schools and universities that may support Gregg's long-term goal of teaching applied AI in business."
+    },
+    {
+      "id": "robotics_fitness_startup_fit",
+      "label": "Robotics, Fitness, Maker, and Indie Builder Lifestyle",
+      "weight_percent": 3,
+      "description": "Fit for robotics + AI interests, hardware/maker culture, fitness events such as running festivals and HYROX-style training, and indie builder/community opportunities."
+    },
+    {
+      "id": "hs_football_culture",
+      "label": "High School Football Culture",
+      "weight_percent": 2,
+      "description": "Local high school football culture. This is intentionally treated as a nice-to-have lifestyle bonus, not a hard requirement."
+    }
+  ],
+  "locations": [
+    {
+      "rank": 1,
+      "area": "Round Rock / Cedar Park",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "Best overall / Career-max option",
+      "scores": {
+        "ai_tech_pm_market": 9.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 8.0,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 9.5,
+        "robotics_fitness_startup_fit": 9.0,
+        "hs_football_culture": 8.0
+      },
+      "notes": "Best overall fit because of Austin AI/product access, UT Austin adjacency, no state income tax, strong suburban schools, and credible long-term housing logic compared with more expensive premium metros.",
+      "risks": [
+        "Austin-area housing appreciation could outpace assumptions",
+        "School-zone-level diligence is required",
+        "Traffic and commute patterns matter by employer location"
+      ],
+      "weighted_total_out_of_100": 87.65
+    },
+    {
+      "rank": 2,
+      "area": "Cary",
+      "state": "North Carolina",
+      "state_abbr": "NC",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "Best research ecosystem / Future professor path",
+      "scores": {
+        "ai_tech_pm_market": 9.0,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 7.0,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 10.0,
+        "robotics_fitness_startup_fit": 9.0,
+        "hs_football_culture": 6.5
+      },
+      "notes": "Best academic and research ecosystem fit due to the Triangle's proximity to NC State, Duke, UNC, RTP, AI research, and strong family infrastructure.",
+      "risks": [
+        "Premium suburb pricing",
+        "Rental target may be tight in elite school zones",
+        "State tax is less favorable than TX/FL/TN"
+      ],
+      "weighted_total_out_of_100": 81.3
+    },
+    {
+      "rank": 3,
+      "area": "Madison / Huntsville",
+      "state": "Alabama",
+      "state_abbr": "AL",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "Best value robotics option",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 9.5,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 6.5,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 9.5,
+        "hs_football_culture": 8.0
+      },
+      "notes": "Most underrated value pick. Strong robotics, aerospace, defense, engineering, affordability, schools, and long-term stability without premium-suburb pricing.",
+      "risks": [
+        "AI Product career ceiling may be narrower than Austin, DFW, Atlanta, or Triangle",
+        "Some roles may skew defense/aerospace rather than consumer SaaS",
+        "University teaching options are more concentrated than in larger metros"
+      ],
+      "weighted_total_out_of_100": 81.9
+    },
+    {
+      "rank": 4,
+      "area": "Suwanee / Peachtree Corners",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "Best Georgia family-access option",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 7.0,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 8.5,
+        "hs_football_culture": 8.5
+      },
+      "notes": "Strong Georgia compromise: Atlanta tech access, strong Gwinnett schools, Curiosity Lab/robotics angle, and better affordability discipline than Alpharetta/Johns Creek.",
+      "risks": [
+        "North Atlanta housing can appreciate quickly",
+        "Traffic and commute patterns are material",
+        "Rental target may require careful submarket selection"
+      ],
+      "weighted_total_out_of_100": 78.1
+    },
+    {
+      "rank": 5,
+      "area": "Oviedo",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "Best Florida no-income-tax option",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 8.0,
+        "rental_feasibility_2028": 7.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 7.0
+      },
+      "notes": "Best Florida fit due to UCF/Orlando tech, simulation, defense-adjacent AI, no income tax, and balanced family affordability.",
+      "risks": [
+        "Florida insurance and climate risk should be modeled separately",
+        "AI Product market is less deep than Austin, DFW, Triangle, or Atlanta",
+        "School-zone and flood/insurance diligence are essential"
+      ],
+      "weighted_total_out_of_100": 80.35
+    },
+    {
+      "rank": 6,
+      "area": "Plano / Frisco",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Premium school + DFW career option",
+      "scores": {
+        "ai_tech_pm_market": 9.0,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 6.5,
+        "rental_feasibility_2028": 6.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 9.5
+      },
+      "notes": "Strong DFW tech market, elite schools, strong family profile, high school football culture, and no state income tax, but cost pressure is significant.",
+      "risks": [
+        "Premium suburb pricing",
+        "Property taxes and insurance should be modeled",
+        "Rental target could be difficult in preferred school zones"
+      ],
+      "weighted_total_out_of_100": 82.4
+    },
+    {
+      "rank": 7,
+      "area": "Fort Mill",
+      "state": "South Carolina",
+      "state_abbr": "SC",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Best school-first value option",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 8.0,
+        "rental_feasibility_2028": 7.0,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.0
+      },
+      "notes": "Excellent schools and Charlotte access with a strong family value proposition, but weaker direct AI market and less favorable tax profile than no-income-tax states.",
+      "risks": [
+        "Charlotte commute dynamics matter",
+        "South Carolina tax profile is less favorable",
+        "AI roles may require Charlotte or remote-first strategy"
+      ],
+      "weighted_total_out_of_100": 75.1
+    },
+    {
+      "rank": 8,
+      "area": "Waxhaw",
+      "state": "North Carolina",
+      "state_abbr": "NC",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Charlotte-side family value option",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 8.0,
+        "rental_feasibility_2028": 7.0,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 7.0,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 7.5
+      },
+      "notes": "Good schools, Charlotte access, and better affordability than Cary, but materially less AI/research density than the Triangle.",
+      "risks": [
+        "Career market is more Charlotte-dependent",
+        "Longer commutes may reduce quality-of-life value",
+        "Less university density than Raleigh-Durham"
+      ],
+      "weighted_total_out_of_100": 74.1
+    },
+    {
+      "rank": 9,
+      "area": "Greenville",
+      "state": "South Carolina",
+      "state_abbr": "SC",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Robotics / mobility sleeper",
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 7.5,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 8.0,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 8.5,
+        "hs_football_culture": 7.5
+      },
+      "notes": "Strong sleeper pick for mobility, manufacturing, Clemson/ICAR adjacency, affordability, and lifestyle. Requires careful school-zone targeting.",
+      "risks": [
+        "AI Product market is thinner than major tech metros",
+        "School quality varies by zone",
+        "State tax is not a major advantage"
+      ],
+      "weighted_total_out_of_100": 73.4
+    },
+    {
+      "rank": 10,
+      "area": "Auburn / Opelika",
+      "state": "Alabama",
+      "state_abbr": "AL",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "College-town affordability fallback",
+      "scores": {
+        "ai_tech_pm_market": 5.5,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 9.0,
+        "rental_feasibility_2028": 8.0,
+        "state_tax_burden": 6.5,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 9.0
+      },
+      "notes": "Great affordability, strong college-town identity, Auburn University proximity, and football culture. Weaker AI Product career market.",
+      "risks": [
+        "Likely requires remote-first career strategy",
+        "Fewer AI/product employers locally",
+        "Long-term professional network may be narrower"
+      ],
+      "weighted_total_out_of_100": 74.55
+    },
+    {
+      "rank": 11,
+      "area": "St. Johns County",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "School-first Florida option",
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 7.0,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 6.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.0
+      },
+      "notes": "Excellent school reputation and no income tax, but weaker direct AI/product market than Orlando, Austin, DFW, Atlanta, or the Triangle.",
+      "risks": [
+        "Florida insurance/climate risk",
+        "Commuting and job-market access may be constrained",
+        "Rental affordability near top schools may be tight"
+      ],
+      "weighted_total_out_of_100": 75.95
+    },
+    {
+      "rank": 12,
+      "area": "Franklin",
+      "state": "Tennessee",
+      "state_abbr": "TN",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Lifestyle premium option",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 5.5,
+        "rental_feasibility_2028": 5.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 8.0
+      },
+      "notes": "Great lifestyle, schools, Nashville access, and no income tax, but housing affordability is the main weakness.",
+      "risks": [
+        "Premium pricing may violate budget discipline",
+        "Rental target likely difficult in preferred zones",
+        "Tech market is solid but not as deep as top AI metros"
+      ],
+      "weighted_total_out_of_100": 74.2
+    },
+    {
+      "rank": 13,
+      "area": "Alpharetta / Johns Creek",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Premium but expensive Georgia option",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 5.5,
+        "rental_feasibility_2028": 5.5,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 8.5
+      },
+      "notes": "Elite Atlanta suburb with strong tech access and schools. Excellent quality but too expensive to be the most practical Georgia answer.",
+      "risks": [
+        "High purchase price",
+        "Rental target pressure",
+        "May over-index on lifestyle while weakening savings goals"
+      ],
+      "weighted_total_out_of_100": 74.75
+    },
+    {
+      "rank": 14,
+      "area": "Farragut",
+      "state": "Tennessee",
+      "state_abbr": "TN",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Education / Knoxville option",
+      "scores": {
+        "ai_tech_pm_market": 5.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 7.0,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.0
+      },
+      "notes": "Strong schools, no state income tax, and UT Knoxville adjacency, but weaker AI/product market and relatively high cost for its metro.",
+      "risks": [
+        "Career market may require remote-first strategy",
+        "Smaller AI/product ecosystem",
+        "Limited compared with Nashville/Austin/Triangle"
+      ],
+      "weighted_total_out_of_100": 72.65
+    },
+    {
+      "rank": 15,
+      "area": "Glen Allen / Midlothian",
+      "state": "Virginia",
+      "state_abbr": "VA",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Virginia value pick",
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 7.0,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 6.5,
+        "hs_football_culture": 7.0
+      },
+      "notes": "Most realistic Virginia option, with better affordability than Northern Virginia and decent Richmond tech access. Family preference and tax profile keep it low.",
+      "risks": [
+        "Virginia is the least preferred state",
+        "Tech market is decent but not elite",
+        "Tax burden and cultural fit need validation"
+      ],
+      "weighted_total_out_of_100": 68.9
+    },
+    {
+      "rank": 16,
+      "area": "Leesburg / Ashburn",
+      "state": "Virginia",
+      "state_abbr": "VA",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Career-only backup",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 4.5,
+        "rental_feasibility_2028": 4.5,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 7.0
+      },
+      "notes": "Strong NoVA tech and data-center market with strong schools, but expensive, higher tax burden, and lowest family preference.",
+      "risks": [
+        "Affordability risk is high",
+        "Virginia is least favored by family",
+        "Likely not worth the premium unless a specific career opportunity requires it"
+      ],
+      "weighted_total_out_of_100": 69.2
+    }
+  ],
+  "state_top_two": {
+    "Texas": [
+      "Round Rock / Cedar Park",
+      "Plano / Frisco"
+    ],
+    "North Carolina": [
+      "Cary",
+      "Waxhaw"
+    ],
+    "Georgia": [
+      "Suwanee / Peachtree Corners",
+      "Alpharetta / Johns Creek"
+    ],
+    "Alabama": [
+      "Madison / Huntsville",
+      "Auburn / Opelika"
+    ],
+    "South Carolina": [
+      "Fort Mill",
+      "Greenville"
+    ],
+    "Florida": [
+      "Oviedo",
+      "St. Johns County"
+    ],
+    "Tennessee": [
+      "Franklin",
+      "Farragut"
+    ],
+    "Virginia": [
+      "Glen Allen / Midlothian",
+      "Leesburg / Ashburn"
+    ]
+  },
+  "category_winners": {
+    "best_overall": {
+      "winner": "Round Rock / Cedar Park",
+      "runner_up": "Cary"
+    },
+    "best_ai_product_career_ceiling": {
+      "winner": "Round Rock / Cedar Park",
+      "runner_up": "Cary"
+    },
+    "best_robotics_ai_hardware_ecosystem": {
+      "winner": "Madison / Huntsville",
+      "runner_up": "Suwanee / Peachtree Corners"
+    },
+    "best_schools_affordability_balance": {
+      "winner": "Fort Mill",
+      "runner_up": "Madison / Huntsville"
+    },
+    "best_long_term_home_buying_fit": {
+      "winner": "Madison / Huntsville",
+      "runner_up": "Round Rock / Cedar Park"
+    },
+    "best_no_income_tax_state_fit": {
+      "winner": "Round Rock / Cedar Park",
+      "runner_up": "Oviedo"
+    },
+    "best_future_professor_path": {
+      "winner": "Cary",
+      "runner_up": "Round Rock / Cedar Park"
+    },
+    "best_fitness_active_lifestyle_fit": {
+      "winner": "Cary",
+      "runner_up": "Round Rock / Cedar Park"
+    },
+    "best_family_safe_practical_choice": {
+      "winner": "Madison / Huntsville",
+      "runner_up": "Fort Mill"
+    }
+  },
+  "recommended_top_five": [
+    "Round Rock / Cedar Park",
+    "Cary",
+    "Madison / Huntsville",
+    "Suwanee / Peachtree Corners",
+    "Oviedo"
+  ],
+  "decision_tiers": {
+    "tier_1_serious_finalists": [
+      "Round Rock / Cedar Park",
+      "Cary",
+      "Madison / Huntsville",
+      "Suwanee / Peachtree Corners",
+      "Oviedo"
+    ],
+    "tier_2_strong_tradeoffs": [
+      "Plano / Frisco",
+      "Fort Mill",
+      "Waxhaw",
+      "Greenville",
+      "Auburn / Opelika"
+    ],
+    "tier_3_watch_list": [
+      "St. Johns County",
+      "Franklin",
+      "Alpharetta / Johns Creek",
+      "Farragut"
+    ],
+    "tier_4_backup_only": [
+      "Glen Allen / Midlothian",
+      "Leesburg / Ashburn"
+    ]
+  },
+  "open_questions": [
+    {
+      "id": "rental_cap",
+      "question": "Is the ~$2,200/month 3-bedroom townhome rental target a hard cap, or can premium school zones flex to $2,400\u2013$2,600?",
+      "why_it_matters": "This materially changes how competitive Cary, Franklin, Alpharetta/Johns Creek, Plano/Frisco, and St. Johns County remain."
+    },
+    {
+      "id": "home_budget",
+      "question": "Is the estimated $820,000 2041 home budget a hard cap, soft cap, or rough planning estimate?",
+      "why_it_matters": "A hard cap penalizes premium suburbs more heavily; a soft cap keeps them viable if income growth outpaces assumptions."
+    },
+    {
+      "id": "family_proximity",
+      "question": "Should Georgia/family proximity be added as a formal criterion?",
+      "why_it_matters": "This could lift Suwanee/Peachtree Corners and Alpharetta/Johns Creek relative to Texas, Florida, and North Carolina."
+    },
+    {
+      "id": "florida_risk",
+      "question": "Should Florida insurance, climate, and property-risk exposure be its own scoring criterion?",
+      "why_it_matters": "This could lower Oviedo and St. Johns County despite Florida's no-income-tax advantage."
+    },
+    {
+      "id": "school_zone_precision",
+      "question": "Should the next model score specific high school attendance zones instead of broad suburbs or districts?",
+      "why_it_matters": "School quality and rental affordability are often zone-specific rather than city-wide."
+    },
+    {
+      "id": "political_cultural_fit",
+      "question": "Should political/cultural fit be included, or intentionally left out?",
+      "why_it_matters": "This may alter the ranking if family comfort, state governance, or community culture becomes a decision factor."
+    },
+    {
+      "id": "live_data_refresh",
+      "question": "Should the next version include live current citations for rent, home prices, schools, tax rates, AACSB schools, and job-market indicators?",
+      "why_it_matters": "Current data would make the matrix more defensible and investment-grade."
+    }
+  ]
+}
