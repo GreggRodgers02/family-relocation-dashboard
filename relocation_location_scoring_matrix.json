@@ -208,11 +208,47 @@
       "weighted_total_out_of_100": 80.7
     },
     {
+      "area": "Spring Hill (Summit / Page Zones, Williamson County)",
+      "state": "Tennessee",
+      "state_abbr": "TN",
+      "metro": "Nashville",
+      "strategic_label": "Confirmed 2028 rental base / Franklin affordability fix",
+      "est_2028_rent": 2300,
+      "best_rental_submarket": "Williamson side (Chapman's Retreat, Villas at Port Royal, Harvest Point, Somerset Springs)",
+      "est_2041_buy_price": 755000,
+      "best_buy_submarket": "Spring Hill (Williamson County / WCS zones)",
+      "rent_buy_same_area": true,
+      "scores": {
+        "ai_tech_pm_market": 7,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 8,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 7,
+        "robotics_fitness_startup_fit": 7,
+        "hs_football_culture": 8
+      },
+      "notes": "Williamson-County side of Spring Hill, zoned to top-rated WCS schools (Summit High #23 in TN, Fred J. Page High #12 in TN; Page is ~9-12 miles / 15-20 min from NE Spring Hill). CONFIRMED rental base: currently renting an apartment here (~$1,800/mo) with plans for a professionally managed 3BR townhome around 2028. Live market verified June 2026: managed 3BR townhomes (Chapman's Retreat, Villas at Port Royal, Harvest Point, Somerset Springs) run roughly $1,779-$2,995, avg 3BR ~$2,066, so a ~$2,300 target is comfortably mid-range. Median home value ~$495K-$525K (Feb-Apr 2026); at 2-3% appreciation, ~$700K-$810K by 2041, well under the 2041 budget. Keeps Franklin's strengths (elite WCS schools, no income tax, Nashville access, football) while fixing Franklin's affordability weakness. GM/Ultium EV-battery corridor adds a light manufacturing/maker angle.",
+      "risks": [
+        "COUNTY-LINE HARD FLAG: only the Williamson County side gets WCS (Summit/Page) zoning; Maury County addresses forfeit it and must be excluded.",
+        "Commitment to the area is rental-phase only (through ~2028); 2041 purchase location is left open.",
+        "AI/product roles are Nashville-metro-dependent (~35-45 min commute) and shallower than top AI metros.",
+        "Fast-growing area; WCS attendance zones are periodically redrawn and must be reverified per address."
+      ],
+      "phase_strategy": {
+        "rental_2028": "Confirmed/on-the-ground. Managed 3BR townhome on Williamson side, ~$2,300 target verified against live market.",
+        "purchase_2041": "Open. Spring Hill remains a viable candidate (~$520K median fits budget) but not committed; best 2041 buy city to be chosen on full-model merit."
+      },
+      "tier": "Tier 1 - Serious Finalist",
       "rank": 5,
+      "weighted_total_out_of_100": 80
+    },
+    {
+      "rank": 6,
       "area": "Oviedo",
       "state": "Florida",
       "state_abbr": "FL",
-      "tier": "Tier 1 - Serious Finalist",
+      "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Best Florida no-income-tax option",
       "scores": {
         "ai_tech_pm_market": 7.5,
@@ -233,7 +269,7 @@
       "weighted_total_out_of_100": 79.15
     },
     {
-      "rank": 6,
+      "rank": 7,
       "area": "St. Johns County",
       "state": "Florida",
       "state_abbr": "FL",
@@ -258,7 +294,7 @@
       "weighted_total_out_of_100": 77.75
     },
     {
-      "rank": 7,
+      "rank": 8,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -283,7 +319,7 @@
       "weighted_total_out_of_100": 77.5
     },
     {
-      "rank": 8,
+      "rank": 9,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -308,7 +344,7 @@
       "weighted_total_out_of_100": 76.3
     },
     {
-      "rank": 9,
+      "rank": 10,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -360,12 +396,12 @@
         "Thinner professionally managed rental inventory",
         "AI/product roles likely require remote or a Nashville commute"
       ],
-      "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 10,
+      "tier": "Tier 3 - Watch List",
+      "rank": 11,
       "weighted_total_out_of_100": 74.55
     },
     {
-      "rank": 11,
+      "rank": 12,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -390,7 +426,7 @@
       "weighted_total_out_of_100": 74.55
     },
     {
-      "rank": 12,
+      "rank": 13,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -443,7 +479,7 @@
         "School strength is zone-specific"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 13,
+      "rank": 14,
       "weighted_total_out_of_100": 74.2
     },
     {
@@ -475,15 +511,15 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 14,
+      "rank": 15,
       "weighted_total_out_of_100": 73.4
     },
     {
-      "rank": 15,
+      "rank": 16,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
-      "tier": "Tier 3 - Watch List",
+      "tier": "Tier 4 - Backup Only",
       "strategic_label": "Robotics / mobility sleeper",
       "scores": {
         "ai_tech_pm_market": 6.5,
@@ -504,7 +540,7 @@
       "weighted_total_out_of_100": 73.4
     },
     {
-      "rank": 16,
+      "rank": 17,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -557,11 +593,11 @@
         "AI/product depth shallower than Austin/Triangle/Atlanta"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 17,
+      "rank": 18,
       "weighted_total_out_of_100": 72.45
     },
     {
-      "rank": 18,
+      "rank": 19,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -586,7 +622,7 @@
       "weighted_total_out_of_100": 70.7
     },
     {
-      "rank": 19,
+      "rank": 20,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -613,7 +649,7 @@
       "budget_flag": "Busts 2028 rental stretch cap"
     },
     {
-      "rank": 20,
+      "rank": 21,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -658,6 +694,10 @@
       "Cary",
       "Waxhaw"
     ],
+    "Tennessee": [
+      "Spring Hill (Summit / Page Zones, Williamson County)",
+      "Gallatin"
+    ],
     "Florida": [
       "Oviedo",
       "St. Johns County"
@@ -669,10 +709,6 @@
     "South Carolina": [
       "Fort Mill",
       "Greenville"
-    ],
-    "Tennessee": [
-      "Gallatin",
-      "Farragut"
     ],
     "Virginia": [
       "Glen Allen / Midlothian",
@@ -722,7 +758,7 @@
     "Plano / Frisco",
     "Madison / Huntsville",
     "Cary",
-    "Oviedo"
+    "Spring Hill (Summit / Page Zones, Williamson County)"
   ],
   "decision_tiers": {
     "tier_1_serious_finalists": [
@@ -730,23 +766,24 @@
       "Plano / Frisco",
       "Madison / Huntsville",
       "Cary",
-      "Oviedo"
+      "Spring Hill (Summit / Page Zones, Williamson County)"
     ],
     "tier_2_strong_tradeoffs": [
+      "Oviedo",
       "St. Johns County",
       "Suwanee / Peachtree Corners",
       "Fort Mill",
-      "Alpharetta / Johns Creek",
-      "Gallatin"
+      "Alpharetta / Johns Creek"
     ],
     "tier_3_watch_list": [
+      "Gallatin",
       "Auburn / Opelika",
       "Farragut",
       "Hendersonville",
-      "Mount Juliet",
-      "Greenville"
+      "Mount Juliet"
     ],
     "tier_4_backup_only": [
+      "Greenville",
       "Waxhaw",
       "Tampa",
       "Glen Allen / Midlothian",
@@ -806,6 +843,7 @@
       "label": "Nashville Metro",
       "budget_fit_order": [
         "Gallatin",
+        "Spring Hill (Summit / Page Zones, Williamson County)",
         "Hendersonville",
         "Mount Juliet",
         "Franklin"
