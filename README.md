@@ -40,3 +40,19 @@ DASHBOARD_PASSWORD='your-password' node build/generate.js
 ```
 
 The build sources live in `build/` (`generate.js` and `styles.css`).
+
+### Data model notes
+
+- `rental_budget_config` holds the income-based 2028 rental ceiling ($2,600 primary /
+  $2,900 stretch cap). The dashboard renders this as a banner and color-codes each
+  location's "Rent fit" badge (green = feasible, amber = stretch, red = not feasible).
+- `metro_clusters.Nashville` defines the budget-fit order for the Nashville-metro group
+  (Gallatin, Hendersonville, Mount Juliet, Franklin), rendered as its own section.
+- Ranks and tiers are derived strictly from each location's weighted score; edit the
+  `scores` and the ranking re-sorts on the next build.
+- The `Tampa` entry is a **flagged estimate** (`estimated: true`) — replace its scores
+  with researched values before relying on it.
+- **Deferred:** the `spouse_pref` criterion and the second "remote-adjusted" scoring
+  scenario are not yet wired into the rankings. The new Nashville suburbs carry a
+  `spouse_pref` score, but it is weighted 0% until per-location scores and a weight
+  redistribution are defined for all locations.

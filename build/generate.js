@@ -67,6 +67,28 @@ function money(n) {
   return '$' + n;
 }
 
+function fmtPrice(n) {
+  if (!n) return '';
+  if (n >= 1000000) return '$' + (n / 1000000).toFixed(2).replace(/\.?0+$/, '') + 'M';
+  return '$' + Math.round(n / 1000) + 'K';
+}
+
+// Full-dollar formatting with thousands separators (for monthly rents).
+function dollars(n) {
+  return '$' + Number(n).toLocaleString('en-US');
+}
+
+// Rental feasibility against the 2028 budget ceiling/stretch cap.
+function rentFit(loc) {
+  const s = loc.scores ? loc.scores.rental_feasibility_2028 : 0;
+  let cls, label;
+  if (s >= 7) { cls = 'green'; label = 'Feasible'; }
+  else if (s >= 4) { cls = 'amber'; label = 'Stretch'; }
+  else { cls = 'red'; label = 'Not feasible'; }
+  const dollar = loc.est_2028_rent ? ' ' + dollars(loc.est_2028_rent) : '';
+  return { cls, label, dollar };
+}
+
 // --- markup generation ------------------------------------------------------
 
 function buildDashboard(data) {
@@ -78,6 +100,7 @@ function buildDashboard(data) {
   const states = profile.family_location_scope || [];
   const stateCount = new Set(locations.map((l) => l.state)).size;
   const finalists = (data.decision_tiers && data.decision_tiers.tier_1_serious_finalists) || [];
+  const rbc = data.rental_budget_config || {};
 
   // Hero stats
   const stats = [
@@ -106,6 +129,32 @@ function buildDashboard(data) {
     .map((i) => `            <span class="pill">${esc(i)}</span>`)
     .join('\n');
 
+  // 2028 rent target banner (with income-basis tooltip)
+  const rentTip = [
+    rbc.basis,
+    rbc.projected_2028_household_income
+      ? `Projected 2028 household income ~${money(rbc.projected_2028_household_income)}.`
+      : '',
+    rbc.income_growth_assumption ? `Growth: ${rbc.income_growth_assumption}.` : '',
+    rbc.note,
+  ]
+    .filter(Boolean)
+    .join(' ');
+  const rentBanner =
+    rbc.primary_ceiling_monthly
+      ? `      <div class="rent-banner" title="${esc(rentTip)}">
+        <span class="rent-pill">2028 rent target</span>
+        <span class="rent-fig"><strong>${esc(dollars(rbc.primary_ceiling_monthly))}/mo</strong> primary ceiling</span>
+        <span class="rent-sep">&middot;</span>
+        <span class="rent-fig"><strong>${esc(dollars(rbc.stretch_cap_monthly))}/mo</strong> hard stretch cap</span>
+        <span class="rent-legend">
+          <span class="rentfit green">Feasible</span>
+          <span class="rentfit amber">Stretch</span>
+          <span class="rentfit red">Not feasible</span>
+        </span>
+      </div>`
+      : '';
+
   // Core conclusion prose (data-driven)
   const finalistList = finalists.map((f) => `<strong>${esc(f)}</strong>`);
   const finalistSentence =
@@ -131,9 +180,13 @@ function buildDashboard(data) {
   const rows = locations
     .map((loc) => {
       const t = tierMeta(loc.tier);
+      const rf = rentFit(loc);
+      const flag = loc.budget_flag ? `<div class="flag">${esc(loc.budget_flag)}</div>` : '';
       return `            <tr><td>${esc(loc.rank)}</td><td><strong>${esc(loc.area)}</strong></td><td>${esc(
         loc.state_abbr
-      )}</td><td><span class="tier ${t.cls}">${esc(t.label)}</span></td><td>${esc(loc.notes)}</td></tr>`;
+      )}</td><td><span class="tier ${t.cls}">${esc(t.label)}</span></td><td><span class="rentfit ${rf.cls}">${esc(
+        rf.label + rf.dollar
+      )}</span>${flag}</td><td>${esc(loc.notes)}</td></tr>`;
     })
     .join('\n');
 
@@ -158,6 +211,40 @@ function buildDashboard(data) {
       )}</span></h3><ol>${items}</ol></div>`;
     })
     .join('\n');
+
+  // Nashville metro cluster (budget-fit order)
+  const nash = (data.metro_clusters && data.metro_clusters.Nashville) || null;
+  let nashville = '';
+  if (nash && Array.isArray(nash.budget_fit_order)) {
+    const cards = nash.budget_fit_order
+      .map((area, i) => {
+        const loc = byArea.get(area);
+        if (!loc) return '';
+        const rf = rentFit(loc);
+        const flag = loc.budget_flag ? `<div class="flag">${esc(loc.budget_flag)}</div>` : '';
+        return `        <div class="card nash-card">
+          <div class="nash-top"><span class="nash-num">${i + 1}</span><span class="rentfit ${rf.cls}">${esc(
+          rf.label + rf.dollar
+        )}</span></div>
+          <h3>${esc(loc.area)} <span class="nash-st">${esc(loc.state_abbr)}</span></h3>
+          <p class="nash-buy">Est. 2041 buy: <strong>${esc(fmtPrice(loc.est_2041_buy_price))}</strong></p>
+          <p class="nash-sub">${esc(loc.best_rental_submarket || '')}</p>
+          ${flag}
+        </div>`;
+      })
+      .join('\n');
+    nashville = `
+    <section id="nashville">
+      <div class="section-title">
+        <h2>${esc(nash.label || 'Nashville Metro')}</h2>
+        <p>${esc(nash.note || '')}</p>
+      </div>
+      <div class="nash-grid">
+${cards}
+      </div>
+    </section>
+`;
+  }
 
   // Decision tiers
   const tierOrder = [
@@ -212,6 +299,7 @@ ${heroStats}
       <a href="#ranking">Full Ranking</a>
       <a href="#categories">Category Winners</a>
       <a href="#states">State Picks</a>
+      <a href="#nashville">Nashville Metro</a>
       <a href="#tiers">Decision Tiers</a>
       <a href="#recommendation">Recommendation</a>
     </div>
@@ -223,6 +311,7 @@ ${heroStats}
         <h2>Executive summary</h2>
         <p>${esc(p.purpose || '')}</p>
       </div>
+${rentBanner}
       <div class="card insight">
         <div>
           <h3>Core conclusion</h3>
@@ -265,6 +354,7 @@ ${top5}
               <th>Area</th>
               <th>State</th>
               <th>Tier</th>
+              <th>Rent fit</th>
               <th>Primary rationale</th>
             </tr>
           </thead>
@@ -295,6 +385,7 @@ ${stateCards}
       </div>
     </section>
 
+${nashville}
     <section id="tiers">
       <div class="section-title">
         <h2>Decision tiers</h2>
