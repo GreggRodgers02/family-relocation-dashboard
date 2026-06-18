@@ -319,7 +319,34 @@
       "weighted_total_out_of_100": 77.5
     },
     {
+      "area": "Celina",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "strategic_label": "DFW value play with rental and school trade-offs",
+      "est_2028_rent": 2650,
+      "scores": {
+        "ai_tech_pm_market": 8,
+        "school_quality": 6.5,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 5.5,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 8,
+        "robotics_fitness_startup_fit": 7,
+        "hs_football_culture": 9.5
+      },
+      "notes": "Fast-growing Collin County exurb north of Frisco. No state income tax, DFW AI/tech market access, strong football culture (G.A. Moore legacy), and better 2041 purchase affordability than Plano/Frisco. School quality (Celina ISD, Niche A-, #161 in TX) and 2028 rental costs (~$2,650 median) are the primary weaknesses against the model.",
+      "risks": [
+        "Celina ISD ranks #161 in Texas — materially below Prosper, Frisco, and Plano in the same region",
+        "3-bedroom townhome rents average $2,650-$2,800, above the $2,300 target — rental phase feasibility is the biggest flag",
+        "Commute distance to core DFW AI/tech employers is longer than Plano/Frisco; best suited for remote-first career path by 2028",
+        "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
       "rank": 9,
+      "weighted_total_out_of_100": 77
+    },
+    {
+      "rank": 10,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -344,11 +371,11 @@
       "weighted_total_out_of_100": 76.3
     },
     {
-      "rank": 10,
+      "rank": 11,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
-      "tier": "Tier 2 - Strong Trade-Off",
+      "tier": "Tier 3 - Watch List",
       "strategic_label": "Premium but expensive Georgia option",
       "scores": {
         "ai_tech_pm_market": 8.5,
@@ -397,11 +424,11 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 11,
+      "rank": 12,
       "weighted_total_out_of_100": 74.55
     },
     {
-      "rank": 12,
+      "rank": 13,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -426,7 +453,7 @@
       "weighted_total_out_of_100": 74.55
     },
     {
-      "rank": 13,
+      "rank": 14,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -479,7 +506,7 @@
         "School strength is zone-specific"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 14,
+      "rank": 15,
       "weighted_total_out_of_100": 74.2
     },
     {
@@ -510,12 +537,12 @@
         "Schools solid but below Williamson County",
         "Median showing slight negative YoY (verify trajectory)"
       ],
-      "tier": "Tier 3 - Watch List",
-      "rank": 15,
+      "tier": "Tier 4 - Backup Only",
+      "rank": 16,
       "weighted_total_out_of_100": 73.4
     },
     {
-      "rank": 16,
+      "rank": 17,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -540,7 +567,7 @@
       "weighted_total_out_of_100": 73.4
     },
     {
-      "rank": 17,
+      "rank": 18,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -593,11 +620,11 @@
         "AI/product depth shallower than Austin/Triangle/Atlanta"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 18,
+      "rank": 19,
       "weighted_total_out_of_100": 72.45
     },
     {
-      "rank": 19,
+      "rank": 20,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -622,7 +649,7 @@
       "weighted_total_out_of_100": 70.7
     },
     {
-      "rank": 20,
+      "rank": 21,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -649,7 +676,7 @@
       "budget_flag": "Busts 2028 rental stretch cap"
     },
     {
-      "rank": 21,
+      "rank": 22,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -772,17 +799,18 @@
       "Oviedo",
       "St. Johns County",
       "Suwanee / Peachtree Corners",
-      "Fort Mill",
-      "Alpharetta / Johns Creek"
+      "Celina",
+      "Fort Mill"
     ],
     "tier_3_watch_list": [
+      "Alpharetta / Johns Creek",
       "Gallatin",
       "Auburn / Opelika",
       "Farragut",
-      "Hendersonville",
-      "Mount Juliet"
+      "Hendersonville"
     ],
     "tier_4_backup_only": [
+      "Mount Juliet",
       "Greenville",
       "Waxhaw",
       "Tampa",
