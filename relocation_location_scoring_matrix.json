@@ -371,7 +371,33 @@
       "weighted_total_out_of_100": 76.3
     },
     {
+      "area": "Clermont",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "strategic_label": "Park-adjacent rental-phase value option",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 6.5,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 7,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 6,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 6
+      },
+      "notes": "West-Orlando exurb with strong affordability (~$450K median, flat growth) and a national endurance-sports/fitness scene (National Training Center) fitting HYROX interest. Lake County schools are mediocre district-wide (~6/10); best options are charters (Imagine South Lake 8/10) and select zones. AI/tech market SET to Oviedo/I-4-corridor parity per explicit user instruction; unmodified data-driven score was 71.7 (AI 6.0). Best suited as a 2028 rental/park-adjacent option, not a purchase-phase or career anchor.",
+      "risks": [
+        "AI parity is a user override; native local PM employment is commute-dependent",
+        "Lake County schools require careful zone/charter targeting (city-average mediocre)",
+        "Extreme severe-wind risk, ~86% wildfire risk; model FL insurance separately",
+        "Weak AACSB proximity (UCF main campus is a haul)"
+      ],
+      "tier": "Tier 3 - Watch List",
       "rank": 11,
+      "weighted_total_out_of_100": 75.4
+    },
+    {
+      "rank": 12,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -394,6 +420,59 @@
         "May over-index on lifestyle while weakening savings goals"
       ],
       "weighted_total_out_of_100": 75.35
+    },
+    {
+      "area": "Lake Mary",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "strategic_label": "Seminole schools + Heathrow corporate purchase-phase option",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 7.5,
+        "housing_affordability_2041": 7,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 7,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 7.5
+      },
+      "notes": "Strong Seminole County district with A-rated Lake Mary High feeders (target Heathrow/Crystal Lake zones), a real Heathrow corporate/tech corridor, no income tax, and lowest city millage in Seminole County. Strongest Florida purchase-phase candidate behind Oviedo; essentially ties St. Johns County. AI/tech market held at Oviedo/I-4-corridor parity per user convention.",
+      "risks": [
+        "Rental cap tight; best school zones (Heathrow) carry highest rents",
+        "Seminole County raised millage Sept 2025; model post-sale tax reset (assessed value resets to market at close)",
+        "Florida insurance/wind/heat exposure; model separately",
+        "Home price data noisy across sources (Zillow +17% vs others flat/down)"
+      ],
+      "tier": "Tier 3 - Watch List",
+      "rank": 13,
+      "weighted_total_out_of_100": 74.9
+    },
+    {
+      "area": "Lakeland",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "strategic_label": "Tampa-satellite value option with Orlando reach",
+      "est_2028_rent": 1760,
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 5.5,
+        "housing_affordability_2041": 9,
+        "rental_feasibility_2028": 9,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 6.5,
+        "robotics_fitness_startup_fit": 6.5,
+        "hs_football_culture": 7
+      },
+      "notes": "Re-scored as a TAMPA satellite (~35 mi) with secondary Orlando reach (~55 mi) on the I-4 corridor, reversing the earlier Orlando-only elimination. Cheapest candidate (median ~$305K-$455K by zone) and most rental-affordable in the FL set (~$1,760 median). School path is zone/charter-dependent: McKeel Academy charters (A-rated tech HS with robotics) and South Lakeland zones reach 7/10+, though Polk average is ~4/10. Florida Polytechnic (STEM) and Florida Southern (AACSB business) in-town strengthen the teaching/robotics angle beyond what the weights capture. AI scored 6.5 (below parity) because local on-site PM employment is thin; value is the Tampa commute.",
+      "risks": [
+        "Local PM employment limited; relies on ~35-min Tampa commute (Orlando is ~55 min)",
+        "Polk schools average ~4/10; requires McKeel charter or South Lakeland zone targeting",
+        "Polk County ~12% severe-flood and high wildfire risk; model FL insurance",
+        "Downtown/charter zones can carry premiums vs. county-wide cheap median"
+      ],
+      "tier": "Tier 3 - Watch List",
+      "rank": 14,
+      "weighted_total_out_of_100": 74.6
     },
     {
       "area": "Gallatin",
@@ -424,15 +503,15 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 12,
+      "rank": 15,
       "weighted_total_out_of_100": 74.55
     },
     {
-      "rank": 13,
+      "rank": 16,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
-      "tier": "Tier 3 - Watch List",
+      "tier": "Tier 4 - Backup Only",
       "strategic_label": "College-town affordability fallback",
       "scores": {
         "ai_tech_pm_market": 5.5,
@@ -453,11 +532,11 @@
       "weighted_total_out_of_100": 74.55
     },
     {
-      "rank": 14,
+      "rank": 17,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
-      "tier": "Tier 3 - Watch List",
+      "tier": "Tier 4 - Backup Only",
       "strategic_label": "Education / Knoxville option",
       "scores": {
         "ai_tech_pm_market": 5.5,
@@ -505,9 +584,35 @@
         "Home prices have risen from historical value levels",
         "School strength is zone-specific"
       ],
-      "tier": "Tier 3 - Watch List",
-      "rank": 15,
+      "tier": "Tier 4 - Backup Only",
+      "rank": 18,
       "weighted_total_out_of_100": 74.2
+    },
+    {
+      "area": "Lake Nona",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "strategic_label": "Best-schools + Medical City innovation option",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 6,
+        "rental_feasibility_2028": 5.5,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 7,
+        "robotics_fitness_startup_fit": 9,
+        "hs_football_culture": 6.5
+      },
+      "notes": "Elite zoned publics (Laureate Park Elementary 10/10, Lake Nona Middle 10/10, Lake Nona High A Niche) with no charter-lottery dependency. Best lifestyle/innovation fit of the FL exurbs: Medical City, KPMG, Amazon, UCF College of Medicine, USTA National Campus, autonomous-vehicle network. AI/tech held at Oviedo parity per user convention, though Medical City arguably justifies a higher score (~8.0). Premium pricing makes single-family budget-fit tight; townhomes are the realistic 2041 path.",
+      "risks": [
+        "Rental cap binding; Laureate Park zone carries highest rents",
+        "Single-family 2041 affordability tight (~$550K-$750K); townhome likely the budget path",
+        "Narcoossee Rd growth/traffic; Osceola Pkwy extension not breaking ground until 2027",
+        "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "rank": 19,
+      "weighted_total_out_of_100": 73.95
     },
     {
       "area": "Mount Juliet",
@@ -538,11 +643,11 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 16,
+      "rank": 20,
       "weighted_total_out_of_100": 73.4
     },
     {
-      "rank": 17,
+      "rank": 21,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -567,7 +672,7 @@
       "weighted_total_out_of_100": 73.4
     },
     {
-      "rank": 18,
+      "rank": 22,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -620,11 +725,11 @@
         "AI/product depth shallower than Austin/Triangle/Atlanta"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 19,
+      "rank": 23,
       "weighted_total_out_of_100": 72.45
     },
     {
-      "rank": 20,
+      "rank": 24,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -649,7 +754,33 @@
       "weighted_total_out_of_100": 70.7
     },
     {
-      "rank": 21,
+      "area": "Davenport",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "strategic_label": "Park-adjacent rental-phase / I-4 corridor option",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 4,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 4.5,
+        "robotics_fitness_startup_fit": 5,
+        "hs_football_culture": 6
+      },
+      "notes": "Northeast Polk County, ~12 mi from Disney with I-4 access to Orlando job centers. Best-in-FL-set rental feasibility (deep sub-$2,300 3BR townhome inventory in resort communities) and very affordable (~$320K-$355K). AI/tech market LIFTED to I-4-corridor parity (7.5) per user instruction (commute-access reasoning); unmodified score was 65.9 (AI 5.5, Tier 4). Primarily a 2028 rental/park-adjacent play for spouse Disney preference - weak schools (~4/10, no charter path) and AACSB proximity make it unsuitable as a purchase-phase or career anchor.",
+      "risks": [
+        "AI parity is a commute-based user override; no meaningful local PM employer base",
+        "Polk schools ~4/10 with no strong charter path; not a buy-and-hold-through-school-years location",
+        "Heavy short-term-rental/investor presence; long days-on-market signal softer market",
+        "Some areas flood-prone (inland); model insurance"
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "rank": 25,
+      "weighted_total_out_of_100": 70.25
+    },
+    {
+      "rank": 26,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -676,7 +807,7 @@
       "budget_flag": "Busts 2028 rental stretch cap"
     },
     {
-      "rank": 22,
+      "rank": 27,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -803,18 +934,23 @@
       "Fort Mill"
     ],
     "tier_3_watch_list": [
+      "Clermont",
       "Alpharetta / Johns Creek",
-      "Gallatin",
-      "Auburn / Opelika",
-      "Farragut",
-      "Hendersonville"
+      "Lake Mary",
+      "Lakeland",
+      "Gallatin"
     ],
     "tier_4_backup_only": [
+      "Auburn / Opelika",
+      "Farragut",
+      "Hendersonville",
+      "Lake Nona",
       "Mount Juliet",
       "Greenville",
       "Waxhaw",
       "Tampa",
       "Glen Allen / Midlothian",
+      "Davenport",
       "Leesburg / Ashburn",
       "Franklin"
     ]
