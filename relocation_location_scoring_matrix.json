@@ -109,31 +109,82 @@
   "locations": [
     {
       "rank": 1,
-      "area": "Round Rock / Cedar Park",
+      "area": "Round Rock",
       "state": "Texas",
       "state_abbr": "TX",
       "tier": "Tier 1 - Serious Finalist",
-      "strategic_label": "Best overall / Career-max option",
+      "strategic_label": "Best overall / Budget-cushion career pick",
       "scores": {
         "ai_tech_pm_market": 9.5,
         "school_quality": 8.5,
-        "housing_affordability_2041": 8,
-        "rental_feasibility_2028": 8,
-        "state_tax_burden": 10,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 10.0,
         "aacsb_university_proximity": 9.5,
-        "robotics_fitness_startup_fit": 9,
-        "hs_football_culture": 8
+        "robotics_fitness_startup_fit": 9.0,
+        "hs_football_culture": 8.0
       },
-      "notes": "Best overall fit because of Austin AI/product access, UT Austin adjacency, no state income tax, strong suburban schools, and credible long-term housing logic compared with more expensive premium metros.",
+      "notes": "Best overall model-consistent fit. Austin AI/product access via I-35 and the Domain, Dell HQ, UT Austin adjacency, no state income tax, strong Round Rock ISD schools, and the most 2041 budget cushion of the three Williamson County options (median home ~$370K early 2026, roughly $120K+ below Cedar Park). Rental phase sits well under the ~$2,300 3BR townhome cap. Confirm specific elementary zone (RRISD vs. Leander ISD pockets).",
       "risks": [
-        "Austin-area housing appreciation could outpace assumptions",
-        "School-zone-level diligence is required",
-        "Traffic and commute patterns matter by employer location"
+        "Townhome inventory is thinner than single-family; managed 3BR stock needs targeting",
+        "Austin-metro pricing can re-accelerate if rates fall",
+        "Elementary zone quality varies; verify exact RRISD/LISD assignment"
       ],
-      "weighted_total_out_of_100": 88.25
+      "weighted_total_out_of_100": 88.6
     },
     {
       "rank": 2,
+      "area": "Cedar Park",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "School-max / hardware-corridor stretch pick",
+      "scores": {
+        "ai_tech_pm_market": 9.5,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 7.0,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 9.5,
+        "robotics_fitness_startup_fit": 9.0,
+        "hs_football_culture": 8.5
+      },
+      "notes": "The school-max sibling to Round Rock. Fully in Leander ISD (Niche A+, ranked #2 in Austin region) and marginally closer to the Lakeline/183 hardware/tech corridor, a mild plus for AI-hardware and robotics interest. Trade-off is price: median home ~$496-520K early 2026, ~$120K+ above Round Rock, compressing 2041 budget headroom. LISD district TEA grade is misleading due to rapid-growth strain; individual campus quality varies widely, so zone precision is essential.",
+      "risks": [
+        "Meaningfully higher entry price compounds against the 2041 ceiling even at 2-3% appreciation",
+        "LISD campus quality varies widely despite strong district reputation; verify exact elementary zone",
+        "Townhome stock is limited; skews single-family"
+      ],
+      "weighted_total_out_of_100": 87.0
+    },
+    {
+      "rank": 3,
+      "area": "Georgetown",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "Affordable northern Williamson option (zone-gated schools)",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 7.5,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 8.0
+      },
+      "notes": "The more affordable, further-north Williamson County option with the most new-construction townhome inventory and builder incentives (median home ~$405-415K, balanced-to-buyer market, ~6.3 months supply early 2026). Southwestern University (AACSB) in town plus UT Austin access. Key caveat: schools are heavily zone-dependent. Georgetown ISD rates weak overall (568th of 961 TX districts, 2-star SchoolDigger); the strong elementary zones are the west-side pockets zoned to Leander ISD or Liberty Hill ISD (e.g. Rancho Sienna Elementary), which carry a price premium. Adds ~15-20 min commute vs. Round Rock toward the Austin tech core.",
+      "risks": [
+        "HARD FLAG: Georgetown ISD is weak; only Leander/Liberty Hill-zoned west-side addresses hit target school quality - verify ISD via district address lookup before committing",
+        "GISD rezoning for 2026-27 (two new schools open 2027); zones may shift",
+        "Further from Austin tech corridor; weaker for in-office roles if not fully remote",
+        "Southwestern University is small/teaching-focused; verify fit vs. UT for professor pathway"
+      ],
+      "weighted_total_out_of_100": 83.0
+    },
+    {
+      "rank": 4,
       "area": "Plano / Frisco",
       "state": "Texas",
       "state_abbr": "TX",
@@ -158,7 +209,7 @@
       "weighted_total_out_of_100": 82.4
     },
     {
-      "rank": 3,
+      "rank": 5,
       "area": "Madison / Huntsville",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -183,7 +234,7 @@
       "weighted_total_out_of_100": 81.3
     },
     {
-      "rank": 4,
+      "rank": 6,
       "area": "Cary",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -240,11 +291,11 @@
         "purchase_2041": "Open. Spring Hill remains a viable candidate (~$520K median fits budget) but not committed; best 2041 buy city to be chosen on full-model merit."
       },
       "tier": "Tier 1 - Serious Finalist",
-      "rank": 5,
+      "rank": 7,
       "weighted_total_out_of_100": 80
     },
     {
-      "rank": 6,
+      "rank": 8,
       "area": "Oviedo",
       "state": "Florida",
       "state_abbr": "FL",
@@ -269,7 +320,7 @@
       "weighted_total_out_of_100": 79.15
     },
     {
-      "rank": 7,
+      "rank": 9,
       "area": "St. Johns County",
       "state": "Florida",
       "state_abbr": "FL",
@@ -294,7 +345,7 @@
       "weighted_total_out_of_100": 77.75
     },
     {
-      "rank": 8,
+      "rank": 10,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -342,11 +393,11 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 9,
+      "rank": 11,
       "weighted_total_out_of_100": 77
     },
     {
-      "rank": 10,
+      "rank": 12,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -393,11 +444,11 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 11,
+      "rank": 13,
       "weighted_total_out_of_100": 75.4
     },
     {
-      "rank": 12,
+      "rank": 14,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -444,7 +495,7 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 13,
+      "rank": 15,
       "weighted_total_out_of_100": 74.9
     },
     {
@@ -471,7 +522,7 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 14,
+      "rank": 16,
       "weighted_total_out_of_100": 74.6
     },
     {
@@ -503,11 +554,11 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 15,
+      "rank": 17,
       "weighted_total_out_of_100": 74.55
     },
     {
-      "rank": 16,
+      "rank": 18,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -532,7 +583,7 @@
       "weighted_total_out_of_100": 74.55
     },
     {
-      "rank": 17,
+      "rank": 19,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -585,7 +636,7 @@
         "School strength is zone-specific"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 18,
+      "rank": 20,
       "weighted_total_out_of_100": 74.2
     },
     {
@@ -611,7 +662,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 19,
+      "rank": 21,
       "weighted_total_out_of_100": 73.95
     },
     {
@@ -643,11 +694,11 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 20,
+      "rank": 22,
       "weighted_total_out_of_100": 73.4
     },
     {
-      "rank": 21,
+      "rank": 23,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -672,7 +723,7 @@
       "weighted_total_out_of_100": 73.4
     },
     {
-      "rank": 22,
+      "rank": 24,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -725,11 +776,11 @@
         "AI/product depth shallower than Austin/Triangle/Atlanta"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 23,
+      "rank": 25,
       "weighted_total_out_of_100": 72.45
     },
     {
-      "rank": 24,
+      "rank": 26,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -776,11 +827,11 @@
         "Some areas flood-prone (inland); model insurance"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 25,
+      "rank": 27,
       "weighted_total_out_of_100": 70.25
     },
     {
-      "rank": 26,
+      "rank": 28,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -807,7 +858,7 @@
       "budget_flag": "Busts 2028 rental stretch cap"
     },
     {
-      "rank": 27,
+      "rank": 29,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -841,8 +892,8 @@
   ],
   "state_top_two": {
     "Texas": [
-      "Round Rock / Cedar Park",
-      "Plano / Frisco"
+      "Round Rock",
+      "Cedar Park"
     ],
     "Alabama": [
       "Madison / Huntsville",
@@ -875,11 +926,11 @@
   },
   "category_winners": {
     "best_overall": {
-      "winner": "Round Rock / Cedar Park",
+      "winner": "Round Rock",
       "runner_up": "Cary"
     },
     "best_ai_product_career_ceiling": {
-      "winner": "Round Rock / Cedar Park",
+      "winner": "Round Rock",
       "runner_up": "Cary"
     },
     "best_robotics_ai_hardware_ecosystem": {
@@ -892,19 +943,19 @@
     },
     "best_long_term_home_buying_fit": {
       "winner": "Madison / Huntsville",
-      "runner_up": "Round Rock / Cedar Park"
+      "runner_up": "Round Rock"
     },
     "best_no_income_tax_state_fit": {
-      "winner": "Round Rock / Cedar Park",
+      "winner": "Round Rock",
       "runner_up": "Oviedo"
     },
     "best_future_professor_path": {
       "winner": "Cary",
-      "runner_up": "Round Rock / Cedar Park"
+      "runner_up": "Round Rock"
     },
     "best_fitness_active_lifestyle_fit": {
       "winner": "Cary",
-      "runner_up": "Round Rock / Cedar Park"
+      "runner_up": "Round Rock"
     },
     "best_family_safe_practical_choice": {
       "winner": "Madison / Huntsville",
@@ -912,15 +963,17 @@
     }
   },
   "recommended_top_five": [
-    "Round Rock / Cedar Park",
+    "Round Rock",
+    "Cedar Park",
+    "Georgetown",
     "Plano / Frisco",
-    "Madison / Huntsville",
-    "Cary",
-    "Spring Hill (Summit / Page Zones, Williamson County)"
+    "Madison / Huntsville"
   ],
   "decision_tiers": {
     "tier_1_serious_finalists": [
-      "Round Rock / Cedar Park",
+      "Round Rock",
+      "Cedar Park",
+      "Georgetown",
       "Plano / Frisco",
       "Madison / Huntsville",
       "Cary",
