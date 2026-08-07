@@ -89,6 +89,38 @@ function rentFit(loc) {
   return { cls, label, dollar };
 }
 
+// In-radius private-school options for a location's expandable detail row.
+function psOptionsHtml(loc) {
+  const pso = loc.private_school_option || {};
+  const opts = pso.in_radius_options || [];
+  if (!opts.length) {
+    return '<p class="ps-none">No in-radius private-school options catalogued yet.</p>';
+  }
+  const items = opts
+    .map((o) => {
+      const tags = [];
+      if (o.niche_grade) tags.push(`<span class="ps-grade">Niche ${esc(o.niche_grade)}</span>`);
+      if (o.annual_tuition_usd) tags.push(`<span class="ps-fee">${esc(dollars(o.annual_tuition_usd))}/yr</span>`);
+      if (o.approx_distance_mi) tags.push(`<span class="ps-mi">${esc(o.approx_distance_mi)} mi</span>`);
+      if (o.football_program) tags.push('<span class="ps-fb">Football</span>');
+      if (o.robotics_program) tags.push('<span class="ps-rb">Robotics</span>');
+      tags.push(`<span class="${o.verified ? 'ps-ok' : 'ps-todo'}">${o.verified ? 'Verified' : 'Unverified'}</span>`);
+      const loc2 = o.location ? ` <span class="ps-loc">${esc(o.location)}</span>` : '';
+      return `<li><strong>${esc(o.name)}</strong>${loc2}<div class="ps-tags">${tags.join('')}</div></li>`;
+    })
+    .join('');
+  return `<ul class="ps-list">${items}</ul>`;
+}
+
+// A scenario is selectable only if its weights are fully defined
+// (sum to 100 and carry no placeholder __note).
+function scenarioUsable(s) {
+  const w = (s && s.weights) || {};
+  if ('__note' in w) return false;
+  const sum = Object.values(w).reduce((t, v) => t + (typeof v === 'number' ? v : 0), 0);
+  return Math.abs(sum - 100) < 0.001;
+}
+
 // --- markup generation ------------------------------------------------------
 
 function buildDashboard(data) {
@@ -176,19 +208,118 @@ function buildDashboard(data) {
     })
     .join('\n');
 
-  // Full ranking table
+  // Full ranking table (rows are re-sortable client-side by scenario)
   const rows = locations
     .map((loc) => {
       const t = tierMeta(loc.tier);
       const rf = rentFit(loc);
       const flag = loc.budget_flag ? `<div class="flag">${esc(loc.budget_flag)}</div>` : '';
-      return `            <tr><td>${esc(loc.rank)}</td><td><strong>${esc(loc.area)}</strong></td><td>${esc(
-        loc.state_abbr
-      )}</td><td><span class="tier ${t.cls}">${esc(t.label)}</span></td><td><span class="rentfit ${rf.cls}">${esc(
-        rf.label + rf.dollar
-      )}</span>${flag}</td><td>${esc(loc.notes)}</td></tr>`;
+      const total =
+        typeof loc.weighted_total_out_of_100 === 'number' ? loc.weighted_total_out_of_100.toFixed(2) : '';
+      const radius = (loc.private_school_option || {}).search_radius_miles || 20;
+      const main =
+        `            <tr class="js-row" data-area="${esc(loc.area)}"><td class="rank-cell"><button class="row-toggle" type="button" aria-expanded="false" aria-label="Show private-school options">&#9656;</button><span class="rank-val">${esc(
+          loc.rank
+        )}</span></td><td><strong>${esc(loc.area)}</strong></td><td>${esc(
+          loc.state_abbr
+        )}</td><td><span class="tier ${t.cls}">${esc(t.label)}</span></td><td class="score-cell">${esc(
+          total
+        )}</td><td><span class="rentfit ${rf.cls}">${esc(rf.label + rf.dollar)}</span>${flag}</td><td>${esc(
+          loc.notes
+        )}</td></tr>`;
+      const detail =
+        `            <tr class="detail-row" data-area="${esc(loc.area)}" hidden><td></td><td colspan="6"><div class="detail-box"><h4>Private-school options within ${esc(
+          radius
+        )} mi</h4>${psOptionsHtml(loc)}</div></td></tr>`;
+      return main + '\n' + detail;
     })
     .join('\n');
+
+  // Scoring scenarios (baseline + alternates) for the interactive toggle.
+  const scen = data.scoring_scenarios || {};
+  const scenarioList = [];
+  if (scen.default) scenarioList.push(scen.default);
+  (scen.alternates || []).forEach((a) => scenarioList.push(a));
+
+  const scenarioButtons = scenarioList
+    .map((s, i) => {
+      const usable = scenarioUsable(s);
+      const attrs = usable ? '' : ' disabled title="Scenario weights not yet defined"';
+      const cls = `scenario-btn${i === 0 ? ' active' : ''}${usable ? '' : ' is-disabled'}`;
+      return `        <button type="button" class="${cls}" data-scenario="${esc(s.id)}"${attrs}>${esc(
+        s.label
+      )}${usable ? '' : ' &middot; pending'}</button>`;
+    })
+    .join('\n');
+  const scenarioBar = scenarioList.length
+    ? `      <div class="scenario-toggle" role="group" aria-label="Scoring scenario">
+        <span class="scenario-label">Scoring scenario</span>
+${scenarioButtons}
+        <p class="scenario-note" id="scenario-note"></p>
+      </div>`
+    : '';
+
+  // Data payload the client script uses to recompute totals per scenario.
+  const matrixPayload = {
+    scenarios: scenarioList.map((s) => ({
+      id: s.id,
+      label: s.label,
+      basis: s.basis || '',
+      weights: s.weights || {},
+      usable: scenarioUsable(s),
+    })),
+    cities: locations.map((l) => ({
+      area: l.area,
+      state: l.state,
+      tier: l.tier,
+      scores: l.scores || {},
+      baseTotal: l.weighted_total_out_of_100,
+    })),
+  };
+
+  // Client script: recompute weighted totals per scenario, re-sort + renumber
+  // the ranking table, and toggle each row's private-school detail. Written as
+  // a plain string so the outer template literal does not interpolate it.
+  const clientScript =
+    '<script id="matrix-data" type="application/json">' +
+    JSON.stringify(matrixPayload) +
+    '</' + 'script>\n' +
+    '<script>\n' +
+    '(function(){\n' +
+    '  var M = JSON.parse(document.getElementById("matrix-data").textContent);\n' +
+    '  var table = document.querySelector("#ranking table");\n' +
+    '  if (!table || !table.tBodies.length) return;\n' +
+    '  var tbody = table.tBodies[0];\n' +
+    '  var noteEl = document.getElementById("scenario-note");\n' +
+    '  function median(arr){ if(!arr.length) return null; var a=arr.slice().sort(function(x,y){return x-y;}); var m=Math.floor(a.length/2); return a.length%2 ? a[m] : (a[m-1]+a[m])/2; }\n' +
+    '  // State medians for null private_school_access (never score a null as zero).\n' +
+    '  var byState={}, allPa=[];\n' +
+    '  M.cities.forEach(function(c){ var v=c.scores.private_school_access; if(typeof v==="number"){ (byState[c.state]=byState[c.state]||[]).push(v); allPa.push(v);} });\n' +
+    '  var stateMed={}; Object.keys(byState).forEach(function(s){ stateMed[s]=median(byState[s]); });\n' +
+    '  var overallMed = median(allPa);\n' +
+    '  function paFor(c){ var v=c.scores.private_school_access; if(typeof v==="number") return v; if(stateMed[c.state]!=null) return stateMed[c.state]; return overallMed!=null?overallMed:0; }\n' +
+    '  function computeTotal(c, weights){ var sum=0; for(var k in weights){ if(k==="__note") continue; var w=weights[k]; if(typeof w!=="number"||w===0) continue; var s=(k==="private_school_access")?paFor(c):c.scores[k]; if(typeof s!=="number") s=0; sum+=s*w; } return sum/10; }\n' +
+    '  function sel(area){ return tbody.querySelector(\'tr.detail-row[data-area="\'+area.replace(/"/g,\'\\\\"\')+\'"]\'); }\n' +
+    '  function pairs(){ var res=[]; Array.prototype.forEach.call(tbody.querySelectorAll("tr.js-row"), function(r){ res.push([r, sel(r.getAttribute("data-area"))]); }); return res; }\n' +
+    '  var baseId = M.scenarios.length ? M.scenarios[0].id : null;\n' +
+    '  function apply(id){\n' +
+    '    var scen=null; M.scenarios.forEach(function(s){ if(s.id===id) scen=s; });\n' +
+    '    if(!scen || !scen.usable) return;\n' +
+    '    var isBase = (id===baseId);\n' +
+    '    var tot={}; M.cities.forEach(function(c){ tot[c.area] = isBase ? c.baseTotal : computeTotal(c, scen.weights); });\n' +
+    '    var ordered = M.cities.map(function(c){ return c.area; }).sort(function(a,b){ return tot[b]-tot[a]; });\n' +
+    '    var rank={}; ordered.forEach(function(a,i){ rank[a]=i+1; });\n' +
+    '    var ps=pairs();\n' +
+    '    ps.forEach(function(p){ var area=p[0].getAttribute("data-area"); var sc=p[0].querySelector(".score-cell"); if(sc) sc.textContent=(tot[area]!=null?tot[area].toFixed(2):""); var rv=p[0].querySelector(".rank-val"); if(rv) rv.textContent=rank[area]; });\n' +
+    '    ps.sort(function(a,b){ return rank[a[0].getAttribute("data-area")] - rank[b[0].getAttribute("data-area")]; });\n' +
+    '    ps.forEach(function(p){ tbody.appendChild(p[0]); if(p[1]) tbody.appendChild(p[1]); });\n' +
+    '    if(noteEl) noteEl.textContent = isBase ? "" : ((scen.basis||"") + " Unbackfilled cities use their state median for private-school access (overall median where no state has data yet).");\n' +
+    '  }\n' +
+    '  var btns=document.querySelectorAll(".scenario-btn");\n' +
+    '  Array.prototype.forEach.call(btns, function(b){ b.addEventListener("click", function(){ if(b.disabled) return; Array.prototype.forEach.call(btns,function(x){x.classList.remove("active");}); b.classList.add("active"); apply(b.getAttribute("data-scenario")); }); });\n' +
+    '  tbody.addEventListener("click", function(e){ var t=e.target.closest(".row-toggle"); if(!t) return; var r=t.closest("tr.js-row"); var d=sel(r.getAttribute("data-area")); if(!d) return; if(d.hasAttribute("hidden")){ d.removeAttribute("hidden"); t.innerHTML="&#9662;"; t.setAttribute("aria-expanded","true"); } else { d.setAttribute("hidden",""); t.innerHTML="&#9656;"; t.setAttribute("aria-expanded","false"); } });\n' +
+    '})();\n' +
+    '</' + 'script>';
 
   // Category winners
   const categories = Object.entries(data.category_winners || {})
@@ -344,8 +475,9 @@ ${top5}
     <section id="ranking">
       <div class="section-title">
         <h2>Full ${locations.length}-area ranking</h2>
-        <p>Ordered for the actual decision model, not generic &ldquo;best places to live&rdquo; rankings.</p>
+        <p>Ordered for the actual decision model, not generic &ldquo;best places to live&rdquo; rankings. Switch scenarios to re-rank live; click a row to see private-school options.</p>
       </div>
+${scenarioBar}
       <div class="card table-card">
         <table>
           <thead>
@@ -354,6 +486,7 @@ ${top5}
               <th>Area</th>
               <th>State</th>
               <th>Tier</th>
+              <th>Score</th>
               <th>Rent fit</th>
               <th>Primary rationale</th>
             </tr>
@@ -418,7 +551,8 @@ ${recs}
   )} home-buying lens, and high school football treated as a nice-to-have rather than a hard requirement.
       Before making a final decision, validate current school zones, rental inventory, home prices, tax policy, and job-market conditions.
     </p>
-  </footer>`;
+  </footer>
+${clientScript}`;
 }
 
 function buildFullPage(data, styles) {
