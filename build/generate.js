@@ -313,7 +313,7 @@ ${scenarioButtons}
     '    ps.forEach(function(p){ var area=p[0].getAttribute("data-area"); var sc=p[0].querySelector(".score-cell"); if(sc) sc.textContent=(tot[area]!=null?tot[area].toFixed(2):""); var rv=p[0].querySelector(".rank-val"); if(rv) rv.textContent=rank[area]; });\n' +
     '    ps.sort(function(a,b){ return rank[a[0].getAttribute("data-area")] - rank[b[0].getAttribute("data-area")]; });\n' +
     '    ps.forEach(function(p){ tbody.appendChild(p[0]); if(p[1]) tbody.appendChild(p[1]); });\n' +
-    '    if(noteEl) noteEl.textContent = isBase ? "" : ((scen.basis||"") + " Unbackfilled cities use their state median for private-school access (overall median where no state has data yet).");\n' +
+    '    if(noteEl){ var usesPriv = scen.weights && typeof scen.weights.private_school_access==="number" && scen.weights.private_school_access>0; var hasNull = M.cities.some(function(c){ return c.scores.private_school_access==null; }); var extra = (usesPriv && hasNull) ? " Unbackfilled cities use their state median for private-school access (overall median where no state has data yet)." : ""; noteEl.textContent = isBase ? "" : ((scen.basis||"") + extra); }\n' +
     '  }\n' +
     '  var btns=document.querySelectorAll(".scenario-btn");\n' +
     '  Array.prototype.forEach.call(btns, function(b){ b.addEventListener("click", function(){ if(b.disabled) return; Array.prototype.forEach.call(btns,function(x){x.classList.remove("active");}); b.classList.add("active"); apply(b.getAttribute("data-scenario")); }); });\n' +

@@ -92,9 +92,17 @@
       {
         "id": "remote_career",
         "label": "Remote career scenario",
+        "basis": "Assumes fully remote work: local AI/tech job-market proximity is down-weighted (25 -> 15) in favor of the home base - maker/robotics and fitness community, rental home quality, and university/teaching proximity.",
         "weights": {
           "ai_tech_pm_market": 15,
-          "__note": "retain existing definition"
+          "school_quality": 20,
+          "housing_affordability_2041": 20,
+          "rental_feasibility_2028": 14,
+          "state_tax_burden": 10,
+          "aacsb_university_proximity": 10,
+          "robotics_fitness_startup_fit": 9,
+          "hs_football_culture": 2,
+          "private_school_access": 0
         }
       }
     ]
@@ -210,7 +218,8 @@
         "Elementary zone quality varies; verify exact RRISD/LISD assignment"
       ],
       "weighted_total_out_of_100": 88.6,
-      "weighted_total_private_scenario": 88.65
+      "weighted_total_private_scenario": 88.65,
+      "weighted_total_remote_scenario": 87.95
     },
     {
       "rank": 2,
@@ -276,7 +285,8 @@
         "Townhome stock is limited; skews single-family"
       ],
       "weighted_total_out_of_100": 87.0,
-      "weighted_total_private_scenario": 85.75
+      "weighted_total_private_scenario": 85.75,
+      "weighted_total_remote_scenario": 86.05
     },
     {
       "rank": 3,
@@ -344,7 +354,8 @@
         "Southwestern University is small/teaching-focused; verify fit vs. UT for professor pathway"
       ],
       "weighted_total_out_of_100": 83.0,
-      "weighted_total_private_scenario": 84.45
+      "weighted_total_private_scenario": 84.45,
+      "weighted_total_remote_scenario": 83.05
     },
     {
       "rank": 4,
@@ -499,7 +510,8 @@
         "All BTR options exceed cap on total monthly price; Corban Row clears only on base rent, and 2028 escalation breaks it either way"
       ],
       "weighted_total_out_of_100": 82.65,
-      "weighted_total_private_scenario": 82.65
+      "weighted_total_private_scenario": 82.65,
+      "weighted_total_remote_scenario": 82.75
     },
     {
       "rank": 5,
@@ -573,7 +585,8 @@
         "Rental target could be difficult in preferred school zones"
       ],
       "weighted_total_out_of_100": 82.4,
-      "weighted_total_private_scenario": 81.4
+      "weighted_total_private_scenario": 81.4,
+      "weighted_total_remote_scenario": 81.0
     },
     {
       "rank": 6,
@@ -637,7 +650,8 @@
         "University teaching options are more concentrated than in larger metros"
       ],
       "weighted_total_out_of_100": 81.3,
-      "weighted_total_private_scenario": 81.3
+      "weighted_total_private_scenario": 81.3,
+      "weighted_total_remote_scenario": 82.6
     },
     {
       "rank": 7,
@@ -706,7 +720,8 @@
         "State tax is less favorable than TX/FL/TN"
       ],
       "weighted_total_out_of_100": 80.7,
-      "weighted_total_private_scenario": 79.7
+      "weighted_total_private_scenario": 79.7,
+      "weighted_total_remote_scenario": 80.3
     },
     {
       "area": "Spring Hill (Summit / Page Zones, Williamson County)",
@@ -789,7 +804,8 @@
       "tier": "Tier 1 - Serious Finalist",
       "rank": 8,
       "weighted_total_out_of_100": 80,
-      "weighted_total_private_scenario": 79.0
+      "weighted_total_private_scenario": 79.0,
+      "weighted_total_remote_scenario": 80.3
     },
     {
       "rank": 9,
@@ -854,7 +870,8 @@
         "School-zone and flood/insurance diligence are essential"
       ],
       "weighted_total_out_of_100": 79.15,
-      "weighted_total_private_scenario": 79.15
+      "weighted_total_private_scenario": 79.15,
+      "weighted_total_remote_scenario": 79.25
     },
     {
       "rank": 10,
@@ -915,7 +932,8 @@
         "Rental affordability near top schools may be tight"
       ],
       "weighted_total_out_of_100": 77.75,
-      "weighted_total_private_scenario": 74.75
+      "weighted_total_private_scenario": 74.75,
+      "weighted_total_remote_scenario": 78.35
     },
     {
       "rank": 11,
@@ -988,7 +1006,8 @@
         "Rental target may require careful submarket selection"
       ],
       "weighted_total_out_of_100": 77.5,
-      "weighted_total_private_scenario": 77.5
+      "weighted_total_private_scenario": 77.5,
+      "weighted_total_remote_scenario": 77.0
     },
     {
       "area": "Celina",
@@ -1053,7 +1072,8 @@
       "tier": "Tier 2 - Strong Trade-Off",
       "rank": 12,
       "weighted_total_out_of_100": 77,
-      "weighted_total_private_scenario": 80.0
+      "weighted_total_private_scenario": 80.0,
+      "weighted_total_remote_scenario": 75.9
     },
     {
       "rank": 13,
@@ -1125,7 +1145,8 @@
         "AI roles may require Charlotte or remote-first strategy"
       ],
       "weighted_total_out_of_100": 76.3,
-      "weighted_total_private_scenario": 75.3
+      "weighted_total_private_scenario": 75.3,
+      "weighted_total_remote_scenario": 76.6
     },
     {
       "area": "Clermont",
@@ -1187,7 +1208,8 @@
       "tier": "Tier 3 - Watch List",
       "rank": 14,
       "weighted_total_out_of_100": 75.4,
-      "weighted_total_private_scenario": 78.4
+      "weighted_total_private_scenario": 78.4,
+      "weighted_total_remote_scenario": 75.0
     },
     {
       "rank": 15,
@@ -1264,7 +1286,8 @@
         "May over-index on lifestyle while weakening savings goals"
       ],
       "weighted_total_out_of_100": 75.35,
-      "weighted_total_private_scenario": 74.35
+      "weighted_total_private_scenario": 74.35,
+      "weighted_total_remote_scenario": 74.55
     },
     {
       "area": "Lake Mary",
@@ -1330,7 +1353,8 @@
       "tier": "Tier 3 - Watch List",
       "rank": 16,
       "weighted_total_out_of_100": 74.9,
-      "weighted_total_private_scenario": 76.9
+      "weighted_total_private_scenario": 76.9,
+      "weighted_total_remote_scenario": 74.6
     },
     {
       "area": "Lakeland",
@@ -1394,7 +1418,8 @@
       "tier": "Tier 3 - Watch List",
       "rank": 17,
       "weighted_total_out_of_100": 74.6,
-      "weighted_total_private_scenario": 78.6
+      "weighted_total_private_scenario": 78.6,
+      "weighted_total_remote_scenario": 75.1
     },
     {
       "area": "Gallatin",
@@ -1463,7 +1488,8 @@
       "tier": "Tier 3 - Watch List",
       "rank": 18,
       "weighted_total_out_of_100": 74.55,
-      "weighted_total_private_scenario": 75.55
+      "weighted_total_private_scenario": 75.55,
+      "weighted_total_remote_scenario": 75.55
     },
     {
       "rank": 19,
@@ -1533,7 +1559,8 @@
         "Long-term professional network may be narrower"
       ],
       "weighted_total_out_of_100": 74.55,
-      "weighted_total_private_scenario": 72.55
+      "weighted_total_private_scenario": 72.55,
+      "weighted_total_remote_scenario": 76.55
     },
     {
       "rank": 20,
@@ -1605,7 +1632,8 @@
         "Limited compared with Nashville/Austin/Triangle"
       ],
       "weighted_total_out_of_100": 74.45,
-      "weighted_total_private_scenario": 74.45
+      "weighted_total_private_scenario": 74.45,
+      "weighted_total_remote_scenario": 76.35
     },
     {
       "area": "Hendersonville",
@@ -1672,7 +1700,8 @@
       "tier": "Tier 4 - Backup Only",
       "rank": 21,
       "weighted_total_out_of_100": 74.2,
-      "weighted_total_private_scenario": 74.2
+      "weighted_total_private_scenario": 74.2,
+      "weighted_total_remote_scenario": 74.2
     },
     {
       "area": "Lake Nona",
@@ -1737,7 +1766,8 @@
       "tier": "Tier 4 - Backup Only",
       "rank": 22,
       "weighted_total_out_of_100": 73.95,
-      "weighted_total_private_scenario": 72.95
+      "weighted_total_private_scenario": 72.95,
+      "weighted_total_remote_scenario": 74.35
     },
     {
       "area": "Mount Juliet",
@@ -1802,7 +1832,8 @@
       "tier": "Tier 4 - Backup Only",
       "rank": 23,
       "weighted_total_out_of_100": 73.4,
-      "weighted_total_private_scenario": 73.4
+      "weighted_total_private_scenario": 73.4,
+      "weighted_total_remote_scenario": 73.6
     },
     {
       "rank": 24,
@@ -1872,7 +1903,8 @@
         "State tax is not a major advantage"
       ],
       "weighted_total_out_of_100": 73.4,
-      "weighted_total_private_scenario": 75.4
+      "weighted_total_private_scenario": 75.4,
+      "weighted_total_remote_scenario": 75.1
     },
     {
       "rank": 25,
@@ -1943,7 +1975,8 @@
         "Less university density than Raleigh-Durham"
       ],
       "weighted_total_out_of_100": 72.9,
-      "weighted_total_private_scenario": 71.9
+      "weighted_total_private_scenario": 71.9,
+      "weighted_total_remote_scenario": 72.7
     },
     {
       "area": "Tampa",
@@ -2019,7 +2052,8 @@
       "tier": "Tier 4 - Backup Only",
       "rank": 26,
       "weighted_total_out_of_100": 72.45,
-      "weighted_total_private_scenario": 76.45
+      "weighted_total_private_scenario": 76.45,
+      "weighted_total_remote_scenario": 72.85
     },
     {
       "rank": 27,
@@ -2094,7 +2128,8 @@
         "Tax burden and cultural fit need validation"
       ],
       "weighted_total_out_of_100": 70.7,
-      "weighted_total_private_scenario": 71.7
+      "weighted_total_private_scenario": 71.7,
+      "weighted_total_remote_scenario": 71.2
     },
     {
       "area": "Davenport",
@@ -2160,7 +2195,8 @@
       "tier": "Tier 4 - Backup Only",
       "rank": 28,
       "weighted_total_out_of_100": 70.25,
-      "weighted_total_private_scenario": 75.25
+      "weighted_total_private_scenario": 75.25,
+      "weighted_total_remote_scenario": 68.35
     },
     {
       "rank": 29,
@@ -2226,7 +2262,8 @@
         "AI/PM score of 8.5 is PROVISIONAL - Atlanta payments/Transaction Alley cluster assumed, NOT verified"
       ],
       "weighted_total_out_of_100": 67.4,
-      "weighted_total_private_scenario": 70.4
+      "weighted_total_private_scenario": 70.4,
+      "weighted_total_remote_scenario": 66.1
     },
     {
       "rank": 30,
@@ -2309,7 +2346,8 @@
       "weighted_total_out_of_100": 65,
       "est_2028_rent": 3400,
       "budget_flag": "Busts 2028 rental stretch cap",
-      "weighted_total_private_scenario": 63.0
+      "weighted_total_private_scenario": 63.0,
+      "weighted_total_remote_scenario": 62.8
     },
     {
       "rank": 31,
@@ -2389,7 +2427,8 @@
       "best_buy_submarket": "Spring Hill / Thompson's Station (to fit budget)",
       "rent_buy_same_area": false,
       "budget_flag": "Busts 2028 rental ceiling and 2041 buy budget",
-      "weighted_total_private_scenario": 61.8
+      "weighted_total_private_scenario": 61.8,
+      "weighted_total_remote_scenario": 60.5
     }
   ],
   "state_top_two": {
