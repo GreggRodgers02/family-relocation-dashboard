@@ -56,6 +56,49 @@
     },
     "weighted_total_formula": "sum(score_1_to_10 * criterion_weight_percent) / 10"
   },
+  "scoring_scenarios": {
+    "default": {
+      "id": "baseline",
+      "label": "Baseline (public school path)",
+      "weights": {
+        "ai_tech_pm_market": 25,
+        "school_quality": 20,
+        "housing_affordability_2041": 20,
+        "rental_feasibility_2028": 12,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 8,
+        "robotics_fitness_startup_fit": 3,
+        "hs_football_culture": 2,
+        "private_school_access": 0
+      }
+    },
+    "alternates": [
+      {
+        "id": "private_school",
+        "label": "Private school scenario (income-contingent)",
+        "basis": "Assumes household income supports private tuition at enrollment. Public school quality zeroed as a direct substitute.",
+        "weights": {
+          "ai_tech_pm_market": 25,
+          "school_quality": 0,
+          "housing_affordability_2041": 20,
+          "rental_feasibility_2028": 12,
+          "state_tax_burden": 10,
+          "aacsb_university_proximity": 8,
+          "robotics_fitness_startup_fit": 3,
+          "hs_football_culture": 2,
+          "private_school_access": 20
+        }
+      },
+      {
+        "id": "remote_career",
+        "label": "Remote career scenario",
+        "weights": {
+          "ai_tech_pm_market": 15,
+          "__note": "retain existing definition"
+        }
+      }
+    ]
+  },
   "criteria": [
     {
       "id": "ai_tech_pm_market",
@@ -122,7 +165,17 @@
         "state_tax_burden": 10.0,
         "aacsb_university_proximity": 9.5,
         "robotics_fitness_startup_fit": 9.0,
-        "hs_football_culture": 8.0
+        "hs_football_culture": 8.0,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Best overall model-consistent fit. Austin AI/product access via I-35 and the Domain, Dell HQ, UT Austin adjacency, no state income tax, strong Round Rock ISD schools, and the most 2041 budget cushion of the three Williamson County options (median home ~$370K early 2026, roughly $120K+ below Cedar Park). Rental phase sits well under the ~$2,300 3BR townhome cap. Confirm specific elementary zone (RRISD vs. Leander ISD pockets).",
       "risks": [
@@ -147,7 +200,17 @@
         "state_tax_burden": 10.0,
         "aacsb_university_proximity": 9.5,
         "robotics_fitness_startup_fit": 9.0,
-        "hs_football_culture": 8.5
+        "hs_football_culture": 8.5,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "The school-max sibling to Round Rock. Fully in Leander ISD (Niche A+, ranked #2 in Austin region) and marginally closer to the Lakeline/183 hardware/tech corridor, a mild plus for AI-hardware and robotics interest. Trade-off is price: median home ~$496-520K early 2026, ~$120K+ above Round Rock, compressing 2041 budget headroom. LISD district TEA grade is misleading due to rapid-growth strain; individual campus quality varies widely, so zone precision is essential.",
       "risks": [
@@ -172,7 +235,17 @@
         "state_tax_burden": 10.0,
         "aacsb_university_proximity": 9.0,
         "robotics_fitness_startup_fit": 8.0,
-        "hs_football_culture": 8.0
+        "hs_football_culture": 8.0,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "The more affordable, further-north Williamson County option with the most new-construction townhome inventory and builder incentives (median home ~$405-415K, balanced-to-buyer market, ~6.3 months supply early 2026). Southwestern University (AACSB) in town plus UT Austin access. Key caveat: schools are heavily zone-dependent. Georgetown ISD rates weak overall (568th of 961 TX districts, 2-star SchoolDigger); the strong elementary zones are the west-side pockets zoned to Leander ISD or Liberty Hill ISD (e.g. Rancho Sienna Elementary), which carry a price premium. Adds ~15-20 min commute vs. Round Rock toward the Austin tech core.",
       "risks": [
@@ -185,6 +258,161 @@
     },
     {
       "rank": 4,
+      "area": "Concord / Northwest Cabarrus",
+      "state": "North Carolina",
+      "state_abbr": "NC",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "Fintech-PM career fit, motorsports engineering cluster, best Charlotte-metro 2041 affordability",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 9.0,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 9.0,
+        "hs_football_culture": 7.5,
+        "private_school_access": 8.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Cannon School",
+            "location": "5801 Poplar Tent Rd, Concord, NC 28027",
+            "grades": "JrK-12",
+            "approx_distance_mi": 5,
+            "annual_tuition_usd": 29300,
+            "enrollment": 1046,
+            "student_teacher_ratio": "11:1",
+            "niche_grade": "A+",
+            "avg_sat": 1300,
+            "avg_act": 30,
+            "acceptance_rate_pct": 25,
+            "football_program": true,
+            "athletics_conference": "NCISAA",
+            "robotics_program": true,
+            "notes": "Top 100 at VEX World Championship out of 32,000+ teams. 65-acre campus on Poplar Tent Rd, inside the Cox Mill residential corridor - same target buy area, no commute compromise. Founded 1969 as Cabarrus Academy, a segregation academy; nonsectarian and coeducational today.",
+            "verified": true
+          },
+          {
+            "name": "Covenant Classical School",
+            "location": "Concord, NC",
+            "verified": false
+          },
+          {
+            "name": "Concord Academy",
+            "location": "Concord, NC",
+            "niche_grade": "B+",
+            "enrollment": 785,
+            "verified": false
+          },
+          {
+            "name": "Northside Christian Academy",
+            "location": "Charlotte, NC",
+            "approx_distance_mi": 15,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [
+          {
+            "name": "Providence Day School",
+            "approx_distance_mi": 30,
+            "annual_tuition_usd": 34430,
+            "niche_grade": "A+",
+            "excluded_reason": "Beyond 20-mile radius; not commute-viable from Concord"
+          },
+          {
+            "name": "Charlotte Latin School",
+            "approx_distance_mi": 25,
+            "excluded_reason": "Beyond 20-mile radius"
+          }
+        ],
+        "assessment": "Cannon School is an A+ anchor inside the target residential corridor, making Concord scenario-neutral: public (Cox Mill, 8.5) and private (Cannon, 8.5) score identically. The city does not require the private-school bet to be made correctly.",
+        "verified": true
+      },
+      "notes": "Charlotte is the #2 US banking center with ~82K finance/insurance workers and ~23K in fintech-specific roles. 2026 additions: Sumitomo Mitsui (up to 2,000 jobs), Citigroup Technology (510 jobs), Coinbase, JPMorgan, Schwab. Addressable sub-markets: Uptown core banking, South End fintech (AvidXchange, LendingTree, Passport, Brighthouse), Ballantyne/Fort Mill wealth platforms (LPL Financial). AI/PM score of 8.5 reflects Gregg's fintech PM background, not raw market size. Best 2041 purchase value in metro: median sold price $363K (2026) projects to ~$526K at 2.5%; Cox Mill Elementary zone averages $422,937 and projects to ~$613K, leaving ~$200K headroom under budget. Mechatronics cluster: GM Charlotte Technical Center (187+ staff, F1 program hiring), Hendrick Motorsports Technical Solutions (160K sqft advanced manufacturing HQ), NASCAR R&D Center, RFK Racing, Haas F1 in Kannapolis. UNC Charlotte Belk College (AACSB) ~15 min via I-85.",
+      "rental_phase_findings": {
+        "verified_communities": [
+          {
+            "name": "Corban Row",
+            "address": "2925 Concord Pkwy S",
+            "beds": 3,
+            "base_rent_usd": 2295,
+            "total_monthly_usd": 2475,
+            "mandatory_fees_usd": 180,
+            "type": "purpose-built BTR",
+            "operator": "Greystar",
+            "opened": "Summer 2026",
+            "concession": "1.5 months free base rent",
+            "school_zone_verified": false
+          },
+          {
+            "name": "The Wayford at Concord",
+            "address": "525 Wayforth Rd NW",
+            "beds": 3,
+            "total_monthly_usd": 2475,
+            "type": "purpose-built BTR",
+            "features": "private garages, back patios, no shared floors",
+            "elementary_zone": "Carl A. Furr (Niche B, #15 in Cabarrus)",
+            "school_zone_verified": true
+          },
+          {
+            "name": "Concord View Townhomes",
+            "beds": 3,
+            "total_monthly_usd": 2354,
+            "type": "BTR",
+            "concession": "1 month free",
+            "school_zone_verified": false
+          }
+        ],
+        "disqualified": [
+          {
+            "name": "Redwood Concord / Redwood Kannapolis Parkway / Redwood Kannapolis Davidson",
+            "reason": "2BR only across all three Cabarrus neighborhoods - no 3BR product exists"
+          }
+        ],
+        "scattered_site_sfh_in_cox_mill_zone": [
+          {
+            "address": "5857 Birchfield Ln NW",
+            "beds": 4,
+            "baths": 2.5,
+            "sqft": 2027,
+            "rent_usd": 2260
+          },
+          {
+            "address": "3664 Stonefield St SW",
+            "beds": 3,
+            "baths": 2.5,
+            "sqft": 1472,
+            "rent_usd": 2055
+          },
+          {
+            "address": "3651 Stonefield St SW",
+            "beds": 4,
+            "baths": 3,
+            "sqft": 1730,
+            "rent_usd": 2199
+          }
+        ],
+        "note": "SFH inventory in the Cox Mill zone clears the cap but is individually owned, not professionally managed. This is the tradeoff that lifted rental_feasibility from 7.0 to 8.5."
+      },
+      "risks": [
+        "SCORE VOLATILITY: moved 75.1 to 82.65 in a single session; three inputs came from user-supplied information rather than independent verification. Highest-variance entry in the matrix.",
+        "AI/PM market is domain-narrow - strong for fintech, thin for consumer product or AI research if career direction shifts",
+        "Corban Row elementary zone UNVERIFIED - located on Concord Pkwy S, outside the NW corridor where A-rated schools sit",
+        "Wayford at Concord is zoned to Carl A. Furr Elementary (B), NOT Cox Mill",
+        "ZONE TRAP: listings advertising 'Cox Mill High' may be zoned to W.R. Odell Elementary. Elementary is the only zone that matters for the 2028 rental phase (child age 0-2).",
+        "Concord city-wide CrimeGrade is C- (34th percentile); NW/W Concord materially better than central. Corban Row sub-zone unverified.",
+        "All BTR options exceed cap on total monthly price; Corban Row clears only on base rent, and 2028 escalation breaks it either way"
+      ],
+      "weighted_total_out_of_100": 82.65,
+      "weighted_total_private_scenario": 82.65
+    },
+    {
+      "rank": 5,
       "area": "Plano / Frisco",
       "state": "Texas",
       "state_abbr": "TX",
@@ -198,7 +426,17 @@
         "state_tax_burden": 10,
         "aacsb_university_proximity": 8,
         "robotics_fitness_startup_fit": 8,
-        "hs_football_culture": 9.5
+        "hs_football_culture": 9.5,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Strong DFW tech market, elite schools, strong family profile, high school football culture, and no state income tax, but cost pressure is significant.",
       "risks": [
@@ -209,7 +447,7 @@
       "weighted_total_out_of_100": 82.4
     },
     {
-      "rank": 5,
+      "rank": 6,
       "area": "Madison / Huntsville",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -223,7 +461,17 @@
         "state_tax_burden": 6.5,
         "aacsb_university_proximity": 7.5,
         "robotics_fitness_startup_fit": 9.5,
-        "hs_football_culture": 8
+        "hs_football_culture": 8,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Most underrated value pick. Strong robotics, aerospace, defense, engineering, affordability, schools, and long-term stability without premium-suburb pricing.",
       "risks": [
@@ -234,7 +482,7 @@
       "weighted_total_out_of_100": 81.3
     },
     {
-      "rank": 6,
+      "rank": 7,
       "area": "Cary",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -248,7 +496,17 @@
         "state_tax_burden": 6,
         "aacsb_university_proximity": 10,
         "robotics_fitness_startup_fit": 9,
-        "hs_football_culture": 6.5
+        "hs_football_culture": 6.5,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Best academic and research ecosystem fit due to the Triangle's proximity to NC State, Duke, UNC, RTP, AI research, and strong family infrastructure.",
       "risks": [
@@ -277,7 +535,17 @@
         "state_tax_burden": 10,
         "aacsb_university_proximity": 7,
         "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 8
+        "hs_football_culture": 8,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Williamson-County side of Spring Hill, zoned to top-rated WCS schools (Summit High #23 in TN, Fred J. Page High #12 in TN; Page is ~9-12 miles / 15-20 min from NE Spring Hill). CONFIRMED rental base: currently renting an apartment here (~$1,800/mo) with plans for a professionally managed 3BR townhome around 2028. Live market verified June 2026: managed 3BR townhomes (Chapman's Retreat, Villas at Port Royal, Harvest Point, Somerset Springs) run roughly $1,779-$2,995, avg 3BR ~$2,066, so a ~$2,300 target is comfortably mid-range. Median home value ~$495K-$525K (Feb-Apr 2026); at 2-3% appreciation, ~$700K-$810K by 2041, well under the 2041 budget. Keeps Franklin's strengths (elite WCS schools, no income tax, Nashville access, football) while fixing Franklin's affordability weakness. GM/Ultium EV-battery corridor adds a light manufacturing/maker angle.",
       "risks": [
@@ -291,11 +559,11 @@
         "purchase_2041": "Open. Spring Hill remains a viable candidate (~$520K median fits budget) but not committed; best 2041 buy city to be chosen on full-model merit."
       },
       "tier": "Tier 1 - Serious Finalist",
-      "rank": 7,
+      "rank": 8,
       "weighted_total_out_of_100": 80
     },
     {
-      "rank": 8,
+      "rank": 9,
       "area": "Oviedo",
       "state": "Florida",
       "state_abbr": "FL",
@@ -309,7 +577,17 @@
         "state_tax_burden": 10,
         "aacsb_university_proximity": 8,
         "robotics_fitness_startup_fit": 8,
-        "hs_football_culture": 7
+        "hs_football_culture": 7,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Best Florida fit due to UCF/Orlando tech, simulation, defense-adjacent AI, no income tax, and balanced family affordability.",
       "risks": [
@@ -320,7 +598,7 @@
       "weighted_total_out_of_100": 79.15
     },
     {
-      "rank": 9,
+      "rank": 10,
       "area": "St. Johns County",
       "state": "Florida",
       "state_abbr": "FL",
@@ -334,7 +612,17 @@
         "state_tax_burden": 10,
         "aacsb_university_proximity": 6.5,
         "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 8
+        "hs_football_culture": 8,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Excellent school reputation and no income tax, but weaker direct AI/product market than Orlando, Austin, DFW, Atlanta, or the Triangle.",
       "risks": [
@@ -345,7 +633,7 @@
       "weighted_total_out_of_100": 77.75
     },
     {
-      "rank": 10,
+      "rank": 11,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -359,7 +647,17 @@
         "state_tax_burden": 6,
         "aacsb_university_proximity": 8.5,
         "robotics_fitness_startup_fit": 8.5,
-        "hs_football_culture": 8.5
+        "hs_football_culture": 8.5,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Strong Georgia compromise: Atlanta tech access, strong Gwinnett schools, Curiosity Lab/robotics angle, and better affordability discipline than Alpharetta/Johns Creek.",
       "risks": [
@@ -383,7 +681,17 @@
         "state_tax_burden": 10,
         "aacsb_university_proximity": 8,
         "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 9.5
+        "hs_football_culture": 9.5,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Fast-growing Collin County exurb north of Frisco. No state income tax, DFW AI/tech market access, strong football culture (G.A. Moore legacy), and better 2041 purchase affordability than Plano/Frisco. School quality (Celina ISD, Niche A-, #161 in TX) and 2028 rental costs (~$2,650 median) are the primary weaknesses against the model.",
       "risks": [
@@ -393,11 +701,11 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 11,
+      "rank": 12,
       "weighted_total_out_of_100": 77
     },
     {
-      "rank": 12,
+      "rank": 13,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -411,7 +719,17 @@
         "state_tax_burden": 5.5,
         "aacsb_university_proximity": 7.5,
         "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 8
+        "hs_football_culture": 8,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Excellent schools and Charlotte access with a strong family value proposition, but weaker direct AI market and less favorable tax profile than no-income-tax states.",
       "risks": [
@@ -434,7 +752,17 @@
         "state_tax_burden": 10,
         "aacsb_university_proximity": 6,
         "robotics_fitness_startup_fit": 7.5,
-        "hs_football_culture": 6
+        "hs_football_culture": 6,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "West-Orlando exurb with strong affordability (~$450K median, flat growth) and a national endurance-sports/fitness scene (National Training Center) fitting HYROX interest. Lake County schools are mediocre district-wide (~6/10); best options are charters (Imagine South Lake 8/10) and select zones. AI/tech market SET to Oviedo/I-4-corridor parity per explicit user instruction; unmodified data-driven score was 71.7 (AI 6.0). Best suited as a 2028 rental/park-adjacent option, not a purchase-phase or career anchor.",
       "risks": [
@@ -444,11 +772,11 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 13,
+      "rank": 14,
       "weighted_total_out_of_100": 75.4
     },
     {
-      "rank": 14,
+      "rank": 15,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -462,7 +790,17 @@
         "state_tax_burden": 6,
         "aacsb_university_proximity": 8.5,
         "robotics_fitness_startup_fit": 8,
-        "hs_football_culture": 8.5
+        "hs_football_culture": 8.5,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Elite Atlanta suburb with strong tech access and schools. Excellent quality but too expensive to be the most practical Georgia answer.",
       "risks": [
@@ -485,7 +823,17 @@
         "state_tax_burden": 10,
         "aacsb_university_proximity": 7,
         "robotics_fitness_startup_fit": 7.5,
-        "hs_football_culture": 7.5
+        "hs_football_culture": 7.5,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Strong Seminole County district with A-rated Lake Mary High feeders (target Heathrow/Crystal Lake zones), a real Heathrow corporate/tech corridor, no income tax, and lowest city millage in Seminole County. Strongest Florida purchase-phase candidate behind Oviedo; essentially ties St. Johns County. AI/tech market held at Oviedo/I-4-corridor parity per user convention.",
       "risks": [
@@ -495,7 +843,7 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 15,
+      "rank": 16,
       "weighted_total_out_of_100": 74.9
     },
     {
@@ -512,7 +860,17 @@
         "state_tax_burden": 10,
         "aacsb_university_proximity": 6.5,
         "robotics_fitness_startup_fit": 6.5,
-        "hs_football_culture": 7
+        "hs_football_culture": 7,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Re-scored as a TAMPA satellite (~35 mi) with secondary Orlando reach (~55 mi) on the I-4 corridor, reversing the earlier Orlando-only elimination. Cheapest candidate (median ~$305K-$455K by zone) and most rental-affordable in the FL set (~$1,760 median). School path is zone/charter-dependent: McKeel Academy charters (A-rated tech HS with robotics) and South Lakeland zones reach 7/10+, though Polk average is ~4/10. Florida Polytechnic (STEM) and Florida Southern (AACSB business) in-town strengthen the teaching/robotics angle beyond what the weights capture. AI scored 6.5 (below parity) because local on-site PM employment is thin; value is the Tampa commute.",
       "risks": [
@@ -522,7 +880,7 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 16,
+      "rank": 17,
       "weighted_total_out_of_100": 74.6
     },
     {
@@ -545,7 +903,17 @@
         "aacsb_university_proximity": 6.5,
         "spouse_pref": 4,
         "robotics_fitness_startup_fit": 6.5,
-        "hs_football_culture": 8
+        "hs_football_culture": 8,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Most affordable Nashville-metro option of the four. Professionally managed 3BR townhomes ~$1,850-2,150, well under the new ceiling. Median ~$480-520K (significant new construction) projects to $646-810K by 2041, comfortably in budget. Sumner County seat with a historic downtown square. Furthest out with the weakest job proximity, but best pure affordability. No state income tax.",
       "risks": [
@@ -554,11 +922,11 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 17,
+      "rank": 18,
       "weighted_total_out_of_100": 74.55
     },
     {
-      "rank": 18,
+      "rank": 19,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -572,7 +940,17 @@
         "state_tax_burden": 6.5,
         "aacsb_university_proximity": 8.5,
         "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 9
+        "hs_football_culture": 9,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Great affordability, strong college-town identity, Auburn University proximity, and football culture. Weaker AI Product career market.",
       "risks": [
@@ -583,7 +961,7 @@
       "weighted_total_out_of_100": 74.55
     },
     {
-      "rank": 19,
+      "rank": 20,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -597,7 +975,17 @@
         "state_tax_burden": 10,
         "aacsb_university_proximity": 8,
         "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 8
+        "hs_football_culture": 8,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Strong schools, no state income tax, and UT Knoxville adjacency, but weaker AI/product market and relatively high cost for its metro.",
       "risks": [
@@ -627,7 +1015,17 @@
         "aacsb_university_proximity": 7,
         "spouse_pref": 4.5,
         "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 8
+        "hs_football_culture": 8,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Sumner County. Professionally managed 3BR townhomes ~$2,000-2,350, within the ceiling. Median ~$595-597K projects to $801-927K by 2041, fits the budget. Historically more home per dollar than Franklin with lower Sumner County property tax than Davidson. Old Hickory Lake lifestyle. Note: northeast of the city, add 20-30 min if work is Cool Springs / south Nashville. Merrol Hyde Magnet is a standout.",
       "risks": [
@@ -636,7 +1034,7 @@
         "School strength is zone-specific"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 20,
+      "rank": 21,
       "weighted_total_out_of_100": 74.2
     },
     {
@@ -652,7 +1050,17 @@
         "state_tax_burden": 10,
         "aacsb_university_proximity": 7,
         "robotics_fitness_startup_fit": 9,
-        "hs_football_culture": 6.5
+        "hs_football_culture": 6.5,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Elite zoned publics (Laureate Park Elementary 10/10, Lake Nona Middle 10/10, Lake Nona High A Niche) with no charter-lottery dependency. Best lifestyle/innovation fit of the FL exurbs: Medical City, KPMG, Amazon, UCF College of Medicine, USTA National Campus, autonomous-vehicle network. AI/tech held at Oviedo parity per user convention, though Medical City arguably justifies a higher score (~8.0). Premium pricing makes single-family budget-fit tight; townhomes are the realistic 2041 path.",
       "risks": [
@@ -662,7 +1070,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 21,
+      "rank": 22,
       "weighted_total_out_of_100": 73.95
     },
     {
@@ -685,7 +1093,17 @@
         "aacsb_university_proximity": 7,
         "spouse_pref": 4,
         "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 8
+        "hs_football_culture": 8,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Professionally managed 3BR townhomes ~$2,000-2,300, within the new ceiling. Median $624,990 (Mar 2026, -0.55% YoY) projects to $841-974K by 2041; fits at 2% appreciation, edge at 3%. Wilson County schools average ~7/10 GreatSchools. Best I-40 commute (~25-30 min). Newer construction. Schools good but below Williamson County.",
       "risks": [
@@ -694,11 +1112,11 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 22,
+      "rank": 23,
       "weighted_total_out_of_100": 73.4
     },
     {
-      "rank": 23,
+      "rank": 24,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -712,7 +1130,17 @@
         "state_tax_burden": 5.5,
         "aacsb_university_proximity": 7.5,
         "robotics_fitness_startup_fit": 8.5,
-        "hs_football_culture": 7.5
+        "hs_football_culture": 7.5,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Strong sleeper pick for mobility, manufacturing, Clemson/ICAR adjacency, affordability, and lifestyle. Requires careful school-zone targeting.",
       "risks": [
@@ -723,7 +1151,7 @@
       "weighted_total_out_of_100": 73.4
     },
     {
-      "rank": 24,
+      "rank": 25,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -737,7 +1165,17 @@
         "state_tax_burden": 6,
         "aacsb_university_proximity": 7,
         "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 7.5
+        "hs_football_culture": 7.5,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Good schools, Charlotte access, and better affordability than Cary, but materially less AI/research density than the Triangle.",
       "risks": [
@@ -767,7 +1205,17 @@
         "state_tax_burden": 10,
         "aacsb_university_proximity": 8.5,
         "robotics_fitness_startup_fit": 7.5,
-        "hs_football_culture": 8.5
+        "hs_football_culture": 8.5,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "ESTIMATED placeholder entry (the update spec referenced Tampa but provided no scores). Growing Tampa Bay tech/finance market, USF (AACSB) proximity, no state income tax, strong football culture. Rental lands in the $2,600-2,900 stretch band. Florida insurance/climate risk should be modeled separately. Replace these estimates with researched values before relying on this row.",
       "risks": [
@@ -776,11 +1224,11 @@
         "AI/product depth shallower than Austin/Triangle/Atlanta"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 25,
+      "rank": 26,
       "weighted_total_out_of_100": 72.45
     },
     {
-      "rank": 26,
+      "rank": 27,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -794,7 +1242,17 @@
         "state_tax_burden": 5.5,
         "aacsb_university_proximity": 7.5,
         "robotics_fitness_startup_fit": 6.5,
-        "hs_football_culture": 7
+        "hs_football_culture": 7,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Most realistic Virginia option, with better affordability than Northern Virginia and decent Richmond tech access. Family preference and tax profile keep it low.",
       "risks": [
@@ -817,7 +1275,17 @@
         "state_tax_burden": 10,
         "aacsb_university_proximity": 4.5,
         "robotics_fitness_startup_fit": 5,
-        "hs_football_culture": 6
+        "hs_football_culture": 6,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Northeast Polk County, ~12 mi from Disney with I-4 access to Orlando job centers. Best-in-FL-set rental feasibility (deep sub-$2,300 3BR townhome inventory in resort communities) and very affordable (~$320K-$355K). AI/tech market LIFTED to I-4-corridor parity (7.5) per user instruction (commute-access reasoning); unmodified score was 65.9 (AI 5.5, Tier 4). Primarily a 2028 rental/park-adjacent play for spouse Disney preference - weak schools (~4/10, no charter path) and AACSB proximity make it unsuitable as a purchase-phase or career anchor.",
       "risks": [
@@ -827,11 +1295,77 @@
         "Some areas flood-prone (inland); model insurance"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 27,
+      "rank": 28,
       "weighted_total_out_of_100": 70.25
     },
     {
-      "rank": 28,
+      "rank": 29,
+      "area": "Roswell",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "tier": "Tier 4 - Backup Only",
+      "tier_private_scenario": "Tier 3 - Watch List",
+      "strategic_label": "Private-school and football strength, priced out on both budget phases",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 7.5,
+        "housing_affordability_2041": 4.5,
+        "rental_feasibility_2028": 4.5,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 9.0,
+        "private_school_access": 9.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Fellowship Christian School",
+            "location": "Roswell, GA",
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Blessed Trinity Catholic HS",
+            "location": "Roswell, GA",
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Mount Pisgah Christian School",
+            "location": "Johns Creek, GA",
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Atlanta Academy",
+            "location": "Roswell, GA",
+            "niche_grade": "A+",
+            "football_program": false,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Strongest private-school cluster in the matrix, all within Roswell or immediately adjacent. No commute compromise required.",
+        "verified": false
+      },
+      "notes": "Best AACSB access in the matrix (Georgia Tech Scheller, Emory Goizueta, Georgia State Robinson, Kennesaw State Coles). Elite GA football culture. Fails decisively on both budget phases: Zillow typical home value $607,235 (2026, +2.6% YoY) projects to ~$879K by 2041 at 2.5%, at the ceiling before any school-zone premium; single-family homes specifically average $815,000 today. Median 3BR townhome rent $3,100; townhome average $2,803 - roughly 35% over cap before 2028 escalation. Georgia income tax 5.39%. Fulton County is an A district but Roswell-specific elementaries scatter from #78 to #524 in GA rankings; Roswell North Elementary is A/8-GreatSchools but only 69% math and 66% reading proficiency vs Cox Mill's 90%/83%.",
+      "risks": [
+        "Housing affordability is the binding constraint - median home already projects to the top of the 2041 range",
+        "No viable rental-phase path; 3BR townhome market starts ~$800/mo over cap",
+        "Roswell elementary zoning is uneven despite Fulton County's A district grade - parcel-level verification required",
+        "Aggregators misattribute Johns Creek HS and Milton HS as Roswell schools - neither is Roswell-zoned",
+        "Georgia 5.39% income tax is a structural ceiling vs TX/FL/TN",
+        "AI/PM score of 8.5 is PROVISIONAL - Atlanta payments/Transaction Alley cluster assumed, NOT verified"
+      ],
+      "weighted_total_out_of_100": 67.4,
+      "weighted_total_private_scenario": 70.4
+    },
+    {
+      "rank": 30,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -845,7 +1379,17 @@
         "state_tax_burden": 5.5,
         "aacsb_university_proximity": 8,
         "robotics_fitness_startup_fit": 7.5,
-        "hs_football_culture": 7
+        "hs_football_culture": 7,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "Strong NoVA tech and data-center market with strong schools, but expensive, higher tax burden, and lowest family preference.",
       "risks": [
@@ -858,7 +1402,7 @@
       "budget_flag": "Busts 2028 rental stretch cap"
     },
     {
-      "rank": 29,
+      "rank": 31,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -872,7 +1416,17 @@
         "state_tax_burden": 10,
         "aacsb_university_proximity": 7.5,
         "robotics_fitness_startup_fit": 7.5,
-        "hs_football_culture": 8
+        "hs_football_culture": 8,
+        "private_school_access": null
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": null,
+        "verified": false
       },
       "notes": "FLAG: busts both budgets. Professionally managed 3BR townhomes are scarce, ~$3,300 (2028), over the $2,900 stretch cap. Franklin median ~$850K projects to $1.14-1.32M by 2041, over the $820K budget. Elite Williamson County schools, but you must drop to Spring Hill / Thompson's Station to fit the budget. Retained as a prestige reference, not a budget-fit pick.",
       "risks": [
@@ -901,7 +1455,7 @@
     ],
     "North Carolina": [
       "Cary",
-      "Waxhaw"
+      "Concord / Northwest Cabarrus"
     ],
     "Tennessee": [
       "Spring Hill (Summit / Page Zones, Williamson County)",
@@ -974,6 +1528,7 @@
       "Round Rock",
       "Cedar Park",
       "Georgetown",
+      "Concord / Northwest Cabarrus",
       "Plano / Frisco",
       "Madison / Huntsville",
       "Cary",
@@ -1004,6 +1559,7 @@
       "Tampa",
       "Glen Allen / Midlothian",
       "Davenport",
+      "Roswell",
       "Leesburg / Ashburn",
       "Franklin"
     ]
