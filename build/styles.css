@@ -399,6 +399,35 @@
     .ps-todo { background: #f1f5f9; color: #64748b; }
     .ps-none { color: var(--muted); font-size: 13px; margin: 2px 0 0; }
 
+    /* Extended-scope wildcard section */
+    .ext-grid { display: grid; gap: 18px; }
+    .ext-card { border-left: 4px solid var(--gold); }
+    .ext-top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 6px; }
+    .ext-tag {
+      display: inline-flex; padding: 4px 10px; border-radius: 999px;
+      background: #fffbeb; color: var(--gold); font-size: 11px; font-weight: 800;
+      letter-spacing: .04em; text-transform: uppercase;
+    }
+    .ext-card h3 { margin: 2px 0 2px; font-size: 20px; letter-spacing: -.02em; }
+    .ext-label { margin: 0 0 10px; color: var(--muted); font-weight: 700; font-size: 14px; }
+    .ext-scoreline { font-size: 13px; color: var(--ink); margin-bottom: 12px; }
+    .ext-scoreline strong { font-variant-numeric: tabular-nums; }
+    .ext-scoreline span { color: var(--muted); }
+    .ext-stats { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .ext-stat {
+      display: flex; flex-direction: column; gap: 2px; padding: 8px 12px;
+      border: 1px solid var(--line); border-radius: 12px; background: var(--soft); min-width: 92px;
+    }
+    .ext-stat span { font-size: 11px; color: var(--muted); font-weight: 700; }
+    .ext-stat strong { font-size: 17px; font-variant-numeric: tabular-nums; }
+    .ext-scope {
+      font-size: 12.5px; color: var(--muted); background: #fbfcfe; border: 1px dashed var(--line);
+      border-radius: 12px; padding: 10px 12px; margin: 4px 0 12px;
+    }
+    .ext-risks h4 { margin: 6px 0 6px; font-size: 13px; }
+    .ext-risks ul { margin: 0 0 12px; padding-left: 18px; }
+    .ext-risks li { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+
     .category-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
