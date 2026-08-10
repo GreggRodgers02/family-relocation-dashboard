@@ -30,7 +30,8 @@
         "Florida",
         "Alabama",
         "Texas",
-        "Virginia"
+        "Virginia",
+        "Ohio"
       ],
       "preference_note": "Virginia is the least favorite option."
     },
@@ -809,6 +810,132 @@
     },
     {
       "rank": 9,
+      "area": "Solon / Rocky River (Cleveland Suburbs)",
+      "state": "Ohio",
+      "state_abbr": "OH",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Schools + affordability sleeper (Sherwin-Williams HQ market)",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 9.5,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 7.0,
+        "private_school_access": 9.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "University School",
+            "location": "Hunting Valley / Shaker Heights, OH",
+            "grades": "K-12 (9-12 boys)",
+            "approx_distance_mi": 8,
+            "annual_tuition_usd": 42250,
+            "niche_grade": "A+",
+            "football_program": true,
+            "notes": "Elite all-boys upper school; ~50% of students receive aid; strong top-25 college placement. Serves the Solon/east side.",
+            "verified": false
+          },
+          {
+            "name": "Hawken School",
+            "location": "Gates Mills / Lyndhurst, OH",
+            "grades": "Toddler-12",
+            "approx_distance_mi": 12,
+            "enrollment": 1400,
+            "niche_grade": "A+",
+            "football_program": true,
+            "notes": "Coed; largest tuition-aid budget in Ohio; strong STEM/innovation focus.",
+            "verified": false
+          },
+          {
+            "name": "Hathaway Brown School",
+            "location": "Shaker Heights, OH",
+            "grades": "K-12",
+            "approx_distance_mi": 12,
+            "annual_tuition_usd": 37000,
+            "niche_grade": "A+",
+            "avg_sat": 1370,
+            "avg_act": 31,
+            "notes": "All-girls; #1 college-prep and #1 all-girls school in Ohio (Niche).",
+            "verified": false
+          },
+          {
+            "name": "Gilmour Academy",
+            "location": "Gates Mills, OH",
+            "grades": "Toddler-12",
+            "approx_distance_mi": 10,
+            "annual_tuition_usd": 29350,
+            "niche_grade": "A+",
+            "football_program": true,
+            "notes": "Coed Catholic; #1 Catholic HS in the Cleveland area (Niche).",
+            "verified": false
+          },
+          {
+            "name": "Saint Ignatius High School",
+            "location": "Cleveland, OH",
+            "grades": "9-12",
+            "approx_distance_mi": 10,
+            "football_program": true,
+            "notes": "Jesuit, all-boys; academic + athletics power. Serves the Rocky River/west side.",
+            "verified": false
+          },
+          {
+            "name": "St. Edward High School",
+            "location": "Lakewood, OH",
+            "grades": "9-12",
+            "approx_distance_mi": 5,
+            "football_program": true,
+            "notes": "Catholic, all-boys; Northeast Ohio athletics power. West side.",
+            "verified": false
+          },
+          {
+            "name": "Magnificat High School",
+            "location": "Rocky River, OH",
+            "grades": "9-12",
+            "approx_distance_mi": 2,
+            "notes": "All-girls Catholic; in-town Rocky River.",
+            "verified": false
+          },
+          {
+            "name": "Lake Ridge Academy",
+            "location": "North Ridgeville, OH",
+            "grades": "PK-12",
+            "approx_distance_mi": 8,
+            "notes": "Coed independent; #20 private HS in Ohio (Niche). West side.",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [
+          {
+            "name": "Western Reserve Academy",
+            "location": "Hudson, OH",
+            "approx_distance_mi": 22,
+            "verified": false,
+            "excluded_reason": "Beyond 20-mile radius (elite boarding option, noted for reference)"
+          }
+        ],
+        "assessment": "Elite two-sided market: the east-side independents (University School, Hawken, Hathaway Brown - all A+ - plus Gilmour) sit within ~8-12 mi of Solon, while the west-side Catholic powers (St. Edward, Saint Ignatius, Magnificat) and Lake Ridge Academy serve Rocky River within ~5-10 mi. Among the strongest private-school access of any candidate, in or out of scope.",
+        "verified": false
+      },
+      "notes": "Standout on schools (Solon/Rocky River both nationally ranked A+) and housing headroom (median home prices $450K-$475K, well under the $800K-$950K 2041 ceiling even before appreciation). AACSB coverage via Case Western Reserve (Weatherhead) and Cleveland State. NASA Glenn Research Center is a genuine robotics/aerospace differentiator for Gregg's hardware interest. THE Gregg-specific wildcard: Sherwin-Williams (his current employer) opened its new $860M global HQ tower in downtown Cleveland in late 2025, plus a $250M R&D center in Brecksville (~900 staff) - an employer-continuity path the generic AI/PM market score can't capture. Career-market score is otherwise capped by a thinner AI/PM market versus Tier 1 Sun Belt metros (defense/enterprise/legacy-industry adjacent rather than consumer SaaS). Lake-effect winter climate is a real lifestyle variable not captured anywhere in the model.",
+      "risks": [
+        "Weaker AI/tech PM market than Tier 1 finalists; largely defense/enterprise/legacy-industry adjacent rather than consumer SaaS (Sherwin-Williams HQ is the mitigating, Gregg-specific exception)",
+        "Ohio layers municipal income tax (~1.5-2.5%) on top of the 2.75% state rate, and property tax rates (~1.9% effective) run above the Ohio and national median",
+        "Kendra Scott: VERIFIED permanent store at Eton Chagrin Blvd (Woodmere, ~10 min east of Solon); Crocker Park (Westlake, near Rocky River) has only hosted pop-ups - favors the Solon/east side for spouse-employer proximity",
+        "Winter climate/lake-effect snow not modeled in scoring but relevant to running festival/HYROX training cadence"
+      ],
+      "weighted_total_out_of_100": 79.25,
+      "weighted_total_private_scenario": 79.25,
+      "weighted_total_remote_scenario": 81.05
+    },
+    {
+      "rank": 10,
       "area": "Oviedo",
       "state": "Florida",
       "state_abbr": "FL",
@@ -874,7 +1001,7 @@
       "weighted_total_remote_scenario": 79.25
     },
     {
-      "rank": 10,
+      "rank": 11,
       "area": "St. Johns County",
       "state": "Florida",
       "state_abbr": "FL",
@@ -936,7 +1063,7 @@
       "weighted_total_remote_scenario": 78.35
     },
     {
-      "rank": 11,
+      "rank": 12,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -1070,13 +1197,13 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 12,
+      "rank": 13,
       "weighted_total_out_of_100": 77,
       "weighted_total_private_scenario": 80.0,
       "weighted_total_remote_scenario": 75.9
     },
     {
-      "rank": 13,
+      "rank": 14,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -1206,13 +1333,13 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 14,
+      "rank": 15,
       "weighted_total_out_of_100": 75.4,
       "weighted_total_private_scenario": 78.4,
       "weighted_total_remote_scenario": 75.0
     },
     {
-      "rank": 15,
+      "rank": 16,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -1351,7 +1478,7 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 16,
+      "rank": 17,
       "weighted_total_out_of_100": 74.9,
       "weighted_total_private_scenario": 76.9,
       "weighted_total_remote_scenario": 74.6
@@ -1416,7 +1543,7 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 17,
+      "rank": 18,
       "weighted_total_out_of_100": 74.6,
       "weighted_total_private_scenario": 78.6,
       "weighted_total_remote_scenario": 75.1
@@ -1486,13 +1613,13 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 18,
+      "rank": 19,
       "weighted_total_out_of_100": 74.55,
       "weighted_total_private_scenario": 75.55,
       "weighted_total_remote_scenario": 75.55
     },
     {
-      "rank": 19,
+      "rank": 20,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -1563,7 +1690,7 @@
       "weighted_total_remote_scenario": 76.55
     },
     {
-      "rank": 20,
+      "rank": 21,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -1698,7 +1825,7 @@
         "School strength is zone-specific"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 21,
+      "rank": 22,
       "weighted_total_out_of_100": 74.2,
       "weighted_total_private_scenario": 74.2,
       "weighted_total_remote_scenario": 74.2
@@ -1764,7 +1891,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 22,
+      "rank": 23,
       "weighted_total_out_of_100": 73.95,
       "weighted_total_private_scenario": 72.95,
       "weighted_total_remote_scenario": 74.35
@@ -1830,13 +1957,13 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 23,
+      "rank": 24,
       "weighted_total_out_of_100": 73.4,
       "weighted_total_private_scenario": 73.4,
       "weighted_total_remote_scenario": 73.6
     },
     {
-      "rank": 24,
+      "rank": 25,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -1907,7 +2034,7 @@
       "weighted_total_remote_scenario": 75.1
     },
     {
-      "rank": 25,
+      "rank": 26,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -2050,13 +2177,13 @@
         "AI/product depth shallower than Austin/Triangle/Atlanta"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 26,
+      "rank": 27,
       "weighted_total_out_of_100": 72.45,
       "weighted_total_private_scenario": 76.45,
       "weighted_total_remote_scenario": 72.85
     },
     {
-      "rank": 27,
+      "rank": 28,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -2193,13 +2320,13 @@
         "Some areas flood-prone (inland); model insurance"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 28,
+      "rank": 29,
       "weighted_total_out_of_100": 70.25,
       "weighted_total_private_scenario": 75.25,
       "weighted_total_remote_scenario": 68.35
     },
     {
-      "rank": 29,
+      "rank": 30,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2266,7 +2393,7 @@
       "weighted_total_remote_scenario": 66.1
     },
     {
-      "rank": 30,
+      "rank": 31,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -2350,7 +2477,7 @@
       "weighted_total_remote_scenario": 62.8
     },
     {
-      "rank": 31,
+      "rank": 32,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -2463,6 +2590,9 @@
     "Virginia": [
       "Glen Allen / Midlothian",
       "Leesburg / Ashburn"
+    ],
+    "Ohio": [
+      "Solon / Rocky River (Cleveland Suburbs)"
     ]
   },
   "category_winners": {
@@ -2522,6 +2652,7 @@
       "Spring Hill (Summit / Page Zones, Williamson County)"
     ],
     "tier_2_strong_tradeoffs": [
+      "Solon / Rocky River (Cleveland Suburbs)",
       "Oviedo",
       "St. Johns County",
       "Suwanee / Peachtree Corners",
@@ -2610,135 +2741,5 @@
       ],
       "note": "Ordered by 2028/2041 budget fit. Franklin is retained as a prestige reference but busts both budgets."
     }
-  },
-  "extended_scope_candidates": [
-    {
-      "area": "Solon / Rocky River (Cleveland Suburbs)",
-      "state": "Ohio",
-      "state_abbr": "OH",
-      "in_primary_scope": false,
-      "scope_note": "Outside the seven-state brief (NC, SC, GA, TN, FL, AL, TX). Added at Gregg's direct request on 2026-08-10; not included in the numbered ranking or state_top_two/category_winners arrays unless scope is formally expanded.",
-      "tier": "Tier 2 - Strong Trade-offs (borderline Tier 1)",
-      "strategic_label": "Schools + affordability sleeper / Extended-scope wildcard",
-      "scores": {
-        "ai_tech_pm_market": 6.0,
-        "school_quality": 9.5,
-        "housing_affordability_2041": 9.5,
-        "rental_feasibility_2028": 8.5,
-        "state_tax_burden": 6.0,
-        "aacsb_university_proximity": 8.0,
-        "robotics_fitness_startup_fit": 7.5,
-        "hs_football_culture": 7.0,
-        "private_school_access": 9.5
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "University School",
-            "location": "Hunting Valley / Shaker Heights, OH",
-            "grades": "K-12 (9-12 boys)",
-            "approx_distance_mi": 8,
-            "annual_tuition_usd": 42250,
-            "niche_grade": "A+",
-            "football_program": true,
-            "notes": "Elite all-boys upper school; ~50% of students receive aid; strong top-25 college placement. Serves the Solon/east side.",
-            "verified": false
-          },
-          {
-            "name": "Hawken School",
-            "location": "Gates Mills / Lyndhurst, OH",
-            "grades": "Toddler-12",
-            "approx_distance_mi": 12,
-            "enrollment": 1400,
-            "niche_grade": "A+",
-            "football_program": true,
-            "notes": "Coed; largest tuition-aid budget in Ohio; strong STEM/innovation focus.",
-            "verified": false
-          },
-          {
-            "name": "Hathaway Brown School",
-            "location": "Shaker Heights, OH",
-            "grades": "K-12",
-            "approx_distance_mi": 12,
-            "annual_tuition_usd": 37000,
-            "niche_grade": "A+",
-            "avg_sat": 1370,
-            "avg_act": 31,
-            "notes": "All-girls; #1 college-prep and #1 all-girls school in Ohio (Niche).",
-            "verified": false
-          },
-          {
-            "name": "Gilmour Academy",
-            "location": "Gates Mills, OH",
-            "grades": "Toddler-12",
-            "approx_distance_mi": 10,
-            "annual_tuition_usd": 29350,
-            "niche_grade": "A+",
-            "football_program": true,
-            "notes": "Coed Catholic; #1 Catholic HS in the Cleveland area (Niche).",
-            "verified": false
-          },
-          {
-            "name": "Saint Ignatius High School",
-            "location": "Cleveland, OH",
-            "grades": "9-12",
-            "approx_distance_mi": 10,
-            "football_program": true,
-            "notes": "Jesuit, all-boys; academic + athletics power. Serves the Rocky River/west side.",
-            "verified": false
-          },
-          {
-            "name": "St. Edward High School",
-            "location": "Lakewood, OH",
-            "grades": "9-12",
-            "approx_distance_mi": 5,
-            "football_program": true,
-            "notes": "Catholic, all-boys; Northeast Ohio athletics power. West side.",
-            "verified": false
-          },
-          {
-            "name": "Magnificat High School",
-            "location": "Rocky River, OH",
-            "grades": "9-12",
-            "approx_distance_mi": 2,
-            "notes": "All-girls Catholic; in-town Rocky River.",
-            "verified": false
-          },
-          {
-            "name": "Lake Ridge Academy",
-            "location": "North Ridgeville, OH",
-            "grades": "PK-12",
-            "approx_distance_mi": 8,
-            "notes": "Coed independent; #20 private HS in Ohio (Niche). West side.",
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [
-          {
-            "name": "Western Reserve Academy",
-            "location": "Hudson, OH",
-            "approx_distance_mi": 22,
-            "verified": false,
-            "excluded_reason": "Beyond 20-mile radius (elite boarding option, noted for reference)"
-          }
-        ],
-        "assessment": "Elite two-sided market: the east-side independents (University School, Hawken, Hathaway Brown - all A+ - plus Gilmour) sit within ~8-12 mi of Solon, while the west-side Catholic powers (St. Edward, Saint Ignatius, Magnificat) and Lake Ridge Academy serve Rocky River within ~5-10 mi. Among the strongest private-school access of any candidate, in or out of scope.",
-        "verified": false
-      },
-      "notes": "Standout on schools (Solon/Rocky River both nationally ranked A+) and housing headroom (median home prices $450K-$475K, well under the $800K-$950K 2041 ceiling even before appreciation). AACSB coverage via Case Western Reserve (Weatherhead) and Cleveland State. NASA Glenn Research Center is a genuine robotics/aerospace differentiator for Gregg's hardware interest. THE Gregg-specific wildcard: Sherwin-Williams (his current employer) opened its new $860M global HQ tower in downtown Cleveland in late 2025, plus a $250M R&D center in Brecksville (~900 staff) - an employer-continuity path the generic AI/PM market score can't capture. Career-market score is otherwise capped by a thinner AI/PM market versus Tier 1 Sun Belt metros (defense/enterprise/legacy-industry adjacent rather than consumer SaaS). Lake-effect winter climate is a real lifestyle variable not captured anywhere in the model.",
-      "risks": [
-        "Outside primary geographic scope - not previously part of the seven-state brief",
-        "Weaker AI/tech PM market than Tier 1 finalists; largely defense/enterprise/legacy-industry adjacent rather than consumer SaaS (Sherwin-Williams HQ is the mitigating, Gregg-specific exception)",
-        "Ohio layers municipal income tax (~1.5-2.5%) on top of the 2.75% state rate, and property tax rates (~1.9% effective) run above the Ohio and national median",
-        "Kendra Scott: VERIFIED permanent store at Eton Chagrin Blvd (Woodmere, ~10 min east of Solon); Crocker Park (Westlake, near Rocky River) has only hosted pop-ups - favors the Solon/east side for spouse-employer proximity",
-        "Winter climate/lake-effect snow not modeled in scoring but relevant to running festival/HYROX training cadence"
-      ],
-      "weighted_total_out_of_100": 79.25,
-      "weighted_total_private_scenario": 79.25,
-      "weighted_total_remote_scenario": 81.05
-    }
-  ]
+  }
 }
