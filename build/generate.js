@@ -435,6 +435,9 @@ ${extCards}
     </section>
 `;
   }
+  const extendedNav = extendedCandidates.length
+    ? '      <a href="#extended">Extended Scope</a>\n'
+    : '';
 
   // Decision tiers
   const tierOrder = [
@@ -490,8 +493,7 @@ ${heroStats}
       <a href="#categories">Category Winners</a>
       <a href="#states">State Picks</a>
       <a href="#nashville">Nashville Metro</a>
-      <a href="#extended">Extended Scope</a>
-      <a href="#tiers">Decision Tiers</a>
+${extendedNav}      <a href="#tiers">Decision Tiers</a>
       <a href="#recommendation">Recommendation</a>
     </div>
   </nav>
