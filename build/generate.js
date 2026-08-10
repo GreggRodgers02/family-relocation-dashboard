@@ -377,6 +377,65 @@ ${cards}
 `;
   }
 
+  // Extended-scope candidates (outside the seven-state brief; deliberately kept
+  // out of the numbered ranking, state picks, and category winners).
+  const extendedCandidates = data.extended_scope_candidates || [];
+  let extended = '';
+  if (extendedCandidates.length) {
+    const inScopeCount = locations.length;
+    const extCards = extendedCandidates
+      .map((c) => {
+        const t = tierMeta(c.tier);
+        const total =
+          typeof c.weighted_total_out_of_100 === 'number' ? c.weighted_total_out_of_100.toFixed(2) : '';
+        const s = c.scores || {};
+        const stat = (label, v) =>
+          v == null ? '' : `<div class="ext-stat"><span>${esc(label)}</span><strong>${esc(v)}</strong></div>`;
+        const stats = [
+          stat('Schools', s.school_quality),
+          stat('Housing fit 2041', s.housing_affordability_2041),
+          stat('Rent fit 2028', s.rental_feasibility_2028),
+          stat('AI / PM market', s.ai_tech_pm_market),
+          stat('Robotics / fitness', s.robotics_fitness_startup_fit),
+          stat('Private access', s.private_school_access),
+        ].join('');
+        const risks = (c.risks || []).map((r) => `<li>${esc(r)}</li>`).join('');
+        const radius = (c.private_school_option || {}).search_radius_miles || 20;
+        const ps = c.private_school_option
+          ? `<div class="detail-box"><h4>Private-school options within ${esc(radius)} mi</h4>${psOptionsHtml(c)}</div>`
+          : '';
+        return `        <div class="card ext-card">
+          <div class="ext-top"><span class="ext-tag">Extended scope &middot; ${esc(
+            c.state_abbr
+          )}</span><span class="tier ${t.cls}">${esc(t.label)}</span></div>
+          <h3>${esc(c.area)}</h3>
+          <p class="ext-label">${esc(c.strategic_label)}</p>
+          <div class="ext-scoreline">Model score (baseline weights): <strong>${esc(
+            total
+          )}</strong> <span>&mdash; reference only; not ranked against the ${esc(
+          inScopeCount
+        )} in-scope areas</span></div>
+          <div class="ext-stats">${stats}</div>
+          <p>${esc(c.notes)}</p>
+          ${c.scope_note ? `<p class="ext-scope">${esc(c.scope_note)}</p>` : ''}
+          ${risks ? `<div class="ext-risks"><h4>Risks &amp; unknowns</h4><ul>${risks}</ul></div>` : ''}
+          ${ps}
+        </div>`;
+      })
+      .join('\n');
+    extended = `
+    <section id="extended">
+      <div class="section-title">
+        <h2>Extended-scope wildcard</h2>
+        <p>Outside the seven-state brief (NC, SC, GA, TN, FL, AL, TX). Tracked separately &mdash; not part of the numbered ranking, state picks, or category winners.</p>
+      </div>
+      <div class="ext-grid">
+${extCards}
+      </div>
+    </section>
+`;
+  }
+
   // Decision tiers
   const tierOrder = [
     ['tier_1_serious_finalists', 'Tier 1', 'one', 'Serious finalists', 'These should anchor the relocation conversation.'],
@@ -431,6 +490,7 @@ ${heroStats}
       <a href="#categories">Category Winners</a>
       <a href="#states">State Picks</a>
       <a href="#nashville">Nashville Metro</a>
+      <a href="#extended">Extended Scope</a>
       <a href="#tiers">Decision Tiers</a>
       <a href="#recommendation">Recommendation</a>
     </div>
@@ -519,6 +579,7 @@ ${stateCards}
     </section>
 
 ${nashville}
+${extended}
     <section id="tiers">
       <div class="section-title">
         <h2>Decision tiers</h2>
