@@ -1001,7 +1001,83 @@
       "weighted_total_remote_scenario": 79.25
     },
     {
+      "area": "Hendersonville",
+      "state": "Tennessee",
+      "state_abbr": "TN",
+      "metro": "Nashville",
+      "strategic_label": "Best Tennessee option / Nashville downtown-access value pick",
+      "est_2028_rent": 2350,
+      "best_rental_submarket": "Hendersonville (Sumner County, Indian Lake area)",
+      "est_2041_buy_price": 755000,
+      "best_buy_submarket": "Hendersonville (Merrol Hyde Magnet zone a plus)",
+      "rent_buy_same_area": true,
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 7.5,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 7.5,
+        "spouse_pref": 4.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 7.5,
+        "private_school_access": 8.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Pope Saint John Paul II Preparatory School",
+            "location": "Hendersonville, TN",
+            "grades": "9-12",
+            "approx_distance_mi": 3,
+            "enrollment": 750,
+            "student_teacher_ratio": "8.5:1",
+            "football_program": true,
+            "notes": "Catholic, SACS accredited; AP courses and 34 sports; #1 Catholic HS in the Nashville area (Niche).",
+            "verified": false
+          },
+          {
+            "name": "Hendersonville Christian Academy",
+            "location": "Hendersonville, TN",
+            "enrollment": 287,
+            "approx_distance_mi": 3,
+            "verified": false
+          },
+          {
+            "name": "Lighthouse Christian School",
+            "location": "Antioch, TN",
+            "approx_distance_mi": 15,
+            "verified": false
+          },
+          {
+            "name": "Davidson Academy",
+            "location": "Nashville, TN",
+            "approx_distance_mi": 15,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Pope St. John Paul II Prep (Catholic, ~3 mi, football) anchors as the #1 Catholic HS in the Nashville area; Hendersonville Christian and Lighthouse Christian round out local options, with Davidson Academy reachable at ~15 mi. Well inside the 20-mile radius.",
+        "verified": false
+      },
+      "notes": "Sumner County suburb NE of Nashville and the strongest-career-access Tennessee entry under the corrected model. Best-positioned TN city for the downtown/East Bank employer cluster (Oracle, Amazon, AllianceBernstein, Asurion) at 20-25 min via TN-386 to I-65. Unusually low school-zone boundary risk: three separate 5-star public high schools (Hendersonville, Beech, Station Camp) plus the Merrol Hyde K-12 magnet. Median home ~$520K supports the 2041 budget with headroom. AllianceBernstein presence makes this fintech-addressable for Gregg's background. Kendra Scott accessible at The Mall at Green Hills, ~20-25 min.",
+      "risks": [
+        "Rental cap compliance depends on inventory vintage - median townhome rent ~$1,968 and 3BR units at $2,200 exist, but purpose-built BTR (SkyMor Durham Farms) starts at $2,702 for 3BR, above the $2,300 cap",
+        "Sumner County is a good district, not an elite one - 4-star, ranked 30 of 139 TN districts; strength is concentrated in specific schools rather than district-wide",
+        "Nashville is a real metro tech market but not an AI research hub - ceiling is below Austin, DFW, or the Triangle",
+        "Merrol Hyde Magnet admission is by county-wide lottery and cannot be secured by address"
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
       "rank": 11,
+      "weighted_total_out_of_100": 78.4,
+      "weighted_total_private_scenario": 78.4,
+      "weighted_total_remote_scenario": 77.4
+    },
+    {
+      "rank": 12,
       "area": "St. Johns County",
       "state": "Florida",
       "state_abbr": "FL",
@@ -1063,7 +1139,7 @@
       "weighted_total_remote_scenario": 78.35
     },
     {
-      "rank": 12,
+      "rank": 13,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -1197,13 +1273,13 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 13,
+      "rank": 14,
       "weighted_total_out_of_100": 77,
       "weighted_total_private_scenario": 80.0,
       "weighted_total_remote_scenario": 75.9
     },
     {
-      "rank": 14,
+      "rank": 15,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -1333,13 +1409,13 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 15,
+      "rank": 16,
       "weighted_total_out_of_100": 75.4,
       "weighted_total_private_scenario": 78.4,
       "weighted_total_remote_scenario": 75.0
     },
     {
-      "rank": 16,
+      "rank": 17,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -1478,7 +1554,7 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 17,
+      "rank": 18,
       "weighted_total_out_of_100": 74.9,
       "weighted_total_private_scenario": 76.9,
       "weighted_total_remote_scenario": 74.6
@@ -1543,7 +1619,7 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 18,
+      "rank": 19,
       "weighted_total_out_of_100": 74.6,
       "weighted_total_private_scenario": 78.6,
       "weighted_total_remote_scenario": 75.1
@@ -1613,13 +1689,13 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 19,
+      "rank": 20,
       "weighted_total_out_of_100": 74.55,
       "weighted_total_private_scenario": 75.55,
       "weighted_total_remote_scenario": 75.55
     },
     {
-      "rank": 20,
+      "rank": 21,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -1690,7 +1766,7 @@
       "weighted_total_remote_scenario": 76.55
     },
     {
-      "rank": 21,
+      "rank": 22,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -1761,74 +1837,6 @@
       "weighted_total_out_of_100": 74.45,
       "weighted_total_private_scenario": 74.45,
       "weighted_total_remote_scenario": 76.35
-    },
-    {
-      "area": "Hendersonville",
-      "state": "Tennessee",
-      "state_abbr": "TN",
-      "metro": "Nashville",
-      "strategic_label": "Nashville-metro lake-lifestyle value",
-      "est_2028_rent": 2350,
-      "best_rental_submarket": "Hendersonville (Sumner County, Indian Lake area)",
-      "est_2041_buy_price": 860000,
-      "best_buy_submarket": "Hendersonville (Merrol Hyde Magnet zone a plus)",
-      "rent_buy_same_area": true,
-      "scores": {
-        "ai_tech_pm_market": 7,
-        "school_quality": 7.5,
-        "housing_affordability_2041": 7,
-        "rental_feasibility_2028": 7,
-        "state_tax_burden": 10,
-        "aacsb_university_proximity": 7,
-        "spouse_pref": 4.5,
-        "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 8,
-        "private_school_access": 7.5
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Pope Saint John Paul II Preparatory School",
-            "location": "Hendersonville, TN",
-            "grades": "9-12",
-            "approx_distance_mi": 3,
-            "enrollment": 711,
-            "football_program": true,
-            "notes": "#1 Catholic HS in the Nashville area (Niche).",
-            "verified": false
-          },
-          {
-            "name": "Davidson Academy",
-            "location": "Nashville, TN",
-            "grades": "PK-12",
-            "approx_distance_mi": 15,
-            "verified": false
-          },
-          {
-            "name": "Hendersonville Christian Academy",
-            "location": "Hendersonville, TN",
-            "approx_distance_mi": 3,
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Pope John Paul II Prep (Catholic, #1 in the Nashville area) is in-town; Davidson Academy adds reach at ~15 mi. No secular A+ prep within radius.",
-        "verified": false
-      },
-      "notes": "Sumner County. Professionally managed 3BR townhomes ~$2,000-2,350, within the ceiling. Median ~$595-597K projects to $801-927K by 2041, fits the budget. Historically more home per dollar than Franklin with lower Sumner County property tax than Davidson. Old Hickory Lake lifestyle. Note: northeast of the city, add 20-30 min if work is Cool Springs / south Nashville. Merrol Hyde Magnet is a standout.",
-      "risks": [
-        "Northeast commute penalty to south-Nashville job nodes",
-        "Home prices have risen from historical value levels",
-        "School strength is zone-specific"
-      ],
-      "tier": "Tier 4 - Backup Only",
-      "rank": 22,
-      "weighted_total_out_of_100": 74.2,
-      "weighted_total_private_scenario": 74.2,
-      "weighted_total_remote_scenario": 74.2
     },
     {
       "area": "Lake Nona",
@@ -2484,7 +2492,7 @@
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Lifestyle premium option",
       "scores": {
-        "ai_tech_pm_market": 7.5,
+        "ai_tech_pm_market": 8.0,
         "school_quality": 9,
         "housing_affordability_2041": 2,
         "rental_feasibility_2028": 1,
@@ -2540,13 +2548,13 @@
         "assessment": "The deepest private market in Tennessee: BGA in-town (A, #1 in Williamson County) plus Christ Presbyterian Academy and Currey Ingram within ~15 mi, with Nashville's elite preps at the radius edge.",
         "verified": false
       },
-      "notes": "FLAG: busts both budgets. Professionally managed 3BR townhomes are scarce, ~$3,300 (2028), over the $2,900 stretch cap. Franklin median ~$850K projects to $1.14-1.32M by 2041, over the $820K budget. Elite Williamson County schools, but you must drop to Spring Hill / Thompson's Station to fit the budget. Retained as a prestige reference, not a budget-fit pick.",
+      "notes": "Great lifestyle, elite Williamson County schools, and no income tax. Career market revised upward in Aug 2026 - Franklin holds both Cool Springs employers and downtown/East Bank access. Housing affordability remains the binding constraint, not job market.",
       "risks": [
-        "Premium pricing may violate budget discipline",
-        "Rental target likely difficult in preferred zones",
-        "Tech market is solid but not as deep as top AI metros"
+        "Premium pricing likely violates the 2041 budget discipline",
+        "Rental target difficult to impossible in preferred Williamson County zones under the $2,300 cap",
+        "No submarket compensation premium offsets the higher cost of living here"
       ],
-      "weighted_total_out_of_100": 61.8,
+      "weighted_total_out_of_100": 63.05,
       "metro": "Nashville",
       "est_2028_rent": 3300,
       "best_rental_submarket": "Franklin (Cool Springs / Westhaven)",
@@ -2554,8 +2562,8 @@
       "best_buy_submarket": "Spring Hill / Thompson's Station (to fit budget)",
       "rent_buy_same_area": false,
       "budget_flag": "Busts 2028 rental ceiling and 2041 buy budget",
-      "weighted_total_private_scenario": 61.8,
-      "weighted_total_remote_scenario": 60.5
+      "weighted_total_private_scenario": 63.05,
+      "weighted_total_remote_scenario": 61.25
     }
   ],
   "state_top_two": {
@@ -2573,7 +2581,7 @@
     ],
     "Tennessee": [
       "Spring Hill (Summit / Page Zones, Williamson County)",
-      "Gallatin"
+      "Hendersonville"
     ],
     "Florida": [
       "Oviedo",
@@ -2654,6 +2662,7 @@
     ],
     "tier_2_strong_tradeoffs": [
       "Oviedo",
+      "Hendersonville",
       "St. Johns County",
       "Suwanee / Peachtree Corners",
       "Celina",
@@ -2669,7 +2678,6 @@
     "tier_4_backup_only": [
       "Auburn / Opelika",
       "Farragut",
-      "Hendersonville",
       "Lake Nona",
       "Mount Juliet",
       "Greenville",
@@ -2686,7 +2694,7 @@
     {
       "id": "rental_cap",
       "question": "Is the ~$2,200/month 3-bedroom townhome rental target a hard cap, or can premium school zones flex to $2,400–$2,600?",
-      "why_it_matters": "This materially changes how competitive Cary, Franklin, Alpharetta/Johns Creek, Plano/Frisco, and St. Johns County remain."
+      "why_it_matters": "This materially changes how competitive Cary, Franklin, Alpharetta/Johns Creek, Plano/Frisco, and St. Johns County remain. It now also gates Hendersonville: if the cap is base rent and can flex toward ~$2,700, Hendersonville's rental feasibility rises from 6.5 toward 8.0 and it approaches Tier 1."
     },
     {
       "id": "home_budget",
@@ -2741,5 +2749,15 @@
       ],
       "note": "Ordered by 2028/2041 budget fit. Franklin is retained as a prestige reference but busts both budgets."
     }
-  }
+  },
+  "key_learnings": [
+    {
+      "id": "no_submarket_comp_premium",
+      "learning": "No submarket compensation premium. Compensation is set at metro level, not by suburb; higher incomes in premium suburbs (Franklin/Brentwood, Alpharetta, Frisco) reflect who lives there, not employer pay premiums. Where a metro's tech/product employers concentrate in the urban core, core-adjacent suburbs can outperform premium suburbs on career market at materially lower cost. Apply this test to any entry scored primarily on proximity to a suburban office park."
+    },
+    {
+      "id": "low_boundary_risk_is_an_asset",
+      "learning": "Low school-zone boundary risk is a scoring asset. Where multiple strong public zones exist (e.g. Hendersonville's three 5-star high schools), address-level zone risk is minimal, unlike single-zone-dependent markets (Georgetown TX Leander/Liberty Hill dependency). A school score backed by multiple strong zones carries less downside variance than an equivalent score in a single-zone market."
+    }
+  ]
 }
