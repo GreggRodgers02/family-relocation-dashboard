@@ -31,7 +31,8 @@
         "Alabama",
         "Texas",
         "Virginia",
-        "Ohio"
+        "Ohio",
+        "New Jersey"
       ],
       "preference_note": "Virginia is the least favorite option."
     },
@@ -936,6 +937,84 @@
     },
     {
       "rank": 10,
+      "area": "Austin (City Proper)",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Maximum career ceiling / urban-core trade on schools and budget",
+      "scores": {
+        "ai_tech_pm_market": 9.5,
+        "school_quality": 6.5,
+        "housing_affordability_2041": 6.5,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 10.0,
+        "robotics_fitness_startup_fit": 9.5,
+        "hs_football_culture": 7.0,
+        "private_school_access": 9.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "St. Stephen's Episcopal School",
+            "location": "Austin, TX",
+            "grades": "6-12",
+            "approx_distance_mi": 8,
+            "niche_grade": "A+",
+            "notes": "Ranked #4 private school in Texas (Niche); 370-acre West Austin campus, boarding + day.",
+            "verified": false
+          },
+          {
+            "name": "St. Andrew's Episcopal School",
+            "location": "Austin, TX",
+            "grades": "1-12",
+            "approx_distance_mi": 5,
+            "enrollment": 850,
+            "niche_grade": "A+",
+            "football_program": true,
+            "notes": "Two campuses (W 31st St lower/middle, SW Parkway upper).",
+            "verified": false
+          },
+          {
+            "name": "Regents School of Austin",
+            "location": "Austin, TX",
+            "grades": "K-12",
+            "approx_distance_mi": 9,
+            "enrollment": 1030,
+            "football_program": true,
+            "notes": "Austin's largest private school by enrollment; classical Christian.",
+            "verified": false
+          },
+          {
+            "name": "St. Dominic Savio Catholic High School",
+            "location": "Austin, TX",
+            "grades": "9-12",
+            "approx_distance_mi": 15,
+            "football_program": true,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Deepest private market in Texas outside DFW/Houston: St. Stephen's (#4 in TX) plus St. Andrew's and Regents all sit inside the city. Private access is the main mitigant for Austin ISD's zone volatility.",
+        "verified": false
+      },
+      "notes": "The highest career ceiling in the matrix: Tesla Gigafactory, Oracle, Apptronik (Apollo humanoid robotics), Samsung's Taylor fab, and a dense AI/startup scene, with UT Austin McCombs (AACSB, top-tier) in the city itself. No state income tax. The trade-off is family-formation fit, not career. Austin ISD earned its first B rating in four years but remains sharply bimodal - roughly two dozen A schools alongside 20 F-rated and 11 D-rated campuses - so school outcome is entirely zone-dependent and carries far more variance than Round Rock or Cedar Park. City-proper median home price is ~$530-577K (Zillow average $504K, down 4.4% YoY), which projects to roughly $800K by 2041 at 2.5% - inside the $820K budget but with almost no headroom, unlike the suburbs. 3BR rents average ~$2,460, clearing the $2,600 primary ceiling but with little room for 2028 escalation.",
+      "risks": [
+        "Austin ISD is bimodal - 20 F-rated and 11 D-rated campuses alongside its A schools; elementary zone verification is mandatory and carries higher variance than the suburban TX entries",
+        "2041 budget headroom is thin: ~$550K median projects to ~$800K against an $820K budget, versus ~$200K headroom in Round Rock or Georgetown",
+        "3BR rent (~$2,460) clears the $2,600 ceiling today but leaves little margin for 2028 escalation",
+        "Prices are currently falling (-4.4% YoY), which helps entry but signals a softer near-term market than the 2.5% appreciation assumption",
+        "Round Rock and Cedar Park capture nearly the same job market with materially better schools and budget - Austin proper must justify itself on urban lifestyle, not career access"
+      ],
+      "weighted_total_out_of_100": 79.8,
+      "weighted_total_private_scenario": 85.8,
+      "weighted_total_remote_scenario": 79.3
+    },
+    {
+      "rank": 11,
       "area": "Oviedo",
       "state": "Florida",
       "state_abbr": "FL",
@@ -1071,13 +1150,13 @@
         "Merrol Hyde Magnet admission is by county-wide lottery and cannot be secured by address"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 11,
+      "rank": 12,
       "weighted_total_out_of_100": 78.4,
       "weighted_total_private_scenario": 78.4,
       "weighted_total_remote_scenario": 77.4
     },
     {
-      "rank": 12,
+      "rank": 13,
       "area": "St. Johns County",
       "state": "Florida",
       "state_abbr": "FL",
@@ -1139,7 +1218,7 @@
       "weighted_total_remote_scenario": 78.35
     },
     {
-      "rank": 13,
+      "rank": 14,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -1273,13 +1352,13 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 14,
+      "rank": 15,
       "weighted_total_out_of_100": 77,
       "weighted_total_private_scenario": 80.0,
       "weighted_total_remote_scenario": 75.9
     },
     {
-      "rank": 15,
+      "rank": 16,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -1409,13 +1488,13 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 16,
+      "rank": 17,
       "weighted_total_out_of_100": 75.4,
       "weighted_total_private_scenario": 78.4,
       "weighted_total_remote_scenario": 75.0
     },
     {
-      "rank": 17,
+      "rank": 18,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -1554,7 +1633,7 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 18,
+      "rank": 19,
       "weighted_total_out_of_100": 74.9,
       "weighted_total_private_scenario": 76.9,
       "weighted_total_remote_scenario": 74.6
@@ -1619,7 +1698,7 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 19,
+      "rank": 20,
       "weighted_total_out_of_100": 74.6,
       "weighted_total_private_scenario": 78.6,
       "weighted_total_remote_scenario": 75.1
@@ -1689,13 +1768,13 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 20,
+      "rank": 21,
       "weighted_total_out_of_100": 74.55,
       "weighted_total_private_scenario": 75.55,
       "weighted_total_remote_scenario": 75.55
     },
     {
-      "rank": 21,
+      "rank": 22,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -1766,7 +1845,7 @@
       "weighted_total_remote_scenario": 76.55
     },
     {
-      "rank": 22,
+      "rank": 23,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -1899,7 +1978,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 23,
+      "rank": 24,
       "weighted_total_out_of_100": 73.95,
       "weighted_total_private_scenario": 72.95,
       "weighted_total_remote_scenario": 74.35
@@ -1965,13 +2044,13 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 24,
+      "rank": 25,
       "weighted_total_out_of_100": 73.4,
       "weighted_total_private_scenario": 73.4,
       "weighted_total_remote_scenario": 73.6
     },
     {
-      "rank": 25,
+      "rank": 26,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -2042,7 +2121,7 @@
       "weighted_total_remote_scenario": 75.1
     },
     {
-      "rank": 26,
+      "rank": 27,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -2185,13 +2264,13 @@
         "AI/product depth shallower than Austin/Triangle/Atlanta"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 27,
+      "rank": 28,
       "weighted_total_out_of_100": 72.45,
       "weighted_total_private_scenario": 76.45,
       "weighted_total_remote_scenario": 72.85
     },
     {
-      "rank": 28,
+      "rank": 29,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -2328,13 +2407,13 @@
         "Some areas flood-prone (inland); model insurance"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 29,
+      "rank": 30,
       "weighted_total_out_of_100": 70.25,
       "weighted_total_private_scenario": 75.25,
       "weighted_total_remote_scenario": 68.35
     },
     {
-      "rank": 30,
+      "rank": 31,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2401,7 +2480,7 @@
       "weighted_total_remote_scenario": 66.1
     },
     {
-      "rank": 31,
+      "rank": 32,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -2485,7 +2564,7 @@
       "weighted_total_remote_scenario": 62.8
     },
     {
-      "rank": 32,
+      "rank": 33,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -2564,6 +2643,251 @@
       "budget_flag": "Busts 2028 rental ceiling and 2041 buy budget",
       "weighted_total_private_scenario": 63.05,
       "weighted_total_remote_scenario": 61.25
+    },
+    {
+      "rank": 34,
+      "area": "Germantown (Nashville)",
+      "state": "Tennessee",
+      "state_abbr": "TN",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Walkable urban Nashville / zoned-school and budget failure",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 4.5,
+        "housing_affordability_2041": 4.0,
+        "rental_feasibility_2028": 3.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 5.5,
+        "private_school_access": 9.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Montgomery Bell Academy",
+            "location": "Nashville, TN",
+            "grades": "7-12",
+            "approx_distance_mi": 4,
+            "niche_grade": "A+",
+            "football_program": true,
+            "notes": "All-boys; consistently a top-2 private school in Tennessee.",
+            "verified": false
+          },
+          {
+            "name": "Harpeth Hall School",
+            "location": "Nashville, TN",
+            "grades": "5-12",
+            "approx_distance_mi": 6,
+            "niche_grade": "A+",
+            "notes": "All-girls; elite college placement.",
+            "verified": false
+          },
+          {
+            "name": "University School of Nashville",
+            "location": "Nashville, TN",
+            "grades": "K-12",
+            "approx_distance_mi": 3,
+            "niche_grade": "A+",
+            "notes": "Coed independent, adjacent to Vanderbilt.",
+            "verified": false
+          },
+          {
+            "name": "Ensworth School",
+            "location": "Nashville, TN",
+            "grades": "K-12",
+            "approx_distance_mi": 5,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Father Ryan High School",
+            "location": "Nashville, TN",
+            "grades": "9-12",
+            "approx_distance_mi": 6,
+            "football_program": true,
+            "notes": "Catholic college-prep.",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Elite in-city cluster - MBA, Harpeth Hall, USN, Ensworth and Father Ryan all within ~6 mi. Private school is effectively mandatory here rather than optional, since the zoned MNPS schools are weak.",
+        "verified": false
+      },
+      "notes": "Best pure career-access location in Tennessee: Germantown sits directly adjacent to the downtown/East Bank employer cluster (Oracle, Amazon, AllianceBernstein, Asurion), and Vanderbilt Owen, Belmont Massey and Lipscomb are all within ~10-15 minutes. Walkable, restaurant-dense, with greenway running access. It fails decisively on the family-formation criteria that drive this model: the neighborhood is zoned to Jones Paideia Elementary (Niche C-, GreatSchools 4/10) and Pearl-Cohn High (Niche C-, 4/10, average ACT 19). Hume-Fogg is an academic magnet requiring application and admission - it cannot be secured by address, the same trap as Merrol Hyde in Sumner County. Median home ~$665K projects to ~$963K by 2041, above the $820K budget, and 3BR rentals run ~$3,000+, over both the $2,600 ceiling and the $2,900 stretch cap.",
+      "risks": [
+        "ZONED SCHOOLS ARE THE BINDING FAILURE - Jones Paideia Elementary (C-, 4/10) governs the 2028 rental phase when the child is 0-2; this is the weakest zoned elementary of any entry in the matrix",
+        "Hume-Fogg and other MNPS academic magnets require application/admission and cannot be secured by buying an address",
+        "Median home ~$665K projects to ~$963K by 2041, roughly $140K above the $820K budget before any premium",
+        "3BR rental ~$3,000+ breaks both the $2,600 primary ceiling and the $2,900 stretch cap",
+        "Effectively requires committing to private school (~$30K+/yr per child) to be viable, which is a different financial model than the suburban entries"
+      ],
+      "weighted_total_out_of_100": 63.0,
+      "weighted_total_private_scenario": 73.0,
+      "weighted_total_remote_scenario": 61.5
+    },
+    {
+      "rank": 35,
+      "area": "Jersey City",
+      "state": "New Jersey",
+      "state_abbr": "NJ",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Elite fintech-AI career market / disqualified on both budget phases",
+      "scores": {
+        "ai_tech_pm_market": 9.5,
+        "school_quality": 5.5,
+        "housing_affordability_2041": 3.5,
+        "rental_feasibility_2028": 1.5,
+        "state_tax_burden": 2.0,
+        "aacsb_university_proximity": 10.0,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 5.0,
+        "private_school_access": 8.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "St. Peter's Preparatory School",
+            "location": "Jersey City, NJ",
+            "grades": "9-12",
+            "approx_distance_mi": 2,
+            "niche_grade": "A",
+            "football_program": true,
+            "notes": "Jesuit, all-boys; one of NJ's strongest college-prep programs.",
+            "verified": false
+          },
+          {
+            "name": "Hudson Catholic Regional High School",
+            "location": "Jersey City, NJ",
+            "grades": "9-12",
+            "approx_distance_mi": 2,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "The Academy of Saint Aloysius",
+            "location": "Jersey City, NJ",
+            "grades": "9-12",
+            "approx_distance_mi": 2,
+            "notes": "All-girls Catholic.",
+            "verified": false
+          },
+          {
+            "name": "Stevens Cooperative School",
+            "location": "Hoboken/Jersey City, NJ",
+            "grades": "PK-8",
+            "approx_distance_mi": 2,
+            "verified": false
+          },
+          {
+            "name": "Elite Manhattan independents (Trinity, Dalton, Horace Mann, Riverdale)",
+            "location": "New York, NY",
+            "approx_distance_mi": 8,
+            "notes": "Reachable via PATH within the 20-mile radius, but admission is nationally competitive and tuition runs $60K+.",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Strong Catholic college-prep in-city (St. Peter's Prep, Hudson Catholic) plus the elite Manhattan independents technically inside the 20-mile radius via PATH. Access is excellent; cost and admission selectivity are the constraints.",
+        "verified": false
+      },
+      "notes": "Arguably the single best career market in the matrix for Gregg's specific fintech product background: Jersey City is 'Wall Street West,' with JPMorgan Chase (Newport), Goldman Sachs and Citigroup on the waterfront moving AI teams across the river, ~25% tech employment growth, and Manhattan a 10-minute PATH ride away. AACSB access is the best available anywhere in the matrix (NYU Stern, Columbia, Baruch, Rutgers, Fordham). It is nonetheless disqualified by the two budget phases the model is built around. Jersey City's broader median home price runs ~$650-700K, projecting well past the $820K 2041 budget, and 3BR rentals on the waterfront average ~$4,000 - roughly 55% over the $2,600 primary ceiling and well beyond the $2,900 stretch cap. New Jersey layers a state income tax up to 10.75% on top of Hudson County effective property tax rates of ~1.77-2.12%, the worst combined tax position of any entry.",
+      "risks": [
+        "No viable rental-phase path - 3BR waterfront rents average ~$4,000 against a $2,600 ceiling and $2,900 stretch cap",
+        "Housing affordability fails the 2041 budget: ~$675K median projects near $980K before any school-zone premium",
+        "Worst tax position in the matrix - NJ income tax to 10.75% plus ~1.77-2.12% effective Hudson County property tax, versus 0% income tax in TX/FL/TN",
+        "Jersey City schools are uneven (district Niche B-, individual schools ranging C- to A); strong zones exist but carry the usual urban boundary risk",
+        "Career strength is real and Gregg-specific, so this entry is best read as an argument for a fintech-AI career move, not as a family relocation target under the current budget"
+      ],
+      "weighted_total_out_of_100": 56.95,
+      "weighted_total_private_scenario": 62.95,
+      "weighted_total_remote_scenario": 54.55
+    },
+    {
+      "rank": 36,
+      "area": "Newport (Jersey City)",
+      "state": "New Jersey",
+      "state_abbr": "NJ",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Walk-to-JPMorgan waterfront submarket / most budget-infeasible entry",
+      "scores": {
+        "ai_tech_pm_market": 9.5,
+        "school_quality": 5.5,
+        "housing_affordability_2041": 1.0,
+        "rental_feasibility_2028": 1.0,
+        "state_tax_burden": 2.0,
+        "aacsb_university_proximity": 10.0,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 5.0,
+        "private_school_access": 8.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "St. Peter's Preparatory School",
+            "location": "Jersey City, NJ",
+            "grades": "9-12",
+            "approx_distance_mi": 2,
+            "niche_grade": "A",
+            "football_program": true,
+            "notes": "Jesuit, all-boys; one of NJ's strongest college-prep programs.",
+            "verified": false
+          },
+          {
+            "name": "Hudson Catholic Regional High School",
+            "location": "Jersey City, NJ",
+            "grades": "9-12",
+            "approx_distance_mi": 2,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "The Academy of Saint Aloysius",
+            "location": "Jersey City, NJ",
+            "grades": "9-12",
+            "approx_distance_mi": 2,
+            "notes": "All-girls Catholic.",
+            "verified": false
+          },
+          {
+            "name": "Stevens Cooperative School",
+            "location": "Hoboken/Jersey City, NJ",
+            "grades": "PK-8",
+            "approx_distance_mi": 2,
+            "verified": false
+          },
+          {
+            "name": "Elite Manhattan independents (Trinity, Dalton, Horace Mann, Riverdale)",
+            "location": "New York, NY",
+            "approx_distance_mi": 8,
+            "notes": "Reachable via PATH within the 20-mile radius, but admission is nationally competitive and tuition runs $60K+.",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Strong Catholic college-prep in-city (St. Peter's Prep, Hudson Catholic) plus the elite Manhattan independents technically inside the 20-mile radius via PATH. Access is excellent; cost and admission selectivity are the constraints.",
+        "verified": false
+      },
+      "notes": "The specific waterfront submarket inside Jersey City, and the most extreme version of the same trade. Newport is where JPMorgan Chase's campus actually sits, so the commute is a walk rather than a ride, and the PATH puts Manhattan roughly 10 minutes away - career access is effectively identical to Jersey City overall (9.5). What separates it is cost: Newport's median sale price is ~$1.1M ($944/sqft, up 35% year over year) and 3BR units rent for $5,406-$7,000/month. That is roughly 2x the $2,900 hard stretch cap on the rental phase and projects past $1.5M by 2041 against an $820K budget. Inventory is also overwhelmingly high-rise condo rather than the professionally managed 3BR townhome the rental phase targets.",
+      "risks": [
+        "Most budget-infeasible entry in the matrix - 3BR rents of $5,406-$7,000 are roughly 2x the $2,900 hard stretch cap",
+        "Median sale price ~$1.1M projects past $1.5M by 2041, nearly double the $820K budget",
+        "Housing stock is high-rise condo, not the professionally managed 3BR townhome product the 2028 rental phase specifies",
+        "Same NJ tax exposure as Jersey City - income tax to 10.75% plus ~1.77-2.12% effective property tax",
+        "Overlaps Jersey City as a submarket rather than a separate metro; scored separately only because it was requested by name"
+      ],
+      "weighted_total_out_of_100": 51.35,
+      "weighted_total_private_scenario": 57.35,
+      "weighted_total_remote_scenario": 48.85
     }
   ],
   "state_top_two": {
@@ -2601,6 +2925,10 @@
     ],
     "Ohio": [
       "Solon / Rocky River (Cleveland Suburbs)"
+    ],
+    "New Jersey": [
+      "Jersey City",
+      "Newport (Jersey City)"
     ]
   },
   "category_winners": {
@@ -2661,6 +2989,7 @@
       "Spring Hill (Summit / Page Zones, Williamson County)"
     ],
     "tier_2_strong_tradeoffs": [
+      "Austin (City Proper)",
       "Oviedo",
       "Hendersonville",
       "St. Johns County",
@@ -2687,7 +3016,10 @@
       "Davenport",
       "Roswell",
       "Leesburg / Ashburn",
-      "Franklin"
+      "Franklin",
+      "Germantown (Nashville)",
+      "Jersey City",
+      "Newport (Jersey City)"
     ]
   },
   "open_questions": [
