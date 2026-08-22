@@ -1015,6 +1015,93 @@
     },
     {
       "rank": 11,
+      "area": "Murfreesboro",
+      "state": "Tennessee",
+      "state_abbr": "TN",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Best TN rental-phase and budget headroom / commute is the trade",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 7.5,
+        "housing_affordability_2041": 8.0,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 7.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Providence Christian Academy",
+            "location": "Murfreesboro, TN",
+            "grades": "PK-12",
+            "approx_distance_mi": 4,
+            "enrollment": 650,
+            "notes": "Classical Christian; top-ranked private in Rutherford County.",
+            "verified": false
+          },
+          {
+            "name": "Middle Tennessee Christian School",
+            "location": "Murfreesboro, TN",
+            "grades": "PK-12",
+            "approx_distance_mi": 3,
+            "football_program": true,
+            "notes": "Founded 1960.",
+            "verified": false
+          },
+          {
+            "name": "The Webb School",
+            "location": "Bell Buckle, TN",
+            "grades": "6-12",
+            "approx_distance_mi": 20,
+            "notes": "One of Tennessee's oldest and most prestigious independent college-prep schools; boarding + day. At the radius edge.",
+            "verified": false
+          },
+          {
+            "name": "St. Rose of Lima Catholic School",
+            "location": "Murfreesboro, TN",
+            "grades": "PK-8",
+            "approx_distance_mi": 2,
+            "verified": false
+          },
+          {
+            "name": "Franklin Road Christian School",
+            "location": "Murfreesboro, TN",
+            "grades": "K-12",
+            "approx_distance_mi": 3,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [
+          {
+            "name": "Battle Ground Academy",
+            "location": "Franklin, TN",
+            "approx_distance_mi": 30,
+            "verified": false
+          }
+        ],
+        "assessment": "Solid local Christian/Catholic depth (19 private schools, ~3,158 students) plus The Webb School at Bell Buckle right at the 20-mile edge. No elite in-town anchor comparable to Pope JPII in Hendersonville or BGA in Franklin, so access is good rather than exceptional.",
+        "verified": false
+      },
+      "notes": "Rutherford County seat ~35 miles southeast of Nashville, and the strongest Tennessee entry on the two budget phases the model is built around. Median home ~$425-480K (working median ~$450K) projects to roughly $650K by 2041 at 2.5%, leaving ~$170K of headroom under the $820K budget - more room than any other TN entry. The rental phase is the standout: average townhome rent is ~$1,765 with 3BR product ranging $1,255-$2,449 and purpose-built BTR communities (Spring Creek, Trinity Point) offering 3BR/2.5BA, all comfortably inside the $2,600 primary ceiling. Market conditions are buyer-friendly (5.33-month supply, 98.25% of ask, only 12.6% of homes selling above asking). MTSU's Jones College of Business is in town and holds AACSB accreditation in both business AND accounting - a dual credential that is rarer than standard AACSB and the most direct professor-of-practice pathway of any Tennessee entry. Football culture is genuine (Oakland, Riverdale, Blackman; the Blackman-Riverdale 'Backyard Brawl'). The binding constraint is commute: I-24 to downtown Nashville runs 35-40 minutes off-peak but 60-90 minutes in the 7-9am rush, which is why the career score sits at Spring Hill's level rather than Hendersonville's.",
+      "risks": [
+        "COMMUTE IS THE BINDING CONSTRAINT - I-24 to the downtown/East Bank cluster runs 35-40 min off-peak but 60-90 min in morning rush, materially worse than Hendersonville's 20-25 min",
+        "MAGNET TRAP: the headline schools are lottery/application-gated, not address-gated - Central Magnet (#2 of 384 TN high schools), Discovery (#2 of 1,020 TN elementary) and McFadden (#3) are all Rutherford Choice schools requiring a Dec-Jan application window and cannot be secured by buying a house",
+        "DUAL-DISTRICT ZONING: inside Murfreesboro city limits elementary runs through Murfreesboro City Schools (PK-6), outside it runs through Rutherford County Schools - parcel-level verification is required and the two districts are not interchangeable",
+        "Local employment base (MTSU, Nissan, HCA, Amazon, National HealthCare HQ) is healthcare, education, manufacturing and logistics rather than AI/product, so the career case still depends on the Nashville commute",
+        "No robotics anchor comparable to Huntsville; MTSU aerospace and Nissan Smyrna manufacturing are modest offsets"
+      ],
+      "weighted_total_out_of_100": 79.2,
+      "weighted_total_private_scenario": 79.2,
+      "weighted_total_remote_scenario": 79.8
+    },
+    {
+      "rank": 12,
       "area": "Oviedo",
       "state": "Florida",
       "state_abbr": "FL",
@@ -1084,7 +1171,7 @@
       "state": "Tennessee",
       "state_abbr": "TN",
       "metro": "Nashville",
-      "strategic_label": "Best Tennessee option / Nashville downtown-access value pick",
+      "strategic_label": "Closest Nashville downtown/East Bank access / rental cap is the constraint",
       "est_2028_rent": 2350,
       "best_rental_submarket": "Hendersonville (Sumner County, Indian Lake area)",
       "est_2041_buy_price": 755000,
@@ -1150,13 +1237,13 @@
         "Merrol Hyde Magnet admission is by county-wide lottery and cannot be secured by address"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 12,
+      "rank": 13,
       "weighted_total_out_of_100": 78.4,
       "weighted_total_private_scenario": 78.4,
       "weighted_total_remote_scenario": 77.4
     },
     {
-      "rank": 13,
+      "rank": 14,
       "area": "St. Johns County",
       "state": "Florida",
       "state_abbr": "FL",
@@ -1218,7 +1305,7 @@
       "weighted_total_remote_scenario": 78.35
     },
     {
-      "rank": 14,
+      "rank": 15,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -1352,13 +1439,13 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 15,
+      "rank": 16,
       "weighted_total_out_of_100": 77,
       "weighted_total_private_scenario": 80.0,
       "weighted_total_remote_scenario": 75.9
     },
     {
-      "rank": 16,
+      "rank": 17,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -1488,13 +1575,13 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 17,
+      "rank": 18,
       "weighted_total_out_of_100": 75.4,
       "weighted_total_private_scenario": 78.4,
       "weighted_total_remote_scenario": 75.0
     },
     {
-      "rank": 18,
+      "rank": 19,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -1633,7 +1720,7 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 19,
+      "rank": 20,
       "weighted_total_out_of_100": 74.9,
       "weighted_total_private_scenario": 76.9,
       "weighted_total_remote_scenario": 74.6
@@ -1698,7 +1785,7 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 20,
+      "rank": 21,
       "weighted_total_out_of_100": 74.6,
       "weighted_total_private_scenario": 78.6,
       "weighted_total_remote_scenario": 75.1
@@ -1768,13 +1855,13 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 21,
+      "rank": 22,
       "weighted_total_out_of_100": 74.55,
       "weighted_total_private_scenario": 75.55,
       "weighted_total_remote_scenario": 75.55
     },
     {
-      "rank": 22,
+      "rank": 23,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -1845,7 +1932,7 @@
       "weighted_total_remote_scenario": 76.55
     },
     {
-      "rank": 23,
+      "rank": 24,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -1978,7 +2065,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 24,
+      "rank": 25,
       "weighted_total_out_of_100": 73.95,
       "weighted_total_private_scenario": 72.95,
       "weighted_total_remote_scenario": 74.35
@@ -2044,13 +2131,13 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 25,
+      "rank": 26,
       "weighted_total_out_of_100": 73.4,
       "weighted_total_private_scenario": 73.4,
       "weighted_total_remote_scenario": 73.6
     },
     {
-      "rank": 26,
+      "rank": 27,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -2121,7 +2208,7 @@
       "weighted_total_remote_scenario": 75.1
     },
     {
-      "rank": 27,
+      "rank": 28,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -2264,13 +2351,13 @@
         "AI/product depth shallower than Austin/Triangle/Atlanta"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 28,
+      "rank": 29,
       "weighted_total_out_of_100": 72.45,
       "weighted_total_private_scenario": 76.45,
       "weighted_total_remote_scenario": 72.85
     },
     {
-      "rank": 29,
+      "rank": 30,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -2407,13 +2494,13 @@
         "Some areas flood-prone (inland); model insurance"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 30,
+      "rank": 31,
       "weighted_total_out_of_100": 70.25,
       "weighted_total_private_scenario": 75.25,
       "weighted_total_remote_scenario": 68.35
     },
     {
-      "rank": 31,
+      "rank": 32,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2480,7 +2567,7 @@
       "weighted_total_remote_scenario": 66.1
     },
     {
-      "rank": 32,
+      "rank": 33,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -2564,7 +2651,7 @@
       "weighted_total_remote_scenario": 62.8
     },
     {
-      "rank": 33,
+      "rank": 34,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -2645,7 +2732,7 @@
       "weighted_total_remote_scenario": 61.25
     },
     {
-      "rank": 34,
+      "rank": 35,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -2730,7 +2817,7 @@
       "weighted_total_remote_scenario": 61.5
     },
     {
-      "rank": 35,
+      "rank": 36,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -2810,7 +2897,7 @@
       "weighted_total_remote_scenario": 54.55
     },
     {
-      "rank": 36,
+      "rank": 37,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -2905,7 +2992,7 @@
     ],
     "Tennessee": [
       "Spring Hill (Summit / Page Zones, Williamson County)",
-      "Hendersonville"
+      "Murfreesboro"
     ],
     "Florida": [
       "Oviedo",
@@ -2990,6 +3077,7 @@
     ],
     "tier_2_strong_tradeoffs": [
       "Austin (City Proper)",
+      "Murfreesboro",
       "Oviedo",
       "Hendersonville",
       "St. Johns County",
