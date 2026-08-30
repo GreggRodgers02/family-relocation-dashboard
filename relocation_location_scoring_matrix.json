@@ -1445,7 +1445,86 @@
       "weighted_total_remote_scenario": 75.9
     },
     {
+      "area": "Tampa",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "metro": "Tampa Bay",
+      "strategic_label": "Gulf-coast metro with real budget headroom / insurance and zone variance are the trade",
+      "est_2028_rent": 2100,
+      "best_rental_submarket": "Tampa city / New Tampa (Hillsborough County - verify zone; Wesley Chapel is Pasco County, a separate district)",
+      "est_2041_buy_price": 640000,
+      "best_buy_submarket": "Wesley Chapel / suburban Hillsborough (provisional)",
+      "rent_buy_same_area": true,
+      "estimated": true,
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 7.0,
+        "housing_affordability_2041": 7.5,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 8.5,
+        "private_school_access": 9.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Berkeley Preparatory School",
+            "location": "Tampa, FL",
+            "grades": "PK-12",
+            "annual_tuition_usd": 32800,
+            "enrollment": 1208,
+            "niche_grade": "A+",
+            "football_program": true,
+            "notes": "#1 private K-12 and #1 STEM in the Tampa metro (Niche).",
+            "verified": false
+          },
+          {
+            "name": "Jesuit High School",
+            "location": "Tampa, FL",
+            "grades": "9-12",
+            "football_program": true,
+            "notes": "Catholic, all-boys college-prep.",
+            "verified": false
+          },
+          {
+            "name": "Academy of the Holy Names",
+            "location": "Tampa, FL",
+            "grades": "PK-12",
+            "notes": "Catholic.",
+            "verified": false
+          },
+          {
+            "name": "Tampa Preparatory School",
+            "location": "Tampa, FL",
+            "grades": "6-12",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Deep, elite market led by Berkeley Prep (A+, #1 in Tampa and #1 for STEM) plus Jesuit and Academy of the Holy Names - among the strongest private access in the matrix.",
+        "verified": false
+      },
+      "notes": "VERIFIED Aug 2026, replacing the earlier estimated placeholder - the prior entry carried guessed scores and was materially too pessimistic on both budget phases. Median home is $466K for the city of Tampa (3 months ending June 2026, +1.2% YoY) and $402K for Hillsborough County, projecting to roughly $640K by 2041 at 2.5% - about $180K of headroom under the $820K budget, not the $720K the placeholder assumed. The rental phase is comfortably feasible: median townhouse rent is $2,091 against a $2,600 primary ceiling, with 3BR product running $2,100-$4,000+ depending on submarket. USF's Muma College of Business is in town and holds dual AACSB accreditation in business AND accounting - one of only ~194 institutions worldwide - alongside R1 research status, the strongest AACSB position of any Florida entry. Career market is real if mid-tier: roughly 665 AI/product postings in the metro with AI product manager pay averaging ~$145K, concentrated in finance, insurance and health tech rather than frontier AI. Elite football culture (Plant, Jesuit, Berkeley Prep) and the best private-school access in Florida (Berkeley Prep is #1 in the Tampa metro and #1 for STEM). The genuine drags are insurance cost and school-zone variance, both captured in risks.",
+      "risks": [
+        "INSURANCE IS A REAL CARRYING COST NOT MODELED AS ITS OWN CRITERION - Hillsborough County homeowners insurance runs $3,500-$5,800/yr for $300K dwelling coverage, plus $900-$1,600/yr flood ($2,500-$10,000+ in high-risk coastal zones); this materially erodes effective buying power and is why housing affordability is scored 7.5 rather than 8.0",
+        "High storm-surge and flood exposure across Tampa Bay; flood zone must be verified at parcel level, not just school zone",
+        "Hillsborough County is a very large district (220,360 students, 25:1 ratio) with wide zone variance - H.B. Plant is A+ but outcomes swing hard by address; elementary zone verification is mandatory for the 2028 rental phase",
+        "ZONE/COUNTY TRAP: the previously listed 'New Tampa / Wesley Chapel' rental submarket spans two counties - Wesley Chapel is Pasco County under a different district than Hillsborough, so the two are not interchangeable",
+        "AI/product market is mid-tier and concentrated in finance, insurance and health tech; ceiling is below Austin, DFW, or the Triangle for frontier AI product work"
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
       "rank": 17,
+      "weighted_total_out_of_100": 76.65,
+      "weighted_total_private_scenario": 80.65,
+      "weighted_total_remote_scenario": 77.45
+    },
+    {
+      "rank": 18,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -1575,13 +1654,13 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 18,
+      "rank": 19,
       "weighted_total_out_of_100": 75.4,
       "weighted_total_private_scenario": 78.4,
       "weighted_total_remote_scenario": 75.0
     },
     {
-      "rank": 19,
+      "rank": 20,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -1720,7 +1799,7 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 20,
+      "rank": 21,
       "weighted_total_out_of_100": 74.9,
       "weighted_total_private_scenario": 76.9,
       "weighted_total_remote_scenario": 74.6
@@ -1785,7 +1864,7 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 21,
+      "rank": 22,
       "weighted_total_out_of_100": 74.6,
       "weighted_total_private_scenario": 78.6,
       "weighted_total_remote_scenario": 75.1
@@ -1855,13 +1934,13 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 22,
+      "rank": 23,
       "weighted_total_out_of_100": 74.55,
       "weighted_total_private_scenario": 75.55,
       "weighted_total_remote_scenario": 75.55
     },
     {
-      "rank": 23,
+      "rank": 24,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -1932,7 +2011,7 @@
       "weighted_total_remote_scenario": 76.55
     },
     {
-      "rank": 24,
+      "rank": 25,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -2065,7 +2144,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 25,
+      "rank": 26,
       "weighted_total_out_of_100": 73.95,
       "weighted_total_private_scenario": 72.95,
       "weighted_total_remote_scenario": 74.35
@@ -2131,13 +2210,13 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 26,
+      "rank": 27,
       "weighted_total_out_of_100": 73.4,
       "weighted_total_private_scenario": 73.4,
       "weighted_total_remote_scenario": 73.6
     },
     {
-      "rank": 27,
+      "rank": 28,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -2208,7 +2287,7 @@
       "weighted_total_remote_scenario": 75.1
     },
     {
-      "rank": 28,
+      "rank": 29,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -2278,83 +2357,6 @@
       "weighted_total_out_of_100": 72.9,
       "weighted_total_private_scenario": 71.9,
       "weighted_total_remote_scenario": 72.7
-    },
-    {
-      "area": "Tampa",
-      "state": "Florida",
-      "state_abbr": "FL",
-      "metro": "Tampa Bay",
-      "strategic_label": "Gulf-coast no-income-tax metro (ESTIMATED — verify)",
-      "est_2028_rent": 2750,
-      "best_rental_submarket": "New Tampa / Wesley Chapel (provisional)",
-      "est_2041_buy_price": 720000,
-      "best_buy_submarket": "Wesley Chapel / suburban Hillsborough (provisional)",
-      "rent_buy_same_area": true,
-      "estimated": true,
-      "scores": {
-        "ai_tech_pm_market": 7,
-        "school_quality": 7,
-        "housing_affordability_2041": 6.5,
-        "rental_feasibility_2028": 6,
-        "state_tax_burden": 10,
-        "aacsb_university_proximity": 8.5,
-        "robotics_fitness_startup_fit": 7.5,
-        "hs_football_culture": 8.5,
-        "private_school_access": 9.0
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Berkeley Preparatory School",
-            "location": "Tampa, FL",
-            "grades": "PK-12",
-            "annual_tuition_usd": 32800,
-            "enrollment": 1208,
-            "niche_grade": "A+",
-            "football_program": true,
-            "notes": "#1 private K-12 and #1 STEM in the Tampa metro (Niche).",
-            "verified": false
-          },
-          {
-            "name": "Jesuit High School",
-            "location": "Tampa, FL",
-            "grades": "9-12",
-            "football_program": true,
-            "notes": "Catholic, all-boys college-prep.",
-            "verified": false
-          },
-          {
-            "name": "Academy of the Holy Names",
-            "location": "Tampa, FL",
-            "grades": "PK-12",
-            "notes": "Catholic.",
-            "verified": false
-          },
-          {
-            "name": "Tampa Preparatory School",
-            "location": "Tampa, FL",
-            "grades": "6-12",
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Deep, elite market led by Berkeley Prep (A+, #1 in Tampa and #1 for STEM) plus Jesuit and Academy of the Holy Names - among the strongest private access in the matrix.",
-        "verified": false
-      },
-      "notes": "ESTIMATED placeholder entry (the update spec referenced Tampa but provided no scores). Growing Tampa Bay tech/finance market, USF (AACSB) proximity, no state income tax, strong football culture. Rental lands in the $2,600-2,900 stretch band. Florida insurance/climate risk should be modeled separately. Replace these estimates with researched values before relying on this row.",
-      "risks": [
-        "All scores are unvalidated estimates",
-        "Florida insurance and climate/flood risk not yet modeled",
-        "AI/product depth shallower than Austin/Triangle/Atlanta"
-      ],
-      "tier": "Tier 4 - Backup Only",
-      "rank": 29,
-      "weighted_total_out_of_100": 72.45,
-      "weighted_total_private_scenario": 76.45,
-      "weighted_total_remote_scenario": 72.85
     },
     {
       "rank": 30,
@@ -3083,6 +3085,7 @@
       "St. Johns County",
       "Suwanee / Peachtree Corners",
       "Celina",
+      "Tampa",
       "Fort Mill"
     ],
     "tier_3_watch_list": [
@@ -3099,7 +3102,6 @@
       "Mount Juliet",
       "Greenville",
       "Waxhaw",
-      "Tampa",
       "Glen Allen / Midlothian",
       "Davenport",
       "Roswell",
