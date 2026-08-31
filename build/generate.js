@@ -439,6 +439,97 @@ ${extCards}
     ? '      <a href="#extended">Extended Scope</a>\n'
     : '';
 
+  // Phase plan: rental-A / rental-B / purchase sequencing
+  const pp = data.phase_plan || null;
+  let phasePlan = '';
+  if (pp && Array.isArray(pp.phases) && pp.phases.length) {
+    const zoneCls = (t) => {
+      const s = String(t || '').toLowerCase();
+      if (s.startsWith('maximum')) return 'max';
+      if (s.startsWith('none')) return 'none';
+      return 'low';
+    };
+    const firstSentence = (t) => String(t || '').split('.')[0];
+    const phaseCards = pp.phases
+      .map((ph, i) => {
+        const crit = (ph.governing_criteria || []).map((c) => `<li>${esc(c)}</li>`).join('');
+        return `        <div class="card phase-card">
+          <div class="phase-top"><span class="phase-num">${i + 1}</span><span class="phase-years">${esc(
+          ph.years
+        )}</span></div>
+          <h3>${esc(ph.label)}</h3>
+          <p class="phase-ages">Child ${esc(ph.child_ages)}</p>
+          <div class="phase-zone ${zoneCls(ph.school_zone_relevance)}">School zone: ${esc(
+          firstSentence(ph.school_zone_relevance)
+        )}</div>
+          <p class="phase-guidance">${esc(ph.guidance)}</p>
+          ${crit ? `<div class="phase-crit"><h4>What binds here</h4><ul>${crit}</ul></div>` : ''}
+        </div>`;
+      })
+      .join('\n');
+
+    const ROLE_META = {
+      rental_a_only: ['warn', 'Rental A only'],
+      single_location_viable: ['good', 'No split needed'],
+      purchase_target: ['info', 'Buy into, not rent long'],
+    };
+    const roleCards = Object.entries(pp.candidate_roles || {})
+      .map(([key, v]) => {
+        const [cls, title] = ROLE_META[key] || ['info', prettifyKey(key)];
+        const chips = (v.locations || [])
+          .map(
+            (l) =>
+              `<li><span class="role-rank">#${esc(l.rank)}</span><span class="role-area">${esc(
+                l.area
+              )}</span><span class="role-nums">rent ${esc(l.rental_feasibility_2028)} &middot; sch ${esc(
+                l.school_quality
+              )}</span></li>`
+          )
+          .join('');
+        return `        <div class="card role-card ${cls}">
+          <h3>${esc(title)}</h3>
+          <p class="role-rule"><code>${esc(v.rule)}</code></p>
+          <p class="role-meaning">${esc(v.meaning)}</p>
+          <ul class="role-list">${chips}</ul>
+        </div>`;
+      })
+      .join('\n');
+
+    const tl = pp.timeline || {};
+    const tlChips = [
+      ['Rental starts', tl.rental_phase_start],
+      ['Purchase', tl.home_purchase_year],
+      ['Rental window', tl.rental_window_years ? `${tl.rental_window_years} yrs` : null],
+      ['Child at rental start', tl.child_age_at_rental_start],
+      ['Child at purchase', tl.child_age_at_purchase],
+    ]
+      .filter((x) => x[1] != null && x[1] !== '')
+      .map(([k, v]) => `<div class="tl-chip"><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`)
+      .join('');
+
+    phasePlan = `
+    <section id="phases">
+      <div class="section-title">
+        <h2>Phase plan</h2>
+        <p>${esc(pp.basis || '')}</p>
+      </div>
+      <div class="card insight-card">
+        <h3>The rental window is 13 years, not 3</h3>
+        <p>${esc(pp.core_insight || '')}</p>
+        ${tlChips ? `<div class="tl-grid">${tlChips}</div>` : ''}
+      </div>
+      <div class="phase-grid">
+${phaseCards}
+      </div>
+      <div class="role-grid">
+${roleCards}
+      </div>
+      ${pp.caveat ? `<p class="phase-caveat">${esc(pp.caveat)}</p>` : ''}
+    </section>
+`;
+  }
+  const phaseNav = phasePlan ? '      <a href="#phases">Phase Plan</a>\n' : '';
+
   // Decision tiers
   const tierOrder = [
     ['tier_1_serious_finalists', 'Tier 1', 'one', 'Serious finalists', 'These should anchor the relocation conversation.'],
@@ -493,7 +584,7 @@ ${heroStats}
       <a href="#categories">Category Winners</a>
       <a href="#states">State Picks</a>
       <a href="#nashville">Nashville Metro</a>
-${extendedNav}      <a href="#tiers">Decision Tiers</a>
+${extendedNav}${phaseNav}      <a href="#tiers">Decision Tiers</a>
       <a href="#recommendation">Recommendation</a>
     </div>
   </nav>
@@ -582,6 +673,7 @@ ${stateCards}
 
 ${nashville}
 ${extended}
+${phasePlan}
     <section id="tiers">
       <div class="section-title">
         <h2>Decision tiers</h2>
