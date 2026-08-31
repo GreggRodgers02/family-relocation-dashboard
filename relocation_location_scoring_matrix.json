@@ -34,7 +34,14 @@
         "Ohio",
         "New Jersey"
       ],
-      "preference_note": "Virginia is the least favorite option."
+      "preference_note": "Virginia is the least favorite option.",
+      "spouse_employment": {
+        "employer": "Kendra Scott",
+        "current_store": "Franklin, TN - McEwen Southside (1556 W McEwen Dr)",
+        "note": "Spouse employer continuity is a second anchor alongside Gregg's Sherwin-Williams tenure, and it pulls toward the Nashville metro rather than Cleveland. Distances to the current store: Spring Hill ~13 mi / 20 min, Murfreesboro ~31 mi / 40 min, Hendersonville ~45-50 min (Green Hills is its nearer store at 20-25 min).",
+        "corporate_hq": "Austin, TX (3800 N Lamar Blvd) - relevant to the Round Rock/Cedar Park option as a store-to-corporate career path rather than continuity",
+        "verify": "Kendra Scott's own store directory lists Franklin McEwen Southside as temporarily closed with a reported reopening around Sep 1 2026 - confirm current operating status and whether the role is tied to that specific store"
+      }
     },
     "planning_assumptions": {
       "rental_phase_year": 2028,
@@ -918,7 +925,7 @@
         "assessment": "Battle Ground Academy (A, #1 in Williamson County, with Spring Hill bus service) anchors within ~13 mi; the top Nashville/Brentwood privates sit beyond 20 mi.",
         "verified": false
       },
-      "notes": "Williamson-County side of Spring Hill, zoned to top-rated WCS schools (Summit High #23 in TN, Fred J. Page High #12 in TN; Page is ~9-12 miles / 15-20 min from NE Spring Hill). CONFIRMED rental base: currently renting an apartment here (~$1,800/mo) with plans for a professionally managed 3BR townhome around 2028. Live market verified June 2026: managed 3BR townhomes (Chapman's Retreat, Villas at Port Royal, Harvest Point, Somerset Springs) run roughly $1,779-$2,995, avg 3BR ~$2,066, so a ~$2,300 target is comfortably mid-range. Median home value ~$495K-$525K (Feb-Apr 2026); at 2-3% appreciation, ~$700K-$810K by 2041, well under the 2041 budget. Keeps Franklin's strengths (elite WCS schools, no income tax, Nashville access, football) while fixing Franklin's affordability weakness. GM/Ultium EV-battery corridor adds a light manufacturing/maker angle.",
+      "notes": "Williamson-County side of Spring Hill, zoned to top-rated WCS schools (Summit High #23 in TN, Fred J. Page High #12 in TN; Page is ~9-12 miles / 15-20 min from NE Spring Hill). CONFIRMED rental base: currently renting an apartment here (~$1,800/mo) with plans for a professionally managed 3BR townhome around 2028. Live market verified June 2026: managed 3BR townhomes (Chapman's Retreat, Villas at Port Royal, Harvest Point, Somerset Springs) run roughly $1,779-$2,995, avg 3BR ~$2,066, so a ~$2,300 target is comfortably mid-range. Median home value ~$495K-$525K (Feb-Apr 2026); at 2-3% appreciation, ~$700K-$810K by 2041, well under the 2041 budget. Keeps Franklin's strengths (elite WCS schools, no income tax, Nashville access, football) while fixing Franklin's affordability weakness. GM/Ultium EV-battery corridor adds a light manufacturing/maker angle. SPOUSE-EMPLOYER ANCHOR: the Kendra Scott store in Franklin (McEwen Southside) - the spouse's current workplace - is ~13 mi / ~20 min away, the closest of any entry in the matrix. Spring Hill therefore offers spouse employer continuity with no job change, the mirror image of what Cleveland offers Gregg at Sherwin-Williams.",
       "risks": [
         "COUNTY-LINE HARD FLAG: only the Williamson County side gets WCS (Summit/Page) zoning; Maury County addresses forfeit it and must be excluded.",
         "Commitment to the area is rental-phase only (through ~2028); 2041 purchase location is left open.",
@@ -1088,7 +1095,7 @@
         "assessment": "Solid local Christian/Catholic depth (19 private schools, ~3,158 students) plus The Webb School at Bell Buckle right at the 20-mile edge. No elite in-town anchor comparable to Pope JPII in Hendersonville or BGA in Franklin, so access is good rather than exceptional.",
         "verified": false
       },
-      "notes": "Rutherford County seat ~35 miles southeast of Nashville, and the strongest Tennessee entry on the two budget phases the model is built around. Median home ~$425-480K (working median ~$450K) projects to roughly $650K by 2041 at 2.5%, leaving ~$170K of headroom under the $820K budget - more room than any other TN entry. The rental phase is the standout: average townhome rent is ~$1,765 with 3BR product ranging $1,255-$2,449 and purpose-built BTR communities (Spring Creek, Trinity Point) offering 3BR/2.5BA, all comfortably inside the $2,600 primary ceiling. Market conditions are buyer-friendly (5.33-month supply, 98.25% of ask, only 12.6% of homes selling above asking). MTSU's Jones College of Business is in town and holds AACSB accreditation in both business AND accounting - a dual credential that is rarer than standard AACSB and the most direct professor-of-practice pathway of any Tennessee entry. Football culture is genuine (Oakland, Riverdale, Blackman; the Blackman-Riverdale 'Backyard Brawl'). The binding constraint is commute: I-24 to downtown Nashville runs 35-40 minutes off-peak but 60-90 minutes in the 7-9am rush, which is why the career score sits at Spring Hill's level rather than Hendersonville's.",
+      "notes": "Rutherford County seat ~35 miles southeast of Nashville, and the strongest Tennessee entry on the two budget phases the model is built around. Median home ~$425-480K (working median ~$450K) projects to roughly $650K by 2041 at 2.5%, leaving ~$170K of headroom under the $820K budget - more room than any other TN entry. The rental phase is the standout: average townhome rent is ~$1,765 with 3BR product ranging $1,255-$2,449 and purpose-built BTR communities (Spring Creek, Trinity Point) offering 3BR/2.5BA, all comfortably inside the $2,600 primary ceiling. Market conditions are buyer-friendly (5.33-month supply, 98.25% of ask, only 12.6% of homes selling above asking). MTSU's Jones College of Business is in town and holds AACSB accreditation in both business AND accounting - a dual credential that is rarer than standard AACSB and the most direct professor-of-practice pathway of any Tennessee entry. Football culture is genuine (Oakland, Riverdale, Blackman; the Blackman-Riverdale 'Backyard Brawl'). The binding constraint is commute: I-24 to downtown Nashville runs 35-40 minutes off-peak but 60-90 minutes in the 7-9am rush, which is why the career score sits at Spring Hill's level rather than Hendersonville's. Spouse-employer note: the Kendra Scott store in Franklin (McEwen Southside), the spouse's current workplace, is ~31 mi / ~40 min away - commutable but roughly double Spring Hill's distance.",
       "risks": [
         "COMMUTE IS THE BINDING CONSTRAINT - I-24 to the downtown/East Bank cluster runs 35-40 min off-peak but 60-90 min in morning rush, materially worse than Hendersonville's 20-25 min",
         "MAGNET TRAP: the headline schools are lottery/application-gated, not address-gated - Central Magnet (#2 of 384 TN high schools), Discovery (#2 of 1,020 TN elementary) and McFadden (#3) are all Rutherford Choice schools requiring a Dec-Jan application window and cannot be secured by buying a house",
@@ -3187,6 +3194,10 @@
     {
       "id": "rental_window_governs_schooling",
       "learning": "The rental phase is 13 years and covers all of K-8, while the purchased home covers only the last ~3 years of high school. School quality therefore matters more for the rental location than the purchase location. Screen any 'cheap rent now, good schools later' plan by asking which phase the child's K-8 actually falls in - and prefer locations strong on BOTH rent and schools, which need no phase split at all."
+    },
+    {
+      "id": "two_employer_anchors",
+      "learning": "There are two employer-continuity anchors, not one, and they pull to different metros: Gregg's Sherwin-Williams tenure anchors to Cleveland (HQ), while the spouse's Kendra Scott store anchors to the Nashville metro (Franklin). Austin is the only candidate that serves both careers by upgrade rather than continuity - the strongest AI/product market for Gregg plus Kendra Scott's corporate HQ for the spouse. Any plan should state explicitly which career is being asked to restart."
     }
   ],
   "phase_plan": {
