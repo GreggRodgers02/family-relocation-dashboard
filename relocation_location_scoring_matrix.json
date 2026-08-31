@@ -75,15 +75,16 @@
   "scoring_scenarios": {
     "default": {
       "id": "baseline",
-      "label": "Baseline (public school path)",
+      "label": "Baseline (remote work, current situation)",
+      "basis": "Matches Gregg's actual situation: fully remote for Sherwin-Williams, so no location requires an employer change. Career ceiling is weighted 15 as long-horizon option value rather than 25 as an immediate constraint, with the freed points going to rental quality, AACSB/professor path and the maker/fitness community.",
       "weights": {
-        "ai_tech_pm_market": 25,
+        "ai_tech_pm_market": 15,
         "school_quality": 20,
         "housing_affordability_2041": 20,
-        "rental_feasibility_2028": 12,
+        "rental_feasibility_2028": 14,
         "state_tax_burden": 10,
-        "aacsb_university_proximity": 8,
-        "robotics_fitness_startup_fit": 3,
+        "aacsb_university_proximity": 10,
+        "robotics_fitness_startup_fit": 9,
         "hs_football_culture": 2,
         "private_school_access": 0
       }
@@ -92,31 +93,31 @@
       {
         "id": "private_school",
         "label": "Private school scenario (income-contingent)",
-        "basis": "Assumes household income supports private tuition at enrollment. Public school quality zeroed as a direct substitute.",
-        "weights": {
-          "ai_tech_pm_market": 25,
-          "school_quality": 0,
-          "housing_affordability_2041": 20,
-          "rental_feasibility_2028": 12,
-          "state_tax_burden": 10,
-          "aacsb_university_proximity": 8,
-          "robotics_fitness_startup_fit": 3,
-          "hs_football_culture": 2,
-          "private_school_access": 20
-        }
-      },
-      {
-        "id": "remote_career",
-        "label": "Remote career scenario",
-        "basis": "Assumes fully remote work: local AI/tech job-market proximity is down-weighted (25 -> 15) in favor of the home base - maker/robotics and fitness community, rental home quality, and university/teaching proximity.",
+        "basis": "Assumes household income supports private tuition at enrollment. Public school quality zeroed as a direct substitute. Rebased on the remote-work baseline.",
         "weights": {
           "ai_tech_pm_market": 15,
-          "school_quality": 20,
+          "school_quality": 0,
           "housing_affordability_2041": 20,
           "rental_feasibility_2028": 14,
           "state_tax_burden": 10,
           "aacsb_university_proximity": 10,
           "robotics_fitness_startup_fit": 9,
+          "hs_football_culture": 2,
+          "private_school_access": 20
+        }
+      },
+      {
+        "id": "career_ceiling_priority",
+        "label": "Career-ceiling priority (in-person)",
+        "basis": "The former baseline. Weights the AI/product career ceiling at 25 - the view to use if Gregg ever wants to prioritise stepping into an in-person senior/executive product role over the remote-work status quo.",
+        "weights": {
+          "ai_tech_pm_market": 25,
+          "school_quality": 20,
+          "housing_affordability_2041": 20,
+          "rental_feasibility_2028": 12,
+          "state_tax_burden": 10,
+          "aacsb_university_proximity": 8,
+          "robotics_fitness_startup_fit": 3,
           "hs_football_culture": 2,
           "private_school_access": 0
         }
@@ -126,9 +127,10 @@
   "criteria": [
     {
       "id": "ai_tech_pm_market",
-      "label": "AI / Tech Product Management Market",
-      "weight_percent": 25,
-      "description": "Strength of nearby AI, software, SaaS, cloud, data, product management, and executive AI leadership career opportunities."
+      "label": "AI / Tech Product Career Ceiling",
+      "weight_percent": 15,
+      "description": "Long-horizon upward-mobility ceiling: where Gregg could step up into senior or executive AI/product leadership later in the 2026-2041 window. Because he works fully remote for Sherwin-Williams, this is NOT a measure of whether he needs a local job on arrival - no candidate location requires him to change employers. Read it as career option value: depth of senior roles to move into, in-person leadership opportunities that remote work cannot reach, and fallback market strength if he ever leaves or is laid off.",
+      "scoring_note": "Scores track market depth, which correlates with but is not identical to ceiling. A market can be large in junior/IC roles yet thin in senior AI product leadership. Treat a high score as 'more senior roles exist to move into', not 'easier to get hired tomorrow'."
     },
     {
       "id": "school_quality",
@@ -145,7 +147,7 @@
     {
       "id": "rental_feasibility_2028",
       "label": "2028 Rental Feasibility",
-      "weight_percent": 12,
+      "weight_percent": 14,
       "description": "Likelihood of finding professionally managed 3-bedroom townhome rentals near target schools and lifestyle nodes around or near the ~$2,200/month planning target."
     },
     {
@@ -157,13 +159,13 @@
     {
       "id": "aacsb_university_proximity",
       "label": "AACSB University / Future Teaching Proximity",
-      "weight_percent": 8,
+      "weight_percent": 10,
       "description": "Proximity to AACSB-accredited business schools and universities that may support Gregg's long-term goal of teaching applied AI in business."
     },
     {
       "id": "robotics_fitness_startup_fit",
       "label": "Robotics, Fitness, Maker, and Indie Builder Lifestyle",
-      "weight_percent": 3,
+      "weight_percent": 9,
       "description": "Fit for robotics + AI interests, hardware/maker culture, fitness events such as running festivals and HYROX-style training, and indie builder/community opportunities."
     },
     {
@@ -233,9 +235,9 @@
         "Austin-metro pricing can re-accelerate if rates fall",
         "Elementary zone quality varies; verify exact RRISD/LISD assignment"
       ],
-      "weighted_total_out_of_100": 88.6,
-      "weighted_total_private_scenario": 88.65,
-      "weighted_total_remote_scenario": 87.95
+      "weighted_total_out_of_100": 87.95,
+      "weighted_total_private_scenario": 87.95,
+      "weighted_total_career_max_scenario": 88.65
     },
     {
       "rank": 2,
@@ -300,9 +302,9 @@
         "LISD campus quality varies widely despite strong district reputation; verify exact elementary zone",
         "Townhome stock is limited; skews single-family"
       ],
-      "weighted_total_out_of_100": 87.0,
-      "weighted_total_private_scenario": 85.75,
-      "weighted_total_remote_scenario": 86.05
+      "weighted_total_out_of_100": 86.05,
+      "weighted_total_private_scenario": 85.05,
+      "weighted_total_career_max_scenario": 86.75
     },
     {
       "rank": 3,
@@ -426,9 +428,9 @@
         "Kendra Scott: VERIFIED permanent store at Eton Chagrin Blvd (Woodmere, ~10 min east of Solon); Crocker Park (Westlake, near Rocky River) has only hosted pop-ups - favors the Solon/east side for spouse-employer proximity",
         "Winter climate/lake-effect snow not modeled in scoring but relevant to running festival/HYROX training cadence"
       ],
-      "weighted_total_out_of_100": 83.0,
-      "weighted_total_private_scenario": 83.0,
-      "weighted_total_remote_scenario": 83.3
+      "weighted_total_out_of_100": 83.3,
+      "weighted_total_private_scenario": 83.3,
+      "weighted_total_career_max_scenario": 83.0
     },
     {
       "rank": 4,
@@ -495,9 +497,9 @@
         "Further from Austin tech corridor; weaker for in-office roles if not fully remote",
         "Southwestern University is small/teaching-focused; verify fit vs. UT for professor pathway"
       ],
-      "weighted_total_out_of_100": 83.0,
-      "weighted_total_private_scenario": 84.45,
-      "weighted_total_remote_scenario": 83.05
+      "weighted_total_out_of_100": 83.05,
+      "weighted_total_private_scenario": 84.05,
+      "weighted_total_career_max_scenario": 83.45
     },
     {
       "rank": 5,
@@ -651,12 +653,77 @@
         "Concord city-wide CrimeGrade is C- (34th percentile); NW/W Concord materially better than central. Corban Row sub-zone unverified.",
         "All BTR options exceed cap on total monthly price; Corban Row clears only on base rent, and 2028 escalation breaks it either way"
       ],
-      "weighted_total_out_of_100": 82.65,
-      "weighted_total_private_scenario": 82.65,
-      "weighted_total_remote_scenario": 82.75
+      "weighted_total_out_of_100": 82.75,
+      "weighted_total_private_scenario": 82.75,
+      "weighted_total_career_max_scenario": 82.65
     },
     {
       "rank": 6,
+      "area": "Madison / Huntsville",
+      "state": "Alabama",
+      "state_abbr": "AL",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "Best value robotics option",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 9.5,
+        "rental_feasibility_2028": 8,
+        "state_tax_burden": 6.5,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 9.5,
+        "hs_football_culture": 8,
+        "private_school_access": 8.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Randolph School",
+            "location": "Huntsville, AL",
+            "grades": "K-12",
+            "approx_distance_mi": 12,
+            "enrollment": 958,
+            "niche_grade": "A+",
+            "football_program": true,
+            "notes": "#1 private K-12 in Alabama (Niche).",
+            "verified": false
+          },
+          {
+            "name": "Valley Fellowship Christian Academy",
+            "location": "Huntsville, AL",
+            "niche_grade": "A+",
+            "verified": false
+          },
+          {
+            "name": "Huntsville College Preparatory School",
+            "location": "Huntsville, AL",
+            "verified": false
+          },
+          {
+            "name": "Holy Spirit Regional Catholic School",
+            "location": "Huntsville, AL",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Randolph School is the state's #1 private K-12 (A+) and sits ~12 mi from Madison, anchoring a solid Huntsville-metro private cluster.",
+        "verified": false
+      },
+      "notes": "Most underrated value pick. Strong robotics, aerospace, defense, engineering, affordability, schools, and long-term stability without premium-suburb pricing.",
+      "risks": [
+        "AI Product career ceiling may be narrower than Austin, DFW, Atlanta, or Triangle",
+        "Some roles may skew defense/aerospace rather than consumer SaaS",
+        "University teaching options are more concentrated than in larger metros"
+      ],
+      "weighted_total_out_of_100": 82.6,
+      "weighted_total_private_scenario": 82.6,
+      "weighted_total_career_max_scenario": 81.3
+    },
+    {
+      "rank": 7,
       "area": "Plano / Frisco",
       "state": "Texas",
       "state_abbr": "TX",
@@ -726,74 +793,9 @@
         "Property taxes and insurance should be modeled",
         "Rental target could be difficult in preferred school zones"
       ],
-      "weighted_total_out_of_100": 82.4,
-      "weighted_total_private_scenario": 81.4,
-      "weighted_total_remote_scenario": 81.0
-    },
-    {
-      "rank": 7,
-      "area": "Madison / Huntsville",
-      "state": "Alabama",
-      "state_abbr": "AL",
-      "tier": "Tier 1 - Serious Finalist",
-      "strategic_label": "Best value robotics option",
-      "scores": {
-        "ai_tech_pm_market": 7.5,
-        "school_quality": 8.5,
-        "housing_affordability_2041": 9.5,
-        "rental_feasibility_2028": 8,
-        "state_tax_burden": 6.5,
-        "aacsb_university_proximity": 7.5,
-        "robotics_fitness_startup_fit": 9.5,
-        "hs_football_culture": 8,
-        "private_school_access": 8.5
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Randolph School",
-            "location": "Huntsville, AL",
-            "grades": "K-12",
-            "approx_distance_mi": 12,
-            "enrollment": 958,
-            "niche_grade": "A+",
-            "football_program": true,
-            "notes": "#1 private K-12 in Alabama (Niche).",
-            "verified": false
-          },
-          {
-            "name": "Valley Fellowship Christian Academy",
-            "location": "Huntsville, AL",
-            "niche_grade": "A+",
-            "verified": false
-          },
-          {
-            "name": "Huntsville College Preparatory School",
-            "location": "Huntsville, AL",
-            "verified": false
-          },
-          {
-            "name": "Holy Spirit Regional Catholic School",
-            "location": "Huntsville, AL",
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Randolph School is the state's #1 private K-12 (A+) and sits ~12 mi from Madison, anchoring a solid Huntsville-metro private cluster.",
-        "verified": false
-      },
-      "notes": "Most underrated value pick. Strong robotics, aerospace, defense, engineering, affordability, schools, and long-term stability without premium-suburb pricing.",
-      "risks": [
-        "AI Product career ceiling may be narrower than Austin, DFW, Atlanta, or Triangle",
-        "Some roles may skew defense/aerospace rather than consumer SaaS",
-        "University teaching options are more concentrated than in larger metros"
-      ],
-      "weighted_total_out_of_100": 81.3,
-      "weighted_total_private_scenario": 81.3,
-      "weighted_total_remote_scenario": 82.6
+      "weighted_total_out_of_100": 81.0,
+      "weighted_total_private_scenario": 80.0,
+      "weighted_total_career_max_scenario": 82.4
     },
     {
       "rank": 8,
@@ -861,9 +863,9 @@
         "Rental target may be tight in elite school zones",
         "State tax is less favorable than TX/FL/TN"
       ],
-      "weighted_total_out_of_100": 80.7,
-      "weighted_total_private_scenario": 79.7,
-      "weighted_total_remote_scenario": 80.3
+      "weighted_total_out_of_100": 80.3,
+      "weighted_total_private_scenario": 79.3,
+      "weighted_total_career_max_scenario": 80.7
     },
     {
       "area": "Spring Hill (Summit / Page Zones, Williamson County)",
@@ -945,90 +947,12 @@
       },
       "tier": "Tier 1 - Serious Finalist",
       "rank": 9,
-      "weighted_total_out_of_100": 80,
-      "weighted_total_private_scenario": 79.0,
-      "weighted_total_remote_scenario": 80.3
+      "weighted_total_out_of_100": 80.3,
+      "weighted_total_private_scenario": 79.3,
+      "weighted_total_career_max_scenario": 80.0
     },
     {
       "rank": 10,
-      "area": "Austin (City Proper)",
-      "state": "Texas",
-      "state_abbr": "TX",
-      "tier": "Tier 2 - Strong Trade-Off",
-      "strategic_label": "Maximum career ceiling / urban-core trade on schools and budget",
-      "scores": {
-        "ai_tech_pm_market": 9.5,
-        "school_quality": 6.5,
-        "housing_affordability_2041": 6.5,
-        "rental_feasibility_2028": 6.5,
-        "state_tax_burden": 10.0,
-        "aacsb_university_proximity": 10.0,
-        "robotics_fitness_startup_fit": 9.5,
-        "hs_football_culture": 7.0,
-        "private_school_access": 9.5
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "St. Stephen's Episcopal School",
-            "location": "Austin, TX",
-            "grades": "6-12",
-            "approx_distance_mi": 8,
-            "niche_grade": "A+",
-            "notes": "Ranked #4 private school in Texas (Niche); 370-acre West Austin campus, boarding + day.",
-            "verified": false
-          },
-          {
-            "name": "St. Andrew's Episcopal School",
-            "location": "Austin, TX",
-            "grades": "1-12",
-            "approx_distance_mi": 5,
-            "enrollment": 850,
-            "niche_grade": "A+",
-            "football_program": true,
-            "notes": "Two campuses (W 31st St lower/middle, SW Parkway upper).",
-            "verified": false
-          },
-          {
-            "name": "Regents School of Austin",
-            "location": "Austin, TX",
-            "grades": "K-12",
-            "approx_distance_mi": 9,
-            "enrollment": 1030,
-            "football_program": true,
-            "notes": "Austin's largest private school by enrollment; classical Christian.",
-            "verified": false
-          },
-          {
-            "name": "St. Dominic Savio Catholic High School",
-            "location": "Austin, TX",
-            "grades": "9-12",
-            "approx_distance_mi": 15,
-            "football_program": true,
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Deepest private market in Texas outside DFW/Houston: St. Stephen's (#4 in TX) plus St. Andrew's and Regents all sit inside the city. Private access is the main mitigant for Austin ISD's zone volatility.",
-        "verified": false
-      },
-      "notes": "The highest career ceiling in the matrix: Tesla Gigafactory, Oracle, Apptronik (Apollo humanoid robotics), Samsung's Taylor fab, and a dense AI/startup scene, with UT Austin McCombs (AACSB, top-tier) in the city itself. No state income tax. The trade-off is family-formation fit, not career. Austin ISD earned its first B rating in four years but remains sharply bimodal - roughly two dozen A schools alongside 20 F-rated and 11 D-rated campuses - so school outcome is entirely zone-dependent and carries far more variance than Round Rock or Cedar Park. City-proper median home price is ~$530-577K (Zillow average $504K, down 4.4% YoY), which projects to roughly $800K by 2041 at 2.5% - inside the $820K budget but with almost no headroom, unlike the suburbs. 3BR rents average ~$2,460, clearing the $2,600 primary ceiling but with little room for 2028 escalation.",
-      "risks": [
-        "Austin ISD is bimodal - 20 F-rated and 11 D-rated campuses alongside its A schools; elementary zone verification is mandatory and carries higher variance than the suburban TX entries",
-        "2041 budget headroom is thin: ~$550K median projects to ~$800K against an $820K budget, versus ~$200K headroom in Round Rock or Georgetown",
-        "3BR rent (~$2,460) clears the $2,600 ceiling today but leaves little margin for 2028 escalation",
-        "Prices are currently falling (-4.4% YoY), which helps entry but signals a softer near-term market than the 2.5% appreciation assumption",
-        "Round Rock and Cedar Park capture nearly the same job market with materially better schools and budget - Austin proper must justify itself on urban lifestyle, not career access"
-      ],
-      "weighted_total_out_of_100": 79.8,
-      "weighted_total_private_scenario": 85.8,
-      "weighted_total_remote_scenario": 79.3
-    },
-    {
-      "rank": 11,
       "area": "Murfreesboro",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -1110,9 +1034,87 @@
         "Local employment base (MTSU, Nissan, HCA, Amazon, National HealthCare HQ) is healthcare, education, manufacturing and logistics rather than AI/product, so the career case still depends on the Nashville commute",
         "No robotics anchor comparable to Huntsville; MTSU aerospace and Nissan Smyrna manufacturing are modest offsets"
       ],
-      "weighted_total_out_of_100": 79.2,
-      "weighted_total_private_scenario": 79.2,
-      "weighted_total_remote_scenario": 79.8
+      "weighted_total_out_of_100": 79.8,
+      "weighted_total_private_scenario": 79.8,
+      "weighted_total_career_max_scenario": 79.2
+    },
+    {
+      "rank": 11,
+      "area": "Austin (City Proper)",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Maximum career ceiling / urban-core trade on schools and budget",
+      "scores": {
+        "ai_tech_pm_market": 9.5,
+        "school_quality": 6.5,
+        "housing_affordability_2041": 6.5,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 10.0,
+        "robotics_fitness_startup_fit": 9.5,
+        "hs_football_culture": 7.0,
+        "private_school_access": 9.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "St. Stephen's Episcopal School",
+            "location": "Austin, TX",
+            "grades": "6-12",
+            "approx_distance_mi": 8,
+            "niche_grade": "A+",
+            "notes": "Ranked #4 private school in Texas (Niche); 370-acre West Austin campus, boarding + day.",
+            "verified": false
+          },
+          {
+            "name": "St. Andrew's Episcopal School",
+            "location": "Austin, TX",
+            "grades": "1-12",
+            "approx_distance_mi": 5,
+            "enrollment": 850,
+            "niche_grade": "A+",
+            "football_program": true,
+            "notes": "Two campuses (W 31st St lower/middle, SW Parkway upper).",
+            "verified": false
+          },
+          {
+            "name": "Regents School of Austin",
+            "location": "Austin, TX",
+            "grades": "K-12",
+            "approx_distance_mi": 9,
+            "enrollment": 1030,
+            "football_program": true,
+            "notes": "Austin's largest private school by enrollment; classical Christian.",
+            "verified": false
+          },
+          {
+            "name": "St. Dominic Savio Catholic High School",
+            "location": "Austin, TX",
+            "grades": "9-12",
+            "approx_distance_mi": 15,
+            "football_program": true,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Deepest private market in Texas outside DFW/Houston: St. Stephen's (#4 in TX) plus St. Andrew's and Regents all sit inside the city. Private access is the main mitigant for Austin ISD's zone volatility.",
+        "verified": false
+      },
+      "notes": "The highest career ceiling in the matrix: Tesla Gigafactory, Oracle, Apptronik (Apollo humanoid robotics), Samsung's Taylor fab, and a dense AI/startup scene, with UT Austin McCombs (AACSB, top-tier) in the city itself. No state income tax. The trade-off is family-formation fit, not career. Austin ISD earned its first B rating in four years but remains sharply bimodal - roughly two dozen A schools alongside 20 F-rated and 11 D-rated campuses - so school outcome is entirely zone-dependent and carries far more variance than Round Rock or Cedar Park. City-proper median home price is ~$530-577K (Zillow average $504K, down 4.4% YoY), which projects to roughly $800K by 2041 at 2.5% - inside the $820K budget but with almost no headroom, unlike the suburbs. 3BR rents average ~$2,460, clearing the $2,600 primary ceiling but with little room for 2028 escalation.",
+      "risks": [
+        "Austin ISD is bimodal - 20 F-rated and 11 D-rated campuses alongside its A schools; elementary zone verification is mandatory and carries higher variance than the suburban TX entries",
+        "2041 budget headroom is thin: ~$550K median projects to ~$800K against an $820K budget, versus ~$200K headroom in Round Rock or Georgetown",
+        "3BR rent (~$2,460) clears the $2,600 ceiling today but leaves little margin for 2028 escalation",
+        "Prices are currently falling (-4.4% YoY), which helps entry but signals a softer near-term market than the 2.5% appreciation assumption",
+        "Round Rock and Cedar Park capture nearly the same job market with materially better schools and budget - Austin proper must justify itself on urban lifestyle, not career access"
+      ],
+      "weighted_total_out_of_100": 79.3,
+      "weighted_total_private_scenario": 85.3,
+      "weighted_total_career_max_scenario": 79.8
     },
     {
       "rank": 12,
@@ -1176,88 +1178,12 @@
         "AI Product market is less deep than Austin, DFW, Triangle, or Atlanta",
         "School-zone and flood/insurance diligence are essential"
       ],
-      "weighted_total_out_of_100": 79.15,
-      "weighted_total_private_scenario": 79.15,
-      "weighted_total_remote_scenario": 79.25
+      "weighted_total_out_of_100": 79.25,
+      "weighted_total_private_scenario": 79.25,
+      "weighted_total_career_max_scenario": 79.15
     },
     {
-      "area": "Hendersonville",
-      "state": "Tennessee",
-      "state_abbr": "TN",
-      "metro": "Nashville",
-      "strategic_label": "Closest Nashville downtown/East Bank access / rental cap is the constraint",
-      "est_2028_rent": 2350,
-      "best_rental_submarket": "Hendersonville (Sumner County, Indian Lake area)",
-      "est_2041_buy_price": 755000,
-      "best_buy_submarket": "Hendersonville (Merrol Hyde Magnet zone a plus)",
-      "rent_buy_same_area": true,
-      "scores": {
-        "ai_tech_pm_market": 8.0,
-        "school_quality": 8.0,
-        "housing_affordability_2041": 7.5,
-        "rental_feasibility_2028": 6.5,
-        "state_tax_burden": 10.0,
-        "aacsb_university_proximity": 7.5,
-        "spouse_pref": 4.5,
-        "robotics_fitness_startup_fit": 7.0,
-        "hs_football_culture": 7.5,
-        "private_school_access": 8.0
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Pope Saint John Paul II Preparatory School",
-            "location": "Hendersonville, TN",
-            "grades": "9-12",
-            "approx_distance_mi": 3,
-            "enrollment": 750,
-            "student_teacher_ratio": "8.5:1",
-            "football_program": true,
-            "notes": "Catholic, SACS accredited; AP courses and 34 sports; #1 Catholic HS in the Nashville area (Niche).",
-            "verified": false
-          },
-          {
-            "name": "Hendersonville Christian Academy",
-            "location": "Hendersonville, TN",
-            "enrollment": 287,
-            "approx_distance_mi": 3,
-            "verified": false
-          },
-          {
-            "name": "Lighthouse Christian School",
-            "location": "Antioch, TN",
-            "approx_distance_mi": 15,
-            "verified": false
-          },
-          {
-            "name": "Davidson Academy",
-            "location": "Nashville, TN",
-            "approx_distance_mi": 15,
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Pope St. John Paul II Prep (Catholic, ~3 mi, football) anchors as the #1 Catholic HS in the Nashville area; Hendersonville Christian and Lighthouse Christian round out local options, with Davidson Academy reachable at ~15 mi. Well inside the 20-mile radius.",
-        "verified": false
-      },
-      "notes": "Sumner County suburb NE of Nashville and the strongest-career-access Tennessee entry under the corrected model. Best-positioned TN city for the downtown/East Bank employer cluster (Oracle, Amazon, AllianceBernstein, Asurion) at 20-25 min via TN-386 to I-65. Unusually low school-zone boundary risk: three separate 5-star public high schools (Hendersonville, Beech, Station Camp) plus the Merrol Hyde K-12 magnet. Median home ~$520K supports the 2041 budget with headroom. AllianceBernstein presence makes this fintech-addressable for Gregg's background. Kendra Scott accessible at The Mall at Green Hills, ~20-25 min.",
-      "risks": [
-        "Rental cap compliance depends on inventory vintage - median townhome rent ~$1,968 and 3BR units at $2,200 exist, but purpose-built BTR (SkyMor Durham Farms) starts at $2,702 for 3BR, above the $2,300 cap",
-        "Sumner County is a good district, not an elite one - 4-star, ranked 30 of 139 TN districts; strength is concentrated in specific schools rather than district-wide",
-        "Nashville is a real metro tech market but not an AI research hub - ceiling is below Austin, DFW, or the Triangle",
-        "Merrol Hyde Magnet admission is by county-wide lottery and cannot be secured by address"
-      ],
-      "tier": "Tier 2 - Strong Trade-Off",
       "rank": 13,
-      "weighted_total_out_of_100": 78.4,
-      "weighted_total_private_scenario": 78.4,
-      "weighted_total_remote_scenario": 77.4
-    },
-    {
-      "rank": 14,
       "area": "St. Johns County",
       "state": "Florida",
       "state_abbr": "FL",
@@ -1314,149 +1240,9 @@
         "Commuting and job-market access may be constrained",
         "Rental affordability near top schools may be tight"
       ],
-      "weighted_total_out_of_100": 77.75,
-      "weighted_total_private_scenario": 74.75,
-      "weighted_total_remote_scenario": 78.35
-    },
-    {
-      "rank": 15,
-      "area": "Suwanee / Peachtree Corners",
-      "state": "Georgia",
-      "state_abbr": "GA",
-      "tier": "Tier 2 - Strong Trade-Off",
-      "strategic_label": "Best Georgia family-access option",
-      "scores": {
-        "ai_tech_pm_market": 8.5,
-        "school_quality": 9,
-        "housing_affordability_2041": 7,
-        "rental_feasibility_2028": 6,
-        "state_tax_burden": 6,
-        "aacsb_university_proximity": 8.5,
-        "robotics_fitness_startup_fit": 8.5,
-        "hs_football_culture": 8.5,
-        "private_school_access": 9.0
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Wesleyan School",
-            "location": "Peachtree Corners, GA",
-            "grades": "K-12",
-            "approx_distance_mi": 3,
-            "annual_tuition_usd": 30555,
-            "enrollment": 1198,
-            "student_teacher_ratio": "7:1",
-            "niche_grade": "A+",
-            "avg_sat": 1310,
-            "avg_act": 31,
-            "football_program": true,
-            "notes": "Athletics power; multiple state titles.",
-            "verified": false
-          },
-          {
-            "name": "Greater Atlanta Christian School",
-            "location": "Norcross, GA",
-            "approx_distance_mi": 8,
-            "football_program": true,
-            "verified": false
-          },
-          {
-            "name": "Cornerstone Christian Academy",
-            "location": "Peachtree Corners, GA",
-            "approx_distance_mi": 4,
-            "verified": false
-          },
-          {
-            "name": "Blessed Trinity Catholic High School",
-            "location": "Roswell, GA",
-            "approx_distance_mi": 15,
-            "football_program": true,
-            "notes": "Part of the adjacent Roswell cluster.",
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Wesleyan School (A+, in Peachtree Corners) anchors a deep North Fulton/Gwinnett cluster that also reaches the Roswell schools within ~15 mi. Strong football/athletics culture.",
-        "verified": false
-      },
-      "notes": "Strong Georgia compromise: Atlanta tech access, strong Gwinnett schools, Curiosity Lab/robotics angle, and better affordability discipline than Alpharetta/Johns Creek.",
-      "risks": [
-        "North Atlanta housing can appreciate quickly",
-        "Traffic and commute patterns are material",
-        "Rental target may require careful submarket selection"
-      ],
-      "weighted_total_out_of_100": 77.5,
-      "weighted_total_private_scenario": 77.5,
-      "weighted_total_remote_scenario": 77.0
-    },
-    {
-      "area": "Celina",
-      "state": "Texas",
-      "state_abbr": "TX",
-      "strategic_label": "DFW value play with rental and school trade-offs",
-      "est_2028_rent": 2650,
-      "scores": {
-        "ai_tech_pm_market": 8,
-        "school_quality": 6.5,
-        "housing_affordability_2041": 8.5,
-        "rental_feasibility_2028": 5.5,
-        "state_tax_burden": 10,
-        "aacsb_university_proximity": 8,
-        "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 9.5,
-        "private_school_access": 8.0
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Prestonwood Christian Academy North",
-            "location": "Prosper, TX",
-            "grades": "PK-12",
-            "approx_distance_mi": 10,
-            "annual_tuition_usd": 24081,
-            "enrollment": 620,
-            "football_program": true,
-            "notes": "North campus explicitly serves Prosper/Celina families.",
-            "verified": false
-          },
-          {
-            "name": "Coram Deo Academy of Collin County",
-            "location": "Collin County, TX",
-            "approx_distance_mi": 15,
-            "notes": "Classical Christian.",
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [
-          {
-            "name": "Legacy Christian Academy",
-            "location": "Frisco, TX",
-            "approx_distance_mi": 20,
-            "verified": false,
-            "excluded_reason": "At/over the 20-mile radius from Celina"
-          }
-        ],
-        "assessment": "Prestonwood's Prosper (North) campus sits ~10 mi from Celina and serves Celina families; the larger Plano/Frisco campuses are near the radius edge. Growing but not yet dense.",
-        "verified": false
-      },
-      "notes": "Fast-growing Collin County exurb north of Frisco. No state income tax, DFW AI/tech market access, strong football culture (G.A. Moore legacy), and better 2041 purchase affordability than Plano/Frisco. School quality (Celina ISD, Niche A-, #161 in TX) and 2028 rental costs (~$2,650 median) are the primary weaknesses against the model.",
-      "risks": [
-        "Celina ISD ranks #161 in Texas — materially below Prosper, Frisco, and Plano in the same region",
-        "3-bedroom townhome rents average $2,650-$2,800, above the $2,300 target — rental phase feasibility is the biggest flag",
-        "Commute distance to core DFW AI/tech employers is longer than Plano/Frisco; best suited for remote-first career path by 2028",
-        "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
-      ],
-      "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 16,
-      "weighted_total_out_of_100": 77,
-      "weighted_total_private_scenario": 80.0,
-      "weighted_total_remote_scenario": 75.9
+      "weighted_total_out_of_100": 78.35,
+      "weighted_total_private_scenario": 75.35,
+      "weighted_total_career_max_scenario": 77.75
     },
     {
       "area": "Tampa",
@@ -1532,13 +1318,163 @@
         "AI/product market is mid-tier and concentrated in finance, insurance and health tech; ceiling is below Austin, DFW, or the Triangle for frontier AI product work"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 17,
-      "weighted_total_out_of_100": 76.65,
-      "weighted_total_private_scenario": 80.65,
-      "weighted_total_remote_scenario": 77.45
+      "rank": 14,
+      "weighted_total_out_of_100": 77.45,
+      "weighted_total_private_scenario": 81.45,
+      "weighted_total_career_max_scenario": 76.65
     },
     {
-      "rank": 18,
+      "area": "Hendersonville",
+      "state": "Tennessee",
+      "state_abbr": "TN",
+      "metro": "Nashville",
+      "strategic_label": "Closest Nashville downtown/East Bank access / rental cap is the constraint",
+      "est_2028_rent": 2350,
+      "best_rental_submarket": "Hendersonville (Sumner County, Indian Lake area)",
+      "est_2041_buy_price": 755000,
+      "best_buy_submarket": "Hendersonville (Merrol Hyde Magnet zone a plus)",
+      "rent_buy_same_area": true,
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 7.5,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 7.5,
+        "spouse_pref": 4.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 7.5,
+        "private_school_access": 8.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Pope Saint John Paul II Preparatory School",
+            "location": "Hendersonville, TN",
+            "grades": "9-12",
+            "approx_distance_mi": 3,
+            "enrollment": 750,
+            "student_teacher_ratio": "8.5:1",
+            "football_program": true,
+            "notes": "Catholic, SACS accredited; AP courses and 34 sports; #1 Catholic HS in the Nashville area (Niche).",
+            "verified": false
+          },
+          {
+            "name": "Hendersonville Christian Academy",
+            "location": "Hendersonville, TN",
+            "enrollment": 287,
+            "approx_distance_mi": 3,
+            "verified": false
+          },
+          {
+            "name": "Lighthouse Christian School",
+            "location": "Antioch, TN",
+            "approx_distance_mi": 15,
+            "verified": false
+          },
+          {
+            "name": "Davidson Academy",
+            "location": "Nashville, TN",
+            "approx_distance_mi": 15,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Pope St. John Paul II Prep (Catholic, ~3 mi, football) anchors as the #1 Catholic HS in the Nashville area; Hendersonville Christian and Lighthouse Christian round out local options, with Davidson Academy reachable at ~15 mi. Well inside the 20-mile radius.",
+        "verified": false
+      },
+      "notes": "Sumner County suburb NE of Nashville and the strongest-career-access Tennessee entry under the corrected model. Best-positioned TN city for the downtown/East Bank employer cluster (Oracle, Amazon, AllianceBernstein, Asurion) at 20-25 min via TN-386 to I-65. Unusually low school-zone boundary risk: three separate 5-star public high schools (Hendersonville, Beech, Station Camp) plus the Merrol Hyde K-12 magnet. Median home ~$520K supports the 2041 budget with headroom. AllianceBernstein presence makes this fintech-addressable for Gregg's background. Kendra Scott accessible at The Mall at Green Hills, ~20-25 min.",
+      "risks": [
+        "Rental cap compliance depends on inventory vintage - median townhome rent ~$1,968 and 3BR units at $2,200 exist, but purpose-built BTR (SkyMor Durham Farms) starts at $2,702 for 3BR, above the $2,300 cap",
+        "Sumner County is a good district, not an elite one - 4-star, ranked 30 of 139 TN districts; strength is concentrated in specific schools rather than district-wide",
+        "Nashville is a real metro tech market but not an AI research hub - ceiling is below Austin, DFW, or the Triangle",
+        "Merrol Hyde Magnet admission is by county-wide lottery and cannot be secured by address"
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
+      "rank": 15,
+      "weighted_total_out_of_100": 77.4,
+      "weighted_total_private_scenario": 77.4,
+      "weighted_total_career_max_scenario": 78.4
+    },
+    {
+      "rank": 16,
+      "area": "Suwanee / Peachtree Corners",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Best Georgia family-access option",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 9,
+        "housing_affordability_2041": 7,
+        "rental_feasibility_2028": 6,
+        "state_tax_burden": 6,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 8.5,
+        "hs_football_culture": 8.5,
+        "private_school_access": 9.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Wesleyan School",
+            "location": "Peachtree Corners, GA",
+            "grades": "K-12",
+            "approx_distance_mi": 3,
+            "annual_tuition_usd": 30555,
+            "enrollment": 1198,
+            "student_teacher_ratio": "7:1",
+            "niche_grade": "A+",
+            "avg_sat": 1310,
+            "avg_act": 31,
+            "football_program": true,
+            "notes": "Athletics power; multiple state titles.",
+            "verified": false
+          },
+          {
+            "name": "Greater Atlanta Christian School",
+            "location": "Norcross, GA",
+            "approx_distance_mi": 8,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Cornerstone Christian Academy",
+            "location": "Peachtree Corners, GA",
+            "approx_distance_mi": 4,
+            "verified": false
+          },
+          {
+            "name": "Blessed Trinity Catholic High School",
+            "location": "Roswell, GA",
+            "approx_distance_mi": 15,
+            "football_program": true,
+            "notes": "Part of the adjacent Roswell cluster.",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Wesleyan School (A+, in Peachtree Corners) anchors a deep North Fulton/Gwinnett cluster that also reaches the Roswell schools within ~15 mi. Strong football/athletics culture.",
+        "verified": false
+      },
+      "notes": "Strong Georgia compromise: Atlanta tech access, strong Gwinnett schools, Curiosity Lab/robotics angle, and better affordability discipline than Alpharetta/Johns Creek.",
+      "risks": [
+        "North Atlanta housing can appreciate quickly",
+        "Traffic and commute patterns are material",
+        "Rental target may require careful submarket selection"
+      ],
+      "weighted_total_out_of_100": 77.0,
+      "weighted_total_private_scenario": 77.0,
+      "weighted_total_career_max_scenario": 77.5
+    },
+    {
+      "rank": 17,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -1606,9 +1542,425 @@
         "South Carolina tax profile is less favorable",
         "AI roles may require Charlotte or remote-first strategy"
       ],
-      "weighted_total_out_of_100": 76.3,
-      "weighted_total_private_scenario": 75.3,
-      "weighted_total_remote_scenario": 76.6
+      "weighted_total_out_of_100": 76.6,
+      "weighted_total_private_scenario": 75.6,
+      "weighted_total_career_max_scenario": 76.3
+    },
+    {
+      "rank": 18,
+      "area": "Auburn / Opelika",
+      "state": "Alabama",
+      "state_abbr": "AL",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "College-town affordability fallback",
+      "scores": {
+        "ai_tech_pm_market": 5.5,
+        "school_quality": 8,
+        "housing_affordability_2041": 9,
+        "rental_feasibility_2028": 8,
+        "state_tax_burden": 6.5,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7,
+        "hs_football_culture": 9,
+        "private_school_access": 7.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Lee-Scott Academy",
+            "location": "Auburn, AL",
+            "grades": "PK-12",
+            "approx_distance_mi": 3,
+            "annual_tuition_usd": 11000,
+            "enrollment": 754,
+            "student_teacher_ratio": "8:1",
+            "football_program": true,
+            "notes": "Top-20% in AL for average ACT; 95% to 4-year college.",
+            "verified": false
+          },
+          {
+            "name": "Glenwood School",
+            "location": "Smiths Station, AL",
+            "grades": "K-12",
+            "approx_distance_mi": 10,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Trinity Christian School",
+            "location": "Opelika, AL",
+            "grades": "K-12",
+            "approx_distance_mi": 6,
+            "verified": false
+          },
+          {
+            "name": "Auburn Classical Academy",
+            "location": "Auburn, AL",
+            "approx_distance_mi": 3,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Lee-Scott Academy is the clear anchor (strong ACT, 95% college) but the Lee County market is small with no A+ elite option.",
+        "verified": false
+      },
+      "notes": "Great affordability, strong college-town identity, Auburn University proximity, and football culture. Weaker AI Product career market.",
+      "risks": [
+        "Likely requires remote-first career strategy",
+        "Fewer AI/product employers locally",
+        "Long-term professional network may be narrower"
+      ],
+      "weighted_total_out_of_100": 76.55,
+      "weighted_total_private_scenario": 74.55,
+      "weighted_total_career_max_scenario": 74.55
+    },
+    {
+      "rank": 19,
+      "area": "Farragut",
+      "state": "Tennessee",
+      "state_abbr": "TN",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Education / Knoxville option",
+      "scores": {
+        "ai_tech_pm_market": 5.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 7,
+        "rental_feasibility_2028": 8,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 8,
+        "robotics_fitness_startup_fit": 7,
+        "hs_football_culture": 8,
+        "private_school_access": 8.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Webb School of Knoxville",
+            "location": "Knoxville, TN",
+            "grades": "PK-12",
+            "approx_distance_mi": 10,
+            "annual_tuition_usd": 27100,
+            "niche_grade": "A+",
+            "football_program": true,
+            "notes": "#12 private HS in Tennessee (Niche).",
+            "verified": false
+          },
+          {
+            "name": "Christian Academy of Knoxville",
+            "location": "Farragut, TN",
+            "grades": "PK-12",
+            "approx_distance_mi": 2,
+            "annual_tuition_usd": 17700,
+            "niche_grade": "A-",
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Knoxville Catholic High School",
+            "location": "Knoxville, TN",
+            "grades": "9-12",
+            "approx_distance_mi": 12,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Concord Christian School",
+            "location": "Farragut, TN",
+            "approx_distance_mi": 3,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Webb School of Knoxville (A+) ~10 mi anchors a solid West Knox cluster, with Christian Academy of Knoxville (A-) in Farragut itself.",
+        "verified": false
+      },
+      "notes": "Strong schools, no state income tax, and UT Knoxville adjacency, but weaker AI/product market and relatively high cost for its metro.",
+      "risks": [
+        "Career market may require remote-first strategy",
+        "Smaller AI/product ecosystem",
+        "Limited compared with Nashville/Austin/Triangle"
+      ],
+      "weighted_total_out_of_100": 76.35,
+      "weighted_total_private_scenario": 76.35,
+      "weighted_total_career_max_scenario": 74.45
+    },
+    {
+      "area": "Celina",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "strategic_label": "DFW value play with rental and school trade-offs",
+      "est_2028_rent": 2650,
+      "scores": {
+        "ai_tech_pm_market": 8,
+        "school_quality": 6.5,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 5.5,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 8,
+        "robotics_fitness_startup_fit": 7,
+        "hs_football_culture": 9.5,
+        "private_school_access": 8.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Prestonwood Christian Academy North",
+            "location": "Prosper, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 10,
+            "annual_tuition_usd": 24081,
+            "enrollment": 620,
+            "football_program": true,
+            "notes": "North campus explicitly serves Prosper/Celina families.",
+            "verified": false
+          },
+          {
+            "name": "Coram Deo Academy of Collin County",
+            "location": "Collin County, TX",
+            "approx_distance_mi": 15,
+            "notes": "Classical Christian.",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [
+          {
+            "name": "Legacy Christian Academy",
+            "location": "Frisco, TX",
+            "approx_distance_mi": 20,
+            "verified": false,
+            "excluded_reason": "At/over the 20-mile radius from Celina"
+          }
+        ],
+        "assessment": "Prestonwood's Prosper (North) campus sits ~10 mi from Celina and serves Celina families; the larger Plano/Frisco campuses are near the radius edge. Growing but not yet dense.",
+        "verified": false
+      },
+      "notes": "Fast-growing Collin County exurb north of Frisco. No state income tax, DFW AI/tech market access, strong football culture (G.A. Moore legacy), and better 2041 purchase affordability than Plano/Frisco. School quality (Celina ISD, Niche A-, #161 in TX) and 2028 rental costs (~$2,650 median) are the primary weaknesses against the model.",
+      "risks": [
+        "Celina ISD ranks #161 in Texas — materially below Prosper, Frisco, and Plano in the same region",
+        "3-bedroom townhome rents average $2,650-$2,800, above the $2,300 target — rental phase feasibility is the biggest flag",
+        "Commute distance to core DFW AI/tech employers is longer than Plano/Frisco; best suited for remote-first career path by 2028",
+        "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
+      "rank": 20,
+      "weighted_total_out_of_100": 75.9,
+      "weighted_total_private_scenario": 78.9,
+      "weighted_total_career_max_scenario": 77.0
+    },
+    {
+      "area": "Gallatin",
+      "state": "Tennessee",
+      "state_abbr": "TN",
+      "metro": "Nashville",
+      "strategic_label": "Most affordable Nashville-metro option",
+      "est_2028_rent": 2150,
+      "best_rental_submarket": "Gallatin (Kindrey @ Hwy 109 / Long Hollow Pike)",
+      "est_2041_buy_price": 728000,
+      "best_buy_submarket": "Gallatin (new-construction subdivisions)",
+      "rent_buy_same_area": true,
+      "scores": {
+        "ai_tech_pm_market": 6,
+        "school_quality": 7,
+        "housing_affordability_2041": 8,
+        "rental_feasibility_2028": 9,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 6.5,
+        "spouse_pref": 4,
+        "robotics_fitness_startup_fit": 6.5,
+        "hs_football_culture": 8,
+        "private_school_access": 7.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Sumner Academy",
+            "location": "Gallatin, TN",
+            "grades": "PK-12",
+            "approx_distance_mi": 3,
+            "niche_grade": "A",
+            "verified": false
+          },
+          {
+            "name": "Pope Saint John Paul II Preparatory School",
+            "location": "Hendersonville, TN",
+            "grades": "9-12",
+            "approx_distance_mi": 12,
+            "enrollment": 711,
+            "football_program": true,
+            "notes": "#1 Catholic HS in the Nashville area (Niche).",
+            "verified": false
+          },
+          {
+            "name": "St. John Vianney Catholic School",
+            "location": "Gallatin, TN",
+            "grades": "PK-8",
+            "approx_distance_mi": 2,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Local Sumner Academy (A) plus Pope John Paul II Prep ~12 mi in Hendersonville; the top Nashville privates are beyond 20 mi.",
+        "verified": false
+      },
+      "notes": "Most affordable Nashville-metro option of the four. Professionally managed 3BR townhomes ~$1,850-2,150, well under the new ceiling. Median ~$480-520K (significant new construction) projects to $646-810K by 2041, comfortably in budget. Sumner County seat with a historic downtown square. Furthest out with the weakest job proximity, but best pure affordability. No state income tax.",
+      "risks": [
+        "Furthest out with weakest direct job proximity",
+        "Thinner professionally managed rental inventory",
+        "AI/product roles likely require remote or a Nashville commute"
+      ],
+      "tier": "Tier 3 - Watch List",
+      "rank": 21,
+      "weighted_total_out_of_100": 75.55,
+      "weighted_total_private_scenario": 76.55,
+      "weighted_total_career_max_scenario": 74.55
+    },
+    {
+      "area": "Lakeland",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "strategic_label": "Tampa-satellite value option with Orlando reach",
+      "est_2028_rent": 1760,
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 5.5,
+        "housing_affordability_2041": 9,
+        "rental_feasibility_2028": 9,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 6.5,
+        "robotics_fitness_startup_fit": 6.5,
+        "hs_football_culture": 7,
+        "private_school_access": 7.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Lakeland Christian School",
+            "location": "Lakeland, FL",
+            "grades": "K-12",
+            "approx_distance_mi": 4,
+            "football_program": true,
+            "notes": "Long-established Christian college-prep.",
+            "verified": false
+          },
+          {
+            "name": "Santa Fe Catholic High School",
+            "location": "Lakeland, FL",
+            "grades": "9-12",
+            "approx_distance_mi": 5,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "All Saints' Academy",
+            "location": "Winter Haven, FL",
+            "grades": "PK-12",
+            "approx_distance_mi": 15,
+            "notes": "Episcopal.",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Solid local Christian/Catholic options (Lakeland Christian, Santa Fe Catholic) but no A+ elite within 20 mi; the Tampa and Orlando flagships are beyond range.",
+        "verified": false
+      },
+      "notes": "Re-scored as a TAMPA satellite (~35 mi) with secondary Orlando reach (~55 mi) on the I-4 corridor, reversing the earlier Orlando-only elimination. Cheapest candidate (median ~$305K-$455K by zone) and most rental-affordable in the FL set (~$1,760 median). School path is zone/charter-dependent: McKeel Academy charters (A-rated tech HS with robotics) and South Lakeland zones reach 7/10+, though Polk average is ~4/10. Florida Polytechnic (STEM) and Florida Southern (AACSB business) in-town strengthen the teaching/robotics angle beyond what the weights capture. AI scored 6.5 (below parity) because local on-site PM employment is thin; value is the Tampa commute.",
+      "risks": [
+        "Local PM employment limited; relies on ~35-min Tampa commute (Orlando is ~55 min)",
+        "Polk schools average ~4/10; requires McKeel charter or South Lakeland zone targeting",
+        "Polk County ~12% severe-flood and high wildfire risk; model FL insurance",
+        "Downtown/charter zones can carry premiums vs. county-wide cheap median"
+      ],
+      "tier": "Tier 3 - Watch List",
+      "rank": 22,
+      "weighted_total_out_of_100": 75.1,
+      "weighted_total_private_scenario": 79.1,
+      "weighted_total_career_max_scenario": 74.6
+    },
+    {
+      "rank": 23,
+      "area": "Greenville",
+      "state": "South Carolina",
+      "state_abbr": "SC",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Robotics / mobility sleeper",
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 7.5,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 8,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 8.5,
+        "hs_football_culture": 7.5,
+        "private_school_access": 8.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Christ Church Episcopal School",
+            "location": "Greenville, SC",
+            "grades": "K-12",
+            "approx_distance_mi": 6,
+            "niche_grade": "A+",
+            "football_program": true,
+            "notes": "#1 private HS in Greenville County (Niche).",
+            "verified": false
+          },
+          {
+            "name": "St. Joseph's Catholic School",
+            "location": "Greenville, SC",
+            "grades": "6-12",
+            "approx_distance_mi": 8,
+            "enrollment": 1227,
+            "student_teacher_ratio": "10:1",
+            "niche_grade": "A+",
+            "verified": false
+          },
+          {
+            "name": "Bob Jones Academy",
+            "location": "Greenville, SC",
+            "grades": "K-12",
+            "approx_distance_mi": 7,
+            "verified": false
+          },
+          {
+            "name": "Veritas Preparatory School",
+            "location": "Greenville, SC",
+            "notes": "Classical Christian.",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Two A+ anchors in-town (Christ Church Episcopal #1 and St. Joseph's Catholic) make Greenville one of the stronger Upstate private markets.",
+        "verified": false
+      },
+      "notes": "Strong sleeper pick for mobility, manufacturing, Clemson/ICAR adjacency, affordability, and lifestyle. Requires careful school-zone targeting.",
+      "risks": [
+        "AI Product market is thinner than major tech metros",
+        "School quality varies by zone",
+        "State tax is not a major advantage"
+      ],
+      "weighted_total_out_of_100": 75.1,
+      "weighted_total_private_scenario": 77.1,
+      "weighted_total_career_max_scenario": 73.4
     },
     {
       "area": "Clermont",
@@ -1668,13 +2020,80 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 19,
-      "weighted_total_out_of_100": 75.4,
-      "weighted_total_private_scenario": 78.4,
-      "weighted_total_remote_scenario": 75.0
+      "rank": 24,
+      "weighted_total_out_of_100": 75.0,
+      "weighted_total_private_scenario": 78.0,
+      "weighted_total_career_max_scenario": 75.4
     },
     {
-      "rank": 20,
+      "area": "Lake Mary",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "strategic_label": "Seminole schools + Heathrow corporate purchase-phase option",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 7.5,
+        "housing_affordability_2041": 7,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 7,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 7.5,
+        "private_school_access": 8.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Trinity Preparatory School",
+            "location": "Winter Park, FL",
+            "grades": "6-12",
+            "approx_distance_mi": 10,
+            "annual_tuition_usd": 29990,
+            "enrollment": 889,
+            "niche_grade": "A+",
+            "avg_sat": 1380,
+            "football_program": true,
+            "notes": "#2 private HS in the Orlando metro (Niche).",
+            "verified": false
+          },
+          {
+            "name": "Lake Mary Preparatory School",
+            "location": "Lake Mary, FL",
+            "grades": "PK-12",
+            "approx_distance_mi": 2,
+            "notes": "IB World School.",
+            "verified": false
+          },
+          {
+            "name": "The Master's Academy",
+            "location": "Oviedo, FL",
+            "grades": "PK-12",
+            "approx_distance_mi": 8,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Shares the Seminole County private pool with Oviedo: Trinity Prep (A+) ~10 mi plus Lake Mary Prep in-town.",
+        "verified": false
+      },
+      "notes": "Strong Seminole County district with A-rated Lake Mary High feeders (target Heathrow/Crystal Lake zones), a real Heathrow corporate/tech corridor, no income tax, and lowest city millage in Seminole County. Strongest Florida purchase-phase candidate behind Oviedo; essentially ties St. Johns County. AI/tech market held at Oviedo/I-4-corridor parity per user convention.",
+      "risks": [
+        "Rental cap tight; best school zones (Heathrow) carry highest rents",
+        "Seminole County raised millage Sept 2025; model post-sale tax reset (assessed value resets to market at close)",
+        "Florida insurance/wind/heat exposure; model separately",
+        "Home price data noisy across sources (Zillow +17% vs others flat/down)"
+      ],
+      "tier": "Tier 3 - Watch List",
+      "rank": 25,
+      "weighted_total_out_of_100": 74.6,
+      "weighted_total_private_scenario": 76.6,
+      "weighted_total_career_max_scenario": 74.9
+    },
+    {
+      "rank": 26,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -1747,355 +2166,9 @@
         "Rental target pressure",
         "May over-index on lifestyle while weakening savings goals"
       ],
-      "weighted_total_out_of_100": 75.35,
-      "weighted_total_private_scenario": 74.35,
-      "weighted_total_remote_scenario": 74.55
-    },
-    {
-      "area": "Lake Mary",
-      "state": "Florida",
-      "state_abbr": "FL",
-      "strategic_label": "Seminole schools + Heathrow corporate purchase-phase option",
-      "scores": {
-        "ai_tech_pm_market": 7.5,
-        "school_quality": 7.5,
-        "housing_affordability_2041": 7,
-        "rental_feasibility_2028": 6.5,
-        "state_tax_burden": 10,
-        "aacsb_university_proximity": 7,
-        "robotics_fitness_startup_fit": 7.5,
-        "hs_football_culture": 7.5,
-        "private_school_access": 8.5
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Trinity Preparatory School",
-            "location": "Winter Park, FL",
-            "grades": "6-12",
-            "approx_distance_mi": 10,
-            "annual_tuition_usd": 29990,
-            "enrollment": 889,
-            "niche_grade": "A+",
-            "avg_sat": 1380,
-            "football_program": true,
-            "notes": "#2 private HS in the Orlando metro (Niche).",
-            "verified": false
-          },
-          {
-            "name": "Lake Mary Preparatory School",
-            "location": "Lake Mary, FL",
-            "grades": "PK-12",
-            "approx_distance_mi": 2,
-            "notes": "IB World School.",
-            "verified": false
-          },
-          {
-            "name": "The Master's Academy",
-            "location": "Oviedo, FL",
-            "grades": "PK-12",
-            "approx_distance_mi": 8,
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Shares the Seminole County private pool with Oviedo: Trinity Prep (A+) ~10 mi plus Lake Mary Prep in-town.",
-        "verified": false
-      },
-      "notes": "Strong Seminole County district with A-rated Lake Mary High feeders (target Heathrow/Crystal Lake zones), a real Heathrow corporate/tech corridor, no income tax, and lowest city millage in Seminole County. Strongest Florida purchase-phase candidate behind Oviedo; essentially ties St. Johns County. AI/tech market held at Oviedo/I-4-corridor parity per user convention.",
-      "risks": [
-        "Rental cap tight; best school zones (Heathrow) carry highest rents",
-        "Seminole County raised millage Sept 2025; model post-sale tax reset (assessed value resets to market at close)",
-        "Florida insurance/wind/heat exposure; model separately",
-        "Home price data noisy across sources (Zillow +17% vs others flat/down)"
-      ],
-      "tier": "Tier 3 - Watch List",
-      "rank": 21,
-      "weighted_total_out_of_100": 74.9,
-      "weighted_total_private_scenario": 76.9,
-      "weighted_total_remote_scenario": 74.6
-    },
-    {
-      "area": "Lakeland",
-      "state": "Florida",
-      "state_abbr": "FL",
-      "strategic_label": "Tampa-satellite value option with Orlando reach",
-      "est_2028_rent": 1760,
-      "scores": {
-        "ai_tech_pm_market": 6.5,
-        "school_quality": 5.5,
-        "housing_affordability_2041": 9,
-        "rental_feasibility_2028": 9,
-        "state_tax_burden": 10,
-        "aacsb_university_proximity": 6.5,
-        "robotics_fitness_startup_fit": 6.5,
-        "hs_football_culture": 7,
-        "private_school_access": 7.5
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Lakeland Christian School",
-            "location": "Lakeland, FL",
-            "grades": "K-12",
-            "approx_distance_mi": 4,
-            "football_program": true,
-            "notes": "Long-established Christian college-prep.",
-            "verified": false
-          },
-          {
-            "name": "Santa Fe Catholic High School",
-            "location": "Lakeland, FL",
-            "grades": "9-12",
-            "approx_distance_mi": 5,
-            "football_program": true,
-            "verified": false
-          },
-          {
-            "name": "All Saints' Academy",
-            "location": "Winter Haven, FL",
-            "grades": "PK-12",
-            "approx_distance_mi": 15,
-            "notes": "Episcopal.",
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Solid local Christian/Catholic options (Lakeland Christian, Santa Fe Catholic) but no A+ elite within 20 mi; the Tampa and Orlando flagships are beyond range.",
-        "verified": false
-      },
-      "notes": "Re-scored as a TAMPA satellite (~35 mi) with secondary Orlando reach (~55 mi) on the I-4 corridor, reversing the earlier Orlando-only elimination. Cheapest candidate (median ~$305K-$455K by zone) and most rental-affordable in the FL set (~$1,760 median). School path is zone/charter-dependent: McKeel Academy charters (A-rated tech HS with robotics) and South Lakeland zones reach 7/10+, though Polk average is ~4/10. Florida Polytechnic (STEM) and Florida Southern (AACSB business) in-town strengthen the teaching/robotics angle beyond what the weights capture. AI scored 6.5 (below parity) because local on-site PM employment is thin; value is the Tampa commute.",
-      "risks": [
-        "Local PM employment limited; relies on ~35-min Tampa commute (Orlando is ~55 min)",
-        "Polk schools average ~4/10; requires McKeel charter or South Lakeland zone targeting",
-        "Polk County ~12% severe-flood and high wildfire risk; model FL insurance",
-        "Downtown/charter zones can carry premiums vs. county-wide cheap median"
-      ],
-      "tier": "Tier 3 - Watch List",
-      "rank": 22,
-      "weighted_total_out_of_100": 74.6,
-      "weighted_total_private_scenario": 78.6,
-      "weighted_total_remote_scenario": 75.1
-    },
-    {
-      "area": "Gallatin",
-      "state": "Tennessee",
-      "state_abbr": "TN",
-      "metro": "Nashville",
-      "strategic_label": "Most affordable Nashville-metro option",
-      "est_2028_rent": 2150,
-      "best_rental_submarket": "Gallatin (Kindrey @ Hwy 109 / Long Hollow Pike)",
-      "est_2041_buy_price": 728000,
-      "best_buy_submarket": "Gallatin (new-construction subdivisions)",
-      "rent_buy_same_area": true,
-      "scores": {
-        "ai_tech_pm_market": 6,
-        "school_quality": 7,
-        "housing_affordability_2041": 8,
-        "rental_feasibility_2028": 9,
-        "state_tax_burden": 10,
-        "aacsb_university_proximity": 6.5,
-        "spouse_pref": 4,
-        "robotics_fitness_startup_fit": 6.5,
-        "hs_football_culture": 8,
-        "private_school_access": 7.5
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Sumner Academy",
-            "location": "Gallatin, TN",
-            "grades": "PK-12",
-            "approx_distance_mi": 3,
-            "niche_grade": "A",
-            "verified": false
-          },
-          {
-            "name": "Pope Saint John Paul II Preparatory School",
-            "location": "Hendersonville, TN",
-            "grades": "9-12",
-            "approx_distance_mi": 12,
-            "enrollment": 711,
-            "football_program": true,
-            "notes": "#1 Catholic HS in the Nashville area (Niche).",
-            "verified": false
-          },
-          {
-            "name": "St. John Vianney Catholic School",
-            "location": "Gallatin, TN",
-            "grades": "PK-8",
-            "approx_distance_mi": 2,
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Local Sumner Academy (A) plus Pope John Paul II Prep ~12 mi in Hendersonville; the top Nashville privates are beyond 20 mi.",
-        "verified": false
-      },
-      "notes": "Most affordable Nashville-metro option of the four. Professionally managed 3BR townhomes ~$1,850-2,150, well under the new ceiling. Median ~$480-520K (significant new construction) projects to $646-810K by 2041, comfortably in budget. Sumner County seat with a historic downtown square. Furthest out with the weakest job proximity, but best pure affordability. No state income tax.",
-      "risks": [
-        "Furthest out with weakest direct job proximity",
-        "Thinner professionally managed rental inventory",
-        "AI/product roles likely require remote or a Nashville commute"
-      ],
-      "tier": "Tier 3 - Watch List",
-      "rank": 23,
       "weighted_total_out_of_100": 74.55,
-      "weighted_total_private_scenario": 75.55,
-      "weighted_total_remote_scenario": 75.55
-    },
-    {
-      "rank": 24,
-      "area": "Auburn / Opelika",
-      "state": "Alabama",
-      "state_abbr": "AL",
-      "tier": "Tier 4 - Backup Only",
-      "strategic_label": "College-town affordability fallback",
-      "scores": {
-        "ai_tech_pm_market": 5.5,
-        "school_quality": 8,
-        "housing_affordability_2041": 9,
-        "rental_feasibility_2028": 8,
-        "state_tax_burden": 6.5,
-        "aacsb_university_proximity": 8.5,
-        "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 9,
-        "private_school_access": 7.0
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Lee-Scott Academy",
-            "location": "Auburn, AL",
-            "grades": "PK-12",
-            "approx_distance_mi": 3,
-            "annual_tuition_usd": 11000,
-            "enrollment": 754,
-            "student_teacher_ratio": "8:1",
-            "football_program": true,
-            "notes": "Top-20% in AL for average ACT; 95% to 4-year college.",
-            "verified": false
-          },
-          {
-            "name": "Glenwood School",
-            "location": "Smiths Station, AL",
-            "grades": "K-12",
-            "approx_distance_mi": 10,
-            "football_program": true,
-            "verified": false
-          },
-          {
-            "name": "Trinity Christian School",
-            "location": "Opelika, AL",
-            "grades": "K-12",
-            "approx_distance_mi": 6,
-            "verified": false
-          },
-          {
-            "name": "Auburn Classical Academy",
-            "location": "Auburn, AL",
-            "approx_distance_mi": 3,
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Lee-Scott Academy is the clear anchor (strong ACT, 95% college) but the Lee County market is small with no A+ elite option.",
-        "verified": false
-      },
-      "notes": "Great affordability, strong college-town identity, Auburn University proximity, and football culture. Weaker AI Product career market.",
-      "risks": [
-        "Likely requires remote-first career strategy",
-        "Fewer AI/product employers locally",
-        "Long-term professional network may be narrower"
-      ],
-      "weighted_total_out_of_100": 74.55,
-      "weighted_total_private_scenario": 72.55,
-      "weighted_total_remote_scenario": 76.55
-    },
-    {
-      "rank": 25,
-      "area": "Farragut",
-      "state": "Tennessee",
-      "state_abbr": "TN",
-      "tier": "Tier 4 - Backup Only",
-      "strategic_label": "Education / Knoxville option",
-      "scores": {
-        "ai_tech_pm_market": 5.5,
-        "school_quality": 8.5,
-        "housing_affordability_2041": 7,
-        "rental_feasibility_2028": 8,
-        "state_tax_burden": 10,
-        "aacsb_university_proximity": 8,
-        "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 8,
-        "private_school_access": 8.5
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Webb School of Knoxville",
-            "location": "Knoxville, TN",
-            "grades": "PK-12",
-            "approx_distance_mi": 10,
-            "annual_tuition_usd": 27100,
-            "niche_grade": "A+",
-            "football_program": true,
-            "notes": "#12 private HS in Tennessee (Niche).",
-            "verified": false
-          },
-          {
-            "name": "Christian Academy of Knoxville",
-            "location": "Farragut, TN",
-            "grades": "PK-12",
-            "approx_distance_mi": 2,
-            "annual_tuition_usd": 17700,
-            "niche_grade": "A-",
-            "football_program": true,
-            "verified": false
-          },
-          {
-            "name": "Knoxville Catholic High School",
-            "location": "Knoxville, TN",
-            "grades": "9-12",
-            "approx_distance_mi": 12,
-            "football_program": true,
-            "verified": false
-          },
-          {
-            "name": "Concord Christian School",
-            "location": "Farragut, TN",
-            "approx_distance_mi": 3,
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Webb School of Knoxville (A+) ~10 mi anchors a solid West Knox cluster, with Christian Academy of Knoxville (A-) in Farragut itself.",
-        "verified": false
-      },
-      "notes": "Strong schools, no state income tax, and UT Knoxville adjacency, but weaker AI/product market and relatively high cost for its metro.",
-      "risks": [
-        "Career market may require remote-first strategy",
-        "Smaller AI/product ecosystem",
-        "Limited compared with Nashville/Austin/Triangle"
-      ],
-      "weighted_total_out_of_100": 74.45,
-      "weighted_total_private_scenario": 74.45,
-      "weighted_total_remote_scenario": 76.35
+      "weighted_total_private_scenario": 73.55,
+      "weighted_total_career_max_scenario": 75.35
     },
     {
       "area": "Lake Nona",
@@ -2158,10 +2231,10 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 26,
-      "weighted_total_out_of_100": 73.95,
-      "weighted_total_private_scenario": 72.95,
-      "weighted_total_remote_scenario": 74.35
+      "rank": 27,
+      "weighted_total_out_of_100": 74.35,
+      "weighted_total_private_scenario": 73.35,
+      "weighted_total_career_max_scenario": 73.95
     },
     {
       "area": "Mount Juliet",
@@ -2224,81 +2297,10 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 27,
-      "weighted_total_out_of_100": 73.4,
-      "weighted_total_private_scenario": 73.4,
-      "weighted_total_remote_scenario": 73.6
-    },
-    {
       "rank": 28,
-      "area": "Greenville",
-      "state": "South Carolina",
-      "state_abbr": "SC",
-      "tier": "Tier 4 - Backup Only",
-      "strategic_label": "Robotics / mobility sleeper",
-      "scores": {
-        "ai_tech_pm_market": 6.5,
-        "school_quality": 7.5,
-        "housing_affordability_2041": 8.5,
-        "rental_feasibility_2028": 8,
-        "state_tax_burden": 5.5,
-        "aacsb_university_proximity": 7.5,
-        "robotics_fitness_startup_fit": 8.5,
-        "hs_football_culture": 7.5,
-        "private_school_access": 8.5
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Christ Church Episcopal School",
-            "location": "Greenville, SC",
-            "grades": "K-12",
-            "approx_distance_mi": 6,
-            "niche_grade": "A+",
-            "football_program": true,
-            "notes": "#1 private HS in Greenville County (Niche).",
-            "verified": false
-          },
-          {
-            "name": "St. Joseph's Catholic School",
-            "location": "Greenville, SC",
-            "grades": "6-12",
-            "approx_distance_mi": 8,
-            "enrollment": 1227,
-            "student_teacher_ratio": "10:1",
-            "niche_grade": "A+",
-            "verified": false
-          },
-          {
-            "name": "Bob Jones Academy",
-            "location": "Greenville, SC",
-            "grades": "K-12",
-            "approx_distance_mi": 7,
-            "verified": false
-          },
-          {
-            "name": "Veritas Preparatory School",
-            "location": "Greenville, SC",
-            "notes": "Classical Christian.",
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Two A+ anchors in-town (Christ Church Episcopal #1 and St. Joseph's Catholic) make Greenville one of the stronger Upstate private markets.",
-        "verified": false
-      },
-      "notes": "Strong sleeper pick for mobility, manufacturing, Clemson/ICAR adjacency, affordability, and lifestyle. Requires careful school-zone targeting.",
-      "risks": [
-        "AI Product market is thinner than major tech metros",
-        "School quality varies by zone",
-        "State tax is not a major advantage"
-      ],
-      "weighted_total_out_of_100": 73.4,
-      "weighted_total_private_scenario": 75.4,
-      "weighted_total_remote_scenario": 75.1
+      "weighted_total_out_of_100": 73.6,
+      "weighted_total_private_scenario": 73.6,
+      "weighted_total_career_max_scenario": 73.4
     },
     {
       "rank": 29,
@@ -2368,9 +2370,9 @@
         "Longer commutes may reduce quality-of-life value",
         "Less university density than Raleigh-Durham"
       ],
-      "weighted_total_out_of_100": 72.9,
-      "weighted_total_private_scenario": 71.9,
-      "weighted_total_remote_scenario": 72.7
+      "weighted_total_out_of_100": 72.7,
+      "weighted_total_private_scenario": 71.7,
+      "weighted_total_career_max_scenario": 72.9
     },
     {
       "rank": 30,
@@ -2444,9 +2446,9 @@
         "Tech market is decent but not elite",
         "Tax burden and cultural fit need validation"
       ],
-      "weighted_total_out_of_100": 70.7,
-      "weighted_total_private_scenario": 71.7,
-      "weighted_total_remote_scenario": 71.2
+      "weighted_total_out_of_100": 71.2,
+      "weighted_total_private_scenario": 72.2,
+      "weighted_total_career_max_scenario": 70.7
     },
     {
       "area": "Davenport / Four Corners",
@@ -2514,9 +2516,9 @@
       ],
       "tier": "Tier 4 - Backup Only",
       "rank": 31,
-      "weighted_total_out_of_100": 70.25,
-      "weighted_total_private_scenario": 75.25,
-      "weighted_total_remote_scenario": 68.35
+      "weighted_total_out_of_100": 68.35,
+      "weighted_total_private_scenario": 73.35,
+      "weighted_total_career_max_scenario": 70.25
     },
     {
       "rank": 32,
@@ -2581,9 +2583,9 @@
         "Georgia 5.39% income tax is a structural ceiling vs TX/FL/TN",
         "AI/PM score of 8.5 is PROVISIONAL - Atlanta payments/Transaction Alley cluster assumed, NOT verified"
       ],
-      "weighted_total_out_of_100": 67.4,
-      "weighted_total_private_scenario": 70.4,
-      "weighted_total_remote_scenario": 66.1
+      "weighted_total_out_of_100": 66.1,
+      "weighted_total_private_scenario": 69.1,
+      "weighted_total_career_max_scenario": 67.4
     },
     {
       "rank": 33,
@@ -2663,95 +2665,14 @@
         "Virginia is least favored by family",
         "Likely not worth the premium unless a specific career opportunity requires it"
       ],
-      "weighted_total_out_of_100": 65,
+      "weighted_total_out_of_100": 62.8,
       "est_2028_rent": 3400,
       "budget_flag": "Busts 2028 rental stretch cap",
-      "weighted_total_private_scenario": 63.0,
-      "weighted_total_remote_scenario": 62.8
+      "weighted_total_private_scenario": 60.8,
+      "weighted_total_career_max_scenario": 65.0
     },
     {
       "rank": 34,
-      "area": "Franklin",
-      "state": "Tennessee",
-      "state_abbr": "TN",
-      "tier": "Tier 4 - Backup Only",
-      "strategic_label": "Lifestyle premium option",
-      "scores": {
-        "ai_tech_pm_market": 8.0,
-        "school_quality": 9,
-        "housing_affordability_2041": 2,
-        "rental_feasibility_2028": 1,
-        "state_tax_burden": 10,
-        "aacsb_university_proximity": 7.5,
-        "robotics_fitness_startup_fit": 7.5,
-        "hs_football_culture": 8,
-        "private_school_access": 9.0
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Battle Ground Academy",
-            "location": "Franklin, TN",
-            "grades": "PK-12",
-            "approx_distance_mi": 2,
-            "annual_tuition_usd": 30900,
-            "enrollment": 990,
-            "niche_grade": "A",
-            "football_program": true,
-            "notes": "#1 private HS in Williamson County (Niche).",
-            "verified": false
-          },
-          {
-            "name": "Christ Presbyterian Academy",
-            "location": "Nashville, TN",
-            "grades": "PK-12",
-            "approx_distance_mi": 15,
-            "annual_tuition_usd": 24925,
-            "enrollment": 1298,
-            "football_program": true,
-            "verified": false
-          },
-          {
-            "name": "Currey Ingram Academy",
-            "location": "Brentwood, TN",
-            "grades": "JK-12",
-            "approx_distance_mi": 10,
-            "notes": "National leader in learning-differences education.",
-            "verified": false
-          },
-          {
-            "name": "Franklin Christian Academy",
-            "location": "Franklin, TN",
-            "approx_distance_mi": 4,
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "The deepest private market in Tennessee: BGA in-town (A, #1 in Williamson County) plus Christ Presbyterian Academy and Currey Ingram within ~15 mi, with Nashville's elite preps at the radius edge.",
-        "verified": false
-      },
-      "notes": "Great lifestyle, elite Williamson County schools, and no income tax. Career market revised upward in Aug 2026 - Franklin holds both Cool Springs employers and downtown/East Bank access. Housing affordability remains the binding constraint, not job market.",
-      "risks": [
-        "Premium pricing likely violates the 2041 budget discipline",
-        "Rental target difficult to impossible in preferred Williamson County zones under the $2,300 cap",
-        "No submarket compensation premium offsets the higher cost of living here"
-      ],
-      "weighted_total_out_of_100": 63.05,
-      "metro": "Nashville",
-      "est_2028_rent": 3300,
-      "best_rental_submarket": "Franklin (Cool Springs / Westhaven)",
-      "est_2041_buy_price": 1230000,
-      "best_buy_submarket": "Spring Hill / Thompson's Station (to fit budget)",
-      "rent_buy_same_area": false,
-      "budget_flag": "Busts 2028 rental ceiling and 2041 buy budget",
-      "weighted_total_private_scenario": 63.05,
-      "weighted_total_remote_scenario": 61.25
-    },
-    {
-      "rank": 35,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -2831,9 +2752,90 @@
         "3BR rental ~$3,000+ breaks both the $2,600 primary ceiling and the $2,900 stretch cap",
         "Effectively requires committing to private school (~$30K+/yr per child) to be viable, which is a different financial model than the suburban entries"
       ],
-      "weighted_total_out_of_100": 63.0,
-      "weighted_total_private_scenario": 73.0,
-      "weighted_total_remote_scenario": 61.5
+      "weighted_total_out_of_100": 61.5,
+      "weighted_total_private_scenario": 71.5,
+      "weighted_total_career_max_scenario": 63.0
+    },
+    {
+      "rank": 35,
+      "area": "Franklin",
+      "state": "Tennessee",
+      "state_abbr": "TN",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Lifestyle premium option",
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 9,
+        "housing_affordability_2041": 2,
+        "rental_feasibility_2028": 1,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 8,
+        "private_school_access": 9.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Battle Ground Academy",
+            "location": "Franklin, TN",
+            "grades": "PK-12",
+            "approx_distance_mi": 2,
+            "annual_tuition_usd": 30900,
+            "enrollment": 990,
+            "niche_grade": "A",
+            "football_program": true,
+            "notes": "#1 private HS in Williamson County (Niche).",
+            "verified": false
+          },
+          {
+            "name": "Christ Presbyterian Academy",
+            "location": "Nashville, TN",
+            "grades": "PK-12",
+            "approx_distance_mi": 15,
+            "annual_tuition_usd": 24925,
+            "enrollment": 1298,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Currey Ingram Academy",
+            "location": "Brentwood, TN",
+            "grades": "JK-12",
+            "approx_distance_mi": 10,
+            "notes": "National leader in learning-differences education.",
+            "verified": false
+          },
+          {
+            "name": "Franklin Christian Academy",
+            "location": "Franklin, TN",
+            "approx_distance_mi": 4,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "The deepest private market in Tennessee: BGA in-town (A, #1 in Williamson County) plus Christ Presbyterian Academy and Currey Ingram within ~15 mi, with Nashville's elite preps at the radius edge.",
+        "verified": false
+      },
+      "notes": "Great lifestyle, elite Williamson County schools, and no income tax. Career market revised upward in Aug 2026 - Franklin holds both Cool Springs employers and downtown/East Bank access. Housing affordability remains the binding constraint, not job market.",
+      "risks": [
+        "Premium pricing likely violates the 2041 budget discipline",
+        "Rental target difficult to impossible in preferred Williamson County zones under the $2,300 cap",
+        "No submarket compensation premium offsets the higher cost of living here"
+      ],
+      "weighted_total_out_of_100": 61.25,
+      "metro": "Nashville",
+      "est_2028_rent": 3300,
+      "best_rental_submarket": "Franklin (Cool Springs / Westhaven)",
+      "est_2041_buy_price": 1230000,
+      "best_buy_submarket": "Spring Hill / Thompson's Station (to fit budget)",
+      "rent_buy_same_area": false,
+      "budget_flag": "Busts 2028 rental ceiling and 2041 buy budget",
+      "weighted_total_private_scenario": 61.25,
+      "weighted_total_career_max_scenario": 63.05
     },
     {
       "rank": 36,
@@ -2911,9 +2913,9 @@
         "Jersey City schools are uneven (district Niche B-, individual schools ranging C- to A); strong zones exist but carry the usual urban boundary risk",
         "Career strength is real and Gregg-specific, so this entry is best read as an argument for a fintech-AI career move, not as a family relocation target under the current budget"
       ],
-      "weighted_total_out_of_100": 56.95,
-      "weighted_total_private_scenario": 62.95,
-      "weighted_total_remote_scenario": 54.55
+      "weighted_total_out_of_100": 54.55,
+      "weighted_total_private_scenario": 60.55,
+      "weighted_total_career_max_scenario": 56.95
     },
     {
       "rank": 37,
@@ -2991,9 +2993,9 @@
         "Same NJ tax exposure as Jersey City - income tax to 10.75% plus ~1.77-2.12% effective property tax",
         "Overlaps Jersey City as a submarket rather than a separate metro; scored separately only because it was requested by name"
       ],
-      "weighted_total_out_of_100": 51.35,
-      "weighted_total_private_scenario": 57.35,
-      "weighted_total_remote_scenario": 48.85
+      "weighted_total_out_of_100": 48.85,
+      "weighted_total_private_scenario": 54.85,
+      "weighted_total_career_max_scenario": 51.35
     }
   ],
   "state_top_two": {
@@ -3006,8 +3008,8 @@
       "Auburn / Opelika"
     ],
     "North Carolina": [
-      "Cary",
-      "Concord / Northwest Cabarrus"
+      "Concord / Northwest Cabarrus",
+      "Cary"
     ],
     "Tennessee": [
       "Spring Hill (Summit / Page Zones, Williamson County)",
@@ -3089,42 +3091,42 @@
       "Solon / Rocky River (Cleveland Suburbs)",
       "Georgetown",
       "Concord / Northwest Cabarrus",
-      "Plano / Frisco",
       "Madison / Huntsville",
+      "Plano / Frisco",
       "Cary",
       "Spring Hill (Summit / Page Zones, Williamson County)"
     ],
     "tier_2_strong_tradeoffs": [
-      "Austin (City Proper)",
       "Murfreesboro",
+      "Austin (City Proper)",
       "Oviedo",
-      "Hendersonville",
       "St. Johns County",
-      "Suwanee / Peachtree Corners",
-      "Celina",
       "Tampa",
-      "Fort Mill"
+      "Hendersonville",
+      "Suwanee / Peachtree Corners",
+      "Fort Mill",
+      "Celina"
     ],
     "tier_3_watch_list": [
-      "Clermont",
-      "Alpharetta / Johns Creek",
-      "Lake Mary",
+      "Gallatin",
       "Lakeland",
-      "Gallatin"
+      "Clermont",
+      "Lake Mary",
+      "Alpharetta / Johns Creek"
     ],
     "tier_4_backup_only": [
       "Auburn / Opelika",
       "Farragut",
+      "Greenville",
       "Lake Nona",
       "Mount Juliet",
-      "Greenville",
       "Waxhaw",
       "Glen Allen / Midlothian",
       "Davenport / Four Corners",
       "Roswell",
       "Leesburg / Ashburn",
-      "Franklin",
       "Germantown (Nashville)",
+      "Franklin",
       "Jersey City",
       "Newport (Jersey City)"
     ]
@@ -3209,6 +3211,10 @@
     {
       "id": "remote_work_moots_local_job_market",
       "learning": "Gregg works fully remote for Sherwin-Williams, so no location requires him to change jobs and the 25%-weighted ai_tech_pm_market criterion overstates its real constraint. Re-ranking under the remote scenario barely moves the order - the top five are identical - which shows the leading locations win on schools, housing and tax rather than local job market. The practical effect is on framing, not ranking: the spouse's store becomes the household's only hard geographic tie."
+    },
+    {
+      "id": "ceiling_reweighted_to_option_value",
+      "learning": "The AI/product career criterion was reweighted 25 -> 15 once it was clarified as long-horizon upward mobility rather than immediate employability (Gregg is fully remote). The former 25-weight baseline is retained as the 'career-ceiling priority' scenario. Notably the top of the ranking barely moved, confirming the leading locations were never winning on job market."
     }
   ],
   "phase_plan": {
@@ -3271,25 +3277,25 @@
         "meaning": "Cheap to rent, weak on schools. Viable ONLY for the pre-K window; holding through K-8 spends the child's elementary and middle years in a weak zone.",
         "locations": [
           {
+            "area": "Gallatin",
+            "rank": 21,
+            "rental_feasibility_2028": 9,
+            "school_quality": 7,
+            "weighted_total_out_of_100": 75.55
+          },
+          {
             "area": "Lakeland",
             "rank": 22,
             "rental_feasibility_2028": 9,
             "school_quality": 5.5,
-            "weighted_total_out_of_100": 74.6
-          },
-          {
-            "area": "Gallatin",
-            "rank": 23,
-            "rental_feasibility_2028": 9,
-            "school_quality": 7,
-            "weighted_total_out_of_100": 74.55
+            "weighted_total_out_of_100": 75.1
           },
           {
             "area": "Davenport / Four Corners",
             "rank": 31,
             "rental_feasibility_2028": 8.5,
             "school_quality": 4,
-            "weighted_total_out_of_100": 70.25
+            "weighted_total_out_of_100": 68.35
           }
         ]
       },
@@ -3302,63 +3308,63 @@
             "rank": 1,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
-            "weighted_total_out_of_100": 88.6
+            "weighted_total_out_of_100": 87.95
           },
           {
             "area": "Cedar Park",
             "rank": 2,
             "rental_feasibility_2028": 7.5,
             "school_quality": 9.0,
-            "weighted_total_out_of_100": 87.0
+            "weighted_total_out_of_100": 86.05
           },
           {
             "area": "Solon / Rocky River (Cleveland Suburbs)",
             "rank": 3,
             "rental_feasibility_2028": 8.5,
             "school_quality": 9.5,
-            "weighted_total_out_of_100": 83.0
+            "weighted_total_out_of_100": 83.3
           },
           {
             "area": "Concord / Northwest Cabarrus",
             "rank": 5,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
-            "weighted_total_out_of_100": 82.65
+            "weighted_total_out_of_100": 82.75
           },
           {
             "area": "Madison / Huntsville",
-            "rank": 7,
+            "rank": 6,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
-            "weighted_total_out_of_100": 81.3
+            "weighted_total_out_of_100": 82.6
           },
           {
             "area": "Spring Hill (Summit / Page Zones, Williamson County)",
             "rank": 9,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
-            "weighted_total_out_of_100": 80
+            "weighted_total_out_of_100": 80.3
           },
           {
             "area": "St. Johns County",
-            "rank": 14,
+            "rank": 13,
             "rental_feasibility_2028": 8,
             "school_quality": 9.5,
-            "weighted_total_out_of_100": 77.75
+            "weighted_total_out_of_100": 78.35
           },
           {
             "area": "Fort Mill",
-            "rank": 18,
+            "rank": 17,
             "rental_feasibility_2028": 8,
             "school_quality": 9,
-            "weighted_total_out_of_100": 76.3
+            "weighted_total_out_of_100": 76.6
           },
           {
             "area": "Farragut",
-            "rank": 25,
+            "rank": 19,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
-            "weighted_total_out_of_100": 74.45
+            "weighted_total_out_of_100": 76.35
           }
         ]
       },
@@ -3368,66 +3374,66 @@
         "locations": [
           {
             "area": "Plano / Frisco",
-            "rank": 6,
+            "rank": 7,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
-            "weighted_total_out_of_100": 82.4
+            "weighted_total_out_of_100": 81.0
           },
           {
             "area": "Cary",
             "rank": 8,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
-            "weighted_total_out_of_100": 80.7
+            "weighted_total_out_of_100": 80.3
           },
           {
             "area": "Oviedo",
             "rank": 12,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
-            "weighted_total_out_of_100": 79.15
+            "weighted_total_out_of_100": 79.25
           },
           {
             "area": "Suwanee / Peachtree Corners",
-            "rank": 15,
+            "rank": 16,
             "rental_feasibility_2028": 6,
             "school_quality": 9,
-            "weighted_total_out_of_100": 77.5
+            "weighted_total_out_of_100": 77.0
           },
           {
             "area": "Alpharetta / Johns Creek",
-            "rank": 20,
+            "rank": 26,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
-            "weighted_total_out_of_100": 75.35
+            "weighted_total_out_of_100": 74.55
           },
           {
             "area": "Lake Nona",
-            "rank": 26,
+            "rank": 27,
             "rental_feasibility_2028": 5.5,
             "school_quality": 8.5,
-            "weighted_total_out_of_100": 73.95
+            "weighted_total_out_of_100": 74.35
           },
           {
             "area": "Waxhaw",
             "rank": 29,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
-            "weighted_total_out_of_100": 72.9
+            "weighted_total_out_of_100": 72.7
           },
           {
             "area": "Leesburg / Ashburn",
             "rank": 33,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
-            "weighted_total_out_of_100": 65
+            "weighted_total_out_of_100": 62.8
           },
           {
             "area": "Franklin",
-            "rank": 34,
+            "rank": 35,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
-            "weighted_total_out_of_100": 63.05
+            "weighted_total_out_of_100": 61.25
           }
         ]
       }
