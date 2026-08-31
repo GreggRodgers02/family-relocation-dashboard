@@ -3183,6 +3183,246 @@
     {
       "id": "low_boundary_risk_is_an_asset",
       "learning": "Low school-zone boundary risk is a scoring asset. Where multiple strong public zones exist (e.g. Hendersonville's three 5-star high schools), address-level zone risk is minimal, unlike single-zone-dependent markets (Georgetown TX Leander/Liberty Hill dependency). A school score backed by multiple strong zones carries less downside variance than an equivalent score in a single-zone market."
+    },
+    {
+      "id": "rental_window_governs_schooling",
+      "learning": "The rental phase is 13 years and covers all of K-8, while the purchased home covers only the last ~3 years of high school. School quality therefore matters more for the rental location than the purchase location. Screen any 'cheap rent now, good schools later' plan by asking which phase the child's K-8 actually falls in - and prefer locations strong on BOTH rent and schools, which need no phase split at all."
     }
-  ]
+  ],
+  "phase_plan": {
+    "basis": "Encodes the standing convention that the townhome city and the house city may differ, and that each phase should be optimized independently. Added Aug 2026 after the Four Corners analysis exposed a timing problem the flat ranking cannot express.",
+    "core_insight": "The rental phase is 13 years, not 3. The child is 0-2 in 2028 and roughly 13-15 in 2041, so the rental window covers ALL of K-8 plus the start of high school, while the purchased home covers only the last ~3 years of high school. School quality therefore governs the RENTAL location more than the purchase location - the reverse of the intuitive reading. A location that is cheap to rent but weak on schools does not become safe just because the purchase is planned elsewhere.",
+    "timeline": {
+      "rental_phase_start": 2028,
+      "home_purchase_year": 2041,
+      "rental_window_years": 13,
+      "child_age_at_rental_start": "0-2",
+      "child_age_at_purchase": "13-15",
+      "schooling_covered_by_rental": "K-8 and the start of high school",
+      "schooling_covered_by_purchase": "final ~3 years of high school"
+    },
+    "phases": [
+      {
+        "id": "rental_a",
+        "label": "Rental A - pre-K",
+        "years": "2028 to ~2032",
+        "child_ages": "0-4",
+        "school_zone_relevance": "None. Child is pre-kindergarten, so school zone does not bind.",
+        "governing_criteria": [
+          "rental_feasibility_2028",
+          "spouse employer proximity (Kendra Scott)",
+          "commute to career market"
+        ],
+        "guidance": "The only window where a cheap-rent, weak-school location is genuinely safe. Optimize purely for rent, spouse-employer proximity and commute."
+      },
+      {
+        "id": "rental_b",
+        "label": "Rental B - K through 8",
+        "years": "~2032 to 2041",
+        "child_ages": "5-14",
+        "school_zone_relevance": "MAXIMUM. This window carries the entire K-8 run; the elementary and middle zone here matters more than the zone at purchase.",
+        "governing_criteria": [
+          "school_quality",
+          "rental_feasibility_2028",
+          "commute to career market"
+        ],
+        "guidance": "Either stay put (if the Rental A location also scores well on schools) or relocate into the purchase-target district early, so the child is settled and the 2041 purchase causes no school change."
+      },
+      {
+        "id": "purchase",
+        "label": "Purchase",
+        "years": "2041",
+        "child_ages": "13-15",
+        "school_zone_relevance": "Low and falling. Covers only the last ~3 years of high school before the child leaves.",
+        "governing_criteria": [
+          "housing_affordability_2041",
+          "long-term home value",
+          "career market",
+          "lifestyle"
+        ],
+        "guidance": "Buy inside the district already established in Rental B. Avoid a school-zone change at high-school age, which is the most disruptive possible timing."
+      }
+    ],
+    "candidate_roles": {
+      "rental_a_only": {
+        "rule": "rental_feasibility_2028 minus school_quality >= 2.0",
+        "meaning": "Cheap to rent, weak on schools. Viable ONLY for the pre-K window; holding through K-8 spends the child's elementary and middle years in a weak zone.",
+        "locations": [
+          {
+            "area": "Lakeland",
+            "rank": 22,
+            "rental_feasibility_2028": 9,
+            "school_quality": 5.5,
+            "weighted_total_out_of_100": 74.6
+          },
+          {
+            "area": "Gallatin",
+            "rank": 23,
+            "rental_feasibility_2028": 9,
+            "school_quality": 7,
+            "weighted_total_out_of_100": 74.55
+          },
+          {
+            "area": "Davenport / Four Corners",
+            "rank": 31,
+            "rental_feasibility_2028": 8.5,
+            "school_quality": 4,
+            "weighted_total_out_of_100": 70.25
+          }
+        ]
+      },
+      "single_location_viable": {
+        "rule": "rental_feasibility_2028 >= 7.5 AND school_quality >= 8.5",
+        "meaning": "Strong on both rent and schools, so no phase split is required - rent and buy in the same place. Note the top of the ranking sits here, which is why the highest-scoring options do not need this strategy at all.",
+        "locations": [
+          {
+            "area": "Round Rock",
+            "rank": 1,
+            "rental_feasibility_2028": 7.5,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 88.6
+          },
+          {
+            "area": "Cedar Park",
+            "rank": 2,
+            "rental_feasibility_2028": 7.5,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 87.0
+          },
+          {
+            "area": "Solon / Rocky River (Cleveland Suburbs)",
+            "rank": 3,
+            "rental_feasibility_2028": 8.5,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 83.0
+          },
+          {
+            "area": "Concord / Northwest Cabarrus",
+            "rank": 5,
+            "rental_feasibility_2028": 8.5,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 82.65
+          },
+          {
+            "area": "Madison / Huntsville",
+            "rank": 7,
+            "rental_feasibility_2028": 8,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 81.3
+          },
+          {
+            "area": "Spring Hill (Summit / Page Zones, Williamson County)",
+            "rank": 9,
+            "rental_feasibility_2028": 8.5,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 80
+          },
+          {
+            "area": "St. Johns County",
+            "rank": 14,
+            "rental_feasibility_2028": 8,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 77.75
+          },
+          {
+            "area": "Fort Mill",
+            "rank": 18,
+            "rental_feasibility_2028": 8,
+            "school_quality": 9,
+            "weighted_total_out_of_100": 76.3
+          },
+          {
+            "area": "Farragut",
+            "rank": 25,
+            "rental_feasibility_2028": 8,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 74.45
+          }
+        ]
+      },
+      "purchase_target": {
+        "rule": "school_quality >= 8.5 AND rental_feasibility_2028 <= 6.5",
+        "meaning": "Excellent schools but expensive to rent long-term. Best entered at or shortly before purchase, or via an early Rental B move, rather than held as a 13-year rental base.",
+        "locations": [
+          {
+            "area": "Plano / Frisco",
+            "rank": 6,
+            "rental_feasibility_2028": 6,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 82.4
+          },
+          {
+            "area": "Cary",
+            "rank": 8,
+            "rental_feasibility_2028": 6,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 80.7
+          },
+          {
+            "area": "Oviedo",
+            "rank": 12,
+            "rental_feasibility_2028": 6,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 79.15
+          },
+          {
+            "area": "Suwanee / Peachtree Corners",
+            "rank": 15,
+            "rental_feasibility_2028": 6,
+            "school_quality": 9,
+            "weighted_total_out_of_100": 77.5
+          },
+          {
+            "area": "Alpharetta / Johns Creek",
+            "rank": 20,
+            "rental_feasibility_2028": 6,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 75.35
+          },
+          {
+            "area": "Lake Nona",
+            "rank": 26,
+            "rental_feasibility_2028": 5.5,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 73.95
+          },
+          {
+            "area": "Waxhaw",
+            "rank": 29,
+            "rental_feasibility_2028": 6,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 72.9
+          },
+          {
+            "area": "Leesburg / Ashburn",
+            "rank": 33,
+            "rental_feasibility_2028": 1,
+            "school_quality": 9,
+            "weighted_total_out_of_100": 65
+          },
+          {
+            "area": "Franklin",
+            "rank": 34,
+            "rental_feasibility_2028": 1,
+            "school_quality": 9,
+            "weighted_total_out_of_100": 63.05
+          }
+        ]
+      }
+    },
+    "worked_example_four_corners": {
+      "premise": "Rent in Four Corners, buy elsewhere.",
+      "rental_a": "Davenport / Four Corners - cheapest sub-cap 3BR inventory in the Florida set and Kendra Scott Disney Springs at ~12-15 mi, the closest of any Florida entry. School zone is irrelevant while the child is pre-K.",
+      "rental_b": "Move to Oviedo or Lake Mary (Seminole County) before kindergarten. Seminole is A-rated, #1 in Central Florida and 11th of Florida's 67 districts, versus Orange at #19 and Lake County lower. Costs rental affordability - Oviedo rents 6.0 against Four Corners' 8.5.",
+      "purchase": "Buy in Oviedo (rank 12, 79.15; schools 8.5, housing 8.0). Already established, so no school disruption at high-school age, and $820K buys comfortably.",
+      "drive_times": {
+        "four_corners_to_clermont": "33 mi / ~42 min",
+        "four_corners_to_oviedo": "52 mi / ~62 min",
+        "four_corners_to_downtown_orlando": "~37 mi / 30-45 min",
+        "four_corners_to_tampa": "~60 mi / 60-75 min - not a commutable second market"
+      },
+      "failure_mode": "Holding Four Corners for the full 13 years puts the child's entire K-8 run in a 4.0 school zone across four possible county districts. That cost is larger than the purchase-phase choice."
+    },
+    "caveat": "This block records strategy, not scores. No location's component scores were changed by adding it; it changes how combinations of rental_feasibility_2028 and school_quality should be read across a 13-year window."
+  }
 }
