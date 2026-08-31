@@ -314,7 +314,7 @@
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Schools + affordability sleeper (Sherwin-Williams HQ market)",
       "scores": {
-        "ai_tech_pm_market": 7.5,
+        "ai_tech_pm_market": 8.5,
         "school_quality": 9.5,
         "housing_affordability_2041": 9.5,
         "rental_feasibility_2028": 8.5,
@@ -421,16 +421,17 @@
         "assessment": "Elite two-sided market: the east-side independents (University School, Hawken, Hathaway Brown - all A+ - plus Gilmour) sit within ~8-12 mi of Solon, while the west-side Catholic powers (St. Edward, Saint Ignatius, Magnificat) and Lake Ridge Academy serve Rocky River within ~5-10 mi. Among the strongest private-school access of any candidate, in or out of scope.",
         "verified": false
       },
-      "notes": "Standout on schools (Solon/Rocky River both nationally ranked A+) and housing headroom (median home prices $450K-$475K, well under the $800K-$950K 2041 ceiling even before appreciation). AACSB coverage via Case Western Reserve (Weatherhead) and Cleveland State. NASA Glenn Research Center is a genuine robotics/aerospace differentiator for Gregg's hardware interest. THE Gregg-specific wildcard: Sherwin-Williams (his current employer) opened its new $860M global HQ tower in downtown Cleveland in late 2025, plus a $250M R&D center in Brecksville (~900 staff) - an employer-continuity path the generic AI/PM market score can't capture. The AI/PM score (7.5) reflects that Gregg already holds an AI Product Owner role at Sherwin-Williams - a credible internal-mobility path at the HQ company - plus a real if smaller Cleveland-area AI market beyond the robotics/aerospace cluster (enterprise, healthcare, and insurance/data-science employers). It stays below the Sun Belt hubs but is no longer a single-employer story. Lake-effect winter climate is a real lifestyle variable not captured anywhere in the model.",
+      "notes": "Standout on schools (Solon/Rocky River both nationally ranked A+) and housing headroom (median home prices $450K-$475K, well under the $800K-$950K 2041 ceiling even before appreciation). AACSB coverage via Case Western Reserve (Weatherhead) and Cleveland State. NASA Glenn Research Center is a genuine robotics/aerospace differentiator for Gregg's hardware interest. THE Gregg-specific wildcard: Sherwin-Williams (his current employer) opened its new $860M global HQ tower in downtown Cleveland in late 2025, plus a $250M R&D center in Brecksville (~900 staff) - an employer-continuity path the generic AI/PM market score can't capture. The career-ceiling score (8.5) is driven by internal advancement, not the external market. Gregg works fully remote for Sherwin-Williams, so Cleveland is the ONLY candidate where relocating converts remote work into in-person proximity to his actual colleagues and leadership at the HQ - the single clearest path to stepping up into AI product leadership over the 2026-2041 window, and an advantage no other location can offer him. Secondary support comes from a real if smaller Cleveland-area AI market beyond the robotics/aerospace cluster (enterprise, healthcare, insurance/data-science). It sits below Round Rock and Cedar Park at 9.5 because those combine market depth with external optionality, whereas Cleveland's ceiling is concentrated in one employer. Lake-effect winter climate is a real lifestyle variable not captured anywhere in the model.",
       "risks": [
-        "AI/PM market is smaller and more enterprise/legacy-weighted than the Sun Belt hubs; the 7.5 score leans partly on Gregg's existing internal path at Sherwin-Williams, so some single-employer concentration risk remains if that path stalls",
         "Ohio layers municipal income tax (~1.5-2.5%) on top of the 2.75% state rate, and property tax rates (~1.9% effective) run above the Ohio and national median",
+        "CEILING IS EMPLOYER-CONCENTRATED - the 8.5 rests mainly on in-person internal advancement at Sherwin-Williams. If that path stalls or he leaves, the external Cleveland AI/product market is the thinnest of the top-five options and the score does not transfer",
+        "SCORE PROVENANCE - this criterion has now been revised upward three times at Gregg's direction (6.0 -> 7.5 -> 8.5) on user-supplied career reasoning rather than independent market data. Directionally well argued, but treat it as the least independently verified input in the top five, alongside Concord",
         "Kendra Scott: VERIFIED permanent store at Eton Chagrin Blvd (Woodmere, ~10 min east of Solon); Crocker Park (Westlake, near Rocky River) has only hosted pop-ups - favors the Solon/east side for spouse-employer proximity",
         "Winter climate/lake-effect snow not modeled in scoring but relevant to running festival/HYROX training cadence"
       ],
-      "weighted_total_out_of_100": 83.3,
-      "weighted_total_private_scenario": 83.3,
-      "weighted_total_career_max_scenario": 83.0
+      "weighted_total_out_of_100": 84.8,
+      "weighted_total_private_scenario": 84.8,
+      "weighted_total_career_max_scenario": 85.5
     },
     {
       "rank": 4,
@@ -3322,7 +3323,7 @@
             "rank": 3,
             "rental_feasibility_2028": 8.5,
             "school_quality": 9.5,
-            "weighted_total_out_of_100": 83.3
+            "weighted_total_out_of_100": 84.8
           },
           {
             "area": "Concord / Northwest Cabarrus",
