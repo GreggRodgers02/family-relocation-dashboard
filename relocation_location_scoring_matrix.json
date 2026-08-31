@@ -2435,10 +2435,10 @@
       "weighted_total_remote_scenario": 71.2
     },
     {
-      "area": "Davenport",
+      "area": "Davenport / Four Corners",
       "state": "Florida",
       "state_abbr": "FL",
-      "strategic_label": "Park-adjacent rental-phase / I-4 corridor option",
+      "strategic_label": "Orlando satellite with Disney Springs access / four-county zoning and resort-rental character are the traps",
       "scores": {
         "ai_tech_pm_market": 7.5,
         "school_quality": 4,
@@ -2488,12 +2488,15 @@
         "assessment": "Thin private market in the Four Corners area; the nearest well-regarded options sit ~20+ mi toward Lakeland or Orlando. Weakest private access among the Florida entries.",
         "verified": false
       },
-      "notes": "Northeast Polk County, ~12 mi from Disney with I-4 access to Orlando job centers. Best-in-FL-set rental feasibility (deep sub-$2,300 3BR townhome inventory in resort communities) and very affordable (~$320K-$355K). AI/tech market LIFTED to I-4-corridor parity (7.5) per user instruction (commute-access reasoning); unmodified score was 65.9 (AI 5.5, Tier 4). Primarily a 2028 rental/park-adjacent play for spouse Disney preference - weak schools (~4/10, no charter path) and AACSB proximity make it unsuitable as a purchase-phase or career anchor.",
+      "notes": "The Four Corners area - the only community in Florida sitting at the junction of four counties (Polk, Lake, Orange, Osceola), with Davenport as its Polk County anchor. VERIFIED Aug 2026 on the 'captures both Tampa and Orlando' thesis, which holds only half-way: downtown Orlando is ~37 mi at roughly 30-45 minutes and is genuinely commutable, but Tampa is ~60 mi at 60-75 minutes, which is day-trip range rather than a second job market. The AI/PM score of 7.5 rests on Orlando I-4 access alone; Tampa adds lifestyle reach, not employment access, so the dual-metro framing does not earn a career bump. Where the thesis does pay off is the spouse's employer: Kendra Scott's Disney Springs store is ~12-15 mi away - the closest Kendra Scott location to any Florida entry in the matrix - with The Mall at Millenia ~30 mi. Tampa's Hyde Park Village store is ~60 mi and is not a commute. Strengths remain affordability (~$320K-$355K) and the deepest sub-cap 3BR rental inventory in the Florida set. The disqualifiers for a purchase-phase or school-age anchor are unchanged: weak Polk schools, thin AACSB access, and a housing stock built around short-term vacation rental rather than stable family neighborhoods.",
       "risks": [
-        "AI parity is a commute-based user override; no meaningful local PM employer base",
+        "FOUR-COUNTY ZONING - Four Corners is the only Florida community spanning four school districts (Polk, Lake, Orange, Osceola); the district you land in is set by parcel, not by town name, and Orange County Public Schools is materially stronger than Polk. School quality is scored 4.0 for the Polk/Davenport core, but the address-level swing here is the widest of any entry in the matrix",
+        "RESORT-RENTAL CHARACTER - the housing stock is dominated by short-term vacation-rental communities (Osceola: Reunion, Encore, Windsor Hills, Storey Lake; Polk: Windsor Island, Solterra, Providence, Watersong). Tourism is the area's pivotal industry, which means transient neighbors and STR-oriented HOAs rather than stable school-age family streets",
+        "The 'both metros' thesis does not hold for employment - Tampa at ~60 mi / 60-75 min is not a commutable second job market; only Orlando (~37 mi / 30-45 min) counts",
+        "AI parity at 7.5 remains a commute-based override on Orlando access; there is no meaningful local product/PM employer base",
         "Polk schools ~4/10 with no strong charter path; not a buy-and-hold-through-school-years location",
-        "Heavy short-term-rental/investor presence; long days-on-market signal softer market",
-        "Some areas flood-prone (inland); model insurance"
+        "Thin private-school market - nearest well-regarded options are ~20+ mi toward Lakeland or Orlando; weakest private access of the Florida entries",
+        "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
       "rank": 31,
@@ -3103,7 +3106,7 @@
       "Greenville",
       "Waxhaw",
       "Glen Allen / Midlothian",
-      "Davenport",
+      "Davenport / Four Corners",
       "Roswell",
       "Leesburg / Ashburn",
       "Franklin",
