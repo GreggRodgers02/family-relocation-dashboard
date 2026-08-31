@@ -126,9 +126,10 @@
   "criteria": [
     {
       "id": "ai_tech_pm_market",
-      "label": "AI / Tech Product Management Market",
+      "label": "AI / Tech Product Career Ceiling",
       "weight_percent": 25,
-      "description": "Strength of nearby AI, software, SaaS, cloud, data, product management, and executive AI leadership career opportunities."
+      "description": "Long-horizon upward-mobility ceiling: where Gregg could step up into senior or executive AI/product leadership later in the 2026-2041 window. Because he works fully remote for Sherwin-Williams, this is NOT a measure of whether he needs a local job on arrival - no candidate location requires him to change employers. Read it as career option value: depth of senior roles to move into, in-person leadership opportunities that remote work cannot reach, and fallback market strength if he ever leaves or is laid off.",
+      "scoring_note": "Scores track market depth, which correlates with but is not identical to ceiling. A market can be large in junior/IC roles yet thin in senior AI product leadership. Treat a high score as 'more senior roles exist to move into', not 'easier to get hired tomorrow'."
     },
     {
       "id": "school_quality",
