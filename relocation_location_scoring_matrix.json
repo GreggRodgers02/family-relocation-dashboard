@@ -41,6 +41,13 @@
         "note": "Spouse employer continuity is a second anchor alongside Gregg's Sherwin-Williams tenure, and it pulls toward the Nashville metro rather than Cleveland. Distances to the current store: Spring Hill ~13 mi / 20 min, Murfreesboro ~31 mi / 40 min, Hendersonville ~45-50 min (Green Hills is its nearer store at 20-25 min).",
         "corporate_hq": "Austin, TX (3800 N Lamar Blvd) - relevant to the Round Rock/Cedar Park option as a store-to-corporate career path rather than continuity",
         "verify": "Kendra Scott's own store directory lists Franklin McEwen Southside as temporarily closed with a reported reopening around Sep 1 2026 - confirm current operating status and whether the role is tied to that specific store"
+      },
+      "work_arrangement": {
+        "status": "Fully remote",
+        "employer": "Sherwin-Williams (AI Product Owner)",
+        "implication": "Gregg's employment is location-independent, so no candidate location requires him to change jobs. Local AI/PM job market is therefore option value - a fallback if he leaves or is laid off, plus in-person networking and future mobility - rather than a daily constraint. This is why the remote_career scenario, not the baseline, is the closer match to his actual situation.",
+        "binding_constraint": "The spouse's Kendra Scott store is the only hard geographic tie in the household. Location should be optimised around her store plus family criteria, with Gregg's local job market as option value.",
+        "cleveland_caveat": "Solon's ai_tech_pm_market of 7.5 rested partly on internal Sherwin-Williams mobility. Remote work weakens but does not remove that argument: what Cleveland still uniquely offers is in-person HQ presence for advancement into AI product leadership, not job retention."
       }
     },
     "planning_assumptions": {
@@ -3198,6 +3205,10 @@
     {
       "id": "two_employer_anchors",
       "learning": "There are two employer-continuity anchors, not one, and they pull to different metros: Gregg's Sherwin-Williams tenure anchors to Cleveland (HQ), while the spouse's Kendra Scott store anchors to the Nashville metro (Franklin). Austin is the only candidate that serves both careers by upgrade rather than continuity - the strongest AI/product market for Gregg plus Kendra Scott's corporate HQ for the spouse. Any plan should state explicitly which career is being asked to restart."
+    },
+    {
+      "id": "remote_work_moots_local_job_market",
+      "learning": "Gregg works fully remote for Sherwin-Williams, so no location requires him to change jobs and the 25%-weighted ai_tech_pm_market criterion overstates its real constraint. Re-ranking under the remote scenario barely moves the order - the top five are identical - which shows the leading locations win on schools, housing and tax rather than local job market. The practical effect is on framing, not ranking: the spouse's store becomes the household's only hard geographic tie."
     }
   ],
   "phase_plan": {
