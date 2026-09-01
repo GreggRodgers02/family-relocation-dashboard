@@ -381,6 +381,76 @@
     },
     {
       "rank": 3,
+      "area": "McKinney",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "Best DFW balance - real BTR inventory and the only Collin County option with 2041 headroom",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 8.0,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 9.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 8.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "McKinney Christian Academy",
+            "location": "McKinney, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 4,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Cornerstone Christian Academy",
+            "location": "McKinney, TX",
+            "approx_distance_mi": 5,
+            "verified": false
+          },
+          {
+            "name": "Prestonwood Christian Academy North",
+            "location": "Prosper, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 12,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Legacy Christian Academy",
+            "location": "Frisco, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 14,
+            "football_program": true,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Solid local Christian options plus the larger Prosper and Frisco campuses within ~14 mi. Good rather than elite, but the public path is strong enough that private is optional here.",
+        "verified": false
+      },
+      "notes": "The DFW corridor's best overall balance, and the only Collin County entry that clears both budget phases. Median home is $432,600-$480,000 (working median ~$455K), projecting to roughly $659K by 2041 at 2.5% - about $161K of headroom under the $820K budget, versus a $52K sliver in Plano and an outright miss in Frisco and Prosper. The rental phase is genuinely feasible rather than theoretical: 3BR rents run $2,300-$2,545 and Tricon Trinity Falls offers 126 purpose-built single-family rentals at $2,089-$2,699, inside the $2,600 primary ceiling. McKinney ISD is #17 in the DFW area and rates 8.6/10 - a real step below Frisco and Prosper but comfortably above state average. Career access is the full DFW market via US-75, and the Frisco sports cluster (PGA of America HQ, The Star, Toyota Stadium) is ~20 minutes away, so the sports-tech thesis survives without paying Frisco prices.",
+      "risks": [
+        "McKinney ISD is good, not elite - #17 in DFW and 8.6/10, clearly behind Frisco ISD (85% of schools scoring 90+) and Prosper ISD (A+); zone verification still matters",
+        "Career access depends on the US-75 commute into the Plano/Richardson corridor; McKinney's own employer base is thinner than Plano's",
+        "Fast-growing exurb - school boundaries and inventory are both moving targets over a 13-year rental window",
+        "Sports-tech proximity is borrowed from Frisco (~20 min), not native"
+      ],
+      "weighted_total_out_of_100": 84.0,
+      "weighted_total_private_scenario": 83.0,
+      "weighted_total_career_max_scenario": 84.3
+    },
+    {
+      "rank": 4,
       "area": "Cedar Park",
       "state": "Texas",
       "state_abbr": "TX",
@@ -446,82 +516,6 @@
       "weighted_total_out_of_100": 83.2,
       "weighted_total_private_scenario": 82.2,
       "weighted_total_career_max_scenario": 84.95
-    },
-    {
-      "rank": 4,
-      "area": "Plano / Frisco",
-      "state": "Texas",
-      "state_abbr": "TX",
-      "tier": "Tier 1 - Serious Finalist",
-      "strategic_label": "Premium school + DFW career option",
-      "scores": {
-        "ai_tech_pm_market": 9,
-        "school_quality": 9.5,
-        "housing_affordability_2041": 6.5,
-        "rental_feasibility_2028": 6,
-        "state_tax_burden": 10,
-        "aacsb_university_proximity": 9.0,
-        "robotics_fitness_startup_fit": 8,
-        "hs_football_culture": 9.5,
-        "private_school_access": 9.0,
-        "sports_tech_ecosystem": 9.5
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Prestonwood Christian Academy",
-            "location": "Plano, TX",
-            "grades": "PK-12",
-            "annual_tuition_usd": 28303,
-            "enrollment": 1727,
-            "student_teacher_ratio": "12:1",
-            "niche_grade": "A",
-            "football_program": true,
-            "notes": "Large TAPPS college-prep with strong athletics.",
-            "verified": false
-          },
-          {
-            "name": "Legacy Christian Academy",
-            "location": "Frisco, TX",
-            "grades": "PK-12",
-            "annual_tuition_usd": 21600,
-            "enrollment": 1424,
-            "student_teacher_ratio": "15:1",
-            "football_program": true,
-            "notes": "Upper school named a National Blue Ribbon School (2017).",
-            "verified": false
-          },
-          {
-            "name": "John Paul II High School",
-            "location": "Plano, TX",
-            "grades": "9-12",
-            "football_program": true,
-            "notes": "Catholic college-prep.",
-            "verified": false
-          },
-          {
-            "name": "Coram Deo Academy of Collin County",
-            "location": "Plano, TX",
-            "notes": "Classical Christian.",
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "One of the deepest private markets in the matrix: multiple large college-prep options (Prestonwood, Legacy Christian) plus Catholic and classical choices, all within 20 mi. Strong football culture.",
-        "verified": false
-      },
-      "notes": "Strong DFW tech market, elite schools, strong family profile, high school football culture, and no state income tax, but cost pressure is significant.",
-      "risks": [
-        "Premium suburb pricing",
-        "Property taxes and insurance should be modeled",
-        "Rental target could be difficult in preferred school zones"
-      ],
-      "weighted_total_out_of_100": 83.1,
-      "weighted_total_private_scenario": 82.1,
-      "weighted_total_career_max_scenario": 83.5
     },
     {
       "rank": 5,
@@ -682,6 +676,135 @@
     },
     {
       "rank": 6,
+      "area": "Plano",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "DFW corporate core and best AACSB density - thin 2041 headroom",
+      "scores": {
+        "ai_tech_pm_market": 9.5,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 6.0,
+        "rental_feasibility_2028": 6.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 9.5,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 9.5,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 9.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Prestonwood Christian Academy",
+            "location": "Plano, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 4,
+            "annual_tuition_usd": 28303,
+            "enrollment": 1727,
+            "niche_grade": "A",
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "John Paul II High School",
+            "location": "Plano, TX",
+            "grades": "9-12",
+            "approx_distance_mi": 5,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Coram Deo Academy of Collin County",
+            "location": "Plano, TX",
+            "approx_distance_mi": 6,
+            "notes": "Classical Christian.",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Deep and established: Prestonwood is one of the largest college-prep programs in Texas, with Catholic and classical options alongside it.",
+        "verified": false
+      },
+      "notes": "The DFW corporate core and the strongest AACSB density in the metro: UT Dallas (Jindal) is ~10 mi, SMU (Cox) ~20 mi, with UNT and Texas Woman's inside ~35 mi - four to five AACSB institutions in radius, the best teaching optionality of any Texas entry. Plano ISD is #34 in Texas and long-established, producing multiple National Merit Scholars annually. The binding constraint is money: median home is $530K (three months ending June 2026, down 1.5% YoY), projecting to about $768K by 2041 - roughly $52K under the $820K budget, a sliver rather than a cushion. 3BR townhome rent sits near the $2,600 ceiling.",
+      "risks": [
+        "2041 headroom is only ~$52K on a $530K median - the thinnest of the Texas Tier 1 entries",
+        "Rental phase sits at or just above the $2,600 primary ceiling before 2028 escalation",
+        "Plano ISD is excellent but measurably behind Frisco ISD on school-level scores (85% of Frisco schools scored 90+, nearly double Plano's share)",
+        "Established, largely built-out suburb - less new BTR townhome product than McKinney or Prosper"
+      ],
+      "weighted_total_out_of_100": 81.9,
+      "weighted_total_private_scenario": 81.9,
+      "weighted_total_career_max_scenario": 83.05
+    },
+    {
+      "rank": 7,
+      "area": "Allen",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Elite football and schools - budget headroom is the constraint",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 6.5,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 10.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 8.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Prestonwood Christian Academy",
+            "location": "Plano, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 10,
+            "niche_grade": "A",
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Legacy Christian Academy",
+            "location": "Frisco, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 12,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Cornerstone Christian Academy",
+            "location": "McKinney, TX",
+            "approx_distance_mi": 8,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "No large in-town private anchor, but Prestonwood and Legacy Christian are both within ~12 mi.",
+        "verified": false
+      },
+      "notes": "Allen ISD rates 9.2/10 - stronger than McKinney's 8.6 - and the football culture is the most extreme in the matrix: the Allen Eagles play in an 18,000-seat stadium, a genuine outlier even by Texas standards. AACSB access is strong via UT Dallas (~15 mi) and SMU (~25 mi). The constraint is affordability: median home runs $505,000-$529,900 (Zillow typical value $517,494), projecting to roughly $746K by 2041 - about $74K of headroom, thin against the $820K budget, and 3BR rents sit close to the $2,600 ceiling.",
+      "risks": [
+        "~$74K of 2041 headroom on a ~$515K median - materially tighter than McKinney's ~$161K",
+        "3BR rent runs close to the $2,600 primary ceiling with limited purpose-built BTR inventory",
+        "No major in-town private school anchor; nearest large campuses are 8-12 mi away",
+        "Career access, like McKinney's, depends on commuting into the Plano/Richardson corridor"
+      ],
+      "weighted_total_out_of_100": 81.3,
+      "weighted_total_private_scenario": 79.3,
+      "weighted_total_career_max_scenario": 81.7
+    },
+    {
+      "rank": 8,
       "area": "St. Johns County",
       "state": "Florida",
       "state_abbr": "FL",
@@ -823,13 +946,13 @@
         "purchase_2041": "Open. Spring Hill remains a viable candidate (~$520K median fits budget) but not committed; best 2041 buy city to be chosen on full-model merit."
       },
       "tier": "Tier 1 - Serious Finalist",
-      "rank": 7,
+      "rank": 9,
       "weighted_total_out_of_100": 80.9,
       "weighted_total_private_scenario": 79.9,
       "weighted_total_career_max_scenario": 80.7
     },
     {
-      "rank": 8,
+      "rank": 10,
       "area": "Georgetown",
       "state": "Texas",
       "state_abbr": "TX",
@@ -899,7 +1022,7 @@
       "weighted_total_career_max_scenario": 81.75
     },
     {
-      "rank": 9,
+      "rank": 11,
       "area": "Cary",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -970,7 +1093,7 @@
       "weighted_total_career_max_scenario": 80.6
     },
     {
-      "rank": 10,
+      "rank": 12,
       "area": "Murfreesboro",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -1058,7 +1181,7 @@
       "weighted_total_career_max_scenario": 79.5
     },
     {
-      "rank": 11,
+      "rank": 13,
       "area": "Madison / Huntsville",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -1124,7 +1247,7 @@
       "weighted_total_career_max_scenario": 80.1
     },
     {
-      "rank": 12,
+      "rank": 14,
       "area": "Oviedo",
       "state": "Florida",
       "state_abbr": "FL",
@@ -1262,13 +1385,80 @@
         "Merrol Hyde Magnet admission is by county-wide lottery and cannot be secured by address"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 13,
+      "rank": 15,
       "weighted_total_out_of_100": 77.9,
       "weighted_total_private_scenario": 77.9,
       "weighted_total_career_max_scenario": 79.1
     },
     {
-      "rank": 14,
+      "rank": 16,
+      "area": "Frisco",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Sports-tech epicenter and top schools - fails the 2041 budget",
+      "scores": {
+        "ai_tech_pm_market": 9.0,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 4.0,
+        "rental_feasibility_2028": 5.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 9.5,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 9.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Legacy Christian Academy",
+            "location": "Frisco, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 3,
+            "annual_tuition_usd": 21600,
+            "enrollment": 1424,
+            "football_program": true,
+            "notes": "Upper school named a National Blue Ribbon School (2017).",
+            "verified": false
+          },
+          {
+            "name": "Prestonwood Christian Academy",
+            "location": "Plano, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 10,
+            "niche_grade": "A",
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Prestonwood Christian Academy North",
+            "location": "Prosper, TX",
+            "approx_distance_mi": 9,
+            "football_program": true,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Legacy Christian in-town plus both Prestonwood campuses within ~10 mi - strong, though the public schools are strong enough that private is discretionary.",
+        "verified": false
+      },
+      "notes": "The sports-tech epicenter of the entire matrix and the best public schools in DFW - and it still fails on budget. Frisco hosts the PGA of America headquarters on a 600-acre campus (Ryder Cup 2027, PGA Championship 2027 and 2034), the Dallas Cowboys' The Star, FC Dallas at Toyota Stadium, the Frisco RoughRiders and the Stars' Comerica Center practice facility. Frisco ISD is the strongest district here, with about 85% of its schools scoring 90 or higher - nearly twice Plano's share. But median home price is $675K (down 2.1% YoY), projecting to roughly $978K by 2041 - about $158K OVER the $820K budget before any school-zone premium - and 3BR townhome rent runs well above the $2,600 ceiling.",
+      "risks": [
+        "HOUSING IS THE DISQUALIFIER - $675K median projects to ~$978K by 2041, roughly $158K over budget",
+        "3BR townhome rent runs materially above the $2,600 primary ceiling, and above the $2,900 stretch cap in newer product",
+        "Everything Frisco offers on sports-tech is reachable from McKinney (~20 min) or Plano (~15 min) at far lower cost - the premium buys schools and convenience, not access",
+        "Prices are currently falling (-2.1% YoY), which helps entry but signals a softer market than the 2.5% appreciation assumption"
+      ],
+      "weighted_total_out_of_100": 77.4,
+      "weighted_total_private_scenario": 76.4,
+      "weighted_total_career_max_scenario": 77.9
+    },
+    {
+      "rank": 17,
       "area": "Austin (City Proper)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1421,13 +1611,13 @@
         "AI/product market is mid-tier and concentrated in finance, insurance and health tech; ceiling is below Austin, DFW, or the Triangle for frontier AI product work"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 15,
+      "rank": 18,
       "weighted_total_out_of_100": 77.0,
       "weighted_total_private_scenario": 81.0,
       "weighted_total_career_max_scenario": 76.25
     },
     {
-      "rank": 16,
+      "rank": 19,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -1566,13 +1756,13 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 17,
+      "rank": 20,
       "weighted_total_out_of_100": 76.7,
       "weighted_total_private_scenario": 77.7,
       "weighted_total_career_max_scenario": 75.65
     },
     {
-      "rank": 18,
+      "rank": 21,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -1708,7 +1898,7 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 19,
+      "rank": 22,
       "weighted_total_out_of_100": 75.8,
       "weighted_total_private_scenario": 78.8,
       "weighted_total_career_max_scenario": 77.0
@@ -1772,7 +1962,7 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 20,
+      "rank": 23,
       "weighted_total_out_of_100": 75.5,
       "weighted_total_private_scenario": 78.5,
       "weighted_total_career_max_scenario": 75.8
@@ -1839,7 +2029,7 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 21,
+      "rank": 24,
       "weighted_total_out_of_100": 75.2,
       "weighted_total_private_scenario": 75.2,
       "weighted_total_career_max_scenario": 74.9
@@ -1907,7 +2097,7 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 22,
+      "rank": 25,
       "weighted_total_out_of_100": 74.8,
       "weighted_total_private_scenario": 76.8,
       "weighted_total_career_max_scenario": 75.5
@@ -1974,7 +2164,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 23,
+      "rank": 26,
       "weighted_total_out_of_100": 74.6,
       "weighted_total_private_scenario": 73.6,
       "weighted_total_career_max_scenario": 74.25
@@ -2040,13 +2230,13 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 24,
+      "rank": 27,
       "weighted_total_out_of_100": 74.3,
       "weighted_total_private_scenario": 78.3,
       "weighted_total_career_max_scenario": 74.4
     },
     {
-      "rank": 25,
+      "rank": 28,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2125,7 +2315,65 @@
       "weighted_total_career_max_scenario": 75.55
     },
     {
-      "rank": 26,
+      "rank": 29,
+      "area": "Prosper",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Best-in-DFW schools priced entirely out of both budget phases",
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 3.5,
+        "rental_feasibility_2028": 5.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 9.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 9.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Prestonwood Christian Academy North",
+            "location": "Prosper, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 3,
+            "annual_tuition_usd": 24081,
+            "enrollment": 620,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Legacy Christian Academy",
+            "location": "Frisco, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 10,
+            "football_program": true,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Prestonwood's Prosper campus is in-town, with Legacy Christian ~10 mi south.",
+        "verified": false
+      },
+      "notes": "Prosper ISD is rated A+ by Niche with an A+ in college prep and ranks #12 in the DFW area - among the very best districts in Texas. It is also the most expensive entry in the corridor by a wide margin: median home price is $732,300, with Zillow's typical value running $780K-$790K, projecting past $1.06M by 2041 against an $820K budget. The rental phase is equally strained, with BTR product such as The Luxe of Prosper priced above the stretch cap. Sports-tech access is strong via Frisco (~15 min), and Prestonwood's north campus is in town.",
+      "risks": [
+        "PRICED OUT OF BOTH PHASES - $732K-$790K median projects past $1.06M by 2041, roughly $240K+ over budget",
+        "Rental inventory is newer BTR priced above the $2,900 hard stretch cap",
+        "Elite schools are the entire case; every other criterion is matched or beaten by McKinney at far lower cost",
+        "Furthest north of the DFW entries, so the commute into the Plano/Richardson employer core is the longest"
+      ],
+      "weighted_total_out_of_100": 73.9,
+      "weighted_total_private_scenario": 70.9,
+      "weighted_total_career_max_scenario": 73.75
+    },
+    {
+      "rank": 30,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -2199,7 +2447,7 @@
       "weighted_total_career_max_scenario": 72.35
     },
     {
-      "rank": 27,
+      "rank": 31,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -2271,7 +2519,7 @@
       "weighted_total_career_max_scenario": 72.05
     },
     {
-      "rank": 28,
+      "rank": 32,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -2343,7 +2591,7 @@
       "weighted_total_career_max_scenario": 72.8
     },
     {
-      "rank": 29,
+      "rank": 33,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -2481,13 +2729,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 30,
+      "rank": 34,
       "weighted_total_out_of_100": 71.7,
       "weighted_total_private_scenario": 76.7,
       "weighted_total_career_max_scenario": 72.25
     },
     {
-      "rank": 31,
+      "rank": 35,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -2564,7 +2812,7 @@
       "weighted_total_career_max_scenario": 70.5
     },
     {
-      "rank": 32,
+      "rank": 36,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2632,7 +2880,7 @@
       "weighted_total_career_max_scenario": 67.3
     },
     {
-      "rank": 33,
+      "rank": 37,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -2717,7 +2965,7 @@
       "weighted_total_career_max_scenario": 66.3
     },
     {
-      "rank": 34,
+      "rank": 38,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -2799,7 +3047,7 @@
       "weighted_total_career_max_scenario": 64.05
     },
     {
-      "rank": 35,
+      "rank": 39,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -2885,7 +3133,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 36,
+      "rank": 40,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -2966,7 +3214,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 37,
+      "rank": 41,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -3050,7 +3298,7 @@
   "state_top_two": {
     "Texas": [
       "Round Rock",
-      "Cedar Park"
+      "McKinney"
     ],
     "Alabama": [
       "Madison / Huntsville",
@@ -3129,23 +3377,25 @@
   "recommended_top_five": [
     "Solon / Rocky River (Cleveland Suburbs)",
     "Round Rock",
+    "McKinney",
     "Cedar Park",
-    "Plano / Frisco",
     "Concord / Northwest Cabarrus"
   ],
   "decision_tiers": {
     "tier_1_serious_finalists": [
       "Solon / Rocky River (Cleveland Suburbs)",
       "Round Rock",
+      "McKinney",
       "Cedar Park",
-      "Plano / Frisco",
       "Concord / Northwest Cabarrus",
+      "Plano",
       "Spring Hill (Summit / Page Zones, Williamson County)",
       "Georgetown",
       "Cary",
       "Madison / Huntsville"
     ],
     "tier_2_strong_tradeoffs": [
+      "Allen",
       "St. Johns County",
       "Murfreesboro",
       "Oviedo",
@@ -3157,6 +3407,7 @@
       "Celina"
     ],
     "tier_3_watch_list": [
+      "Frisco",
       "Gallatin",
       "Clermont",
       "Lake Mary",
@@ -3166,6 +3417,7 @@
     "tier_4_backup_only": [
       "Mount Juliet",
       "Lake Nona",
+      "Prosper",
       "Farragut",
       "Auburn / Opelika",
       "Greenville",
@@ -3335,21 +3587,21 @@
         "locations": [
           {
             "area": "Gallatin",
-            "rank": 17,
+            "rank": 20,
             "rental_feasibility_2028": 9,
             "school_quality": 7,
             "weighted_total_out_of_100": 76.7
           },
           {
             "area": "Lakeland",
-            "rank": 24,
+            "rank": 27,
             "rental_feasibility_2028": 9,
             "school_quality": 5.5,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Davenport / Four Corners",
-            "rank": 30,
+            "rank": 34,
             "rental_feasibility_2028": 8.5,
             "school_quality": 4,
             "weighted_total_out_of_100": 71.7
@@ -3375,8 +3627,15 @@
             "weighted_total_out_of_100": 85.1
           },
           {
-            "area": "Cedar Park",
+            "area": "McKinney",
             "rank": 3,
+            "rental_feasibility_2028": 7.5,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 84.0
+          },
+          {
+            "area": "Cedar Park",
+            "rank": 4,
             "rental_feasibility_2028": 7.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 83.2
@@ -3390,35 +3649,35 @@
           },
           {
             "area": "St. Johns County",
-            "rank": 6,
+            "rank": 8,
             "rental_feasibility_2028": 8,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 81.0
           },
           {
             "area": "Spring Hill (Summit / Page Zones, Williamson County)",
-            "rank": 7,
+            "rank": 9,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 80.9
           },
           {
             "area": "Madison / Huntsville",
-            "rank": 11,
+            "rank": 13,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 79.1
           },
           {
             "area": "Fort Mill",
-            "rank": 16,
+            "rank": 19,
             "rental_feasibility_2028": 8,
             "school_quality": 9,
             "weighted_total_out_of_100": 77.0
           },
           {
             "area": "Farragut",
-            "rank": 26,
+            "rank": 30,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.6
@@ -3430,64 +3689,85 @@
         "meaning": "Excellent schools but expensive to rent long-term. Best entered at or shortly before purchase, or via an early Rental B move, rather than held as a 13-year rental base.",
         "locations": [
           {
-            "area": "Plano / Frisco",
-            "rank": 4,
-            "rental_feasibility_2028": 6,
-            "school_quality": 9.5,
-            "weighted_total_out_of_100": 83.1
+            "area": "Plano",
+            "rank": 6,
+            "rental_feasibility_2028": 6.0,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 81.9
+          },
+          {
+            "area": "Allen",
+            "rank": 7,
+            "rental_feasibility_2028": 6.5,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 81.3
           },
           {
             "area": "Cary",
-            "rank": 9,
+            "rank": 11,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 79.9
           },
           {
             "area": "Oviedo",
-            "rank": 12,
+            "rank": 14,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 78.1
           },
           {
+            "area": "Frisco",
+            "rank": 16,
+            "rental_feasibility_2028": 5.5,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 77.4
+          },
+          {
             "area": "Suwanee / Peachtree Corners",
-            "rank": 18,
+            "rank": 21,
             "rental_feasibility_2028": 6,
             "school_quality": 9,
             "weighted_total_out_of_100": 76.3
           },
           {
             "area": "Lake Nona",
-            "rank": 23,
+            "rank": 26,
             "rental_feasibility_2028": 5.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 74.6
           },
           {
             "area": "Alpharetta / Johns Creek",
-            "rank": 25,
+            "rank": 28,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 74.2
           },
           {
-            "area": "Waxhaw",
+            "area": "Prosper",
             "rank": 29,
+            "rental_feasibility_2028": 5.5,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 73.9
+          },
+          {
+            "area": "Waxhaw",
+            "rank": 33,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 72.7
           },
           {
             "area": "Leesburg / Ashburn",
-            "rank": 33,
+            "rank": 37,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 64.6
           },
           {
             "area": "Franklin",
-            "rank": 34,
+            "rank": 38,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 61.9
