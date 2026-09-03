@@ -1763,6 +1763,83 @@
     },
     {
       "rank": 21,
+      "area": "Crowley / North Crowley (SW Fort Worth)",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Cheapest DFW entry and the best football in the matrix, gated entirely on public schools",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 4.0,
+        "housing_affordability_2041": 9.5,
+        "rental_feasibility_2028": 9.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 10.0,
+        "private_school_access": 8.5,
+        "sports_tech_ecosystem": 7.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Southwest Christian School",
+            "location": "Fort Worth, TX 76123",
+            "grades": "PK-12",
+            "approx_distance_mi": 6,
+            "annual_tuition_usd": 26450,
+            "enrollment": 1030,
+            "student_teacher_ratio": "11:1",
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Nazarene Christian Academy",
+            "location": "Crowley, TX",
+            "grades": "K-12",
+            "approx_distance_mi": 2,
+            "enrollment": 318,
+            "verified": false
+          },
+          {
+            "name": "Fort Worth Country Day",
+            "location": "Fort Worth, TX",
+            "grades": "JK-12",
+            "approx_distance_mi": 14,
+            "notes": "Top independent college-prep school in Fort Worth; ~100-acre campus.",
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Nolan Catholic High School",
+            "location": "Fort Worth, TX",
+            "grades": "9-12",
+            "approx_distance_mi": 20,
+            "football_program": true,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Unusually strong for the price point: Southwest Christian is a 1,030-student PK-12 program ~6 mi away, Fort Worth Country Day is the metro's top independent school ~14 mi, with a small in-town Christian option in Crowley itself. This is the entry where private school changes the answer most.",
+        "verified": false
+      },
+      "notes": "The cheapest Texas entry in the matrix and the single best high-school football answer anywhere in it - North Crowley went 16-0 in 2024 and beat Austin Westlake 50-21 at AT&T Stadium for the 6A Division I state title, Fort Worth's first championship at the top classification in 76 years. Money is a non-issue: median home runs $310K-$345K (working ~$330K), projecting to roughly $478K by 2041 at 2.5% - about $342K under the $820K budget, the largest cushion of any Texas location and better than McKinney's $161K. 3BR rent averages $2,000-$2,065, nearly $600 under the $2,600 primary ceiling. The binding constraint is public schools, and it is severe. North Crowley High rates 4/10 on GreatSchools and B- on Niche with 21% math and 46% reading proficiency (SAT 1050, ACT 22); Crowley Middle rates 2/10 and Crowley High 3/10. Crowley ISD holds a TEA 'B' and has improved 11 points in two years, but the campus-level numbers are the weakest of any Texas entry by a wide margin. AACSB access is genuinely good - TCU Neeley ~15 mi, Texas Wesleyan ~18 mi and UT Arlington ~25 mi put three accredited business schools inside the 30-40 mi radius. Career access is the Fort Worth side of the Metroplex (Lockheed Martin F-35, Bell Textron, BNSF HQ) rather than the Plano/Richardson tech corridor, which is 45-55 minutes east.",
+      "risks": [
+        "Public schools are the lowest-rated of any Texas entry: North Crowley High 4/10 GreatSchools, Crowley Middle 2/10, 21% math proficiency district-wide at the high school",
+        "The 13-year rental phase covers all of K-8, so the weak middle-school campus is load-bearing, not a problem deferred to later",
+        "Football excellence and academic performance are decoupled here - the 2024 title does not offset a 4/10 academic rating",
+        "Fort Worth's employer base skews aerospace/defense/logistics rather than AI/product; the Plano corridor is a 45-55 min commute if in-person work ever matters",
+        "Scoring rests on the private-school path being affordable at enrollment - Southwest Christian is ~$26,450/yr, so the top scenario total assumes a cost the baseline budget does not carry"
+      ],
+      "weighted_total_out_of_100": 76.4,
+      "weighted_total_private_scenario": 85.4,
+      "weighted_total_career_max_scenario": 75.8
+    },
+    {
+      "rank": 22,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -1898,7 +1975,7 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 22,
+      "rank": 23,
       "weighted_total_out_of_100": 75.8,
       "weighted_total_private_scenario": 78.8,
       "weighted_total_career_max_scenario": 77.0
@@ -1962,7 +2039,7 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 23,
+      "rank": 24,
       "weighted_total_out_of_100": 75.5,
       "weighted_total_private_scenario": 78.5,
       "weighted_total_career_max_scenario": 75.8
@@ -2029,7 +2106,7 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 24,
+      "rank": 25,
       "weighted_total_out_of_100": 75.2,
       "weighted_total_private_scenario": 75.2,
       "weighted_total_career_max_scenario": 74.9
@@ -2097,7 +2174,7 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 25,
+      "rank": 26,
       "weighted_total_out_of_100": 74.8,
       "weighted_total_private_scenario": 76.8,
       "weighted_total_career_max_scenario": 75.5
@@ -2164,7 +2241,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 26,
+      "rank": 27,
       "weighted_total_out_of_100": 74.6,
       "weighted_total_private_scenario": 73.6,
       "weighted_total_career_max_scenario": 74.25
@@ -2230,13 +2307,13 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 27,
+      "rank": 28,
       "weighted_total_out_of_100": 74.3,
       "weighted_total_private_scenario": 78.3,
       "weighted_total_career_max_scenario": 74.4
     },
     {
-      "rank": 28,
+      "rank": 29,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2315,7 +2392,7 @@
       "weighted_total_career_max_scenario": 75.55
     },
     {
-      "rank": 29,
+      "rank": 30,
       "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2373,7 +2450,7 @@
       "weighted_total_career_max_scenario": 73.75
     },
     {
-      "rank": 30,
+      "rank": 31,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -2447,7 +2524,7 @@
       "weighted_total_career_max_scenario": 72.35
     },
     {
-      "rank": 31,
+      "rank": 32,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -2519,7 +2596,7 @@
       "weighted_total_career_max_scenario": 72.05
     },
     {
-      "rank": 32,
+      "rank": 33,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -2591,7 +2668,7 @@
       "weighted_total_career_max_scenario": 72.8
     },
     {
-      "rank": 33,
+      "rank": 34,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -2729,13 +2806,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 34,
+      "rank": 35,
       "weighted_total_out_of_100": 71.7,
       "weighted_total_private_scenario": 76.7,
       "weighted_total_career_max_scenario": 72.25
     },
     {
-      "rank": 35,
+      "rank": 36,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -2812,7 +2889,7 @@
       "weighted_total_career_max_scenario": 70.5
     },
     {
-      "rank": 36,
+      "rank": 37,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2880,7 +2957,7 @@
       "weighted_total_career_max_scenario": 67.3
     },
     {
-      "rank": 37,
+      "rank": 38,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -2965,7 +3042,7 @@
       "weighted_total_career_max_scenario": 66.3
     },
     {
-      "rank": 38,
+      "rank": 39,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -3047,7 +3124,7 @@
       "weighted_total_career_max_scenario": 64.05
     },
     {
-      "rank": 39,
+      "rank": 40,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -3133,7 +3210,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 40,
+      "rank": 41,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -3214,7 +3291,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 41,
+      "rank": 42,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -3296,40 +3373,40 @@
     }
   ],
   "state_top_two": {
+    "Ohio": [
+      "Solon / Rocky River (Cleveland Suburbs)"
+    ],
     "Texas": [
       "Round Rock",
       "McKinney"
-    ],
-    "Alabama": [
-      "Madison / Huntsville",
-      "Auburn / Opelika"
     ],
     "North Carolina": [
       "Concord / Northwest Cabarrus",
       "Cary"
     ],
-    "Tennessee": [
-      "Spring Hill (Summit / Page Zones, Williamson County)",
-      "Murfreesboro"
-    ],
     "Florida": [
       "St. Johns County",
       "Oviedo"
     ],
-    "Georgia": [
-      "Suwanee / Peachtree Corners",
-      "Alpharetta / Johns Creek"
+    "Tennessee": [
+      "Spring Hill (Summit / Page Zones, Williamson County)",
+      "Murfreesboro"
+    ],
+    "Alabama": [
+      "Madison / Huntsville",
+      "Auburn / Opelika"
     ],
     "South Carolina": [
       "Fort Mill",
       "Greenville"
     ],
+    "Georgia": [
+      "Suwanee / Peachtree Corners",
+      "Alpharetta / Johns Creek"
+    ],
     "Virginia": [
       "Glen Allen / Midlothian",
       "Leesburg / Ashburn"
-    ],
-    "Ohio": [
-      "Solon / Rocky River (Cleveland Suburbs)"
     ],
     "New Jersey": [
       "Jersey City",
@@ -3409,6 +3486,7 @@
     "tier_3_watch_list": [
       "Frisco",
       "Gallatin",
+      "Crowley / North Crowley (SW Fort Worth)",
       "Clermont",
       "Lake Mary",
       "Lakeland",
