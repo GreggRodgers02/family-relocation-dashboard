@@ -953,6 +953,87 @@
     },
     {
       "rank": 10,
+      "area": "Fort Mitchell / Villa Hills (Beechwood)",
+      "state": "Kentucky",
+      "state_abbr": "KY",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "Kentucky's #1 district plus the densest AACSB cluster outside the Northeast",
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 8.0,
+        "state_tax_burden": 6.5,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 7.5,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 6.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Covington Catholic High School",
+            "location": "Park Hills, KY",
+            "grades": "9-12",
+            "approx_distance_mi": 3,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Notre Dame Academy",
+            "location": "Park Hills, KY",
+            "grades": "9-12",
+            "approx_distance_mi": 3,
+            "notes": "All-girls Catholic.",
+            "verified": false
+          },
+          {
+            "name": "Villa Madonna Academy",
+            "location": "Villa Hills, KY",
+            "grades": "PK-12",
+            "approx_distance_mi": 2,
+            "verified": false
+          },
+          {
+            "name": "St. Henry District High School",
+            "location": "Erlanger, KY",
+            "grades": "9-12",
+            "approx_distance_mi": 6,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "St. Xavier High School",
+            "location": "Cincinnati, OH",
+            "grades": "9-12",
+            "approx_distance_mi": 12,
+            "notes": "Jesuit; among the strongest college-prep programs in the region.",
+            "football_program": true,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "The deepest private market of any new entry and one of the deepest in the matrix. Four Catholic options inside ~6 mi before crossing the river into the large Cincinnati Catholic system (St. Xavier, Elder, Moeller). Private here is a genuine alternative, not a fallback.",
+        "verified": false
+      },
+      "notes": "The strongest of the six heartland entries and the only one that lands in Tier 1. Beechwood Independent Schools ranks #1 in Kentucky with a 95% graduation rate (73% reading, 68% math proficient), and Beechwood High School is #5 in the state per U.S. News. Median home in Fort Mitchell is $427,495, projecting to roughly $620K by 2041 at 2.5% - about $200K of headroom, better than McKinney's $161K. 3BR houses rent near $2,300, inside the $2,600 ceiling. The standout is AACSB density, which is the criterion Gregg reframed as being about redundancy rather than proximity. Inside a 40-mile radius there are four accredited business schools: NKU's Haile College of Business (~8 mi), the University of Cincinnati's Lindner College (~10 mi), Xavier's Williams College (~12 mi) and Miami University's Farmer School (~40 mi). If one teaching application fails there are three more without moving. Only Cary and the two Jersey City entries score higher. Career access is the Cincinnati metro: Procter & Gamble and Kroger both hiring AI engineers (P&G from $140K entry-level), Fifth Third and Western & Southern in fintech AI at $110K-$185K+, GE Aerospace, and the Cintrifuse accelerator. Average AI salary in the metro is $126,188 and the University of Cincinnati projects 34% growth in AI roles by 2031. Kentucky has cut its flat income tax to 3.5%. Football is better than the rest of the heartland set - Northern Kentucky is a real football region, with Highlands in nearby Fort Thomas among the winningest programs in the country.",
+      "risks": [
+        "Beechwood is a very small independent district - roughly 1,502 students across 3 schools - so in-boundary housing stock is limited and enrollment depends on residency in a small city",
+        "Kentucky's 3.5% flat rate is understated on its own: Kenton County and city occupational taxes add roughly 1.5-2%, putting the effective burden near Ohio's",
+        "Sports-tech is mid-tier - Bengals, Reds and FC Cincinnati exist but there is no sports-business cluster comparable to Frisco, Concord or Garmin's Olathe",
+        "Living in Kentucky while working in Ohio creates a reciprocity and local-tax filing complication worth pricing before committing",
+        "Small-district capacity risk over a 13-year horizon: a single cohort bulge has nowhere to overflow"
+      ],
+      "weighted_total_out_of_100": 80.7,
+      "weighted_total_private_scenario": 80.7,
+      "weighted_total_career_max_scenario": 81.75
+    },
+    {
+      "rank": 11,
       "area": "Georgetown",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1022,7 +1103,7 @@
       "weighted_total_career_max_scenario": 81.75
     },
     {
-      "rank": 11,
+      "rank": 12,
       "area": "Cary",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -1093,7 +1174,7 @@
       "weighted_total_career_max_scenario": 80.6
     },
     {
-      "rank": 12,
+      "rank": 13,
       "area": "Murfreesboro",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -1181,7 +1262,7 @@
       "weighted_total_career_max_scenario": 79.5
     },
     {
-      "rank": 13,
+      "rank": 14,
       "area": "Madison / Huntsville",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -1247,7 +1328,7 @@
       "weighted_total_career_max_scenario": 80.1
     },
     {
-      "rank": 14,
+      "rank": 15,
       "area": "Oviedo",
       "state": "Florida",
       "state_abbr": "FL",
@@ -1385,13 +1466,151 @@
         "Merrol Hyde Magnet admission is by county-wide lottery and cannot be secured by address"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 15,
+      "rank": 16,
       "weighted_total_out_of_100": 77.9,
       "weighted_total_private_scenario": 77.9,
       "weighted_total_career_max_scenario": 79.1
     },
     {
-      "rank": 16,
+      "rank": 17,
+      "area": "Oldham County (Crestwood / La Grange)",
+      "state": "Kentucky",
+      "state_abbr": "KY",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Louisville's best district with deep private backup and real budget room",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 8.0,
+        "state_tax_burden": 6.5,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 6.5,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 5.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 25,
+        "in_radius_options": [
+          {
+            "name": "Trinity High School",
+            "location": "Louisville, KY",
+            "grades": "9-12",
+            "approx_distance_mi": 18,
+            "football_program": true,
+            "notes": "Perennial state and national football power.",
+            "verified": false
+          },
+          {
+            "name": "St. Xavier High School",
+            "location": "Louisville, KY",
+            "grades": "9-12",
+            "approx_distance_mi": 20,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Kentucky Country Day School",
+            "location": "Louisville, KY",
+            "grades": "JK-12",
+            "approx_distance_mi": 14,
+            "notes": "Top independent school in Louisville.",
+            "verified": false
+          },
+          {
+            "name": "Louisville Collegiate School",
+            "location": "Louisville, KY",
+            "grades": "JK-12",
+            "approx_distance_mi": 18,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Deep but not local - the strong options are all Louisville proper, 14-20 mi south. Trinity and St. Xavier are among the best football programs in the state, which matters given the sports interest.",
+        "verified": false
+      },
+      "notes": "The Louisville-side Kentucky option. Oldham County Public Schools is a National Board Accomplished District, repeatedly named #1 in the Louisville area by Niche, with a 97% graduation rate (69% reading, 63% math) and ACT scores consistently among the highest in Kentucky. Average home value is $408,527, up 2.5% year over year, though median listing price runs much higher at $541,175 as of July 2026 - a wide spread that makes the working figure less certain than elsewhere. Using ~$430K, the 2041 projection is roughly $624K, leaving about $196K of headroom. AACSB coverage is three schools inside ~30 mi: the University of Louisville, Bellarmine, and Indiana University Southeast across the river. Solid redundancy, a step below Northern Kentucky's four. The career market is the weaker half of the Kentucky comparison. Louisville is Humana's headquarters (health AI), UPS Worldport (logistics technology), GE Appliances and Brown-Forman - real but materially smaller than Cincinnati's P&G/Kroger/Fifth Third combination, and the metro is roughly 1.4M against Cincinnati's 2.3M. Private-school depth is the offsetting strength, and it doubles as the football answer: Trinity and St. Xavier in Louisville are perennial state powers, and Kentucky Country Day is the area's independent anchor.",
+      "risks": [
+        "Home-price sources disagree sharply - $408,527 average value versus $541,175 median listing - so the housing score rests on a working estimate rather than a settled median",
+        "Rental data is thin: a 3BR Crestwood condo at $1,650 is the clearest datapoint found, which is not enough to price the 13-year rental phase confidently",
+        "Louisville's AI/product market is smaller than Cincinnati's, making Northern Kentucky the better Kentucky choice on career ceiling",
+        "Kentucky's 3.5% flat rate plus Louisville-metro occupational taxes of roughly 2.2% puts the effective burden above the headline",
+        "The best schools for football and private backup are 14-20 mi away in Louisville proper, not in-county"
+      ],
+      "weighted_total_out_of_100": 77.7,
+      "weighted_total_private_scenario": 77.7,
+      "weighted_total_career_max_scenario": 78.15
+    },
+    {
+      "rank": 18,
+      "area": "Olathe (Garmin HQ)",
+      "state": "Kansas",
+      "state_abbr": "KS",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Garmin global HQ in town - the most direct sports-tech adjacency in the matrix",
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 7.5,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 9.0,
+        "hs_football_culture": 5.0,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 9.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "St. Thomas Aquinas High School",
+            "location": "Overland Park, KS",
+            "grades": "9-12",
+            "approx_distance_mi": 9,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Kansas City Christian School",
+            "location": "Prairie Village, KS",
+            "grades": "PK-12",
+            "approx_distance_mi": 14,
+            "verified": false
+          },
+          {
+            "name": "Rockhurst High School",
+            "location": "Kansas City, MO",
+            "grades": "9-12",
+            "approx_distance_mi": 20,
+            "notes": "Jesuit, all-boys.",
+            "football_program": true,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Solid Catholic and Christian options, with St. Thomas Aquinas the nearest large college-prep campus. Thinner than the Cincinnati or Louisville private markets, and the public path is strong enough that private is discretionary.",
+        "verified": false
+      },
+      "notes": "The single most on-thesis location in the matrix for the sports-tech venture. Garmin's global operational headquarters sits in Olathe at 1200 E 151st Street with roughly 3,400 local employees out of 23,000 worldwide, and it is where the wearables are actually designed - engineers there describe a two-year cycle from development to production. For someone planning to leave corporate for a sports-tech startup, that is a hiring pool, a supplier network and a mentor bench in one place, which no other candidate offers. The rest of the picture is solid rather than spectacular. Olathe Public Schools (USD 233) is #4 in Kansas on Niche with an overall A. Median home is around $485K, projecting to roughly $703K by 2041 at 2.5% - about $117K of headroom under the $820K budget, less than McKinney's $161K but real. 3BR rent lands comfortably under the $2,600 ceiling. Kansas City is a genuine tech market, not a backwater: more than 225,000 technology professionals across the two states, anchored by Oracle Health (the former Cerner) in health AI, Garmin in edge AI and wearables, and C2FO in Leawood - a working-capital fintech marketplace that maps directly onto Gregg's fintech PM background. AACSB coverage is three schools inside ~35 mi: KU, UMKC's Bloch School and Rockhurst. The weak spots are tax and football. Kansas still runs a graduated income tax topping out at 5.7% with no flat-rate conversion yet triggered, and Johnson County property taxes are high, making this the worst tax position of the three heartland states. Kansas high-school football is ordinary by the standards Gregg has been comparing against.",
+      "risks": [
+        "Kansas has not converted to its planned 4% flat tax - the trigger is contingent on revenue growth, so the 5.7% top rate is the live assumption",
+        "Johnson County property taxes are among the highest in the metro and compound the income-tax position",
+        "The sports-tech score leans heavily on a single employer; if Garmin's Olathe footprint shrinks, the main reason to choose this location goes with it",
+        "High-school football is unremarkable - a real step down from the Texas and Northern Kentucky entries",
+        "Winter climate is a genuine lifestyle variable the model does not score, same caveat as Cleveland"
+      ],
+      "weighted_total_out_of_100": 77.6,
+      "weighted_total_private_scenario": 75.6,
+      "weighted_total_career_max_scenario": 76.7
+    },
+    {
+      "rank": 19,
       "area": "Frisco",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1458,7 +1677,7 @@
       "weighted_total_career_max_scenario": 77.9
     },
     {
-      "rank": 17,
+      "rank": 20,
       "area": "Austin (City Proper)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1611,13 +1830,13 @@
         "AI/product market is mid-tier and concentrated in finance, insurance and health tech; ceiling is below Austin, DFW, or the Triangle for frontier AI product work"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 18,
+      "rank": 21,
       "weighted_total_out_of_100": 77.0,
       "weighted_total_private_scenario": 81.0,
       "weighted_total_career_max_scenario": 76.25
     },
     {
-      "rank": 19,
+      "rank": 22,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -1691,6 +1910,70 @@
       "weighted_total_career_max_scenario": 76.4
     },
     {
+      "rank": 23,
+      "area": "West Des Moines",
+      "state": "Iowa",
+      "state_abbr": "IA",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Biggest budget headroom of any A-rated district in the matrix; sports-tech is the hole",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 9.5,
+        "rental_feasibility_2028": 9.0,
+        "state_tax_burden": 6.5,
+        "aacsb_university_proximity": 6.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 4.5,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 3.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Dowling Catholic High School",
+            "location": "West Des Moines, IA",
+            "grades": "9-12",
+            "approx_distance_mi": 3,
+            "football_program": true,
+            "notes": "Largest private high school in Iowa.",
+            "verified": false
+          },
+          {
+            "name": "Des Moines Christian School",
+            "location": "Urbandale, IA",
+            "grades": "PK-12",
+            "approx_distance_mi": 7,
+            "verified": false
+          },
+          {
+            "name": "Grand View Christian School",
+            "location": "Des Moines, IA",
+            "grades": "PK-12",
+            "approx_distance_mi": 12,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Dowling Catholic is in town and the largest private high school in Iowa, with two K-12 Christian options inside ~12 mi. Adequate rather than deep.",
+        "verified": false
+      },
+      "notes": "The best pure value in the heartland set and a quiet standout on the two budget criteria. West Des Moines Community Schools carries an A+ rating while the median sale price was $328K over the three months to May 2026, up 4.8% year over year. That projects to roughly $475K by 2041 at 2.5% - about $345K under the $820K budget, matching Crowley for the largest cushion in the matrix but with an A+ district instead of a 4/10 one. 3BR rent lands near $1,800, roughly $800 under the primary ceiling, which frees real money for the 2041 down payment across a 13-year rental phase. The AI story is better than the state's reputation suggests and is literally local: Microsoft owns over 600 acres in West Des Moines across five data-center campuses with a sixth permitted, and central Iowa infrastructure was used with OpenAI to train GPT-4. Principal Financial Group is headquartered in Des Moines and is hiring AI engineers in the $95K-$213K range, alongside Nationwide, Wells Fargo and Athene. Iowa has completed its move to a flat 3.9% income tax. Two real gaps. AACSB density is the thinnest of any new entry - Drake in Des Moines and Iowa State in Ames (~35 mi) are the only two inside the 30-40 mi radius, so the professor path has no redundancy here, which is exactly the concern Gregg raised. And sports-tech is close to absent: no major-league franchise, no sports-business cluster.",
+      "risks": [
+        "AACSB redundancy is the weakest of any new entry - only Drake and Iowa State inside the radius, so a single rejection leaves no local fallback",
+        "Sports-tech ecosystem is effectively absent; the venture thesis would have to be remote or relocate again",
+        "Data-center jobs are largely infrastructure and operations, not AI product management - the Microsoft presence is less transferable to Gregg's path than headcount suggests",
+        "Iowa's flat 3.9% income tax is offset by high effective property-tax rates",
+        "Winters are harsher than any other candidate including Cleveland, and this is unscored in the model"
+      ],
+      "weighted_total_out_of_100": 76.8,
+      "weighted_total_private_scenario": 74.8,
+      "weighted_total_career_max_scenario": 79.2
+    },
+    {
       "area": "Gallatin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -1756,13 +2039,13 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 20,
+      "rank": 24,
       "weighted_total_out_of_100": 76.7,
       "weighted_total_private_scenario": 77.7,
       "weighted_total_career_max_scenario": 75.65
     },
     {
-      "rank": 21,
+      "rank": 25,
       "area": "Crowley / North Crowley (SW Fort Worth)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1839,7 +2122,72 @@
       "weighted_total_career_max_scenario": 75.8
     },
     {
-      "rank": 22,
+      "rank": 26,
+      "area": "Overland Park (Blue Valley)",
+      "state": "Kansas",
+      "state_abbr": "KS",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Elite Kansas schools, but the price leaves only a sliver of 2041 headroom",
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 6.5,
+        "rental_feasibility_2028": 7.0,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 8.5,
+        "hs_football_culture": 5.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 9.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "St. Thomas Aquinas High School",
+            "location": "Overland Park, KS",
+            "grades": "9-12",
+            "approx_distance_mi": 3,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Pembroke Hill School",
+            "location": "Kansas City, MO",
+            "grades": "PK-12",
+            "approx_distance_mi": 14,
+            "notes": "Top independent school in the metro.",
+            "verified": false
+          },
+          {
+            "name": "Rockhurst High School",
+            "location": "Kansas City, MO",
+            "grades": "9-12",
+            "approx_distance_mi": 13,
+            "football_program": true,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Good depth: St. Thomas Aquinas in town, with Pembroke Hill (the metro independent anchor) and Jesuit Rockhurst inside ~14 mi.",
+        "verified": false
+      },
+      "notes": "The school-max Kansas option. Blue Valley USD 229 is routinely ranked #1 in Kansas and placed in the top 1% of districts nationally, with all five high schools earning top-10 recognition statewide and ACT/SAT results well above state and national averages; Blue Valley West carries a 10/10 GreatSchools rating. The problem is the same one Plano has. Median sale price was $505,500 in July 2026 with south Overland Park - the Blue Valley attendance area specifically - running at roughly $507,500 and up 9% year over year. At 2.5% that projects to about $739K by 2041, leaving only ~$81K under the $820K budget, and the 9% trailing appreciation suggests that cushion is eroding rather than holding. Rent in the Blue Valley zones sits closer to the $2,600 ceiling than the metro average of $1,590 implies. Everything else mirrors Olathe: the same Kansas City tech market, the same three AACSB schools within ~35 mi, Garmin about 10 minutes south, and the same 5.7% top income-tax rate plus high Johnson County property taxes. Read Overland Park and Olathe as a straight trade - about one point of school quality for roughly $36K of 2041 headroom and a meaningfully cheaper rental phase.",
+      "risks": [
+        "Median $505K-$515K leaves only ~$81K of 2041 headroom, and 9% trailing appreciation in the Blue Valley zones is compressing it",
+        "Blue Valley attendance boundaries carry the metro's highest prices, so the school advantage is exactly what makes the budget tight",
+        "Same Kansas tax drag as Olathe: 5.7% top rate plus high Johnson County property taxes",
+        "Rent in Blue Valley zones runs well above the $1,590 Overland Park average used in city-level sources",
+        "Football culture is ordinary relative to the Texas entries"
+      ],
+      "weighted_total_out_of_100": 76.4,
+      "weighted_total_private_scenario": 73.4,
+      "weighted_total_career_max_scenario": 75.95
+    },
+    {
+      "rank": 27,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -1975,7 +2323,7 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 23,
+      "rank": 28,
       "weighted_total_out_of_100": 75.8,
       "weighted_total_private_scenario": 78.8,
       "weighted_total_career_max_scenario": 77.0
@@ -2039,7 +2387,7 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 24,
+      "rank": 29,
       "weighted_total_out_of_100": 75.5,
       "weighted_total_private_scenario": 78.5,
       "weighted_total_career_max_scenario": 75.8
@@ -2106,7 +2454,7 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 25,
+      "rank": 30,
       "weighted_total_out_of_100": 75.2,
       "weighted_total_private_scenario": 75.2,
       "weighted_total_career_max_scenario": 74.9
@@ -2174,7 +2522,7 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 26,
+      "rank": 31,
       "weighted_total_out_of_100": 74.8,
       "weighted_total_private_scenario": 76.8,
       "weighted_total_career_max_scenario": 75.5
@@ -2241,7 +2589,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 27,
+      "rank": 32,
       "weighted_total_out_of_100": 74.6,
       "weighted_total_private_scenario": 73.6,
       "weighted_total_career_max_scenario": 74.25
@@ -2307,13 +2655,13 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 28,
+      "rank": 33,
       "weighted_total_out_of_100": 74.3,
       "weighted_total_private_scenario": 78.3,
       "weighted_total_career_max_scenario": 74.4
     },
     {
-      "rank": 29,
+      "rank": 34,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2392,7 +2740,7 @@
       "weighted_total_career_max_scenario": 75.55
     },
     {
-      "rank": 30,
+      "rank": 35,
       "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2450,7 +2798,7 @@
       "weighted_total_career_max_scenario": 73.75
     },
     {
-      "rank": 31,
+      "rank": 36,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -2524,7 +2872,63 @@
       "weighted_total_career_max_scenario": 72.35
     },
     {
-      "rank": 32,
+      "rank": 37,
+      "area": "Waukee",
+      "state": "Iowa",
+      "state_abbr": "IA",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Fastest-growing Iowa district, but you pay ~$82K more than West Des Moines for it",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 6.5,
+        "aacsb_university_proximity": 6.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 4.5,
+        "private_school_access": 7.0,
+        "sports_tech_ecosystem": 3.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Dowling Catholic High School",
+            "location": "West Des Moines, IA",
+            "grades": "9-12",
+            "approx_distance_mi": 8,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Des Moines Christian School",
+            "location": "Urbandale, IA",
+            "grades": "PK-12",
+            "approx_distance_mi": 10,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Reachable rather than local - Dowling Catholic is ~8 mi east. Thin in-town private inventory.",
+        "verified": false
+      },
+      "notes": "The growth-suburb sibling to West Des Moines. Waukee Community School District is the fastest-growing district in Iowa, serving more than 13,600 students PK-12 with more than 2,200 staff, and is consistently rated among the state's best. Median home was $409,945 in June 2026, projecting to roughly $594K by 2041 - about $226K of headroom, comfortable in absolute terms. 3BR houses rent near $2,100 with apartments in the $1,640-$2,000 range. The problem is that it is dominated by its neighbor on the model's own terms. West Des Moines carries a comparable A+ district rating at $328K against Waukee's $409,945 - roughly $82K cheaper today and about $119K more 2041 headroom - while sitting closer to Drake and to the Microsoft campuses. Waukee's case rests on newer housing stock and a district built for growth, neither of which the matrix scores. Everything else matches West Des Moines: flat 3.9% Iowa income tax, the same two-school AACSB radius, the same near-absent sports-tech picture.",
+      "risks": [
+        "Strictly dominated by West Des Moines on price, headroom and AACSB proximity while scoring the same on schools",
+        "Same AACSB thinness as West Des Moines - only Drake and Iowa State in radius",
+        "Same absent sports-tech ecosystem",
+        "Rapid growth means school boundaries and inventory are both moving targets over a 13-year rental phase",
+        "Rent figures vary widely by source ($1,640 apartments to $2,100 houses); the house figure is the relevant one for a family of four"
+      ],
+      "weighted_total_out_of_100": 73.4,
+      "weighted_total_private_scenario": 70.4,
+      "weighted_total_career_max_scenario": 75.35
+    },
+    {
+      "rank": 38,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -2596,7 +3000,7 @@
       "weighted_total_career_max_scenario": 72.05
     },
     {
-      "rank": 33,
+      "rank": 39,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -2668,7 +3072,7 @@
       "weighted_total_career_max_scenario": 72.8
     },
     {
-      "rank": 34,
+      "rank": 40,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -2806,13 +3210,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 35,
+      "rank": 41,
       "weighted_total_out_of_100": 71.7,
       "weighted_total_private_scenario": 76.7,
       "weighted_total_career_max_scenario": 72.25
     },
     {
-      "rank": 36,
+      "rank": 42,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -2889,7 +3293,7 @@
       "weighted_total_career_max_scenario": 70.5
     },
     {
-      "rank": 37,
+      "rank": 43,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2957,7 +3361,7 @@
       "weighted_total_career_max_scenario": 67.3
     },
     {
-      "rank": 38,
+      "rank": 44,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -3042,7 +3446,7 @@
       "weighted_total_career_max_scenario": 66.3
     },
     {
-      "rank": 39,
+      "rank": 45,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -3124,7 +3528,7 @@
       "weighted_total_career_max_scenario": 64.05
     },
     {
-      "rank": 40,
+      "rank": 46,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -3210,7 +3614,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 41,
+      "rank": 47,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -3291,7 +3695,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 42,
+      "rank": 48,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -3392,13 +3796,25 @@
       "Spring Hill (Summit / Page Zones, Williamson County)",
       "Murfreesboro"
     ],
+    "Kentucky": [
+      "Fort Mitchell / Villa Hills (Beechwood)",
+      "Oldham County (Crestwood / La Grange)"
+    ],
     "Alabama": [
       "Madison / Huntsville",
       "Auburn / Opelika"
     ],
+    "Kansas": [
+      "Olathe (Garmin HQ)",
+      "Overland Park (Blue Valley)"
+    ],
     "South Carolina": [
       "Fort Mill",
       "Greenville"
+    ],
+    "Iowa": [
+      "West Des Moines",
+      "Waukee"
     ],
     "Georgia": [
       "Suwanee / Peachtree Corners",
@@ -3467,6 +3883,7 @@
       "Concord / Northwest Cabarrus",
       "Plano",
       "Spring Hill (Summit / Page Zones, Williamson County)",
+      "Fort Mitchell / Villa Hills (Beechwood)",
       "Georgetown",
       "Cary",
       "Madison / Huntsville"
@@ -3477,9 +3894,12 @@
       "Murfreesboro",
       "Oviedo",
       "Hendersonville",
+      "Oldham County (Crestwood / La Grange)",
+      "Olathe (Garmin HQ)",
       "Austin (City Proper)",
       "Tampa",
       "Fort Mill",
+      "West Des Moines",
       "Suwanee / Peachtree Corners",
       "Celina"
     ],
@@ -3487,10 +3907,12 @@
       "Frisco",
       "Gallatin",
       "Crowley / North Crowley (SW Fort Worth)",
+      "Overland Park (Blue Valley)",
       "Clermont",
       "Lake Mary",
       "Lakeland",
-      "Alpharetta / Johns Creek"
+      "Alpharetta / Johns Creek",
+      "Waukee"
     ],
     "tier_4_backup_only": [
       "Mount Juliet",
