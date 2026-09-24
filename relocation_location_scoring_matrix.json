@@ -3145,6 +3145,73 @@
       "weighted_total_career_max_scenario": 72.9
     },
     {
+      "rank": 41,
+      "area": "Lucas (Lovejoy ISD)",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Rent-only play: the #5 district in Texas at a rent we can afford and a house we never can",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 1.5,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 7.5,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 8.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "McKinney Christian Academy",
+            "location": "McKinney, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 10,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Prestonwood Christian Academy",
+            "location": "Plano, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 12,
+            "niche_grade": "A",
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Legacy Christian Academy",
+            "location": "Frisco, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 15,
+            "football_program": true,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Same Collin County private market as McKinney and Allen. Largely irrelevant here - the public district is #5 in Texas, so private buys nothing.",
+        "verified": false
+      },
+      "notes": "A structural case the flat ranking cannot express, and the mirror image of the Four Corners problem that prompted the phase_plan block. Lovejoy ISD is the best district in the Texas set and one of the best anywhere in the matrix: ranked 5th of 951 Texas districts, with Lovejoy High School rated A+ on Niche, 9/10 on GreatSchools, 80% math and 91% reading proficiency, and top-1% standing statewide for overall test scores. That is materially above Plano ISD (#34), Allen (9.2/10) and McKinney (8.6/10). Buying here is simply out of reach. Lucas is a one-acre-minimum estate town: September 2026 listings carry a median around $1.26M, with median list price near $1,115,000 and one count of 97 active listings at a $1,381,235 median. Even at the lowest credible figure the 2041 projection clears $1.6M against an $820K budget - off by roughly a factor of two, the worst housing score in the matrix. But renting is feasible, and that is the whole point. A 3BR house in Lucas averages $2,461/month with listings from $1,350 to $3,000 and roughly 54 houses / 115 total rental listings available - inside the $2,600 primary ceiling. Because the rental phase runs 13 years and covers all of K-8 plus the start of high school while the purchased home covers only the final ~3 years, renting in Lovejoy ISD delivers nearly the entire span of schooling that matters, after which the 2041 purchase can happen anywhere - McKinney is ~20 minutes north and clears the budget with $161K to spare. Career and academic access match Allen and McKinney: UT Dallas ~15 mi, SMU ~25 mi, UNT and TWU inside ~40 mi, the full DFW market via US-75, and the Frisco sports cluster ~20 minutes away. Kendra Scott at Legacy West is ~12 mi.",
+      "risks": [
+        "Unbuyable, not merely expensive - the 2041 projection is roughly double the $820K budget, so this can never be a single-location answer",
+        "The $2,461 average 3BR rent leaves only ~5% under the $2,600 ceiling, and 2028 escalation could erase it entirely before the phase even starts",
+        "3BR rental inventory in a one-acre-minimum estate town is inherently thin and volatile; the citywide house average of $3,356 shows what most of the stock actually costs",
+        "A 13-year rental commitment in a small, tight market carries real renewal and displacement risk - losing the lease means losing the school zone",
+        "Lovejoy ISD covers only ~16.7 sq mi and the boundary cuts through neighborhoods and mid-street, so address-level verification is mandatory",
+        "Renting long-term in an estate town means no equity accrual during the 13 years when the alternative locations would be building it"
+      ],
+      "weighted_total_out_of_100": 71.8,
+      "weighted_total_private_scenario": 68.8,
+      "weighted_total_career_max_scenario": 72.2
+    },
+    {
       "area": "Davenport / Four Corners",
       "state": "Florida",
       "state_abbr": "FL",
@@ -3210,13 +3277,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 41,
+      "rank": 42,
       "weighted_total_out_of_100": 71.7,
       "weighted_total_private_scenario": 76.7,
       "weighted_total_career_max_scenario": 72.25
     },
     {
-      "rank": 42,
+      "rank": 43,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -3293,7 +3360,7 @@
       "weighted_total_career_max_scenario": 70.5
     },
     {
-      "rank": 43,
+      "rank": 44,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -3361,7 +3428,7 @@
       "weighted_total_career_max_scenario": 67.3
     },
     {
-      "rank": 44,
+      "rank": 45,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -3446,7 +3513,7 @@
       "weighted_total_career_max_scenario": 66.3
     },
     {
-      "rank": 45,
+      "rank": 46,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -3528,7 +3595,7 @@
       "weighted_total_career_max_scenario": 64.05
     },
     {
-      "rank": 46,
+      "rank": 47,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -3614,7 +3681,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 47,
+      "rank": 48,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -3695,7 +3762,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 48,
+      "rank": 49,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -3912,7 +3979,8 @@
       "Lake Mary",
       "Lakeland",
       "Alpharetta / Johns Creek",
-      "Waukee"
+      "Waukee",
+      "Lucas (Lovejoy ISD)"
     ],
     "tier_4_backup_only": [
       "Mount Juliet",
@@ -4024,6 +4092,11 @@
     {
       "id": "aacsb_density_not_proximity",
       "learning": "The academic criterion was reframed from proximity-to-nearest to DENSITY within a 30-40 mile radius, because the real concern is optionality - being denied by one school should not end the professor path. This reversed several results. Austin has only two AACSB schools inside the radius of Round Rock (UT McCombs and St. Edward's; Texas State is ~45 mi, and Concordia and Huston-Tillotson are ACBSP not AACSB), while Cleveland has five (John Carroll, Case Western, Cleveland State, Kent State, Akron). A single elite school is worth less than several solid ones when the goal is redundancy."
+    },
+    {
+      "id": "rent_only_elite_districts",
+      "learning": "Learning 3 has an inverse that the flat ranking hides. If the 13-year rental window governs schooling, then a district that is rentable but unbuyable captures nearly all the educational value while failing only the criterion that governs the final ~3 years. Lucas is the case: Lovejoy ISD is 5th of 951 Texas districts and a 3BR rents for ~$2,461 inside the $2,600 ceiling, yet a ~$1.1M median puts the 2041 purchase at roughly double budget. It scores 71.8 flat - Tier 3 - while being one of the strongest rental-phase options in the matrix. Read housing_affordability_2041 and rental_feasibility_2028 as gates on different phases, never as one blended affordability signal.",
+      "added": "Sep 2026"
     }
   ],
   "phase_plan": {
@@ -4105,6 +4178,21 @@
             "rental_feasibility_2028": 8.5,
             "school_quality": 4,
             "weighted_total_out_of_100": 71.7
+          }
+        ]
+      },
+      "rent_only_elite": {
+        "rule": "school_quality >= 9.0 AND rental_feasibility_2028 >= 6.5 AND housing_affordability_2041 <= 3.0",
+        "meaning": "Elite schools that are rentable but never buyable. The inverse of rental_a_only: because the 13-year rental window covers all of K-8 plus the start of high school, renting here captures nearly the whole span of schooling that matters, then the 2041 purchase happens in a different city entirely. Strong on the criterion that governs the rental phase, disqualified on the one that governs the purchase - so the flat weighted ranking understates it badly.",
+        "locations": [
+          {
+            "area": "Lucas (Lovejoy ISD)",
+            "rank": 41,
+            "school_quality": 9.5,
+            "rental_feasibility_2028": 6.5,
+            "housing_affordability_2041": 1.5,
+            "weighted_total_out_of_100": 71.8,
+            "purchase_phase_note": "Buy in McKinney (~20 min north, $161K of 2041 headroom) or any Collin County entry that clears the budget."
           }
         ]
       },
