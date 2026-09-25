@@ -807,6 +807,70 @@
     },
     {
       "rank": 8,
+      "area": "Melissa",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "McKinney prices with the best build-to-rent supply in the corridor, one step down on schools",
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 8.0,
+        "rental_feasibility_2028": 8.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.5,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 7.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "McKinney Christian Academy",
+            "location": "McKinney, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 10,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Cornerstone Christian Academy",
+            "location": "McKinney, TX",
+            "approx_distance_mi": 11,
+            "verified": false
+          },
+          {
+            "name": "Prestonwood Christian Academy North",
+            "location": "Prosper, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 17,
+            "football_program": true,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Reachable rather than local - the nearest options are in McKinney ~10 mi south, and the large Prestonwood and Legacy Christian campuses are 17+ mi. Thinner than McKinney or Plano.",
+        "verified": false
+      },
+      "notes": "McKinney's northern neighbor on US-75, and the closest thing in the matrix to a McKinney substitute. Money looks almost identical to McKinney. The median sale price was $435,663 over the three months ending June 2026, down 10.1% year over year, with a 12-month median of $455,000 (down 12%) and September listings at a $499K median. On the $455K working figure the 2041 projection is about $659K, roughly $161K under the $820K budget, and prices are currently falling rather than rising. The rental phase is where Melissa beats McKinney. 3BR rents run about $2,216-$2,518 depending on source, under the $2,600 ceiling, and the town has a deep supply of purpose-built rentals matching the plan's professionally managed 3BR target: Wolf Creek Farms (343 single-family rental homes on 32 acres, delivering from March 2026), HARMON Melissa (3- and 4-bedroom build-to-rent townhomes with attached two-car garages), plus Avilla Springs and Harlow. One count shows about 348 single-family homes for rent in town. Schools are good, one step below McKinney. Melissa High School is rated A by TEA for 2024-25, A on Niche and 8/10 on GreatSchools, with 59% math and 77% reading proficiency. District-wide proficiency is 66% math and 76% reading across ~7,735 students, and the district has added an International Baccalaureate program. Football is a real part of the culture: a 2011 state title, 17 playoff appearances, a 2025 run to the Class 5A Division 2 semifinals (the first since 2011), and a 70-20 record under the current coach since 2019. The trade-offs are distance and property tax. UT Dallas is ~30 mi, the Plano/Richardson corridor ~35-40 minutes, the Frisco sports cluster ~30 minutes, and Kendra Scott at Legacy West ~30 minutes. The median effective property tax rate is 1.59%, about 22% above the Collin County median, and one local analysis summed up 2026 as 'prices fell 10%, the tax bill didn't.'",
+      "risks": [
+        "Property tax runs about 1.59% effective, roughly 22% above the Collin County median, because of MUD/PID districts and a school debt rate at the $0.50 statutory ceiling. Two homes on the same street can carry very different tax rates, so check the exact address",
+        "Schools are one clear step below McKinney: 8/10 vs 8.6/10 on GreatSchools, and 59% math proficiency at the high school",
+        "Prices fell 10-12% over the past year. That helps a buyer today, but it also suggests builders are adding supply faster than demand, which could keep resale values soft",
+        "Farther from everything that matters for career options: UT Dallas ~30 mi, the Plano/Richardson job corridor 35-40 minutes, Frisco ~30 minutes",
+        "A fast-growing exurb, so school attendance zones will likely be redrawn during a 13-year rental period",
+        "Private school options are ~10+ mi away in McKinney, not in town"
+      ],
+      "weighted_total_out_of_100": 81.1,
+      "weighted_total_private_scenario": 80.1,
+      "weighted_total_career_max_scenario": 81.8
+    },
+    {
+      "rank": 9,
       "area": "St. Johns County",
       "state": "Florida",
       "state_abbr": "FL",
@@ -948,13 +1012,13 @@
         "purchase_2041": "Open. Spring Hill remains a viable candidate (~$520K median fits budget) but not committed; best 2041 buy city to be chosen on full-model merit."
       },
       "tier": "Tier 1 - Serious Finalist",
-      "rank": 9,
+      "rank": 10,
       "weighted_total_out_of_100": 80.9,
       "weighted_total_private_scenario": 79.9,
       "weighted_total_career_max_scenario": 80.7
     },
     {
-      "rank": 10,
+      "rank": 11,
       "area": "Fort Mitchell / Villa Hills (Beechwood)",
       "state": "Kentucky",
       "state_abbr": "KY",
@@ -1035,7 +1099,7 @@
       "weighted_total_career_max_scenario": 81.75
     },
     {
-      "rank": 11,
+      "rank": 12,
       "area": "Georgetown",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1105,7 +1169,7 @@
       "weighted_total_career_max_scenario": 81.75
     },
     {
-      "rank": 12,
+      "rank": 13,
       "area": "Cary",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -1176,7 +1240,7 @@
       "weighted_total_career_max_scenario": 80.6
     },
     {
-      "rank": 13,
+      "rank": 14,
       "area": "Murfreesboro",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -1264,7 +1328,7 @@
       "weighted_total_career_max_scenario": 79.5
     },
     {
-      "rank": 14,
+      "rank": 15,
       "area": "Madison / Huntsville",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -1330,7 +1394,7 @@
       "weighted_total_career_max_scenario": 80.1
     },
     {
-      "rank": 15,
+      "rank": 16,
       "area": "Oviedo",
       "state": "Florida",
       "state_abbr": "FL",
@@ -1468,13 +1532,13 @@
         "Merrol Hyde Magnet admission is by county-wide lottery and cannot be secured by address"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 16,
+      "rank": 17,
       "weighted_total_out_of_100": 77.9,
       "weighted_total_private_scenario": 77.9,
       "weighted_total_career_max_scenario": 79.1
     },
     {
-      "rank": 17,
+      "rank": 18,
       "area": "Oldham County (Crestwood / La Grange)",
       "state": "Kentucky",
       "state_abbr": "KY",
@@ -1547,7 +1611,7 @@
       "weighted_total_career_max_scenario": 78.15
     },
     {
-      "rank": 18,
+      "rank": 19,
       "area": "Olathe (Garmin HQ)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -1612,7 +1676,7 @@
       "weighted_total_career_max_scenario": 76.7
     },
     {
-      "rank": 19,
+      "rank": 20,
       "area": "Frisco",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1679,7 +1743,7 @@
       "weighted_total_career_max_scenario": 77.9
     },
     {
-      "rank": 20,
+      "rank": 21,
       "area": "Austin (City Proper)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1832,13 +1896,13 @@
         "AI/product market is mid-tier and concentrated in finance, insurance and health tech; ceiling is below Austin, DFW, or the Triangle for frontier AI product work"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 21,
+      "rank": 22,
       "weighted_total_out_of_100": 77.0,
       "weighted_total_private_scenario": 81.0,
       "weighted_total_career_max_scenario": 76.25
     },
     {
-      "rank": 22,
+      "rank": 23,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -1912,7 +1976,7 @@
       "weighted_total_career_max_scenario": 76.4
     },
     {
-      "rank": 23,
+      "rank": 24,
       "area": "West Des Moines",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -2041,13 +2105,13 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 24,
+      "rank": 25,
       "weighted_total_out_of_100": 76.7,
       "weighted_total_private_scenario": 77.7,
       "weighted_total_career_max_scenario": 75.65
     },
     {
-      "rank": 25,
+      "rank": 26,
       "area": "Crowley / North Crowley (SW Fort Worth)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2124,7 +2188,7 @@
       "weighted_total_career_max_scenario": 75.8
     },
     {
-      "rank": 26,
+      "rank": 27,
       "area": "Overland Park (Blue Valley)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -2189,7 +2253,7 @@
       "weighted_total_career_max_scenario": 75.95
     },
     {
-      "rank": 27,
+      "rank": 28,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2325,7 +2389,7 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 28,
+      "rank": 29,
       "weighted_total_out_of_100": 75.8,
       "weighted_total_private_scenario": 78.8,
       "weighted_total_career_max_scenario": 77.0
@@ -2389,7 +2453,7 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 29,
+      "rank": 30,
       "weighted_total_out_of_100": 75.5,
       "weighted_total_private_scenario": 78.5,
       "weighted_total_career_max_scenario": 75.8
@@ -2456,7 +2520,7 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 30,
+      "rank": 31,
       "weighted_total_out_of_100": 75.2,
       "weighted_total_private_scenario": 75.2,
       "weighted_total_career_max_scenario": 74.9
@@ -2524,7 +2588,7 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 31,
+      "rank": 32,
       "weighted_total_out_of_100": 74.8,
       "weighted_total_private_scenario": 76.8,
       "weighted_total_career_max_scenario": 75.5
@@ -2591,7 +2655,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 32,
+      "rank": 33,
       "weighted_total_out_of_100": 74.6,
       "weighted_total_private_scenario": 73.6,
       "weighted_total_career_max_scenario": 74.25
@@ -2657,13 +2721,13 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 33,
+      "rank": 34,
       "weighted_total_out_of_100": 74.3,
       "weighted_total_private_scenario": 78.3,
       "weighted_total_career_max_scenario": 74.4
     },
     {
-      "rank": 34,
+      "rank": 35,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2742,7 +2806,7 @@
       "weighted_total_career_max_scenario": 75.55
     },
     {
-      "rank": 35,
+      "rank": 36,
       "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2800,7 +2864,7 @@
       "weighted_total_career_max_scenario": 73.75
     },
     {
-      "rank": 36,
+      "rank": 37,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -2874,7 +2938,7 @@
       "weighted_total_career_max_scenario": 72.35
     },
     {
-      "rank": 37,
+      "rank": 38,
       "area": "Waukee",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -2930,7 +2994,7 @@
       "weighted_total_career_max_scenario": 75.35
     },
     {
-      "rank": 38,
+      "rank": 39,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -3002,7 +3066,7 @@
       "weighted_total_career_max_scenario": 72.05
     },
     {
-      "rank": 39,
+      "rank": 40,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -3074,7 +3138,7 @@
       "weighted_total_career_max_scenario": 72.8
     },
     {
-      "rank": 40,
+      "rank": 41,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -3147,7 +3211,7 @@
       "weighted_total_career_max_scenario": 72.9
     },
     {
-      "rank": 41,
+      "rank": 42,
       "area": "Lucas (Lovejoy ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3375,13 +3439,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 42,
+      "rank": 43,
       "weighted_total_out_of_100": 71.7,
       "weighted_total_private_scenario": 76.7,
       "weighted_total_career_max_scenario": 72.25
     },
     {
-      "rank": 43,
+      "rank": 44,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -3458,7 +3522,7 @@
       "weighted_total_career_max_scenario": 70.5
     },
     {
-      "rank": 44,
+      "rank": 45,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -3526,7 +3590,7 @@
       "weighted_total_career_max_scenario": 67.3
     },
     {
-      "rank": 45,
+      "rank": 46,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -3611,7 +3675,7 @@
       "weighted_total_career_max_scenario": 66.3
     },
     {
-      "rank": 46,
+      "rank": 47,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -3693,7 +3757,7 @@
       "weighted_total_career_max_scenario": 64.05
     },
     {
-      "rank": 47,
+      "rank": 48,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -3779,7 +3843,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 48,
+      "rank": 49,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -3860,7 +3924,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 49,
+      "rank": 50,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -4055,6 +4119,7 @@
     ],
     "tier_2_strong_tradeoffs": [
       "Allen",
+      "Melissa",
       "St. Johns County",
       "Murfreesboro",
       "Oviedo",
