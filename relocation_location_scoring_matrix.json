@@ -3200,81 +3200,111 @@
         "assessment": "Same Collin County private market as McKinney and Allen. Largely irrelevant here - the public district is #5 in Texas, so private buys nothing.",
         "verified": false
       },
-      "notes": "A structural case the flat ranking cannot express, and the mirror image of the Four Corners problem that prompted the phase_plan block. Lovejoy ISD is the best district in the Texas set and one of the best anywhere in the matrix: ranked 5th of 951 Texas districts, with Lovejoy High School rated A+ on Niche, 9/10 on GreatSchools, 80% math and 91% reading proficiency, and top-1% standing statewide for overall test scores. That is materially above Plano ISD (#34), Allen (9.2/10) and McKinney (8.6/10). Buying here is simply out of reach. Lucas is a one-acre-minimum estate town: September 2026 listings carry a median around $1.26M, with median list price near $1,115,000 and one count of 97 active listings at a $1,381,235 median. Even at the lowest credible figure the 2041 projection clears $1.6M against an $820K budget - off by roughly a factor of two, the worst housing score in the matrix. But renting is feasible, and that is the whole point. A 3BR house in Lucas averages $2,461/month with listings from $1,350 to $3,000 and roughly 54 houses / 115 total rental listings available - inside the $2,600 primary ceiling. Because the rental phase runs 13 years and covers all of K-8 plus the start of high school while the purchased home covers only the final ~3 years, renting in Lovejoy ISD delivers nearly the entire span of schooling that matters, after which the 2041 purchase can happen anywhere - McKinney is ~20 minutes north and clears the budget with $161K to spare. Career and academic access match Allen and McKinney: UT Dallas ~15 mi, SMU ~25 mi, UNT and TWU inside ~40 mi, the full DFW market via US-75, and the Frisco sports cluster ~20 minutes away. Kendra Scott at Legacy West is ~12 mi.",
+      "notes": "A structural case the flat ranking cannot express, and the mirror image of the Four Corners problem that prompted the phase_plan block. Lovejoy ISD is the best district in the Texas set and one of the best anywhere in the matrix: ranked 5th of 951 Texas districts, with Lovejoy High School rated A+ on Niche, 9/10 on GreatSchools, 80% math and 91% reading proficiency, and top-1% standing statewide for overall test scores. That is materially above Plano ISD (#34), Allen (9.2/10) and McKinney (8.6/10). Buying here is simply out of reach. Lucas is a one-acre-minimum estate town: September 2026 listings carry a median around $1.26M, with median list price near $1,115,000 and one count of 97 active listings at a $1,381,235 median. Even at the lowest credible figure the 2041 projection clears $1.6M against an $820K budget - off by roughly a factor of two, the worst housing score in the matrix. But renting is feasible, and that is the whole point. A 3BR house in Lucas averages $2,461/month with listings from $1,350 to $3,000 inside the $2,600 primary ceiling. Note the inventory figures behind that average are city-level; rentals inside the Lovejoy ISD boundary specifically number only ~10-16 at a time. The better in-district rental target is Stacy Ridge Estates in Allen (~275 homes built 2001-2004 on 0.2-0.4 acre lots), where a 4BR/3BA has listed at $2,500. Because the rental phase runs 13 years and covers all of K-8 plus the start of high school while the purchased home covers only the final ~3 years, renting in Lovejoy ISD delivers nearly the entire span of schooling that matters, after which the 2041 purchase can happen anywhere - McKinney is ~20 minutes north and clears the budget with $161K to spare. Career and academic access match Allen and McKinney: UT Dallas ~15 mi, SMU ~25 mi, UNT and TWU inside ~40 mi, the full DFW market via US-75, and the Frisco sports cluster ~20 minutes away. Kendra Scott at Legacy West is ~12 mi.",
       "risks": [
         "Unbuyable, not merely expensive - the 2041 projection is roughly double the $820K budget, so this can never be a single-location answer",
         "The $2,461 average 3BR rent leaves only ~5% under the $2,600 ceiling, and 2028 escalation could erase it entirely before the phase even starts",
-        "3BR rental inventory in a one-acre-minimum estate town is inherently thin and volatile; the citywide house average of $3,356 shows what most of the stock actually costs",
+        "Rental inventory inside the Lovejoy ISD boundary is ~10-16 listings at a time, not the 54+ that city-level Lucas searches return; Stacy Ridge Estates in Allen is the realistic in-district rental target",
         "A 13-year rental commitment in a small, tight market carries real renewal and displacement risk - losing the lease means losing the school zone",
         "Lovejoy ISD covers only ~16.7 sq mi and the boundary cuts through neighborhoods and mid-street, so address-level verification is mandatory",
-        "Renting long-term in an estate town means no equity accrual during the 13 years when the alternative locations would be building it"
+        "Renting long-term in an estate town means no equity accrual during the 13 years when the alternative locations would be building it",
+        "The transfer route depends on a program whose price has swung between free and $10K/yr four times in about a decade and which continues only by annual board vote"
       ],
       "weighted_total_out_of_100": 71.8,
       "weighted_total_private_scenario": 68.8,
       "weighted_total_career_max_scenario": 72.2,
       "lovejoy_isd_access_paths": {
-        "framing": "Lucas the city cannot be made to work as a purchase: at a $1,115,000 median it needs a 49% price collapse or a 97% budget increase, and buying earlier does not rescue it (a 2032 purchase still overshoots by ~$473K). What can be made to work is Lovejoy ISD, which is the actual asset. Four routes, ranked by realism.",
+        "framing": "Lucas the city cannot be made to work as a purchase: a $1,115,000 median needs a 49% price collapse or a 97% budget increase, and buying earlier does not rescue it. Lovejoy ISD is the actual asset. After a deeper pass (Sep 2026), only two of the four routes survive.",
+        "verdict": "Route 1 (transfer in) is the only route that delivers Lovejoy for the whole of K-12 inside the budget, and its economics are better than first estimated, but its terms cannot be known until the child is near kindergarten entry (~2031-2033). Route 3 (rent in district) is the fallback and is stronger than first described because of Stacy Ridge. Route 2 (buy cheap in-district) is closed for houses. Route 4 is closed.",
         "paths": [
           {
             "rank": 1,
             "id": "live_outside_pay_tuition",
-            "route": "Live in McKinney (#3 overall), pay Lovejoy ISD out-of-district tuition",
-            "cost": "Reported at $8,000/yr K-elementary and $10,000/yr middle and high school = ~$118,000 across K-12, which is 34% of the ~$343,850 cost of 13 years of private school at Southwest Christian rates",
-            "house": "McKinney at $455K projects to $658,976 - $161,024 under budget, so the house is $955,877 cheaper than buying Lucas",
-            "blocker": "Capped at ~15 out-of-district students per grade level, requires annual re-application, and demands a near-perfect attendance record. A seat is re-won every year, not secured once",
-            "verify": "Tuition terms and cap MUST be confirmed directly with Lovejoy ISD - reporting spans several years and the program has changed before (in 2021-22 it was free with a 350-student cap). The current program name appears to be the Lovejoy ISD Scholar Program"
+            "status": "viable - terms unknowable until ~2031",
+            "route": "Live in McKinney (#3 overall), transfer into Lovejoy via the Lovejoy Scholars program",
+            "program_facts": [
+              "Exists and is active: the board voted 7-0 on Jan 21 to continue Lovejoy Scholars. Continuation is a board decision, so the program survives at the board's discretion",
+              "Applications open in early spring for the following year (the 2024-25 window closed Apr 24, 2024)",
+              "Seats are most available in the early grades: the district has reported little demand in K-4 while secondary classes were full",
+              "The district has a structural reason to sell seats: it is ~95% built out, lower-grade enrollment has declined for a decade, it closed Lovejoy Elementary in 2021 over a ~$5M shortfall, and it adopted a deficit budget for 2024-25. ~4,100 students total",
+              "Texas law permits but does not require transportation for transfer students - plan on driving"
+            ],
+            "price_history": [
+              {
+                "period": "original program (~2013-2017 era reporting)",
+                "terms": "$8,000/yr elementary, $10,000/yr middle and high, max 15 per grade"
+              },
+              {
+                "period": "2021-22",
+                "terms": "Tuition-free, capped at 350 transfer students - set when the board expected legislation to limit tuition"
+              },
+              {
+                "period": "2022-23 (board vote March 2022)",
+                "terms": "$9,000 for new transfer students; $4,000 for returning transfer students and their siblings"
+              },
+              {
+                "period": "current",
+                "terms": "At least one current source describes Lovejoy Scholars as tuition-free. Could not be confirmed: the district website is unreachable from this environment"
+              }
+            ],
+            "cost_range_k12": {
+              "if_tuition_free": 0,
+              "if_2022_terms": "~$57,000 ($9,000 entry year + 12 years at the $4,000 returning rate)",
+              "if_original_terms": "~$118,000 (6 x $8,000 + 7 x $10,000)",
+              "private_school_comparison": "~$343,850 at Southwest Christian rates, or ~$207,700 if a Texas Education Freedom Account award ($10,474/yr for 2026-27) were won and held every year"
+            },
+            "house": "McKinney at $455K projects to ~$658,976 - $161,024 under budget",
+            "blocker": "The price has swung between free and $10K/yr four times in about a decade, and the program exists by annual board vote. The terms that matter are the ones in force when the child enters kindergarten (~2031-2033), which nobody can know today. Enter at K, when seats are loosest; the risk is holding the seat into secondary, where classes have run full"
           },
           {
             "rank": 2,
-            "id": "cheaper_submarket_same_district",
-            "route": "Buy the cheapest corner of Lovejoy ISD rather than Lucas",
-            "threshold": "Anything at or below ~$566,182 today clears the 2041 budget",
-            "candidates": [
-              {
-                "area": "Fairview - low estimate",
-                "price_2026": 500000,
-                "proj_2041": 724149,
-                "verdict": "clears by $95,851",
-                "caution": "This is a May 2026 median drawn from only 19 closed sales; other Fairview sources give $580,000, $621,950 and even $850K-$1.1M. The single most important number to verify on this path"
-              },
-              {
-                "area": "Allen - Lovejoy-zoned portion",
-                "price_2026": 517494,
-                "proj_2041": 749486,
-                "verdict": "clears by $70,514",
-                "caution": "This is the Allen citywide Zillow typical value, not the Lovejoy-zoned subset, which almost certainly carries a premium"
-              },
-              {
-                "area": "Seis Lagos - lowest listings",
-                "price_2026": 578600,
-                "proj_2041": 837985,
-                "verdict": "misses by $17,985",
-                "caution": "Community average is $699,000 ($1.01M projected). Gated, 24-hr security, 1978-era build-out; Lovejoy ISD covers much but not necessarily all of it"
-              },
-              {
-                "area": "Fairview - March 2026 median",
-                "price_2026": 621950,
-                "proj_2041": 900769,
-                "verdict": "misses by $80,769",
-                "caution": null
-              }
-            ],
-            "blocker": "Lovejoy ISD covers only ~16.7 sq mi and the boundary cuts through neighborhoods and mid-street, so every candidate address needs district verification before an offer"
+            "id": "rent_in_district_buy_outside",
+            "status": "viable fallback - thin inventory",
+            "route": "Rent inside Lovejoy ISD through the 13-year window, buy in McKinney in 2041",
+            "best_target": "Stacy Ridge Estates, Allen - ~275 homes built 2001-2004 on 0.2-0.4 acre lots, zoned Lovejoy, with a 4BR/3BA listed at $2,500/mo. An ordinary suburban subdivision rather than the Lucas estate market, so the rental stock is house-sized rather than estate-sized",
+            "cost": "$2,461-$2,500/mo against the $2,600 ceiling",
+            "blocker": "Only ~10-16 rentals exist inside the district boundary at any time (Apartments.com 14, HotPads 10). A 13-year lease chain in a market that thin means one non-renewal can cost the school zone. No equity accrues",
+            "status_note": "Encoded as phase_plan.candidate_roles.rent_only_elite"
           },
           {
             "rank": 3,
-            "id": "rent_in_district_buy_outside",
-            "route": "Rent in Lucas through the 13-year window, buy in McKinney in 2041",
-            "cost": "3BR averages $2,461/mo - $139 under the $2,600 ceiling (5.3% headroom). 13 years at that rate is ~$383,916 before escalation",
-            "blocker": "Thin 3BR inventory in an estate town, 2028 escalation could erase the 5.3% margin before the phase begins, and losing a lease means losing the school zone. No equity accrues",
-            "status": "Already encoded as phase_plan.candidate_roles.rent_only_elite"
+            "id": "cheaper_submarket_same_district",
+            "status": "closed for houses",
+            "route": "Buy the cheapest corner of Lovejoy ISD",
+            "threshold": "$566,182 in 2026 dollars",
+            "evidence": [
+              {
+                "area": "Lovejoy ISD district-wide",
+                "price_2026": 869000,
+                "proj_2041": 1258571,
+                "note": "Median sale, last 30 days (Orchard): $869,000, down 7.1% YoY on 21 sales; 110 listed"
+              },
+              {
+                "area": "Stacy Ridge Estates (Allen portion)",
+                "price_2026": 793000,
+                "proj_2041": 1148500,
+                "note": "2025 median sale $793,000; the last-30-day median was $997,500 on 2 sales"
+              },
+              {
+                "area": "Seis Lagos",
+                "price_2026": 699000,
+                "proj_2041": 1012360,
+                "note": "Average; cheapest listings ~$578,600 still miss the threshold"
+              },
+              {
+                "area": "Fairview",
+                "price_2026": null,
+                "proj_2041": null,
+                "note": "Realtor range $600,000-$2M. The earlier $500,000 figure came from 19 closed sales and does not survive comparison with district-wide data - discarded"
+              }
+            ],
+            "only_exception": "Condos/townhomes near Stacy Rd in Allen reportedly start around $500,000, but Zillow showed zero Lovejoy-zoned Allen listings when checked. A rare-inventory opportunity to watch for, not a plan"
           },
           {
             "rank": 4,
             "id": "raise_budget_or_buy_early",
-            "route": "Raise the 2041 budget or buy sooner",
-            "math": "Lucas needs a 2041 budget of $1,614,852 (+97%) at the median list price, or $1,824,856 (+123%) against September 2026 listings. Buying in 2032 instead of 2041 still overshoots by $473,058",
-            "blocker": "Not a plan. Included only to close it off explicitly so it does not get revisited"
+            "status": "closed",
+            "math": "Lucas needs a 2041 budget of $1,614,852 (+97%); buying in 2032 still overshoots by $473,058"
           }
         ]
       }
@@ -4106,13 +4136,20 @@
     },
     {
       "id": "lovejoy_transfer_terms",
-      "question": "What are Lovejoy ISD's CURRENT out-of-district transfer terms - tuition, per-grade cap, and renewal conditions?",
-      "why_it_matters": "This is the highest-leverage unknown in the matrix. If a transfer seat is reliably obtainable at ~$8-10K/yr, then the #5-ranked district in Texas decouples entirely from the $1.1M Lucas housing market, and the same logic may apply to other elite small districts. If seats are effectively a 15-per-grade lottery re-run annually, the path is unplannable and Lucas stays a rent-only play."
+      "question": "Is Lovejoy Scholars tuition-free right now, what is the current seat cap, and do returning scholars keep their seat (and price) automatically?",
+      "why_it_matters": "Partly answered Sep 2026: the program exists, was continued by a 7-0 board vote on Jan 21, applications open each early spring, and early-grade seats are the loosest. Still unknown: current price (sources conflict between free and paid), the cap, and seat retention. The terms in force at kindergarten entry (~2031-2033) are what actually matter, so the durable question is how stable the program is, not just what it costs today. One call to Lovejoy ISD at (469) 742-8000 answers the current terms."
     },
     {
       "id": "fairview_true_median",
-      "question": "What is the actual Lovejoy-zoned median sale price in Fairview and in the Allen portion of the district?",
-      "why_it_matters": "The cheap-submarket path lives or dies here. Published Fairview figures range from $500,000 (19 sales) to $621,950 to $850K-$1.1M - the spread straddles the $566,182 threshold, so the path is either the best answer available or unavailable at all, and current data cannot distinguish."
+      "question": "Resolved Sep 2026 - no house inside Lovejoy ISD is realistically buyable under the $566,182 threshold.",
+      "why_it_matters": "District-wide median sale is $869,000; the Allen portion (Stacy Ridge) is ~$793,000. The $500K Fairview figure came from a thin 19-sale sample and was discarded. Kept for the record so the question is not reopened.",
+      "status": "resolved"
+    },
+    {
+      "id": "texas_tefa",
+      "question": "Should the Texas private-school scenario account for Texas Education Freedom Accounts?",
+      "why_it_matters": "Texas's new ESA program pays $10,474 per child per year toward private tuition for 2026-27, which would cut the net cost of private school at every Texas entry by roughly 40% - most consequentially for Crowley, whose case rests entirely on private school. But awards are by lottery (~95,600 awards from ~274,000 applications in the first year, about 35%), so it is an upside to price, not a baseline assumption. Not yet reflected in any score.",
+      "added": "Sep 2026"
     }
   ],
   "rental_budget_config": {
