@@ -137,7 +137,9 @@ function buildDashboard(data) {
   // Hero stats
   const stats = [
     [String(locations.length), `areas ranked across ${stateCount} states`],
-    [money(plan.estimated_home_budget_2041 || 0), `estimated long-term ${plan.home_purchase_year || ''} buying-power target`],
+    plan.home_budget_2041_range
+      ? [plan.home_budget_2041_range, `${plan.home_purchase_year || ''} home budget on the planned career path (varies with property tax)`]
+      : [money(plan.estimated_home_budget_2041 || 0), `estimated long-term ${plan.home_purchase_year || ''} buying-power target`],
     [String(plan.rental_phase_year || ''), 'rental-phase feasibility horizon'],
     [String(finalists.length), 'serious finalist locations'],
   ];
@@ -541,13 +543,17 @@ ${roleCards}
       typeof n !== 'number' ? '' : n >= 1e6 ? '$' + (n / 1e6).toFixed(2).replace(/0$/, '') + 'M' : '$' + Math.round(n / 1e3) + 'K';
     const byArea = new Map(locations.map((l) => [l.area, l]));
     const tierIds = py.career_tiers.map((t) => t.id);
+    const defaultTier = (py.career_tiers.find((t) => t.default) || py.career_tiers[0]).id;
+    const tierBudget = (t) => t.budget_range || moneyK(t.budget_2041);
 
     const tierButtons = py.career_tiers
       .map(
-        (t, i) =>
-          `<button type="button" class="ptier-btn${i === 0 ? ' active' : ''}" data-ptier="${esc(t.id)}" aria-pressed="${
-            i === 0 ? 'true' : 'false'
-          }"><span>${esc(t.label)}</span><strong>${esc(moneyK(t.budget_2041))}</strong></button>`
+        (t) =>
+          `<button type="button" class="ptier-btn${t.id === defaultTier ? ' active' : ''}" data-ptier="${esc(
+            t.id
+          )}" aria-pressed="${t.id === defaultTier ? 'true' : 'false'}"><span>${esc(t.label)}</span><strong>${esc(
+            tierBudget(t)
+          )}</strong></button>`
       )
       .join('');
 
@@ -557,9 +563,9 @@ ${roleCards}
           <h3>${esc(t.label)}</h3>
           <p class="ptier-trigger">${esc(t.trigger)}</p>
           <div class="ptier-nums">
-            <div><span>2041 budget</span><strong>${esc(money(t.budget_2041))}</strong></div>
+            <div><span>2041 budget by state</span><strong>${esc(tierBudget(t))}</strong></div>
+            ${t.household_2041 ? `<div><span>Household income in 2041</span><strong>${esc(money(t.household_2041))}</strong></div>` : ''}
             <div><span>Rent ceiling from 2031</span><strong>${esc(money(t.rent_ceiling_2031))}/mo</strong></div>
-            <div><span>Budget if buying in 2033</span><strong>${esc(money(t.budget_if_buying_2033))}</strong></div>
           </div>
           <p class="ptier-evidence">${esc(t.evidence || '')}</p>
         </div>`
@@ -621,7 +627,7 @@ ${roleCards}
         <p>${esc(py.guardrail || '')}</p>
       </div>
       <div class="ptier-pick" role="group" aria-label="Career tier">${tierButtons}</div>
-      <p class="ptier-help">Pick a career tier to see which ways in fit its budget.</p>
+      <p class="ptier-help">Pick a career tier to see which ways in fit its budget. Each option is checked against its own location's budget.</p>
       <div class="ptier-grid">
 ${tierCards}
       </div>
@@ -649,7 +655,8 @@ ${locCards}
       '    });\n' +
       '  }\n' +
       '  Array.prototype.forEach.call(btns, function(b){ b.addEventListener("click", function(){ apply(b.getAttribute("data-ptier")); }); });\n' +
-      '  if (btns.length) apply(btns[0].getAttribute("data-ptier"));\n' +
+      '  var def = sec.querySelector(".ptier-btn.active") || btns[0];\n' +
+      '  if (def) apply(def.getAttribute("data-ptier"));\n' +
       '})();\n' +
       '</' + 'script>';
   }
