@@ -530,6 +530,131 @@ ${roleCards}
   }
   const phaseNav = phasePlan ? '      <a href="#phases">Phase Plan</a>\n' : '';
 
+  // Paths to yes: what would have to be true for a stretch location to work.
+  // Conditional by design - it never re-ranks the matrix.
+  const py = data.paths_to_yes || null;
+  let pathsToYes = '';
+  let pathsScript = '';
+  if (py && Array.isArray(py.locations) && py.locations.length && Array.isArray(py.career_tiers)) {
+    const money = (n) => (typeof n === 'number' ? '$' + Math.round(n).toLocaleString('en-US') : '');
+    const moneyK = (n) =>
+      typeof n !== 'number' ? '' : n >= 1e6 ? '$' + (n / 1e6).toFixed(2).replace(/0$/, '') + 'M' : '$' + Math.round(n / 1e3) + 'K';
+    const byArea = new Map(locations.map((l) => [l.area, l]));
+    const tierIds = py.career_tiers.map((t) => t.id);
+
+    const tierButtons = py.career_tiers
+      .map(
+        (t, i) =>
+          `<button type="button" class="ptier-btn${i === 0 ? ' active' : ''}" data-ptier="${esc(t.id)}" aria-pressed="${
+            i === 0 ? 'true' : 'false'
+          }"><span>${esc(t.label)}</span><strong>${esc(moneyK(t.budget_2041))}</strong></button>`
+      )
+      .join('');
+
+    const tierCards = py.career_tiers
+      .map(
+        (t) => `        <div class="card ptier-card" data-ptier-card="${esc(t.id)}">
+          <h3>${esc(t.label)}</h3>
+          <p class="ptier-trigger">${esc(t.trigger)}</p>
+          <div class="ptier-nums">
+            <div><span>2041 budget</span><strong>${esc(money(t.budget_2041))}</strong></div>
+            <div><span>Rent ceiling from 2031</span><strong>${esc(money(t.rent_ceiling_2031))}/mo</strong></div>
+            <div><span>Budget if buying in 2033</span><strong>${esc(money(t.budget_if_buying_2033))}</strong></div>
+          </div>
+          <p class="ptier-evidence">${esc(t.evidence || '')}</p>
+        </div>`
+      )
+      .join('\n');
+
+    const locCards = py.locations
+      .map((loc) => {
+        const links = (loc.matrix_areas || [])
+          .map((a) => {
+            const m = byArea.get(a);
+            const sc = typeof m?.weighted_total_out_of_100 === 'number' ? m.weighted_total_out_of_100.toFixed(2) : '';
+            return m ? `<span class="path-link">#${esc(m.rank)} ${esc(a)} &middot; ${esc(sc)}</span>` : '';
+          })
+          .join('');
+        const fit = (loc.fit || []).map((f) => `<li>${esc(f)}</li>`).join('');
+        const opts = (loc.options || [])
+          .map((o) => {
+            const works = (o.works_under || []).filter((w) => tierIds.includes(w));
+            const price =
+              o.price_2026 != null
+                ? `<span class="po-price">${esc(money(o.price_2026))} today &rarr; ${esc(money(o.proj_2041))} in 2041</span>`
+                : '';
+            return `<li class="path-opt" data-works="${esc(works.join(' '))}">
+                <div class="po-main"><strong>${esc(o.option)}</strong>${price}<span class="po-note">${esc(o.price_note || '')}</span></div>
+                <div class="po-side"><span class="po-status"></span><span class="po-why">${esc(o.note || '')}</span></div>
+              </li>`;
+          })
+          .join('');
+        const verify = (loc.verify || []).map((v) => `<li>${esc(v)}</li>`).join('');
+        return `        <div class="card path-card">
+          <div class="path-top"><h3>${esc(loc.title)}</h3><span class="path-verdict ${esc(loc.verdict || '')}">${esc(
+          loc.verdict_label || ''
+        )}</span></div>
+          ${links ? `<div class="path-links">${links}</div>` : ''}
+          <p class="path-headline">${esc(loc.headline || '')}</p>
+          ${fit ? `<h4>Why it fits you</h4><ul class="path-fit">${fit}</ul>` : ''}
+          <h4>Ways in</h4>
+          <ul class="path-opts">${opts}</ul>
+          <div class="path-plan"><h4>Best plan</h4><p>${esc(loc.best_plan || '')}</p>
+          ${loc.trigger ? `<p class="path-trig"><span>Trigger</span>${esc(loc.trigger)}</p>` : ''}</div>
+          ${verify ? `<details class="path-verify"><summary>Check before committing</summary><ul>${verify}</ul></details>` : ''}
+        </div>`;
+      })
+      .join('\n');
+
+    const levers = (py.levers || [])
+      .map((l) => `<li><strong>${esc(l.lever)}</strong><span>${esc(l.detail)}</span></li>`)
+      .join('');
+
+    pathsToYes = `
+    <section id="paths">
+      <div class="section-title">
+        <h2>Paths to yes</h2>
+        <p>${esc(py.purpose || '')}</p>
+      </div>
+      <div class="card insight-card">
+        <h3>What would have to be true</h3>
+        <p>${esc(py.guardrail || '')}</p>
+      </div>
+      <div class="ptier-pick" role="group" aria-label="Career tier">${tierButtons}</div>
+      <p class="ptier-help">Pick a career tier to see which ways in fit its budget.</p>
+      <div class="ptier-grid">
+${tierCards}
+      </div>
+      <div class="path-grid">
+${locCards}
+      </div>
+      ${levers ? `<div class="card levers-card"><h3>The levers, in order of impact</h3><ol class="levers">${levers}</ol></div>` : ''}
+      <p class="phase-caveat">${esc(py.budget_method || '')}</p>
+    </section>
+`;
+
+    // Plain string so the outer template literal does not interpolate it.
+    pathsScript =
+      '<script>\n' +
+      '(function(){\n' +
+      '  var sec = document.getElementById("paths"); if(!sec) return;\n' +
+      '  var btns = sec.querySelectorAll(".ptier-btn");\n' +
+      '  function apply(t){\n' +
+      '    Array.prototype.forEach.call(btns, function(b){ var on=b.getAttribute("data-ptier")===t; b.classList.toggle("active",on); b.setAttribute("aria-pressed", on?"true":"false"); });\n' +
+      '    Array.prototype.forEach.call(sec.querySelectorAll("[data-ptier-card]"), function(c){ c.classList.toggle("active", c.getAttribute("data-ptier-card")===t); });\n' +
+      '    Array.prototype.forEach.call(sec.querySelectorAll(".path-opt"), function(li){\n' +
+      '      var ok = (" "+li.getAttribute("data-works")+" ").indexOf(" "+t+" ")>=0;\n' +
+      '      li.classList.toggle("fits", ok); li.classList.toggle("miss", !ok);\n' +
+      '      li.querySelector(".po-status").textContent = ok ? "Fits" : "Not yet";\n' +
+      '    });\n' +
+      '  }\n' +
+      '  Array.prototype.forEach.call(btns, function(b){ b.addEventListener("click", function(){ apply(b.getAttribute("data-ptier")); }); });\n' +
+      '  if (btns.length) apply(btns[0].getAttribute("data-ptier"));\n' +
+      '})();\n' +
+      '</' + 'script>';
+  }
+  const pathsNav = pathsToYes ? '      <a href="#paths">Paths to Yes</a>\n' : '';
+
   // Decision tiers
   const tierOrder = [
     ['tier_1_serious_finalists', 'Tier 1', 'one', 'Serious finalists', 'These should anchor the relocation conversation.'],
@@ -584,7 +709,7 @@ ${heroStats}
       <a href="#categories">Category Winners</a>
       <a href="#states">State Picks</a>
       <a href="#nashville">Nashville Metro</a>
-${extendedNav}${phaseNav}      <a href="#tiers">Decision Tiers</a>
+${extendedNav}${phaseNav}${pathsNav}      <a href="#tiers">Decision Tiers</a>
       <a href="#recommendation">Recommendation</a>
     </div>
   </nav>
@@ -674,6 +799,7 @@ ${stateCards}
 ${nashville}
 ${extended}
 ${phasePlan}
+${pathsToYes}
     <section id="tiers">
       <div class="section-title">
         <h2>Decision tiers</h2>
@@ -707,7 +833,8 @@ ${recs}
       Before making a final decision, validate current school zones, rental inventory, home prices, tax policy, and job-market conditions.
     </p>
   </footer>
-${clientScript}`;
+${clientScript}
+${pathsScript}`;
 }
 
 function buildFullPage(data, styles) {

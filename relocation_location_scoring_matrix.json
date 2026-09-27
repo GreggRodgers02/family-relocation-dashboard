@@ -1170,6 +1170,73 @@
     },
     {
       "rank": 13,
+      "area": "Oviedo",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Best Florida no-income-tax option",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 8,
+        "rental_feasibility_2028": 7.0,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 8,
+        "hs_football_culture": 7,
+        "private_school_access": 8.5,
+        "sports_tech_ecosystem": 7.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Trinity Preparatory School",
+            "location": "Winter Park, FL",
+            "grades": "6-12",
+            "approx_distance_mi": 10,
+            "annual_tuition_usd": 29990,
+            "enrollment": 889,
+            "student_teacher_ratio": "11:1",
+            "niche_grade": "A+",
+            "avg_sat": 1380,
+            "avg_act": 31,
+            "football_program": true,
+            "notes": "#2 private HS in the Orlando metro (Niche); Episcopal.",
+            "verified": false
+          },
+          {
+            "name": "The Master's Academy",
+            "location": "Oviedo, FL",
+            "grades": "PK-12",
+            "approx_distance_mi": 3,
+            "verified": false
+          },
+          {
+            "name": "Lake Highland Preparatory School",
+            "location": "Orlando, FL",
+            "approx_distance_mi": 16,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Trinity Prep (A+, top-2 in the Orlando metro, avg SAT 1380) sits ~10 mi from Oviedo, with The Master's Academy in-town and Lake Highland Prep at the radius edge.",
+        "verified": false
+      },
+      "notes": "Best Florida fit due to UCF/Orlando tech, simulation, defense-adjacent AI, no income tax, and balanced family affordability. Sep 2026 figures: single-family median $480K-$600K (Zillow typical value $492,477), projecting to ~$713K by 2041 - about $107K under budget. 3BR rent is about $2,420. Seminole County is Florida's top-rated district. Sports-tech is stronger than first scored: EA Orlando, the studio behind Madden NFL and EA Sports College Football, employs 700+ in the metro. Inland insurance is far below the Florida average - Seminole County policies average about $2,090/yr against a statewide $5,500-$11,000.",
+      "risks": [
+        "Florida insurance and climate risk should be modeled separately",
+        "AI Product market is less deep than Austin, DFW, Triangle, or Atlanta",
+        "School-zone and flood/insurance diligence are essential"
+      ],
+      "weighted_total_out_of_100": 80.3,
+      "weighted_total_private_scenario": 80.3,
+      "weighted_total_career_max_scenario": 80.25
+    },
+    {
+      "rank": 14,
       "area": "Cary",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -1240,7 +1307,7 @@
       "weighted_total_career_max_scenario": 80.6
     },
     {
-      "rank": 14,
+      "rank": 15,
       "area": "Murfreesboro",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -1328,7 +1395,7 @@
       "weighted_total_career_max_scenario": 79.5
     },
     {
-      "rank": 15,
+      "rank": 16,
       "area": "Madison / Huntsville",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -1392,73 +1459,6 @@
       "weighted_total_out_of_100": 79.1,
       "weighted_total_private_scenario": 79.1,
       "weighted_total_career_max_scenario": 80.1
-    },
-    {
-      "rank": 16,
-      "area": "Oviedo",
-      "state": "Florida",
-      "state_abbr": "FL",
-      "tier": "Tier 2 - Strong Trade-Off",
-      "strategic_label": "Best Florida no-income-tax option",
-      "scores": {
-        "ai_tech_pm_market": 7.5,
-        "school_quality": 8.5,
-        "housing_affordability_2041": 8,
-        "rental_feasibility_2028": 6,
-        "state_tax_burden": 10,
-        "aacsb_university_proximity": 8.0,
-        "robotics_fitness_startup_fit": 8,
-        "hs_football_culture": 7,
-        "private_school_access": 8.5,
-        "sports_tech_ecosystem": 6.5
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Trinity Preparatory School",
-            "location": "Winter Park, FL",
-            "grades": "6-12",
-            "approx_distance_mi": 10,
-            "annual_tuition_usd": 29990,
-            "enrollment": 889,
-            "student_teacher_ratio": "11:1",
-            "niche_grade": "A+",
-            "avg_sat": 1380,
-            "avg_act": 31,
-            "football_program": true,
-            "notes": "#2 private HS in the Orlando metro (Niche); Episcopal.",
-            "verified": false
-          },
-          {
-            "name": "The Master's Academy",
-            "location": "Oviedo, FL",
-            "grades": "PK-12",
-            "approx_distance_mi": 3,
-            "verified": false
-          },
-          {
-            "name": "Lake Highland Preparatory School",
-            "location": "Orlando, FL",
-            "approx_distance_mi": 16,
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Trinity Prep (A+, top-2 in the Orlando metro, avg SAT 1380) sits ~10 mi from Oviedo, with The Master's Academy in-town and Lake Highland Prep at the radius edge.",
-        "verified": false
-      },
-      "notes": "Best Florida fit due to UCF/Orlando tech, simulation, defense-adjacent AI, no income tax, and balanced family affordability.",
-      "risks": [
-        "Florida insurance and climate risk should be modeled separately",
-        "AI Product market is less deep than Austin, DFW, Triangle, or Atlanta",
-        "School-zone and flood/insurance diligence are essential"
-      ],
-      "weighted_total_out_of_100": 78.1,
-      "weighted_total_private_scenario": 78.1,
-      "weighted_total_career_max_scenario": 78.85
     },
     {
       "area": "Hendersonville",
@@ -2395,6 +2395,78 @@
       "weighted_total_career_max_scenario": 77.0
     },
     {
+      "rank": 30,
+      "area": "Buford (Buford City Schools)",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Georgia's #2 district and its best football, reachable by a kindergarten tuition seat",
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 6.0,
+        "rental_feasibility_2028": 7.0,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 10.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 6.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Hebron Christian Academy",
+            "location": "Dacula, GA",
+            "grades": "PK-12",
+            "approx_distance_mi": 10,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Lakeview Academy",
+            "location": "Gainesville, GA",
+            "grades": "PK-12",
+            "approx_distance_mi": 15,
+            "verified": false
+          },
+          {
+            "name": "Wesleyan School",
+            "location": "Peachtree Corners, GA",
+            "grades": "K-12",
+            "approx_distance_mi": 20,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Greater Atlanta Christian School",
+            "location": "Norcross, GA",
+            "grades": "PK-12",
+            "approx_distance_mi": 20,
+            "football_program": true,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Solid Gwinnett private market within ~20 mi, but largely redundant - the point of Buford is its public district.",
+        "verified": false
+      },
+      "notes": "Buford City Schools ranks #2 of 179 Georgia districts, and one national study ranked it the best district in the U.S. (9.31/10), with a 96% graduation rate and 70% math proficiency. Buford High has won 15 state football championships - second-most in Georgia history - including the 2025 state title and a national championship, the strongest football culture in the matrix. The catch is that it is a small city district: attendance is set by city limits, not the Buford mailing address, and most 30518/30519 addresses are Gwinnett or Hall County schools. In-district homes carry a $50K-$100K+ premium. The Buford-area median sale was $494,000 in August 2026 (485 closings) with entry homes near $412K, so an in-district home runs roughly $515K-$580K - about $789K by 2041 at a $545K working figure, just inside budget. The unlock is that Buford City Schools accepts non-resident tuition students at kindergarten or 9th-grade entry only ($250 application fee; current tuition not published in sources found). A kindergarten entry around 2031-2033 fits this family's timeline exactly. 3BR townhomes in the Buford area rent for $2,227-$2,399 with ~45 listed, inside the ceiling. AACSB density is excellent: Georgia Gwinnett College and the University of North Georgia's Cottrell College are both accredited and close, with Georgia Tech, Georgia State, Emory, Kennesaw State and UGA in the wider radius. Georgia cut its flat income tax to 4.99% for 2026 with scheduled steps toward 3.99% if revenue triggers are met, and city residents pay both city and county property tax.",
+      "risks": [
+        "School access is set by city limits, not the mailing address - verify every address at parcel level; in-district homes carry a $50K-$100K+ premium",
+        "Non-resident tuition seats are only offered at kindergarten or 9th-grade entry, and current tuition and seat counts were not found in public sources",
+        "Georgia income tax (4.99% for 2026) is a real cost against Texas, Tennessee and Florida at 0%; city residents also pay both city and county property tax",
+        "No Kendra Scott found at Mall of Georgia - the spouse would need a transfer to Alpharetta, Perimeter or Athens",
+        "Roughly 40 mi from Midtown Atlanta, so the metro's AI and sports-tech employers are a real commute"
+      ],
+      "weighted_total_out_of_100": 75.7,
+      "weighted_total_private_scenario": 72.7,
+      "weighted_total_career_max_scenario": 76.65
+    },
+    {
       "area": "Clermont",
       "state": "Florida",
       "state_abbr": "FL",
@@ -2453,10 +2525,68 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 30,
+      "rank": 31,
       "weighted_total_out_of_100": 75.5,
       "weighted_total_private_scenario": 78.5,
       "weighted_total_career_max_scenario": 75.8
+    },
+    {
+      "rank": 32,
+      "area": "Prosper",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Best-in-DFW schools: houses are priced out, but rentals and Prosper ISD townhomes are not",
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 3.5,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 9.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 9.0
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Prestonwood Christian Academy North",
+            "location": "Prosper, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 3,
+            "annual_tuition_usd": 24081,
+            "enrollment": 620,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Legacy Christian Academy",
+            "location": "Frisco, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 10,
+            "football_program": true,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Prestonwood's Prosper campus is in-town, with Legacy Christian ~10 mi south.",
+        "verified": false
+      },
+      "notes": "Prosper ISD is rated A+ by Niche with an A+ in college prep and ranks #12 in the DFW area - among the very best districts in Texas. It is also the most expensive entry in the corridor by a wide margin: median home price is $732,300, with Zillow's typical value running $780K-$790K, projecting past $1.06M by 2041 against an $820K budget. The rental phase is equally strained, with BTR product such as The Luxe of Prosper priced above the stretch cap. Sports-tech access is strong via Frisco (~15 min), and Prestonwood's north campus is in town. Sep 2026 update: the rental phase is less strained than first scored. Market 3BR rent runs $2,447-$2,600, down 4.2% year over year, which sits at the $2,600 ceiling rather than above the stretch cap, and townhomes zoned to Prosper ISD list from $358,990 (44 on the market, including a 4BR/3BA at Dominion at Brookhollow under $600K). A ~$500K Prosper ISD townhome projects to ~$724K by 2041, inside today's budget. Detached houses remain out of reach without a career step-up; see paths_to_yes.",
+      "risks": [
+        "DETACHED HOUSES ARE PRICED OUT: $732K-$790K median (listings as high as $899,900) projects past $1.06M by 2041. The townhome route is the only budget-safe purchase",
+        "Rent sits right at the $2,600 ceiling with little room for 2028 escalation",
+        "Elite schools are the entire case; every other criterion is matched or beaten by McKinney at far lower cost",
+        "Furthest north of the DFW entries, so the commute into the Plano/Richardson employer core is the longest"
+      ],
+      "weighted_total_out_of_100": 75.3,
+      "weighted_total_private_scenario": 72.3,
+      "weighted_total_career_max_scenario": 74.95
     },
     {
       "area": "Mount Juliet",
@@ -2520,7 +2650,7 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 31,
+      "rank": 33,
       "weighted_total_out_of_100": 75.2,
       "weighted_total_private_scenario": 75.2,
       "weighted_total_career_max_scenario": 74.9
@@ -2588,7 +2718,7 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 32,
+      "rank": 34,
       "weighted_total_out_of_100": 74.8,
       "weighted_total_private_scenario": 76.8,
       "weighted_total_career_max_scenario": 75.5
@@ -2655,7 +2785,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 33,
+      "rank": 35,
       "weighted_total_out_of_100": 74.6,
       "weighted_total_private_scenario": 73.6,
       "weighted_total_career_max_scenario": 74.25
@@ -2721,13 +2851,13 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 34,
+      "rank": 36,
       "weighted_total_out_of_100": 74.3,
       "weighted_total_private_scenario": 78.3,
       "weighted_total_career_max_scenario": 74.4
     },
     {
-      "rank": 35,
+      "rank": 37,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2806,65 +2936,7 @@
       "weighted_total_career_max_scenario": 75.55
     },
     {
-      "rank": 36,
-      "area": "Prosper",
-      "state": "Texas",
-      "state_abbr": "TX",
-      "tier": "Tier 4 - Backup Only",
-      "strategic_label": "Best-in-DFW schools priced entirely out of both budget phases",
-      "scores": {
-        "ai_tech_pm_market": 8.0,
-        "school_quality": 9.5,
-        "housing_affordability_2041": 3.5,
-        "rental_feasibility_2028": 5.5,
-        "state_tax_burden": 10.0,
-        "aacsb_university_proximity": 8.5,
-        "robotics_fitness_startup_fit": 7.5,
-        "hs_football_culture": 9.0,
-        "private_school_access": 8.0,
-        "sports_tech_ecosystem": 9.0
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Prestonwood Christian Academy North",
-            "location": "Prosper, TX",
-            "grades": "PK-12",
-            "approx_distance_mi": 3,
-            "annual_tuition_usd": 24081,
-            "enrollment": 620,
-            "football_program": true,
-            "verified": false
-          },
-          {
-            "name": "Legacy Christian Academy",
-            "location": "Frisco, TX",
-            "grades": "PK-12",
-            "approx_distance_mi": 10,
-            "football_program": true,
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Prestonwood's Prosper campus is in-town, with Legacy Christian ~10 mi south.",
-        "verified": false
-      },
-      "notes": "Prosper ISD is rated A+ by Niche with an A+ in college prep and ranks #12 in the DFW area - among the very best districts in Texas. It is also the most expensive entry in the corridor by a wide margin: median home price is $732,300, with Zillow's typical value running $780K-$790K, projecting past $1.06M by 2041 against an $820K budget. The rental phase is equally strained, with BTR product such as The Luxe of Prosper priced above the stretch cap. Sports-tech access is strong via Frisco (~15 min), and Prestonwood's north campus is in town.",
-      "risks": [
-        "PRICED OUT OF BOTH PHASES - $732K-$790K median projects past $1.06M by 2041, roughly $240K+ over budget",
-        "Rental inventory is newer BTR priced above the $2,900 hard stretch cap",
-        "Elite schools are the entire case; every other criterion is matched or beaten by McKinney at far lower cost",
-        "Furthest north of the DFW entries, so the commute into the Plano/Richardson employer core is the longest"
-      ],
-      "weighted_total_out_of_100": 73.9,
-      "weighted_total_private_scenario": 70.9,
-      "weighted_total_career_max_scenario": 73.75
-    },
-    {
-      "rank": 37,
+      "rank": 38,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -2938,7 +3010,7 @@
       "weighted_total_career_max_scenario": 72.35
     },
     {
-      "rank": 38,
+      "rank": 39,
       "area": "Waukee",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -2994,7 +3066,7 @@
       "weighted_total_career_max_scenario": 75.35
     },
     {
-      "rank": 39,
+      "rank": 40,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -3066,7 +3138,7 @@
       "weighted_total_career_max_scenario": 72.05
     },
     {
-      "rank": 40,
+      "rank": 41,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -3138,7 +3210,7 @@
       "weighted_total_career_max_scenario": 72.8
     },
     {
-      "rank": 41,
+      "rank": 42,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -3211,7 +3283,7 @@
       "weighted_total_career_max_scenario": 72.9
     },
     {
-      "rank": 42,
+      "rank": 43,
       "area": "Lucas (Lovejoy ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3439,13 +3511,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 43,
+      "rank": 44,
       "weighted_total_out_of_100": 71.7,
       "weighted_total_private_scenario": 76.7,
       "weighted_total_career_max_scenario": 72.25
     },
     {
-      "rank": 44,
+      "rank": 45,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -3522,7 +3594,7 @@
       "weighted_total_career_max_scenario": 70.5
     },
     {
-      "rank": 45,
+      "rank": 46,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -3590,7 +3662,89 @@
       "weighted_total_career_max_scenario": 67.3
     },
     {
-      "rank": 46,
+      "rank": 47,
+      "area": "Franklin",
+      "state": "Tennessee",
+      "state_abbr": "TN",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Lifestyle premium option",
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 9,
+        "housing_affordability_2041": 2,
+        "rental_feasibility_2028": 3.5,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 8,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 6.5
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Battle Ground Academy",
+            "location": "Franklin, TN",
+            "grades": "PK-12",
+            "approx_distance_mi": 2,
+            "annual_tuition_usd": 30900,
+            "enrollment": 990,
+            "niche_grade": "A",
+            "football_program": true,
+            "notes": "#1 private HS in Williamson County (Niche).",
+            "verified": false
+          },
+          {
+            "name": "Christ Presbyterian Academy",
+            "location": "Nashville, TN",
+            "grades": "PK-12",
+            "approx_distance_mi": 15,
+            "annual_tuition_usd": 24925,
+            "enrollment": 1298,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Currey Ingram Academy",
+            "location": "Brentwood, TN",
+            "grades": "JK-12",
+            "approx_distance_mi": 10,
+            "notes": "National leader in learning-differences education.",
+            "verified": false
+          },
+          {
+            "name": "Franklin Christian Academy",
+            "location": "Franklin, TN",
+            "approx_distance_mi": 4,
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "The deepest private market in Tennessee: BGA in-town (A, #1 in Williamson County) plus Christ Presbyterian Academy and Currey Ingram within ~15 mi, with Nashville's elite preps at the radius edge.",
+        "verified": false
+      },
+      "notes": "Great lifestyle, elite Williamson County schools, and no income tax. Career market revised upward in Aug 2026 - Franklin holds both Cool Springs employers and downtown/East Bank access. Housing affordability remains the binding constraint, not job market. Sep 2026 figures: median sale $864K over the three months to June 2026 (up 5.3%), $919,585 over 12 months; townhomes cluster in the mid-$600Ks with entry-level townhomes and condos at $350K-$500K. 3BR rent runs $2,830-$3,432. Inside city limits, K-8 is Franklin Special School District (10/10 testing, top 5% in Tennessee); high school is Williamson County Schools, the same system as the Spring Hill Summit/Page zones.",
+      "risks": [
+        "Premium pricing likely violates the 2041 budget discipline",
+        "Rental phase runs above today's ceilings: 3BR $2,830-$3,432 vs $2,600 primary / $2,900 stretch. Becomes feasible only after a career step-up raises the rent ceiling",
+        "No submarket compensation premium offsets the higher cost of living here"
+      ],
+      "weighted_total_out_of_100": 65.4,
+      "metro": "Nashville",
+      "est_2028_rent": 3300,
+      "best_rental_submarket": "Franklin (Cool Springs / Westhaven)",
+      "est_2041_buy_price": 1230000,
+      "best_buy_submarket": "Spring Hill / Thompson's Station (to fit budget)",
+      "rent_buy_same_area": false,
+      "budget_flag": "Busts 2028 rental ceiling and 2041 buy budget",
+      "weighted_total_private_scenario": 65.4,
+      "weighted_total_career_max_scenario": 67.05
+    },
+    {
+      "rank": 48,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -3675,89 +3829,7 @@
       "weighted_total_career_max_scenario": 66.3
     },
     {
-      "rank": 47,
-      "area": "Franklin",
-      "state": "Tennessee",
-      "state_abbr": "TN",
-      "tier": "Tier 4 - Backup Only",
-      "strategic_label": "Lifestyle premium option",
-      "scores": {
-        "ai_tech_pm_market": 8.0,
-        "school_quality": 9,
-        "housing_affordability_2041": 2,
-        "rental_feasibility_2028": 1,
-        "state_tax_burden": 10,
-        "aacsb_university_proximity": 9.0,
-        "robotics_fitness_startup_fit": 7.5,
-        "hs_football_culture": 8,
-        "private_school_access": 9.0,
-        "sports_tech_ecosystem": 6.5
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Battle Ground Academy",
-            "location": "Franklin, TN",
-            "grades": "PK-12",
-            "approx_distance_mi": 2,
-            "annual_tuition_usd": 30900,
-            "enrollment": 990,
-            "niche_grade": "A",
-            "football_program": true,
-            "notes": "#1 private HS in Williamson County (Niche).",
-            "verified": false
-          },
-          {
-            "name": "Christ Presbyterian Academy",
-            "location": "Nashville, TN",
-            "grades": "PK-12",
-            "approx_distance_mi": 15,
-            "annual_tuition_usd": 24925,
-            "enrollment": 1298,
-            "football_program": true,
-            "verified": false
-          },
-          {
-            "name": "Currey Ingram Academy",
-            "location": "Brentwood, TN",
-            "grades": "JK-12",
-            "approx_distance_mi": 10,
-            "notes": "National leader in learning-differences education.",
-            "verified": false
-          },
-          {
-            "name": "Franklin Christian Academy",
-            "location": "Franklin, TN",
-            "approx_distance_mi": 4,
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "The deepest private market in Tennessee: BGA in-town (A, #1 in Williamson County) plus Christ Presbyterian Academy and Currey Ingram within ~15 mi, with Nashville's elite preps at the radius edge.",
-        "verified": false
-      },
-      "notes": "Great lifestyle, elite Williamson County schools, and no income tax. Career market revised upward in Aug 2026 - Franklin holds both Cool Springs employers and downtown/East Bank access. Housing affordability remains the binding constraint, not job market.",
-      "risks": [
-        "Premium pricing likely violates the 2041 budget discipline",
-        "Rental target difficult to impossible in preferred Williamson County zones under the $2,300 cap",
-        "No submarket compensation premium offsets the higher cost of living here"
-      ],
-      "weighted_total_out_of_100": 61.9,
-      "metro": "Nashville",
-      "est_2028_rent": 3300,
-      "best_rental_submarket": "Franklin (Cool Springs / Westhaven)",
-      "est_2041_buy_price": 1230000,
-      "best_buy_submarket": "Spring Hill / Thompson's Station (to fit budget)",
-      "rent_buy_same_area": false,
-      "budget_flag": "Busts 2028 rental ceiling and 2041 buy budget",
-      "weighted_total_private_scenario": 61.9,
-      "weighted_total_career_max_scenario": 64.05
-    },
-    {
-      "rank": 48,
+      "rank": 49,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -3843,7 +3915,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 49,
+      "rank": 50,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -3924,7 +3996,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 50,
+      "rank": 51,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -4047,7 +4119,7 @@
     ],
     "Georgia": [
       "Suwanee / Peachtree Corners",
-      "Alpharetta / Johns Creek"
+      "Buford (Buford City Schools)"
     ],
     "Virginia": [
       "Glen Allen / Midlothian",
@@ -4121,8 +4193,8 @@
       "Allen",
       "Melissa",
       "St. Johns County",
-      "Murfreesboro",
       "Oviedo",
+      "Murfreesboro",
       "Hendersonville",
       "Oldham County (Crestwood / La Grange)",
       "Olathe (Garmin HQ)",
@@ -4131,7 +4203,8 @@
       "Fort Mill",
       "West Des Moines",
       "Suwanee / Peachtree Corners",
-      "Celina"
+      "Celina",
+      "Buford (Buford City Schools)"
     ],
     "tier_3_watch_list": [
       "Frisco",
@@ -4139,6 +4212,7 @@
       "Crowley / North Crowley (SW Fort Worth)",
       "Overland Park (Blue Valley)",
       "Clermont",
+      "Prosper",
       "Lake Mary",
       "Lakeland",
       "Alpharetta / Johns Creek",
@@ -4148,7 +4222,6 @@
     "tier_4_backup_only": [
       "Mount Juliet",
       "Lake Nona",
-      "Prosper",
       "Farragut",
       "Auburn / Opelika",
       "Greenville",
@@ -4156,8 +4229,8 @@
       "Davenport / Four Corners",
       "Glen Allen / Midlothian",
       "Roswell",
-      "Leesburg / Ashburn",
       "Franklin",
+      "Leesburg / Ashburn",
       "Germantown (Nashville)",
       "Jersey City",
       "Newport (Jersey City)"
@@ -4172,7 +4245,7 @@
     {
       "id": "home_budget",
       "question": "Is the estimated $820,000 2041 home budget a hard cap, soft cap, or rough planning estimate?",
-      "why_it_matters": "A hard cap penalizes premium suburbs more heavily; a soft cap keeps them viable if income growth outpaces assumptions."
+      "why_it_matters": "A hard cap penalizes premium suburbs more heavily; a soft cap keeps them viable if income growth outpaces assumptions. Working answer (Sep 2026): treat $820K as the current-path floor, not a ceiling. paths_to_yes scales it by household income - ~$1.07M if Gregg lands a Product Manager step-up by ~2030, ~$1.35M at a Senior/Lead AI PM level by ~2033 - and shows which stretch locations each tier unlocks. The baseline ranking still uses $820K."
     },
     {
       "id": "family_proximity",
@@ -4346,21 +4419,28 @@
         "locations": [
           {
             "area": "Gallatin",
-            "rank": 20,
+            "rank": 25,
             "rental_feasibility_2028": 9,
             "school_quality": 7,
             "weighted_total_out_of_100": 76.7
           },
           {
+            "area": "Crowley / North Crowley (SW Fort Worth)",
+            "rank": 26,
+            "rental_feasibility_2028": 9.0,
+            "school_quality": 4.0,
+            "weighted_total_out_of_100": 76.4
+          },
+          {
             "area": "Lakeland",
-            "rank": 27,
+            "rank": 36,
             "rental_feasibility_2028": 9,
             "school_quality": 5.5,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Davenport / Four Corners",
-            "rank": 34,
+            "rank": 44,
             "rental_feasibility_2028": 8.5,
             "school_quality": 4,
             "weighted_total_out_of_100": 71.7
@@ -4373,7 +4453,7 @@
         "locations": [
           {
             "area": "Lucas (Lovejoy ISD)",
-            "rank": 41,
+            "rank": 43,
             "school_quality": 9.5,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 1.5,
@@ -4423,43 +4503,79 @@
           },
           {
             "area": "St. Johns County",
-            "rank": 8,
+            "rank": 9,
             "rental_feasibility_2028": 8,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 81.0
           },
           {
             "area": "Spring Hill (Summit / Page Zones, Williamson County)",
-            "rank": 9,
+            "rank": 10,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 80.9
           },
           {
+            "area": "Fort Mitchell / Villa Hills (Beechwood)",
+            "rank": 11,
+            "rental_feasibility_2028": 8.0,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 80.7
+          },
+          {
             "area": "Madison / Huntsville",
-            "rank": 13,
+            "rank": 16,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 79.1
           },
           {
-            "area": "Fort Mill",
+            "area": "Oldham County (Crestwood / La Grange)",
+            "rank": 18,
+            "rental_feasibility_2028": 8.0,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 77.7
+          },
+          {
+            "area": "Olathe (Garmin HQ)",
             "rank": 19,
+            "rental_feasibility_2028": 7.5,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 77.6
+          },
+          {
+            "area": "Fort Mill",
+            "rank": 23,
             "rental_feasibility_2028": 8,
             "school_quality": 9,
             "weighted_total_out_of_100": 77.0
           },
           {
+            "area": "West Des Moines",
+            "rank": 24,
+            "rental_feasibility_2028": 9.0,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 76.8
+          },
+          {
             "area": "Farragut",
-            "rank": 30,
+            "rank": 38,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.6
+          },
+          {
+            "area": "Waukee",
+            "rank": 39,
+            "rental_feasibility_2028": 8.5,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 73.4
           }
         ]
       },
       "purchase_target": {
         "rule": "school_quality >= 8.5 AND rental_feasibility_2028 <= 6.5",
+        "excludes": "rent_only_elite",
         "meaning": "Excellent schools but expensive to rent long-term. Best entered at or shortly before purchase, or via an early Rental B move, rather than held as a 13-year rental base.",
         "locations": [
           {
@@ -4478,73 +4594,66 @@
           },
           {
             "area": "Cary",
-            "rank": 11,
+            "rank": 14,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 79.9
           },
           {
-            "area": "Oviedo",
-            "rank": 14,
-            "rental_feasibility_2028": 6,
-            "school_quality": 8.5,
-            "weighted_total_out_of_100": 78.1
-          },
-          {
             "area": "Frisco",
-            "rank": 16,
+            "rank": 20,
             "rental_feasibility_2028": 5.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 77.4
           },
           {
             "area": "Suwanee / Peachtree Corners",
-            "rank": 21,
+            "rank": 28,
             "rental_feasibility_2028": 6,
             "school_quality": 9,
             "weighted_total_out_of_100": 76.3
           },
           {
+            "area": "Prosper",
+            "rank": 32,
+            "rental_feasibility_2028": 6.5,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 75.3
+          },
+          {
             "area": "Lake Nona",
-            "rank": 26,
+            "rank": 35,
             "rental_feasibility_2028": 5.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 74.6
           },
           {
             "area": "Alpharetta / Johns Creek",
-            "rank": 28,
+            "rank": 37,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 74.2
           },
           {
-            "area": "Prosper",
-            "rank": 29,
-            "rental_feasibility_2028": 5.5,
-            "school_quality": 9.5,
-            "weighted_total_out_of_100": 73.9
-          },
-          {
             "area": "Waxhaw",
-            "rank": 33,
+            "rank": 42,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 72.7
           },
           {
+            "area": "Franklin",
+            "rank": 47,
+            "rental_feasibility_2028": 3.5,
+            "school_quality": 9,
+            "weighted_total_out_of_100": 65.4
+          },
+          {
             "area": "Leesburg / Ashburn",
-            "rank": 37,
+            "rank": 48,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 64.6
-          },
-          {
-            "area": "Franklin",
-            "rank": 38,
-            "rental_feasibility_2028": 1,
-            "school_quality": 9,
-            "weighted_total_out_of_100": 61.9
           }
         ]
       }
@@ -4563,5 +4672,349 @@
       "failure_mode": "Holding Four Corners for the full 13 years puts the child's entire K-8 run in a 4.0 school zone across four possible county districts. That cost is larger than the purchase-phase choice."
     },
     "caveat": "This block records strategy, not scores. No location's component scores were changed by adding it; it changes how combinations of rental_feasibility_2028 and school_quality should be read across a 13-year window."
+  },
+  "paths_to_yes": {
+    "purpose": "Answers \"how could we make a stretch location work?\" For each location: what it offers against the family's actual goals, the dollar gap, the levers that close it, and the milestone that makes it real.",
+    "guardrail": "This section never changes the ranking. It shows what would have to be true. Until a trigger actually happens, plan on the baseline ranking - a best-case view that re-ranks everything is how a model turns into a rationalization tool.",
+    "budget_method": "Each tier scales the current $820K 2041 budget by household income, keeping the same ~4.66x price-to-income multiple the current budget implies (household $105K in 2026 growing 3.5%/yr to $175,912 in 2041). Spouse income ($32K in 2026) grows 3.5%/yr in every tier. Rent ceilings use the same 28%-of-household-income rule as rental_budget_config. Home prices project at 2.5%/yr. First-order only: assumes similar mortgage rates, down-payment share and property-tax load across tiers.",
+    "career_tiers": [
+      {
+        "id": "current",
+        "label": "Current path",
+        "trigger": "Nothing changes - gradual raises of ~3.5%/yr in the current role",
+        "gregg_income": "$73K today, ~$122K by 2041",
+        "household_2041": 175912,
+        "budget_2041": 820000,
+        "rent_ceiling_2031": 2910,
+        "budget_if_buying_2033": 622717,
+        "evidence": "The existing planning assumption."
+      },
+      {
+        "id": "stepup",
+        "label": "Step-up",
+        "trigger": "Gregg moves into a Product Manager title at Sherwin-Williams (~$120K total pay) by about 2030",
+        "gregg_income": "~$120K from 2030, ~$175K by 2041",
+        "household_2041": 228808,
+        "budget_2041": 1066571,
+        "rent_ceiling_2031": 3785,
+        "budget_if_buying_2033": 809966,
+        "evidence": "Sherwin-Williams Product Manager total pay runs $102K-$156K (average ~$136K per Glassdoor/Comparably); $120K is deliberately below that average."
+      },
+      {
+        "id": "leader",
+        "label": "AI product leader",
+        "trigger": "Senior or Lead AI Product Manager (~$180K) by about 2033 - the role your DBA and UT Austin MSAI are building toward",
+        "gregg_income": "~$180K from 2033, ~$237K by 2041",
+        "household_2041": 290637,
+        "budget_2041": 1354783,
+        "rent_ceiling_2031": 3785,
+        "budget_if_buying_2033": 1028838,
+        "evidence": "Glassdoor puts U.S. Senior AI Product Manager pay at $181,896 (25th percentile) to $290,045 (75th), average $227,180. Non-tech employers and remote pay bands usually sit at the low end, so $180K is the conservative anchor."
+      }
+    ],
+    "levers": [
+      {
+        "rank": 1,
+        "lever": "Land the career step-up",
+        "detail": "The largest lever and the one you are already working on. It moves the 2041 budget from $820K to ~$1.07M (step-up) or ~$1.35M (AI leader), and lifts the rent ceiling to ~$3,785 from 2031. It also lines up with kindergarten entry (~2031-2033)."
+      },
+      {
+        "rank": 2,
+        "lever": "Buy the product, not the ZIP code",
+        "detail": "Townhomes inside elite districts clear today's budget where houses do not: Prosper ISD from $358,990, Franklin entry townhomes $350K-$500K, Lake Nona from $379,900. Your child is 13-15 at purchase; a 3-4 bedroom townhome fits a family of three."
+      },
+      {
+        "rank": 3,
+        "lever": "Rent into the zone now, buy after the step-up",
+        "detail": "The rental phase covers K-8, so the rental address carries most of the school value. After a step-up, buying around 2033 rather than 2041 skips eight years of appreciation on the target home."
+      },
+      {
+        "rank": 4,
+        "lever": "Tuition transfer into an elite district",
+        "detail": "Buford City Schools takes non-resident students at kindergarten or 9th-grade entry; Lovejoy Scholars does the same in DFW. Both let you live somewhere cheaper next door."
+      },
+      {
+        "rank": 5,
+        "lever": "State scholarship money, if private school is the plan",
+        "detail": "Florida FES-EO: ~$8,000/yr to any Florida K-12 student regardless of income. Texas TEFA: $10,474/yr for 2026-27 but by lottery (~35% of applicants won in year one). Irrelevant where the public zone is elite."
+      },
+      {
+        "rank": 6,
+        "lever": "Keep both incomes moving",
+        "detail": "Every tier assumes your wife's Kendra Scott income continues. Franklin keeps her current store; Prosper has Legacy West; Orlando has Disney Springs and Mall at Millenia; Buford would need a transfer. A move that interrupts her income shrinks every budget above."
+      }
+    ],
+    "locations": [
+      {
+        "id": "spring_hill_franklin",
+        "title": "Spring Hill → Franklin, TN",
+        "matrix_areas": [
+          "Spring Hill (Summit / Page Zones, Williamson County)",
+          "Franklin"
+        ],
+        "verdict": "works_now",
+        "verdict_label": "Works now as a townhome; a house needs the AI-leader tier",
+        "headline": "You are already doing the hard part. The Williamson County side of Spring Hill is in the same school system as Franklin's high schools, so Franklin buys a shorter commute, lifestyle and a home - not better high schools.",
+        "fit": [
+          "Your wife's current Kendra Scott store is in Franklin - the only hard geographic tie in the household",
+          "Nashville's AACSB schools (Belmont, Lipscomb, Vanderbilt, MTSU) give the professor path real redundancy",
+          "No state income tax, and no move away from where you live now"
+        ],
+        "options": [
+          {
+            "option": "Franklin entry townhome or condo",
+            "price_2026": 425000,
+            "price_note": "$350K-$500K range; $425K midpoint",
+            "proj_2041": 615527,
+            "works_under": [
+              "current",
+              "stepup",
+              "leader"
+            ],
+            "note": "Clears today's budget with ~$200K to spare"
+          },
+          {
+            "option": "Franklin mid-market townhome",
+            "price_2026": 650000,
+            "price_note": "Townhomes cluster in the mid-$600Ks",
+            "proj_2041": 941394,
+            "works_under": [
+              "stepup",
+              "leader"
+            ],
+            "note": "Needs the step-up; buying around 2033 also works on the step-up tier ($773K vs $810K)"
+          },
+          {
+            "option": "Franklin median house",
+            "price_2026": 864000,
+            "price_note": "Median sale, 3 months to June 2026",
+            "proj_2041": 1251330,
+            "works_under": [
+              "leader"
+            ],
+            "note": "AI-leader tier only; buying in 2033 is a razor-thin fit even then"
+          },
+          {
+            "option": "Rent a 3BR in Franklin",
+            "price_2026": null,
+            "price_note": "$2,830-$3,432/mo",
+            "proj_2041": null,
+            "works_under": [
+              "stepup",
+              "leader"
+            ],
+            "note": "Above today's $2,600/$2,900 ceilings; fits the ~$3,785 ceiling that follows a step-up"
+          }
+        ],
+        "best_plan": "Keep renting on the Williamson side of Spring Hill through kindergarten entry. If the step-up lands by ~2030, buy a Franklin townhome around 2033 - inside Franklin Special School District (10/10 testing, top 5% in Tennessee) if you want the one real K-8 upgrade. Only a detached Franklin house needs the AI-leader tier.",
+        "trigger": "A Product Manager title at Sherwin-Williams by ~2030",
+        "verify": [
+          "Confirm the Franklin McEwen Southside store reopened as planned around Sept 1, 2026",
+          "Franklin Special School District vs Williamson County Schools zoning, per address",
+          "Williamson vs Maury county line for any Spring Hill rental"
+        ]
+      },
+      {
+        "id": "buford",
+        "title": "Buford, GA",
+        "matrix_areas": [
+          "Buford (Buford City Schools)"
+        ],
+        "verdict": "works_now",
+        "verdict_label": "Works on today's budget - if you are inside the city line or win a kindergarten seat",
+        "headline": "Georgia's #2 district and its most decorated football program, at prices that fit today - but only inside a small city boundary, with a tuition door that opens only at kindergarten.",
+        "fit": [
+          "Buford High: 15 state football titles, 2025 state and national champions - the best football culture in the matrix",
+          "Densest AACSB cluster outside the Northeast: Georgia Gwinnett College and UNG nearby, plus Georgia Tech, Georgia State, Emory, Kennesaw State and UGA",
+          "Atlanta sports and tech market within reach for the post-corporate venture"
+        ],
+        "options": [
+          {
+            "option": "Home inside Buford City Schools",
+            "price_2026": 545000,
+            "price_note": "Area median $494K plus a $50K-$100K+ in-district premium",
+            "proj_2041": 789323,
+            "works_under": [
+              "current",
+              "stepup",
+              "leader"
+            ],
+            "note": "Just clears today's budget (+$31K); buying around 2033 needs the step-up"
+          },
+          {
+            "option": "Rent a 3BR townhome nearby",
+            "price_2026": null,
+            "price_note": "$2,227-$2,399/mo, ~45 listed",
+            "proj_2041": null,
+            "works_under": [
+              "current",
+              "stepup",
+              "leader"
+            ],
+            "note": "Fits today, but most rentals are Gwinnett-zoned rather than Buford City"
+          },
+          {
+            "option": "Live next door, pay tuition",
+            "price_2026": null,
+            "price_note": "$250 application; tuition not published",
+            "proj_2041": null,
+            "works_under": [
+              "current",
+              "stepup",
+              "leader"
+            ],
+            "note": "Kindergarten or 9th-grade entry only - a K entry in ~2031-33 fits your timeline"
+          }
+        ],
+        "best_plan": "Rent a townhome just outside the city line during the pre-K years, apply for a Buford City Schools kindergarten seat, and buy inside the city line once the budget allows.",
+        "trigger": "A kindergarten tuition seat, or an in-district home at or below ~$566K in today's dollars",
+        "verify": [
+          "Current non-resident tuition and seat count - call the district",
+          "Parcel-level district check before any offer or lease",
+          "Whether your wife can transfer to Kendra Scott at Alpharetta or Perimeter",
+          "Georgia income tax: ~5% of household income that Texas, Tennessee and Florida do not charge"
+        ]
+      },
+      {
+        "id": "prosper",
+        "title": "Prosper, TX",
+        "matrix_areas": [
+          "Prosper"
+        ],
+        "verdict": "works_now",
+        "verdict_label": "Works now through rentals and a Prosper ISD townhome; a house needs a step-up",
+        "headline": "Not priced out after all. Houses are, but 3BR rents have fallen to about the ceiling and Prosper ISD townhomes start under $360K.",
+        "fit": [
+          "Prosper ISD: A+, #12 in DFW",
+          "Frisco's sports cluster (PGA of America, The Star) ~15 minutes away - the strongest sports-tech neighbor for your venture outside Olathe",
+          "DFW AACSB density for the professor path, no state income tax, and Kendra Scott at Legacy West in Plano"
+        ],
+        "options": [
+          {
+            "option": "Rent a 3BR",
+            "price_2026": null,
+            "price_note": "$2,447-$2,600/mo, down 4.2% year over year",
+            "proj_2041": null,
+            "works_under": [
+              "current",
+              "stepup",
+              "leader"
+            ],
+            "note": "At the ceiling today, with little room for 2028 escalation"
+          },
+          {
+            "option": "Prosper ISD townhome",
+            "price_2026": 500000,
+            "price_note": "Townhomes list $358,990-$719,990 (44 available)",
+            "proj_2041": 724149,
+            "works_under": [
+              "current",
+              "stepup",
+              "leader"
+            ],
+            "note": "Clears today's budget with ~$96K to spare, and works as an early 2033 purchase too"
+          },
+          {
+            "option": "Prosper median house",
+            "price_2026": 732000,
+            "price_note": "Median; some sources show $780K-$900K",
+            "proj_2041": 1060154,
+            "works_under": [
+              "stepup",
+              "leader"
+            ],
+            "note": "Step-up clears it by only ~$6K; plan on the AI-leader tier"
+          }
+        ],
+        "best_plan": "Rent inside Prosper ISD from 2028 and buy a Prosper ISD townhome whenever you are ready - it works even with no step-up. Treat a detached house as an AI-leader goal.",
+        "trigger": "None needed for the townhome route; the AI-leader tier for a house",
+        "verify": [
+          "Prosper ISD zoning per address",
+          "Property tax and any MUD/PID load on the specific address",
+          "Townhome HOA fees, which count against the monthly budget"
+        ]
+      },
+      {
+        "id": "orlando",
+        "title": "Orlando, FL (Lake Nona / Oviedo)",
+        "matrix_areas": [
+          "Lake Nona",
+          "Oviedo"
+        ],
+        "verdict": "works_now",
+        "verdict_label": "Works now in Oviedo; Lake Nona's best zone needs the step-up",
+        "headline": "Orlando already works through Oviedo. Lake Nona is the dream version - 10/10 zoned schools, the USTA National Campus and Medical City - and it opens with the step-up.",
+        "fit": [
+          "EA Orlando - the studio behind Madden NFL and EA Sports College Football, 700+ staff - is a direct sports-tech anchor",
+          "USTA National Campus and Medical City in Lake Nona; UCF's AACSB business school for the professor path",
+          "No state income tax, and Kendra Scott at Disney Springs and Mall at Millenia"
+        ],
+        "options": [
+          {
+            "option": "Oviedo median house",
+            "price_2026": 492477,
+            "price_note": "Zillow typical value; Seminole County schools",
+            "proj_2041": 713254,
+            "works_under": [
+              "current",
+              "stepup",
+              "leader"
+            ],
+            "note": "Clears today's budget by ~$107K; 3BR rent ~$2,420"
+          },
+          {
+            "option": "Lake Nona entry townhome",
+            "price_2026": 379900,
+            "price_note": "Townhomes from $379,900",
+            "proj_2041": 550208,
+            "works_under": [
+              "current",
+              "stepup",
+              "leader"
+            ],
+            "note": "Clears today's budget - but verify it is zoned to the 10/10 schools"
+          },
+          {
+            "option": "Laureate Park townhome",
+            "price_2026": 580000,
+            "price_note": "From the high $500s; Laureate Park down ~4% YoY",
+            "proj_2041": 840013,
+            "works_under": [
+              "stepup",
+              "leader"
+            ],
+            "note": "Misses today's budget by ~$20K; clears with the step-up"
+          },
+          {
+            "option": "Lake Nona median house",
+            "price_2026": 779980,
+            "price_note": "Lake Nona South median, Aug 2026",
+            "proj_2041": 1129644,
+            "works_under": [
+              "leader"
+            ],
+            "note": "AI-leader tier only"
+          },
+          {
+            "option": "Rent a 3BR in Laureate Park",
+            "price_2026": null,
+            "price_note": "Listed at $3,600/mo; Lake Nona range $1,750-$3,500",
+            "proj_2041": null,
+            "works_under": [
+              "stepup",
+              "leader"
+            ],
+            "note": "Fits the post-step-up rent ceiling of ~$3,785"
+          }
+        ],
+        "best_plan": "For a budget-safe Orlando, choose Oviedo today. For the dream version, rent near Laureate Park after the step-up and buy a Laureate Park townhome. Florida's FES-EO pays ~$8,000/yr toward private school regardless of income if you ever need it.",
+        "trigger": "The step-up, for Laureate Park",
+        "verify": [
+          "School zoning for any Lake Nona townhome - entry-level sections may not feed the 10/10 schools",
+          "Flood zone near the wetlands, and a real insurance quote: inland averages are ~$2,090/yr in Seminole and ~$3,610/yr in Orange vs $5,500-$11,000 statewide",
+          "Your wife's commute to Disney Springs or Millenia"
+        ]
+      }
+    ]
   }
 }
