@@ -730,3 +730,71 @@
 @media (max-width: 640px) {
   .nash-grid { grid-template-columns: 1fr; }
 }
+
+/* Paths to yes */
+.ptier-pick { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 6px; }
+.ptier-btn {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+  padding: 10px 16px; border-radius: 14px; border: 1px solid var(--line);
+  background: var(--panel); color: var(--ink); cursor: pointer; font: inherit; min-width: 150px;
+}
+.ptier-btn span { font-size: 12px; font-weight: 700; color: var(--muted); }
+.ptier-btn strong { font-size: 18px; font-variant-numeric: tabular-nums; }
+.ptier-btn.active { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(45, 91, 227, .15); }
+.ptier-btn.active span { color: var(--accent); }
+.ptier-help { margin: 0 0 16px; font-size: 12.5px; color: var(--muted); }
+
+.ptier-grid { display: grid; gap: 16px; margin-bottom: 22px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.ptier-card { border-top: 4px solid var(--line); opacity: .72; transition: opacity .15s ease; }
+.ptier-card.active { border-top-color: var(--accent); opacity: 1; }
+.ptier-card h3 { margin: 0 0 6px; font-size: 16px; }
+.ptier-trigger { margin: 0 0 12px; font-size: 13.5px; }
+.ptier-nums { display: grid; gap: 6px; margin-bottom: 10px; }
+.ptier-nums div { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; border-bottom: 1px dashed var(--line); padding-bottom: 4px; }
+.ptier-nums span { color: var(--muted); }
+.ptier-nums strong { font-variant-numeric: tabular-nums; }
+.ptier-evidence { margin: 0; font-size: 12px; color: var(--muted); }
+
+.path-grid { display: grid; gap: 16px; margin-bottom: 18px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.path-card h4 { margin: 14px 0 6px; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.path-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.path-top h3 { margin: 0; font-size: 18px; letter-spacing: -.01em; }
+.path-verdict { font-size: 11.5px; font-weight: 800; padding: 4px 10px; border-radius: 999px; background: #eef2ff; color: var(--accent); }
+.path-verdict.works_now { background: #ecfdf5; color: var(--good); }
+.path-links { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; }
+.path-link { font-size: 11.5px; font-weight: 700; color: var(--muted); background: var(--soft); border: 1px solid var(--line); border-radius: 8px; padding: 2px 8px; }
+.path-headline { margin: 10px 0 0; font-size: 14px; }
+.path-fit { margin: 0; padding-left: 18px; }
+.path-fit li { font-size: 13px; margin-bottom: 3px; }
+.path-opts { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.path-opt {
+  display: grid; grid-template-columns: 1fr; gap: 4px; padding: 9px 11px;
+  border: 1px solid var(--line); border-radius: 12px; border-left-width: 4px;
+}
+.path-opt.fits { border-left-color: var(--good); }
+.path-opt.miss { border-left-color: var(--line); background: #fafbfd; }
+.po-main { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.po-main strong { font-size: 13.5px; }
+.po-price { font-size: 12px; font-variant-numeric: tabular-nums; font-weight: 700; }
+.po-note { font-size: 11.5px; color: var(--muted); flex-basis: 100%; }
+.po-side { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
+.po-status { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
+.path-opt.fits .po-status { color: var(--good); }
+.path-opt.miss .po-status { color: var(--muted); }
+.po-why { font-size: 12.5px; color: var(--muted); }
+.path-plan p { margin: 0; font-size: 13.5px; }
+.path-trig { margin-top: 8px !important; font-size: 12.5px !important; }
+.path-trig span { font-weight: 800; color: var(--gold); margin-right: 6px; text-transform: uppercase; font-size: 11px; letter-spacing: .04em; }
+.path-verify { margin-top: 12px; font-size: 13px; }
+.path-verify summary { cursor: pointer; font-weight: 700; color: var(--accent); }
+.path-verify ul { margin: 8px 0 0; padding-left: 18px; color: var(--muted); }
+
+.levers-card h3 { margin: 0 0 10px; font-size: 16px; }
+.levers { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+.levers li strong { display: block; font-size: 14px; }
+.levers li span { font-size: 13px; color: var(--muted); }
+
+@media (max-width: 640px) {
+  .path-grid { grid-template-columns: 1fr; }
+  .ptier-btn { flex: 1 1 100%; }
+}
