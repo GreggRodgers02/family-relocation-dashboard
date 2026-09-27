@@ -4213,6 +4213,71 @@
     },
     {
       "rank": 44,
+      "area": "Thompson's Station",
+      "state": "Tennessee",
+      "state_abbr": "TN",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Top Williamson County schools between Spring Hill and Franklin - a house needs AI-leader income, and BGA needs its own plan",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 3.0,
+        "rental_feasibility_2028": 5.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 6.5
+      },
+      "budget_check": {
+        "price_2026": 860000,
+        "price_source": "median sold, Sep 2026 (other sources $812,500-$890,000)",
+        "proj_2041": 1245536,
+        "property_tax_effective_pct": 0.52,
+        "property_tax_source": "Tax Foundation 0.52% (Williamson Co. 0.45-0.56%)",
+        "insurance_state_avg_annual": 3045,
+        "budget_2041_planned": 894931,
+        "budget_2041_no_stepup": 688039,
+        "budget_2041_ai_leader": 1136761,
+        "headroom_planned": -350605,
+        "headroom_no_stepup": -557498,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Battle Ground Academy (BGA)",
+            "location": "Franklin, TN - K-4 Harpeth campus on Franklin Rd; 5-12 Glen Echo campus off Mack Hatcher Pkwy",
+            "grades": "K-12",
+            "approx_distance_mi": 8,
+            "annual_tuition_usd": 32600,
+            "enrollment": 995,
+            "football_program": true,
+            "notes": "Day tuition $32,600 (2024 figure; another source shows $30,900). Awarded $2.5M in financial aid to 24% of families in 2024-25.",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "BGA is the family's named preference and is ~8 mi away. The public alternative is unusually strong here (Heritage Middle is #7 in Tennessee), which makes a public K-8 + BGA upper-school split the realistic way to afford it.",
+        "verified": false
+      },
+      "notes": "Williamson County town between Spring Hill and Franklin, and a natural next step from the family's current Spring Hill rental. Schools are Williamson County Schools at their strongest: Heritage Middle is ranked #7 among Tennessee public middle schools, Thompson's Station and Heritage elementaries are both rated A and ranked #40 in the state, and Independence High is rated A (64% math, 73% reading proficiency). Battle Ground Academy, the family's preferred private school, is ~8 mi away in Franklin, and the Kendra Scott store at McEwen Southside where the spouse works is roughly 10 mi / 15-20 minutes away - the same direction as BGA's campuses. The problem is price. The median sold price was $860,000 in September 2026 (other sources $812,500-$890,000), and the middle half of sales closed between $657,500 and $1,165,000. The median projects to ~$1.25M by 2041 - ~$351K over the ~$895K planned-path budget and ~$109K over even the AI-leader budget. A lower-quartile home (~$657,500) projects to ~$952K, which fits only at the AI-leader tier. New-construction listings average about $1.3M. Renting is possible but thin: 3BR homes and townhomes range $1,875-$4,595, with only ~7 townhomes listed at a time.",
+      "risks": [
+        "Over budget at every career tier for a median home; even the lower quartile (~$657,500) needs the AI-leader tier",
+        "BGA costs ~$32,600/yr per child (2024). K-12 is ~$424,000 per child at today's price, or ~$742,000 if tuition rises 4%/yr - comparable to the entire home budget, and about 27% of planned-path gross income per child alongside a 28% housing payment",
+        "Rental inventory is thin (~7 townhomes listed) and spans $1,875-$4,595, so a 13-year rental chain here is fragile",
+        "Price is set by relocators bringing equity: 35-45% of Williamson County buyers are out-of-state movers (CA, TX, IL, NY), so local income does not anchor prices"
+      ],
+      "weighted_total_out_of_100": 68.2,
+      "weighted_total_private_scenario": 68.2,
+      "weighted_total_career_max_scenario": 69.15
+    },
+    {
+      "rank": 45,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -4294,7 +4359,7 @@
       "weighted_total_career_max_scenario": 69.3
     },
     {
-      "rank": 45,
+      "rank": 46,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -4390,7 +4455,7 @@
       "weighted_total_career_max_scenario": 69.05
     },
     {
-      "rank": 46,
+      "rank": 47,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -4478,7 +4543,7 @@
       "weighted_total_career_max_scenario": 65.35
     },
     {
-      "rank": 47,
+      "rank": 48,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -4565,7 +4630,7 @@
       "weighted_total_career_max_scenario": 64.9
     },
     {
-      "rank": 48,
+      "rank": 49,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -4665,7 +4730,7 @@
       "weighted_total_career_max_scenario": 65.3
     },
     {
-      "rank": 49,
+      "rank": 50,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -4764,7 +4829,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 50,
+      "rank": 51,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -4859,7 +4924,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 51,
+      "rank": 52,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -5103,6 +5168,7 @@
       "Auburn / Opelika",
       "Lake Nona",
       "Glen Allen / Midlothian",
+      "Thompson's Station",
       "Roswell",
       "Franklin",
       "Farragut",
@@ -5458,7 +5524,7 @@
           },
           {
             "area": "Farragut",
-            "rank": 46,
+            "rank": 47,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 66.6
@@ -5520,22 +5586,29 @@
             "weighted_total_out_of_100": 72.6
           },
           {
+            "area": "Thompson's Station",
+            "rank": 44,
+            "rental_feasibility_2028": 5.0,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 68.2
+          },
+          {
             "area": "Franklin",
-            "rank": 45,
+            "rank": 46,
             "rental_feasibility_2028": 3.5,
             "school_quality": 9,
             "weighted_total_out_of_100": 67.4
           },
           {
             "area": "Waxhaw",
-            "rank": 47,
+            "rank": 48,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 64.7
           },
           {
             "area": "Leesburg / Ashburn",
-            "rank": 49,
+            "rank": 50,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 61.6
@@ -5634,9 +5707,10 @@
     "locations": [
       {
         "id": "spring_hill_franklin",
-        "title": "Spring Hill → Franklin, TN",
+        "title": "Spring Hill → Thompson's Station / Franklin, TN",
         "matrix_areas": [
           "Spring Hill (Summit / Page Zones, Williamson County)",
+          "Thompson's Station",
           "Franklin"
         ],
         "verdict": "works_now",
@@ -5644,6 +5718,7 @@
         "headline": "You are already doing the hard part. The Williamson County side of Spring Hill is in the same school system as Franklin's high schools, so Franklin buys a shorter commute, lifestyle and a home - not better high schools.",
         "fit": [
           "Your wife's current Kendra Scott store is in Franklin - the only hard geographic tie in the household",
+          "Battle Ground Academy (K-4 on Franklin Rd, 5-12 off Mack Hatcher Pkwy) is ~8 mi from Thompson's Station, on the way to your wife's store",
           "Nashville's AACSB schools (Belmont, Lipscomb, Vanderbilt, MTSU) give the professor path real redundancy",
           "No state income tax, and no move away from where you live now"
         ],
@@ -5671,6 +5746,24 @@
             "note": "Over the planned-path budget by $46K; fits at the AI-leader tier (~$1.14M)"
           },
           {
+            "option": "Thompson's Station lower-quartile house",
+            "price_2026": 657500,
+            "price_note": "Middle half of sales: $657,500-$1,165,000",
+            "proj_2041": 952256,
+            "works_under": [
+              "leader"
+            ],
+            "note": "Over the planned-path budget by $57K; fits at the AI-leader tier (~$1.14M)"
+          },
+          {
+            "option": "Thompson's Station median house",
+            "price_2026": 860000,
+            "price_note": "Median sold, Sep 2026",
+            "proj_2041": 1245536,
+            "works_under": [],
+            "note": "Out of reach at every tier - $109K over even the AI-leader budget (~$1.14M)"
+          },
+          {
             "option": "Franklin median house",
             "price_2026": 864000,
             "price_note": "Median sale, 3 months to June 2026",
@@ -5690,12 +5783,14 @@
             "note": "Above the 2028 ceiling (~$2,625); fits the ~$3,785 ceiling that follows the step-up, not the ~$2,910 without it"
           }
         ],
-        "best_plan": "Keep renting on the Williamson side of Spring Hill through kindergarten entry. A Franklin entry townhome ($350K-$500K) works at every career tier; a mid-market townhome needs the AI-leader tier; a detached Franklin house is out of reach even then. For the one real K-8 upgrade, buy inside Franklin Special School District (10/10 testing, top 5% in Tennessee).",
-        "trigger": "None for an entry townhome; the AI-leader tier for a mid-market one",
+        "best_plan": "Keep renting on the Williamson side of Spring Hill through the elementary years - the public zones there and in Thompson's Station (Heritage Middle is #7 in Tennessee) are already top-tier. For a purchase, a Franklin entry townhome works at every tier, while a Thompson's Station house needs the AI-leader tier even at the lower quartile. For BGA, plan on upper school rather than K-12: grades 9-12 cost ~$270K per child with 4%/yr tuition increases, versus ~$742K for K-12, and they land in the years your income should be highest. Apply for BGA's financial aid (24% of families received it in 2024-25) and Tennessee's Education Freedom Scholarship ($7,530 in 2026-27) regardless.",
+        "trigger": "The AI-leader tier for a Thompson's Station house; BGA upper school needs the planned step-up at minimum",
         "verify": [
           "Confirm the Franklin McEwen Southside store reopened as planned around Sept 1, 2026",
           "Franklin Special School District vs Williamson County Schools zoning, per address",
-          "Williamson vs Maury county line for any Spring Hill rental"
+          "Williamson vs Maury county line for any Spring Hill rental",
+          "BGA's current tuition by division and financial-aid terms - the $32,600 figure is from 2024",
+          "Whether BGA participates in Tennessee's Education Freedom Scholarship"
         ]
       },
       {
