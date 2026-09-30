@@ -6722,10 +6722,44 @@
           "source": "https://www.mediabistro.com/jobs/3540869056-senior-director-social-media-and-influencer-marketing",
           "verified": true,
           "checked": "2026-09"
+        },
+        {
+          "name": "Q2 Holdings",
+          "sector": "Digital banking software",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Austin-headquartered cloud digital-banking platform (mobile, virtual and voice banking for banks and credit unions).",
+          "role_families": [
+            "Product Manager (digital banking)",
+            "AI / analytics product"
+          ],
+          "office": "Austin (HQ)",
+          "source": "https://www.builtinaustin.com/company/q2",
+          "verified": true,
+          "checked": "2026-09",
+          "wave": 3
+        },
+        {
+          "name": "Charles Schwab - Austin campus",
+          "sector": "Brokerage / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "50-acre north Austin campus housing ~1,900 employees.",
+          "role_families": [
+            "Product Manager (digital investing)"
+          ],
+          "office": "North Austin (Gracy Farms)",
+          "source": "https://rebusinessonline.com/charles-schwab-opens-50-acre-office-campus-in-north-austin/",
+          "verified": true,
+          "checked": "2026-09",
+          "wave": 3
         }
       ],
       "spouse_content": [],
-      "gaps": "No major fintech headquarters surfaced in this pass."
+      "gaps": "Fintech is mid-size (Q2, Schwab campus) rather than headquarters-heavy."
     },
     {
       "id": "dfw",
@@ -6945,6 +6979,26 @@
           "source": "https://avenuez.com/blog/top-content-creation-agencies-in-dallas/",
           "verified": false,
           "checked": "2026-09"
+        },
+        {
+          "name": "LTK (formerly rewardStyle)",
+          "sector": "Creator-commerce platform",
+          "goal_tags": [
+            "spouse_content",
+            "spouse_retail",
+            "consumer_retail"
+          ],
+          "why": "Dallas-headquartered platform that lets lifestyle creators make their content shoppable - the creator economy's own employer, hiring social media specialists and brand content strategists.",
+          "role_families": [
+            "Social media specialist",
+            "Brand operations & content strategy",
+            "Creator success"
+          ],
+          "office": "Dallas (HQ, Oak Lawn)",
+          "source": "https://www.cbinsights.com/company/rewardstyle",
+          "verified": true,
+          "checked": "2026-09",
+          "wave": 3
         }
       ],
       "gaps": null
@@ -7366,10 +7420,45 @@
           "source": "https://en.wikipedia.org/wiki/Economy_of_Greater_Cleveland",
           "verified": true,
           "checked": "2026-09"
+        },
+        {
+          "name": "RPM International",
+          "sector": "Paint & coatings (Rust-Oleum, DAP)",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Headquartered on a 180-acre campus in Medina, ~16,300 employees. Paint and coatings peer - your Sherwin-Williams product and category knowledge transfers directly.",
+          "role_families": [
+            "Digital / e-commerce product",
+            "Brand marketing"
+          ],
+          "office": "Medina (HQ)",
+          "source": "https://en.wikipedia.org/wiki/RPM_International",
+          "verified": true,
+          "checked": "2026-09",
+          "wave": 3
         }
       ],
-      "spouse_content": [],
-      "gaps": "Sports-tech is thin; Cleveland's case is the Sherwin-Williams HQ itself."
+      "spouse_content": [
+        {
+          "name": "Fahlgren Mortine / Marcus Thomas / thunder::tech",
+          "sector": "Influencer and social agencies",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Cleveland agencies running influencer programs and social content for regional and national brands.",
+          "role_families": [
+            "Social content",
+            "Influencer coordinator"
+          ],
+          "office": "Cleveland",
+          "source": "https://www.lyfemarketing.com/blog/top-social-media-marketing-agencies-cleveland/",
+          "verified": false,
+          "checked": "2026-09",
+          "wave": 3
+        }
+      ],
+      "gaps": "Sports-tech is thin. Cleveland's case is Sherwin-Williams itself, plus RPM as a paint and coatings peer."
     },
     {
       "id": "orlando",
@@ -7480,6 +7569,22 @@
           "source": "https://maxliferealty.com/blog/top-companies-orlando-florida",
           "verified": false,
           "checked": "2026-09"
+        },
+        {
+          "name": "Lake Mary fintech cluster (FIS, Fiserv, Robinhood, Deloitte)",
+          "sector": "Fintech offices",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Lake Mary, next to the Lake Mary and Oviedo locations, hosts FIS, Fiserv, Robinhood, Temenos and Deloitte offices.",
+          "role_families": [
+            "Product Manager (payments / banking tech)"
+          ],
+          "office": "Lake Mary",
+          "source": "https://business.orlando.org/l/fintech/",
+          "verified": false,
+          "checked": "2026-09",
+          "wave": 3
         }
       ],
       "spouse_content": [
@@ -7500,7 +7605,7 @@
           "checked": "2026-09"
         }
       ],
-      "gaps": "Fintech is thin in this pass."
+      "gaps": "Fintech is office-based (Lake Mary) rather than HQ-based."
     },
     {
       "id": "tampa",
@@ -7630,7 +7735,25 @@
           "checked": "2026-09"
         }
       ],
-      "spouse_content": [],
+      "spouse_content": [
+        {
+          "name": "HireInfluence / Modern Media Group / Mochee",
+          "sector": "Influencer and content agencies",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Tampa Bay agencies for creator sourcing, content production and influencer campaigns.",
+          "role_families": [
+            "Content creator",
+            "Influencer marketing"
+          ],
+          "office": "Tampa / St. Petersburg",
+          "source": "https://thesocialshepherd.com/blog/top-social-media-agencies-tampa",
+          "verified": false,
+          "checked": "2026-09",
+          "wave": 3
+        }
+      ],
       "gaps": "Foot Locker cancelled its planned St. Petersburg HQ move after the Dick's acquisition (https://wwd.com/footwear-news/shoe-industry-news/foot-locker-florida-headquarters-move-canceled-1238351379/). Sports-tech is early-stage here."
     },
     {
@@ -7719,9 +7842,60 @@
           "source": "https://www.zippia.com/advice/largest-companies-in-florida/",
           "verified": false,
           "checked": "2026-09"
+        },
+        {
+          "name": "ICE Mortgage Technology",
+          "sector": "Mortgage fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Intercontinental Exchange made Jacksonville its mortgage-technology division headquarters (500+ new jobs).",
+          "role_families": [
+            "Product Manager (mortgage tech)"
+          ],
+          "office": "Jacksonville (division HQ)",
+          "source": "https://earnup.org/new-developments-in-jacksonville-financial-services/",
+          "verified": true,
+          "checked": "2026-09",
+          "wave": 3
+        },
+        {
+          "name": "Fidelity National Financial",
+          "sector": "Title insurance / real-estate fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Fortune 500 headquartered in Jacksonville; ~900 fintech companies and 55,000 finance workers in the metro.",
+          "role_families": [
+            "Digital Product Manager (real-estate transactions)"
+          ],
+          "office": "Jacksonville (HQ)",
+          "source": "https://www.jaxusa.org/industries/finance-services",
+          "verified": true,
+          "checked": "2026-09",
+          "wave": 3
         }
       ],
-      "spouse_content": [],
+      "spouse_content": [
+        {
+          "name": "The Social Shepherd / Dalton Agency / Adjective & Co.",
+          "sector": "Social and content agencies",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Jacksonville agencies doing social content and influencer work (Adjective & Co. focuses on sports, lifestyle and CPG).",
+          "role_families": [
+            "Social content creator",
+            "Influencer marketing"
+          ],
+          "office": "Jacksonville",
+          "source": "https://thesocialshepherd.com/blog/top-social-media-agencies-jacksonville",
+          "verified": false,
+          "checked": "2026-09",
+          "wave": 3
+        }
+      ],
       "gaps": null
     },
     {
@@ -7808,10 +7982,47 @@
           "source": "https://jobs.fidelity.com/en/locations/raleigh-durham-north-carolina/",
           "verified": true,
           "checked": "2026-09"
+        },
+        {
+          "name": "Lenovo",
+          "sector": "Consumer tech",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Co-global HQ in Morrisville (next to Cary) with 2,200+ U.S. staff and an R&D center.",
+          "role_families": [
+            "Product Manager (consumer devices / AI PC)",
+            "Digital marketing"
+          ],
+          "office": "Morrisville (co-HQ)",
+          "source": "https://news.lenovo.com/pressroom/press-releases/lenovo-expands-us-global-headquarters-nc-footprint/",
+          "verified": true,
+          "checked": "2026-09",
+          "wave": 3,
+          "note": "Lenovo has made U.S. workforce reductions affecting Morrisville: https://www.cbs17.com/news/local-news/wake-county-news/lenovo-making-strategic-reductions-to-us-workforce-impacting-jobs-at-morrisville-headquarters/"
         }
       ],
-      "spouse_content": [],
-      "gaps": "Sports-tech and consumer retail are thin here."
+      "spouse_content": [
+        {
+          "name": "Fresh Content Society / Ignite Social Media",
+          "sector": "Social content agencies",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Triangle agencies for social content, community management and influencer marketing.",
+          "role_families": [
+            "Social content",
+            "Community management"
+          ],
+          "office": "Raleigh-Durham",
+          "source": "https://clutch.co/agencies/social-media-marketing/durham",
+          "verified": false,
+          "checked": "2026-09",
+          "wave": 3
+        }
+      ],
+      "gaps": "Sports-tech is thin here."
     },
     {
       "id": "cincinnati",
@@ -7886,10 +8097,63 @@
           "source": "https://en.wikipedia.org/wiki/List_of_companies_in_Greater_Cincinnati",
           "verified": true,
           "checked": "2026-09"
+        },
+        {
+          "name": "84.51° (Kroger)",
+          "sector": "Retail data science / AI",
+          "goal_tags": [
+            "ai_product",
+            "consumer_retail"
+          ],
+          "why": "Kroger's data and AI company: personalization and loyalty built on first-party data from nearly 1 in 2 U.S. households. The closest match in the matrix to an AI Marketing Specialist.",
+          "role_families": [
+            "AI / data Product Manager",
+            "Marketing science"
+          ],
+          "office": "Cincinnati (HQ)",
+          "source": "https://job-boards.greenhouse.io/8451",
+          "verified": true,
+          "checked": "2026-09",
+          "wave": 3
+        },
+        {
+          "name": "ActionStreamer",
+          "sector": "Sports-tech (wearable streaming)",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Cincinnati startup streaming first-person, field-level video from wearables.",
+          "role_families": [
+            "Product roles"
+          ],
+          "office": "Cincinnati",
+          "source": "https://tracxn.com/explore/Sports-Tech-Startups-in-Cincinnati",
+          "verified": false,
+          "checked": "2026-09",
+          "wave": 3
         }
       ],
-      "spouse_content": [],
-      "gaps": "Sports-tech is thin in this pass."
+      "spouse_content": [
+        {
+          "name": "Procter & Gamble - creator and influencer marketing",
+          "sector": "Consumer brand / creator marketing",
+          "goal_tags": [
+            "spouse_content",
+            "consumer_retail"
+          ],
+          "why": "P&G is hiring Creator and Influencer Marketing Managers and a Creator & Social Commerce Senior Manager ($110K-$165K posted) in Cincinnati - the in-house version of content creation.",
+          "role_families": [
+            "Creator & influencer marketing specialist / manager",
+            "Social commerce"
+          ],
+          "office": "Cincinnati (HQ)",
+          "source": "https://www.pgcareers.com/pl/en/job/R000146855/Creator-and-Influencer-Marketing-Manager",
+          "verified": true,
+          "checked": "2026-09",
+          "wave": 3
+        }
+      ],
+      "gaps": "Sports-tech is early-stage."
     },
     {
       "id": "louisville",
@@ -7994,10 +8258,26 @@
           "source": "https://en.wikipedia.org/wiki/Hillerich_%26_Bradsby",
           "verified": false,
           "checked": "2026-09"
+        },
+        {
+          "name": "Louisville fintech (Jack Henry, Waystar, Xplor, Republic Bank)",
+          "sector": "Fintech / payments",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Mid-size fintech presence: Jack Henry and Waystar offices, Xplor (payments SaaS, including fitness), and Republic Bank's HQ.",
+          "role_families": [
+            "Product Manager (payments / banking tech)"
+          ],
+          "office": "Louisville",
+          "source": "https://builtin.com/companies/location/louisville/type/fintech-companies",
+          "verified": false,
+          "checked": "2026-09",
+          "wave": 3
         }
       ],
       "spouse_content": [],
-      "gaps": "Fintech is thin. Working in Louisville Metro (Jefferson County) adds a 1.45% nonresident occupational tax; Oldham County itself levies none - the evaluator assumes the job is in Louisville Metro."
+      "gaps": "Fintech is mid-size. Working in Louisville Metro (Jefferson County) adds a 1.45% nonresident occupational tax; Oldham County levies none - the evaluator assumes the job is in Louisville Metro."
     },
     {
       "id": "kansas_city",
@@ -8288,10 +8568,27 @@
           "source": "https://movingtohuntsville.org/top-employers-in-huntsville-al-2026/",
           "verified": false,
           "checked": "2026-09"
+        },
+        {
+          "name": "Redstone Federal Credit Union",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Huntsville-headquartered credit union ($7.5B in assets) hiring for its Digital Channel Experience AI team.",
+          "role_families": [
+            "Digital channel / AI platform roles"
+          ],
+          "office": "Huntsville (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Redstone_Federal_Credit_Union",
+          "verified": true,
+          "checked": "2026-09",
+          "wave": 3
         }
       ],
       "spouse_content": [],
-      "gaps": "Weak on all four focus areas; strong on aerospace and engineering."
+      "gaps": "Weak on consumer brands, sports-tech and content; strong on aerospace and engineering."
     },
     {
       "id": "knoxville",
@@ -8457,10 +8754,26 @@
           "source": "https://pitchbook.com/profiles/company/343583-20",
           "verified": false,
           "checked": "2026-09"
+        },
+        {
+          "name": "ScanSource",
+          "sector": "Payments / POS tech distribution",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Greenville-headquartered technology distributor whose Specialty Technology segment covers POS and payments.",
+          "role_families": [
+            "Product / channel roles (payments tech)"
+          ],
+          "office": "Greenville (HQ)",
+          "source": "https://www.sccommerce.com/news/scansource-expanding-upstate-headquarters",
+          "verified": true,
+          "checked": "2026-09",
+          "wave": 3
         }
       ],
       "spouse_content": [],
-      "gaps": "Fintech, sports-tech and consumer brands are thin."
+      "gaps": "Sports-tech, consumer brands and content are thin."
     },
     {
       "id": "auburn",
@@ -8726,7 +9039,25 @@
           "checked": "2026-09"
         }
       ],
-      "spouse_content": [],
+      "spouse_content": [
+        {
+          "name": "HireInfluence (DC) / UGC Factory (Ashburn)",
+          "sector": "Influencer and UGC agencies",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "DC-area influencer agency (Microsoft, Oreo, Target clients) and an Ashburn user-generated-content agency.",
+          "role_families": [
+            "UGC creator",
+            "Influencer marketing"
+          ],
+          "office": "Washington DC / Ashburn",
+          "source": "https://hireinfluence.com/blog/influencer-marketing-agency-washington-dc/",
+          "verified": false,
+          "checked": "2026-09",
+          "wave": 3
+        }
+      ],
       "gaps": "The top fintech/AI market in the wave-2 set, but rent (~$3,300) is well above the rent ceiling. Sports-tech is thin."
     },
     {
@@ -8841,9 +9172,44 @@
           "source": "https://en.wikipedia.org/wiki/Genius_Sports",
           "verified": true,
           "checked": "2026-09"
+        },
+        {
+          "name": "Benjamin Moore",
+          "sector": "Paint & coatings",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Headquartered in Montvale, NJ (~35 mi north), hiring digital marketing and social roles. Paint and coatings peer - your Sherwin-Williams product and category knowledge transfers directly.",
+          "role_families": [
+            "Digital marketing / search",
+            "Marketing development"
+          ],
+          "office": "Montvale, NJ (HQ)",
+          "source": "https://www.theladders.com/job/search-marketing-manager-benjaminmoore-montvale-nj_48033338",
+          "verified": true,
+          "checked": "2026-09",
+          "wave": 3
         }
       ],
-      "spouse_content": [],
+      "spouse_content": [
+        {
+          "name": "People Inc. (HQ)",
+          "sector": "Media / social video",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "America's largest digital publisher (People, InStyle, Travel + Leisure) hiring social video producers and creators at its Lower Manhattan HQ.",
+          "role_families": [
+            "Social video producer / editor",
+            "Social creator"
+          ],
+          "office": "New York (225 Liberty St)",
+          "source": "https://jobs.jobvite.com/dotdash/job/oqK9AfwD",
+          "verified": true,
+          "checked": "2026-09",
+          "wave": 3
+        }
+      ],
       "gaps": "Every focus area is deep across the river in Manhattan, but rent is ~$4,000+ and New Jersey income tax applies - an offer has to be large to clear the bar."
     }
   ],
@@ -8942,6 +9308,71 @@
       "source": "https://careers.hallmark.com/Headquarters KC MO/job/Kansas-City-Digital-Product-Owner-KS-64108/770928900/",
       "verified": true,
       "checked": "2026-09"
+    },
+    {
+      "name": "Atlassian",
+      "sector": "Collaboration software / AI",
+      "goal_tags": [
+        "ai_product"
+      ],
+      "why": "\"Team Anywhere\" is the default: employees work from any location where Atlassian has a legal entity.",
+      "role_families": [
+        "Product Manager (AI)"
+      ],
+      "office": "Remote (US)",
+      "source": "https://wfa.team/blog/atlassians-work-from-anywhere-policy/",
+      "verified": true,
+      "checked": "2026-09",
+      "wave": 3
+    },
+    {
+      "name": "Dropbox",
+      "sector": "Cloud software / AI",
+      "goal_tags": [
+        "ai_product"
+      ],
+      "why": "\"Virtual First\" since 2020: remote is the default and offices are used as collaboration studios.",
+      "role_families": [
+        "Product Manager"
+      ],
+      "office": "Remote (US)",
+      "source": "https://wfa.team/blog/dropbox-remote-work-policy/",
+      "verified": true,
+      "checked": "2026-09",
+      "wave": 3
+    },
+    {
+      "name": "Spotify",
+      "sector": "Consumer audio / AI",
+      "goal_tags": [
+        "ai_product",
+        "consumer_retail"
+      ],
+      "why": "Work From Anywhere employer hiring remote product management, analytics and digital marketing roles.",
+      "role_families": [
+        "Product Manager (personalization / AI)"
+      ],
+      "office": "Remote (US)",
+      "source": "https://fastcompany.co.za/fast-company/work-life/2026-04-15-you-can-work-anywhere-on-earth-with-these-tech-jobs/",
+      "verified": false,
+      "checked": "2026-09",
+      "wave": 3
+    },
+    {
+      "name": "Buffer",
+      "sector": "Social media software",
+      "goal_tags": [
+        "spouse_content"
+      ],
+      "why": "Fully remote social media platform built for creators and small businesses (4-day week, ~75 people) - a remote fit for content and marketing roles.",
+      "role_families": [
+        "Content / marketing roles"
+      ],
+      "office": "Remote",
+      "source": "https://remote.co/company/buffer",
+      "verified": false,
+      "checked": "2026-09",
+      "wave": 3
     }
   ]
 }
