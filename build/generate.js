@@ -662,6 +662,222 @@ ${locCards}
   }
   const pathsNav = pathsToYes ? '      <a href="#paths">Paths to Yes</a>\n' : '';
 
+  // Opportunities: home-base strategy, offer evaluator, metro employer research,
+  // Sherwin-Williams internal track and the application tracker.
+  const os = data.opportunity_strategy || null;
+  const metros = Array.isArray(data.metros) ? data.metros : [];
+  let opportunities = '';
+  let oppScript = '';
+  if (os && metros.length && data.tax_model) {
+    const TAGS = {
+      ai_product: 'AI product',
+      fintech: 'Fintech',
+      sports_tech: 'Sports-tech',
+      consumer_retail: 'Consumer & retail',
+      spouse_retail: 'Wife: retail',
+      spouse_content: 'Wife: content',
+    };
+    const money0 = (n) => (typeof n === 'number' ? '$' + Math.round(n).toLocaleString('en-US') : '');
+    const li = (arr) => (arr || []).map((x) => `<li>${esc(x)}</li>`).join('');
+    const link = (url, label) =>
+      url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label || 'source')}</a>` : '';
+
+    const coItem = (c) => {
+      const tags = (c.goal_tags || []).map((t) => `<span class="opp-tag t-${esc(t)}">${esc(TAGS[t] || t)}</span>`).join('');
+      const roles = (c.role_families || []).length ? `<div class="opp-roles">Roles: ${esc(c.role_families.join(' · '))}</div>` : '';
+      const note = c.note ? `<div class="opp-conote">${esc(c.note)}</div>` : '';
+      return `<li class="opp-co" data-tags="${esc((c.goal_tags || []).join(' '))}">
+              <div class="opp-cotop"><strong>${esc(c.name)}</strong><span class="opp-sector">${esc(c.sector || '')}</span></div>
+              <div class="opp-tags">${tags}${c.verified ? '' : '<span class="opp-unv">listing source</span>'}</div>
+              <p>${esc(c.why || '')}</p>${roles}${note}
+              <div class="opp-src">${esc(c.office || '')} · ${link(c.source)}</div>
+            </li>`;
+    };
+
+    const metroCards = metros
+      .map((m) => {
+        const locs = (m.locations || [])
+          .map((l) => `<span class="path-link">#${esc(l.rank)} ${esc(l.area)}</span>`)
+          .join('');
+        const ks = (m.kendra_scott || []).map((k) => esc(k.store)).join(' · ');
+        const cos = (m.companies || []).concat(m.spouse_content || []);
+        const body = m.researched
+          ? `${m.rent_3br ? `<div class="opp-meta"><span>Typical 3BR rent</span><strong>${esc(money0(m.rent_3br))}/mo</strong></div>` : ''}
+          ${ks ? `<div class="opp-meta"><span>Kendra Scott</span><strong>${ks}</strong></div>` : ''}
+          <ul class="opp-cos">${cos.map(coItem).join('')}</ul>
+          ${m.gaps ? `<p class="opp-gap">${esc(m.gaps)}</p>` : ''}`
+          : `<p class="opp-gap">${esc(m.gaps || 'Research pending.')}</p>`;
+        return `        <details class="card opp-metro${m.home_base ? ' home' : ''}" data-metro="${esc(m.id)}"${m.home_base ? ' open' : ''}>
+          <summary><span class="opp-mname">${esc(m.label)}${m.home_base ? ' <em>home base</em>' : ''}</span><span class="opp-mcount">${
+          m.researched ? `${cos.length} employers` : 'wave 2'
+        }</span></summary>
+          <div class="path-links">${locs}</div>
+          ${body}
+        </details>`;
+      })
+      .join('\n');
+
+    const filterChips =
+      `<button type="button" class="opp-chip active" data-tag="all">All</button>` +
+      Object.entries(TAGS)
+        .map(([k, v]) => `<button type="button" class="opp-chip" data-tag="${esc(k)}">${esc(v)}</button>`)
+        .join('');
+
+    const swt = data.sherwin_williams_track || null;
+    const swCard = swt
+      ? `<div class="card opp-sw"><h3>Sherwin-Williams internal track</h3>
+          <p>${esc(swt.headquarters || '')} ${esc(swt.rd_center || '')}</p>
+          <h4>AI and digital roles posted in 2026</h4><ul>${li(swt.ai_roles_seen_2026)}</ul>
+          <p class="opp-gap">${esc(swt.implication || '')}</p></div>`
+      : '';
+
+    const remote = Array.isArray(data.remote_first) ? data.remote_first : [];
+    const remoteCard = `<div class="card opp-remote"><h3>Remote-first employers</h3>${
+      remote.length
+        ? `<ul class="opp-cos">${remote.map(coItem).join('')}</ul>`
+        : '<p class="opp-gap">Remote employers that would let you level up without moving - research is in the next wave.</p>'
+    }</div>`;
+
+    const apps = Array.isArray(data.applications) ? data.applications : [];
+    const appRows = apps
+      .map(
+        (a) =>
+          `<tr><td>${esc(a.company || '')}</td><td>${esc(a.role || '')}</td><td>${esc(a.metro || '')}</td><td><span class="opp-status s-${esc(
+            (a.status || '').toLowerCase()
+          )}">${esc(a.status || '')}</span></td><td>${esc(a.date || '')}</td><td>${esc(a.notes || '')}</td></tr>`
+      )
+      .join('');
+    const tracker = `<div class="card opp-tracker"><h3>Application tracker</h3>${
+      apps.length
+        ? `<div class="table-wrap"><table><thead><tr><th>Company</th><th>Role</th><th>Metro</th><th>Status</th><th>Date</th><th>Notes</th></tr></thead><tbody>${appRows}</tbody></table></div>`
+        : '<p class="opp-gap">No applications yet. Tell Claude something like "add: Lowe\'s, Senior Digital Product Manager, Charlotte, applied" and it will appear here.</p>'
+    }</div>`;
+
+    const evalMetros = metros.filter((m) => m.researched && m.rent_3br);
+    const metroOpts = evalMetros
+      .map((m) => `<option value="${esc(m.id)}"${m.id === 'dfw' ? ' selected' : ''}>${esc(m.label)}${m.home_base ? ' (stay / local job)' : ''}</option>`)
+      .join('');
+
+    opportunities = `
+    <section id="opportunities">
+      <div class="section-title">
+        <h2>Opportunities</h2>
+        <p>${esc(os.rule || '')}</p>
+      </div>
+      <div class="card insight-card opp-strategy">
+        <h3>Home base: ${esc(os.home_base || '')}</h3>
+        <p>${esc(os.buy_by || '')}</p>
+        <div class="opp-two">
+          <div><h4>Move windows</h4><ul>${li(os.move_windows)}</ul></div>
+          <div><h4>Safeguards</h4><ul>${li(os.safeguards)}</ul></div>
+        </div>
+        <p class="opp-gap">${esc(os.spouse_note || '')}</p>
+      </div>
+
+      <div class="card opp-eval" id="opp-eval">
+        <h3>Offer evaluator</h3>
+        <p class="ptier-help">Does an offer leave the family better off than staying in Spring Hill? Compares monthly money left after income taxes and a typical 3BR rent.</p>
+        <div class="opp-form">
+          <label>Offer metro<select id="oe-metro">${metroOpts}</select></label>
+          <label>Offer base salary<input id="oe-base" type="number" min="0" step="1000" value="150000"></label>
+          <label>Bonus %<input id="oe-bonus" type="number" min="0" max="100" step="1" value="10"></label>
+          <label>Wife's income in that metro<input id="oe-sp-new" type="number" min="0" step="1000" value="32000"></label>
+          <label>Your pay if you stay (Sherwin-Williams)<input id="oe-stay" type="number" min="0" step="1000" value="${esc(
+            (data.rental_budget_config || {}).current_individual_income || 73000
+          )}"></label>
+          <label>Wife's income if you stay<input id="oe-sp-stay" type="number" min="0" step="1000" value="${esc(
+            ((data.rental_budget_config || {}).current_household_income || 105000) -
+              ((data.rental_budget_config || {}).current_individual_income || 73000)
+          )}"></label>
+          <label>Level-up threshold %<input id="oe-thr" type="number" min="0" max="200" step="1" value="${esc(
+            (os.level_up_test || {}).default_threshold_pct || 15
+          )}"></label>
+        </div>
+        <p class="ptier-help">Tip: set "your pay if you stay" to what a Sherwin-Williams promotion would pay (~$120K on the planned path) for a fair comparison.</p>
+        <div id="oe-out" class="opp-out" aria-live="polite"></div>
+      </div>
+
+      <div class="opp-two">
+        ${swCard}
+        ${remoteCard}
+      </div>
+
+      <div class="section-title opp-sub"><h3>Employers by metro</h3><p>Every company has a source. "Listing source" means it came from a directory or ranking article rather than the company itself.</p></div>
+      <div class="opp-chips" role="group" aria-label="Filter employers">${filterChips}</div>
+      <div class="opp-grid">
+${metroCards}
+      </div>
+      ${tracker}
+      <p class="phase-caveat">${esc((data.tax_model || {}).note || '')} Home budget uses the same rule as the model (28% of gross, 20% down, 6.5%, 30-year, local property tax and insurance) at the offer's income today.</p>
+    </section>
+`;
+
+    // Evaluator payload: only what the client needs.
+    const payload = {
+      tax: data.tax_model,
+      stay: 'nashville',
+      metros: evalMetros.map((m) => {
+        const rep = byArea.get(m.representative) || {};
+        const bc = rep.budget_check || {};
+        return {
+          id: m.id,
+          label: m.label,
+          rent: m.rent_3br,
+          ks: (m.kendra_scott || []).length,
+          tax: (bc.property_tax_effective_pct || 0) / 100,
+          ins: ((bc.insurance_state_avg_annual || 0) / 400000) * 0.75,
+          locs: (m.locations || []).map((l) => {
+            const b = (byArea.get(l.area) || {}).budget_check || {};
+            return { area: l.area, price: b.price_2026 || null };
+          }),
+        };
+      }),
+    };
+    const payloadJson = JSON.stringify(payload).replace(/</g, '\\u003c');
+    // Plain string so the outer template literal does not interpolate it.
+    oppScript =
+      '<script id="opp-data" type="application/json">' + payloadJson + '</' + 'script>\n' +
+      '<script>\n' +
+      '(function(){\n' +
+      '  var el=document.getElementById("opp-data"); if(!el) return; var D=JSON.parse(el.textContent);\n' +
+      '  var M={}; D.metros.forEach(function(m){ M[m.id]=m; });\n' +
+      '  function br(x,b){ var t=0,lo=0; for(var i=0;i<b.length;i++){ var top=b[i][0], r=b[i][1]; var hi=(top===null)?x:Math.min(x,top); if(hi>lo) t+=(hi-lo)*r; if(top===null||x<=top) break; lo=top; } return t; }\n' +
+      '  function taxes(g,s,mid){ var T=D.tax, gross=g+s, f=T.federal_mfj; var fed=br(Math.max(0,gross-f.standard_deduction),f.brackets);\n' +
+      '    var fi=T.fica, fica=0; [g,s].forEach(function(x){ fica+=Math.min(x,fi.ss_wage_base)*fi.social_security + x*fi.medicare; }); fica+=Math.max(0,gross-fi.addl_medicare_over_mfj[0])*fi.addl_medicare_over_mfj[1];\n' +
+      '    var st=T.state[T.metro_state[mid]], state=0; if(st.type==="flat") state=st.rate*Math.max(0,gross-st.deduction); else if(st.type==="brackets") state=br(Math.max(0,gross-st.deduction),st.brackets);\n' +
+      '    var loc=T.local_by_metro[mid], local=loc?loc.rate*gross:0; return {gross:gross,fed:fed,fica:fica,state:state+local,net:gross-fed-fica-state-local}; }\n' +
+      '  function Mf(r){ var i=r/12,n=360; return i*Math.pow(1+i,n)/(Math.pow(1+i,n)-1); }\n' +
+      '  function scen(g,s,mid){ var m=M[mid], t=taxes(g,s,mid); t.rent=m.rent; t.left=(t.net-m.rent*12)/12; t.budget=0.28*t.gross/12/(0.8*Mf(0.065)+(m.tax+m.ins)/12);\n' +
+      '    t.fits=m.locs.filter(function(l){ return l.price!==null && l.price<=t.budget; }).map(function(l){ return l.area; }); t.nlocs=m.locs.length; t.ks=m.ks; t.label=m.label; return t; }\n' +
+      '  function $(id){ return document.getElementById(id); } function num(id){ var v=parseFloat($(id).value); return isFinite(v)&&v>=0?v:0; }\n' +
+      '  function f0(n){ return "$"+Math.round(n).toLocaleString("en-US"); }\n' +
+      '  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;","\\"":"&quot;"}[c]; }); }\n' +
+      '  function run(){ var mid=$("oe-metro").value; var g=num("oe-base")*(1+num("oe-bonus")/100);\n' +
+      '    var o=scen(g,num("oe-sp-new"),mid), s=scen(num("oe-stay"),num("oe-sp-stay"),D.stay);\n' +
+      '    var ch=s.left!==0?(o.left-s.left)/Math.abs(s.left)*100:0, thr=num("oe-thr"), up=ch>=thr;\n' +
+      '    var row=function(k,a,b){ return "<tr><th>"+k+"</th><td>"+a+"</td><td>"+b+"</td></tr>"; };\n' +
+      '    var h="<div class=\\"opp-verdict "+(up?"up":"no")+"\\" data-change=\\""+ch.toFixed(1)+"\\">"+(up?"Levels the family up":"Does not clear the bar")+": <strong>"+(ch>=0?"+":"")+ch.toFixed(1)+"%</strong> monthly money left vs staying (threshold "+thr+"%)</div>";\n' +
+      '    h+="<div class=\\"table-wrap\\"><table class=\\"opp-table\\"><thead><tr><th></th><th>Offer: "+esc(o.label)+"</th><th>Stay: Spring Hill</th></tr></thead><tbody>";\n' +
+      '    h+=row("Household income",f0(o.gross),f0(s.gross))+row("Federal + FICA",f0(o.fed+o.fica),f0(s.fed+s.fica))+row("State + local income tax",f0(o.state),f0(s.state));\n' +
+      '    h+=row("Take-home per month",f0(o.net/12),f0(s.net/12))+row("Typical 3BR rent",f0(o.rent)+"/mo",f0(s.rent)+"/mo");\n' +
+      '    h+=row("<strong>Left per month</strong>","<strong data-oe=\\"left\\">"+f0(o.left)+"</strong>","<strong data-oe=\\"stay-left\\">"+f0(s.left)+"</strong>");\n' +
+      '    h+=row("Home this income supports today",f0(o.budget),f0(s.budget))+row("Matrix locations in reach today",o.fits.length+" of "+o.nlocs,s.fits.length+" of "+s.nlocs);\n' +
+      '    h+=row("Kendra Scott stores in metro",o.ks?o.ks:"none found",s.ks)+"</tbody></table></div>";\n' +
+      '    if(o.fits.length) h+="<p class=\\"ptier-help\\">In reach: "+o.fits.map(esc).join(", ")+"</p>";\n' +
+      '    $("oe-out").innerHTML=h; }\n' +
+      '  ["oe-metro","oe-base","oe-bonus","oe-sp-new","oe-stay","oe-sp-stay","oe-thr"].forEach(function(id){ var e=$(id); if(e){ e.addEventListener("input",run); e.addEventListener("change",run); } });\n' +
+      '  run();\n' +
+      '  var sec=document.getElementById("opportunities");\n' +
+      '  if(sec){ var chips=sec.querySelectorAll(".opp-chip"); Array.prototype.forEach.call(chips,function(c){ c.addEventListener("click",function(){ var t=c.getAttribute("data-tag");\n' +
+      '    Array.prototype.forEach.call(chips,function(x){ x.classList.toggle("active",x===c); });\n' +
+      '    Array.prototype.forEach.call(sec.querySelectorAll(".opp-co"),function(li){ var ok=t==="all"||(" "+li.getAttribute("data-tags")+" ").indexOf(" "+t+" ")>=0; li.style.display=ok?"":"none"; });\n' +
+      '    Array.prototype.forEach.call(sec.querySelectorAll(".opp-metro"),function(m){ if(t!=="all"){ var any=m.querySelector(".opp-co:not([style*=\\"none\\"])"); if(any) m.open=true; } });\n' +
+      '  }); }); }\n' +
+      '})();\n' +
+      '</' + 'script>';
+  }
+  const oppNav = opportunities ? '      <a href="#opportunities">Opportunities</a>\n' : '';
+
   // Decision tiers
   const tierOrder = [
     ['tier_1_serious_finalists', 'Tier 1', 'one', 'Serious finalists', 'These should anchor the relocation conversation.'],
@@ -716,7 +932,7 @@ ${heroStats}
       <a href="#categories">Category Winners</a>
       <a href="#states">State Picks</a>
       <a href="#nashville">Nashville Metro</a>
-${extendedNav}${phaseNav}${pathsNav}      <a href="#tiers">Decision Tiers</a>
+${extendedNav}${phaseNav}${pathsNav}${oppNav}      <a href="#tiers">Decision Tiers</a>
       <a href="#recommendation">Recommendation</a>
     </div>
   </nav>
@@ -807,6 +1023,7 @@ ${nashville}
 ${extended}
 ${phasePlan}
 ${pathsToYes}
+${opportunities}
     <section id="tiers">
       <div class="section-title">
         <h2>Decision tiers</h2>
@@ -841,7 +1058,8 @@ ${recs}
     </p>
   </footer>
 ${clientScript}
-${pathsScript}`;
+${pathsScript}
+${oppScript}`;
 }
 
 function buildFullPage(data, styles) {
