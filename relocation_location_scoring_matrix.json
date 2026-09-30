@@ -1132,7 +1132,7 @@
       "area": "Spring Hill (Summit / Page Zones, Williamson County)",
       "state": "Tennessee",
       "state_abbr": "TN",
-      "metro": "Nashville",
+      "metro": "nashville",
       "strategic_label": "Confirmed 2028 rental base / Franklin affordability fix",
       "est_2028_rent": 2300,
       "best_rental_submarket": "Williamson side (Chapman's Retreat, Villas at Port Royal, Harvest Point, Somerset Springs)",
@@ -1863,7 +1863,7 @@
       "area": "Tampa",
       "state": "Florida",
       "state_abbr": "FL",
-      "metro": "Tampa Bay",
+      "metro": "tampa",
       "strategic_label": "Gulf-coast metro with real budget headroom / insurance and zone variance are the trade",
       "est_2028_rent": 2100,
       "best_rental_submarket": "Tampa city / New Tampa (Hillsborough County - verify zone; Wesley Chapel is Pasco County, a separate district)",
@@ -2043,7 +2043,7 @@
       "area": "Hendersonville",
       "state": "Tennessee",
       "state_abbr": "TN",
-      "metro": "Nashville",
+      "metro": "nashville",
       "strategic_label": "Closest Nashville downtown/East Bank access / rental cap is the constraint",
       "est_2028_rent": 2350,
       "best_rental_submarket": "Hendersonville (Sumner County, Indian Lake area)",
@@ -2222,7 +2222,7 @@
       "area": "Gallatin",
       "state": "Tennessee",
       "state_abbr": "TN",
-      "metro": "Nashville",
+      "metro": "nashville",
       "strategic_label": "Most affordable Nashville-metro option",
       "est_2028_rent": 2150,
       "best_rental_submarket": "Gallatin (Kindrey @ Hwy 109 / Long Hollow Pike)",
@@ -2986,7 +2986,7 @@
       "area": "Mount Juliet",
       "state": "Tennessee",
       "state_abbr": "TN",
-      "metro": "Nashville",
+      "metro": "nashville",
       "strategic_label": "Best-commute Nashville-metro suburb",
       "est_2028_rent": 2300,
       "best_rental_submarket": "Providence area (Highlands at Hickory Hills / Willow Creek)",
@@ -4403,7 +4403,7 @@
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
-      "metro": "Nashville",
+      "metro": "nashville",
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Lifestyle premium option",
       "scores": {
@@ -6296,6 +6296,11 @@
         "rate": 0.0195,
         "note": "Kenton County 0.70% + Fort Mitchell 1.25% payroll tax (Kentucky side)",
         "source": "https://fortmitchell.com/finance-taxes/taxesfinancial-info-2/"
+      },
+      "louisville": {
+        "rate": 0.0145,
+        "note": "Louisville Metro nonresident occupational tax (applies to a job in Jefferson County; Oldham County levies none)",
+        "source": "https://louisvilleky.gov/sites/default/files/2026-01/Louisville%20Metro%20Revenue%20Commission%20Regulations%20(2026).1.pdf"
       }
     },
     "metro_state": {
@@ -7499,7 +7504,7 @@
       "states": "FL",
       "home_base": false,
       "wave": 2,
-      "researched": false,
+      "researched": true,
       "locations": [
         {
           "area": "Tampa",
@@ -7513,11 +7518,116 @@
         }
       ],
       "representative": "Tampa",
-      "rent_3br": null,
-      "kendra_scott": [],
-      "companies": [],
+      "rent_3br": 2655,
+      "rent_note": "Tampa 3BR apartment average, 2026 (Lakeland runs ~$1,760)",
+      "rent_source": "https://www.rentcafe.com/apartments-for-rent/tampa-fl/3-bedroom/",
+      "kendra_scott": [
+        {
+          "store": "Tampa - International Plaza",
+          "source": "https://www.simon.com/mall/international-plaza/stores/kendra-scott"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Raymond James Financial",
+          "sector": "Wealth management / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Headquartered in St. Petersburg since 1962; the anchor of Tampa Bay's finance cluster.",
+          "role_families": [
+            "Digital Product Manager (advisor / client platforms)",
+            "AI / data product"
+          ],
+          "office": "St. Petersburg (HQ)",
+          "source": "https://tampabayedc.com/investor/raymond-james/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Citi - Tampa hub",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "One of Citi's four global strategic hubs (~4,800 in operations) plus one of its largest technology operations.",
+          "role_families": [
+            "Product Owner (operations / treasury tech)",
+            "Data / AI product"
+          ],
+          "office": "Tampa",
+          "source": "https://kitalent.com/articles/article-tampa-financial-services-hiring-gap/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "JPMorgan Chase - Tampa Palms",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "~3,200 local staff in commercial banking, mortgage servicing and fraud-detection analytics.",
+          "role_families": [
+            "Product Manager (fraud / analytics)",
+            "Product Owner"
+          ],
+          "office": "Tampa Palms",
+          "source": "https://kitalent.com/articles/article-tampa-financial-services-hiring-gap/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Jabil",
+          "sector": "Manufacturing tech",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Fortune 500 manufacturing-services company headquartered in St. Petersburg.",
+          "role_families": [
+            "Digital / AI transformation product roles"
+          ],
+          "office": "St. Petersburg (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Jabil",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Bloomin' Brands",
+          "sector": "Restaurants / consumer brands",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Headquartered in Tampa (Outback, Carrabba's, Bonefish, Fleming's) - consumer brand marketing and loyalty.",
+          "role_families": [
+            "Digital / loyalty product",
+            "Brand marketing"
+          ],
+          "office": "Tampa (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Bloomin%27_Brands",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Vinik Sports Group / Embarc Collective",
+          "sector": "Sports org + startup hub",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "The Lightning's owner funded Embarc Collective, a downtown hub for ~50 startups; Vinik Sports Group runs its facility and technology.",
+          "role_families": [
+            "Startup product roles",
+            "Team business / digital roles"
+          ],
+          "office": "Tampa (Water Street)",
+          "source": "https://www.tampabay.com/news/business/2020/02/04/jeff-viniks-embarc-collective-innovation-hub-opens-in-tampa/?outputType=amp",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
       "spouse_content": [],
-      "gaps": "Company research scheduled for wave 2."
+      "gaps": "Foot Locker cancelled its planned St. Petersburg HQ move after the Dick's acquisition (https://wwd.com/footwear-news/shoe-industry-news/foot-locker-florida-headquarters-move-canceled-1238351379/). Sports-tech is early-stage here."
     },
     {
       "id": "jacksonville",
@@ -7783,7 +7893,7 @@
       "states": "KY",
       "home_base": false,
       "wave": 2,
-      "researched": false,
+      "researched": true,
       "locations": [
         {
           "area": "Oldham County (Crestwood / La Grange)",
@@ -7792,11 +7902,98 @@
         }
       ],
       "representative": "Oldham County (Crestwood / La Grange)",
-      "rent_3br": null,
-      "kendra_scott": [],
-      "companies": [],
+      "rent_3br": 2110,
+      "rent_note": "Oldham County 3BR home average (range $1,350-$2,750; La Grange median ~$1,723)",
+      "rent_source": "https://www.homes.com/oldham-county-ky/houses-for-rent/",
+      "kendra_scott": [
+        {
+          "store": "Louisville - Oxmoor Center",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265082"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Humana",
+          "sector": "Health insurance / digital",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Kentucky's only Fortune 500 company, consolidating its Louisville HQ at the Waterside-Clocktower campus.",
+          "role_families": [
+            "Digital Product Manager",
+            "AI / analytics product"
+          ],
+          "office": "Louisville (HQ)",
+          "source": "https://www.wdrb.com/news/business/brown-forman-sale-battery-plant-layoffs-wawa-debut-headline-louisville-area-business-news-of-2025/article_28961fc7-4665-4fe8-99be-86f51f31414d.html",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Yum! Brands",
+          "sector": "Restaurants / consumer brands",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Taco Bell, KFC and Pizza Hut parent; moving 550 employees to a new downtown HQ at PNC Tower in late 2026. Heavy investment in digital ordering and AI.",
+          "role_families": [
+            "Digital Product Manager",
+            "Consumer app / AI product"
+          ],
+          "office": "Louisville (HQ)",
+          "source": "https://www.wdrb.com/news/business/louisville-based-yum-brands-will-move-headquarters-550-employees-to-downtown-tower/article_a730665d-56a1-4b9a-b703-002ac5b23e16.html",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "GE Appliances (Haier)",
+          "sector": "Consumer products",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Global HQ at Appliance Park with R&D and corporate offices; investing $490M and 800 jobs. Home products - close to Sherwin-Williams' consumer world.",
+          "role_families": [
+            "Connected-home product",
+            "Digital marketing / e-commerce"
+          ],
+          "office": "Louisville (HQ)",
+          "source": "https://pressroom.geappliances.com/media-kit/appliance-park-louisville-kentucky",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Brown-Forman",
+          "sector": "Consumer brands (spirits)",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Jack Daniel's and Woodford Reserve parent; ~14% of its global staff work at the Louisville HQ.",
+          "role_families": [
+            "Brand digital / consumer insights"
+          ],
+          "office": "Louisville (HQ)",
+          "source": "https://www.brown-forman.com/where-we-operate",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Hillerich & Bradsby (Louisville Slugger)",
+          "sector": "Sporting goods",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Makes Louisville Slugger bats for Wilson Sporting Goods; runs the Louisville Slugger Museum & Factory. More sporting goods than sports-tech.",
+          "role_families": [
+            "Brand / product marketing"
+          ],
+          "office": "Louisville",
+          "source": "https://en.wikipedia.org/wiki/Hillerich_%26_Bradsby",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
       "spouse_content": [],
-      "gaps": "Company research scheduled for wave 2."
+      "gaps": "Fintech is thin. Working in Louisville Metro (Jefferson County) adds a 1.45% nonresident occupational tax; Oldham County itself levies none - the evaluator assumes the job is in Louisville Metro."
     },
     {
       "id": "kansas_city",
@@ -7804,7 +8001,7 @@
       "states": "KS",
       "home_base": false,
       "wave": 2,
-      "researched": false,
+      "researched": true,
       "locations": [
         {
           "area": "Olathe (Garmin HQ)",
@@ -7818,11 +8015,90 @@
         }
       ],
       "representative": "Olathe (Garmin HQ)",
-      "rent_3br": null,
-      "kendra_scott": [],
-      "companies": [],
+      "rent_3br": 2195,
+      "rent_note": "Olathe 3BR, 2026 (sources cluster $2,100-$2,200)",
+      "rent_source": "https://www.zumper.com/rent-research/olathe-ks",
+      "kendra_scott": [
+        {
+          "store": "Kansas City - Country Club Plaza",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265028"
+        },
+        {
+          "store": "Leawood - Town Center Crossing",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265053"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Garmin",
+          "sector": "Wearables / fitness tech",
+          "goal_tags": [
+            "sports_tech",
+            "ai_product",
+            "consumer_retail"
+          ],
+          "why": "Headquartered in Olathe (~3,400 at HQ, ~5,000 in the metro); designs its fitness and outdoor watches there. The strongest sports-tech fit in the whole matrix outside Frisco and Austin.",
+          "role_families": [
+            "Product Manager (fitness / wearables)",
+            "Connect app / data product"
+          ],
+          "office": "Olathe (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Garmin",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "H&R Block",
+          "sector": "Tax / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Headquartered in downtown Kansas City, MO; consumer fintech with AI tax-assist products.",
+          "role_families": [
+            "Product Manager (consumer tax / AI)"
+          ],
+          "office": "Kansas City, MO (HQ)",
+          "source": "https://www.hines.com/properties/hr-block-world-headquarters-kansas-city",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "C2FO",
+          "sector": "Fintech (working capital)",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Leawood-founded working-capital marketplace and one of Kansas City's tech unicorns.",
+          "role_families": [
+            "Product Manager"
+          ],
+          "office": "Leawood",
+          "source": "https://fullscale.io/blog/top-kansas-city-startups/",
+          "verified": false,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Hallmark",
+          "sector": "Consumer brand / content",
+          "goal_tags": [
+            "consumer_retail",
+            "spouse_content"
+          ],
+          "why": "Headquartered in Kansas City, MO; hiring digital content strategists, social content designers, and a remote Digital Product Owner.",
+          "role_families": [
+            "Digital Product Owner",
+            "Digital content strategist",
+            "Social content"
+          ],
+          "office": "Kansas City, MO (HQ)",
+          "source": "https://careers.hallmark.com/Headquarters KC MO/job/Kansas-City-Digital-Product-Owner-KS-64108/770928900/",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
       "spouse_content": [],
-      "gaps": "Company research scheduled for wave 2."
+      "gaps": "Kansas City, MO charges a 1% earnings tax on work done inside city limits (H&R Block, Hallmark). Garmin in Olathe does not - the evaluator assumes an Olathe job."
     },
     {
       "id": "des_moines",
@@ -7830,7 +8106,7 @@
       "states": "IA",
       "home_base": false,
       "wave": 2,
-      "researched": false,
+      "researched": true,
       "locations": [
         {
           "area": "West Des Moines",
@@ -7844,11 +8120,114 @@
         }
       ],
       "representative": "West Des Moines",
-      "rent_3br": null,
-      "kendra_scott": [],
-      "companies": [],
-      "spouse_content": [],
-      "gaps": "Company research scheduled for wave 2."
+      "rent_3br": 1812,
+      "rent_note": "West Des Moines 3BR, 2026 (sources cluster $1,600-$1,850; Waukee houses ~$2,100)",
+      "rent_source": "https://www.rentcafe.com/average-rent-market-trends/us/ia/west-des-moines/",
+      "kendra_scott": [
+        {
+          "store": "West Des Moines - Jordan Creek",
+          "source": "https://www.kendrascott.com/stores/directory"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Principal Financial Group",
+          "sector": "Retirement / asset management",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Headquartered downtown with 5,000-9,999 local staff.",
+          "role_families": [
+            "Digital Product Manager",
+            "AI / data product"
+          ],
+          "office": "Des Moines (HQ)",
+          "source": "https://www.dsmpartnership.com/filesimages/2026/PDF/Major%20Employer%20List%202026.pdf",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Wells Fargo",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "10,000+ employees in Des Moines and West Des Moines (home mortgage and operations).",
+          "role_families": [
+            "Product Manager (mortgage / digital)"
+          ],
+          "office": "West Des Moines",
+          "source": "https://www.dsmpartnership.com/filesimages/2026/PDF/Major%20Employer%20List%202026.pdf",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Athene",
+          "sector": "Annuities / insurance-fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "~1,250 employees in West Des Moines.",
+          "role_families": [
+            "Product / digital roles"
+          ],
+          "office": "West Des Moines",
+          "source": "https://builtin.com/companies/location/des-moines/type/fintech-companies",
+          "verified": false,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Dwolla",
+          "sector": "Payments fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Des Moines account-to-account payments company (~150 employees).",
+          "role_families": [
+            "Product Manager (payments API)"
+          ],
+          "office": "Des Moines (HQ)",
+          "source": "https://builtin.com/companies/location/des-moines/type/fintech-companies",
+          "verified": false,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Hy-Vee",
+          "sector": "Grocery retail",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Headquartered in West Des Moines with 10,000+ local staff; retail media and digital.",
+          "role_families": [
+            "Digital / e-commerce product",
+            "Retail media"
+          ],
+          "office": "West Des Moines (HQ)",
+          "source": "https://www.dsmpartnership.com/filesimages/2026/PDF/Major%20Employer%20List%202026.pdf",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [
+        {
+          "name": "People Inc. (formerly Dotdash Meredith) - Test Kitchen and Content Studios",
+          "sector": "Media / content",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Better Homes & Gardens and Allrecipes content studios in Des Moines: 10 test kitchens and 6 photo studio kitchens.",
+          "role_families": [
+            "Content producer",
+            "Social / video content"
+          ],
+          "office": "Des Moines",
+          "source": "https://en.wikipedia.org/wiki/People_Inc.",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
+      "gaps": "Sports-tech is thin."
     },
     {
       "id": "huntsville",
@@ -7916,7 +8295,7 @@
       "states": "TN",
       "home_base": false,
       "wave": 2,
-      "researched": false,
+      "researched": true,
       "locations": [
         {
           "area": "Farragut",
@@ -7925,11 +8304,83 @@
         }
       ],
       "representative": "Farragut",
-      "rent_3br": null,
-      "kendra_scott": [],
-      "companies": [],
-      "spouse_content": [],
-      "gaps": "Company research scheduled for wave 2."
+      "rent_3br": 1979,
+      "rent_note": "Farragut 3BR apartment average, 2026 (3BR homes ~$2,376)",
+      "rent_source": "https://www.rentcafe.com/average-rent-market-trends/us/tn/farragut/",
+      "kendra_scott": [
+        {
+          "store": "Knoxville - Kingston Pike",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265098"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Pilot Company",
+          "sector": "Travel centers / retail",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Headquartered in Knoxville; 800+ travel centers with a growing app and loyalty business.",
+          "role_families": [
+            "Digital Product Manager (app / loyalty)"
+          ],
+          "office": "Knoxville (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Pilot_Company",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Regal Cinemas",
+          "sector": "Entertainment / consumer",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Headquartered in Knoxville.",
+          "role_families": [
+            "Digital / loyalty product"
+          ],
+          "office": "Knoxville (HQ)",
+          "source": "https://www.zippia.com/advice/largest-companies-in-tennessee/",
+          "verified": false,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Clayton Homes",
+          "sector": "Housing / fintech",
+          "goal_tags": [
+            "fintech",
+            "consumer_retail"
+          ],
+          "why": "Largest U.S. manufactured-home builder, headquartered in Maryville, with its own home-lending arm.",
+          "role_families": [
+            "Digital Product Manager (home buying / lending)"
+          ],
+          "office": "Maryville (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Clayton_Homes",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [
+        {
+          "name": "Warner Bros. Discovery (HGTV / Food Network)",
+          "sector": "Media / lifestyle content",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "The former Scripps Networks HQ; still operates a 50,000 sq ft Knoxville office with producers and writers after downsizing.",
+          "role_families": [
+            "Digital producer",
+            "Social content"
+          ],
+          "office": "Knoxville (Brookview Promenade)",
+          "source": "https://www.costar.com/article/814890183/headquarters-sale-spurs-major-tennessee-relocation-lease",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
+      "gaps": "No income tax (Tennessee). AI product and sports-tech are thin; Oak Ridge National Laboratory is nearby for AI research, not product."
     },
     {
       "id": "greenville",
@@ -7937,7 +8388,7 @@
       "states": "SC",
       "home_base": false,
       "wave": 2,
-      "researched": false,
+      "researched": true,
       "locations": [
         {
           "area": "Greenville",
@@ -7946,11 +8397,66 @@
         }
       ],
       "representative": "Greenville",
-      "rent_3br": null,
-      "kendra_scott": [],
-      "companies": [],
+      "rent_3br": 1856,
+      "rent_note": "Greenville 3BR, Sept 2026 (sources $1,781-$1,971)",
+      "rent_source": "https://www.zillow.com/rental-manager/market-trends/greenville-sc/",
+      "kendra_scott": [
+        {
+          "store": "Greenville - Haywood Mall",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265194"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Michelin North America",
+          "sector": "Mobility / manufacturing",
+          "goal_tags": [
+            "ai_product",
+            "consumer_retail"
+          ],
+          "why": "North American HQ in Greenville (21,700+ employees).",
+          "role_families": [
+            "Digital / data product",
+            "Connected-fleet product"
+          ],
+          "office": "Greenville (HQ)",
+          "source": "https://www.upstatescalliance.com/organization/michelin-north-america-inc/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "BMW Manufacturing",
+          "sector": "Automotive",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Plant Spartanburg, 5,000+ employees - the Upstate's anchor employer.",
+          "role_families": [
+            "Digital / AI manufacturing roles"
+          ],
+          "office": "Greer",
+          "source": "https://www.upstatescalliance.com/major-employers/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Prisma Health",
+          "sector": "Healthcare / digital",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Headquartered in Greenville (~14,000 employees).",
+          "role_families": [
+            "Digital Product Manager"
+          ],
+          "office": "Greenville (HQ)",
+          "source": "https://pitchbook.com/profiles/company/343583-20",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
       "spouse_content": [],
-      "gaps": "Company research scheduled for wave 2."
+      "gaps": "Fintech, sports-tech and consumer brands are thin."
     },
     {
       "id": "auburn",
@@ -7958,7 +8464,7 @@
       "states": "AL",
       "home_base": false,
       "wave": 2,
-      "researched": false,
+      "researched": true,
       "locations": [
         {
           "area": "Auburn / Opelika",
@@ -7967,11 +8473,45 @@
         }
       ],
       "representative": "Auburn / Opelika",
-      "rent_3br": null,
+      "rent_3br": 1836,
+      "rent_note": "Auburn 3BR, 2026 (sources vary $1,386-$2,528 because of student housing)",
+      "rent_source": "https://www.apartments.com/rent-market-trends/auburn-al/",
       "kendra_scott": [],
-      "companies": [],
+      "companies": [
+        {
+          "name": "Auburn University - Harbert College of Business",
+          "sector": "Higher education (AACSB)",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "The professor path: AACSB-accredited, and posting tenure-track Business Analytics & Information Systems roles plus a Lecturer / Professor of Practice (teaching machine learning and analytics). After the DBA, the Professor of Practice route fits.",
+          "role_families": [
+            "Professor of Practice / Lecturer",
+            "Assistant Professor (after DBA)"
+          ],
+          "office": "Auburn",
+          "source": "https://business.academickeys.com/seeker_job_display.php?dothis=display&job%5BIDX%5D=280205-280205-rss",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Auburn Research Park",
+          "sector": "University research park",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "171-acre university-affiliated park for startups and commercialization.",
+          "role_families": [
+            "Startup / venture roles"
+          ],
+          "office": "Auburn",
+          "source": "https://businessalabama.com/auburn-research-park/",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
       "spouse_content": [],
-      "gaps": "Company research scheduled for wave 2."
+      "gaps": "A college town: corporate roles are mostly manufacturing (Mando, Pharmavite). No Kendra Scott store found nearby. Best as a professor-phase option, not a corporate one."
     },
     {
       "id": "richmond",
@@ -7979,7 +8519,7 @@
       "states": "VA",
       "home_base": false,
       "wave": 2,
-      "researched": false,
+      "researched": true,
       "locations": [
         {
           "area": "Glen Allen / Midlothian",
@@ -7988,11 +8528,86 @@
         }
       ],
       "representative": "Glen Allen / Midlothian",
-      "rent_3br": null,
-      "kendra_scott": [],
-      "companies": [],
-      "spouse_content": [],
-      "gaps": "Company research scheduled for wave 2."
+      "rent_3br": 2500,
+      "rent_note": "Glen Allen 3BR, Aug 2026 (sources $2,357-$2,607)",
+      "rent_source": "https://www.zillow.com/rental-manager/market-trends/glen-allen-va/",
+      "kendra_scott": [
+        {
+          "store": "Richmond - Short Pump Town Center",
+          "source": "https://www.kendrascott.com/stores/directory"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Capital One - West Creek",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Capital One's largest campus (11 buildings, 5,000+ associates), 20 minutes from Glen Allen - a product-management-heavy bank.",
+          "role_families": [
+            "Product Manager",
+            "Senior Product Manager (AI / data)"
+          ],
+          "office": "Goochland (West Creek)",
+          "source": "https://www.capitalonecareers.com/richmond",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "CarMax",
+          "sector": "Auto retail / digital",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Richmond HQ; in 2026 centralized strategy, data science, AI and pricing, and created a Chief Digital and Customer Officer over product and Edmunds.",
+          "role_families": [
+            "Digital Product Manager",
+            "AI / pricing product"
+          ],
+          "office": "Richmond (HQ)",
+          "source": "https://media.carmax.com/press-releases/news-release/2026/CarMax-Announces-Leadership-Appointments-to-Further-Unify-End-to-End-Customer-Experience-Advance-Strategy-for-Growth/default.aspx",
+          "verified": true,
+          "checked": "2026-09",
+          "note": "CarMax cut 145 corporate jobs in Sept 2026, about half in Richmond: https://richmondbizsense.com/2026/09/21/carmax-lays-off-145-corporate-employees-nearly-half-of-them-based-in-richmond-area/"
+        },
+        {
+          "name": "Altria",
+          "sector": "Consumer products",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Fortune 500 (#221) headquartered in Henrico County.",
+          "role_families": [
+            "Consumer insights / digital"
+          ],
+          "office": "Henrico (HQ)",
+          "source": "https://www.grpva.com/news/12-greater-richmond-companies-make-the-2026-fortune-1000/",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [
+        {
+          "name": "The Martin Agency",
+          "sector": "Advertising / social content",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Richmond ad agency (GEICO, OREO, UPS, CarMax) with always-on social teams and rapid-response content producers.",
+          "role_families": [
+            "Social media manager",
+            "Content producer"
+          ],
+          "office": "Richmond (HQ)",
+          "source": "https://en.wikipedia.org/wiki/The_Martin_Agency",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
+      "gaps": "Sports-tech is thin."
     },
     {
       "id": "nova",
@@ -8000,7 +8615,7 @@
       "states": "VA",
       "home_base": false,
       "wave": 2,
-      "researched": false,
+      "researched": true,
       "locations": [
         {
           "area": "Leesburg / Ashburn",
@@ -8009,11 +8624,106 @@
         }
       ],
       "representative": "Leesburg / Ashburn",
-      "rent_3br": null,
-      "kendra_scott": [],
-      "companies": [],
+      "rent_3br": 3300,
+      "rent_note": "Ashburn 3BR, Sept 2026 (sources $3,300-$4,669)",
+      "rent_source": "https://www.renthop.com/average-rent-in/ashburn-va",
+      "kendra_scott": [
+        {
+          "store": "Ashburn - One Loudoun (opened late 2025)",
+          "source": "https://theburn.com/2025/11/28/loudouns-first-kendra-scott-boutique-starts-soft-opening/"
+        },
+        {
+          "store": "Reston Town Center",
+          "source": null
+        },
+        {
+          "store": "Tysons Corner Center",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265140"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Capital One (HQ)",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Global headquarters in McLean.",
+          "role_families": [
+            "Product Manager",
+            "Senior Product Manager (AI / ML)"
+          ],
+          "office": "McLean (HQ)",
+          "source": "https://www.capitalone.com/about/corporate-information/corporate-offices/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Freddie Mac",
+          "sector": "Housing finance",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Headquartered in McLean.",
+          "role_families": [
+            "Product Manager (mortgage tech)"
+          ],
+          "office": "McLean (HQ)",
+          "source": "https://www.freddiemac.com/about/contact-us",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Navy Federal Credit Union",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Headquartered in Vienna.",
+          "role_families": [
+            "Digital Product Manager"
+          ],
+          "office": "Vienna (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Navy_Federal_Credit_Union",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Amazon HQ2",
+          "sector": "Tech / AI",
+          "goal_tags": [
+            "ai_product",
+            "consumer_retail"
+          ],
+          "why": "Phase 1 open at Met Park, Arlington.",
+          "role_families": [
+            "Product Manager - Technical",
+            "AI product"
+          ],
+          "office": "Arlington",
+          "source": "https://fairfaxcountyeda.org/key-industries/corporate-headquarters/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Hilton",
+          "sector": "Hospitality / consumer brand",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Global HQ in McLean; consumer app and loyalty.",
+          "role_families": [
+            "Digital Product Manager (Honors app)"
+          ],
+          "office": "McLean (HQ)",
+          "source": "https://www.insidenova.com/headlines/hilton-to-expand-headquarters-in-mclean/article_2359307e-1404-11ed-b0fe-e7c061b60962.html",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
       "spouse_content": [],
-      "gaps": "Company research scheduled for wave 2."
+      "gaps": "The top fintech/AI market in the wave-2 set, but rent (~$3,300) is well above the rent ceiling. Sports-tech is thin."
     },
     {
       "id": "new_york",
@@ -8021,7 +8731,7 @@
       "states": "NJ",
       "home_base": false,
       "wave": 2,
-      "researched": false,
+      "researched": true,
       "locations": [
         {
           "area": "Jersey City",
@@ -8035,13 +8745,199 @@
         }
       ],
       "representative": "Jersey City",
-      "rent_3br": null,
-      "kendra_scott": [],
-      "companies": [],
+      "rent_3br": 4067,
+      "rent_note": "Jersey City 3BR average (median $3,500; waterfront towers $5,700+)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/nj/jersey-city-nj",
+      "kendra_scott": [
+        {
+          "store": "Short Hills - The Mall at Short Hills",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265099"
+        },
+        {
+          "store": "Paramus - Garden State Plaza",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265141"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Goldman Sachs - Jersey City",
+          "sector": "Investment banking / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Goldman Sachs Tower at 30 Hudson Street on the Jersey City waterfront.",
+          "role_families": [
+            "Product Manager (platform / AI)"
+          ],
+          "office": "Jersey City",
+          "source": "https://en.wikipedia.org/wiki/30_Hudson_Street",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Fidelity Investments - Jersey City",
+          "sector": "Investments / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Office at 499 Washington Blvd, Newport.",
+          "role_families": [
+            "Digital Product Manager"
+          ],
+          "office": "Jersey City (Newport)",
+          "source": "https://en.wikipedia.org/wiki/Wall_Street_West",
+          "verified": false,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Verisk",
+          "sector": "Data analytics / insurtech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Major operations on the Newport waterfront.",
+          "role_families": [
+            "Product Manager (data / AI)"
+          ],
+          "office": "Jersey City (Newport)",
+          "source": "https://en.wikipedia.org/wiki/Wall_Street_West",
+          "verified": false,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Fanatics",
+          "sector": "Sports commerce / tech",
+          "goal_tags": [
+            "sports_tech",
+            "consumer_retail"
+          ],
+          "why": "Headquartered in NYC (one PATH ride away); adding 300 NYC jobs in a $50M expansion announced Feb 2026.",
+          "role_families": [
+            "Product Manager (commerce / collectibles / betting)"
+          ],
+          "office": "New York (HQ)",
+          "source": "https://www.areadevelopment.com/newsItems/2-28-2026/fanatics-new-york-city.shtml",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Genius Sports",
+          "sector": "Sports data / AI",
+          "goal_tags": [
+            "sports_tech",
+            "ai_product"
+          ],
+          "why": "Sports data and technology for the NFL, NBA and EPL; co-headquartered in New York and London.",
+          "role_families": [
+            "Product Manager (sports data)"
+          ],
+          "office": "New York",
+          "source": "https://en.wikipedia.org/wiki/Genius_Sports",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
       "spouse_content": [],
-      "gaps": "Company research scheduled for wave 2."
+      "gaps": "Every focus area is deep across the river in Manhattan, but rent is ~$4,000+ and New Jersey income tax applies - an offer has to be large to clear the bar."
     }
   ],
   "applications": [],
-  "remote_first": []
+  "remote_first": [
+    {
+      "name": "Hudl",
+      "sector": "Sports-tech (video / performance)",
+      "goal_tags": [
+        "sports_tech",
+        "ai_product"
+      ],
+      "why": "Lincoln, NE sports-video company that hires product managers remotely from a listed set of states that includes Tennessee - sports-tech without moving.",
+      "role_families": [
+        "Product Manager",
+        "Senior Product Manager - Athlete Performance"
+      ],
+      "office": "Remote (TN eligible)",
+      "source": "https://remotive.com/remote/jobs/product/product-manager-4357365",
+      "verified": true,
+      "checked": "2026-09"
+    },
+    {
+      "name": "Coinbase",
+      "sector": "Crypto / fintech",
+      "goal_tags": [
+        "fintech",
+        "ai_product"
+      ],
+      "why": "Remote-first since 2021 and still in 2026; offices are optional. In-person orientation is now required for some roles.",
+      "role_families": [
+        "Product Manager"
+      ],
+      "office": "Remote (US)",
+      "source": "https://wfh.team/remote-policy-tracker/coinbase",
+      "verified": true,
+      "checked": "2026-09"
+    },
+    {
+      "name": "Zapier",
+      "sector": "AI automation software",
+      "goal_tags": [
+        "ai_product"
+      ],
+      "why": "Fully remote across 40+ countries; its product is now AI orchestration (agents, MCP).",
+      "role_families": [
+        "Product Manager (AI)"
+      ],
+      "office": "Remote",
+      "source": "https://en.wikipedia.org/wiki/Zapier",
+      "verified": true,
+      "checked": "2026-09"
+    },
+    {
+      "name": "GitLab",
+      "sector": "Developer platform / AI",
+      "goal_tags": [
+        "ai_product"
+      ],
+      "why": "All-remote with no company offices, per its 2026 handbook.",
+      "role_families": [
+        "Product Manager (AI features)"
+      ],
+      "office": "Remote",
+      "source": "https://handbook.gitlab.com/handbook/company/culture/all-remote/stages/",
+      "verified": true,
+      "checked": "2026-09"
+    },
+    {
+      "name": "Shopify",
+      "sector": "Commerce platform",
+      "goal_tags": [
+        "ai_product",
+        "consumer_retail"
+      ],
+      "why": "\"Digital by default\" - remote-first for most roles; commerce and retail product.",
+      "role_families": [
+        "Product Lead"
+      ],
+      "office": "Remote (with guardrails)",
+      "source": "https://wfa.team/blog/shopify-remote-work-policy-2026/",
+      "verified": false,
+      "checked": "2026-09"
+    },
+    {
+      "name": "Hallmark (remote Digital Product Owner)",
+      "sector": "Consumer brand",
+      "goal_tags": [
+        "consumer_retail"
+      ],
+      "why": "Posted a remote Digital Product Owner role - the same job title Gregg holds today.",
+      "role_families": [
+        "Digital Product Owner"
+      ],
+      "office": "Remote",
+      "source": "https://careers.hallmark.com/Headquarters KC MO/job/Kansas-City-Digital-Product-Owner-KS-64108/770928900/",
+      "verified": true,
+      "checked": "2026-09"
+    }
+  ]
 }
