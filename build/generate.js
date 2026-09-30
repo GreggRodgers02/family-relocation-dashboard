@@ -460,7 +460,7 @@ ${extCards}
           ph.years
         )}</span></div>
           <h3>${esc(ph.label)}</h3>
-          <p class="phase-ages">Child ${esc(ph.child_ages)}</p>
+          <p class="phase-ages">Planned child: ${esc(ph.child_ages)}</p>
           <div class="phase-zone ${zoneCls(ph.school_zone_relevance)}">School zone: ${esc(
           firstSentence(ph.school_zone_relevance)
         )}</div>
@@ -498,12 +498,13 @@ ${extCards}
       .join('\n');
 
     const tl = pp.timeline || {};
+    const familyStatus = [tl.status, tl.child_age_note].filter(Boolean).join('. ');
     const tlChips = [
       ['Rental starts', tl.rental_phase_start],
       ['Purchase', tl.home_purchase_year],
       ['Rental window', tl.rental_window_years ? `${tl.rental_window_years} yrs` : null],
-      ['Child at rental start', tl.child_age_at_rental_start],
-      ['Child at purchase', tl.child_age_at_purchase],
+      ["Planned child's age at rental start", tl.child_age_at_rental_start],
+      ["Planned child's age at purchase", tl.child_age_at_purchase],
     ]
       .filter((x) => x[1] != null && x[1] !== '')
       .map(([k, v]) => `<div class="tl-chip"><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`)
@@ -519,6 +520,7 @@ ${extCards}
         <h3>The rental window is 13 years, not 3</h3>
         <p>${esc(pp.core_insight || '')}</p>
         ${tlChips ? `<div class="tl-grid">${tlChips}</div>` : ''}
+        ${familyStatus ? `<p class="opp-gap">${esc(familyStatus)}</p>` : ''}
       </div>
       <div class="phase-grid">
 ${phaseCards}
