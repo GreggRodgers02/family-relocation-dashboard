@@ -355,6 +355,7 @@
       "area": "Round Rock",
       "state": "Texas",
       "state_abbr": "TX",
+      "metro": "austin",
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Best overall / Budget-cushion career pick",
       "scores": {
@@ -433,6 +434,7 @@
       "area": "Concord / Northwest Cabarrus",
       "state": "North Carolina",
       "state_abbr": "NC",
+      "metro": "charlotte",
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Fintech-PM career fit, motorsports engineering cluster, best Charlotte-metro 2041 affordability",
       "scores": {
@@ -604,6 +606,7 @@
       "area": "McKinney",
       "state": "Texas",
       "state_abbr": "TX",
+      "metro": "dfw",
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Best DFW balance - real BTR inventory and genuine 2041 headroom where Plano and Allen now miss",
       "scores": {
@@ -689,6 +692,7 @@
       "area": "St. Johns County",
       "state": "Florida",
       "state_abbr": "FL",
+      "metro": "jacksonville",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "School-first Florida option",
       "scores": {
@@ -766,6 +770,7 @@
       "area": "Plano",
       "state": "Texas",
       "state_abbr": "TX",
+      "metro": "dfw",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "DFW corporate core and best AACSB density - just over the 2041 budget",
       "scores": {
@@ -846,6 +851,7 @@
       "area": "Murfreesboro",
       "state": "Tennessee",
       "state_abbr": "TN",
+      "metro": "nashville",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Best TN rental-phase and budget headroom / commute is the trade",
       "scores": {
@@ -948,6 +954,7 @@
       "area": "Fort Mitchell / Villa Hills (Beechwood)",
       "state": "Kentucky",
       "state_abbr": "KY",
+      "metro": "cincinnati",
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Kentucky's #1 district plus the densest AACSB cluster outside the Northeast",
       "scores": {
@@ -1043,6 +1050,7 @@
       "area": "Cedar Park",
       "state": "Texas",
       "state_abbr": "TX",
+      "metro": "austin",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "School-max / hardware-corridor stretch pick",
       "scores": {
@@ -1224,6 +1232,7 @@
       "area": "Solon / Rocky River (Cleveland Suburbs)",
       "state": "Ohio",
       "state_abbr": "OH",
+      "metro": "cleveland",
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Schools + affordability sleeper (Sherwin-Williams HQ market)",
       "scores": {
@@ -1367,6 +1376,7 @@
       "area": "Georgetown",
       "state": "Texas",
       "state_abbr": "TX",
+      "metro": "austin",
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Affordable northern Williamson option (zone-gated schools)",
       "scores": {
@@ -1451,6 +1461,7 @@
       "area": "Allen",
       "state": "Texas",
       "state_abbr": "TX",
+      "metro": "dfw",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Elite football and schools - budget headroom is the constraint",
       "scores": {
@@ -1528,6 +1539,7 @@
       "area": "Oviedo",
       "state": "Florida",
       "state_abbr": "FL",
+      "metro": "orlando",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Best Florida no-income-tax option",
       "scores": {
@@ -1609,6 +1621,7 @@
       "area": "Melissa",
       "state": "Texas",
       "state_abbr": "TX",
+      "metro": "dfw",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "McKinney prices with the best build-to-rent supply in the corridor, one step down on schools",
       "scores": {
@@ -1686,6 +1699,7 @@
       "area": "Lake Mary",
       "state": "Florida",
       "state_abbr": "FL",
+      "metro": "orlando",
       "strategic_label": "Seminole schools + Heathrow corporate purchase-phase option",
       "scores": {
         "ai_tech_pm_market": 7.5,
@@ -1769,6 +1783,7 @@
       "area": "Madison / Huntsville",
       "state": "Alabama",
       "state_abbr": "AL",
+      "metro": "huntsville",
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Best value robotics option",
       "scores": {
@@ -1943,6 +1958,7 @@
       "area": "Cary",
       "state": "North Carolina",
       "state_abbr": "NC",
+      "metro": "raleigh",
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Best research ecosystem / Future professor path",
       "scores": {
@@ -2119,6 +2135,7 @@
       "area": "Oldham County (Crestwood / La Grange)",
       "state": "Kentucky",
       "state_abbr": "KY",
+      "metro": "louisville",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Louisville's best district with deep private backup and real budget room",
       "scores": {
@@ -2291,6 +2308,7 @@
       "area": "West Des Moines",
       "state": "Iowa",
       "state_abbr": "IA",
+      "metro": "des_moines",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Biggest budget headroom of any A-rated district in the matrix; sports-tech is the hole",
       "scores": {
@@ -2369,6 +2387,7 @@
       "area": "Buford (Buford City Schools)",
       "state": "Georgia",
       "state_abbr": "GA",
+      "metro": "atlanta",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Georgia's #2 district and its best football, reachable by a kindergarten tuition seat",
       "scores": {
@@ -2455,6 +2474,7 @@
       "area": "Frisco",
       "state": "Texas",
       "state_abbr": "TX",
+      "metro": "dfw",
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Sports-tech epicenter and top schools - fails the 2041 budget",
       "scores": {
@@ -2536,6 +2556,7 @@
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
+      "metro": "charlotte",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Best school-first value option",
       "scores": {
@@ -2624,6 +2645,7 @@
       "area": "Olathe (Garmin HQ)",
       "state": "Kansas",
       "state_abbr": "KS",
+      "metro": "kansas_city",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Garmin global HQ in town - the most direct sports-tech adjacency in the matrix",
       "scores": {
@@ -2703,6 +2725,7 @@
       "area": "Crowley / North Crowley (SW Fort Worth)",
       "state": "Texas",
       "state_abbr": "TX",
+      "metro": "dfw",
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Cheapest DFW entry and the best football in the matrix, gated entirely on public schools",
       "scores": {
@@ -2794,6 +2817,7 @@
       "area": "Overland Park (Blue Valley)",
       "state": "Kansas",
       "state_abbr": "KS",
+      "metro": "kansas_city",
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Elite Kansas schools, but the price leaves only a sliver of 2041 headroom",
       "scores": {
@@ -2873,6 +2897,7 @@
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
+      "metro": "atlanta",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Best Georgia family-access option",
       "scores": {
@@ -3043,6 +3068,7 @@
       "area": "Austin (City Proper)",
       "state": "Texas",
       "state_abbr": "TX",
+      "metro": "austin",
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Maximum career ceiling / urban-core trade on schools and budget",
       "scores": {
@@ -3136,6 +3162,7 @@
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
+      "metro": "greenville",
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Robotics / mobility sleeper",
       "scores": {
@@ -3221,6 +3248,7 @@
       "area": "Clermont",
       "state": "Florida",
       "state_abbr": "FL",
+      "metro": "orlando",
       "strategic_label": "Park-adjacent rental-phase value option",
       "scores": {
         "ai_tech_pm_market": 7.5,
@@ -3299,6 +3327,7 @@
       "area": "Lakeland",
       "state": "Florida",
       "state_abbr": "FL",
+      "metro": "tampa",
       "strategic_label": "Tampa-satellite value option with Orlando reach",
       "est_2028_rent": 1760,
       "scores": {
@@ -3380,6 +3409,7 @@
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
+      "metro": "atlanta",
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Premium but expensive Georgia option",
       "scores": {
@@ -3472,6 +3502,7 @@
       "area": "Davenport / Four Corners",
       "state": "Florida",
       "state_abbr": "FL",
+      "metro": "orlando",
       "strategic_label": "Orlando satellite with Disney Springs access / four-county zoning and resort-rental character are the traps",
       "scores": {
         "ai_tech_pm_market": 7.5,
@@ -3558,6 +3589,7 @@
       "area": "Waukee",
       "state": "Iowa",
       "state_abbr": "IA",
+      "metro": "des_moines",
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Fastest-growing Iowa district, but you pay ~$82K more than West Des Moines for it",
       "scores": {
@@ -3628,6 +3660,7 @@
       "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
+      "metro": "dfw",
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Best-in-DFW schools: houses are priced out, but rentals and Prosper ISD townhomes are not",
       "scores": {
@@ -3700,6 +3733,7 @@
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
+      "metro": "auburn",
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "College-town affordability fallback",
       "scores": {
@@ -3785,6 +3819,7 @@
       "area": "Lake Nona",
       "state": "Florida",
       "state_abbr": "FL",
+      "metro": "orlando",
       "strategic_label": "Best-schools + Medical City innovation option",
       "scores": {
         "ai_tech_pm_market": 7.5,
@@ -3867,6 +3902,7 @@
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
+      "metro": "richmond",
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Virginia value pick",
       "scores": {
@@ -3957,6 +3993,7 @@
       "area": "Celina",
       "state": "Texas",
       "state_abbr": "TX",
+      "metro": "dfw",
       "strategic_label": "DFW value play with rental and school trade-offs",
       "est_2028_rent": 2650,
       "scores": {
@@ -4039,6 +4076,7 @@
       "area": "Lucas (Lovejoy ISD)",
       "state": "Texas",
       "state_abbr": "TX",
+      "metro": "dfw",
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Rent-only play: the #5 district in Texas at a rent we can afford and a house we never can",
       "scores": {
@@ -4216,6 +4254,7 @@
       "area": "Thompson's Station",
       "state": "Tennessee",
       "state_abbr": "TN",
+      "metro": "nashville",
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Top Williamson County schools between Spring Hill and Franklin - a house needs AI-leader income, and BGA needs its own plan",
       "scores": {
@@ -4281,6 +4320,7 @@
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
+      "metro": "atlanta",
       "tier": "Tier 4 - Backup Only",
       "tier_private_scenario": "Tier 3 - Watch List",
       "strategic_label": "Private-school and football strength, priced out on both budget phases",
@@ -4363,6 +4403,7 @@
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
+      "metro": "Nashville",
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Lifestyle premium option",
       "scores": {
@@ -4444,7 +4485,6 @@
         "No submarket compensation premium offsets the higher cost of living here"
       ],
       "weighted_total_out_of_100": 67.4,
-      "metro": "Nashville",
       "est_2028_rent": 3300,
       "best_rental_submarket": "Franklin (Cool Springs / Westhaven)",
       "est_2041_buy_price": 1230000,
@@ -4459,6 +4499,7 @@
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
+      "metro": "knoxville",
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Education / Knoxville option",
       "scores": {
@@ -4547,6 +4588,7 @@
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
+      "metro": "charlotte",
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Charlotte-side family value option",
       "scores": {
@@ -4634,6 +4676,7 @@
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
+      "metro": "nashville",
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Walkable urban Nashville / zoned-school and budget failure",
       "scores": {
@@ -4734,6 +4777,7 @@
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
+      "metro": "nova",
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Career-only backup",
       "scores": {
@@ -4833,6 +4877,7 @@
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
+      "metro": "new_york",
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Elite fintech-AI career market / disqualified on both budget phases",
       "scores": {
@@ -4928,6 +4973,7 @@
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
+      "metro": "new_york",
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Walk-to-JPMorgan waterfront submarket / most budget-infeasible entry",
       "scores": {
@@ -5987,5 +6033,2015 @@
         ]
       }
     ]
-  }
+  },
+  "opportunity_strategy": {
+    "home_base": "Spring Hill, TN (Williamson County side)",
+    "rule": "Stay in Spring Hill on the remote Sherwin-Williams role; move only for an opportunity that levels the family up.",
+    "level_up_test": {
+      "metric": "Monthly household money left after federal, FICA, state and local income tax and a typical 3BR rent, compared with staying in Spring Hill",
+      "default_threshold_pct": 15,
+      "note": "Adjustable on the dashboard. Also weigh things the number cannot: school zone, the spouse's job continuity, and whether the role moves Gregg toward AI product leadership."
+    },
+    "move_windows": [
+      "Before kindergarten (~2031-2033)",
+      "Before 6th grade",
+      "Before 9th grade"
+    ],
+    "buy_by": "If no qualifying offer has arrived by kindergarten entry (~2031-2033), buy on the Williamson County side of Spring Hill - it fits the planned-path budget with ~$156K of room.",
+    "safeguards": [
+      "Remote-role risk: keep a Nashville-area bench (Oracle, Amazon, HCA, Asurion, Dollar General, Tractor Supply, AllianceBernstein) in case of a return-to-office mandate or layoff.",
+      "Sherwin-Williams AI leadership roles posted in 2026 are Cleveland-based, so the internal ladder may require in-person time - see sherwin_williams_track.",
+      "Renting indefinitely is a bet on home prices - the buy-by rule caps that bet.",
+      "Time moves to school transitions.",
+      "Compare every offer after state income tax and property tax - Tennessee has no income tax, so an offer elsewhere has to beat that."
+    ],
+    "spouse_note": "Content creation travels with her, so a metro matters mainly for brand partnerships, agencies and in-person events. The strongest single fit is Kendra Scott's own corporate social and influencer team in Austin."
+  },
+  "sherwin_williams_track": {
+    "headquarters": "New global HQ in downtown Cleveland, opened May 2026 with 3,100+ employees.",
+    "rd_center": "Morikis Global Technology Center in Brecksville (~900 staff; opened December 2025).",
+    "ai_roles_seen_2026": [
+      "Director, AI Adoption and Value Realization (Cleveland)",
+      "Director of Digital Marketing Strategy & AI Transformation",
+      "Associate Digital Product Manager",
+      "Lead AI Engineer (~$120K-$145K est.)"
+    ],
+    "implication": "The AI leadership ladder is concentrated in Cleveland. Ask your manager whether director-level AI roles can be remote from Spring Hill; if not, a Cleveland move is the internal path, and Solon/Rocky River is the matrix answer there.",
+    "sources": [
+      "https://www.european-coatings.com/news/markets-companies/sherwin-williams-opens-new-global-headquarters-in-cleveland/",
+      "https://clevelandmagazine.com/articles/sherwin-williams-weighs-future-space-strategy-as-hq-and-research-center-open/",
+      "https://builtin.com/job/associate-digital-product-manager/10305221",
+      "https://www.mediabistro.com/jobs/3542309416-director-of-digital-marketing-strategy-ai-transformation",
+      "https://www.theladders.com/job/lead-ai-engineer-sherwinwilliams-cleveland-oh_89048224"
+    ]
+  },
+  "tax_model": {
+    "note": "Approximate 2026 figures for comparing offers. Brackets and deductions are simplified; child credits are excluded because they are the same in every location.",
+    "federal_mfj": {
+      "standard_deduction": 32200,
+      "brackets": [
+        [
+          24800,
+          0.1
+        ],
+        [
+          100800,
+          0.12
+        ],
+        [
+          211400,
+          0.22
+        ],
+        [
+          403550,
+          0.24
+        ],
+        [
+          512450,
+          0.32
+        ],
+        [
+          768700,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "source": "https://taxfoundation.org/data/all/federal/2026-tax-brackets/"
+    },
+    "fica": {
+      "social_security": 0.062,
+      "ss_wage_base": 184500,
+      "medicare": 0.0145,
+      "addl_medicare_over_mfj": [
+        250000,
+        0.009
+      ],
+      "note": "Wage base is the 2026 figure as understood; it only matters above ~$184K per earner."
+    },
+    "state": {
+      "TN": {
+        "type": "none"
+      },
+      "TX": {
+        "type": "none"
+      },
+      "FL": {
+        "type": "none"
+      },
+      "GA": {
+        "type": "flat",
+        "rate": 0.0499,
+        "deduction": 24000,
+        "source": "https://www.bdo.com/insights/tax/georgia-enacts-income-tax-reduction-bill"
+      },
+      "NC": {
+        "type": "flat",
+        "rate": 0.0399,
+        "deduction": 25500,
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/"
+      },
+      "OH": {
+        "type": "brackets",
+        "deduction": 0,
+        "brackets": [
+          [
+            26050,
+            0.0
+          ],
+          [
+            null,
+            0.0275
+          ]
+        ],
+        "source": "https://ustax.tools/ohio-tax-brackets-2026/"
+      },
+      "KY": {
+        "type": "flat",
+        "rate": 0.035,
+        "deduction": 6540,
+        "source": "https://taxfoundation.org/research/all/state/2026-state-tax-changes/"
+      },
+      "AL": {
+        "type": "brackets",
+        "deduction": 8500,
+        "brackets": [
+          [
+            1000,
+            0.02
+          ],
+          [
+            6000,
+            0.04
+          ],
+          [
+            null,
+            0.05
+          ]
+        ],
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/"
+      },
+      "SC": {
+        "type": "brackets",
+        "deduction": 32200,
+        "brackets": [
+          [
+            3640,
+            0.0
+          ],
+          [
+            18230,
+            0.03
+          ],
+          [
+            null,
+            0.06
+          ]
+        ],
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/"
+      },
+      "KS": {
+        "type": "brackets",
+        "deduction": 8600,
+        "brackets": [
+          [
+            46000,
+            0.052
+          ],
+          [
+            null,
+            0.0558
+          ]
+        ],
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/"
+      },
+      "IA": {
+        "type": "flat",
+        "rate": 0.038,
+        "deduction": 32200,
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/"
+      },
+      "VA": {
+        "type": "brackets",
+        "deduction": 17000,
+        "brackets": [
+          [
+            3000,
+            0.02
+          ],
+          [
+            5000,
+            0.03
+          ],
+          [
+            17000,
+            0.05
+          ],
+          [
+            null,
+            0.0575
+          ]
+        ],
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/"
+      },
+      "NJ": {
+        "type": "brackets",
+        "deduction": 2000,
+        "brackets": [
+          [
+            20000,
+            0.014
+          ],
+          [
+            50000,
+            0.0175
+          ],
+          [
+            70000,
+            0.0245
+          ],
+          [
+            80000,
+            0.035
+          ],
+          [
+            150000,
+            0.05525
+          ],
+          [
+            500000,
+            0.0637
+          ],
+          [
+            1000000,
+            0.0897
+          ],
+          [
+            null,
+            0.1075
+          ]
+        ],
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/"
+      }
+    },
+    "local_by_metro": {
+      "cleveland": {
+        "rate": 0.02,
+        "note": "Solon municipal income tax",
+        "source": "https://www.solonohio.gov/250/Income-Tax"
+      },
+      "cincinnati": {
+        "rate": 0.0195,
+        "note": "Kenton County 0.70% + Fort Mitchell 1.25% payroll tax (Kentucky side)",
+        "source": "https://fortmitchell.com/finance-taxes/taxesfinancial-info-2/"
+      }
+    },
+    "metro_state": {
+      "nashville": "TN",
+      "austin": "TX",
+      "dfw": "TX",
+      "charlotte": "NC",
+      "atlanta": "GA",
+      "cleveland": "OH",
+      "orlando": "FL",
+      "tampa": "FL",
+      "jacksonville": "FL",
+      "raleigh": "NC",
+      "cincinnati": "KY",
+      "louisville": "KY",
+      "kansas_city": "KS",
+      "des_moines": "IA",
+      "huntsville": "AL",
+      "knoxville": "TN",
+      "greenville": "SC",
+      "auburn": "AL",
+      "richmond": "VA",
+      "nova": "VA",
+      "new_york": "NJ"
+    }
+  },
+  "metros": [
+    {
+      "id": "nashville",
+      "label": "Nashville",
+      "states": "TN",
+      "home_base": true,
+      "wave": 1,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Murfreesboro",
+          "rank": 6,
+          "score": 80.9
+        },
+        {
+          "area": "Spring Hill (Summit / Page Zones, Williamson County)",
+          "rank": 9,
+          "score": 79.9
+        },
+        {
+          "area": "Hendersonville",
+          "rank": 19,
+          "score": 77.9
+        },
+        {
+          "area": "Gallatin",
+          "rank": 21,
+          "score": 77.7
+        },
+        {
+          "area": "Mount Juliet",
+          "rank": 30,
+          "score": 75.2
+        },
+        {
+          "area": "Thompson's Station",
+          "rank": 44,
+          "score": 68.2
+        },
+        {
+          "area": "Franklin",
+          "rank": 46,
+          "score": 67.4
+        },
+        {
+          "area": "Germantown (Nashville)",
+          "rank": 49,
+          "score": 63.5
+        }
+      ],
+      "representative": "Spring Hill (Summit / Page Zones, Williamson County)",
+      "rent_3br": 2300,
+      "rent_note": "Managed 3BR townhome target on the Williamson side of Spring Hill; live market June 2026 ran $1,779-$2,995 with a ~$2,066 average",
+      "rent_source": null,
+      "kendra_scott": [
+        {
+          "store": "Franklin - McEwen Southside (current store)",
+          "source": null
+        },
+        {
+          "store": "Nashville - The Mall at Green Hills",
+          "source": null
+        }
+      ],
+      "companies": [
+        {
+          "name": "Oracle",
+          "sector": "Cloud / AI software",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Nashville is Oracle's headquarters city: ~2,000 seats across three offices with sales, cloud engineering, software development and product management teams, hiring for cloud and AI.",
+          "role_families": [
+            "Product Manager (cloud / AI)",
+            "Technical Program Manager"
+          ],
+          "office": "Nashville (Neuhoff District; East Bank campus planned)",
+          "source": "https://www.oracle.com/news/announcement/oracle-scales-up-nashville-offices-to-support-rapid-growth-2026-03-26/",
+          "verified": true,
+          "checked": "2026-09",
+          "note": "Axios reported Oracle layoffs in April 2026 - check team stability before applying: https://www.axios.com/local/nashville/2026/04/13/oracle-zoning-east-bank-campus-after-layoffs"
+        },
+        {
+          "name": "Amazon - Operations Center of Excellence",
+          "sector": "Retail operations / supply-chain tech",
+          "goal_tags": [
+            "ai_product",
+            "consumer_retail"
+          ],
+          "why": "Amazon's Retail Operations hub in Nashville Yards, announced with 5,000+ jobs across fulfillment, transportation and supply-chain operations.",
+          "role_families": [
+            "Product Manager - Technical",
+            "Program Manager (operations tech)"
+          ],
+          "office": "Nashville Yards, downtown",
+          "source": "https://www.supplychaindive.com/news/Nashville-new-Amazon-Center-of-Excellence/542118/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Asurion",
+          "sector": "Consumer tech care",
+          "goal_tags": [
+            "ai_product",
+            "consumer_retail"
+          ],
+          "why": "Nashville-headquartered consumer tech-care company - a consumer-facing product org close to home.",
+          "role_families": [
+            "Product Manager",
+            "Digital Product Owner"
+          ],
+          "office": "Nashville (HQ)",
+          "source": "https://nashvillechamber.com/economic-development/target-industries/corporate-operations/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "HCA Healthcare",
+          "sector": "Healthcare / digital",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Fortune 500 (#61) headquartered in Nashville with a large digital and data organization.",
+          "role_families": [
+            "Digital Product Manager",
+            "AI / analytics product roles"
+          ],
+          "office": "Nashville (HQ, One Park Plaza)",
+          "source": "https://www.tylercauble.com/blog/largestemployersnashville2024",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Dollar General",
+          "sector": "Retail",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Fortune 500 retailer; ~3,500 corporate staff in IT, merchandising and supply chain - the closest Nashville analog to Sherwin-Williams' retail business.",
+          "role_families": [
+            "Digital / e-commerce Product Manager",
+            "Merchandising analytics"
+          ],
+          "office": "Goodlettsville (HQ)",
+          "source": "https://www.tylercauble.com/blog/largestemployersnashville2024",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Tractor Supply",
+          "sector": "Retail",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Fortune 500 (#296) retailer headquartered in the Nashville region.",
+          "role_families": [
+            "Digital Product Manager",
+            "Customer experience / loyalty product"
+          ],
+          "office": "Brentwood (HQ)",
+          "source": "https://nashvillechamber.com/economic-development/target-industries/corporate-operations/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "AllianceBernstein",
+          "sector": "Asset management",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Moved its global headquarters to Nashville; 1,000+ employees at 501 Commerce.",
+          "role_families": [
+            "Product Manager (investment platforms)",
+            "Data / AI product roles"
+          ],
+          "office": "Nashville (HQ)",
+          "source": "https://www.wkrn.com/special-reports/nashville-forward/alliancebernstein-unveils-new-corporate-headquarters/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "i3 Verticals",
+          "sector": "Payments",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Nashville payments company (card processing and software) - a fit for the fintech PM background.",
+          "role_families": [
+            "Product Manager (payments)"
+          ],
+          "office": "Nashville",
+          "source": "https://builtin.com/companies/location/na/usa/tn/nashville/type/fintech-startups",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [
+        {
+          "name": "HireInfluence",
+          "sector": "Influencer marketing agency",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "National influencer agency working with Nashville and Middle Tennessee brands.",
+          "role_families": [
+            "Creator partnerships",
+            "Social content"
+          ],
+          "office": "Serves Nashville",
+          "source": "https://hireinfluence.com/blog/influencer-marketing-agency-nashville/",
+          "verified": false,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Fresh Content Society / iostudio",
+          "sector": "Social and content agencies",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Nashville agencies building brand social communities and content campaigns.",
+          "role_families": [
+            "Social media coordinator",
+            "Content creator"
+          ],
+          "office": "Nashville",
+          "source": "https://clutch.co/agencies/social-media-marketing/nashville",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
+      "gaps": "Sports-tech is thin in Nashville; it is the weakest of the four focus areas here."
+    },
+    {
+      "id": "austin",
+      "label": "Austin",
+      "states": "TX",
+      "home_base": false,
+      "wave": 1,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Round Rock",
+          "rank": 1,
+          "score": 85.1
+        },
+        {
+          "area": "Cedar Park",
+          "rank": 8,
+          "score": 80.2
+        },
+        {
+          "area": "Georgetown",
+          "rank": 11,
+          "score": 79.6
+        },
+        {
+          "area": "Austin (City Proper)",
+          "rank": 31,
+          "score": 75.0
+        }
+      ],
+      "representative": "Round Rock",
+      "rent_3br": 2007,
+      "rent_note": "Round Rock 3BR average, Sept 2026 (houses ~$2,400)",
+      "rent_source": "https://www.rentcafe.com/average-rent-market-trends/us/tx/round-rock/",
+      "kendra_scott": [
+        {
+          "store": "Austin - The Domain",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265023"
+        },
+        {
+          "store": "Austin - South Congress flagship",
+          "source": null
+        },
+        {
+          "store": "Kendra Scott corporate headquarters (Austin)",
+          "source": null
+        }
+      ],
+      "companies": [
+        {
+          "name": "Dell Technologies",
+          "sector": "Computing / AI infrastructure",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Headquartered in Round Rock with ~13,000 employees in the Austin area.",
+          "role_families": [
+            "Product Manager (AI / infrastructure)",
+            "Digital Product Owner"
+          ],
+          "office": "Round Rock (HQ)",
+          "source": "https://www.statesman.com/story/news/local/2024/01/23/austin-texas-corporate-headquarters-companies-dell-tesla-indeed-yeti-titos/72315024007/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Tesla",
+          "sector": "EV / AI / robotics",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Global headquarters and Gigafactory in Austin.",
+          "role_families": [
+            "Product Manager (software / AI)"
+          ],
+          "office": "Austin (HQ)",
+          "source": "https://www.statesman.com/story/news/local/2024/01/23/austin-texas-corporate-headquarters-companies-dell-tesla-indeed-yeti-titos/72315024007/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Indeed",
+          "sector": "HR tech / AI",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Co-headquartered in a downtown Austin tower since 2023; an AI-heavy consumer product company.",
+          "role_families": [
+            "Product Manager (AI / matching)"
+          ],
+          "office": "Austin (co-HQ)",
+          "source": "https://www.statesman.com/story/news/local/2024/01/23/austin-texas-corporate-headquarters-companies-dell-tesla-indeed-yeti-titos/72315024007/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Whole Foods Market (Amazon)",
+          "sector": "Grocery retail",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Headquartered in Austin; consumer retail with Amazon-scale tech.",
+          "role_families": [
+            "Digital Product Manager",
+            "Retail technology"
+          ],
+          "office": "Austin (HQ)",
+          "source": "https://www.statesman.com/story/news/local/2024/01/23/austin-texas-corporate-headquarters-companies-dell-tesla-indeed-yeti-titos/72315024007/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "WIN Reality",
+          "sector": "Sports-tech (VR training)",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Austin VR training platform for athletes ($48.8M Series A) - a direct look at a sports-tech startup.",
+          "role_families": [
+            "Product Manager",
+            "Partnerships"
+          ],
+          "office": "Austin",
+          "source": "https://www.builtinaustin.com/articles/austin-sports-tech-startups",
+          "verified": false,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Function Health",
+          "sector": "Health / performance tech",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Austin preventive-health tech company (raised a $298M Series B in 2025).",
+          "role_families": [
+            "Product Manager"
+          ],
+          "office": "Austin (HQ)",
+          "source": "https://www.builtinaustin.com/companies/type/fitness-companies",
+          "verified": false,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Kendra Scott (corporate)",
+          "sector": "Consumer brand / jewelry",
+          "goal_tags": [
+            "consumer_retail",
+            "spouse_retail",
+            "spouse_content"
+          ],
+          "why": "Headquartered in Austin with 500+ corporate staff; posted Senior Director, Social Media & Influencer Marketing (~$130K-$180K est.) and a Social Media Content Creator role (~$38K-$61K est.). The one employer where both of your careers could grow.",
+          "role_families": [
+            "Social media content creator",
+            "Influencer marketing",
+            "Digital / e-commerce product"
+          ],
+          "office": "Austin (HQ)",
+          "source": "https://www.mediabistro.com/jobs/3540869056-senior-director-social-media-and-influencer-marketing",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "No major fintech headquarters surfaced in this pass."
+    },
+    {
+      "id": "dfw",
+      "label": "Dallas–Fort Worth",
+      "states": "TX",
+      "home_base": false,
+      "wave": 1,
+      "researched": true,
+      "locations": [
+        {
+          "area": "McKinney",
+          "rank": 3,
+          "score": 82.0
+        },
+        {
+          "area": "Plano",
+          "rank": 5,
+          "score": 80.9
+        },
+        {
+          "area": "Allen",
+          "rank": 12,
+          "score": 79.3
+        },
+        {
+          "area": "Melissa",
+          "rank": 14,
+          "score": 79.1
+        },
+        {
+          "area": "Frisco",
+          "rank": 24,
+          "score": 76.4
+        },
+        {
+          "area": "Crowley / North Crowley (SW Fort Worth)",
+          "rank": 27,
+          "score": 75.4
+        },
+        {
+          "area": "Prosper",
+          "rank": 38,
+          "score": 73.3
+        },
+        {
+          "area": "Celina",
+          "rank": 42,
+          "score": 70.8
+        },
+        {
+          "area": "Lucas (Lovejoy ISD)",
+          "rank": 43,
+          "score": 70.8
+        }
+      ],
+      "representative": "McKinney",
+      "rent_3br": 2400,
+      "rent_note": "McKinney 3BR $2,300-$2,545; Tricon Trinity Falls build-to-rent $2,089-$2,699",
+      "rent_source": null,
+      "kendra_scott": [
+        {
+          "store": "Plano - Legacy West",
+          "source": null
+        },
+        {
+          "store": "Dallas - West Village (Yellow Rose)",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265003"
+        },
+        {
+          "store": "Fort Worth - The Shops at Clearfork",
+          "source": null
+        }
+      ],
+      "companies": [
+        {
+          "name": "JPMorgan Chase - Plano campus",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Plano's largest corporate employer: 6,000+ technology, operations and finance staff.",
+          "role_families": [
+            "Product Manager (digital banking / AI)",
+            "Product Owner"
+          ],
+          "office": "Plano (Legacy West)",
+          "source": "https://kitalent.com/articles/plano-corporate-headquarters-hiring",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Capital One",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Regional headquarters in Plano; a product-management-heavy bank.",
+          "role_families": [
+            "Product Manager",
+            "Senior Product Manager (AI / data)"
+          ],
+          "office": "Plano",
+          "source": "https://kitalent.com/articles/plano-corporate-headquarters-hiring",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Toyota Motor North America",
+          "sector": "Automotive",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "U.S. headquarters in Plano (~4,000 roles in IT, finance and sales).",
+          "role_families": [
+            "Digital Product Manager",
+            "Connected-vehicle product"
+          ],
+          "office": "Plano (HQ)",
+          "source": "https://kitalent.com/articles/plano-corporate-headquarters-hiring",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Frito-Lay (PepsiCo)",
+          "sector": "Consumer packaged goods",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Global headquarters in Plano - consumer brands, like Sherwin-Williams' consumer side.",
+          "role_families": [
+            "Digital / e-commerce product",
+            "Marketing analytics"
+          ],
+          "office": "Plano (HQ)",
+          "source": "https://kitalent.com/articles/plano-corporate-headquarters-hiring",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Charles Schwab",
+          "sector": "Brokerage / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Corporate headquarters in Westlake.",
+          "role_families": [
+            "Product Manager (digital investing)"
+          ],
+          "office": "Westlake (HQ)",
+          "source": "https://www.wfaa.com/article/money/business/first-look-take-a-tour-of-charles-schwabs-new-headquarters-in-westlake/287-045fa9ca-7030-4263-89ae-41d25c309c52",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Kimberly-Clark",
+          "sector": "Consumer packaged goods",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Headquartered in Irving; consumer brands with large digital and data teams.",
+          "role_families": [
+            "Digital Product Manager",
+            "Marketing technology"
+          ],
+          "office": "Irving (HQ)",
+          "source": "https://web.dallaschamber.org/Pulp,-Paper,-and-Paperboard-Mills/KimberlyClark-Corporation-799",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "7-Eleven",
+          "sector": "Retail",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Headquartered on a 325,000 sq ft campus at Cypress Waters in Irving; heavy in digital and loyalty.",
+          "role_families": [
+            "Digital Product Manager (app / loyalty)"
+          ],
+          "office": "Irving (HQ)",
+          "source": "https://www.cspdailynews.com/company-news/view-7-elevens-new-hq-slideshow",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Frisco sports-tech cluster (Plug and Play \"Origin\" at The Star)",
+          "sector": "Sports-tech hub",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "About 130 of Frisco's 500+ startups are sports-tech; Origin at The Star (with the Cowboys HQ and PGA of America nearby) focuses on performance, injury prevention, data and fan engagement.",
+          "role_families": [
+            "Startup product roles",
+            "Accelerator programs"
+          ],
+          "office": "Frisco",
+          "source": "https://dallasexpress.com/metroplex/inside-friscos-new-innovation-hub-origin-at-the-star-aims-to-reshape-sports-tech/",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [
+        {
+          "name": "Nativz / The Nix Company / The Infinite Agency",
+          "sector": "Content and influencer agencies",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Dallas agencies doing short-form content, influencer marketing and social for retail and CPG brands.",
+          "role_families": [
+            "Content creator",
+            "Influencer marketing coordinator"
+          ],
+          "office": "Dallas",
+          "source": "https://avenuez.com/blog/top-content-creation-agencies-in-dallas/",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
+      "gaps": null
+    },
+    {
+      "id": "charlotte",
+      "label": "Charlotte",
+      "states": "NC/SC",
+      "home_base": false,
+      "wave": 1,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Concord / Northwest Cabarrus",
+          "rank": 2,
+          "score": 82.7
+        },
+        {
+          "area": "Fort Mill",
+          "rank": 25,
+          "score": 76.0
+        },
+        {
+          "area": "Waxhaw",
+          "rank": 48,
+          "score": 64.7
+        }
+      ],
+      "representative": "Concord / Northwest Cabarrus",
+      "rent_3br": 1925,
+      "rent_note": "Concord 3BR, Sept 2026",
+      "rent_source": "https://www.rentcafe.com/average-rent-market-trends/us/nc/concord/",
+      "kendra_scott": [
+        {
+          "store": "Charlotte - SouthPark",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265021"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Bank of America",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Headquartered in Charlotte, the #2 U.S. banking center.",
+          "role_families": [
+            "Product Manager (digital / AI)",
+            "Product Owner"
+          ],
+          "office": "Charlotte (HQ)",
+          "source": "https://charlotteregion.com/fortune-500-1000/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Truist",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Headquartered in Charlotte.",
+          "role_families": [
+            "Digital Product Manager"
+          ],
+          "office": "Charlotte (HQ)",
+          "source": "https://charlotteregion.com/fortune-500-1000/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Lowe's",
+          "sector": "Home-improvement retail",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Headquartered in Mooresville; home-improvement retail is the closest match to Sherwin-Williams' customers and channels.",
+          "role_families": [
+            "Digital Product Manager",
+            "AI / personalization product"
+          ],
+          "office": "Mooresville (HQ)",
+          "source": "https://charlotteregion.com/fortune-500-1000/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Honeywell",
+          "sector": "Industrial tech",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Global headquarters in uptown Charlotte.",
+          "role_families": [
+            "Product Manager (industrial AI / software)"
+          ],
+          "office": "Charlotte (HQ)",
+          "source": "https://www.wcnc.com/article/news/local/honeywell-charlotte-uptown-headquarters-uptown/275-a30a47cb-ad59-4cfb-af57-f88d356dfbfd",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "GM Charlotte Technical Center",
+          "sector": "Motorsports tech",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Opened 2022 next to Hendrick Motorsports in Concord; uses AI, real-time data and driver-in-the-loop simulators for racing.",
+          "role_families": [
+            "Data / simulation roles",
+            "Program management"
+          ],
+          "office": "Concord",
+          "source": "https://www.chevrolet.com/the-block/articles/2024/march/inside-the-gm-charlotte-technical-center",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Fastbreak AI",
+          "sector": "Sports-tech (AI)",
+          "goal_tags": [
+            "sports_tech",
+            "ai_product"
+          ],
+          "why": "Charlotte company building AI software for sports scheduling, tournaments, ticketing and sponsorship.",
+          "role_families": [
+            "Product Manager"
+          ],
+          "office": "Charlotte",
+          "source": "https://builtincharlotte.com/companies/type/sports-companies",
+          "verified": false,
+          "checked": "2026-09"
+        },
+        {
+          "name": "704Games",
+          "sector": "Sports video games",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Charlotte developer and publisher of NASCAR video games.",
+          "role_families": [
+            "Product / producer roles"
+          ],
+          "office": "Charlotte",
+          "source": "https://en.wikipedia.org/wiki/704Games",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [
+        {
+          "name": "Black Wednesday / Social Ape Marketing / NiceDay",
+          "sector": "Influencer agencies",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Charlotte-based influencer and creative agencies; NiceDay focuses on retail, hospitality and real-estate brands.",
+          "role_families": [
+            "Influencer marketing",
+            "Content creator"
+          ],
+          "office": "Charlotte",
+          "source": "https://hireinfluence.com/blog/influencer-marketing-agency-charlotte/",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
+      "gaps": null
+    },
+    {
+      "id": "atlanta",
+      "label": "Atlanta",
+      "states": "GA",
+      "home_base": false,
+      "wave": 1,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Buford (Buford City Schools)",
+          "rank": 23,
+          "score": 76.7
+        },
+        {
+          "area": "Suwanee / Peachtree Corners",
+          "rank": 29,
+          "score": 75.3
+        },
+        {
+          "area": "Alpharetta / Johns Creek",
+          "rank": 35,
+          "score": 74.2
+        },
+        {
+          "area": "Roswell",
+          "rank": 45,
+          "score": 67.6
+        }
+      ],
+      "representative": "Buford (Buford City Schools)",
+      "rent_3br": 2350,
+      "rent_note": "Buford-area 3BR townhomes $2,227-$2,399",
+      "rent_source": "https://www.homes.com/buford-ga/townhouses-for-rent/",
+      "kendra_scott": [
+        {
+          "store": "Atlanta - Perimeter Mall",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265074"
+        },
+        {
+          "store": "Alpharetta",
+          "source": null
+        },
+        {
+          "store": "Athens",
+          "source": null
+        }
+      ],
+      "companies": [
+        {
+          "name": "The Home Depot",
+          "sector": "Home-improvement retail",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Fortune 500 (#23) headquartered in Atlanta; the other home-improvement giant alongside Lowe's.",
+          "role_families": [
+            "Digital Product Manager",
+            "AI / personalization product"
+          ],
+          "office": "Atlanta (HQ)",
+          "source": "https://metroatlantachamber.com/wp-content/uploads/2024/07/FORTUNE-500-Companies-1.pdf-1.pdf",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "The Coca-Cola Company",
+          "sector": "Consumer brands",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Fortune 500 (#95) headquartered in Atlanta.",
+          "role_families": [
+            "Digital / marketing technology product"
+          ],
+          "office": "Atlanta (HQ)",
+          "source": "https://metroatlantachamber.com/wp-content/uploads/2024/07/FORTUNE-500-Companies-1.pdf-1.pdf",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Delta Air Lines",
+          "sector": "Airline / digital",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Fortune 500 (#70) headquartered in Atlanta.",
+          "role_families": [
+            "Digital Product Manager (app / AI)"
+          ],
+          "office": "Atlanta (HQ)",
+          "source": "https://metroatlantachamber.com/wp-content/uploads/2024/07/FORTUNE-500-Companies-1.pdf-1.pdf",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "UPS",
+          "sector": "Logistics tech",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Fortune 500 (#45) headquartered in Atlanta.",
+          "role_families": [
+            "Product Manager (logistics / AI)"
+          ],
+          "office": "Atlanta (HQ)",
+          "source": "https://metroatlantachamber.com/wp-content/uploads/2024/07/FORTUNE-500-Companies-1.pdf-1.pdf",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "NCR Voyix",
+          "sector": "Commerce platforms",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Unified-commerce platforms for retail and restaurants; headquartered in Midtown Atlanta (~13,500 employees globally).",
+          "role_families": [
+            "Product Manager (retail / payments platforms)"
+          ],
+          "office": "Atlanta (HQ)",
+          "source": "https://www.sec.gov/Archives/edgar/data/0000070866/000007086626000010/ncr-20260421.htm",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Global Payments",
+          "sector": "Payments",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Fortune 500 payments company headquartered in Atlanta.",
+          "role_families": [
+            "Product Manager (payments)"
+          ],
+          "office": "Atlanta (HQ)",
+          "source": "https://metroatlantachamber.com/wp-content/uploads/2024/07/FORTUNE-500-Companies-1.pdf-1.pdf",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Sports Tech Atlanta",
+          "sector": "Sports-tech community",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Atlanta hub connecting sports-tech founders, investors and industry.",
+          "role_families": [
+            "Founder network",
+            "Advisory"
+          ],
+          "office": "Atlanta",
+          "source": "https://www.sportstechatlanta.com/take-action-sports-technology",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [
+        {
+          "name": "Breakr / The Shelf",
+          "sector": "Creator-economy startup and influencer agency",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Breakr is an Atlanta creator-economy startup; The Shelf runs influencer campaigns for brands like Pepsi and Uniqlo.",
+          "role_families": [
+            "Creator partnerships",
+            "Content creator"
+          ],
+          "office": "Atlanta",
+          "source": "https://influencermarketinghub.com/influencer-marketing-agencies-atlanta/",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
+      "gaps": null
+    },
+    {
+      "id": "cleveland",
+      "label": "Cleveland",
+      "states": "OH",
+      "home_base": false,
+      "wave": 1,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Solon / Rocky River (Cleveland Suburbs)",
+          "rank": 10,
+          "score": 79.8
+        }
+      ],
+      "representative": "Solon / Rocky River (Cleveland Suburbs)",
+      "rent_3br": 2057,
+      "rent_note": "Solon 3BR apartments",
+      "rent_source": "https://www.apartments.com/solon-oh/3-bedrooms/",
+      "kendra_scott": [
+        {
+          "store": "Woodmere - Eton Chagrin Blvd (~10 min from Solon)",
+          "source": null
+        }
+      ],
+      "companies": [
+        {
+          "name": "Sherwin-Williams (HQ)",
+          "sector": "Paints & coatings",
+          "goal_tags": [
+            "ai_product",
+            "consumer_retail"
+          ],
+          "why": "Your current employer. The new global HQ opened May 2026 with 3,100+ employees; 2026 postings include Director, AI Adoption and Value Realization; Director of Digital Marketing Strategy & AI Transformation; Associate Digital Product Manager; Lead AI Engineer (~$120K-$145K est.).",
+          "role_families": [
+            "AI product leadership",
+            "Digital Product Manager"
+          ],
+          "office": "Cleveland (HQ)",
+          "source": "https://www.european-coatings.com/news/markets-companies/sherwin-williams-opens-new-global-headquarters-in-cleveland/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Progressive",
+          "sector": "Insurance / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Fortune 500 (#51) headquartered in Greater Cleveland; a data- and AI-heavy insurer.",
+          "role_families": [
+            "Product Manager (digital insurance / AI)"
+          ],
+          "office": "Mayfield Village (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Economy_of_Greater_Cleveland",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "KeyBank (KeyCorp)",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Headquartered in Cleveland; ~17,000 employees across 15 states.",
+          "role_families": [
+            "Digital Product Manager"
+          ],
+          "office": "Cleveland (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Economy_of_Greater_Cleveland",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Sports-tech is thin; Cleveland's case is the Sherwin-Williams HQ itself."
+    },
+    {
+      "id": "orlando",
+      "label": "Orlando",
+      "states": "FL",
+      "home_base": false,
+      "wave": 1,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Oviedo",
+          "rank": 13,
+          "score": 79.3
+        },
+        {
+          "area": "Lake Mary",
+          "rank": 15,
+          "score": 78.8
+        },
+        {
+          "area": "Clermont",
+          "rank": 33,
+          "score": 74.5
+        },
+        {
+          "area": "Davenport / Four Corners",
+          "rank": 36,
+          "score": 73.7
+        },
+        {
+          "area": "Lake Nona",
+          "rank": 40,
+          "score": 72.6
+        }
+      ],
+      "representative": "Oviedo",
+      "rent_3br": 2420,
+      "rent_note": "Oviedo 3BR (July 2025)",
+      "rent_source": "https://www.prop-metrics.com/zip/32765",
+      "kendra_scott": [
+        {
+          "store": "Disney Springs",
+          "source": null
+        },
+        {
+          "store": "The Mall at Millenia",
+          "source": null
+        }
+      ],
+      "companies": [
+        {
+          "name": "EA Orlando (Electronic Arts)",
+          "sector": "Sports video games",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "The studio behind Madden NFL and EA Sports College Football; 700+ staff in Creative Village.",
+          "role_families": [
+            "Product / producer roles",
+            "Data and live-service product"
+          ],
+          "office": "Orlando (Creative Village)",
+          "source": "https://en.wikipedia.org/wiki/EA_Orlando",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Lockheed Martin - Missiles and Fire Control / Training & Logistics",
+          "sector": "Aerospace / simulation",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Major Orlando R&D and simulation-based training operations.",
+          "role_families": [
+            "Program / product management (simulation, AI)"
+          ],
+          "office": "Orlando",
+          "source": "https://www.lockheedmartin.com/en-us/who-we-are/business-areas/missiles-and-fire-control/orlando-innovation-and-economic-growth.html",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Darden Restaurants",
+          "sector": "Consumer brands",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Headquartered in Orlando (Olive Garden, LongHorn and others) with large digital and loyalty programs.",
+          "role_families": [
+            "Digital Product Manager (app / loyalty)"
+          ],
+          "office": "Orlando (HQ)",
+          "source": "https://business.orlando.org/l/corporate-headquarters/",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Walt Disney Parks & Resorts / Universal",
+          "sector": "Entertainment tech",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Engineering, design, IT and digital-experience teams at the two tourism anchors.",
+          "role_families": [
+            "Digital experience product"
+          ],
+          "office": "Orlando",
+          "source": "https://maxliferealty.com/blog/top-companies-orlando-florida",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [
+        {
+          "name": "IZEA Worldwide",
+          "sector": "Influencer-marketing platform (NASDAQ: IZEA)",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Publicly traded influencer-marketing and sponsored-content platform headquartered in Winter Park - both an employer and a marketplace for creators.",
+          "role_families": [
+            "Creator marketplace",
+            "Campaign / content roles"
+          ],
+          "office": "Winter Park (HQ)",
+          "source": "https://izea.com/contact-us-2/orlando/",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
+      "gaps": "Fintech is thin in this pass."
+    },
+    {
+      "id": "tampa",
+      "label": "Tampa",
+      "states": "FL",
+      "home_base": false,
+      "wave": 2,
+      "researched": false,
+      "locations": [
+        {
+          "area": "Tampa",
+          "rank": 17,
+          "score": 78.0
+        },
+        {
+          "area": "Lakeland",
+          "rank": 34,
+          "score": 74.3
+        }
+      ],
+      "representative": "Tampa",
+      "rent_3br": null,
+      "kendra_scott": [],
+      "companies": [],
+      "spouse_content": [],
+      "gaps": "Company research scheduled for wave 2."
+    },
+    {
+      "id": "jacksonville",
+      "label": "Jacksonville",
+      "states": "FL",
+      "home_base": false,
+      "wave": 1,
+      "researched": true,
+      "locations": [
+        {
+          "area": "St. Johns County",
+          "rank": 4,
+          "score": 82.0
+        }
+      ],
+      "representative": "St. Johns County",
+      "rent_3br": 2425,
+      "rent_note": "Approximate midpoint of the $1,750-$3,100 3BR listing range in St. Johns County",
+      "rent_source": "https://www.apartments.com/st-johns-county-fl/3-bedrooms/",
+      "kendra_scott": [
+        {
+          "store": "St. Johns Town Center",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265078"
+        }
+      ],
+      "companies": [
+        {
+          "name": "FIS",
+          "sector": "Payments / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Headquartered in Jacksonville (~8,200 local staff); announced a new world headquarters there in May 2026.",
+          "role_families": [
+            "Product Manager (payments / banking platforms)"
+          ],
+          "office": "Jacksonville (HQ)",
+          "source": "https://floridajobs.org/home/2026/05/20/governor-ron-desantis-announces-fis-will-build-new-world-headquarters-in-jacksonville-florida",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Fanatics",
+          "sector": "Sports commerce",
+          "goal_tags": [
+            "sports_tech",
+            "consumer_retail"
+          ],
+          "why": "Sports licensed-merchandise and commerce company headquartered in Jacksonville - sports business at scale.",
+          "role_families": [
+            "Product Manager (e-commerce / fan experience)"
+          ],
+          "office": "Jacksonville (HQ)",
+          "source": "https://www.indeed.com/career-advice/finding-a-job/companies-in-jacksonville-fl",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Florida Blue (GuideWell)",
+          "sector": "Health insurance",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Top Jacksonville-based company; ~6,800 local employees.",
+          "role_families": [
+            "Digital Product Manager"
+          ],
+          "office": "Jacksonville (HQ)",
+          "source": "https://kitalent.com/articles/article-jacksonville-financial-services-hiring",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Southeastern Grocers / Winn-Dixie",
+          "sector": "Grocery retail",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Grocery retailer headquartered in Jacksonville.",
+          "role_families": [
+            "Digital / e-commerce product"
+          ],
+          "office": "Jacksonville (HQ)",
+          "source": "https://www.zippia.com/advice/largest-companies-in-florida/",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [],
+      "gaps": null
+    },
+    {
+      "id": "raleigh",
+      "label": "Raleigh–Durham",
+      "states": "NC",
+      "home_base": false,
+      "wave": 1,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Cary",
+          "rank": 18,
+          "score": 77.9
+        }
+      ],
+      "representative": "Cary",
+      "rent_3br": 2139,
+      "rent_note": "Cary 3BR apartments",
+      "rent_source": "https://www.rentcafe.com/average-rent-market-trends/us/nc/cary/",
+      "kendra_scott": [
+        {
+          "store": "Raleigh - North Hills",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265056"
+        }
+      ],
+      "companies": [
+        {
+          "name": "SAS Institute",
+          "sector": "Analytics / AI software",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "World's largest privately held analytics software company, headquartered in Cary.",
+          "role_families": [
+            "Product Manager (AI / analytics)"
+          ],
+          "office": "Cary (HQ)",
+          "source": "https://kitalent.com/articles/raleigh-enterprise-software-hiring-gap",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Red Hat (IBM)",
+          "sector": "Enterprise software / AI",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Global headquarters in downtown Raleigh (~2,100 local employees).",
+          "role_families": [
+            "Product Manager (AI platforms)"
+          ],
+          "office": "Raleigh (HQ)",
+          "source": "https://kitalent.com/articles/raleigh-enterprise-software-hiring-gap",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Epic Games",
+          "sector": "Games / engines",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Headquartered in Cary (~3,100 regional employees); consumer software at scale.",
+          "role_families": [
+            "Product Manager"
+          ],
+          "office": "Cary (HQ)",
+          "source": "https://raleigh-wake.org/business-advantages/data-and-demographics/major-employees-expanding-companies",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Fidelity Investments",
+          "sector": "Investments / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "The region's largest of these employers (~6,000 staff).",
+          "role_families": [
+            "Product Manager (digital investing)"
+          ],
+          "office": "Research Triangle",
+          "source": "https://jobs.fidelity.com/en/locations/raleigh-durham-north-carolina/",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Sports-tech and consumer retail are thin here."
+    },
+    {
+      "id": "cincinnati",
+      "label": "Cincinnati",
+      "states": "KY/OH",
+      "home_base": false,
+      "wave": 1,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Fort Mitchell / Villa Hills (Beechwood)",
+          "rank": 7,
+          "score": 80.7
+        }
+      ],
+      "representative": "Fort Mitchell / Villa Hills (Beechwood)",
+      "rent_3br": 2300,
+      "rent_note": "Fort Mitchell 3BR house listing",
+      "rent_source": null,
+      "kendra_scott": [
+        {
+          "store": "Cincinnati - Kenwood Towne Centre",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265072"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Procter & Gamble",
+          "sector": "Consumer packaged goods",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Headquartered in Cincinnati; consumer brands at global scale, and posting AI leadership roles such as Director, AI Acceleration.",
+          "role_families": [
+            "AI product / acceleration leadership",
+            "Brand digital product"
+          ],
+          "office": "Cincinnati (HQ)",
+          "source": "https://www.pgcareers.com/us/en/us-cincinnati",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Kroger",
+          "sector": "Grocery retail",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Fortune 500 grocer headquartered in Cincinnati.",
+          "role_families": [
+            "Digital Product Manager",
+            "Personalization / AI product"
+          ],
+          "office": "Cincinnati (HQ)",
+          "source": "https://en.wikipedia.org/wiki/List_of_companies_in_Greater_Cincinnati",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "Fifth Third Bank",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Headquartered at Fifth Third Center, Cincinnati.",
+          "role_families": [
+            "Digital Product Manager"
+          ],
+          "office": "Cincinnati (HQ)",
+          "source": "https://en.wikipedia.org/wiki/List_of_companies_in_Greater_Cincinnati",
+          "verified": true,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Sports-tech is thin in this pass."
+    },
+    {
+      "id": "louisville",
+      "label": "Louisville",
+      "states": "KY",
+      "home_base": false,
+      "wave": 2,
+      "researched": false,
+      "locations": [
+        {
+          "area": "Oldham County (Crestwood / La Grange)",
+          "rank": 20,
+          "score": 77.7
+        }
+      ],
+      "representative": "Oldham County (Crestwood / La Grange)",
+      "rent_3br": null,
+      "kendra_scott": [],
+      "companies": [],
+      "spouse_content": [],
+      "gaps": "Company research scheduled for wave 2."
+    },
+    {
+      "id": "kansas_city",
+      "label": "Kansas City",
+      "states": "KS",
+      "home_base": false,
+      "wave": 2,
+      "researched": false,
+      "locations": [
+        {
+          "area": "Olathe (Garmin HQ)",
+          "rank": 26,
+          "score": 75.6
+        },
+        {
+          "area": "Overland Park (Blue Valley)",
+          "rank": 28,
+          "score": 75.4
+        }
+      ],
+      "representative": "Olathe (Garmin HQ)",
+      "rent_3br": null,
+      "kendra_scott": [],
+      "companies": [],
+      "spouse_content": [],
+      "gaps": "Company research scheduled for wave 2."
+    },
+    {
+      "id": "des_moines",
+      "label": "Des Moines",
+      "states": "IA",
+      "home_base": false,
+      "wave": 2,
+      "researched": false,
+      "locations": [
+        {
+          "area": "West Des Moines",
+          "rank": 22,
+          "score": 76.8
+        },
+        {
+          "area": "Waukee",
+          "rank": 37,
+          "score": 73.4
+        }
+      ],
+      "representative": "West Des Moines",
+      "rent_3br": null,
+      "kendra_scott": [],
+      "companies": [],
+      "spouse_content": [],
+      "gaps": "Company research scheduled for wave 2."
+    },
+    {
+      "id": "huntsville",
+      "label": "Huntsville",
+      "states": "AL",
+      "home_base": false,
+      "wave": 1,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Madison / Huntsville",
+          "rank": 16,
+          "score": 78.1
+        }
+      ],
+      "representative": "Madison / Huntsville",
+      "rent_3br": 1684,
+      "rent_note": "Madison 3BR apartments",
+      "rent_source": "https://www.rentcafe.com/average-rent-market-trends/us/al/madison/",
+      "kendra_scott": [
+        {
+          "store": "Huntsville - Bridge Street Town Centre",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265063"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Adtran",
+          "sector": "Networking tech",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Fiber-networking company headquartered in Huntsville.",
+          "role_families": [
+            "Product Manager"
+          ],
+          "office": "Huntsville (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Adtran",
+          "verified": true,
+          "checked": "2026-09"
+        },
+        {
+          "name": "NASA Marshall / Boeing / SAIC",
+          "sector": "Aerospace & defense",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Huntsville's anchors: Marshall Space Flight Center (~7,000), Boeing (~3,000) and SAIC. Strong for engineering and robotics; a looser fit for AI product management.",
+          "role_families": [
+            "Program management",
+            "Data / AI programs"
+          ],
+          "office": "Huntsville",
+          "source": "https://movingtohuntsville.org/top-employers-in-huntsville-al-2026/",
+          "verified": false,
+          "checked": "2026-09"
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Weak on all four focus areas; strong on aerospace and engineering."
+    },
+    {
+      "id": "knoxville",
+      "label": "Knoxville",
+      "states": "TN",
+      "home_base": false,
+      "wave": 2,
+      "researched": false,
+      "locations": [
+        {
+          "area": "Farragut",
+          "rank": 47,
+          "score": 66.6
+        }
+      ],
+      "representative": "Farragut",
+      "rent_3br": null,
+      "kendra_scott": [],
+      "companies": [],
+      "spouse_content": [],
+      "gaps": "Company research scheduled for wave 2."
+    },
+    {
+      "id": "greenville",
+      "label": "Greenville–Spartanburg",
+      "states": "SC",
+      "home_base": false,
+      "wave": 2,
+      "researched": false,
+      "locations": [
+        {
+          "area": "Greenville",
+          "rank": 32,
+          "score": 74.9
+        }
+      ],
+      "representative": "Greenville",
+      "rent_3br": null,
+      "kendra_scott": [],
+      "companies": [],
+      "spouse_content": [],
+      "gaps": "Company research scheduled for wave 2."
+    },
+    {
+      "id": "auburn",
+      "label": "Auburn–Opelika",
+      "states": "AL",
+      "home_base": false,
+      "wave": 2,
+      "researched": false,
+      "locations": [
+        {
+          "area": "Auburn / Opelika",
+          "rank": 39,
+          "score": 73.3
+        }
+      ],
+      "representative": "Auburn / Opelika",
+      "rent_3br": null,
+      "kendra_scott": [],
+      "companies": [],
+      "spouse_content": [],
+      "gaps": "Company research scheduled for wave 2."
+    },
+    {
+      "id": "richmond",
+      "label": "Richmond",
+      "states": "VA",
+      "home_base": false,
+      "wave": 2,
+      "researched": false,
+      "locations": [
+        {
+          "area": "Glen Allen / Midlothian",
+          "rank": 41,
+          "score": 72.4
+        }
+      ],
+      "representative": "Glen Allen / Midlothian",
+      "rent_3br": null,
+      "kendra_scott": [],
+      "companies": [],
+      "spouse_content": [],
+      "gaps": "Company research scheduled for wave 2."
+    },
+    {
+      "id": "nova",
+      "label": "Northern Virginia",
+      "states": "VA",
+      "home_base": false,
+      "wave": 2,
+      "researched": false,
+      "locations": [
+        {
+          "area": "Leesburg / Ashburn",
+          "rank": 50,
+          "score": 61.6
+        }
+      ],
+      "representative": "Leesburg / Ashburn",
+      "rent_3br": null,
+      "kendra_scott": [],
+      "companies": [],
+      "spouse_content": [],
+      "gaps": "Company research scheduled for wave 2."
+    },
+    {
+      "id": "new_york",
+      "label": "New York (Jersey City)",
+      "states": "NJ",
+      "home_base": false,
+      "wave": 2,
+      "researched": false,
+      "locations": [
+        {
+          "area": "Jersey City",
+          "rank": 51,
+          "score": 54.8
+        },
+        {
+          "area": "Newport (Jersey City)",
+          "rank": 52,
+          "score": 49.1
+        }
+      ],
+      "representative": "Jersey City",
+      "rent_3br": null,
+      "kendra_scott": [],
+      "companies": [],
+      "spouse_content": [],
+      "gaps": "Company research scheduled for wave 2."
+    }
+  ],
+  "applications": [],
+  "remote_first": []
 }
