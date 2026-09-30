@@ -684,12 +684,14 @@ ${locCards}
     const link = (url, label) =>
       url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label || 'source')}</a>` : '';
 
+    const allCos = metros.flatMap((m) => [...(m.companies || []), ...(m.spouse_content || [])]).concat(data.remote_first || []);
+    const latestWave = Math.max(0, ...allCos.map((c) => c.wave || 0));
     const coItem = (c) => {
       const tags = (c.goal_tags || []).map((t) => `<span class="opp-tag t-${esc(t)}">${esc(TAGS[t] || t)}</span>`).join('');
       const roles = (c.role_families || []).length ? `<div class="opp-roles">Roles: ${esc(c.role_families.join(' · '))}</div>` : '';
       const note = c.note ? `<div class="opp-conote">${esc(c.note)}</div>` : '';
       return `<li class="opp-co" data-tags="${esc((c.goal_tags || []).join(' '))}">
-              <div class="opp-cotop"><strong>${esc(c.name)}</strong><span class="opp-sector">${esc(c.sector || '')}</span></div>
+              <div class="opp-cotop"><strong>${esc(c.name)}${latestWave && c.wave === latestWave ? ' <em class="opp-new">New</em>' : ''}</strong><span class="opp-sector">${esc(c.sector || '')}</span></div>
               <div class="opp-tags">${tags}${c.verified ? '' : '<span class="opp-unv">listing source</span>'}</div>
               <p>${esc(c.why || '')}</p>${roles}${note}
               <div class="opp-src">${esc(c.office || '')} · ${link(c.source)}</div>
