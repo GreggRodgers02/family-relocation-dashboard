@@ -734,7 +734,7 @@ ${locCards}
     const remote = Array.isArray(data.remote_first) ? data.remote_first : [];
     const remoteCard = `<div class="card opp-remote"><h3>Remote-first employers</h3>${
       remote.length
-        ? `<ul class="opp-cos">${remote.map(coItem).join('')}</ul>`
+        ? `<p class="opp-gap">A level-up without moving: these hire product roles remotely, so the family stays in Spring Hill.</p><ul class="opp-cos">${remote.map(coItem).join('')}</ul>`
         : '<p class="opp-gap">Remote employers that would let you level up without moving - research is in the next wave.</p>'
     }</div>`;
 
