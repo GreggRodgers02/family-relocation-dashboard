@@ -219,7 +219,9 @@
         "scoring_link": "housing_affordability_2041 is scored on each location's planned-path headroom (budget minus projected 2041 price) using the same curve the original scores implied; the curve reproduces 36 of 51 original scores within half a point against the old $820K."
       },
       "appreciation_assumption": "2–3% annual appreciation planning assumption based on the user's stated May 2026 consensus framing.",
-      "football_weighting_note": "High school football culture is treated as a nice-to-have, not a hard requirement."
+      "football_weighting_note": "High school football culture is treated as a nice-to-have, not a hard requirement.",
+      "family_status": "No children yet. The timeline assumes a first child arriving ~2026-2028 (age 0-2 when the rental phase starts in 2028). Gregg will say when this changes; then re-anchor the child-age and kindergarten dates.",
+      "first_child_assumed_birth": "2026-2028 (planning assumption)"
     }
   },
   "scoring_scale": {
@@ -593,7 +595,7 @@
         "AI/PM market is domain-narrow - strong for fintech, thin for consumer product or AI research if career direction shifts",
         "Corban Row elementary zone UNVERIFIED - located on Concord Pkwy S, outside the NW corridor where A-rated schools sit",
         "Wayford at Concord is zoned to Carl A. Furr Elementary (B), NOT Cox Mill",
-        "ZONE TRAP: listings advertising 'Cox Mill High' may be zoned to W.R. Odell Elementary. Elementary is the only zone that matters for the 2028 rental phase (child age 0-2).",
+        "ZONE TRAP: listings advertising 'Cox Mill High' may be zoned to W.R. Odell Elementary. Elementary is the only zone that matters for the 2028 rental phase (a first child would be 0-2).",
         "Concord city-wide CrimeGrade is C- (34th percentile); NW/W Concord materially better than central. Corban Row sub-zone unverified.",
         "All BTR options exceed cap on total monthly price; Corban Row clears only on base rent, and 2028 escalation breaks it either way"
       ],
@@ -2457,7 +2459,7 @@
         "assessment": "Solid Gwinnett private market within ~20 mi, but largely redundant - the point of Buford is its public district.",
         "verified": false
       },
-      "notes": "Buford City Schools ranks #2 of 179 Georgia districts, and one national study ranked it the best district in the U.S. (9.31/10), with a 96% graduation rate and 70% math proficiency. Buford High has won 15 state football championships - second-most in Georgia history - including the 2025 state title and a national championship, the strongest football culture in the matrix. The catch is that it is a small city district: attendance is set by city limits, not the Buford mailing address, and most 30518/30519 addresses are Gwinnett or Hall County schools. In-district homes carry a $50K-$100K+ premium. The Buford-area median sale was $494,000 in August 2026 (485 closings) with entry homes near $412K, so an in-district home runs roughly $515K-$580K - about $789K by 2041 at a $545K working figure - about $68K under a ~$857K planned-path budget. The unlock is that Buford City Schools accepts non-resident tuition students at kindergarten or 9th-grade entry only ($250 application fee; current tuition not published in sources found). A kindergarten entry around 2031-2033 fits this family's timeline exactly. 3BR townhomes in the Buford area rent for $2,227-$2,399 with ~45 listed, inside the ceiling. AACSB density is excellent: Georgia Gwinnett College and the University of North Georgia's Cottrell College are both accredited and close, with Georgia Tech, Georgia State, Emory, Kennesaw State and UGA in the wider radius. Georgia cut its flat income tax to 4.99% for 2026 with scheduled steps toward 3.99% if revenue triggers are met, and city residents pay both city and county property tax.",
+      "notes": "Buford City Schools ranks #2 of 179 Georgia districts, and one national study ranked it the best district in the U.S. (9.31/10), with a 96% graduation rate and 70% math proficiency. Buford High has won 15 state football championships - second-most in Georgia history - including the 2025 state title and a national championship, the strongest football culture in the matrix. The catch is that it is a small city district: attendance is set by city limits, not the Buford mailing address, and most 30518/30519 addresses are Gwinnett or Hall County schools. In-district homes carry a $50K-$100K+ premium. The Buford-area median sale was $494,000 in August 2026 (485 closings) with entry homes near $412K, so an in-district home runs roughly $515K-$580K - about $789K by 2041 at a $545K working figure - about $68K under a ~$857K planned-path budget. The unlock is that Buford City Schools accepts non-resident tuition students at kindergarten or 9th-grade entry only ($250 application fee; current tuition not published in sources found). A kindergarten entry around 2031-2033 fits the planned timeline exactly. 3BR townhomes in the Buford area rent for $2,227-$2,399 with ~45 listed, inside the ceiling. AACSB density is excellent: Georgia Gwinnett College and the University of North Georgia's Cottrell College are both accredited and close, with Georgia Tech, Georgia State, Emory, Kennesaw State and UGA in the wider radius. Georgia cut its flat income tax to 4.99% for 2026 with scheduled steps toward 3.99% if revenue triggers are met, and city residents pay both city and county property tax.",
       "risks": [
         "School access is set by city limits, not the mailing address - verify every address at parcel level; in-district homes carry a $50K-$100K+ premium",
         "Non-resident tuition seats are only offered at kindergarten or 9th-grade entry, and current tuition and seat counts were not found in public sources",
@@ -4155,7 +4157,7 @@
       "weighted_total_career_max_scenario": 71.2,
       "lovejoy_isd_access_paths": {
         "framing": "Lucas the city cannot be made to work as a purchase: a $1,115,000 median needs a 54% price collapse or a 118% budget increase against the ~$741K planned-path budget, and buying earlier does not rescue it. Lovejoy ISD is the actual asset. After a deeper pass (Sep 2026), only two of the four routes survive.",
-        "verdict": "Route 1 (transfer in) is the only route that delivers Lovejoy for the whole of K-12 inside the budget, and its economics are better than first estimated, but its terms cannot be known until the child is near kindergarten entry (~2031-2033). Route 3 (rent in district) is the fallback and is stronger than first described because of Stacy Ridge. Route 2 (buy cheap in-district) is closed for houses. Route 4 is closed.",
+        "verdict": "Route 1 (transfer in) is the only route that delivers Lovejoy for the whole of K-12 inside the budget, and its economics are better than first estimated, but its terms cannot be known until a first child nears kindergarten entry (~2031-2033 if born 2026-2028). Route 3 (rent in district) is the fallback and is stronger than first described because of Stacy Ridge. Route 2 (buy cheap in-district) is closed for houses. Route 4 is closed.",
         "paths": [
           {
             "rank": 1,
@@ -4194,7 +4196,7 @@
               "private_school_comparison": "~$343,850 at Southwest Christian rates, or ~$207,700 if a Texas Education Freedom Account award ($10,474/yr for 2026-27) were won and held every year"
             },
             "house": "McKinney at $455K projects to ~$659K - about $82K under its ~$741K planned-path budget",
-            "blocker": "The price has swung between free and $10K/yr four times in about a decade, and the program exists by annual board vote. The terms that matter are the ones in force when the child enters kindergarten (~2031-2033), which nobody can know today. Enter at K, when seats are loosest; the risk is holding the seat into secondary, where classes have run full"
+            "blocker": "The price has swung between free and $10K/yr four times in about a decade, and the program exists by annual board vote. The terms that matter are the ones in force when a first child enters kindergarten (~2031-2033 if born 2026-2028), which nobody can know today. Enter at K, when seats are loosest; the risk is holding the seat into secondary, where classes have run full"
           },
           {
             "rank": 2,
@@ -4762,7 +4764,7 @@
       },
       "notes": "Best pure career-access location in Tennessee: Germantown sits directly adjacent to the downtown/East Bank employer cluster (Oracle, Amazon, AllianceBernstein, Asurion), and Vanderbilt Owen, Belmont Massey and Lipscomb are all within ~10-15 minutes. Walkable, restaurant-dense, with greenway running access. It fails decisively on the family-formation criteria that drive this model: the neighborhood is zoned to Jones Paideia Elementary (Niche C-, GreatSchools 4/10) and Pearl-Cohn High (Niche C-, 4/10, average ACT 19). Hume-Fogg is an academic magnet requiring application and admission - it cannot be secured by address, the same trap as Merrol Hyde in Sumner County. Median home ~$665K projects to ~$963K by 2041, above a ~$895K planned-path budget, and 3BR rentals run ~$3,000+, over both the $2,600 ceiling and the $2,900 stretch cap.",
       "risks": [
-        "ZONED SCHOOLS ARE THE BINDING FAILURE - Jones Paideia Elementary (C-, 4/10) governs the 2028 rental phase when the child is 0-2; this is the weakest zoned elementary of any entry in the matrix",
+        "ZONED SCHOOLS ARE THE BINDING FAILURE - Jones Paideia Elementary (C-, 4/10) governs the 2028 rental phase, when a first child would be 0-2; this is the weakest zoned elementary of any entry in the matrix",
         "Hume-Fogg and other MNPS academic magnets require application/admission and cannot be secured by buying an address",
         "Median home ~$665K projects to ~$963K by 2041, roughly $68K above the ~$895K planned-path budget before any premium",
         "3BR rental ~$3,000+ breaks both the $2,600 primary ceiling and the $2,900 stretch cap",
@@ -5265,7 +5267,7 @@
     {
       "id": "lovejoy_transfer_terms",
       "question": "Is Lovejoy Scholars tuition-free right now, what is the current seat cap, and do returning scholars keep their seat (and price) automatically?",
-      "why_it_matters": "Partly answered Sep 2026: the program exists, was continued by a 7-0 board vote on Jan 21, applications open each early spring, and early-grade seats are the loosest. Still unknown: current price (sources conflict between free and paid), the cap, and seat retention. The terms in force at kindergarten entry (~2031-2033) are what actually matter, so the durable question is how stable the program is, not just what it costs today. One call to Lovejoy ISD at (469) 742-8000 answers the current terms."
+      "why_it_matters": "Partly answered Sep 2026: the program exists, was continued by a 7-0 board vote on Jan 21, applications open each early spring, and early-grade seats are the loosest. Still unknown: current price (sources conflict between free and paid), the cap, and seat retention. The terms in force at kindergarten entry (~2031-2033 if a first child arrives 2026-2028) are what actually matter, so the durable question is how stable the program is, not just what it costs today. One call to Lovejoy ISD at (469) 742-8000 answers the current terms."
     },
     {
       "id": "fairview_true_median",
@@ -5355,15 +5357,17 @@
   ],
   "phase_plan": {
     "basis": "Encodes the standing convention that the townhome city and the house city may differ, and that each phase should be optimized independently. Added Aug 2026 after the Four Corners analysis exposed a timing problem the flat ranking cannot express.",
-    "core_insight": "The rental phase is 13 years, not 3. The child is 0-2 in 2028 and roughly 13-15 in 2041, so the rental window covers ALL of K-8 plus the start of high school, while the purchased home covers only the last ~3 years of high school. School quality therefore governs the RENTAL location more than the purchase location - the reverse of the intuitive reading. A location that is cheap to rent but weak on schools does not become safe just because the purchase is planned elsewhere.",
+    "core_insight": "The rental phase is 13 years, not 3. No children yet, but a first child born 2026-2028 would be 0-2 in 2028 and roughly 13-15 in 2041, so the rental window covers ALL of K-8 plus the start of high school, while the purchased home covers only the last ~3 years of high school. School quality therefore governs the RENTAL location more than the purchase location - the reverse of the intuitive reading. A location that is cheap to rent but weak on schools does not become safe just because the purchase is planned elsewhere.",
     "timeline": {
+      "status": "Planning assumption - no children yet",
       "rental_phase_start": 2028,
       "home_purchase_year": 2041,
       "rental_window_years": 13,
       "child_age_at_rental_start": "0-2",
       "child_age_at_purchase": "13-15",
       "schooling_covered_by_rental": "K-8 and the start of high school",
-      "schooling_covered_by_purchase": "final ~3 years of high school"
+      "schooling_covered_by_purchase": "final ~3 years of high school",
+      "child_age_note": "Child ages are for a planned first child born 2026-2028."
     },
     "phases": [
       {
@@ -5371,7 +5375,7 @@
         "label": "Rental A - pre-K",
         "years": "2028 to ~2032",
         "child_ages": "0-4",
-        "school_zone_relevance": "None. Child is pre-kindergarten, so school zone does not bind.",
+        "school_zone_relevance": "None. Any child would still be pre-kindergarten, so school zone does not bind.",
         "governing_criteria": [
           "rental_feasibility_2028",
           "spouse employer proximity (Kendra Scott)",
@@ -5664,7 +5668,7 @@
     },
     "worked_example_four_corners": {
       "premise": "Rent in Four Corners, buy elsewhere.",
-      "rental_a": "Davenport / Four Corners - cheapest sub-cap 3BR inventory in the Florida set and Kendra Scott Disney Springs at ~12-15 mi, the closest of any Florida entry. School zone is irrelevant while the child is pre-K.",
+      "rental_a": "Davenport / Four Corners - cheapest sub-cap 3BR inventory in the Florida set and Kendra Scott Disney Springs at ~12-15 mi, the closest of any Florida entry. School zone is irrelevant while any child would still be pre-K.",
       "rental_b": "Move to Oviedo or Lake Mary (Seminole County) before kindergarten. Seminole is A-rated, #1 in Central Florida and 11th of Florida's 67 districts, versus Orange at #19 and Lake County lower. Costs rental affordability - Oviedo rents 6.0 against Four Corners' 8.5.",
       "purchase": "Buy in Oviedo (rank 13, 79.30; schools 8.5, housing 7.5). Already established, so no school disruption at high-school age, and its ~$713K 2041 price sits ~$150K under a ~$862K planned-path budget.",
       "drive_times": {
@@ -5717,7 +5721,7 @@
       {
         "rank": 1,
         "lever": "Land the career step-up",
-        "detail": "The largest lever and the one you are already working on. Without it the 2041 budget is ~$559K-$688K and 36 of 51 locations are over budget; the planned step-up lifts it to ~$727K-$895K and the AI-leader tier to ~$924K-$1.14M. It also raises the rent ceiling to ~$3,785 from 2031, right as kindergarten starts (~2031-2033)."
+        "detail": "The largest lever and the one you are already working on. Without it the 2041 budget is ~$559K-$688K and 36 of 51 locations are over budget; the planned step-up lifts it to ~$727K-$895K and the AI-leader tier to ~$924K-$1.14M. It also raises the rent ceiling to ~$3,785 from 2031, right as a first child born 2026-2028 would start kindergarten (~2031-2033)."
       },
       {
         "rank": 2,
@@ -5727,7 +5731,7 @@
       {
         "rank": 3,
         "lever": "Buy the product, not the ZIP code",
-        "detail": "Townhomes inside elite districts fit where houses do not: Prosper ISD from $358,990, Franklin entry townhomes $350K-$500K, Lake Nona from $379,900. Your child is 13-15 at purchase; a 3-4 bedroom townhome fits a family of three."
+        "detail": "Townhomes inside elite districts fit where houses do not: Prosper ISD from $358,990, Franklin entry townhomes $350K-$500K, Lake Nona from $379,900. A child born 2026-2028 would be 13-15 at purchase; a 3-4 bedroom townhome fits a family of three."
       },
       {
         "rank": 4,
@@ -5887,7 +5891,7 @@
               "stepup",
               "leader"
             ],
-            "note": "Kindergarten or 9th-grade entry only - a K entry in ~2031-33 fits your timeline"
+            "note": "Kindergarten or 9th-grade entry only - a K entry in ~2031-33 fits the planned timeline"
           }
         ],
         "best_plan": "Rent a townhome just outside the city line during the pre-K years, apply for a Buford City Schools kindergarten seat, and buy inside the city line once the budget allows.",
@@ -6043,11 +6047,11 @@
       "note": "Adjustable on the dashboard. Also weigh things the number cannot: school zone, the spouse's job continuity, and whether the role moves Gregg toward AI product leadership."
     },
     "move_windows": [
-      "Before kindergarten (~2031-2033)",
+      "Before the first child starts kindergarten (~5 years after birth; ~2031-2033 if born 2026-2028)",
       "Before 6th grade",
       "Before 9th grade"
     ],
-    "buy_by": "If no qualifying offer has arrived by kindergarten entry (~2031-2033), buy on the Williamson County side of Spring Hill - it fits the planned-path budget with ~$156K of room.",
+    "buy_by": "If no qualifying offer has arrived by the first child's kindergarten year (~2031-2033 on the current assumption), buy on the Williamson County side of Spring Hill - it fits the planned-path budget with ~$156K of room.",
     "safeguards": [
       "Remote-role risk: keep a Nashville-area bench (Oracle, Amazon, HCA, Asurion, Dollar General, Tractor Supply, AllianceBernstein) in case of a return-to-office mandate or layoff.",
       "Sherwin-Williams AI leadership roles posted in 2026 are Cleveland-based, so the internal ladder may require in-person time - see sherwin_williams_track.",
