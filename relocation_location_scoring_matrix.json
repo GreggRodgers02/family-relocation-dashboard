@@ -679,7 +679,7 @@
       },
       "notes": "The DFW corridor's best overall balance among the entries that clear both budget phases. Median home is $432,600-$480,000 (working median ~$455K), projecting to roughly $659K by 2041 at 2.5% - about $82K under a ~$741K planned-path budget (Collin County's 1.66% property tax is what holds that budget down), while Plano, Allen, Frisco and Prosper all land over it. The rental phase is genuinely feasible rather than theoretical: 3BR rents run $2,300-$2,545 and Tricon Trinity Falls offers 126 purpose-built single-family rentals at $2,089-$2,699, inside the $2,600 primary ceiling. McKinney ISD is #17 in the DFW area and rates 8.6/10 - a real step below Frisco and Prosper but comfortably above state average. Career access is the full DFW market via US-75, and the Frisco sports cluster (PGA of America HQ, The Star, Toyota Stadium) is ~20 minutes away, so the sports-tech thesis survives without paying Frisco prices.",
       "risks": [
-        "McKinney ISD is good, not elite - #17 in DFW and 8.6/10, clearly behind Frisco ISD (85% of schools scoring 90+) and Prosper ISD (A+); zone verification still matters",
+        "McKinney ISD is good, not elite - #17 in DFW and 8.6/10, clearly behind Frisco ISD (85% of schools scoring 90+) and Prosper ISD (TEA A); zone verification still matters",
         "Career access depends on the US-75 commute into the Plano/Richardson corridor; McKinney's own employer base is thinner than Plano's",
         "Fast-growing exurb - school boundaries and inventory are both moving targets over a 13-year rental window",
         "Sports-tech proximity is borrowed from Frisco (~20 min), not native",
@@ -3659,79 +3659,6 @@
     },
     {
       "rank": 38,
-      "area": "Prosper",
-      "state": "Texas",
-      "state_abbr": "TX",
-      "metro": "dfw",
-      "tier": "Tier 3 - Watch List",
-      "strategic_label": "Best-in-DFW schools: houses are priced out, but rentals and Prosper ISD townhomes are not",
-      "scores": {
-        "ai_tech_pm_market": 8.0,
-        "school_quality": 9.5,
-        "housing_affordability_2041": 2.5,
-        "rental_feasibility_2028": 6.5,
-        "state_tax_burden": 10.0,
-        "aacsb_university_proximity": 8.5,
-        "robotics_fitness_startup_fit": 7.5,
-        "hs_football_culture": 9.0,
-        "private_school_access": 8.0,
-        "sports_tech_ecosystem": 9.0
-      },
-      "budget_check": {
-        "price_2026": 732000,
-        "price_source": "median",
-        "proj_2041": 1060154,
-        "property_tax_effective_pct": 1.66,
-        "property_tax_source": "Collin Co. 1.66%",
-        "insurance_state_avg_annual": 4915,
-        "budget_2041_planned": 740700,
-        "budget_2041_no_stepup": 569463,
-        "budget_2041_ai_leader": 940854,
-        "headroom_planned": -319454,
-        "headroom_no_stepup": -490691,
-        "verdict": "over planned-path budget"
-      },
-      "private_school_option": {
-        "considered": true,
-        "basis": "Contingent on income at time of enrollment",
-        "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Prestonwood Christian Academy North",
-            "location": "Prosper, TX",
-            "grades": "PK-12",
-            "approx_distance_mi": 3,
-            "annual_tuition_usd": 24081,
-            "enrollment": 620,
-            "football_program": true,
-            "verified": false
-          },
-          {
-            "name": "Legacy Christian Academy",
-            "location": "Frisco, TX",
-            "grades": "PK-12",
-            "approx_distance_mi": 10,
-            "football_program": true,
-            "verified": false
-          }
-        ],
-        "out_of_radius_options": [],
-        "assessment": "Prestonwood's Prosper campus is in-town, with Legacy Christian ~10 mi south.",
-        "verified": false
-      },
-      "notes": "Prosper ISD is rated A+ by Niche with an A+ in college prep and ranks #12 in the DFW area - among the very best districts in Texas. It is also the most expensive entry in the corridor by a wide margin: median home price is $732,300, with Zillow's typical value running $780K-$790K, projecting past $1.06M by 2041 against a ~$741K planned-path budget. The rental phase is equally strained, with BTR product such as The Luxe of Prosper priced above the stretch cap. Sports-tech access is strong via Frisco (~15 min), and Prestonwood's north campus is in town. Sep 2026 update: the rental phase is less strained than first scored. Market 3BR rent runs $2,447-$2,600, down 4.2% year over year, which sits at the $2,600 ceiling rather than above the stretch cap, and townhomes zoned to Prosper ISD list from $358,990 (44 on the market, including a 4BR/3BA at Dominion at Brookhollow under $600K). A ~$500K Prosper ISD townhome projects to ~$724K by 2041, just inside the ~$741K planned-path budget. Detached houses stay out of reach even at the AI-leader tier; see paths_to_yes.",
-      "risks": [
-        "DETACHED HOUSES ARE PRICED OUT: $732K-$790K median (listings as high as $899,900) projects past $1.06M by 2041. The townhome route is the only budget-safe purchase",
-        "Rent sits right at the $2,600 ceiling with little room for 2028 escalation",
-        "Elite schools are the entire case; every other criterion is matched or beaten by McKinney at far lower cost",
-        "Furthest north of the DFW entries, so the commute into the Plano/Richardson employer core is the longest"
-      ],
-      "weighted_total_out_of_100": 73.3,
-      "weighted_total_private_scenario": 70.3,
-      "weighted_total_career_max_scenario": 72.95
-    },
-    {
-      "rank": 39,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -3894,10 +3821,101 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 40,
+      "rank": 39,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 71.6,
       "weighted_total_career_max_scenario": 72.25
+    },
+    {
+      "area": "Celina",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "metro": "dfw",
+      "strategic_label": "Cheaper rent than Prosper and a Prosper ISD pocket in the south - watch the MUD/PID tax",
+      "est_2028_rent": 2450,
+      "scores": {
+        "ai_tech_pm_market": 8,
+        "school_quality": 6.5,
+        "housing_affordability_2041": 5.5,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 10,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 7,
+        "hs_football_culture": 9.5,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 7.0
+      },
+      "budget_check": {
+        "price_2026": 510000,
+        "price_source": "$499K-$525K",
+        "proj_2041": 738632,
+        "property_tax_effective_pct": 2.1,
+        "property_tax_source": "Celina MUD/PID communities: total rates ~2.0-2.44 per $100 (Lilyana 2.02, Mustang Lakes 2.10 + PID, Light Farms 2.44); ~2.1% effective after homestead exemption",
+        "insurance_state_avg_annual": 4915,
+        "budget_2041_planned": 704844,
+        "budget_2041_no_stepup": 541897,
+        "budget_2041_ai_leader": 895309,
+        "headroom_planned": -33788,
+        "headroom_no_stepup": -196735,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Prestonwood Christian Academy North",
+            "location": "Prosper, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 10,
+            "annual_tuition_usd": 24081,
+            "enrollment": 620,
+            "football_program": true,
+            "notes": "North campus explicitly serves Prosper/Celina families.",
+            "verified": false
+          },
+          {
+            "name": "Coram Deo Academy of Collin County",
+            "location": "Collin County, TX",
+            "approx_distance_mi": 15,
+            "notes": "Classical Christian.",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [
+          {
+            "name": "Legacy Christian Academy",
+            "location": "Frisco, TX",
+            "approx_distance_mi": 20,
+            "verified": false,
+            "excluded_reason": "At/over the 20-mile radius from Celina"
+          }
+        ],
+        "assessment": "Prestonwood's Prosper (North) campus sits ~10 mi from Celina and serves Celina families; the larger Plano/Frisco campuses are near the radius edge. Growing but not yet dense.",
+        "verified": false
+      },
+      "notes": "Fast-growing Collin County exurb north of Frisco and Prosper. No state income tax, DFW AI/tech market access and strong football culture (G.A. Moore legacy). Oct 2026 update: the rental phase is better than first scored - 3BR rents run $2,246-$2,450, under the ~$2,625 ceiling and below Prosper. The typical home sells for $496K-$530K, down roughly 10% from the 2024 peak. The catch is special taxing districts: most new neighborhoods carry a MUD or PID, putting total rates around 2.0-2.44 per $100 versus Collin County's 1.66% average. That cuts the planned-path 2041 budget to ~$705K and leaves the median ~$34K over. Celina ISD is rated B by the state (87, fourth straight year) and B+ by Niche (#9 in Collin County). The bigger opportunity is south Celina's Prosper ISD pocket (Light Farms, Mustang Lakes, Lilyana, Mosaic): Prosper ISD schools at $50K-$100K below comparable Prosper-address homes, and Mosaic townhomes from $374K that fit the planned path - see paths_to_yes. The Dallas North Tollway extension to FM 428 opens in late 2027, shortening the drive south.",
+      "risks": [
+        "Celina ISD is a state 'B' (87) and Niche B+ - a real step below Prosper ISD (A) next door. A south-Celina address zoned to Prosper ISD fixes this, but confirm zoning per address",
+        "MUD/PID TAX LOAD: total rates of ~2.0-2.44 per $100, plus PID assessments of $2,000-$5,000/yr in some communities (Mustang Lakes). Get the exact tax bill and PID payoff for every address",
+        "Commute to the Plano/Richardson employer core is longer than from Plano or Frisco until the Dallas North Tollway reaches FM 428 (late 2027); best suited to a remote or Frisco-based role",
+        "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
+      "rank": 40,
+      "weighted_total_out_of_100": 72.6,
+      "weighted_total_private_scenario": 75.6,
+      "weighted_total_career_max_scenario": 73.4,
+      "sources": [
+        "https://livingwell.realty/blog/in-south-celinas-prosper-isd-pocket-the-school-line-isnt-what-splits-your-tax-bill-the-pid-is",
+        "https://communityimpact.com/prosper-celina/education/celina-isd-receives-b-accountability-rating-from-state-for-2025-26-school-year/",
+        "https://www.niche.com/k12/d/celina-independent-school-district-tx/",
+        "https://www.redfin.com/city/30799/TX/Celina/housing-market",
+        "https://www.renthop.com/average-rent-in/celina-tx",
+        "https://www.nitinguptadfw.com/post/mustang-lakes-celina-new-construction-guide-2026",
+        "https://communityimpact.com/prosper-celina/transportation/dallas-north-tollway-legacy-drive-7-transportation-updates-in-prosper-celina/"
+      ]
     },
     {
       "rank": 41,
@@ -3992,37 +4010,38 @@
       "weighted_total_career_max_scenario": 72.5
     },
     {
-      "area": "Celina",
+      "rank": 42,
+      "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "dfw",
-      "strategic_label": "DFW value play with rental and school trade-offs",
-      "est_2028_rent": 2650,
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Prosper ISD (TEA A, top 17% in Texas): houses are priced out, but rentals and Prosper ISD townhomes are not",
       "scores": {
-        "ai_tech_pm_market": 8,
-        "school_quality": 6.5,
-        "housing_affordability_2041": 6.0,
-        "rental_feasibility_2028": 5.5,
-        "state_tax_burden": 10,
-        "aacsb_university_proximity": 8.0,
-        "robotics_fitness_startup_fit": 7,
-        "hs_football_culture": 9.5,
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 2.0,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 9.0,
         "private_school_access": 8.0,
-        "sports_tech_ecosystem": 7.0
+        "sports_tech_ecosystem": 9.0
       },
       "budget_check": {
-        "price_2026": 510000,
-        "price_source": "$499K-$525K",
-        "proj_2041": 738632,
+        "price_2026": 770000,
+        "price_source": "Zillow typical $770K (Jul 2026, -5.7% YoY); closed-sale median $849K (Aug 2026)",
+        "proj_2041": 1115190,
         "property_tax_effective_pct": 1.66,
         "property_tax_source": "Collin Co. 1.66%",
         "insurance_state_avg_annual": 4915,
         "budget_2041_planned": 740700,
         "budget_2041_no_stepup": 569463,
         "budget_2041_ai_leader": 940854,
-        "headroom_planned": 2068,
-        "headroom_no_stepup": -169169,
-        "verdict": "fits planned path"
+        "headroom_planned": -374489,
+        "headroom_no_stepup": -545726,
+        "verdict": "over planned-path budget"
       },
       "private_school_option": {
         "considered": true,
@@ -4033,45 +4052,41 @@
             "name": "Prestonwood Christian Academy North",
             "location": "Prosper, TX",
             "grades": "PK-12",
-            "approx_distance_mi": 10,
+            "approx_distance_mi": 3,
             "annual_tuition_usd": 24081,
             "enrollment": 620,
             "football_program": true,
-            "notes": "North campus explicitly serves Prosper/Celina families.",
             "verified": false
           },
           {
-            "name": "Coram Deo Academy of Collin County",
-            "location": "Collin County, TX",
-            "approx_distance_mi": 15,
-            "notes": "Classical Christian.",
+            "name": "Legacy Christian Academy",
+            "location": "Frisco, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 10,
+            "football_program": true,
             "verified": false
           }
         ],
-        "out_of_radius_options": [
-          {
-            "name": "Legacy Christian Academy",
-            "location": "Frisco, TX",
-            "approx_distance_mi": 20,
-            "verified": false,
-            "excluded_reason": "At/over the 20-mile radius from Celina"
-          }
-        ],
-        "assessment": "Prestonwood's Prosper (North) campus sits ~10 mi from Celina and serves Celina families; the larger Plano/Frisco campuses are near the radius edge. Growing but not yet dense.",
+        "out_of_radius_options": [],
+        "assessment": "Prestonwood's Prosper campus is in-town, with Legacy Christian ~10 mi south.",
         "verified": false
       },
-      "notes": "Fast-growing Collin County exurb north of Frisco. No state income tax, DFW AI/tech market access, strong football culture (G.A. Moore legacy), and better 2041 purchase affordability than Plano/Frisco. School quality (Celina ISD, Niche A-, #161 in TX) and 2028 rental costs (~$2,650 median) are the primary weaknesses against the model.",
+      "notes": "Prosper ISD earned a TEA 'A' for 2025-26 (top 17% of Texas districts). Niche's 2026 grade is A- (#26 in Texas) - excellent, but behind Allen (#6), Lovejoy (#7) and Frisco (#11), so the school score is 9.0 rather than 9.5. It is also the most expensive entry in the corridor by a wide margin: Zillow's typical value is $770K (down 5.7% year over year) and closed sales run a median $849K, so even the lower figure projects to ~$1,115K by 2041 against a ~$741K planned-path budget. The rental phase is equally strained, with BTR product such as The Luxe of Prosper priced above the stretch cap. Sports-tech access is strong via Frisco (~15 min), and Prestonwood's north campus is in town. Sep 2026 update: the rental phase is less strained than first scored. Market 3BR rent runs $2,447-$2,600, down 4.2% year over year, which sits at the $2,600 ceiling rather than above the stretch cap, and townhomes zoned to Prosper ISD list from $358,990 (44 on the market, including a 4BR/3BA at Dominion at Brookhollow under $600K). A ~$500K Prosper ISD townhome projects to ~$724K by 2041, just inside the ~$741K planned-path budget. Detached houses stay out of reach even at the AI-leader tier; see paths_to_yes. Oct 2026 update: the cheapest Prosper ISD purchase now sits just over the town line - Mosaic townhomes (Prosper ISD) list $374K-$518K; see Celina and paths_to_yes.",
       "risks": [
-        "Celina ISD ranks #161 in Texas — materially below Prosper, Frisco, and Plano in the same region",
-        "3-bedroom townhome rents average $2,650-$2,800, above the $2,300 target — rental phase feasibility is the biggest flag",
-        "Commute distance to core DFW AI/tech employers is longer than Plano/Frisco; best suited for remote-first career path by 2028",
-        "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
+        "DETACHED HOUSES ARE PRICED OUT: a $770K typical value ($849K closed-sale median) projects to ~$1,115K by 2041 - ~$374K over the planned-path budget and ~$174K over even the AI-leader budget. The townhome route is the only budget-safe purchase",
+        "Rent sits right at the $2,600 ceiling with little room for 2028 escalation",
+        "Elite schools are the entire case; every other criterion is matched or beaten by McKinney at far lower cost",
+        "Furthest north of the DFW entries, so the commute into the Plano/Richardson employer core is the longest"
       ],
-      "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 42,
-      "weighted_total_out_of_100": 70.8,
-      "weighted_total_private_scenario": 73.8,
-      "weighted_total_career_max_scenario": 72.0
+      "weighted_total_out_of_100": 71.3,
+      "weighted_total_private_scenario": 69.3,
+      "weighted_total_career_max_scenario": 70.95,
+      "sources": [
+        "https://www.zillow.com/home-values/33547/prosper-tx/",
+        "https://resideline.com/blog/prosper-tx-housing-market",
+        "https://communityimpact.com/prosper-celina/education/prosper-isd-receives-a-rating-from-state-for-2025-26-school-year/",
+        "https://www.niche.com/k12/search/best-school-districts/s/texas/"
+      ]
     },
     {
       "rank": 43,
@@ -5452,11 +5467,11 @@
         "locations": [
           {
             "area": "Prosper",
-            "rank": 38,
-            "school_quality": 9.5,
+            "rank": 42,
+            "school_quality": 9.0,
             "rental_feasibility_2028": 6.5,
-            "housing_affordability_2041": 2.5,
-            "weighted_total_out_of_100": 73.3,
+            "housing_affordability_2041": 2.0,
+            "weighted_total_out_of_100": 71.3,
             "purchase_phase_note": "Rent inside the district; buy in a nearby location that clears the budget."
           },
           {
@@ -5630,7 +5645,7 @@
           },
           {
             "area": "Lake Nona",
-            "rank": 40,
+            "rank": 39,
             "rental_feasibility_2028": 5.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 72.6
@@ -5905,23 +5920,24 @@
       },
       {
         "id": "prosper",
-        "title": "Prosper, TX",
+        "title": "Prosper and south Celina (Prosper ISD), TX",
         "matrix_areas": [
-          "Prosper"
+          "Prosper",
+          "Celina"
         ],
         "verdict": "works_now",
-        "verdict_label": "Works on the planned path through rentals and a Prosper ISD townhome; a house is out of reach",
-        "headline": "Not priced out after all. Houses are, but 3BR rents have fallen to about the ceiling and Prosper ISD townhomes start under $360K.",
+        "verdict_label": "Works on the planned path through rentals and a Prosper ISD townhome; houses are out of reach",
+        "headline": "Prosper ISD is reachable without a Prosper house. Rents are at or under the ceiling, and the cheapest Prosper ISD townhomes are now just over the line in south Celina.",
         "fit": [
-          "Prosper ISD: A+, #12 in DFW",
+          "Prosper ISD: TEA A for 2025-26, top 17% of Texas districts (Niche A-, #26 in Texas)",
           "Frisco's sports cluster (PGA of America, The Star) ~15 minutes away - the strongest sports-tech neighbor for your venture outside Olathe",
           "DFW AACSB density for the professor path, no state income tax, and Kendra Scott at Legacy West in Plano"
         ],
         "options": [
           {
-            "option": "Rent a 3BR",
+            "option": "Rent a 3BR in Prosper",
             "price_2026": null,
-            "price_note": "$2,447-$2,600/mo, down 4.2% year over year",
+            "price_note": "$2,447-$2,517/mo typical; new luxury units run higher",
             "proj_2041": null,
             "works_under": [
               "current",
@@ -5931,9 +5947,32 @@
             "note": "Inside the ~$2,625 rent ceiling from 2028 at every tier"
           },
           {
-            "option": "Prosper ISD townhome",
+            "option": "Rent a 3BR in Celina",
+            "price_2026": null,
+            "price_note": "$2,246-$2,450/mo",
+            "proj_2041": null,
+            "works_under": [
+              "current",
+              "stepup",
+              "leader"
+            ],
+            "note": "Cheapest way into the area; confirm the address is zoned to Prosper ISD"
+          },
+          {
+            "option": "Mosaic townhome, south Celina (Prosper ISD)",
+            "price_2026": 450000,
+            "price_note": "Lists $374K-$518K (Prosper ISD); ~2.1% tax with MUD/PID",
+            "proj_2041": 651734,
+            "works_under": [
+              "stepup",
+              "leader"
+            ],
+            "note": "Fits the planned-path budget (~$705K) with $53K to spare; over by $110K without the step-up"
+          },
+          {
+            "option": "Prosper ISD townhome in Prosper",
             "price_2026": 500000,
-            "price_note": "Townhomes list $358,990-$719,990 (44 available)",
+            "price_note": "Townhomes list $358,990-$719,990",
             "proj_2041": 724149,
             "works_under": [
               "stepup",
@@ -5942,19 +5981,37 @@
             "note": "Fits the planned-path budget (~$741K) with $17K to spare; over by $155K without the step-up"
           },
           {
-            "option": "Prosper median house",
-            "price_2026": 732000,
-            "price_note": "Median; some sources show $780K-$900K",
-            "proj_2041": 1060154,
+            "option": "Celina ISD house (Celina median)",
+            "price_2026": 510000,
+            "price_note": "$496K-$530K typical sale; ~2.1% tax",
+            "proj_2041": 738632,
+            "works_under": [
+              "leader"
+            ],
+            "note": "Needs the AI-leader tier (~$895K); $34K over the planned-path budget"
+          },
+          {
+            "option": "Prosper ISD house in south Celina (Light Farms)",
+            "price_2026": 625000,
+            "price_note": "Light Farms median sale ~$625K (range $400K-$1.85M); Mustang Lakes and Lilyana similar or higher",
+            "proj_2041": 905186,
             "works_under": [],
-            "note": "Out of reach at every tier - $119K over even the AI-leader budget (~$941K)"
+            "note": "Out of reach at every tier - $10K over even the AI-leader budget (~$895K)"
+          },
+          {
+            "option": "Prosper median house",
+            "price_2026": 770000,
+            "price_note": "Zillow typical $770K; closed-sale median $849K",
+            "proj_2041": 1115190,
+            "works_under": [],
+            "note": "Out of reach at every tier - $174K over even the AI-leader budget (~$941K)"
           }
         ],
-        "best_plan": "Rent inside Prosper ISD from 2028 and buy a Prosper ISD townhome once the step-up lands. At ~$500K it clears the planned-path budget by only ~$17K, so aim for the lower end of the $359K-$720K range. A detached house is out of reach even at the AI-leader tier.",
+        "best_plan": "Rent inside Prosper ISD from 2028 - a south Celina address zoned to Prosper ISD is the cheapest way to do it - then buy a Prosper ISD townhome once the step-up lands. A ~$450K Mosaic townhome clears the planned-path budget by ~$53K even at Celina's ~2.1% tax, more room than a ~$500K Prosper-address townhome (~$17K). Detached Prosper ISD houses stay out of reach, even in south Celina.",
         "trigger": "The planned step-up for the townhome; no tier reaches a detached house",
         "verify": [
-          "Prosper ISD zoning per address",
-          "Property tax and any MUD/PID load on the specific address",
+          "Prosper ISD zoning per address (south Celina is split between Prosper ISD and Celina ISD)",
+          "The exact tax bill: MUD rate, PID assessment and payoff for the specific lot",
           "Townhome HOA fees, which count against the monthly budget"
         ]
       },
@@ -6800,14 +6857,14 @@
           "score": 75.4
         },
         {
-          "area": "Prosper",
-          "rank": 38,
-          "score": 73.3
+          "area": "Celina",
+          "rank": 40,
+          "score": 72.6
         },
         {
-          "area": "Celina",
+          "area": "Prosper",
           "rank": 42,
-          "score": 70.8
+          "score": 71.3
         },
         {
           "area": "Lucas (Lovejoy ISD)",
@@ -7490,7 +7547,7 @@
         },
         {
           "area": "Lake Nona",
-          "rank": 40,
+          "rank": 39,
           "score": 72.6
         }
       ],
@@ -8785,7 +8842,7 @@
       "locations": [
         {
           "area": "Auburn / Opelika",
-          "rank": 39,
+          "rank": 38,
           "score": 73.3
         }
       ],
