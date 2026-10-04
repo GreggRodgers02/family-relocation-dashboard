@@ -54,9 +54,9 @@
       "rental_phase_year": 2028,
       "rental_target": "Professionally managed 3-bedroom townhome with a $2,600/month primary ceiling and a $2,900/month hard stretch cap (income-based; see rental_budget_config).",
       "home_purchase_year": 2041,
-      "home_budget_2041_range": "$727K-$895K",
+      "home_budget_2041_range": "$698K-$895K",
       "home_budget_model": {
-        "summary": "Replaces the earlier $820K placeholder with a budget derived from lending rules, mortgage-rate forecasts and each location's property tax and insurance. On the planned career path it runs ~$727K-$895K depending on the state: about where $820K sat on average, but property tax makes it lower in Texas, Ohio and New Jersey and higher in Tennessee, the Carolinas and Alabama.",
+        "summary": "Replaces the earlier $820K placeholder with a budget derived from lending rules, mortgage-rate forecasts and each location's property tax and insurance. On the planned career path it runs ~$727K-$895K depending on the state: about where $820K sat on average, but property tax makes it lower in Texas, Ohio and New Jersey and higher in Tennessee, the Carolinas and Alabama. A few high-tax towns sit below the state figures: Alamo Heights (~2.19% effective) at ~$698K and Celina's MUD/PID neighborhoods (~2.1%) at ~$705K.",
         "method": "Budget = the price whose monthly principal, interest, property tax and insurance equal 28% of gross household income in 2041, with 20% down on a 30-year fixed loan. Home prices project from 2026 at 2.5%/yr.",
         "inputs": {
           "front_end_ratio": {
@@ -1782,6 +1782,64 @@
     },
     {
       "rank": 16,
+      "area": "New Braunfels (Comal ISD)",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "metro": "san_antonio",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Between San Antonio and Austin - affordable, B-rated schools, two job markets in reach",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 7.0,
+        "housing_affordability_2041": 9.0,
+        "rental_feasibility_2028": 8.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 7.0,
+        "sports_tech_ecosystem": 6.0
+      },
+      "budget_check": {
+        "price_2026": 350000,
+        "price_source": "median $345K-$386K (2026)",
+        "proj_2041": 506904,
+        "property_tax_effective_pct": 1.79,
+        "property_tax_source": "Comal Co. combined effective 1.79%",
+        "insurance_state_avg_annual": 4915,
+        "budget_2041_planned": 729732,
+        "budget_2041_no_stepup": 561031,
+        "budget_2041_ai_leader": 926922,
+        "headroom_planned": 222828,
+        "headroom_no_stepup": 54127,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "No private options researched yet for this suburb; San Antonio's top schools are 25-35 minutes away.",
+        "verified": false
+      },
+      "notes": "River town on I-35 between San Antonio (~30 miles) and Austin (~50 miles), so both job markets are within reach; Texas State University (AACSB) in San Marcos is ~20 minutes north. Comal ISD scored a B (88) for 2025-26 with 18 A-rated campuses; New Braunfels ISD scored a B (84). The median is $345K-$386K, projecting to ~$507K by 2041 - ~$223K under the ~$730K planned-path budget. 3BR rents run ~$1,900-$1,926.",
+      "risks": [
+        "Schools are B-rated district-wide; campus-level ratings vary, so choose the zone carefully",
+        "No Kendra Scott store found in New Braunfels; the nearest are in north San Antonio (~30-35 minutes)"
+      ],
+      "weighted_total_out_of_100": 78.8,
+      "weighted_total_private_scenario": 78.8,
+      "weighted_total_career_max_scenario": 79.0,
+      "sources": [
+        "https://resideline.com/blog/new-braunfels-tx-housing-market",
+        "https://communityimpact.com/new-braunfels/education/comal-isd-maintains-b-rating-from-tea-for-the-2025-26-school-year/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/tx/new-braunfels/",
+        "https://www.taxdrop.com/blog/texas-property-tax-rates-by-county-2026"
+      ]
+    },
+    {
+      "rank": 17,
       "area": "Madison / Huntsville",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -1950,13 +2008,13 @@
         "AI/product market is mid-tier and concentrated in finance, insurance and health tech; ceiling is below Austin, DFW, or the Triangle for frontier AI product work"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 17,
+      "rank": 18,
       "weighted_total_out_of_100": 78.0,
       "weighted_total_private_scenario": 82.0,
       "weighted_total_career_max_scenario": 77.25
     },
     {
-      "rank": 18,
+      "rank": 19,
       "area": "Cary",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -2127,13 +2185,13 @@
         "Merrol Hyde Magnet admission is by county-wide lottery and cannot be secured by address"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 19,
+      "rank": 20,
       "weighted_total_out_of_100": 77.9,
       "weighted_total_private_scenario": 77.9,
       "weighted_total_career_max_scenario": 79.1
     },
     {
-      "rank": 20,
+      "rank": 21,
       "area": "Oldham County (Crestwood / La Grange)",
       "state": "Kentucky",
       "state_abbr": "KY",
@@ -2300,13 +2358,13 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 21,
+      "rank": 22,
       "weighted_total_out_of_100": 77.7,
       "weighted_total_private_scenario": 78.7,
       "weighted_total_career_max_scenario": 76.65
     },
     {
-      "rank": 22,
+      "rank": 23,
       "area": "West Des Moines",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -2385,7 +2443,65 @@
       "weighted_total_career_max_scenario": 79.2
     },
     {
-      "rank": 23,
+      "rank": 24,
+      "area": "Schertz / Cibolo (SCUC ISD)",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "metro": "san_antonio",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Cheapest San Antonio option with the biggest budget cushion - school quality is the trade-off",
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 6.5,
+        "housing_affordability_2041": 9.0,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 6.5,
+        "hs_football_culture": 8.0,
+        "private_school_access": 7.0,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 335000,
+        "price_source": "Cibolo $332K-$350K; Schertz ~$316K (2026)",
+        "proj_2041": 485180,
+        "property_tax_effective_pct": 1.69,
+        "property_tax_source": "Guadalupe Co. average effective 1.69%",
+        "insurance_state_avg_annual": 4915,
+        "budget_2041_planned": 738140,
+        "budget_2041_no_stepup": 567495,
+        "budget_2041_ai_leader": 937602,
+        "headroom_planned": 252960,
+        "headroom_no_stepup": 82315,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "No private options researched yet for this suburb; San Antonio's top schools are 25-35 minutes away.",
+        "verified": false
+      },
+      "notes": "Northeast suburbs along I-35 toward New Braunfels, next to Randolph AFB. Schertz-Cibolo-Universal City ISD is Niche A- but received a preliminary 81/B from the state for 2026 (45% math and 56% reading proficiency). Homes are the cheapest of the San Antonio set: Cibolo ~$332K-$350K and Schertz ~$316K, projecting to ~$485K by 2041 - ~$253K under the ~$738K planned-path budget, and inside even the no-step-up budget. 3BR rents run ~$1,700-$2,115.",
+      "risks": [
+        "SCUC ISD is a B (81 preliminary) - a step below Boerne, Alamo Heights or Stone Oak's NEISD zones",
+        "Furthest from the north-side Kendra Scott stores (~30 minutes to North Star)"
+      ],
+      "weighted_total_out_of_100": 76.8,
+      "weighted_total_private_scenario": 77.8,
+      "weighted_total_career_max_scenario": 76.8,
+      "sources": [
+        "https://www.zillow.com/home-values/51410/cibolo-tx/",
+        "https://www.niche.com/k12/d/schertz-cibolo-universal-city-independent-school-district-tx/",
+        "https://www.zumper.com/rent-research/cibolo-tx",
+        "https://www.taxdrop.com/blog/texas-property-tax-rates-by-county-2026"
+      ]
+    },
+    {
+      "rank": 25,
       "area": "Buford (Buford City Schools)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2472,7 +2588,84 @@
       "weighted_total_career_max_scenario": 77.65
     },
     {
-      "rank": 24,
+      "rank": 26,
+      "area": "Stone Oak (North San Antonio)",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "metro": "san_antonio",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Best San Antonio balance - A+ NEISD high school, rent well under the ceiling, house at the edge of the budget",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 6.0,
+        "rental_feasibility_2028": 8.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 8.5,
+        "sports_tech_ecosystem": 6.0
+      },
+      "budget_check": {
+        "price_2026": 478000,
+        "price_source": "median sale $475K-$480K (2026)",
+        "proj_2041": 692287,
+        "property_tax_effective_pct": 1.73,
+        "property_tax_source": "Bexar Co. average effective 1.73%",
+        "insurance_state_avg_annual": 4915,
+        "budget_2041_planned": 734754,
+        "budget_2041_no_stepup": 564892,
+        "budget_2041_ai_leader": 933301,
+        "headroom_planned": 42467,
+        "headroom_no_stepup": -127395,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Keystone School",
+            "location": "San Antonio, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 12,
+            "annual_tuition_usd": 24953,
+            "notes": "Upper-school tuition, 2025 figure",
+            "verified": false
+          },
+          {
+            "name": "Saint Mary's Hall",
+            "location": "San Antonio, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 12,
+            "annual_tuition_usd": 34042,
+            "notes": "Upper-school tuition, 2025 figure",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "San Antonio's top private schools cluster in Alamo Heights and the north-central city.",
+        "verified": false
+      },
+      "notes": "Master-planned north San Antonio along US-281 - 40+ subdivisions inside North East ISD. Reagan High is Niche A+ (#4 public high school in the San Antonio area) and Johnson High is A (#6); confirm which one an address feeds. The median sells for $475K-$480K, projecting to ~$692K by 2041 - ~$42K under the ~$735K planned-path budget at Bexar County's 1.73% average rate. 3BR rents run ~$1,924-$2,100, comfortably under the ceiling. North Star Mall and La Cantera (Kendra Scott) are 15-25 minutes away.",
+      "risks": [
+        "NEISD is large - school quality depends on the address (Reagan A+, Johnson A); verify zoning",
+        "US-281 commute to downtown can be slow at peak"
+      ],
+      "weighted_total_out_of_100": 76.5,
+      "weighted_total_private_scenario": 76.5,
+      "weighted_total_career_max_scenario": 77.25,
+      "sources": [
+        "https://www.movoto.com/san-antonio-tx/stone-oak/market-trends/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/tx/san-antonio/stone-oak/",
+        "https://www.niche.com/k12/reagan-high-school-san-antonio-tx/",
+        "https://www.taxdrop.com/blog/texas-property-tax-rates-by-county-2026"
+      ]
+    },
+    {
+      "rank": 27,
       "area": "Frisco",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2554,7 +2747,7 @@
       "weighted_total_career_max_scenario": 76.9
     },
     {
-      "rank": 25,
+      "rank": 28,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -2643,7 +2836,7 @@
       "weighted_total_career_max_scenario": 75.4
     },
     {
-      "rank": 26,
+      "rank": 29,
       "area": "Olathe (Garmin HQ)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -2723,7 +2916,7 @@
       "weighted_total_career_max_scenario": 74.7
     },
     {
-      "rank": 27,
+      "rank": 30,
       "area": "Crowley / North Crowley (SW Fort Worth)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2815,7 +3008,7 @@
       "weighted_total_career_max_scenario": 74.8
     },
     {
-      "rank": 28,
+      "rank": 31,
       "area": "Overland Park (Blue Valley)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -2895,7 +3088,7 @@
       "weighted_total_career_max_scenario": 74.95
     },
     {
-      "rank": 29,
+      "rank": 32,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -3060,13 +3253,13 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 30,
+      "rank": 33,
       "weighted_total_out_of_100": 75.2,
       "weighted_total_private_scenario": 75.2,
       "weighted_total_career_max_scenario": 74.9
     },
     {
-      "rank": 31,
+      "rank": 34,
       "area": "Austin (City Proper)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3160,7 +3353,7 @@
       "weighted_total_career_max_scenario": 76.4
     },
     {
-      "rank": 32,
+      "rank": 35,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -3320,7 +3513,7 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 33,
+      "rank": 36,
       "weighted_total_out_of_100": 74.5,
       "weighted_total_private_scenario": 77.5,
       "weighted_total_career_max_scenario": 74.8
@@ -3401,13 +3594,13 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 34,
+      "rank": 37,
       "weighted_total_out_of_100": 74.3,
       "weighted_total_private_scenario": 78.3,
       "weighted_total_career_max_scenario": 74.4
     },
     {
-      "rank": 35,
+      "rank": 38,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -3581,13 +3774,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 36,
+      "rank": 39,
       "weighted_total_out_of_100": 73.7,
       "weighted_total_private_scenario": 78.7,
       "weighted_total_career_max_scenario": 74.25
     },
     {
-      "rank": 37,
+      "rank": 40,
       "area": "Waukee",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -3658,7 +3851,7 @@
       "weighted_total_career_max_scenario": 75.35
     },
     {
-      "rank": 38,
+      "rank": 41,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -3821,7 +4014,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 39,
+      "rank": 42,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 71.6,
       "weighted_total_career_max_scenario": 72.25
@@ -3903,7 +4096,7 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 40,
+      "rank": 43,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 75.6,
       "weighted_total_career_max_scenario": 73.4,
@@ -3918,7 +4111,7 @@
       ]
     },
     {
-      "rank": 41,
+      "rank": 44,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -4010,7 +4203,7 @@
       "weighted_total_career_max_scenario": 72.5
     },
     {
-      "rank": 42,
+      "rank": 45,
       "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
@@ -4089,7 +4282,7 @@
       ]
     },
     {
-      "rank": 43,
+      "rank": 46,
       "area": "Lucas (Lovejoy ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -4267,7 +4460,78 @@
       }
     },
     {
-      "rank": 44,
+      "rank": 47,
+      "area": "Boerne",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "metro": "san_antonio",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Hill Country town with an A-rated district (TEA 92) ~30 miles northwest of San Antonio - the house is the stretch",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 4.0,
+        "rental_feasibility_2028": 7.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 640000,
+        "price_source": "median sale $630K-$660K (early-2026 figures to $665K)",
+        "proj_2041": 926911,
+        "property_tax_effective_pct": 1.64,
+        "property_tax_source": "Boerne city + Boerne ISD + Kendall Co. total 1.86 per $100; ~1.63% effective after the $140K school homestead exemption",
+        "insurance_state_avg_annual": 4915,
+        "budget_2041_planned": 742417,
+        "budget_2041_no_stepup": 570783,
+        "budget_2041_ai_leader": 943034,
+        "headroom_planned": -184494,
+        "headroom_no_stepup": -356128,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "The Geneva School of Boerne",
+            "location": "Boerne, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 3,
+            "annual_tuition_usd": 17205,
+            "notes": "Upper-school tuition, 2025 figure",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "San Antonio's top private schools cluster in Alamo Heights and the north-central city.",
+        "verified": false
+      },
+      "notes": "Hill Country town ~30 miles northwest of downtown San Antonio along I-10, closest to USAA's northwest campus and the Shops at La Cantera (Kendra Scott). Boerne ISD earned an overall A (92) from the state for 2025-26 and ranks #3 in the San Antonio area on Niche (A, #33 in Texas). The median home sells for $630K-$660K and projects to ~$927K by 2041, ~$184K over a ~$742K planned-path budget even with Kendall County's lower rates (1.86 per $100 in town, ~1.63% effective for a new homestead). Rents are workable: 3BR apartments run ~$1,840-$2,200 and 3BR houses average ~$2,670. The Geneva School of Boerne (classical Christian, ~$17,200 high-school tuition) is in town.",
+      "risks": [
+        "Median house projects over the planned-path budget; it works only at the AI-leader tier unless you buy below the median",
+        "Longest commute of the San Antonio options to downtown employers (H-E-B's Arsenal campus, Frost); best for a remote or northwest-side job",
+        "3BR houses average ~$2,670, above the ~$2,625 rent ceiling - plan on apartments or townhomes during the rental phase"
+      ],
+      "weighted_total_out_of_100": 70.5,
+      "weighted_total_private_scenario": 68.5,
+      "weighted_total_career_max_scenario": 71.3,
+      "sources": [
+        "https://weigandrealestate.com/blog/boerne-housing-market",
+        "https://www.ci.boerne.tx.us/646/Current-Tax-Rates",
+        "https://citizenportal.ai/articles/6787156/Texas/School-Districts/BOERNE-ISD/Boerne-ISD-keeps-an-A-district-posts-92-accountability-score-and-plans-targeted-instruction",
+        "https://www.niche.com/k12/search/best-school-districts/m/san-antonio-metro-area/",
+        "https://www.zumper.com/rent-research/boerne-tx",
+        "https://www.collegetransitions.com/blog/best-private-schools-in-san-antonio/"
+      ]
+    },
+    {
+      "rank": 48,
       "area": "Thompson's Station",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -4333,7 +4597,7 @@
       "weighted_total_career_max_scenario": 69.15
     },
     {
-      "rank": 45,
+      "rank": 49,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -4416,7 +4680,7 @@
       "weighted_total_career_max_scenario": 69.3
     },
     {
-      "rank": 46,
+      "rank": 50,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -4512,7 +4776,7 @@
       "weighted_total_career_max_scenario": 69.05
     },
     {
-      "rank": 47,
+      "rank": 51,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -4601,7 +4865,95 @@
       "weighted_total_career_max_scenario": 65.35
     },
     {
-      "rank": 48,
+      "rank": 52,
+      "area": "Alamo Heights",
+      "state": "Texas",
+      "state_abbr": "TX",
+      "metro": "san_antonio",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "San Antonio's #1 district (Niche A+, #12 in Texas) - rent above the ceiling and houses out of reach",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 1.5,
+        "rental_feasibility_2028": 5.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 9.5,
+        "sports_tech_ecosystem": 6.0
+      },
+      "budget_check": {
+        "price_2026": 895000,
+        "price_source": "median $895K (early 2026, +3.4% YoY); July 2026 median list $980K",
+        "proj_2041": 1296227,
+        "property_tax_effective_pct": 2.19,
+        "property_tax_source": "City of Alamo Heights + Alamo Heights ISD + Bexar Co. total ~2.34 per $100; ~2.19% effective after the $140K school homestead exemption",
+        "insurance_state_avg_annual": 4915,
+        "budget_2041_planned": 697934,
+        "budget_2041_no_stepup": 536584,
+        "budget_2041_ai_leader": 886531,
+        "headroom_planned": -598293,
+        "headroom_no_stepup": -759643,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Saint Mary's Hall",
+            "location": "San Antonio, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 4,
+            "annual_tuition_usd": 34042,
+            "notes": "Upper-school tuition, 2025 figure",
+            "verified": false
+          },
+          {
+            "name": "TMI Episcopal",
+            "location": "San Antonio, TX",
+            "grades": "6-12",
+            "approx_distance_mi": 12,
+            "annual_tuition_usd": 31730,
+            "notes": "Upper-school tuition, 2025 figure",
+            "verified": false
+          },
+          {
+            "name": "Keystone School",
+            "location": "San Antonio, TX",
+            "grades": "PK-12",
+            "approx_distance_mi": 3,
+            "annual_tuition_usd": 24953,
+            "notes": "Upper-school tuition, 2025 figure",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "San Antonio's top private schools cluster in Alamo Heights and the north-central city.",
+        "verified": false
+      },
+      "notes": "Small, affluent enclave city inside San Antonio, minutes from the Pearl and the Quarry (both have Kendra Scott stores) and close to Trinity University (AACSB) and downtown employers. Alamo Heights ISD is Niche's #1 district in the San Antonio area (A+, #12 in Texas). The median home is ~$895K (July 2026 median list $980K), projecting to ~$1,296K by 2041 - ~$410K over even the AI-leader budget, with a heavy ~2.34 per $100 tax rate (~2.19% effective for a new homestead). Rent is the second problem: 3BR rentals run ~$2,900-$3,150, above the ~$2,625 ceiling and at the stretch cap. Private options are the best in the metro (Saint Mary's Hall ~$34K, Keystone ~$25K, TMI Episcopal ~$31.7K).",
+      "risks": [
+        "Houses are out of reach at every career tier",
+        "3BR rent (~$2,900-$3,150) is above the rent ceiling",
+        "Highest tax rate of the San Antonio options (~2.34 per $100)"
+      ],
+      "weighted_total_out_of_100": 65.8,
+      "weighted_total_private_scenario": 65.8,
+      "weighted_total_career_max_scenario": 67.05,
+      "sources": [
+        "https://www.movoto.com/alamo-heights-tx/market-trends/",
+        "https://www.alamoheightstx.gov/wp-content/uploads/2025-Notice-of-Tax-Rate.pdf",
+        "https://www.niche.com/k12/search/best-school-districts/m/san-antonio-metro-area/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/tx/alamo-heights/",
+        "https://www.collegetransitions.com/blog/best-private-schools-in-san-antonio/"
+      ]
+    },
+    {
+      "rank": 53,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -4689,7 +5041,7 @@
       "weighted_total_career_max_scenario": 64.9
     },
     {
-      "rank": 49,
+      "rank": 54,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -4790,7 +5142,7 @@
       "weighted_total_career_max_scenario": 65.3
     },
     {
-      "rank": 50,
+      "rank": 55,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -4890,7 +5242,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 51,
+      "rank": 56,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -4986,7 +5338,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 52,
+      "rank": 57,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -5200,11 +5552,14 @@
       "Allen",
       "Oviedo",
       "Melissa",
+      "New Braunfels (Comal ISD)",
       "Tampa",
       "Hendersonville",
       "Oldham County (Crestwood / La Grange)",
       "West Des Moines",
+      "Schertz / Cibolo (SCUC ISD)",
       "Buford (Buford City Schools)",
+      "Stone Oak (North San Antonio)",
       "Fort Mill",
       "Olathe (Garmin HQ)",
       "Suwanee / Peachtree Corners",
@@ -5222,7 +5577,8 @@
       "Alpharetta / Johns Creek",
       "Waukee",
       "Prosper",
-      "Lucas (Lovejoy ISD)"
+      "Lucas (Lovejoy ISD)",
+      "Boerne"
     ],
     "tier_4_backup_only": [
       "Mount Juliet",
@@ -5235,6 +5591,7 @@
       "Roswell",
       "Franklin",
       "Farragut",
+      "Alamo Heights",
       "Waxhaw",
       "Germantown (Nashville)",
       "Leesburg / Ashburn",
@@ -5433,28 +5790,35 @@
         "locations": [
           {
             "area": "Gallatin",
-            "rank": 21,
+            "rank": 22,
             "rental_feasibility_2028": 9,
             "school_quality": 7,
             "weighted_total_out_of_100": 77.7
           },
           {
+            "area": "Schertz / Cibolo (SCUC ISD)",
+            "rank": 24,
+            "rental_feasibility_2028": 8.5,
+            "school_quality": 6.5,
+            "weighted_total_out_of_100": 76.8
+          },
+          {
             "area": "Crowley / North Crowley (SW Fort Worth)",
-            "rank": 27,
+            "rank": 30,
             "rental_feasibility_2028": 9.0,
             "school_quality": 4.0,
             "weighted_total_out_of_100": 75.4
           },
           {
             "area": "Lakeland",
-            "rank": 34,
+            "rank": 37,
             "rental_feasibility_2028": 9,
             "school_quality": 5.5,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Davenport / Four Corners",
-            "rank": 36,
+            "rank": 39,
             "rental_feasibility_2028": 8.5,
             "school_quality": 4,
             "weighted_total_out_of_100": 73.7
@@ -5467,7 +5831,7 @@
         "locations": [
           {
             "area": "Prosper",
-            "rank": 42,
+            "rank": 45,
             "school_quality": 9.0,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 2.0,
@@ -5476,7 +5840,7 @@
           },
           {
             "area": "Lucas (Lovejoy ISD)",
-            "rank": 43,
+            "rank": 46,
             "school_quality": 9.5,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 1.0,
@@ -5547,49 +5911,56 @@
           },
           {
             "area": "Madison / Huntsville",
-            "rank": 16,
+            "rank": 17,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 78.1
           },
           {
             "area": "Oldham County (Crestwood / La Grange)",
-            "rank": 20,
+            "rank": 21,
             "rental_feasibility_2028": 8.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 77.7
           },
           {
             "area": "West Des Moines",
-            "rank": 22,
+            "rank": 23,
             "rental_feasibility_2028": 9.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 76.8
           },
           {
+            "area": "Stone Oak (North San Antonio)",
+            "rank": 26,
+            "rental_feasibility_2028": 8.0,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 76.5
+          },
+          {
             "area": "Fort Mill",
-            "rank": 25,
+            "rank": 28,
             "rental_feasibility_2028": 8,
             "school_quality": 9,
             "weighted_total_out_of_100": 76.0
           },
           {
             "area": "Olathe (Garmin HQ)",
-            "rank": 26,
+            "rank": 29,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 75.6
           },
           {
             "area": "Waukee",
-            "rank": 37,
+            "rank": 40,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.4
           },
           {
             "area": "Farragut",
-            "rank": 47,
+            "rank": 51,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 66.6
@@ -5617,63 +5988,70 @@
           },
           {
             "area": "Cary",
-            "rank": 18,
+            "rank": 19,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 77.9
           },
           {
             "area": "Frisco",
-            "rank": 24,
+            "rank": 27,
             "rental_feasibility_2028": 5.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 76.4
           },
           {
             "area": "Suwanee / Peachtree Corners",
-            "rank": 29,
+            "rank": 32,
             "rental_feasibility_2028": 6,
             "school_quality": 9,
             "weighted_total_out_of_100": 75.3
           },
           {
             "area": "Alpharetta / Johns Creek",
-            "rank": 35,
+            "rank": 38,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 74.2
           },
           {
             "area": "Lake Nona",
-            "rank": 39,
+            "rank": 42,
             "rental_feasibility_2028": 5.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 72.6
           },
           {
             "area": "Thompson's Station",
-            "rank": 44,
+            "rank": 48,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 68.2
           },
           {
             "area": "Franklin",
-            "rank": 46,
+            "rank": 50,
             "rental_feasibility_2028": 3.5,
             "school_quality": 9,
             "weighted_total_out_of_100": 67.4
           },
           {
+            "area": "Alamo Heights",
+            "rank": 52,
+            "rental_feasibility_2028": 5.0,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 65.8
+          },
+          {
             "area": "Waxhaw",
-            "rank": 48,
+            "rank": 53,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 64.7
           },
           {
             "area": "Leesburg / Ashburn",
-            "rank": 50,
+            "rank": 55,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 61.6
@@ -6385,7 +6763,8 @@
       "auburn": "AL",
       "richmond": "VA",
       "nova": "VA",
-      "new_york": "NJ"
+      "new_york": "NJ",
+      "san_antonio": "TX"
     }
   },
   "metros": [
@@ -6409,32 +6788,32 @@
         },
         {
           "area": "Hendersonville",
-          "rank": 19,
+          "rank": 20,
           "score": 77.9
         },
         {
           "area": "Gallatin",
-          "rank": 21,
+          "rank": 22,
           "score": 77.7
         },
         {
           "area": "Mount Juliet",
-          "rank": 30,
+          "rank": 33,
           "score": 75.2
         },
         {
           "area": "Thompson's Station",
-          "rank": 44,
+          "rank": 48,
           "score": 68.2
         },
         {
           "area": "Franklin",
-          "rank": 46,
+          "rank": 50,
           "score": 67.4
         },
         {
           "area": "Germantown (Nashville)",
-          "rank": 49,
+          "rank": 54,
           "score": 63.5
         }
       ],
@@ -6645,7 +7024,7 @@
         },
         {
           "area": "Austin (City Proper)",
-          "rank": 31,
+          "rank": 34,
           "score": 75.0
         }
       ],
@@ -6819,6 +7198,170 @@
       "gaps": "Fintech is mid-size (Q2, Schwab campus) rather than headquarters-heavy."
     },
     {
+      "id": "san_antonio",
+      "label": "San Antonio",
+      "states": "TX",
+      "home_base": false,
+      "wave": 3,
+      "researched": true,
+      "locations": [
+        {
+          "area": "New Braunfels (Comal ISD)",
+          "rank": 16,
+          "score": 78.8
+        },
+        {
+          "area": "Schertz / Cibolo (SCUC ISD)",
+          "rank": 24,
+          "score": 76.8
+        },
+        {
+          "area": "Stone Oak (North San Antonio)",
+          "rank": 26,
+          "score": 76.5
+        },
+        {
+          "area": "Boerne",
+          "rank": 47,
+          "score": 70.5
+        },
+        {
+          "area": "Alamo Heights",
+          "rank": 52,
+          "score": 65.8
+        }
+      ],
+      "representative": "Stone Oak (North San Antonio)",
+      "rent_3br": 2000,
+      "rent_note": "Stone Oak 3BR, 2026 ($1,924-$2,100; Cibolo and New Braunfels ~$1,900; Alamo Heights ~$3,000)",
+      "rent_source": "https://www.rentcafe.com/average-rent-market-trends/us/tx/san-antonio/stone-oak/",
+      "kendra_scott": [
+        {
+          "store": "San Antonio - The Shops at La Cantera",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265009"
+        },
+        {
+          "store": "San Antonio - North Star Mall (opened 2025)",
+          "source": "https://www.mysanantonio.com/business/article/kendra-scott-north-star-mall-19969670.php"
+        },
+        {
+          "store": "San Antonio - The Quarry Village",
+          "source": null
+        },
+        {
+          "store": "San Antonio - The Pearl",
+          "source": null
+        }
+      ],
+      "companies": [
+        {
+          "name": "USAA",
+          "sector": "Insurance / banking / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "San Antonio's largest employer (35,000+) and headquarters - financial services for the military community, with senior AI roles posted up to ~$165K.",
+          "role_families": [
+            "Product Manager (digital banking / insurance)",
+            "AI product"
+          ],
+          "office": "San Antonio (HQ)",
+          "source": "https://satxtoday.6amcity.com/city-guide/work/top-industries-employers-san-antonio-tx",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "H-E-B Digital",
+          "sector": "Grocery retail / AI",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "H-E-B is headquartered in San Antonio; its digital arm is planning a 150,000 sq ft tech center at the downtown Arsenal campus for 1,000+ digital roles, organized around a central AI Platform team serving product squads (Pharmacy, Curbside).",
+          "role_families": [
+            "Product Manager (AI platform / curbside / loyalty)",
+            "Digital Product Owner"
+          ],
+          "office": "Downtown Arsenal campus (HQ)",
+          "source": "https://www.nucamp.co/blog/coding-bootcamp-san-antonio-tx-inside-san-antonios-thriving-tech-hub-startups-and-success-stories",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Frost Bank",
+          "sector": "Banking / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Headquartered at Frost Tower downtown (~5,900 employees).",
+          "role_families": [
+            "Digital Product Manager"
+          ],
+          "office": "San Antonio (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Frost_Bank",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Rackspace Technology",
+          "sector": "Cloud / AI services",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Headquartered in north-central San Antonio (~4,250 employees).",
+          "role_families": [
+            "Product Manager (cloud / AI services)"
+          ],
+          "office": "San Antonio (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Rackspace_Technology",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Spurs Sports & Entertainment",
+          "sector": "Pro sports / performance tech",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Three teams and two venues with 1,000+ staff; the Victory Capital Performance Center at La Cantera is a 134,000 sq ft sports-performance facility, and the city approved contracts for Project Marvel, a ~$1.5B arena district.",
+          "role_families": [
+            "Digital / fan experience",
+            "Partnerships"
+          ],
+          "office": "San Antonio (La Cantera / downtown)",
+          "source": "https://en.wikipedia.org/wiki/Spurs_Sports_%26_Entertainment",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "spouse_content": [
+        {
+          "name": "NeoReach / Pitschy / Local Culture",
+          "sector": "Influencer agencies",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "San Antonio influencer and creator agencies; Searchlight Social manages local creators' brand deals.",
+          "role_families": [
+            "Creator partnerships",
+            "Social content"
+          ],
+          "office": "San Antonio",
+          "source": "https://thesocialshepherd.com/blog/top-social-media-agencies-san-antonio",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "gaps": "Fintech (USAA, Frost) and consumer retail (H-E-B) are deep; sports-tech is the Spurs organization rather than a startup cluster. Austin's larger market is ~75-80 minutes north (~50 from New Braunfels)."
+    },
+    {
       "id": "dfw",
       "label": "Dallas–Fort Worth",
       "states": "TX",
@@ -6848,27 +7391,27 @@
         },
         {
           "area": "Frisco",
-          "rank": 24,
+          "rank": 27,
           "score": 76.4
         },
         {
           "area": "Crowley / North Crowley (SW Fort Worth)",
-          "rank": 27,
+          "rank": 30,
           "score": 75.4
         },
         {
           "area": "Celina",
-          "rank": 40,
+          "rank": 43,
           "score": 72.6
         },
         {
           "area": "Prosper",
-          "rank": 42,
+          "rank": 45,
           "score": 71.3
         },
         {
           "area": "Lucas (Lovejoy ISD)",
-          "rank": 43,
+          "rank": 46,
           "score": 70.8
         }
       ],
@@ -7075,12 +7618,12 @@
         },
         {
           "area": "Fort Mill",
-          "rank": 25,
+          "rank": 28,
           "score": 76.0
         },
         {
           "area": "Waxhaw",
-          "rank": 48,
+          "rank": 53,
           "score": 64.7
         }
       ],
@@ -7237,22 +7780,22 @@
       "locations": [
         {
           "area": "Buford (Buford City Schools)",
-          "rank": 23,
+          "rank": 25,
           "score": 76.7
         },
         {
           "area": "Suwanee / Peachtree Corners",
-          "rank": 29,
+          "rank": 32,
           "score": 75.3
         },
         {
           "area": "Alpharetta / Johns Creek",
-          "rank": 35,
+          "rank": 38,
           "score": 74.2
         },
         {
           "area": "Roswell",
-          "rank": 45,
+          "rank": 49,
           "score": 67.6
         }
       ],
@@ -7537,17 +8080,17 @@
         },
         {
           "area": "Clermont",
-          "rank": 33,
+          "rank": 36,
           "score": 74.5
         },
         {
           "area": "Davenport / Four Corners",
-          "rank": 36,
+          "rank": 39,
           "score": 73.7
         },
         {
           "area": "Lake Nona",
-          "rank": 39,
+          "rank": 42,
           "score": 72.6
         }
       ],
@@ -7674,12 +8217,12 @@
       "locations": [
         {
           "area": "Tampa",
-          "rank": 17,
+          "rank": 18,
           "score": 78.0
         },
         {
           "area": "Lakeland",
-          "rank": 34,
+          "rank": 37,
           "score": 74.3
         }
       ],
@@ -7965,7 +8508,7 @@
       "locations": [
         {
           "area": "Cary",
-          "rank": 18,
+          "rank": 19,
           "score": 77.9
         }
       ],
@@ -8222,7 +8765,7 @@
       "locations": [
         {
           "area": "Oldham County (Crestwood / La Grange)",
-          "rank": 20,
+          "rank": 21,
           "score": 77.7
         }
       ],
@@ -8346,12 +8889,12 @@
       "locations": [
         {
           "area": "Olathe (Garmin HQ)",
-          "rank": 26,
+          "rank": 29,
           "score": 75.6
         },
         {
           "area": "Overland Park (Blue Valley)",
-          "rank": 28,
+          "rank": 31,
           "score": 75.4
         }
       ],
@@ -8451,12 +8994,12 @@
       "locations": [
         {
           "area": "West Des Moines",
-          "rank": 22,
+          "rank": 23,
           "score": 76.8
         },
         {
           "area": "Waukee",
-          "rank": 37,
+          "rank": 40,
           "score": 73.4
         }
       ],
@@ -8580,7 +9123,7 @@
       "locations": [
         {
           "area": "Madison / Huntsville",
-          "rank": 16,
+          "rank": 17,
           "score": 78.1
         }
       ],
@@ -8657,7 +9200,7 @@
       "locations": [
         {
           "area": "Farragut",
-          "rank": 47,
+          "rank": 51,
           "score": 66.6
         }
       ],
@@ -8750,7 +9293,7 @@
       "locations": [
         {
           "area": "Greenville",
-          "rank": 32,
+          "rank": 35,
           "score": 74.9
         }
       ],
@@ -8842,7 +9385,7 @@
       "locations": [
         {
           "area": "Auburn / Opelika",
-          "rank": 38,
+          "rank": 41,
           "score": 73.3
         }
       ],
@@ -8897,7 +9440,7 @@
       "locations": [
         {
           "area": "Glen Allen / Midlothian",
-          "rank": 41,
+          "rank": 44,
           "score": 72.4
         }
       ],
@@ -8993,7 +9536,7 @@
       "locations": [
         {
           "area": "Leesburg / Ashburn",
-          "rank": 50,
+          "rank": 55,
           "score": 61.6
         }
       ],
@@ -9127,12 +9670,12 @@
       "locations": [
         {
           "area": "Jersey City",
-          "rank": 51,
+          "rank": 56,
           "score": 54.8
         },
         {
           "area": "Newport (Jersey City)",
-          "rank": 52,
+          "rank": 57,
           "score": 49.1
         }
       ],
