@@ -3697,6 +3697,67 @@
       "weighted_total_career_max_scenario": 74.8
     },
     {
+      "rank": 40,
+      "area": "Chesapeake / Virginia Beach (Hampton Roads)",
+      "state": "Virginia",
+      "state_abbr": "VA",
+      "metro": "hampton_roads",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Strong school divisions and beach life at a budget-fitting price - a thin corporate job market",
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 8.0,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 7.5,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 430000,
+        "price_source": "Chesapeake Zillow $425,375 (Aug 2026), Redfin $435K; Virginia Beach $406K-$410K",
+        "proj_2041": 622768,
+        "property_tax_effective_pct": 1.0,
+        "property_tax_source": "Chesapeake $1.01 / Virginia Beach ~$0.97 per $100 (TY2025)",
+        "insurance_state_avg_annual": 2490,
+        "budget_2041_planned": 850279,
+        "budget_2041_no_stepup": 653710,
+        "budget_2041_ai_leader": 1080044,
+        "headroom_planned": 227511,
+        "headroom_no_stepup": 30942,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Coastal Hampton Roads cities. Virginia Beach City Public Schools is Niche #5 in Virginia and Chesapeake Public Schools #17 (A-), with Grassfield High #28 in the state. Homes run ~$406K-$435K, projecting to ~$623K by 2041 - ~$228K under a ~$850K planned-path budget. 3BR rents run ~$2,125-$2,350. Dollar Tree is headquartered in Chesapeake; otherwise the economy leans on the Navy, shipbuilding and healthcare. Kendra Scott opened at Lynnhaven Mall in Virginia Beach in 2025. Low-lying areas carry flood risk and sea-level-rise exposure, which can add flood insurance on top of the modeled premium. Virginia's income tax (5.75% top rate) costs roughly $4,900/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Thin AI/product, fintech and sports-tech market outside Dollar Tree",
+        "Flood risk and sea-level rise in low-lying neighborhoods; flood insurance is not in the model",
+        "Virginia income tax (5.75% top rate)"
+      ],
+      "weighted_total_out_of_100": 74.6,
+      "weighted_total_private_scenario": 72.6,
+      "weighted_total_career_max_scenario": 74.65,
+      "sources": [
+        "https://www.zillow.com/chesapeake-wa/home-values/",
+        "https://www.redfin.com/county/3037/VA/Chesapeake/housing-market",
+        "https://www.niche.com/k12/search/best-school-districts/s/virginia/",
+        "https://www.niche.com/k12/search/best-public-high-schools/d/chesapeake-public-schools-va/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/va/chesapeake/",
+        "https://countytaxtools.com/virginia/chesapeake/"
+      ]
+    },
+    {
       "area": "Clermont",
       "state": "Florida",
       "state_abbr": "FL",
@@ -3770,7 +3831,7 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 40,
+      "rank": 41,
       "weighted_total_out_of_100": 74.5,
       "weighted_total_private_scenario": 77.5,
       "weighted_total_career_max_scenario": 74.8
@@ -3851,13 +3912,13 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 41,
+      "rank": 42,
       "weighted_total_out_of_100": 74.3,
       "weighted_total_private_scenario": 78.3,
       "weighted_total_career_max_scenario": 74.4
     },
     {
-      "rank": 42,
+      "rank": 43,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -3951,7 +4012,7 @@
       "weighted_total_career_max_scenario": 75.55
     },
     {
-      "rank": 43,
+      "rank": 44,
       "area": "Mandeville",
       "state": "Louisiana",
       "state_abbr": "LA",
@@ -4011,7 +4072,67 @@
       ]
     },
     {
-      "rank": 44,
+      "rank": 45,
+      "area": "Roanoke (Roanoke County)",
+      "state": "Virginia",
+      "state_abbr": "VA",
+      "metro": "roanoke",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Blue Ridge affordability with a top-10 Virginia district - the smallest job market in Virginia",
+      "scores": {
+        "ai_tech_pm_market": 5.0,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 9.5,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 7.0,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 7.5,
+        "private_school_access": 7.0,
+        "sports_tech_ecosystem": 4.5
+      },
+      "budget_check": {
+        "price_2026": 344000,
+        "price_source": "Roanoke County Zillow $342,773 (Jul 2026); median sale $344,500",
+        "proj_2041": 498215,
+        "property_tax_effective_pct": 0.85,
+        "property_tax_source": "ESTIMATE - not sourced",
+        "insurance_state_avg_annual": 2490,
+        "budget_2041_planned": 867550,
+        "budget_2041_no_stepup": 666988,
+        "budget_2041_ai_leader": 1101982,
+        "headroom_planned": 369336,
+        "headroom_no_stepup": 168774,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Blue Ridge mountain city; Roanoke County Public Schools is Niche #10 in Virginia (A-), with Hidden Valley High #44 in the state. The county median is ~$343K-$345K, projecting to ~$498K by 2041 - ~$369K under a ~$868K planned-path budget. 3BR rents run ~$1,579-$1,656 (houses ~$1,963). Health care dominates employment (Carilion Clinic is the largest employer); Virginia Tech is ~40 miles away in Blacksburg. No Kendra Scott store was found in the Roanoke area. Virginia's income tax (5.75% top rate) costs roughly $4,900/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Smallest job market of the Virginia options - essentially a remote-work location",
+        "No Kendra Scott store nearby",
+        "Property tax rate not confirmed from an official source (state average used)",
+        "Virginia income tax (5.75% top rate)"
+      ],
+      "weighted_total_out_of_100": 73.9,
+      "weighted_total_private_scenario": 70.9,
+      "weighted_total_career_max_scenario": 72.9,
+      "sources": [
+        "https://www.zillow.com/home-values/1998/roanoke-county-va/",
+        "https://www.niche.com/k12/search/best-school-districts/s/virginia/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/va/roanoke/",
+        "https://www.huduser.gov/portal/periodicals/USHMC/reg/RoanokeVA-HMP-January25.pdf"
+      ]
+    },
+    {
+      "rank": 46,
       "area": "Youngsville / Broussard (Lafayette)",
       "state": "Louisiana",
       "state_abbr": "LA",
@@ -4150,13 +4271,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 45,
+      "rank": 47,
       "weighted_total_out_of_100": 73.7,
       "weighted_total_private_scenario": 78.7,
       "weighted_total_career_max_scenario": 74.25
     },
     {
-      "rank": 46,
+      "rank": 48,
       "area": "Waukee",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -4227,7 +4348,7 @@
       "weighted_total_career_max_scenario": 75.35
     },
     {
-      "rank": 47,
+      "rank": 49,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -4314,7 +4435,7 @@
       "weighted_total_career_max_scenario": 72.05
     },
     {
-      "rank": 48,
+      "rank": 50,
       "area": "Arlington Heights",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -4448,7 +4569,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 49,
+      "rank": 51,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 71.6,
       "weighted_total_career_max_scenario": 72.25
@@ -4530,7 +4651,7 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 50,
+      "rank": 52,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 75.6,
       "weighted_total_career_max_scenario": 73.4,
@@ -4545,7 +4666,7 @@
       ]
     },
     {
-      "rank": 51,
+      "rank": 53,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -4637,7 +4758,7 @@
       "weighted_total_career_max_scenario": 72.5
     },
     {
-      "rank": 52,
+      "rank": 54,
       "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
@@ -4716,7 +4837,7 @@
       ]
     },
     {
-      "rank": 53,
+      "rank": 55,
       "area": "Draper",
       "state": "Utah",
       "state_abbr": "UT",
@@ -4774,7 +4895,7 @@
       ]
     },
     {
-      "rank": 54,
+      "rank": 56,
       "area": "Lucas (Lovejoy ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -4952,7 +5073,7 @@
       }
     },
     {
-      "rank": 55,
+      "rank": 57,
       "area": "South Jordan / Herriman",
       "state": "Utah",
       "state_abbr": "UT",
@@ -5011,7 +5132,7 @@
       ]
     },
     {
-      "rank": 56,
+      "rank": 58,
       "area": "Boerne",
       "state": "Texas",
       "state_abbr": "TX",
@@ -5082,7 +5203,7 @@
       ]
     },
     {
-      "rank": 57,
+      "rank": 59,
       "area": "Naperville",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -5143,7 +5264,7 @@
       ]
     },
     {
-      "rank": 58,
+      "rank": 60,
       "area": "Thompson's Station",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -5209,7 +5330,7 @@
       "weighted_total_career_max_scenario": 69.15
     },
     {
-      "rank": 59,
+      "rank": 61,
       "area": "Plainfield / Oswego",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -5267,7 +5388,67 @@
       ]
     },
     {
-      "rank": 60,
+      "rank": 62,
+      "area": "Fairfax / Vienna (Fairfax County)",
+      "state": "Virginia",
+      "state_abbr": "VA",
+      "metro": "nova",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Inside the biggest job market in the new set, with A-rated schools - houses and rent over budget",
+      "scores": {
+        "ai_tech_pm_market": 9.0,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 3.0,
+        "rental_feasibility_2028": 5.0,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 9.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 7.0,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 8.0
+      },
+      "budget_check": {
+        "price_2026": 790000,
+        "price_source": "Fairfax County $760,599 (Zillow, Aug 2026) to ~$815K (Redfin, Jun 2026); Vienna ~$1.1M-$1.18M",
+        "proj_2041": 1144156,
+        "property_tax_effective_pct": 1.12,
+        "property_tax_source": "Fairfax Co. $1.12 per $100 (2026 base rate)",
+        "insurance_state_avg_annual": 2490,
+        "budget_2041_planned": 836950,
+        "budget_2041_no_stepup": 643462,
+        "budget_2041_ai_leader": 1063112,
+        "headroom_planned": -307206,
+        "headroom_no_stepup": -500694,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Closer-in Northern Virginia, minutes from the Tysons / McLean employer core (Capital One, Freddie Mac, Hilton, Navy Federal) and George Mason University (AACSB) in Fairfax. Fairfax County Public Schools is Niche A (#6 in Virginia); Oakton High is #8 in the state (A+) and Madison High #25. Homes run ~$760K-$815K countywide and ~$1.1M+ in Vienna, projecting to ~$1,144K by 2041 at the county figure - ~$307K over a ~$837K planned-path budget. 3BR rents run ~$2,876-$3,200, above the ceiling. Kendra Scott is at Tysons Corner Center. Virginia's income tax (5.75% top rate) costs roughly $4,900/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Over the planned-path budget for a house; Vienna is out of reach at every tier",
+        "3BR rent (~$2,900-$3,200) is above the rent ceiling",
+        "Virginia income tax (5.75% top rate)"
+      ],
+      "weighted_total_out_of_100": 67.9,
+      "weighted_total_private_scenario": 67.9,
+      "weighted_total_career_max_scenario": 69.35,
+      "sources": [
+        "https://www.zillow.com/home-values/1694/fairfax-county-va/",
+        "https://www.niche.com/k12/search/best-public-schools/d/fairfax-county-public-schools-va/",
+        "https://www.thejamilbrothers.com/blog/best-school-districts-northern-virginia-home-prices",
+        "https://www.zumper.com/rent-research/fairfax-va",
+        "https://www.fairfaxcounty.gov/taxes/real-estate/tax-rates"
+      ]
+    },
+    {
+      "rank": 63,
       "area": "Scottsdale",
       "state": "Arizona",
       "state_abbr": "AZ",
@@ -5326,7 +5507,7 @@
       ]
     },
     {
-      "rank": 61,
+      "rank": 64,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5409,7 +5590,7 @@
       "weighted_total_career_max_scenario": 69.3
     },
     {
-      "rank": 62,
+      "rank": 65,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -5505,7 +5686,66 @@
       "weighted_total_career_max_scenario": 69.05
     },
     {
-      "rank": 63,
+      "rank": 66,
+      "area": "Charlottesville (Albemarle County)",
+      "state": "Virginia",
+      "state_abbr": "VA",
+      "metro": "charlottesville",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "University town for the professor path - fits the budget, but few corporate jobs",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 6.0,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 7.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 5.0
+      },
+      "budget_check": {
+        "price_2026": 570000,
+        "price_source": "Albemarle Q2 2026 median sold $570K (CAAR); City of Charlottesville ~$500K",
+        "proj_2041": 825530,
+        "property_tax_effective_pct": 0.9,
+        "property_tax_source": "Albemarle Co. $0.895 per $100 (TY2025)",
+        "insurance_state_avg_annual": 2490,
+        "budget_2041_planned": 861716,
+        "budget_2041_no_stepup": 662502,
+        "budget_2041_ai_leader": 1094571,
+        "headroom_planned": 36186,
+        "headroom_no_stepup": -163028,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Home of the University of Virginia, whose Darden and McIntire business schools are AACSB-accredited - the strongest professor-path setting among the new locations. Albemarle County Public Schools is Niche #9 in Virginia. The Albemarle median sold price was ~$570K in Q2 2026 (city ~$500K), projecting to ~$826K by 2041 - ~$36K under a ~$862K planned-path budget. 3BR rents run ~$2,398-$2,704. CFA Institute is headquartered here; Kendra Scott has a store at The Shops at Stonefield. Virginia's income tax (5.75% top rate) costs roughly $4,900/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Few corporate AI/product or sports-tech employers - mostly UVA, health care and CFA Institute",
+        "Rent near or above the ceiling",
+        "Virginia income tax (5.75% top rate)"
+      ],
+      "weighted_total_out_of_100": 67.3,
+      "weighted_total_private_scenario": 66.3,
+      "weighted_total_career_max_scenario": 67.2,
+      "sources": [
+        "https://tobybeaversrealtor.com/2026-charlottesville-city-and-albemarle-co-mid-year-housing-report/",
+        "https://www.niche.com/k12/search/best-school-districts/s/virginia/",
+        "https://www.zumper.com/rent-research/charlottesville-va",
+        "https://www.rentcafe.com/average-rent-market-trends/us/va/charlottesville/"
+      ]
+    },
+    {
+      "rank": 67,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -5594,7 +5834,7 @@
       "weighted_total_career_max_scenario": 65.35
     },
     {
-      "rank": 64,
+      "rank": 68,
       "area": "Alamo Heights",
       "state": "Texas",
       "state_abbr": "TX",
@@ -5682,7 +5922,7 @@
       ]
     },
     {
-      "rank": 65,
+      "rank": 69,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -5770,7 +6010,7 @@
       "weighted_total_career_max_scenario": 64.9
     },
     {
-      "rank": 66,
+      "rank": 70,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -5871,7 +6111,7 @@
       "weighted_total_career_max_scenario": 65.3
     },
     {
-      "rank": 67,
+      "rank": 71,
       "area": "Hinsdale / Western Springs",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -5929,7 +6169,7 @@
       ]
     },
     {
-      "rank": 68,
+      "rank": 72,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -6029,7 +6269,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 69,
+      "rank": 73,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -6125,7 +6365,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 70,
+      "rank": 74,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -6277,13 +6517,13 @@
       "Lehi",
       "Draper"
     ],
+    "Virginia": [
+      "Chesapeake / Virginia Beach (Hampton Roads)",
+      "Roanoke (Roanoke County)"
+    ],
     "Illinois": [
       "Arlington Heights",
       "Naperville"
-    ],
-    "Virginia": [
-      "Glen Allen / Midlothian",
-      "Leesburg / Ashburn"
     ],
     "New Jersey": [
       "Jersey City",
@@ -6379,10 +6619,12 @@
       "Frisco",
       "Crowley / North Crowley (SW Fort Worth)",
       "Overland Park (Blue Valley)",
+      "Chesapeake / Virginia Beach (Hampton Roads)",
       "Clermont",
       "Lakeland",
       "Alpharetta / Johns Creek",
       "Mandeville",
+      "Roanoke (Roanoke County)",
       "Youngsville / Broussard (Lafayette)",
       "Waukee",
       "Arlington Heights",
@@ -6402,9 +6644,11 @@
       "Glen Allen / Midlothian",
       "Thompson's Station",
       "Plainfield / Oswego",
+      "Fairfax / Vienna (Fairfax County)",
       "Scottsdale",
       "Roswell",
       "Franklin",
+      "Charlottesville (Albemarle County)",
       "Farragut",
       "Alamo Heights",
       "Waxhaw",
@@ -6627,14 +6871,14 @@
           },
           {
             "area": "Lakeland",
-            "rank": 41,
+            "rank": 42,
             "rental_feasibility_2028": 9,
             "school_quality": 5.5,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Davenport / Four Corners",
-            "rank": 45,
+            "rank": 47,
             "rental_feasibility_2028": 8.5,
             "school_quality": 4,
             "weighted_total_out_of_100": 73.7
@@ -6647,7 +6891,7 @@
         "locations": [
           {
             "area": "Prosper",
-            "rank": 52,
+            "rank": 54,
             "school_quality": 9.0,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 2.0,
@@ -6656,7 +6900,7 @@
           },
           {
             "area": "Lucas (Lovejoy ISD)",
-            "rank": 54,
+            "rank": 56,
             "school_quality": 9.5,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 1.0,
@@ -6789,22 +7033,36 @@
             "weighted_total_out_of_100": 75.6
           },
           {
+            "area": "Chesapeake / Virginia Beach (Hampton Roads)",
+            "rank": 40,
+            "rental_feasibility_2028": 8.0,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 74.6
+          },
+          {
+            "area": "Roanoke (Roanoke County)",
+            "rank": 45,
+            "rental_feasibility_2028": 8.5,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 73.9
+          },
+          {
             "area": "Waukee",
-            "rank": 46,
+            "rank": 48,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.4
           },
           {
             "area": "Draper",
-            "rank": 53,
+            "rank": 55,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 71.1
           },
           {
             "area": "Farragut",
-            "rank": 63,
+            "rank": 67,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 66.6
@@ -6853,70 +7111,84 @@
           },
           {
             "area": "Alpharetta / Johns Creek",
-            "rank": 42,
+            "rank": 43,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 74.2
           },
           {
             "area": "Lake Nona",
-            "rank": 49,
+            "rank": 51,
             "rental_feasibility_2028": 5.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 72.6
           },
           {
             "area": "Naperville",
-            "rank": 57,
+            "rank": 59,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 70.1
           },
           {
             "area": "Thompson's Station",
-            "rank": 58,
+            "rank": 60,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 68.2
           },
           {
+            "area": "Fairfax / Vienna (Fairfax County)",
+            "rank": 62,
+            "rental_feasibility_2028": 5.0,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 67.9
+          },
+          {
             "area": "Scottsdale",
-            "rank": 60,
+            "rank": 63,
             "rental_feasibility_2028": 4.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.7
           },
           {
             "area": "Franklin",
-            "rank": 62,
+            "rank": 65,
             "rental_feasibility_2028": 3.5,
             "school_quality": 9,
             "weighted_total_out_of_100": 67.4
           },
           {
+            "area": "Charlottesville (Albemarle County)",
+            "rank": 66,
+            "rental_feasibility_2028": 6.5,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 67.3
+          },
+          {
             "area": "Alamo Heights",
-            "rank": 64,
+            "rank": 68,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 65.8
           },
           {
             "area": "Waxhaw",
-            "rank": 65,
+            "rank": 69,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 64.7
           },
           {
             "area": "Hinsdale / Western Springs",
-            "rank": 67,
+            "rank": 71,
             "rental_feasibility_2028": 4.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 63.4
           },
           {
             "area": "Leesburg / Ashburn",
-            "rank": 68,
+            "rank": 72,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 61.6
@@ -7529,7 +7801,7 @@
       },
       "VA": {
         "type": "brackets",
-        "deduction": 17000,
+        "deduction": 17500,
         "brackets": [
           [
             3000,
@@ -7548,7 +7820,9 @@
             0.0575
           ]
         ],
-        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/"
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+        "note": "2026 standard deduction $17,500 MFJ (Virginia Tax); brackets 2% / 3% / 5% / 5.75% above $17,000.",
+        "source_deduction": "https://www.tax.virginia.gov/deductions"
       },
       "NJ": {
         "type": "brackets",
@@ -7668,7 +7942,10 @@
       "chicago": "IL",
       "new_orleans": "LA",
       "baton_rouge": "LA",
-      "lafayette": "LA"
+      "lafayette": "LA",
+      "hampton_roads": "VA",
+      "charlottesville": "VA",
+      "roanoke": "VA"
     }
   },
   "metros": [
@@ -7707,17 +7984,17 @@
         },
         {
           "area": "Thompson's Station",
-          "rank": 58,
+          "rank": 60,
           "score": 68.2
         },
         {
           "area": "Franklin",
-          "rank": 62,
+          "rank": 65,
           "score": 67.4
         },
         {
           "area": "Germantown (Nashville)",
-          "rank": 66,
+          "rank": 70,
           "score": 63.5
         }
       ],
@@ -8126,12 +8403,12 @@
         },
         {
           "area": "Boerne",
-          "rank": 56,
+          "rank": 58,
           "score": 70.5
         },
         {
           "area": "Alamo Heights",
-          "rank": 64,
+          "rank": 68,
           "score": 65.8
         }
       ],
@@ -8285,7 +8562,7 @@
         },
         {
           "area": "Scottsdale",
-          "rank": 60,
+          "rank": 63,
           "score": 67.7
         }
       ],
@@ -8443,12 +8720,12 @@
         },
         {
           "area": "Draper",
-          "rank": 53,
+          "rank": 55,
           "score": 71.1
         },
         {
           "area": "South Jordan / Herriman",
-          "rank": 55,
+          "rank": 57,
           "score": 70.8
         }
       ],
@@ -8595,22 +8872,22 @@
       "locations": [
         {
           "area": "Arlington Heights",
-          "rank": 48,
+          "rank": 50,
           "score": 72.8
         },
         {
           "area": "Naperville",
-          "rank": 57,
+          "rank": 59,
           "score": 70.1
         },
         {
           "area": "Plainfield / Oswego",
-          "rank": 59,
+          "rank": 61,
           "score": 68.1
         },
         {
           "area": "Hinsdale / Western Springs",
-          "rank": 67,
+          "rank": 71,
           "score": 63.4
         }
       ],
@@ -8794,7 +9071,7 @@
       "locations": [
         {
           "area": "Mandeville",
-          "rank": 43,
+          "rank": 44,
           "score": 74.1
         }
       ],
@@ -8950,7 +9227,7 @@
       "locations": [
         {
           "area": "Youngsville / Broussard (Lafayette)",
-          "rank": 44,
+          "rank": 46,
           "score": 73.8
         }
       ],
@@ -9038,17 +9315,17 @@
         },
         {
           "area": "Celina",
-          "rank": 50,
+          "rank": 52,
           "score": 72.6
         },
         {
           "area": "Prosper",
-          "rank": 52,
+          "rank": 54,
           "score": 71.3
         },
         {
           "area": "Lucas (Lovejoy ISD)",
-          "rank": 54,
+          "rank": 56,
           "score": 70.8
         }
       ],
@@ -9260,7 +9537,7 @@
         },
         {
           "area": "Waxhaw",
-          "rank": 65,
+          "rank": 69,
           "score": 64.7
         }
       ],
@@ -9427,12 +9704,12 @@
         },
         {
           "area": "Alpharetta / Johns Creek",
-          "rank": 42,
+          "rank": 43,
           "score": 74.2
         },
         {
           "area": "Roswell",
-          "rank": 61,
+          "rank": 64,
           "score": 67.6
         }
       ],
@@ -9717,17 +9994,17 @@
         },
         {
           "area": "Clermont",
-          "rank": 40,
+          "rank": 41,
           "score": 74.5
         },
         {
           "area": "Davenport / Four Corners",
-          "rank": 45,
+          "rank": 47,
           "score": 73.7
         },
         {
           "area": "Lake Nona",
-          "rank": 49,
+          "rank": 51,
           "score": 72.6
         }
       ],
@@ -9859,7 +10136,7 @@
         },
         {
           "area": "Lakeland",
-          "rank": 41,
+          "rank": 42,
           "score": 74.3
         }
       ],
@@ -10636,7 +10913,7 @@
         },
         {
           "area": "Waukee",
-          "rank": 46,
+          "rank": 48,
           "score": 73.4
         }
       ],
@@ -10837,7 +11114,7 @@
       "locations": [
         {
           "area": "Farragut",
-          "rank": 63,
+          "rank": 67,
           "score": 66.6
         }
       ],
@@ -11022,7 +11299,7 @@
       "locations": [
         {
           "area": "Auburn / Opelika",
-          "rank": 47,
+          "rank": 49,
           "score": 73.3
         }
       ],
@@ -11077,7 +11354,7 @@
       "locations": [
         {
           "area": "Glen Allen / Midlothian",
-          "rank": 51,
+          "rank": 53,
           "score": 72.4
         }
       ],
@@ -11172,8 +11449,13 @@
       "researched": true,
       "locations": [
         {
+          "area": "Fairfax / Vienna (Fairfax County)",
+          "rank": 62,
+          "score": 67.9
+        },
+        {
           "area": "Leesburg / Ashburn",
-          "rank": 68,
+          "rank": 72,
           "score": 61.6
         }
       ],
@@ -11298,6 +11580,187 @@
       "gaps": "The top fintech/AI market in the wave-2 set, but rent (~$3,300) is well above the rent ceiling. Sports-tech is thin."
     },
     {
+      "id": "hampton_roads",
+      "label": "Hampton Roads (Norfolk / Virginia Beach)",
+      "states": "VA",
+      "home_base": false,
+      "wave": 3,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Chesapeake / Virginia Beach (Hampton Roads)",
+          "rank": 40,
+          "score": 74.6
+        }
+      ],
+      "representative": "Chesapeake / Virginia Beach (Hampton Roads)",
+      "rent_3br": 2329,
+      "rent_note": "Chesapeake 3BR, Sept 2026 ($2,125-$2,350)",
+      "rent_source": "https://www.rentcafe.com/average-rent-market-trends/us/va/chesapeake/",
+      "kendra_scott": [
+        {
+          "store": "Virginia Beach - Lynnhaven Mall (opened 2025)",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265187"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Dollar Tree",
+          "sector": "Discount retail",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Fortune 500 retailer headquartered in Chesapeake (15,000+ stores) - retail digital and supply-chain analytics.",
+          "role_families": [
+            "Digital / e-commerce product",
+            "Merchandising analytics"
+          ],
+          "office": "Chesapeake (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Dollar_Tree",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Newport News Shipbuilding (Huntington Ingalls)",
+          "sector": "Shipbuilding / defense",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "The region's industrial anchor - digital shipbuilding and engineering programs.",
+          "role_families": [
+            "Technical program / digital transformation"
+          ],
+          "office": "Newport News",
+          "source": "https://en.wikipedia.org/wiki/Hampton_Roads",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Sentara Health",
+          "sector": "Healthcare / digital",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Major Norfolk-based health system.",
+          "role_families": [
+            "Digital product / health AI"
+          ],
+          "office": "Norfolk",
+          "source": "https://en.wikipedia.org/wiki/Norfolk,_Virginia",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Military, shipbuilding and health care dominate; thin on fintech and sports-tech."
+    },
+    {
+      "id": "charlottesville",
+      "label": "Charlottesville",
+      "states": "VA",
+      "home_base": false,
+      "wave": 3,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Charlottesville (Albemarle County)",
+          "rank": 66,
+          "score": 67.3
+        }
+      ],
+      "representative": "Charlottesville (Albemarle County)",
+      "rent_3br": 2398,
+      "rent_note": "Charlottesville 3BR, Jun 2026 ($2,398-$2,704)",
+      "rent_source": "https://www.zumper.com/rent-research/charlottesville-va",
+      "kendra_scott": [
+        {
+          "store": "Charlottesville - The Shops at Stonefield",
+          "source": "https://www.yelp.com/biz/kendra-scott-charlottesville"
+        }
+      ],
+      "companies": [
+        {
+          "name": "CFA Institute",
+          "sector": "Investment profession / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Global headquarters of the CFA credential body (~593 staff).",
+          "role_families": [
+            "Digital product / learning platforms"
+          ],
+          "office": "Charlottesville (HQ)",
+          "source": "https://en.wikipedia.org/wiki/CFA_Institute",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "University of Virginia - Darden and McIntire",
+          "sector": "Higher education (AACSB)",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Two AACSB business schools - the professor-path anchor after the DBA.",
+          "role_families": [
+            "Lecturer / professor of practice",
+            "Executive education"
+          ],
+          "office": "Charlottesville",
+          "source": "https://en.wikipedia.org/wiki/University_of_Virginia",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "A university town: few corporate AI/product, consumer-brand or sports-tech employers."
+    },
+    {
+      "id": "roanoke",
+      "label": "Roanoke",
+      "states": "VA",
+      "home_base": false,
+      "wave": 3,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Roanoke (Roanoke County)",
+          "rank": 45,
+          "score": 73.9
+        }
+      ],
+      "representative": "Roanoke (Roanoke County)",
+      "rent_3br": 1656,
+      "rent_note": "Roanoke 3BR, Mar 2026 ($1,579-$1,656; houses ~$1,963)",
+      "rent_source": "https://www.rentcafe.com/average-rent-market-trends/us/va/roanoke/",
+      "kendra_scott": [],
+      "companies": [
+        {
+          "name": "Carilion Clinic",
+          "sector": "Health system",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "The Roanoke metro's largest employer (13,600 per HUD's profile).",
+          "role_families": [
+            "Digital health product"
+          ],
+          "office": "Roanoke (HQ)",
+          "source": "https://www.huduser.gov/portal/periodicals/USHMC/reg/RoanokeVA-HMP-January25.pdf",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Essentially a remote-work location: health care dominates and none of the four focus areas has a real employer base. No Kendra Scott store."
+    },
+    {
       "id": "new_york",
       "label": "New York (Jersey City)",
       "states": "NJ",
@@ -11307,12 +11770,12 @@
       "locations": [
         {
           "area": "Jersey City",
-          "rank": 69,
+          "rank": 73,
           "score": 54.8
         },
         {
           "area": "Newport (Jersey City)",
-          "rank": 70,
+          "rank": 74,
           "score": 49.1
         }
       ],
