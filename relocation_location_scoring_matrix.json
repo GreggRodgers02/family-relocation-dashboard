@@ -212,6 +212,16 @@
             "no_stepup": 716742,
             "planned": 932265,
             "ai_leader": 1184184
+          },
+          "IL": {
+            "no_stepup": 576011,
+            "planned": 749216,
+            "ai_leader": 951671
+          },
+          "LA": {
+            "no_stepup": 662781,
+            "planned": 862078,
+            "ai_leader": 1095031
           }
         },
         "rate_sensitivity_planned": {
@@ -1200,6 +1210,64 @@
       "weighted_total_career_max_scenario": 81.95
     },
     {
+      "rank": 10,
+      "area": "Zachary (Baton Rouge)",
+      "state": "Louisiana",
+      "state_abbr": "LA",
+      "metro": "baton_rouge",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "Louisiana's #1 district (Niche A+) at a $269K median - a thin job market is the trade-off",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 10.0,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 7.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 6.0,
+        "hs_football_culture": 8.5,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 5.0
+      },
+      "budget_check": {
+        "price_2026": 269000,
+        "price_source": "Zillow $269,071 (Aug 2026); Redfin $265K",
+        "proj_2041": 389592,
+        "property_tax_effective_pct": 0.55,
+        "property_tax_source": "Louisiana ~0.55% average effective after the $75,000 homestead exemption",
+        "insurance_state_avg_annual": 4340,
+        "budget_2041_planned": 862078,
+        "budget_2041_no_stepup": 662781,
+        "budget_2041_ai_leader": 1095031,
+        "headroom_planned": 472486,
+        "headroom_no_stepup": 273189,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Small city ~20 minutes north of Baton Rouge. Zachary Community Schools is Niche's #1 district in Louisiana (A+) and earned an A from the state. The typical home is ~$269K, projecting to ~$390K by 2041 - ~$472K under a ~$862K planned-path budget, and inside even the no-step-up budget. No Zachary-specific 3BR rent was found; Baton Rouge 3BR rentals run ~$1,565-$1,760. LSU's Ourso College (AACSB) is ~20 miles away, and Kendra Scott is at Perkins Rowe in Baton Rouge. Louisiana's flat 3% income tax costs roughly $2,400/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Thin AI/product and sports-tech job market; Baton Rouge leans on petrochemicals, government and LSU",
+        "Louisiana insurance costs remain high",
+        "Louisiana income tax (3%)"
+      ],
+      "weighted_total_out_of_100": 80.2,
+      "weighted_total_private_scenario": 77.2,
+      "weighted_total_career_max_scenario": 79.9,
+      "sources": [
+        "https://www.zillow.com/home-values/29334/zachary-la/",
+        "https://www.niche.com/k12/d/zachary-community-public-schools-la/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/la/baton-rouge/"
+      ]
+    },
+    {
       "area": "Spring Hill (Summit / Page Zones, Williamson County)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -1293,13 +1361,13 @@
         "purchase_2041": "Open. Spring Hill remains a viable candidate (~$520K median fits budget) but not committed; best 2041 buy city to be chosen on full-model merit."
       },
       "tier": "Tier 1 - Serious Finalist",
-      "rank": 10,
+      "rank": 11,
       "weighted_total_out_of_100": 79.9,
       "weighted_total_private_scenario": 78.9,
       "weighted_total_career_max_scenario": 79.7
     },
     {
-      "rank": 11,
+      "rank": 12,
       "area": "Solon / Rocky River (Cleveland Suburbs)",
       "state": "Ohio",
       "state_abbr": "OH",
@@ -1443,7 +1511,7 @@
       "weighted_total_career_max_scenario": 80.6
     },
     {
-      "rank": 12,
+      "rank": 13,
       "area": "Georgetown",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1528,7 +1596,7 @@
       "weighted_total_career_max_scenario": 80.75
     },
     {
-      "rank": 13,
+      "rank": 14,
       "area": "Allen",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1606,7 +1674,7 @@
       "weighted_total_career_max_scenario": 79.7
     },
     {
-      "rank": 14,
+      "rank": 15,
       "area": "Oviedo",
       "state": "Florida",
       "state_abbr": "FL",
@@ -1688,7 +1756,7 @@
       "weighted_total_career_max_scenario": 79.25
     },
     {
-      "rank": 15,
+      "rank": 16,
       "area": "Melissa",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1844,13 +1912,13 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 16,
+      "rank": 17,
       "weighted_total_out_of_100": 78.8,
       "weighted_total_private_scenario": 80.8,
       "weighted_total_career_max_scenario": 79.5
     },
     {
-      "rank": 17,
+      "rank": 18,
       "area": "New Braunfels (Comal ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1908,7 +1976,7 @@
       ]
     },
     {
-      "rank": 18,
+      "rank": 19,
       "area": "Madison / Huntsville",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -2077,13 +2145,13 @@
         "AI/product market is mid-tier and concentrated in finance, insurance and health tech; ceiling is below Austin, DFW, or the Triangle for frontier AI product work"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 19,
+      "rank": 20,
       "weighted_total_out_of_100": 78.0,
       "weighted_total_private_scenario": 82.0,
       "weighted_total_career_max_scenario": 77.25
     },
     {
-      "rank": 20,
+      "rank": 21,
       "area": "Cary",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -2254,13 +2322,13 @@
         "Merrol Hyde Magnet admission is by county-wide lottery and cannot be secured by address"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 21,
+      "rank": 22,
       "weighted_total_out_of_100": 77.9,
       "weighted_total_private_scenario": 77.9,
       "weighted_total_career_max_scenario": 79.1
     },
     {
-      "rank": 22,
+      "rank": 23,
       "area": "Oldham County (Crestwood / La Grange)",
       "state": "Kentucky",
       "state_abbr": "KY",
@@ -2427,13 +2495,13 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 23,
+      "rank": 24,
       "weighted_total_out_of_100": 77.7,
       "weighted_total_private_scenario": 78.7,
       "weighted_total_career_max_scenario": 76.65
     },
     {
-      "rank": 24,
+      "rank": 25,
       "area": "Gilbert",
       "state": "Arizona",
       "state_abbr": "AZ",
@@ -2492,7 +2560,7 @@
       ]
     },
     {
-      "rank": 25,
+      "rank": 26,
       "area": "West Des Moines",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -2571,7 +2639,7 @@
       "weighted_total_career_max_scenario": 79.2
     },
     {
-      "rank": 26,
+      "rank": 27,
       "area": "Schertz / Cibolo (SCUC ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2629,7 +2697,7 @@
       ]
     },
     {
-      "rank": 27,
+      "rank": 28,
       "area": "Buford (Buford City Schools)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2716,7 +2784,7 @@
       "weighted_total_career_max_scenario": 77.65
     },
     {
-      "rank": 28,
+      "rank": 29,
       "area": "Stone Oak (North San Antonio)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2793,7 +2861,7 @@
       ]
     },
     {
-      "rank": 29,
+      "rank": 30,
       "area": "Frisco",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2875,7 +2943,7 @@
       "weighted_total_career_max_scenario": 76.9
     },
     {
-      "rank": 30,
+      "rank": 31,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -2964,7 +3032,7 @@
       "weighted_total_career_max_scenario": 75.4
     },
     {
-      "rank": 31,
+      "rank": 32,
       "area": "Olathe (Garmin HQ)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -3044,7 +3112,7 @@
       "weighted_total_career_max_scenario": 74.7
     },
     {
-      "rank": 32,
+      "rank": 33,
       "area": "Lehi",
       "state": "Utah",
       "state_abbr": "UT",
@@ -3105,7 +3173,7 @@
       ]
     },
     {
-      "rank": 33,
+      "rank": 34,
       "area": "Crowley / North Crowley (SW Fort Worth)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3197,7 +3265,7 @@
       "weighted_total_career_max_scenario": 74.8
     },
     {
-      "rank": 34,
+      "rank": 35,
       "area": "Overland Park (Blue Valley)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -3277,7 +3345,7 @@
       "weighted_total_career_max_scenario": 74.95
     },
     {
-      "rank": 35,
+      "rank": 36,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -3442,13 +3510,13 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 36,
+      "rank": 37,
       "weighted_total_out_of_100": 75.2,
       "weighted_total_private_scenario": 75.2,
       "weighted_total_career_max_scenario": 74.9
     },
     {
-      "rank": 37,
+      "rank": 38,
       "area": "Austin (City Proper)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3542,7 +3610,7 @@
       "weighted_total_career_max_scenario": 76.4
     },
     {
-      "rank": 38,
+      "rank": 39,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -3702,7 +3770,7 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 39,
+      "rank": 40,
       "weighted_total_out_of_100": 74.5,
       "weighted_total_private_scenario": 77.5,
       "weighted_total_career_max_scenario": 74.8
@@ -3783,13 +3851,13 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 40,
+      "rank": 41,
       "weighted_total_out_of_100": 74.3,
       "weighted_total_private_scenario": 78.3,
       "weighted_total_career_max_scenario": 74.4
     },
     {
-      "rank": 41,
+      "rank": 42,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -3883,6 +3951,125 @@
       "weighted_total_career_max_scenario": 75.55
     },
     {
+      "rank": 43,
+      "area": "Mandeville",
+      "state": "Louisiana",
+      "state_abbr": "LA",
+      "metro": "new_orleans",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Northshore family town with strong parish schools - hurricane insurance is the deal-breaker cost",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 7.5,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 7.0,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 6.0,
+        "hs_football_culture": 8.5,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 400000,
+        "price_source": "spring 2026 ~$420K; trailing 12 mo. ~$385K; Redfin Mar $395K",
+        "proj_2041": 579319,
+        "property_tax_effective_pct": 0.55,
+        "property_tax_source": "Louisiana ~0.55% average effective after the $75,000 homestead exemption",
+        "insurance_state_avg_annual": 6613,
+        "budget_2041_planned": 815321,
+        "budget_2041_no_stepup": 626833,
+        "budget_2041_ai_leader": 1035639,
+        "headroom_planned": 236002,
+        "headroom_no_stepup": 47514,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Northshore town across Lake Pontchartrain from New Orleans (~35 miles via the Causeway). St. Tammany Parish schools post 46% math and 54% reading proficiency against state averages of 34% and 43%. The median is ~$385K-$420K, projecting to ~$579K by 2041 - ~$236K under a ~$815K planned-path budget. That budget already carries ~$6,600/yr homeowners insurance (Louisiana average at $400K coverage with a hurricane deductible); flood insurance would be extra. 3BR rents run ~$1,775-$1,975. The nearest Kendra Scott is Lakeside Shopping Center in Metairie (~30 miles). Louisiana's flat 3% income tax costs roughly $2,400/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Hurricane wind and flood exposure: insurance is the highest in the matrix and still rising",
+        "Thin job market for AI/product, fintech and sports-tech",
+        "Causeway commute to New Orleans employers",
+        "Louisiana income tax (3%)"
+      ],
+      "weighted_total_out_of_100": 74.1,
+      "weighted_total_private_scenario": 77.1,
+      "weighted_total_career_max_scenario": 73.6,
+      "sources": [
+        "https://www.movoto.com/mandeville-la/market-trends/",
+        "https://www.publicschoolreview.com/louisiana/st-tammany-parish-school-district/2201650-school-district",
+        "https://www.insurance.com/home-and-renters-insurance/home-insurance-basics/average-homeowners-insurance-rates-by-state",
+        "https://www.zumper.com/rent-research/mandeville-la"
+      ]
+    },
+    {
+      "rank": 44,
+      "area": "Youngsville / Broussard (Lafayette)",
+      "state": "Louisiana",
+      "state_abbr": "LA",
+      "metro": "lafayette",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Affordable, fast-growing Acadiana suburbs - smallest job market of the new set",
+      "scores": {
+        "ai_tech_pm_market": 5.5,
+        "school_quality": 7.5,
+        "housing_affordability_2041": 9.5,
+        "rental_feasibility_2028": 8.0,
+        "state_tax_burden": 7.0,
+        "aacsb_university_proximity": 7.0,
+        "robotics_fitness_startup_fit": 6.0,
+        "hs_football_culture": 8.5,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 5.0
+      },
+      "budget_check": {
+        "price_2026": 310000,
+        "price_source": "Youngsville $304,750-$315K; Broussard ~$305K (Jul 2026)",
+        "proj_2041": 448972,
+        "property_tax_effective_pct": 0.55,
+        "property_tax_source": "Louisiana ~0.55% average effective after the $75,000 homestead exemption",
+        "insurance_state_avg_annual": 4340,
+        "budget_2041_planned": 862078,
+        "budget_2041_no_stepup": 662781,
+        "budget_2041_ai_leader": 1095031,
+        "headroom_planned": 413106,
+        "headroom_no_stepup": 213809,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Fast-growing suburbs south of Lafayette. Niche grades Youngsville's public schools A-, and several nearby campuses rate 10/10. Homes run ~$305K-$315K, projecting to ~$449K by 2041 - ~$413K under a ~$862K planned-path budget. 3BR rents run ~$1,925-$2,049. Stuller, the jewelry manufacturer, is headquartered in Lafayette, and UL Lafayette has an AACSB business school. No Kendra Scott store was found nearby (nearest: Baton Rouge, ~60 miles). Louisiana's flat 3% income tax costs roughly $2,400/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Smallest job market of the new locations; oil and gas plus healthcare dominate",
+        "No Kendra Scott store nearby",
+        "Hurricane exposure and Louisiana insurance costs",
+        "Louisiana income tax (3%)"
+      ],
+      "weighted_total_out_of_100": 73.8,
+      "weighted_total_private_scenario": 73.8,
+      "weighted_total_career_max_scenario": 73.25,
+      "sources": [
+        "https://www.bylocalnews.com/columns/real-estate/south-louisiana-real-estate-july-2026-market-report/",
+        "https://www.niche.com/places-to-live/youngsville-lafayette-la/",
+        "https://www.rentometer.com/average-rent-in/la/youngsville-la"
+      ]
+    },
+    {
       "area": "Davenport / Four Corners",
       "state": "Florida",
       "state_abbr": "FL",
@@ -3963,13 +4150,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 42,
+      "rank": 45,
       "weighted_total_out_of_100": 73.7,
       "weighted_total_private_scenario": 78.7,
       "weighted_total_career_max_scenario": 74.25
     },
     {
-      "rank": 43,
+      "rank": 46,
       "area": "Waukee",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -4040,7 +4227,7 @@
       "weighted_total_career_max_scenario": 75.35
     },
     {
-      "rank": 44,
+      "rank": 47,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -4127,6 +4314,64 @@
       "weighted_total_career_max_scenario": 72.05
     },
     {
+      "rank": 48,
+      "area": "Arlington Heights",
+      "state": "Illinois",
+      "state_abbr": "IL",
+      "metro": "chicago",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Northwest suburb on the Metra with a budget-fitting median - rent near the ceiling, Illinois taxes the cost",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 6.5,
+        "rental_feasibility_2028": 6.0,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 7.5,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 7.5
+      },
+      "budget_check": {
+        "price_2026": 475000,
+        "price_source": "$455K six-month sold median; ~$495K Zillow-style value (Aug 2026)",
+        "proj_2041": 687942,
+        "property_tax_effective_pct": 1.9,
+        "property_tax_source": "Cook Co. suburbs ~1.7-2.1% effective",
+        "insurance_state_avg_annual": 2844,
+        "budget_2041_planned": 753623,
+        "budget_2041_no_stepup": 579398,
+        "budget_2041_ai_leader": 957268,
+        "headroom_planned": 65681,
+        "headroom_no_stepup": -108543,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Northwest Cook County suburb on the Metra line, near O'Hare and the Schaumburg corporate corridor; Woodfield Mall (Kendra Scott) is ~15 minutes away. Elementary District 25 is Niche B with 63% math and 75% reading proficiency; high schools are in Township District 214 (no 2026 Niche rank found). The median is ~$455K-$495K, projecting to ~$688K by 2041 - ~$66K under a ~$754K planned-path budget. 3BR rents run ~$2,711. Illinois' flat 4.95% income tax costs roughly $4,900/yr more than Tennessee's zero at today's household income, and property tax is among the highest in the country.",
+      "risks": [
+        "Cook County property tax (~1.7-2.1%) and its reassessment cycles",
+        "Illinois income tax (4.95%)",
+        "Rent sits just above the ~$2,625 ceiling"
+      ],
+      "weighted_total_out_of_100": 72.8,
+      "weighted_total_private_scenario": 72.8,
+      "weighted_total_career_max_scenario": 73.9,
+      "sources": [
+        "https://resideline.com/blog/arlington-heights-il-housing-market",
+        "https://www.niche.com/k12/d/arlington-heights-school-district-no-25-il/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/il/cook-county/arlington-heights/"
+      ]
+    },
+    {
       "area": "Lake Nona",
       "state": "Florida",
       "state_abbr": "FL",
@@ -4203,7 +4448,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 45,
+      "rank": 49,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 71.6,
       "weighted_total_career_max_scenario": 72.25
@@ -4285,7 +4530,7 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 46,
+      "rank": 50,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 75.6,
       "weighted_total_career_max_scenario": 73.4,
@@ -4300,7 +4545,7 @@
       ]
     },
     {
-      "rank": 47,
+      "rank": 51,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -4392,7 +4637,7 @@
       "weighted_total_career_max_scenario": 72.5
     },
     {
-      "rank": 48,
+      "rank": 52,
       "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
@@ -4471,7 +4716,7 @@
       ]
     },
     {
-      "rank": 49,
+      "rank": 53,
       "area": "Draper",
       "state": "Utah",
       "state_abbr": "UT",
@@ -4529,7 +4774,7 @@
       ]
     },
     {
-      "rank": 50,
+      "rank": 54,
       "area": "Lucas (Lovejoy ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -4707,7 +4952,7 @@
       }
     },
     {
-      "rank": 51,
+      "rank": 55,
       "area": "South Jordan / Herriman",
       "state": "Utah",
       "state_abbr": "UT",
@@ -4766,7 +5011,7 @@
       ]
     },
     {
-      "rank": 52,
+      "rank": 56,
       "area": "Boerne",
       "state": "Texas",
       "state_abbr": "TX",
@@ -4837,7 +5082,68 @@
       ]
     },
     {
-      "rank": 53,
+      "rank": 57,
+      "area": "Naperville",
+      "state": "Illinois",
+      "state_abbr": "IL",
+      "metro": "chicago",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Two A+ districts (Niche #9 and #11 in Illinois) - high property tax pushes the house over budget and rent runs above the ceiling",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 4.0,
+        "rental_feasibility_2028": 5.0,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 9.5,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 8.5,
+        "sports_tech_ecosystem": 7.5
+      },
+      "budget_check": {
+        "price_2026": 636000,
+        "price_source": "Zillow $636,281 (Jun 2026); six-month sold median $628K; Aug sold $650K",
+        "proj_2041": 921118,
+        "property_tax_effective_pct": 2.0,
+        "property_tax_source": "DuPage Co. ~1.9-2.1% effective",
+        "insurance_state_avg_annual": 2844,
+        "budget_2041_planned": 744861,
+        "budget_2041_no_stepup": 572662,
+        "budget_2041_ai_leader": 946139,
+        "headroom_planned": -176257,
+        "headroom_no_stepup": -348456,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Classic western Chicago suburb on the Metra line (~30 miles to the Loop). Indian Prairie 204 (A+, #9 in Illinois) and Naperville 203 (A+, #11) both serve the city; Naperville North High is #18 among Illinois public high schools. The median is ~$628K-$650K, projecting to ~$921K by 2041 - ~$176K over a ~$745K planned-path budget, held down by DuPage County's ~2% property tax. 3BR rents run ~$2,793-$3,153, above the ~$2,625 ceiling. Kendra Scott has a Naperville store (Main Street Promenade), plus Oakbrook Center ~20 minutes east, and Ulta Beauty's headquarters is in neighboring Bolingbrook. Illinois' flat 4.95% income tax costs roughly $4,900/yr more than Tennessee's zero at today's household income, and property tax is among the highest in the country.",
+      "risks": [
+        "Property tax ~2% of value - roughly 4x Tennessee's - cuts the 2041 budget",
+        "3BR rent (~$2,800-$3,150) is above the rent ceiling",
+        "Illinois income tax (4.95%) where Tennessee has none",
+        "Winters"
+      ],
+      "weighted_total_out_of_100": 70.1,
+      "weighted_total_private_scenario": 68.1,
+      "weighted_total_career_max_scenario": 71.25,
+      "sources": [
+        "https://www.zillow.com/home-values/39931/naperville-il/",
+        "https://naperville.com/city-life/schools/naperville-school-district-203-vs-204/",
+        "https://www.niche.com/k12/naperville-north-high-school-naperville-il/rankings/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/il/naperville/",
+        "https://ustax.tools/illinois-property-tax-calculator/"
+      ]
+    },
+    {
+      "rank": 58,
       "area": "Thompson's Station",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -4903,7 +5209,65 @@
       "weighted_total_career_max_scenario": 69.15
     },
     {
-      "rank": 54,
+      "rank": 59,
+      "area": "Plainfield / Oswego",
+      "state": "Illinois",
+      "state_abbr": "IL",
+      "metro": "chicago",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Newer, cheaper southwest suburbs - the highest property tax in the Chicago set",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 6.0,
+        "rental_feasibility_2028": 5.0,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 7.0,
+        "sports_tech_ecosystem": 7.0
+      },
+      "budget_check": {
+        "price_2026": 470000,
+        "price_source": "Plainfield $424K-$530K (Redfin $505K, 3 mo. to Aug 2026); Oswego ~$426K (May 2026)",
+        "proj_2041": 680700,
+        "property_tax_effective_pct": 2.3,
+        "property_tax_source": "Will/Kendall Co. ~2.1-2.6% effective",
+        "insurance_state_avg_annual": 2844,
+        "budget_2041_planned": 719756,
+        "budget_2041_no_stepup": 553361,
+        "budget_2041_ai_leader": 914250,
+        "headroom_planned": 39056,
+        "headroom_no_stepup": -127339,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Newer southwest suburbs beyond Naperville. Plainfield 202 is Niche A- (#46 in Illinois, #2 in Will County); Oswego 308's middle schools rate B+. Homes run ~$424K-$530K, projecting to ~$681K by 2041 - ~$39K under a ~$720K planned-path budget at Will/Kendall's ~2.3% property tax. 3BR rent was ~$2,914 (Feb 2026, a single less-certain source). Ulta Beauty's Bolingbrook HQ is ~15 minutes away. Illinois' flat 4.95% income tax costs roughly $4,900/yr more than Tennessee's zero at today's household income, and property tax is among the highest in the country.",
+      "risks": [
+        "Highest property tax of the Chicago options (~2.3%)",
+        "Longest commute to the Loop (~40 miles)",
+        "Rent data is thin and above the ceiling"
+      ],
+      "weighted_total_out_of_100": 68.1,
+      "weighted_total_private_scenario": 66.1,
+      "weighted_total_career_max_scenario": 68.75,
+      "sources": [
+        "https://www.redfin.com/city/29505/IL/Plainfield/housing-market",
+        "https://www.niche.com/k12/d/plainfield-school-district-no-202-il/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/il/plainfield/"
+      ]
+    },
+    {
+      "rank": 60,
       "area": "Scottsdale",
       "state": "Arizona",
       "state_abbr": "AZ",
@@ -4962,7 +5326,7 @@
       ]
     },
     {
-      "rank": 55,
+      "rank": 61,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5045,7 +5409,7 @@
       "weighted_total_career_max_scenario": 69.3
     },
     {
-      "rank": 56,
+      "rank": 62,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -5141,7 +5505,7 @@
       "weighted_total_career_max_scenario": 69.05
     },
     {
-      "rank": 57,
+      "rank": 63,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -5230,7 +5594,7 @@
       "weighted_total_career_max_scenario": 65.35
     },
     {
-      "rank": 58,
+      "rank": 64,
       "area": "Alamo Heights",
       "state": "Texas",
       "state_abbr": "TX",
@@ -5318,7 +5682,7 @@
       ]
     },
     {
-      "rank": 59,
+      "rank": 65,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -5406,7 +5770,7 @@
       "weighted_total_career_max_scenario": 64.9
     },
     {
-      "rank": 60,
+      "rank": 66,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -5507,7 +5871,65 @@
       "weighted_total_career_max_scenario": 65.3
     },
     {
-      "rank": 61,
+      "rank": 67,
+      "area": "Hinsdale / Western Springs",
+      "state": "Illinois",
+      "state_abbr": "IL",
+      "metro": "chicago",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Elite schools close to the Loop - out of reach at every career tier",
+      "scores": {
+        "ai_tech_pm_market": 9.0,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 1.0,
+        "rental_feasibility_2028": 4.0,
+        "state_tax_burden": 5.5,
+        "aacsb_university_proximity": 9.5,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 7.5
+      },
+      "budget_check": {
+        "price_2026": 1050000,
+        "price_source": "Western Springs detached median $1.05M (T12 to Aug 2026); Hinsdale $1.36M-$1.55M",
+        "proj_2041": 1520713,
+        "property_tax_effective_pct": 1.9,
+        "property_tax_source": "DuPage/Cook ~1.9% effective",
+        "insurance_state_avg_annual": 2844,
+        "budget_2041_planned": 753623,
+        "budget_2041_no_stepup": 579398,
+        "budget_2041_ai_leader": 957268,
+        "headroom_planned": -767090,
+        "headroom_no_stepup": -941315,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Inner western suburbs ~20 miles from the Loop, next to Oak Brook (Oakbrook Center has a Kendra Scott). Lyons Township High (Western Springs/La Grange) is A+ and #29 among Illinois public high schools (no 2026 Niche rank found for Hinsdale's district). Detached homes run ~$1.05M in Western Springs and ~$1.4M-$1.55M in Hinsdale, projecting to ~$1,521K by 2041 at the lower figure - ~$563K over even the AI-leader budget. 3BR rents run ~$2,500-$3,500, with houses higher. Illinois' flat 4.95% income tax costs roughly $4,900/yr more than Tennessee's zero at today's household income, and property tax is among the highest in the country.",
+      "risks": [
+        "Out of reach at every career tier",
+        "Rent mostly above the ceiling",
+        "Illinois income and property taxes"
+      ],
+      "weighted_total_out_of_100": 63.4,
+      "weighted_total_private_scenario": 62.4,
+      "weighted_total_career_max_scenario": 65.3,
+      "sources": [
+        "https://colleencwilcox.com/blog/western-springs-has-one-median-price-and-about-eight-different-markets",
+        "https://www.niche.com/k12/search/best-public-high-schools/t/lyons-township-cook-il/",
+        "https://www.zumper.com/rent-research/la-grange-il"
+      ]
+    },
+    {
+      "rank": 68,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -5607,7 +6029,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 62,
+      "rank": 69,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -5703,7 +6125,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 63,
+      "rank": 70,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -5824,6 +6246,10 @@
       "Fort Mitchell / Villa Hills (Beechwood)",
       "Oldham County (Crestwood / La Grange)"
     ],
+    "Louisiana": [
+      "Zachary (Baton Rouge)",
+      "Mandeville"
+    ],
     "Ohio": [
       "Solon / Rocky River (Cleveland Suburbs)"
     ],
@@ -5850,6 +6276,10 @@
     "Utah": [
       "Lehi",
       "Draper"
+    ],
+    "Illinois": [
+      "Arlington Heights",
+      "Naperville"
     ],
     "Virginia": [
       "Glen Allen / Midlothian",
@@ -5912,6 +6342,7 @@
       "McKinney",
       "Chandler",
       "Fort Mitchell / Villa Hills (Beechwood)",
+      "Zachary (Baton Rouge)",
       "Spring Hill (Summit / Page Zones, Williamson County)",
       "Solon / Rocky River (Cleveland Suburbs)",
       "Georgetown",
@@ -5951,12 +6382,16 @@
       "Clermont",
       "Lakeland",
       "Alpharetta / Johns Creek",
+      "Mandeville",
+      "Youngsville / Broussard (Lafayette)",
       "Waukee",
+      "Arlington Heights",
       "Prosper",
       "Draper",
       "Lucas (Lovejoy ISD)",
       "South Jordan / Herriman",
-      "Boerne"
+      "Boerne",
+      "Naperville"
     ],
     "tier_4_backup_only": [
       "Mount Juliet",
@@ -5966,6 +6401,7 @@
       "Lake Nona",
       "Glen Allen / Midlothian",
       "Thompson's Station",
+      "Plainfield / Oswego",
       "Scottsdale",
       "Roswell",
       "Franklin",
@@ -5973,6 +6409,7 @@
       "Alamo Heights",
       "Waxhaw",
       "Germantown (Nashville)",
+      "Hinsdale / Western Springs",
       "Leesburg / Ashburn",
       "Jersey City",
       "Newport (Jersey City)"
@@ -6169,35 +6606,35 @@
         "locations": [
           {
             "area": "Gallatin",
-            "rank": 23,
+            "rank": 24,
             "rental_feasibility_2028": 9,
             "school_quality": 7,
             "weighted_total_out_of_100": 77.7
           },
           {
             "area": "Schertz / Cibolo (SCUC ISD)",
-            "rank": 26,
+            "rank": 27,
             "rental_feasibility_2028": 8.5,
             "school_quality": 6.5,
             "weighted_total_out_of_100": 76.8
           },
           {
             "area": "Crowley / North Crowley (SW Fort Worth)",
-            "rank": 33,
+            "rank": 34,
             "rental_feasibility_2028": 9.0,
             "school_quality": 4.0,
             "weighted_total_out_of_100": 75.4
           },
           {
             "area": "Lakeland",
-            "rank": 40,
+            "rank": 41,
             "rental_feasibility_2028": 9,
             "school_quality": 5.5,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Davenport / Four Corners",
-            "rank": 42,
+            "rank": 45,
             "rental_feasibility_2028": 8.5,
             "school_quality": 4,
             "weighted_total_out_of_100": 73.7
@@ -6210,7 +6647,7 @@
         "locations": [
           {
             "area": "Prosper",
-            "rank": 48,
+            "rank": 52,
             "school_quality": 9.0,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 2.0,
@@ -6219,7 +6656,7 @@
           },
           {
             "area": "Lucas (Lovejoy ISD)",
-            "rank": 50,
+            "rank": 54,
             "school_quality": 9.5,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 1.0,
@@ -6282,85 +6719,92 @@
             "weighted_total_out_of_100": 80.2
           },
           {
-            "area": "Spring Hill (Summit / Page Zones, Williamson County)",
+            "area": "Zachary (Baton Rouge)",
             "rank": 10,
+            "rental_feasibility_2028": 8.5,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 80.2
+          },
+          {
+            "area": "Spring Hill (Summit / Page Zones, Williamson County)",
+            "rank": 11,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 79.9
           },
           {
             "area": "Solon / Rocky River (Cleveland Suburbs)",
-            "rank": 11,
+            "rank": 12,
             "rental_feasibility_2028": 8.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 79.8
           },
           {
             "area": "Madison / Huntsville",
-            "rank": 18,
+            "rank": 19,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 78.1
           },
           {
             "area": "Oldham County (Crestwood / La Grange)",
-            "rank": 22,
+            "rank": 23,
             "rental_feasibility_2028": 8.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 77.7
           },
           {
             "area": "Gilbert",
-            "rank": 24,
+            "rank": 25,
             "rental_feasibility_2028": 7.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 77.0
           },
           {
             "area": "West Des Moines",
-            "rank": 25,
+            "rank": 26,
             "rental_feasibility_2028": 9.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 76.8
           },
           {
             "area": "Stone Oak (North San Antonio)",
-            "rank": 28,
+            "rank": 29,
             "rental_feasibility_2028": 8.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 76.5
           },
           {
             "area": "Fort Mill",
-            "rank": 30,
+            "rank": 31,
             "rental_feasibility_2028": 8,
             "school_quality": 9,
             "weighted_total_out_of_100": 76.0
           },
           {
             "area": "Olathe (Garmin HQ)",
-            "rank": 31,
+            "rank": 32,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 75.6
           },
           {
             "area": "Waukee",
-            "rank": 43,
+            "rank": 46,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.4
           },
           {
             "area": "Draper",
-            "rank": 49,
+            "rank": 53,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 71.1
           },
           {
             "area": "Farragut",
-            "rank": 57,
+            "rank": 63,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 66.6
@@ -6381,84 +6825,98 @@
           },
           {
             "area": "Allen",
-            "rank": 13,
+            "rank": 14,
             "rental_feasibility_2028": 6.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 79.3
           },
           {
             "area": "Cary",
-            "rank": 20,
+            "rank": 21,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 77.9
           },
           {
             "area": "Frisco",
-            "rank": 29,
+            "rank": 30,
             "rental_feasibility_2028": 5.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 76.4
           },
           {
             "area": "Suwanee / Peachtree Corners",
-            "rank": 35,
+            "rank": 36,
             "rental_feasibility_2028": 6,
             "school_quality": 9,
             "weighted_total_out_of_100": 75.3
           },
           {
             "area": "Alpharetta / Johns Creek",
-            "rank": 41,
+            "rank": 42,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 74.2
           },
           {
             "area": "Lake Nona",
-            "rank": 45,
+            "rank": 49,
             "rental_feasibility_2028": 5.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 72.6
           },
           {
+            "area": "Naperville",
+            "rank": 57,
+            "rental_feasibility_2028": 5.0,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 70.1
+          },
+          {
             "area": "Thompson's Station",
-            "rank": 53,
+            "rank": 58,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 68.2
           },
           {
             "area": "Scottsdale",
-            "rank": 54,
+            "rank": 60,
             "rental_feasibility_2028": 4.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.7
           },
           {
             "area": "Franklin",
-            "rank": 56,
+            "rank": 62,
             "rental_feasibility_2028": 3.5,
             "school_quality": 9,
             "weighted_total_out_of_100": 67.4
           },
           {
             "area": "Alamo Heights",
-            "rank": 58,
+            "rank": 64,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 65.8
           },
           {
             "area": "Waxhaw",
-            "rank": 59,
+            "rank": 65,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 64.7
           },
           {
+            "area": "Hinsdale / Western Springs",
+            "rank": 67,
+            "rental_feasibility_2028": 4.0,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 63.4
+          },
+          {
             "area": "Leesburg / Ashburn",
-            "rank": 61,
+            "rank": 68,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 61.6
@@ -7149,6 +7607,20 @@
         },
         "source": "https://ustax.tools/utah-tax-brackets-2026/",
         "note": "Flat 4.45% for 2026 (SB 60). No standard deduction; a taxpayer credit of 6% of the federal standard deduction (~$1,932 MFJ) phases out at 1.3 cents per dollar above ~$36,426, so it is gone by ~$185K."
+      },
+      "IL": {
+        "type": "flat",
+        "rate": 0.0495,
+        "deduction": 5850,
+        "source": "https://tax.illinois.gov/research/publications/bulletins/fy-2026-15.html",
+        "note": "Flat 4.95%; 2026 personal exemption $2,925 per person ($5,850 for a couple), disallowed above $500K MFJ."
+      },
+      "LA": {
+        "type": "flat",
+        "rate": 0.03,
+        "deduction": 25750,
+        "source": "https://nationaltaxtools.com/payroll/louisiana/",
+        "note": "Flat 3% since 2025; 2026 standard deduction $25,750 MFJ (inflation-adjusted from $25,000)."
       }
     },
     "local_by_metro": {
@@ -7192,7 +7664,11 @@
       "new_york": "NJ",
       "san_antonio": "TX",
       "phoenix": "AZ",
-      "salt_lake": "UT"
+      "salt_lake": "UT",
+      "chicago": "IL",
+      "new_orleans": "LA",
+      "baton_rouge": "LA",
+      "lafayette": "LA"
     }
   },
   "metros": [
@@ -7211,37 +7687,37 @@
         },
         {
           "area": "Spring Hill (Summit / Page Zones, Williamson County)",
-          "rank": 10,
+          "rank": 11,
           "score": 79.9
         },
         {
           "area": "Hendersonville",
-          "rank": 21,
+          "rank": 22,
           "score": 77.9
         },
         {
           "area": "Gallatin",
-          "rank": 23,
+          "rank": 24,
           "score": 77.7
         },
         {
           "area": "Mount Juliet",
-          "rank": 36,
+          "rank": 37,
           "score": 75.2
         },
         {
           "area": "Thompson's Station",
-          "rank": 53,
+          "rank": 58,
           "score": 68.2
         },
         {
           "area": "Franklin",
-          "rank": 56,
+          "rank": 62,
           "score": 67.4
         },
         {
           "area": "Germantown (Nashville)",
-          "rank": 60,
+          "rank": 66,
           "score": 63.5
         }
       ],
@@ -7447,12 +7923,12 @@
         },
         {
           "area": "Georgetown",
-          "rank": 12,
+          "rank": 13,
           "score": 79.6
         },
         {
           "area": "Austin (City Proper)",
-          "rank": 37,
+          "rank": 38,
           "score": 75.0
         }
       ],
@@ -7635,27 +8111,27 @@
       "locations": [
         {
           "area": "New Braunfels (Comal ISD)",
-          "rank": 17,
+          "rank": 18,
           "score": 78.8
         },
         {
           "area": "Schertz / Cibolo (SCUC ISD)",
-          "rank": 26,
+          "rank": 27,
           "score": 76.8
         },
         {
           "area": "Stone Oak (North San Antonio)",
-          "rank": 28,
+          "rank": 29,
           "score": 76.5
         },
         {
           "area": "Boerne",
-          "rank": 52,
+          "rank": 56,
           "score": 70.5
         },
         {
           "area": "Alamo Heights",
-          "rank": 58,
+          "rank": 64,
           "score": 65.8
         }
       ],
@@ -7804,12 +8280,12 @@
         },
         {
           "area": "Gilbert",
-          "rank": 24,
+          "rank": 25,
           "score": 77.0
         },
         {
           "area": "Scottsdale",
-          "rank": 54,
+          "rank": 60,
           "score": 67.7
         }
       ],
@@ -7962,17 +8438,17 @@
       "locations": [
         {
           "area": "Lehi",
-          "rank": 32,
+          "rank": 33,
           "score": 75.6
         },
         {
           "area": "Draper",
-          "rank": 49,
+          "rank": 53,
           "score": 71.1
         },
         {
           "area": "South Jordan / Herriman",
-          "rank": 51,
+          "rank": 55,
           "score": 70.8
         }
       ],
@@ -8110,6 +8586,419 @@
       "gaps": "Only one Kendra Scott store in the state (City Creek). Consumer retail brands are thinner than in Texas; Utah income tax applies."
     },
     {
+      "id": "chicago",
+      "label": "Chicago",
+      "states": "IL",
+      "home_base": false,
+      "wave": 3,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Arlington Heights",
+          "rank": 48,
+          "score": 72.8
+        },
+        {
+          "area": "Naperville",
+          "rank": 57,
+          "score": 70.1
+        },
+        {
+          "area": "Plainfield / Oswego",
+          "rank": 59,
+          "score": 68.1
+        },
+        {
+          "area": "Hinsdale / Western Springs",
+          "rank": 67,
+          "score": 63.4
+        }
+      ],
+      "representative": "Naperville",
+      "rent_3br": 2950,
+      "rent_note": "Naperville 3BR, 2026 ($2,793-$3,153; Arlington Heights ~$2,711)",
+      "rent_source": "https://www.zumper.com/rent-research/naperville-il",
+      "kendra_scott": [
+        {
+          "store": "Naperville - Main Street Promenade",
+          "source": "https://www.kendrascott.com/stores/directory"
+        },
+        {
+          "store": "Oak Brook - Oakbrook Center",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265064"
+        },
+        {
+          "store": "Schaumburg - Woodfield Mall",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265181"
+        },
+        {
+          "store": "Skokie - Old Orchard",
+          "source": "https://www.kendrascott.com/stores/directory"
+        },
+        {
+          "store": "Chicago - Michigan Avenue and Southport Avenue",
+          "source": "https://www.nbcchicago.com/news/local/kendra-scott-jewelry-brand-set-to-open-at-woodfield-mall-in-schaumburg/3779221/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Ulta Beauty",
+          "sector": "Beauty retail",
+          "goal_tags": [
+            "consumer_retail",
+            "spouse_retail",
+            "spouse_content"
+          ],
+          "why": "Headquartered in Bolingbrook (~15-20 minutes from Naperville and Plainfield) with a satellite office in Chicago - a beauty retailer with big creator and social programs, a fit for both of your careers.",
+          "role_families": [
+            "Digital / loyalty product",
+            "Social and influencer marketing"
+          ],
+          "office": "Bolingbrook (HQ)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1403568/000110465926035243/ulta-20260131x10k.htm",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "McDonald's",
+          "sector": "Restaurants / consumer brand",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Global headquarters in Chicago's West Loop; large digital, app and loyalty organization.",
+          "role_families": [
+            "Digital Product Manager (app / loyalty / AI)"
+          ],
+          "office": "Chicago (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Chicago",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "United Airlines",
+          "sector": "Airline / consumer tech",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "World headquarters in Chicago; consumer app and AI-driven operations.",
+          "role_families": [
+            "Product Manager (digital / AI)"
+          ],
+          "office": "Chicago (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Chicago",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Morningstar",
+          "sector": "Investment research / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Headquartered in Chicago; investment data and AI-driven research products.",
+          "role_families": [
+            "Product Manager (data / AI)"
+          ],
+          "office": "Chicago (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Morningstar,_Inc.",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "CME Group",
+          "sector": "Exchanges / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Chicago-based owner of the CME and CBOT exchanges.",
+          "role_families": [
+            "Product Manager (market data / trading tech)"
+          ],
+          "office": "Chicago (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Chicago",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Allstate",
+          "sector": "Insurance / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "Headquartered in Northbrook; large digital and analytics organization.",
+          "role_families": [
+            "Product Manager (digital insurance / AI)"
+          ],
+          "office": "Northbrook (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Allstate",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Wilson Sporting Goods",
+          "sector": "Sporting goods / sports-tech",
+          "goal_tags": [
+            "sports_tech",
+            "consumer_retail"
+          ],
+          "why": "Chicago-based sports equipment maker (part of Amer Sports) with connected-equipment products.",
+          "role_families": [
+            "Product Manager (connected sports equipment)",
+            "Brand / digital"
+          ],
+          "office": "Chicago (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Wilson_Sporting_Goods",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "spouse_content": [
+        {
+          "name": "Fresh Content Society / Web Tonic / Heron Agency",
+          "sector": "Social and influencer agencies",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Chicago-area agencies for social content and creator campaigns (Fresh Content Society is in Northfield).",
+          "role_families": [
+            "Social content",
+            "Creator partnerships"
+          ],
+          "office": "Chicago area",
+          "source": "https://clutch.co/agencies/social-media-marketing/influencer/chicago",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "gaps": "Deep on every focus area, but Illinois property tax (~1.9-2.3%) and 4.95% income tax are the cost, and rent in the best school towns is above the ceiling."
+    },
+    {
+      "id": "new_orleans",
+      "label": "New Orleans (Northshore)",
+      "states": "LA",
+      "home_base": false,
+      "wave": 3,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Mandeville",
+          "rank": 43,
+          "score": 74.1
+        }
+      ],
+      "representative": "Mandeville",
+      "rent_3br": 1975,
+      "rent_note": "Mandeville 3BR, Mar 2026 ($1,773-$1,975)",
+      "rent_source": "https://www.zumper.com/rent-research/mandeville-la",
+      "kendra_scott": [
+        {
+          "store": "Metairie - Lakeside Shopping Center",
+          "source": "https://www.kendrascott.com/stores/directory"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Ochsner Health",
+          "sector": "Healthcare / digital health",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "New Orleans-based health system (~32,000 employees) with a digital-medicine program.",
+          "role_families": [
+            "Digital product / health AI"
+          ],
+          "office": "New Orleans (HQ)",
+          "source": "https://www.zippia.com/advice/largest-companies-in-louisiana/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Entergy",
+          "sector": "Utility / energy tech",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Headquartered in New Orleans (~13,500 employees); grid and customer digital programs.",
+          "role_families": [
+            "Digital Product Manager"
+          ],
+          "office": "New Orleans (HQ)",
+          "source": "https://corporateofficeheadquarters.com/corporate-offices-in-louisiana/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Pan-American Life Insurance Group",
+          "sector": "Insurance / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Insurance group headquartered in New Orleans.",
+          "role_families": [
+            "Digital product"
+          ],
+          "office": "New Orleans (HQ)",
+          "source": "https://corporateofficeheadquarters.com/corporate-offices-in-louisiana/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Thin on all four focus areas - healthcare, energy and tourism dominate. Hurricane and flood insurance is the biggest household cost. The Magazine Street Kendra Scott has closed."
+    },
+    {
+      "id": "baton_rouge",
+      "label": "Baton Rouge",
+      "states": "LA",
+      "home_base": false,
+      "wave": 3,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Zachary (Baton Rouge)",
+          "rank": 10,
+          "score": 80.2
+        }
+      ],
+      "representative": "Zachary (Baton Rouge)",
+      "rent_3br": 1605,
+      "rent_note": "Baton Rouge 3BR, Feb 2026 ($1,565-$1,760); no Zachary-specific figure",
+      "rent_source": "https://www.rentometer.com/average-rent-in/la/baton-rouge-la",
+      "kendra_scott": [
+        {
+          "store": "Baton Rouge - Perkins Rowe",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265012"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Lamar Advertising",
+          "sector": "Advertising / digital billboards",
+          "goal_tags": [
+            "consumer_retail",
+            "spouse_content"
+          ],
+          "why": "Outdoor and digital-billboard company headquartered in Baton Rouge (~3,600 employees) - brand and creative work.",
+          "role_families": [
+            "Digital product",
+            "Creative / marketing"
+          ],
+          "office": "Baton Rouge (HQ)",
+          "source": "https://corporateofficeheadquarters.com/corporate-offices-in-louisiana/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Community Coffee",
+          "sector": "Consumer brand",
+          "goal_tags": [
+            "consumer_retail"
+          ],
+          "why": "Family-owned coffee brand headquartered in Baton Rouge.",
+          "role_families": [
+            "Brand / e-commerce"
+          ],
+          "office": "Baton Rouge (HQ)",
+          "source": "https://corporateofficeheadquarters.com/corporate-offices-in-louisiana/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Business First Bancshares",
+          "sector": "Banking",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Bank holding company headquartered in Baton Rouge.",
+          "role_families": [
+            "Digital banking product"
+          ],
+          "office": "Baton Rouge (HQ)",
+          "source": "https://corporateofficeheadquarters.com/corporate-offices-in-louisiana/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Small market for AI/product and sports-tech; strongest assets are Zachary's schools, LSU (AACSB) and low prices."
+    },
+    {
+      "id": "lafayette",
+      "label": "Lafayette (Acadiana)",
+      "states": "LA",
+      "home_base": false,
+      "wave": 3,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Youngsville / Broussard (Lafayette)",
+          "rank": 44,
+          "score": 73.8
+        }
+      ],
+      "representative": "Youngsville / Broussard (Lafayette)",
+      "rent_3br": 1987,
+      "rent_note": "Youngsville 3BR, 2026 ($1,925-$2,049)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/la/youngsville-la",
+      "kendra_scott": [],
+      "companies": [
+        {
+          "name": "Stuller",
+          "sector": "Jewelry manufacturing / B2B e-commerce",
+          "goal_tags": [
+            "consumer_retail",
+            "spouse_retail"
+          ],
+          "why": "Fine-jewelry manufacturer and supplier headquartered in Lafayette - the closest jewelry-industry employer to your wife's Kendra Scott experience.",
+          "role_families": [
+            "Merchandising",
+            "Digital / e-commerce"
+          ],
+          "office": "Lafayette (HQ)",
+          "source": "https://doe.louisiana.gov/docs/default-source/jump-start-pilot-programs/02-03-list-of-louisiana-companies-by-region.pdf?sfvrsn=3",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "LHC Group",
+          "sector": "Home health care",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Lafayette-based home-health company (~32,000 employees).",
+          "role_families": [
+            "Digital product / operations tech"
+          ],
+          "office": "Lafayette",
+          "source": "https://www.zippia.com/advice/largest-companies-in-louisiana/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "The smallest job market of the new metros; no Kendra Scott store nearby."
+    },
+    {
       "id": "dfw",
       "label": "Dallas–Fort Worth",
       "states": "TX",
@@ -8129,37 +9018,37 @@
         },
         {
           "area": "Allen",
-          "rank": 13,
+          "rank": 14,
           "score": 79.3
         },
         {
           "area": "Melissa",
-          "rank": 15,
+          "rank": 16,
           "score": 79.1
         },
         {
           "area": "Frisco",
-          "rank": 29,
+          "rank": 30,
           "score": 76.4
         },
         {
           "area": "Crowley / North Crowley (SW Fort Worth)",
-          "rank": 33,
+          "rank": 34,
           "score": 75.4
         },
         {
           "area": "Celina",
-          "rank": 46,
+          "rank": 50,
           "score": 72.6
         },
         {
           "area": "Prosper",
-          "rank": 48,
+          "rank": 52,
           "score": 71.3
         },
         {
           "area": "Lucas (Lovejoy ISD)",
-          "rank": 50,
+          "rank": 54,
           "score": 70.8
         }
       ],
@@ -8366,12 +9255,12 @@
         },
         {
           "area": "Fort Mill",
-          "rank": 30,
+          "rank": 31,
           "score": 76.0
         },
         {
           "area": "Waxhaw",
-          "rank": 59,
+          "rank": 65,
           "score": 64.7
         }
       ],
@@ -8528,22 +9417,22 @@
       "locations": [
         {
           "area": "Buford (Buford City Schools)",
-          "rank": 27,
+          "rank": 28,
           "score": 76.7
         },
         {
           "area": "Suwanee / Peachtree Corners",
-          "rank": 35,
+          "rank": 36,
           "score": 75.3
         },
         {
           "area": "Alpharetta / Johns Creek",
-          "rank": 41,
+          "rank": 42,
           "score": 74.2
         },
         {
           "area": "Roswell",
-          "rank": 55,
+          "rank": 61,
           "score": 67.6
         }
       ],
@@ -8706,7 +9595,7 @@
       "locations": [
         {
           "area": "Solon / Rocky River (Cleveland Suburbs)",
-          "rank": 11,
+          "rank": 12,
           "score": 79.8
         }
       ],
@@ -8818,27 +9707,27 @@
       "locations": [
         {
           "area": "Oviedo",
-          "rank": 14,
+          "rank": 15,
           "score": 79.3
         },
         {
           "area": "Lake Mary",
-          "rank": 16,
+          "rank": 17,
           "score": 78.8
         },
         {
           "area": "Clermont",
-          "rank": 39,
+          "rank": 40,
           "score": 74.5
         },
         {
           "area": "Davenport / Four Corners",
-          "rank": 42,
+          "rank": 45,
           "score": 73.7
         },
         {
           "area": "Lake Nona",
-          "rank": 45,
+          "rank": 49,
           "score": 72.6
         }
       ],
@@ -8965,12 +9854,12 @@
       "locations": [
         {
           "area": "Tampa",
-          "rank": 19,
+          "rank": 20,
           "score": 78.0
         },
         {
           "area": "Lakeland",
-          "rank": 40,
+          "rank": 41,
           "score": 74.3
         }
       ],
@@ -9256,7 +10145,7 @@
       "locations": [
         {
           "area": "Cary",
-          "rank": 20,
+          "rank": 21,
           "score": 77.9
         }
       ],
@@ -9513,7 +10402,7 @@
       "locations": [
         {
           "area": "Oldham County (Crestwood / La Grange)",
-          "rank": 22,
+          "rank": 23,
           "score": 77.7
         }
       ],
@@ -9637,12 +10526,12 @@
       "locations": [
         {
           "area": "Olathe (Garmin HQ)",
-          "rank": 31,
+          "rank": 32,
           "score": 75.6
         },
         {
           "area": "Overland Park (Blue Valley)",
-          "rank": 34,
+          "rank": 35,
           "score": 75.4
         }
       ],
@@ -9742,12 +10631,12 @@
       "locations": [
         {
           "area": "West Des Moines",
-          "rank": 25,
+          "rank": 26,
           "score": 76.8
         },
         {
           "area": "Waukee",
-          "rank": 43,
+          "rank": 46,
           "score": 73.4
         }
       ],
@@ -9871,7 +10760,7 @@
       "locations": [
         {
           "area": "Madison / Huntsville",
-          "rank": 18,
+          "rank": 19,
           "score": 78.1
         }
       ],
@@ -9948,7 +10837,7 @@
       "locations": [
         {
           "area": "Farragut",
-          "rank": 57,
+          "rank": 63,
           "score": 66.6
         }
       ],
@@ -10041,7 +10930,7 @@
       "locations": [
         {
           "area": "Greenville",
-          "rank": 38,
+          "rank": 39,
           "score": 74.9
         }
       ],
@@ -10133,7 +11022,7 @@
       "locations": [
         {
           "area": "Auburn / Opelika",
-          "rank": 44,
+          "rank": 47,
           "score": 73.3
         }
       ],
@@ -10188,7 +11077,7 @@
       "locations": [
         {
           "area": "Glen Allen / Midlothian",
-          "rank": 47,
+          "rank": 51,
           "score": 72.4
         }
       ],
@@ -10284,7 +11173,7 @@
       "locations": [
         {
           "area": "Leesburg / Ashburn",
-          "rank": 61,
+          "rank": 68,
           "score": 61.6
         }
       ],
@@ -10418,12 +11307,12 @@
       "locations": [
         {
           "area": "Jersey City",
-          "rank": 62,
+          "rank": 69,
           "score": 54.8
         },
         {
           "area": "Newport (Jersey City)",
-          "rank": 63,
+          "rank": 70,
           "score": 49.1
         }
       ],
