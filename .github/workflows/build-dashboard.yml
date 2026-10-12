@@ -11,6 +11,7 @@ on:
       - relocation_location_scoring_matrix.json
       - build/generate.js
       - build/styles.css
+      - build/vendor/**
       - .github/workflows/build-dashboard.yml
   workflow_dispatch: {}
 
