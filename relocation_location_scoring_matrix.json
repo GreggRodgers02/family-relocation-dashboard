@@ -54,9 +54,9 @@
       "rental_phase_year": 2028,
       "rental_target": "Professionally managed 3-bedroom townhome with a $2,600/month primary ceiling and a $2,900/month hard stretch cap (income-based; see rental_budget_config).",
       "home_purchase_year": 2041,
-      "home_budget_2041_range": "$698K-$895K",
+      "home_budget_2041_range": "$698K-$940K",
       "home_budget_model": {
-        "summary": "Replaces the earlier $820K placeholder with a budget derived from lending rules, mortgage-rate forecasts and each location's property tax and insurance. On the planned career path it runs ~$727K-$895K depending on the state: about where $820K sat on average, but property tax makes it lower in Texas, Ohio and New Jersey and higher in Tennessee, the Carolinas and Alabama. A few high-tax towns sit below the state figures: Alamo Heights (~2.19% effective) at ~$698K and Celina's MUD/PID neighborhoods (~2.1%) at ~$705K.",
+        "summary": "Replaces the earlier $820K placeholder with a budget derived from lending rules, mortgage-rate forecasts and each location's property tax and insurance. On the planned career path it runs ~$727K-$895K depending on the state: about where $820K sat on average, but property tax makes it lower in Texas, Ohio and New Jersey and higher in Tennessee, the Carolinas and Alabama. A few high-tax towns sit below the state figures: Alamo Heights (~2.19% effective) at ~$698K and Celina's MUD/PID neighborhoods (~2.1%) at ~$705K. Arizona and Utah's low property tax (~0.44-0.56%) pushes their budgets the other way, to ~$914K-$940K - though the budget is set on gross income, so their state income tax shows up in the offer evaluator, not here.",
         "method": "Budget = the price whose monthly principal, interest, property tax and insurance equal 28% of gross household income in 2041, with 20% down on a 30-year fixed loan. Home prices project from 2026 at 2.5%/yr.",
         "inputs": {
           "front_end_ratio": {
@@ -202,6 +202,16 @@
             "no_stepup": 666988,
             "planned": 867550,
             "ai_leader": 1101982
+          },
+          "AZ": {
+            "no_stepup": 703040,
+            "planned": 914443,
+            "ai_leader": 1161546
+          },
+          "UT": {
+            "no_stepup": 716742,
+            "planned": 932265,
+            "ai_leader": 1184184
           }
         },
         "rate_sensitivity_planned": {
@@ -769,6 +779,65 @@
     },
     {
       "rank": 5,
+      "area": "Chandler",
+      "state": "Arizona",
+      "state_abbr": "AZ",
+      "metro": "phoenix",
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "Arizona's #1 district and the chip industry's backyard - fits the planned path with room",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 7.5,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 7.5,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 9.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 8.5,
+        "sports_tech_ecosystem": 7.5
+      },
+      "budget_check": {
+        "price_2026": 526000,
+        "price_source": "Zillow $521,563 (Jun 2026); $526,310 through Aug 2026; single-family Sept median $549,500",
+        "proj_2041": 761805,
+        "property_tax_effective_pct": 0.44,
+        "property_tax_source": "Maricopa Co. ~0.44% effective (Census ACS)",
+        "insurance_state_avg_annual": 2657,
+        "budget_2041_planned": 914443,
+        "budget_2041_no_stepup": 703040,
+        "budget_2041_ai_leader": 1161546,
+        "headroom_planned": 152638,
+        "headroom_no_stepup": -58765,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "East Valley city anchored by Intel's Chandler campus and the Phoenix semiconductor cluster, minutes from ASU's W. P. Carey School (AACSB) in Tempe and the Carvana and GoDaddy headquarters. Chandler Unified is Niche's #1 district in Arizona (A+). The median home is ~$526K, projecting to ~$762K by 2041 - ~$153K under a ~$914K planned-path budget, helped by Maricopa County's low ~0.44% property tax. 3BR rents run ~$2,270-$2,500. Kendra Scott has a store at Chandler Fashion Center. Arizona's flat 2.5% income tax costs roughly $3,300/yr more than Tennessee's zero at today's household income. Summers are extreme (110F+ highs).",
+      "risks": [
+        "Extreme summer heat drives high cooling bills and limits outdoor life June-September",
+        "Water supply is a long-term regional risk for Phoenix-area growth",
+        "Arizona income tax (2.5%) where Tennessee has none"
+      ],
+      "weighted_total_out_of_100": 81.8,
+      "weighted_total_private_scenario": 79.8,
+      "weighted_total_career_max_scenario": 82.55,
+      "sources": [
+        "https://www.zillow.com/home-values/17384/chandler-az/",
+        "https://www.niche.com/k12/search/best-school-districts/s/arizona/",
+        "https://propertytaxdates.com/arizona/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/az/chandler/"
+      ]
+    },
+    {
+      "rank": 6,
       "area": "Plano",
       "state": "Texas",
       "state_abbr": "TX",
@@ -849,7 +918,7 @@
       "weighted_total_career_max_scenario": 82.05
     },
     {
-      "rank": 6,
+      "rank": 7,
       "area": "Murfreesboro",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -952,7 +1021,7 @@
       "weighted_total_career_max_scenario": 80.5
     },
     {
-      "rank": 7,
+      "rank": 8,
       "area": "Fort Mitchell / Villa Hills (Beechwood)",
       "state": "Kentucky",
       "state_abbr": "KY",
@@ -1048,7 +1117,7 @@
       "weighted_total_career_max_scenario": 81.75
     },
     {
-      "rank": 8,
+      "rank": 9,
       "area": "Cedar Park",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1224,13 +1293,13 @@
         "purchase_2041": "Open. Spring Hill remains a viable candidate (~$520K median fits budget) but not committed; best 2041 buy city to be chosen on full-model merit."
       },
       "tier": "Tier 1 - Serious Finalist",
-      "rank": 9,
+      "rank": 10,
       "weighted_total_out_of_100": 79.9,
       "weighted_total_private_scenario": 78.9,
       "weighted_total_career_max_scenario": 79.7
     },
     {
-      "rank": 10,
+      "rank": 11,
       "area": "Solon / Rocky River (Cleveland Suburbs)",
       "state": "Ohio",
       "state_abbr": "OH",
@@ -1374,7 +1443,7 @@
       "weighted_total_career_max_scenario": 80.6
     },
     {
-      "rank": 11,
+      "rank": 12,
       "area": "Georgetown",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1459,7 +1528,7 @@
       "weighted_total_career_max_scenario": 80.75
     },
     {
-      "rank": 12,
+      "rank": 13,
       "area": "Allen",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1537,7 +1606,7 @@
       "weighted_total_career_max_scenario": 79.7
     },
     {
-      "rank": 13,
+      "rank": 14,
       "area": "Oviedo",
       "state": "Florida",
       "state_abbr": "FL",
@@ -1619,7 +1688,7 @@
       "weighted_total_career_max_scenario": 79.25
     },
     {
-      "rank": 14,
+      "rank": 15,
       "area": "Melissa",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1775,13 +1844,13 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 15,
+      "rank": 16,
       "weighted_total_out_of_100": 78.8,
       "weighted_total_private_scenario": 80.8,
       "weighted_total_career_max_scenario": 79.5
     },
     {
-      "rank": 16,
+      "rank": 17,
       "area": "New Braunfels (Comal ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1839,7 +1908,7 @@
       ]
     },
     {
-      "rank": 17,
+      "rank": 18,
       "area": "Madison / Huntsville",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -2008,13 +2077,13 @@
         "AI/product market is mid-tier and concentrated in finance, insurance and health tech; ceiling is below Austin, DFW, or the Triangle for frontier AI product work"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 18,
+      "rank": 19,
       "weighted_total_out_of_100": 78.0,
       "weighted_total_private_scenario": 82.0,
       "weighted_total_career_max_scenario": 77.25
     },
     {
-      "rank": 19,
+      "rank": 20,
       "area": "Cary",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -2185,13 +2254,13 @@
         "Merrol Hyde Magnet admission is by county-wide lottery and cannot be secured by address"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 20,
+      "rank": 21,
       "weighted_total_out_of_100": 77.9,
       "weighted_total_private_scenario": 77.9,
       "weighted_total_career_max_scenario": 79.1
     },
     {
-      "rank": 21,
+      "rank": 22,
       "area": "Oldham County (Crestwood / La Grange)",
       "state": "Kentucky",
       "state_abbr": "KY",
@@ -2358,13 +2427,72 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 22,
+      "rank": 23,
       "weighted_total_out_of_100": 77.7,
       "weighted_total_private_scenario": 78.7,
       "weighted_total_career_max_scenario": 76.65
     },
     {
-      "rank": 23,
+      "rank": 24,
+      "area": "Gilbert",
+      "state": "Arizona",
+      "state_abbr": "AZ",
+      "metro": "phoenix",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Family-first East Valley suburb with two A-rated districts - fits the planned path",
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 6.5,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 7.5,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 7.0
+      },
+      "budget_check": {
+        "price_2026": 571000,
+        "price_source": "Zillow $570,915 (Jul 2026); Q2 median sale $550K; single-family Sept $584K",
+        "proj_2041": 826978,
+        "property_tax_effective_pct": 0.44,
+        "property_tax_source": "Maricopa Co. ~0.44% effective (Census ACS)",
+        "insurance_state_avg_annual": 2657,
+        "budget_2041_planned": 914443,
+        "budget_2041_no_stepup": 703040,
+        "budget_2041_ai_leader": 1161546,
+        "headroom_planned": 87465,
+        "headroom_no_stepup": -123938,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Large, family-heavy East Valley suburb next to Chandler. Gilbert Public Schools (Niche A, #8 in Arizona) and Higley Unified (A, #11) both serve the town. The median is ~$550K-$584K (Zillow $571K), projecting to ~$827K by 2041 - ~$87K under a ~$914K planned-path budget. 3BR rents run ~$2,300-$2,425. Chandler Fashion Center (Kendra Scott) is ~15-20 minutes away. Arizona's flat 2.5% income tax costs roughly $3,300/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Extreme summer heat",
+        "Further from the Tempe/Scottsdale employer core than Chandler",
+        "Arizona income tax (2.5%)"
+      ],
+      "weighted_total_out_of_100": 77.0,
+      "weighted_total_private_scenario": 75.0,
+      "weighted_total_career_max_scenario": 77.7,
+      "sources": [
+        "https://www.zillow.com/home-values/4888/gilbert-az/",
+        "https://www.niche.com/k12/search/best-school-districts/s/arizona/",
+        "https://propertytaxdates.com/arizona/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/az/gilbert/"
+      ]
+    },
+    {
+      "rank": 25,
       "area": "West Des Moines",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -2443,7 +2571,7 @@
       "weighted_total_career_max_scenario": 79.2
     },
     {
-      "rank": 24,
+      "rank": 26,
       "area": "Schertz / Cibolo (SCUC ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2501,7 +2629,7 @@
       ]
     },
     {
-      "rank": 25,
+      "rank": 27,
       "area": "Buford (Buford City Schools)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2588,7 +2716,7 @@
       "weighted_total_career_max_scenario": 77.65
     },
     {
-      "rank": 26,
+      "rank": 28,
       "area": "Stone Oak (North San Antonio)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2665,7 +2793,7 @@
       ]
     },
     {
-      "rank": 27,
+      "rank": 29,
       "area": "Frisco",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2747,7 +2875,7 @@
       "weighted_total_career_max_scenario": 76.9
     },
     {
-      "rank": 28,
+      "rank": 30,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -2836,7 +2964,7 @@
       "weighted_total_career_max_scenario": 75.4
     },
     {
-      "rank": 29,
+      "rank": 31,
       "area": "Olathe (Garmin HQ)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -2916,7 +3044,68 @@
       "weighted_total_career_max_scenario": 74.7
     },
     {
-      "rank": 30,
+      "rank": 32,
+      "area": "Lehi",
+      "state": "Utah",
+      "state_abbr": "UT",
+      "metro": "salt_lake",
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Heart of Silicon Slopes - the strongest AI/product market outside Austin and DFW, with lower taxes on the house",
+      "scores": {
+        "ai_tech_pm_market": 9.0,
+        "school_quality": 7.5,
+        "housing_affordability_2041": 6.5,
+        "rental_feasibility_2028": 8.0,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 8.5,
+        "hs_football_culture": 7.5,
+        "private_school_access": 6.5,
+        "sports_tech_ecosystem": 7.0
+      },
+      "budget_check": {
+        "price_2026": 600000,
+        "price_source": "2026 YTD median ~$585K; July $629K; Sept closed median $628.5K",
+        "proj_2041": 868979,
+        "property_tax_effective_pct": 0.46,
+        "property_tax_source": "Utah County ~0.46% effective (Lehi 0.41-0.47%)",
+        "insurance_state_avg_annual": 1516,
+        "budget_2041_planned": 940477,
+        "budget_2041_no_stepup": 723055,
+        "budget_2041_ai_leader": 1194614,
+        "headroom_planned": 71498,
+        "headroom_no_stepup": -145924,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "The center of Utah's Silicon Slopes tech corridor: Podium is headquartered here, Adobe has a large campus, and Qualtrics (Provo) and Vivint (Provo) are a short drive south. BYU's Marriott School, Utah Valley University and the University of Utah's Eccles School are all AACSB and within ~30 miles. Alpine School District is Niche B+ (#12 in Utah, #2 in Utah County). The median is ~$585K-$629K, projecting to ~$869K by 2041 - ~$71K under a ~$940K planned-path budget at Utah County's ~0.46% rate. 3BR rents run ~$2,095-$2,262. The nearest Kendra Scott is City Creek Center in downtown Salt Lake (~30 miles). Utah's flat 4.45% income tax (less a credit that phases out with income) costs roughly $3,800/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Only one Kendra Scott store in Utah (City Creek, ~30 miles away)",
+        "Alpine School District is B+ overall - choose the zone carefully",
+        "Utah income tax (4.45%) where Tennessee has none",
+        "Winter inversions and I-15 congestion at the Point of the Mountain"
+      ],
+      "weighted_total_out_of_100": 75.6,
+      "weighted_total_private_scenario": 73.6,
+      "weighted_total_career_max_scenario": 77.05,
+      "sources": [
+        "https://lehifreepress.com/2026/08/05/lehi-real-estate-snapshot-july-2026/",
+        "https://www.niche.com/k12/search/best-school-districts/s/utah/",
+        "https://www.ownwell.com/trends/utah/utah-county/lehi",
+        "https://www.zumper.com/rent-research/lehi-ut",
+        "https://en.wikipedia.org/wiki/Podium_(company)"
+      ]
+    },
+    {
+      "rank": 33,
       "area": "Crowley / North Crowley (SW Fort Worth)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3008,7 +3197,7 @@
       "weighted_total_career_max_scenario": 74.8
     },
     {
-      "rank": 31,
+      "rank": 34,
       "area": "Overland Park (Blue Valley)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -3088,7 +3277,7 @@
       "weighted_total_career_max_scenario": 74.95
     },
     {
-      "rank": 32,
+      "rank": 35,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -3253,13 +3442,13 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 33,
+      "rank": 36,
       "weighted_total_out_of_100": 75.2,
       "weighted_total_private_scenario": 75.2,
       "weighted_total_career_max_scenario": 74.9
     },
     {
-      "rank": 34,
+      "rank": 37,
       "area": "Austin (City Proper)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3353,7 +3542,7 @@
       "weighted_total_career_max_scenario": 76.4
     },
     {
-      "rank": 35,
+      "rank": 38,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -3513,7 +3702,7 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 36,
+      "rank": 39,
       "weighted_total_out_of_100": 74.5,
       "weighted_total_private_scenario": 77.5,
       "weighted_total_career_max_scenario": 74.8
@@ -3594,13 +3783,13 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 37,
+      "rank": 40,
       "weighted_total_out_of_100": 74.3,
       "weighted_total_private_scenario": 78.3,
       "weighted_total_career_max_scenario": 74.4
     },
     {
-      "rank": 38,
+      "rank": 41,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -3774,13 +3963,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 39,
+      "rank": 42,
       "weighted_total_out_of_100": 73.7,
       "weighted_total_private_scenario": 78.7,
       "weighted_total_career_max_scenario": 74.25
     },
     {
-      "rank": 40,
+      "rank": 43,
       "area": "Waukee",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -3851,7 +4040,7 @@
       "weighted_total_career_max_scenario": 75.35
     },
     {
-      "rank": 41,
+      "rank": 44,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -4014,7 +4203,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 42,
+      "rank": 45,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 71.6,
       "weighted_total_career_max_scenario": 72.25
@@ -4096,7 +4285,7 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 43,
+      "rank": 46,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 75.6,
       "weighted_total_career_max_scenario": 73.4,
@@ -4111,7 +4300,7 @@
       ]
     },
     {
-      "rank": 44,
+      "rank": 47,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -4203,7 +4392,7 @@
       "weighted_total_career_max_scenario": 72.5
     },
     {
-      "rank": 45,
+      "rank": 48,
       "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
@@ -4282,7 +4471,65 @@
       ]
     },
     {
-      "rank": 46,
+      "rank": 49,
+      "area": "Draper",
+      "state": "Utah",
+      "state_abbr": "UT",
+      "metro": "salt_lake",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Canyons District (A-) between Salt Lake and Lehi - the house is the stretch",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 4.0,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 7.5,
+        "private_school_access": 7.0,
+        "sports_tech_ecosystem": 7.0
+      },
+      "budget_check": {
+        "price_2026": 790000,
+        "price_source": "Zillow $818K (Jul 2026); Redfin ~$760K; May closed median $758,500",
+        "proj_2041": 1144156,
+        "property_tax_effective_pct": 0.56,
+        "property_tax_source": "Salt Lake Co. ~0.56% effective",
+        "insurance_state_avg_annual": 1516,
+        "budget_2041_planned": 926870,
+        "budget_2041_no_stepup": 712594,
+        "budget_2041_ai_leader": 1177331,
+        "headroom_planned": -217285,
+        "headroom_no_stepup": -431561,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Point of the Mountain city between Salt Lake City and Lehi, reaching both job centers. Canyons School District is Niche A- (#7 in Utah). The median is ~$760K-$818K, projecting to ~$1,144K by 2041 - ~$217K over a ~$927K planned-path budget. No Draper-specific 3BR rent figure was found; nearby South Jordan runs ~$2,315-$2,350 and Lehi ~$2,095-$2,262. Utah's flat 4.45% income tax (less a credit that phases out with income) costs roughly $3,800/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Median house is over the planned-path budget",
+        "No Draper-specific rent data - verify before planning the rental phase",
+        "Utah income tax (4.45%)"
+      ],
+      "weighted_total_out_of_100": 71.1,
+      "weighted_total_private_scenario": 68.1,
+      "weighted_total_career_max_scenario": 72.15,
+      "sources": [
+        "https://www.zillow.com/home-values/42464/draper-ut/",
+        "https://www.niche.com/k12/search/best-school-districts/s/utah/",
+        "https://krisbowen.com/utah-property-tax-by-county/"
+      ]
+    },
+    {
+      "rank": 50,
       "area": "Lucas (Lovejoy ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -4460,7 +4707,66 @@
       }
     },
     {
-      "rank": 47,
+      "rank": 51,
+      "area": "South Jordan / Herriman",
+      "state": "Utah",
+      "state_abbr": "UT",
+      "metro": "salt_lake",
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Newer Salt Lake suburbs that fit the budget - Jordan District (B) is the trade-off",
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 7.0,
+        "housing_affordability_2041": 6.0,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 7.5,
+        "private_school_access": 6.5,
+        "sports_tech_ecosystem": 7.0
+      },
+      "budget_check": {
+        "price_2026": 600000,
+        "price_source": "South Jordan ~$615K-$630K (all homes); Herriman $541K-$587K",
+        "proj_2041": 868979,
+        "property_tax_effective_pct": 0.56,
+        "property_tax_source": "Salt Lake Co. ~0.56% effective",
+        "insurance_state_avg_annual": 1516,
+        "budget_2041_planned": 926870,
+        "budget_2041_no_stepup": 712594,
+        "budget_2041_ai_leader": 1177331,
+        "headroom_planned": 57892,
+        "headroom_no_stepup": -156385,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Southwest Salt Lake County suburbs with newer master-planned neighborhoods (e.g., Daybreak in South Jordan). Jordan School District is Niche B. Homes run ~$541K-$630K (single-family higher), projecting to ~$869K by 2041 at a ~$600K working price - ~$58K under a ~$927K planned-path budget. 3BR rents run ~$2,315-$2,350. Utah's flat 4.45% income tax (less a credit that phases out with income) costs roughly $3,800/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Jordan School District is a B - a step below Canyons (Draper)",
+        "Single-family homes run well above the all-homes median",
+        "Utah income tax (4.45%)"
+      ],
+      "weighted_total_out_of_100": 70.8,
+      "weighted_total_private_scenario": 69.8,
+      "weighted_total_career_max_scenario": 71.45,
+      "sources": [
+        "https://www.redfin.com/city/18112/UT/South-Jordan/housing-market",
+        "https://www.niche.com/k12/search/best-school-districts/s/utah/",
+        "https://krisbowen.com/utah-property-tax-by-county/",
+        "https://www.trulia.com/average-rent-market-trends/south-jordan-ut/"
+      ]
+    },
+    {
+      "rank": 52,
       "area": "Boerne",
       "state": "Texas",
       "state_abbr": "TX",
@@ -4531,7 +4837,7 @@
       ]
     },
     {
-      "rank": 48,
+      "rank": 53,
       "area": "Thompson's Station",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -4597,7 +4903,66 @@
       "weighted_total_career_max_scenario": 69.15
     },
     {
-      "rank": 49,
+      "rank": 54,
+      "area": "Scottsdale",
+      "state": "Arizona",
+      "state_abbr": "AZ",
+      "metro": "phoenix",
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Upscale, strong schools and sports-business culture - rent and houses run over budget",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 3.0,
+        "rental_feasibility_2028": 4.5,
+        "state_tax_burden": 7.5,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 7.5,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 8.0
+      },
+      "budget_check": {
+        "price_2026": 875000,
+        "price_source": "H1 2026 median ~$875K (Zillow $854K; six-month sold median $905K)",
+        "proj_2041": 1267261,
+        "property_tax_effective_pct": 0.44,
+        "property_tax_source": "Maricopa Co. ~0.44% effective (Census ACS)",
+        "insurance_state_avg_annual": 2657,
+        "budget_2041_planned": 914443,
+        "budget_2041_no_stepup": 703040,
+        "budget_2041_ai_leader": 1161546,
+        "headroom_planned": -352818,
+        "headroom_no_stepup": -564221,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Upscale city home to Axon's headquarters, a big golf and spring-training culture, and Kendra Scott at Scottsdale Quarter. Scottsdale Unified is Niche A (#5 in Arizona). The median is ~$875K (North Scottsdale past $1M), projecting to ~$1,267K by 2041 - ~$353K over a ~$914K planned-path budget. Rent is the bigger problem: 3BR rentals run ~$3,160-$4,000, well over the ~$2,625 ceiling. Arizona's flat 2.5% income tax costs roughly $3,300/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "3BR rent (~$3,160-$4,000) is far above the rent ceiling",
+        "Median house is over the planned-path budget",
+        "Arizona income tax (2.5%)"
+      ],
+      "weighted_total_out_of_100": 67.7,
+      "weighted_total_private_scenario": 67.7,
+      "weighted_total_career_max_scenario": 68.85,
+      "sources": [
+        "https://moxleycollective.com/blog/scottsdale-real-estate-market-update-2026",
+        "https://www.niche.com/k12/search/best-school-districts/s/arizona/",
+        "https://propertytaxdates.com/arizona/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/az/scottsdale/"
+      ]
+    },
+    {
+      "rank": 55,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -4680,7 +5045,7 @@
       "weighted_total_career_max_scenario": 69.3
     },
     {
-      "rank": 50,
+      "rank": 56,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -4776,7 +5141,7 @@
       "weighted_total_career_max_scenario": 69.05
     },
     {
-      "rank": 51,
+      "rank": 57,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -4865,7 +5230,7 @@
       "weighted_total_career_max_scenario": 65.35
     },
     {
-      "rank": 52,
+      "rank": 58,
       "area": "Alamo Heights",
       "state": "Texas",
       "state_abbr": "TX",
@@ -4953,7 +5318,7 @@
       ]
     },
     {
-      "rank": 53,
+      "rank": 59,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -5041,7 +5406,7 @@
       "weighted_total_career_max_scenario": 64.9
     },
     {
-      "rank": 54,
+      "rank": 60,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -5142,7 +5507,7 @@
       "weighted_total_career_max_scenario": 65.3
     },
     {
-      "rank": 55,
+      "rank": 61,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -5242,7 +5607,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 56,
+      "rank": 62,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -5338,7 +5703,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 57,
+      "rank": 63,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -5447,6 +5812,10 @@
       "St. Johns County",
       "Oviedo"
     ],
+    "Arizona": [
+      "Chandler",
+      "Gilbert"
+    ],
     "Tennessee": [
       "Murfreesboro",
       "Spring Hill (Summit / Page Zones, Williamson County)"
@@ -5477,6 +5846,10 @@
     "Kansas": [
       "Olathe (Garmin HQ)",
       "Overland Park (Blue Valley)"
+    ],
+    "Utah": [
+      "Lehi",
+      "Draper"
     ],
     "Virginia": [
       "Glen Allen / Midlothian",
@@ -5530,13 +5903,14 @@
     "Concord / Northwest Cabarrus",
     "McKinney",
     "St. Johns County",
-    "Murfreesboro"
+    "Chandler"
   ],
   "decision_tiers": {
     "tier_1_serious_finalists": [
       "Round Rock",
       "Concord / Northwest Cabarrus",
       "McKinney",
+      "Chandler",
       "Fort Mitchell / Villa Hills (Beechwood)",
       "Spring Hill (Summit / Page Zones, Williamson County)",
       "Solon / Rocky River (Cleveland Suburbs)",
@@ -5556,12 +5930,14 @@
       "Tampa",
       "Hendersonville",
       "Oldham County (Crestwood / La Grange)",
+      "Gilbert",
       "West Des Moines",
       "Schertz / Cibolo (SCUC ISD)",
       "Buford (Buford City Schools)",
       "Stone Oak (North San Antonio)",
       "Fort Mill",
       "Olathe (Garmin HQ)",
+      "Lehi",
       "Suwanee / Peachtree Corners",
       "Austin (City Proper)",
       "Celina"
@@ -5577,7 +5953,9 @@
       "Alpharetta / Johns Creek",
       "Waukee",
       "Prosper",
+      "Draper",
       "Lucas (Lovejoy ISD)",
+      "South Jordan / Herriman",
       "Boerne"
     ],
     "tier_4_backup_only": [
@@ -5588,6 +5966,7 @@
       "Lake Nona",
       "Glen Allen / Midlothian",
       "Thompson's Station",
+      "Scottsdale",
       "Roswell",
       "Franklin",
       "Farragut",
@@ -5790,35 +6169,35 @@
         "locations": [
           {
             "area": "Gallatin",
-            "rank": 22,
+            "rank": 23,
             "rental_feasibility_2028": 9,
             "school_quality": 7,
             "weighted_total_out_of_100": 77.7
           },
           {
             "area": "Schertz / Cibolo (SCUC ISD)",
-            "rank": 24,
+            "rank": 26,
             "rental_feasibility_2028": 8.5,
             "school_quality": 6.5,
             "weighted_total_out_of_100": 76.8
           },
           {
             "area": "Crowley / North Crowley (SW Fort Worth)",
-            "rank": 30,
+            "rank": 33,
             "rental_feasibility_2028": 9.0,
             "school_quality": 4.0,
             "weighted_total_out_of_100": 75.4
           },
           {
             "area": "Lakeland",
-            "rank": 37,
+            "rank": 40,
             "rental_feasibility_2028": 9,
             "school_quality": 5.5,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Davenport / Four Corners",
-            "rank": 39,
+            "rank": 42,
             "rental_feasibility_2028": 8.5,
             "school_quality": 4,
             "weighted_total_out_of_100": 73.7
@@ -5831,7 +6210,7 @@
         "locations": [
           {
             "area": "Prosper",
-            "rank": 45,
+            "rank": 48,
             "school_quality": 9.0,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 2.0,
@@ -5840,7 +6219,7 @@
           },
           {
             "area": "Lucas (Lovejoy ISD)",
-            "rank": 46,
+            "rank": 50,
             "school_quality": 9.5,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 1.0,
@@ -5882,85 +6261,106 @@
             "weighted_total_out_of_100": 82.0
           },
           {
+            "area": "Chandler",
+            "rank": 5,
+            "rental_feasibility_2028": 7.5,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 81.8
+          },
+          {
             "area": "Fort Mitchell / Villa Hills (Beechwood)",
-            "rank": 7,
+            "rank": 8,
             "rental_feasibility_2028": 8.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 80.7
           },
           {
             "area": "Cedar Park",
-            "rank": 8,
+            "rank": 9,
             "rental_feasibility_2028": 7.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 80.2
           },
           {
             "area": "Spring Hill (Summit / Page Zones, Williamson County)",
-            "rank": 9,
+            "rank": 10,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 79.9
           },
           {
             "area": "Solon / Rocky River (Cleveland Suburbs)",
-            "rank": 10,
+            "rank": 11,
             "rental_feasibility_2028": 8.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 79.8
           },
           {
             "area": "Madison / Huntsville",
-            "rank": 17,
+            "rank": 18,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 78.1
           },
           {
             "area": "Oldham County (Crestwood / La Grange)",
-            "rank": 21,
+            "rank": 22,
             "rental_feasibility_2028": 8.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 77.7
           },
           {
+            "area": "Gilbert",
+            "rank": 24,
+            "rental_feasibility_2028": 7.5,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 77.0
+          },
+          {
             "area": "West Des Moines",
-            "rank": 23,
+            "rank": 25,
             "rental_feasibility_2028": 9.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 76.8
           },
           {
             "area": "Stone Oak (North San Antonio)",
-            "rank": 26,
+            "rank": 28,
             "rental_feasibility_2028": 8.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 76.5
           },
           {
             "area": "Fort Mill",
-            "rank": 28,
+            "rank": 30,
             "rental_feasibility_2028": 8,
             "school_quality": 9,
             "weighted_total_out_of_100": 76.0
           },
           {
             "area": "Olathe (Garmin HQ)",
-            "rank": 29,
+            "rank": 31,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 75.6
           },
           {
             "area": "Waukee",
-            "rank": 40,
+            "rank": 43,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.4
           },
           {
+            "area": "Draper",
+            "rank": 49,
+            "rental_feasibility_2028": 7.5,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 71.1
+          },
+          {
             "area": "Farragut",
-            "rank": 51,
+            "rank": 57,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 66.6
@@ -5974,84 +6374,91 @@
         "locations": [
           {
             "area": "Plano",
-            "rank": 5,
+            "rank": 6,
             "rental_feasibility_2028": 6.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 80.9
           },
           {
             "area": "Allen",
-            "rank": 12,
+            "rank": 13,
             "rental_feasibility_2028": 6.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 79.3
           },
           {
             "area": "Cary",
-            "rank": 19,
+            "rank": 20,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 77.9
           },
           {
             "area": "Frisco",
-            "rank": 27,
+            "rank": 29,
             "rental_feasibility_2028": 5.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 76.4
           },
           {
             "area": "Suwanee / Peachtree Corners",
-            "rank": 32,
+            "rank": 35,
             "rental_feasibility_2028": 6,
             "school_quality": 9,
             "weighted_total_out_of_100": 75.3
           },
           {
             "area": "Alpharetta / Johns Creek",
-            "rank": 38,
+            "rank": 41,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 74.2
           },
           {
             "area": "Lake Nona",
-            "rank": 42,
+            "rank": 45,
             "rental_feasibility_2028": 5.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 72.6
           },
           {
             "area": "Thompson's Station",
-            "rank": 48,
+            "rank": 53,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 68.2
           },
           {
+            "area": "Scottsdale",
+            "rank": 54,
+            "rental_feasibility_2028": 4.5,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 67.7
+          },
+          {
             "area": "Franklin",
-            "rank": 50,
+            "rank": 56,
             "rental_feasibility_2028": 3.5,
             "school_quality": 9,
             "weighted_total_out_of_100": 67.4
           },
           {
             "area": "Alamo Heights",
-            "rank": 52,
+            "rank": 58,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 65.8
           },
           {
             "area": "Waxhaw",
-            "rank": 53,
+            "rank": 59,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 64.7
           },
           {
             "area": "Leesburg / Ashburn",
-            "rank": 55,
+            "rank": 61,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 61.6
@@ -6723,6 +7130,25 @@
           ]
         ],
         "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/"
+      },
+      "AZ": {
+        "type": "flat",
+        "rate": 0.025,
+        "deduction": 32200,
+        "source": "https://www.incometaxpro.com/tax-rates/arizona.htm",
+        "note": "Flat 2.5%; Arizona conforms to the federal standard deduction ($32,200 MFJ)."
+      },
+      "UT": {
+        "type": "flat",
+        "rate": 0.0445,
+        "deduction": 0,
+        "credit": {
+          "base": 1932,
+          "phaseout_start": 36426,
+          "phaseout_rate": 0.013
+        },
+        "source": "https://ustax.tools/utah-tax-brackets-2026/",
+        "note": "Flat 4.45% for 2026 (SB 60). No standard deduction; a taxpayer credit of 6% of the federal standard deduction (~$1,932 MFJ) phases out at 1.3 cents per dollar above ~$36,426, so it is gone by ~$185K."
       }
     },
     "local_by_metro": {
@@ -6764,7 +7190,9 @@
       "richmond": "VA",
       "nova": "VA",
       "new_york": "NJ",
-      "san_antonio": "TX"
+      "san_antonio": "TX",
+      "phoenix": "AZ",
+      "salt_lake": "UT"
     }
   },
   "metros": [
@@ -6778,42 +7206,42 @@
       "locations": [
         {
           "area": "Murfreesboro",
-          "rank": 6,
+          "rank": 7,
           "score": 80.9
         },
         {
           "area": "Spring Hill (Summit / Page Zones, Williamson County)",
-          "rank": 9,
+          "rank": 10,
           "score": 79.9
         },
         {
           "area": "Hendersonville",
-          "rank": 20,
+          "rank": 21,
           "score": 77.9
         },
         {
           "area": "Gallatin",
-          "rank": 22,
+          "rank": 23,
           "score": 77.7
         },
         {
           "area": "Mount Juliet",
-          "rank": 33,
+          "rank": 36,
           "score": 75.2
         },
         {
           "area": "Thompson's Station",
-          "rank": 48,
+          "rank": 53,
           "score": 68.2
         },
         {
           "area": "Franklin",
-          "rank": 50,
+          "rank": 56,
           "score": 67.4
         },
         {
           "area": "Germantown (Nashville)",
-          "rank": 54,
+          "rank": 60,
           "score": 63.5
         }
       ],
@@ -7014,17 +7442,17 @@
         },
         {
           "area": "Cedar Park",
-          "rank": 8,
+          "rank": 9,
           "score": 80.2
         },
         {
           "area": "Georgetown",
-          "rank": 11,
+          "rank": 12,
           "score": 79.6
         },
         {
           "area": "Austin (City Proper)",
-          "rank": 34,
+          "rank": 37,
           "score": 75.0
         }
       ],
@@ -7207,27 +7635,27 @@
       "locations": [
         {
           "area": "New Braunfels (Comal ISD)",
-          "rank": 16,
+          "rank": 17,
           "score": 78.8
         },
         {
           "area": "Schertz / Cibolo (SCUC ISD)",
-          "rank": 24,
+          "rank": 26,
           "score": 76.8
         },
         {
           "area": "Stone Oak (North San Antonio)",
-          "rank": 26,
+          "rank": 28,
           "score": 76.5
         },
         {
           "area": "Boerne",
-          "rank": 47,
+          "rank": 52,
           "score": 70.5
         },
         {
           "area": "Alamo Heights",
-          "rank": 52,
+          "rank": 58,
           "score": 65.8
         }
       ],
@@ -7362,6 +7790,326 @@
       "gaps": "Fintech (USAA, Frost) and consumer retail (H-E-B) are deep; sports-tech is the Spurs organization rather than a startup cluster. Austin's larger market is ~75-80 minutes north (~50 from New Braunfels)."
     },
     {
+      "id": "phoenix",
+      "label": "Phoenix",
+      "states": "AZ",
+      "home_base": false,
+      "wave": 3,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Chandler",
+          "rank": 5,
+          "score": 81.8
+        },
+        {
+          "area": "Gilbert",
+          "rank": 24,
+          "score": 77.0
+        },
+        {
+          "area": "Scottsdale",
+          "rank": 54,
+          "score": 67.7
+        }
+      ],
+      "representative": "Chandler",
+      "rent_3br": 2372,
+      "rent_note": "Chandler 3BR, Aug 2026 ($2,272-$2,495; Gilbert similar; Scottsdale $3,160+)",
+      "rent_source": "https://www.zumper.com/rent-research/chandler-az",
+      "kendra_scott": [
+        {
+          "store": "Chandler Fashion Center",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265052"
+        },
+        {
+          "store": "Scottsdale Quarter",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265005"
+        },
+        {
+          "store": "Glendale - Arrowhead Towne Center",
+          "source": "https://ktar.com/arizona-business/kendra-scott-opening-glendale/5751897/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Carvana",
+          "sector": "Online auto retail / AI",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Online car retailer headquartered in Tempe - a consumer e-commerce product company.",
+          "role_families": [
+            "Product Manager (e-commerce / pricing AI)"
+          ],
+          "office": "Tempe (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Carvana",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "GoDaddy",
+          "sector": "Small-business software / AI",
+          "goal_tags": [
+            "ai_product",
+            "consumer_retail"
+          ],
+          "why": "Headquartered in Tempe since 2021; builds AI tools for small businesses and creators.",
+          "role_families": [
+            "Product Manager (AI / commerce)"
+          ],
+          "office": "Tempe (HQ)",
+          "source": "https://en.wikipedia.org/wiki/GoDaddy",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Axon",
+          "sector": "Public-safety tech / AI",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Body cameras, TASER and AI software, headquartered in Scottsdale.",
+          "role_families": [
+            "Product Manager (AI / software)"
+          ],
+          "office": "Scottsdale (HQ)",
+          "source": "https://en.wikipedia.org/wiki/List_of_Arizona_companies",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Intel - Chandler",
+          "sector": "Semiconductors",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Intel's Chandler campus is one of its largest sites (12,000+ employees reported); Phoenix ranks fourth nationally in semiconductor jobs.",
+          "role_families": [
+            "Technical Program / Product Manager"
+          ],
+          "office": "Chandler (Ocotillo campus)",
+          "source": "https://phoenixrelocationguide.com/best-top-tech-jobs-in-phoenix/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Phoenix fintech offices (Charles Schwab, American Express, State Farm)",
+          "sector": "Fintech / insurance",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "Large operations centers: Schwab (Camelback Corridor), American Express (Desert Ridge) and State Farm's Tempe hub - mostly operations rather than HQ product teams.",
+          "role_families": [
+            "Product Owner (operations tech)"
+          ],
+          "office": "Phoenix / Tempe",
+          "source": "https://kitalent.com/articles/phoenix-corporate-operations-hiring",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "K-Motion Interactive",
+          "sector": "Sports-tech (3D biofeedback)",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Scottsdale company building 3D motion-capture and biofeedback for athletic training.",
+          "role_families": [
+            "Product roles"
+          ],
+          "office": "Scottsdale",
+          "source": "https://gregslist.com/phoenix/software-companies-industry/sports-and-fitness/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "spouse_content": [
+        {
+          "name": "Web Tonic / REQ / Nativa",
+          "sector": "Influencer and UGC agencies",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Phoenix agencies sourcing creators and UGC for brand campaigns.",
+          "role_families": [
+            "UGC creator",
+            "Influencer marketing"
+          ],
+          "office": "Phoenix",
+          "source": "https://clutch.co/agencies/social-media-marketing/influencer/phoenix",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "gaps": "Fintech is operations-heavy rather than HQ product; sports-tech is small firms plus the teams and spring training. Summer heat is the lifestyle trade-off."
+    },
+    {
+      "id": "salt_lake",
+      "label": "Salt Lake City / Silicon Slopes",
+      "states": "UT",
+      "home_base": false,
+      "wave": 3,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Lehi",
+          "rank": 32,
+          "score": 75.6
+        },
+        {
+          "area": "Draper",
+          "rank": 49,
+          "score": 71.1
+        },
+        {
+          "area": "South Jordan / Herriman",
+          "rank": 51,
+          "score": 70.8
+        }
+      ],
+      "representative": "Lehi",
+      "rent_3br": 2195,
+      "rent_note": "Lehi 3BR, Jun 2026 ($2,095-$2,262; South Jordan ~$2,315-$2,350)",
+      "rent_source": "https://www.renthop.com/average-rent-in/lehi-ut",
+      "kendra_scott": [
+        {
+          "store": "Salt Lake City - City Creek Center",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265102"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Podium",
+          "sector": "AI customer messaging / payments",
+          "goal_tags": [
+            "ai_product",
+            "fintech"
+          ],
+          "why": "Lehi-headquartered software company (messaging, reviews, payments) building agentic AI for local businesses.",
+          "role_families": [
+            "Product Manager (AI / payments)"
+          ],
+          "office": "Lehi (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Podium_(company)",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Qualtrics",
+          "sector": "Experience management / AI",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Co-headquartered in Provo (and Seattle); survey and experience-data software with heavy AI investment.",
+          "role_families": [
+            "Product Manager (AI / analytics)"
+          ],
+          "office": "Provo (co-HQ)",
+          "source": "https://en.wikipedia.org/wiki/Qualtrics",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Adobe - Lehi",
+          "sector": "Creative / marketing software",
+          "goal_tags": [
+            "ai_product",
+            "spouse_content"
+          ],
+          "why": "Adobe runs one of its U.S. buildings in Lehi (~900 employees reported) - marketing-tech and creative tools, close to both your marketing work and content creation.",
+          "role_families": [
+            "Product Manager (marketing cloud / AI)"
+          ],
+          "office": "Lehi",
+          "source": "https://en.wikipedia.org/wiki/Lehi,_Utah",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Vivint (NRG)",
+          "sector": "Smart home / consumer tech",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Smart-home company headquartered in Provo (founded in Lehi), now part of NRG Energy.",
+          "role_families": [
+            "Digital Product Manager"
+          ],
+          "office": "Provo (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Vivint",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Goldman Sachs - Salt Lake City",
+          "sector": "Investment banking / fintech",
+          "goal_tags": [
+            "fintech",
+            "ai_product"
+          ],
+          "why": "About 3,000 Utah employees - the firm's second-largest U.S. office - and still recruiting.",
+          "role_families": [
+            "Product / platform roles"
+          ],
+          "office": "Salt Lake City",
+          "source": "https://www.sltrib.com/news/business/2025/05/12/3000-utah-employees-goldman-sachs/",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Smith Entertainment Group (Utah Jazz, Utah Mammoth)",
+          "sector": "Pro sports / media",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Owns the Jazz, the NHL's Utah Mammoth and the Delta Center (remodel and surrounding district); hiring roles like Basketball Data Scientist.",
+          "role_families": [
+            "Data / fan-experience product"
+          ],
+          "office": "Salt Lake City",
+          "source": "https://www.utahbusiness.com/press-releases/2026/09/30/smith-entertainment-group-welcomes-fans-back-delta-center-elevated-offerings/",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "spouse_content": [
+        {
+          "name": "Ubiquitous / R&R Partners",
+          "sector": "Influencer agencies",
+          "goal_tags": [
+            "spouse_content"
+          ],
+          "why": "Salt Lake City agencies running TikTok/short-form creator campaigns.",
+          "role_families": [
+            "Creator partnerships",
+            "Short-form content"
+          ],
+          "office": "Salt Lake City",
+          "source": "https://kronuscommunications.com/top-salt-lake-city-influencer-marketing-agencies/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "gaps": "Only one Kendra Scott store in the state (City Creek). Consumer retail brands are thinner than in Texas; Utah income tax applies."
+    },
+    {
       "id": "dfw",
       "label": "Dallas–Fort Worth",
       "states": "TX",
@@ -7376,42 +8124,42 @@
         },
         {
           "area": "Plano",
-          "rank": 5,
+          "rank": 6,
           "score": 80.9
         },
         {
           "area": "Allen",
-          "rank": 12,
+          "rank": 13,
           "score": 79.3
         },
         {
           "area": "Melissa",
-          "rank": 14,
+          "rank": 15,
           "score": 79.1
         },
         {
           "area": "Frisco",
-          "rank": 27,
+          "rank": 29,
           "score": 76.4
         },
         {
           "area": "Crowley / North Crowley (SW Fort Worth)",
-          "rank": 30,
+          "rank": 33,
           "score": 75.4
         },
         {
           "area": "Celina",
-          "rank": 43,
+          "rank": 46,
           "score": 72.6
         },
         {
           "area": "Prosper",
-          "rank": 45,
+          "rank": 48,
           "score": 71.3
         },
         {
           "area": "Lucas (Lovejoy ISD)",
-          "rank": 46,
+          "rank": 50,
           "score": 70.8
         }
       ],
@@ -7618,12 +8366,12 @@
         },
         {
           "area": "Fort Mill",
-          "rank": 28,
+          "rank": 30,
           "score": 76.0
         },
         {
           "area": "Waxhaw",
-          "rank": 53,
+          "rank": 59,
           "score": 64.7
         }
       ],
@@ -7780,22 +8528,22 @@
       "locations": [
         {
           "area": "Buford (Buford City Schools)",
-          "rank": 25,
+          "rank": 27,
           "score": 76.7
         },
         {
           "area": "Suwanee / Peachtree Corners",
-          "rank": 32,
+          "rank": 35,
           "score": 75.3
         },
         {
           "area": "Alpharetta / Johns Creek",
-          "rank": 38,
+          "rank": 41,
           "score": 74.2
         },
         {
           "area": "Roswell",
-          "rank": 49,
+          "rank": 55,
           "score": 67.6
         }
       ],
@@ -7958,7 +8706,7 @@
       "locations": [
         {
           "area": "Solon / Rocky River (Cleveland Suburbs)",
-          "rank": 10,
+          "rank": 11,
           "score": 79.8
         }
       ],
@@ -8070,27 +8818,27 @@
       "locations": [
         {
           "area": "Oviedo",
-          "rank": 13,
+          "rank": 14,
           "score": 79.3
         },
         {
           "area": "Lake Mary",
-          "rank": 15,
+          "rank": 16,
           "score": 78.8
         },
         {
           "area": "Clermont",
-          "rank": 36,
+          "rank": 39,
           "score": 74.5
         },
         {
           "area": "Davenport / Four Corners",
-          "rank": 39,
+          "rank": 42,
           "score": 73.7
         },
         {
           "area": "Lake Nona",
-          "rank": 42,
+          "rank": 45,
           "score": 72.6
         }
       ],
@@ -8217,12 +8965,12 @@
       "locations": [
         {
           "area": "Tampa",
-          "rank": 18,
+          "rank": 19,
           "score": 78.0
         },
         {
           "area": "Lakeland",
-          "rank": 37,
+          "rank": 40,
           "score": 74.3
         }
       ],
@@ -8508,7 +9256,7 @@
       "locations": [
         {
           "area": "Cary",
-          "rank": 19,
+          "rank": 20,
           "score": 77.9
         }
       ],
@@ -8634,7 +9382,7 @@
       "locations": [
         {
           "area": "Fort Mitchell / Villa Hills (Beechwood)",
-          "rank": 7,
+          "rank": 8,
           "score": 80.7
         }
       ],
@@ -8765,7 +9513,7 @@
       "locations": [
         {
           "area": "Oldham County (Crestwood / La Grange)",
-          "rank": 21,
+          "rank": 22,
           "score": 77.7
         }
       ],
@@ -8889,12 +9637,12 @@
       "locations": [
         {
           "area": "Olathe (Garmin HQ)",
-          "rank": 29,
+          "rank": 31,
           "score": 75.6
         },
         {
           "area": "Overland Park (Blue Valley)",
-          "rank": 31,
+          "rank": 34,
           "score": 75.4
         }
       ],
@@ -8994,12 +9742,12 @@
       "locations": [
         {
           "area": "West Des Moines",
-          "rank": 23,
+          "rank": 25,
           "score": 76.8
         },
         {
           "area": "Waukee",
-          "rank": 40,
+          "rank": 43,
           "score": 73.4
         }
       ],
@@ -9123,7 +9871,7 @@
       "locations": [
         {
           "area": "Madison / Huntsville",
-          "rank": 17,
+          "rank": 18,
           "score": 78.1
         }
       ],
@@ -9200,7 +9948,7 @@
       "locations": [
         {
           "area": "Farragut",
-          "rank": 51,
+          "rank": 57,
           "score": 66.6
         }
       ],
@@ -9293,7 +10041,7 @@
       "locations": [
         {
           "area": "Greenville",
-          "rank": 35,
+          "rank": 38,
           "score": 74.9
         }
       ],
@@ -9385,7 +10133,7 @@
       "locations": [
         {
           "area": "Auburn / Opelika",
-          "rank": 41,
+          "rank": 44,
           "score": 73.3
         }
       ],
@@ -9440,7 +10188,7 @@
       "locations": [
         {
           "area": "Glen Allen / Midlothian",
-          "rank": 44,
+          "rank": 47,
           "score": 72.4
         }
       ],
@@ -9536,7 +10284,7 @@
       "locations": [
         {
           "area": "Leesburg / Ashburn",
-          "rank": 55,
+          "rank": 61,
           "score": 61.6
         }
       ],
@@ -9670,12 +10418,12 @@
       "locations": [
         {
           "area": "Jersey City",
-          "rank": 56,
+          "rank": 62,
           "score": 54.8
         },
         {
           "area": "Newport (Jersey City)",
-          "rank": 57,
+          "rank": 63,
           "score": 49.1
         }
       ],
