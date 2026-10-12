@@ -242,7 +242,12 @@
       "football_weighting_note": "High school football culture is treated as a nice-to-have, not a hard requirement.",
       "family_status": "No children yet. The timeline assumes a first child arriving ~2026-2028 (age 0-2 when the rental phase starts in 2028). Gregg will say when this changes; then re-anchor the child-age and kindergarten dates.",
       "first_child_assumed_birth": "2026-2028 (planning assumption)"
-    }
+    },
+    "home_base_coords": [
+      35.7512,
+      -86.93
+    ],
+    "coords_note": "Location coords are approximate town or area centroids (midpoints for multi-town entries), for the dashboard map only."
   },
   "scoring_scale": {
     "min": 1,
@@ -378,6 +383,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "austin",
+      "coords": [
+        30.5083,
+        -97.6789
+      ],
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Best overall / Budget-cushion career pick",
       "scores": {
@@ -457,6 +466,10 @@
       "state": "North Carolina",
       "state_abbr": "NC",
       "metro": "charlotte",
+      "coords": [
+        35.42,
+        -80.65
+      ],
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Fintech-PM career fit, motorsports engineering cluster, best Charlotte-metro 2041 affordability",
       "scores": {
@@ -629,6 +642,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "dfw",
+      "coords": [
+        33.1972,
+        -96.6398
+      ],
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Best DFW balance - real BTR inventory and genuine 2041 headroom where Plano and Allen now miss",
       "scores": {
@@ -715,6 +732,10 @@
       "state": "Florida",
       "state_abbr": "FL",
       "metro": "jacksonville",
+      "coords": [
+        30.05,
+        -81.48
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "School-first Florida option",
       "scores": {
@@ -793,6 +814,10 @@
       "state": "Arizona",
       "state_abbr": "AZ",
       "metro": "phoenix",
+      "coords": [
+        33.3062,
+        -111.8413
+      ],
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Arizona's #1 district and the chip industry's backyard - fits the planned path with room",
       "scores": {
@@ -852,6 +877,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "dfw",
+      "coords": [
+        33.0198,
+        -96.6989
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "DFW corporate core and best AACSB density - just over the 2041 budget",
       "scores": {
@@ -933,6 +962,10 @@
       "state": "Tennessee",
       "state_abbr": "TN",
       "metro": "nashville",
+      "coords": [
+        35.8456,
+        -86.3903
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Best TN rental-phase and budget headroom / commute is the trade",
       "scores": {
@@ -1036,6 +1069,10 @@
       "state": "Kentucky",
       "state_abbr": "KY",
       "metro": "cincinnati",
+      "coords": [
+        39.06,
+        -84.57
+      ],
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Kentucky's #1 district plus the densest AACSB cluster outside the Northeast",
       "scores": {
@@ -1132,6 +1169,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "austin",
+      "coords": [
+        30.5052,
+        -97.8203
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "School-max / hardware-corridor stretch pick",
       "scores": {
@@ -1215,6 +1256,10 @@
       "state": "Louisiana",
       "state_abbr": "LA",
       "metro": "baton_rouge",
+      "coords": [
+        30.6485,
+        -91.1565
+      ],
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Louisiana's #1 district (Niche A+) at a $269K median - a thin job market is the trade-off",
       "scores": {
@@ -1272,6 +1317,10 @@
       "state": "Tennessee",
       "state_abbr": "TN",
       "metro": "nashville",
+      "coords": [
+        35.7512,
+        -86.93
+      ],
       "strategic_label": "Confirmed 2028 rental base / Franklin affordability fix",
       "est_2028_rent": 2300,
       "best_rental_submarket": "Williamson side (Chapman's Retreat, Villas at Port Royal, Harvest Point, Somerset Springs)",
@@ -1372,6 +1421,10 @@
       "state": "Ohio",
       "state_abbr": "OH",
       "metro": "cleveland",
+      "coords": [
+        41.3898,
+        -81.4412
+      ],
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Schools + affordability sleeper (Sherwin-Williams HQ market)",
       "scores": {
@@ -1516,6 +1569,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "austin",
+      "coords": [
+        30.6333,
+        -97.677
+      ],
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Affordable northern Williamson option (zone-gated schools)",
       "scores": {
@@ -1601,6 +1658,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "dfw",
+      "coords": [
+        33.1032,
+        -96.6706
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Elite football and schools - budget headroom is the constraint",
       "scores": {
@@ -1679,6 +1740,10 @@
       "state": "Florida",
       "state_abbr": "FL",
       "metro": "orlando",
+      "coords": [
+        28.67,
+        -81.2081
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Best Florida no-income-tax option",
       "scores": {
@@ -1761,6 +1826,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "dfw",
+      "coords": [
+        33.2859,
+        -96.5728
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "McKinney prices with the best build-to-rent supply in the corridor, one step down on schools",
       "scores": {
@@ -1839,6 +1908,10 @@
       "state": "Florida",
       "state_abbr": "FL",
       "metro": "orlando",
+      "coords": [
+        28.7589,
+        -81.3178
+      ],
       "strategic_label": "Seminole schools + Heathrow corporate purchase-phase option",
       "scores": {
         "ai_tech_pm_market": 7.5,
@@ -1923,6 +1996,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "san_antonio",
+      "coords": [
+        29.703,
+        -98.1245
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Between San Antonio and Austin - affordable, B-rated schools, two job markets in reach",
       "scores": {
@@ -1981,6 +2058,10 @@
       "state": "Alabama",
       "state_abbr": "AL",
       "metro": "huntsville",
+      "coords": [
+        34.6993,
+        -86.7483
+      ],
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Best value robotics option",
       "scores": {
@@ -2061,6 +2142,10 @@
       "state": "Florida",
       "state_abbr": "FL",
       "metro": "tampa",
+      "coords": [
+        27.9506,
+        -82.4572
+      ],
       "strategic_label": "Gulf-coast metro with real budget headroom / insurance and zone variance are the trade",
       "est_2028_rent": 2100,
       "best_rental_submarket": "Tampa city / New Tampa (Hillsborough County - verify zone; Wesley Chapel is Pasco County, a separate district)",
@@ -2156,6 +2241,10 @@
       "state": "North Carolina",
       "state_abbr": "NC",
       "metro": "raleigh",
+      "coords": [
+        35.7915,
+        -78.7811
+      ],
       "tier": "Tier 1 - Serious Finalist",
       "strategic_label": "Best research ecosystem / Future professor path",
       "scores": {
@@ -2241,6 +2330,10 @@
       "state": "Tennessee",
       "state_abbr": "TN",
       "metro": "nashville",
+      "coords": [
+        36.3048,
+        -86.62
+      ],
       "strategic_label": "Closest Nashville downtown/East Bank access / rental cap is the constraint",
       "est_2028_rent": 2350,
       "best_rental_submarket": "Hendersonville (Sumner County, Indian Lake area)",
@@ -2333,6 +2426,10 @@
       "state": "Kentucky",
       "state_abbr": "KY",
       "metro": "louisville",
+      "coords": [
+        38.37,
+        -85.42
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Louisville's best district with deep private backup and real budget room",
       "scores": {
@@ -2420,6 +2517,10 @@
       "state": "Tennessee",
       "state_abbr": "TN",
       "metro": "nashville",
+      "coords": [
+        36.3884,
+        -86.4467
+      ],
       "strategic_label": "Most affordable Nashville-metro option",
       "est_2028_rent": 2150,
       "best_rental_submarket": "Gallatin (Kindrey @ Hwy 109 / Long Hollow Pike)",
@@ -2506,6 +2607,10 @@
       "state": "Arizona",
       "state_abbr": "AZ",
       "metro": "phoenix",
+      "coords": [
+        33.3528,
+        -111.789
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Family-first East Valley suburb with two A-rated districts - fits the planned path",
       "scores": {
@@ -2565,6 +2670,10 @@
       "state": "Iowa",
       "state_abbr": "IA",
       "metro": "des_moines",
+      "coords": [
+        41.5772,
+        -93.7113
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Biggest budget headroom of any A-rated district in the matrix; sports-tech is the hole",
       "scores": {
@@ -2644,6 +2753,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "san_antonio",
+      "coords": [
+        29.557,
+        -98.248
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Cheapest San Antonio option with the biggest budget cushion - school quality is the trade-off",
       "scores": {
@@ -2702,6 +2815,10 @@
       "state": "Georgia",
       "state_abbr": "GA",
       "metro": "atlanta",
+      "coords": [
+        34.1207,
+        -84.0044
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Georgia's #2 district and its best football, reachable by a kindergarten tuition seat",
       "scores": {
@@ -2789,6 +2906,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "san_antonio",
+      "coords": [
+        29.64,
+        -98.47
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Best San Antonio balance - A+ NEISD high school, rent well under the ceiling, house at the edge of the budget",
       "scores": {
@@ -2866,6 +2987,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "dfw",
+      "coords": [
+        33.1507,
+        -96.8236
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Sports-tech epicenter and top schools - fails the 2041 budget",
       "scores": {
@@ -2948,6 +3073,10 @@
       "state": "South Carolina",
       "state_abbr": "SC",
       "metro": "charlotte",
+      "coords": [
+        35.0074,
+        -80.9451
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Best school-first value option",
       "scores": {
@@ -3037,6 +3166,10 @@
       "state": "Kansas",
       "state_abbr": "KS",
       "metro": "kansas_city",
+      "coords": [
+        38.8814,
+        -94.8191
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Garmin global HQ in town - the most direct sports-tech adjacency in the matrix",
       "scores": {
@@ -3117,6 +3250,10 @@
       "state": "Utah",
       "state_abbr": "UT",
       "metro": "salt_lake",
+      "coords": [
+        40.3916,
+        -111.8508
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Heart of Silicon Slopes - the strongest AI/product market outside Austin and DFW, with lower taxes on the house",
       "scores": {
@@ -3178,6 +3315,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "dfw",
+      "coords": [
+        32.579,
+        -97.3625
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Cheapest DFW entry and the best football in the matrix, gated entirely on public schools",
       "scores": {
@@ -3270,6 +3411,10 @@
       "state": "Kansas",
       "state_abbr": "KS",
       "metro": "kansas_city",
+      "coords": [
+        38.88,
+        -94.68
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Elite Kansas schools, but the price leaves only a sliver of 2041 headroom",
       "scores": {
@@ -3350,6 +3495,10 @@
       "state": "Georgia",
       "state_abbr": "GA",
       "metro": "atlanta",
+      "coords": [
+        34.01,
+        -84.15
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Best Georgia family-access option",
       "scores": {
@@ -3439,6 +3588,10 @@
       "state": "Tennessee",
       "state_abbr": "TN",
       "metro": "nashville",
+      "coords": [
+        36.2001,
+        -86.5186
+      ],
       "strategic_label": "Best-commute Nashville-metro suburb",
       "est_2028_rent": 2300,
       "best_rental_submarket": "Providence area (Highlands at Hickory Hills / Willow Creek)",
@@ -3521,6 +3674,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "austin",
+      "coords": [
+        30.2672,
+        -97.7431
+      ],
       "tier": "Tier 2 - Strong Trade-Off",
       "strategic_label": "Maximum career ceiling / urban-core trade on schools and budget",
       "scores": {
@@ -3615,6 +3772,10 @@
       "state": "South Carolina",
       "state_abbr": "SC",
       "metro": "greenville",
+      "coords": [
+        34.8526,
+        -82.394
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Robotics / mobility sleeper",
       "scores": {
@@ -3702,6 +3863,10 @@
       "state": "Virginia",
       "state_abbr": "VA",
       "metro": "hampton_roads",
+      "coords": [
+        36.81,
+        -76.13
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Strong school divisions and beach life at a budget-fitting price - a thin corporate job market",
       "scores": {
@@ -3762,6 +3927,10 @@
       "state": "Florida",
       "state_abbr": "FL",
       "metro": "orlando",
+      "coords": [
+        28.5494,
+        -81.7729
+      ],
       "strategic_label": "Park-adjacent rental-phase value option",
       "scores": {
         "ai_tech_pm_market": 7.5,
@@ -3841,6 +4010,10 @@
       "state": "Florida",
       "state_abbr": "FL",
       "metro": "tampa",
+      "coords": [
+        28.0395,
+        -81.9498
+      ],
       "strategic_label": "Tampa-satellite value option with Orlando reach",
       "est_2028_rent": 1760,
       "scores": {
@@ -3923,6 +4096,10 @@
       "state": "Georgia",
       "state_abbr": "GA",
       "metro": "atlanta",
+      "coords": [
+        34.05,
+        -84.25
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Premium but expensive Georgia option",
       "scores": {
@@ -4017,6 +4194,10 @@
       "state": "Louisiana",
       "state_abbr": "LA",
       "metro": "new_orleans",
+      "coords": [
+        30.3583,
+        -90.0656
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Northshore family town with strong parish schools - hurricane insurance is the deal-breaker cost",
       "scores": {
@@ -4077,6 +4258,10 @@
       "state": "Virginia",
       "state_abbr": "VA",
       "metro": "roanoke",
+      "coords": [
+        37.25,
+        -80.0
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Blue Ridge affordability with a top-10 Virginia district - the smallest job market in Virginia",
       "scores": {
@@ -4137,6 +4322,10 @@
       "state": "Louisiana",
       "state_abbr": "LA",
       "metro": "lafayette",
+      "coords": [
+        30.12,
+        -91.98
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Affordable, fast-growing Acadiana suburbs - smallest job market of the new set",
       "scores": {
@@ -4195,6 +4384,10 @@
       "state": "Florida",
       "state_abbr": "FL",
       "metro": "orlando",
+      "coords": [
+        28.25,
+        -81.62
+      ],
       "strategic_label": "Orlando satellite with Disney Springs access / four-county zoning and resort-rental character are the traps",
       "scores": {
         "ai_tech_pm_market": 7.5,
@@ -4282,6 +4475,10 @@
       "state": "Iowa",
       "state_abbr": "IA",
       "metro": "des_moines",
+      "coords": [
+        41.6117,
+        -93.8852
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Fastest-growing Iowa district, but you pay ~$82K more than West Des Moines for it",
       "scores": {
@@ -4353,6 +4550,10 @@
       "state": "Alabama",
       "state_abbr": "AL",
       "metro": "auburn",
+      "coords": [
+        32.63,
+        -85.43
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "College-town affordability fallback",
       "scores": {
@@ -4440,6 +4641,10 @@
       "state": "Illinois",
       "state_abbr": "IL",
       "metro": "chicago",
+      "coords": [
+        42.0884,
+        -87.9806
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Northwest suburb on the Metra with a budget-fitting median - rent near the ceiling, Illinois taxes the cost",
       "scores": {
@@ -4497,6 +4702,10 @@
       "state": "Florida",
       "state_abbr": "FL",
       "metro": "orlando",
+      "coords": [
+        28.39,
+        -81.25
+      ],
       "strategic_label": "Best-schools + Medical City innovation option",
       "scores": {
         "ai_tech_pm_market": 7.5,
@@ -4579,6 +4788,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "dfw",
+      "coords": [
+        33.3246,
+        -96.7845
+      ],
       "strategic_label": "Cheaper rent than Prosper and a Prosper ISD pocket in the south - watch the MUD/PID tax",
       "est_2028_rent": 2450,
       "scores": {
@@ -4671,6 +4884,10 @@
       "state": "Virginia",
       "state_abbr": "VA",
       "metro": "richmond",
+      "coords": [
+        37.59,
+        -77.58
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Virginia value pick",
       "scores": {
@@ -4763,6 +4980,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "dfw",
+      "coords": [
+        33.2362,
+        -96.8011
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Prosper ISD (TEA A, top 17% in Texas): houses are priced out, but rentals and Prosper ISD townhomes are not",
       "scores": {
@@ -4842,6 +5063,10 @@
       "state": "Utah",
       "state_abbr": "UT",
       "metro": "salt_lake",
+      "coords": [
+        40.5247,
+        -111.8638
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Canyons District (A-) between Salt Lake and Lehi - the house is the stretch",
       "scores": {
@@ -4900,6 +5125,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "dfw",
+      "coords": [
+        33.0843,
+        -96.5764
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Rent-only play: the #5 district in Texas at a rent we can afford and a house we never can",
       "scores": {
@@ -5078,6 +5307,10 @@
       "state": "Utah",
       "state_abbr": "UT",
       "metro": "salt_lake",
+      "coords": [
+        40.54,
+        -111.98
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Newer Salt Lake suburbs that fit the budget - Jordan District (B) is the trade-off",
       "scores": {
@@ -5137,6 +5370,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "san_antonio",
+      "coords": [
+        29.7947,
+        -98.732
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Hill Country town with an A-rated district (TEA 92) ~30 miles northwest of San Antonio - the house is the stretch",
       "scores": {
@@ -5208,6 +5445,10 @@
       "state": "Illinois",
       "state_abbr": "IL",
       "metro": "chicago",
+      "coords": [
+        41.7508,
+        -88.1535
+      ],
       "tier": "Tier 3 - Watch List",
       "strategic_label": "Two A+ districts (Niche #9 and #11 in Illinois) - high property tax pushes the house over budget and rent runs above the ceiling",
       "scores": {
@@ -5269,6 +5510,10 @@
       "state": "Tennessee",
       "state_abbr": "TN",
       "metro": "nashville",
+      "coords": [
+        35.802,
+        -86.9116
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Top Williamson County schools between Spring Hill and Franklin - a house needs AI-leader income, and BGA needs its own plan",
       "scores": {
@@ -5335,6 +5580,10 @@
       "state": "Illinois",
       "state_abbr": "IL",
       "metro": "chicago",
+      "coords": [
+        41.655,
+        -88.28
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Newer, cheaper southwest suburbs - the highest property tax in the Chicago set",
       "scores": {
@@ -5393,6 +5642,10 @@
       "state": "Virginia",
       "state_abbr": "VA",
       "metro": "nova",
+      "coords": [
+        38.87,
+        -77.29
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Inside the biggest job market in the new set, with A-rated schools - houses and rent over budget",
       "scores": {
@@ -5453,6 +5706,10 @@
       "state": "Arizona",
       "state_abbr": "AZ",
       "metro": "phoenix",
+      "coords": [
+        33.4942,
+        -111.9261
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Upscale, strong schools and sports-business culture - rent and houses run over budget",
       "scores": {
@@ -5512,6 +5769,10 @@
       "state": "Georgia",
       "state_abbr": "GA",
       "metro": "atlanta",
+      "coords": [
+        34.0232,
+        -84.3616
+      ],
       "tier": "Tier 4 - Backup Only",
       "tier_private_scenario": "Tier 3 - Watch List",
       "strategic_label": "Private-school and football strength, priced out on both budget phases",
@@ -5595,6 +5856,10 @@
       "state": "Tennessee",
       "state_abbr": "TN",
       "metro": "nashville",
+      "coords": [
+        35.9251,
+        -86.8689
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Lifestyle premium option",
       "scores": {
@@ -5691,6 +5956,10 @@
       "state": "Virginia",
       "state_abbr": "VA",
       "metro": "charlottesville",
+      "coords": [
+        38.0293,
+        -78.4767
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "University town for the professor path - fits the budget, but few corporate jobs",
       "scores": {
@@ -5750,6 +6019,10 @@
       "state": "Tennessee",
       "state_abbr": "TN",
       "metro": "knoxville",
+      "coords": [
+        35.8845,
+        -84.1535
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Education / Knoxville option",
       "scores": {
@@ -5839,6 +6112,10 @@
       "state": "Texas",
       "state_abbr": "TX",
       "metro": "san_antonio",
+      "coords": [
+        29.4847,
+        -98.4658
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "San Antonio's #1 district (Niche A+, #12 in Texas) - rent above the ceiling and houses out of reach",
       "scores": {
@@ -5927,6 +6204,10 @@
       "state": "North Carolina",
       "state_abbr": "NC",
       "metro": "charlotte",
+      "coords": [
+        34.9246,
+        -80.7434
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Charlotte-side family value option",
       "scores": {
@@ -6015,6 +6296,10 @@
       "state": "Tennessee",
       "state_abbr": "TN",
       "metro": "nashville",
+      "coords": [
+        36.1806,
+        -86.79
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Walkable urban Nashville / zoned-school and budget failure",
       "scores": {
@@ -6116,6 +6401,10 @@
       "state": "Illinois",
       "state_abbr": "IL",
       "metro": "chicago",
+      "coords": [
+        41.805,
+        -87.92
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Elite schools close to the Loop - out of reach at every career tier",
       "scores": {
@@ -6174,6 +6463,10 @@
       "state": "Virginia",
       "state_abbr": "VA",
       "metro": "nova",
+      "coords": [
+        39.08,
+        -77.53
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Career-only backup",
       "scores": {
@@ -6274,6 +6567,10 @@
       "state": "New Jersey",
       "state_abbr": "NJ",
       "metro": "new_york",
+      "coords": [
+        40.7178,
+        -74.0431
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Elite fintech-AI career market / disqualified on both budget phases",
       "scores": {
@@ -6370,6 +6667,10 @@
       "state": "New Jersey",
       "state_abbr": "NJ",
       "metro": "new_york",
+      "coords": [
+        40.7268,
+        -74.0336
+      ],
       "tier": "Tier 4 - Backup Only",
       "strategic_label": "Walk-to-JPMorgan waterfront submarket / most budget-infeasible entry",
       "scores": {

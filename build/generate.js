@@ -18,6 +18,7 @@ const ROOT = path.resolve(__dirname, '..');
 const DATA_FILE = path.join(ROOT, 'relocation_location_scoring_matrix.json');
 const STYLES_FILE = path.join(__dirname, 'styles.css');
 const OUT_FILE = path.join(ROOT, 'index.html');
+const LEAFLET_DIR = path.join(__dirname, 'vendor', 'leaflet-1.9.4');
 
 const PBKDF2_ITERATIONS = 250000;
 
@@ -881,6 +882,7 @@ ${metroCards}
       '</' + 'script>';
   }
   const oppNav = opportunities ? '      <a href="#opportunities">Opportunities</a>\n' : '';
+  const mapView = buildMap(data, locations, matrixPayload.scenarios);
 
   // Decision tiers
   const tierOrder = [
@@ -932,7 +934,7 @@ ${heroStats}
     <div class="wrap nav-inner">
       <a href="#summary">Summary</a>
       <a href="#top5">Top 5</a>
-      <a href="#ranking">Full Ranking</a>
+${mapView.nav}      <a href="#ranking">Full Ranking</a>
       <a href="#categories">Category Winners</a>
       <a href="#states">State Picks</a>
       <a href="#nashville">Nashville Metro</a>
@@ -976,6 +978,7 @@ ${weights}
 ${top5}
       </div>
     </section>
+${mapView.section}
 
     <section id="ranking">
       <div class="section-title">
@@ -1063,7 +1066,8 @@ ${recs}
   </footer>
 ${clientScript}
 ${pathsScript}
-${oppScript}`;
+${oppScript}
+${mapView.script}`;
 }
 
 function buildFullPage(data, styles) {
@@ -1213,6 +1217,295 @@ function lockPage(enc, title) {
 </body>
 </html>
 `;
+}
+
+// --- interactive map --------------------------------------------------------
+
+// Leaflet 1.9.4 (BSD-2-Clause, see build/vendor/leaflet-1.9.4/LICENSE) is
+// vendored and inlined so the map works inside the encrypted page with no CDN.
+function readLeaflet() {
+  try {
+    return {
+      css: fs.readFileSync(path.join(LEAFLET_DIR, 'leaflet.css'), 'utf8'),
+      js: fs.readFileSync(path.join(LEAFLET_DIR, 'leaflet.js'), 'utf8'),
+    };
+  } catch (e) {
+    return null;
+  }
+}
+
+// Runs in the browser. Embedded via mapClient.toString(), so it may only use
+// browser globals and the #map-data payload.
+function mapClient() {
+  var root = document.getElementById('map');
+  var holder = document.getElementById('lmap');
+  if (!root || !holder) return;
+  var D = JSON.parse(document.getElementById('map-data').textContent);
+  if (typeof L === 'undefined') {
+    holder.innerHTML = '<p class="map-fallback">The map library did not load. The rest of the dashboard still works.</p>';
+    return;
+  }
+  function esc(v) {
+    return String(v == null ? '' : v).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+  function $(id) { return document.getElementById(id); }
+  function money(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
+  function moneyK(n) { return '$' + Math.round(n / 1000).toLocaleString('en-US') + 'K'; }
+  function miles(a, b) {
+    var R = 3958.8, toR = Math.PI / 180;
+    var dLat = (b[0] - a[0]) * toR, dLng = (b[1] - a[1]) * toR;
+    var h = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(a[0] * toR) * Math.cos(b[0] * toR) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+    return Math.round(2 * R * Math.asin(Math.sqrt(h)));
+  }
+  var TAGS = [['ai_product', 'AI'], ['fintech', 'Fintech'], ['sports_tech', 'Sports'], ['consumer_retail', 'Consumer'], ['spouse_content', 'Content']];
+  var TIER_LABEL = { current: 'no step-up', stepup: 'planned step-up', leader: 'AI leader' };
+  var METRICS = {
+    score: { label: 'Overall score', lo: 60, hi: 85, fmt: function (v) { return v.toFixed(1); } },
+    school: { label: 'Schools', lo: 4, hi: 10, fmt: function (v) { return v.toFixed(1); } },
+    housing: { label: '2041 budget headroom', lo: -0.5, hi: 0.5, fmt: function (v) { return Math.round(v * 100) + '%'; } },
+    rent: { label: 'Rental feasibility', lo: 2, hi: 10, fmt: function (v) { return v.toFixed(1); } },
+    tax: { label: 'State tax score', lo: 2, hi: 10, fmt: function (v) { return v.toFixed(1); } },
+  };
+  // red -> amber -> green
+  var STOPS = [[220, 38, 38], [245, 158, 11], [22, 163, 74]];
+  function color(t) {
+    t = Math.max(0, Math.min(1, t));
+    var i = t < 0.5 ? 0 : 1, f = t < 0.5 ? t / 0.5 : (t - 0.5) / 0.5;
+    var a = STOPS[i], b = STOPS[i + 1];
+    return 'rgb(' + [0, 1, 2].map(function (k) { return Math.round(a[k] + (b[k] - a[k]) * f); }).join(',') + ')';
+  }
+
+  // Scenario totals, matching the ranking table: null private-school scores use the state median.
+  var byState = {};
+  D.locs.forEach(function (l) {
+    var v = l.s.private_school_access;
+    if (typeof v === 'number') (byState[l.st] = byState[l.st] || []).push(v);
+  });
+  function median(a) { if (!a || !a.length) return 0; a = a.slice().sort(function (x, y) { return x - y; }); var m = Math.floor(a.length / 2); return a.length % 2 ? a[m] : (a[m - 1] + a[m]) / 2; }
+  function totals(sc) {
+    var w = sc.weights, out = {};
+    D.locs.forEach(function (l) {
+      var t = 0;
+      Object.keys(w).forEach(function (k) {
+        var v = l.s[k];
+        if (typeof v !== 'number') v = k === 'private_school_access' ? median(byState[l.st]) : 0;
+        t += v * w[k];
+      });
+      out[l.a] = Math.round(t * 10) / 100;
+    });
+    return out;
+  }
+
+  var map = L.map(holder, { scrollWheelZoom: false, worldCopyJump: true });
+  var tiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    subdomains: 'abcd', maxZoom: 18,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  }).addTo(map);
+  var tileErrors = 0;
+  tiles.on('tileerror', function () { tileErrors++; if (tileErrors === 8) { var n = $('map-tilenote'); if (n) n.hidden = false; } });
+
+  var home = L.marker(D.home.c, {
+    icon: L.divIcon({ className: 'map-home', html: '&#9733;', iconSize: [26, 26], iconAnchor: [13, 13] }),
+    zIndexOffset: 1000, keyboard: true, title: D.home.name,
+  }).addTo(map).bindPopup('<strong>' + esc(D.home.name) + '</strong><br>Home base: the remote Sherwin-Williams role stays here until an offer earns a move.');
+
+  var metroLayer = L.layerGroup();
+  Object.keys(D.metros).forEach(function (id) {
+    var m = D.metros[id];
+    if (!m.c) return;
+    var cm = L.circleMarker(m.c, { radius: 10 + Math.min(m.total, 12) * 1.6, color: '#6d28d9', weight: 1, fillColor: '#8b5cf6', fillOpacity: 0.16, interactive: true });
+    cm.bindPopup('<div class="map-pop"><strong>' + esc(m.label) + '</strong><div class="map-pop-sub">' + m.total + ' researched employers</div>' +
+      '<div class="map-pop-tags">' + TAGS.map(function (t) { return '<span>' + t[1] + ' ' + (m.n[t[0]] || 0) + '</span>'; }).join('') + '</div>' +
+      '<div>Kendra Scott stores: <strong>' + m.ks + '</strong>' + (m.rent ? ' &middot; 3BR rent ~' + money(m.rent) + '/mo' : '') + '</div></div>');
+    metroLayer.addLayer(cm);
+  });
+
+  var markers = {};
+  D.locs.forEach(function (l) {
+    var mk = L.circleMarker(l.c, { radius: 7, weight: 2 });
+    mk.on('click', function () { mk.setPopupContent(popup(l)); });
+    mk.bindPopup('', { maxWidth: 300 });
+    markers[l.a] = mk;
+  });
+
+  var state = { scen: D.scenarios[0].id, tier: 'stepup', metric: 'score', min: 0, fits: false, st: '', tot: {}, rank: {} };
+
+  function headroom(l) { var b = l.b[state.tier]; return (b - l.p41) / b; }
+  function fits(l) { return l.p41 <= l.b[state.tier]; }
+  function metricValue(l) {
+    if (state.metric === 'score') return state.tot[l.a];
+    if (state.metric === 'school') return l.s.school_quality;
+    if (state.metric === 'housing') return headroom(l);
+    if (state.metric === 'rent') return l.s.rental_feasibility_2028;
+    return l.s.state_tax_burden;
+  }
+  function popup(l) {
+    var m = D.metros[l.m] || null, b = l.b[state.tier], gap = b - l.p41;
+    var sc = D.scenarios.filter(function (x) { return x.id === state.scen; })[0];
+    return '<div class="map-pop"><strong>#' + state.rank[l.a] + ' ' + esc(l.a) + '</strong><span class="map-pop-st"> ' + esc(l.st) + '</span>' +
+      '<div class="map-pop-sub">' + esc(l.lbl) + '</div>' +
+      '<div class="map-pop-score">' + state.tot[l.a].toFixed(1) + '<span> / 100 &middot; ' + esc(sc.label) + '</span></div>' +
+      '<div>Home ~' + moneyK(l.price) + ' today &rarr; ~' + moneyK(l.p41) + ' in 2041</div>' +
+      '<div class="' + (gap >= 0 ? 'map-ok' : 'map-over') + '">' + (gap >= 0 ? 'Fits' : 'Over') + ' the ' + TIER_LABEL[state.tier] + ' budget (~' + moneyK(b) + ') by ' + moneyK(Math.abs(gap)) + '</div>' +
+      (m ? '<div class="map-pop-metro">' + esc(m.label) + ': ' + m.total + ' employers &middot; ' + m.ks + ' Kendra Scott' + (m.rent ? ' &middot; 3BR ~' + money(m.rent) : '') + '</div>' +
+        '<div class="map-pop-tags">' + TAGS.map(function (t) { return '<span>' + t[1] + ' ' + (m.n[t[0]] || 0) + '</span>'; }).join('') + '</div>' : '') +
+      '<div class="map-pop-foot">' + (l.home ? 'Home base' : miles(D.home.c, l.c) + ' miles from Spring Hill') +
+      ' &middot; <a href="#ranking" class="map-goto" data-area="' + esc(l.a) + '">See in ranking</a></div></div>';
+  }
+
+  function render() {
+    var sc = D.scenarios.filter(function (x) { return x.id === state.scen; })[0];
+    state.tot = totals(sc);
+    var order = D.locs.slice().sort(function (a, b) { return state.tot[b.a] - state.tot[a.a]; });
+    order.forEach(function (l, i) { state.rank[l.a] = i + 1; });
+    var M = METRICS[state.metric], shown = [], nFit = 0;
+    D.locs.forEach(function (l) {
+      var mk = markers[l.a], t = state.tot[l.a], f = fits(l);
+      var visible = t >= state.min && (!state.fits || f) && (!state.st || l.st === state.st);
+      var c = color((metricValue(l) - M.lo) / (M.hi - M.lo));
+      mk.setStyle({ color: c, fillColor: c, fillOpacity: f ? 0.85 : 0.08, opacity: 0.95 });
+      mk.setRadius(Math.max(5, Math.min(13, 5 + (t - 60) / 25 * 8)));
+      mk.getElement && mk.getElement() && mk.getElement().setAttribute('data-fit', f ? '1' : '0');
+      if (visible) { if (!map.hasLayer(mk)) mk.addTo(map); shown.push(l); if (f) nFit++; } else if (map.hasLayer(mk)) map.removeLayer(mk);
+      if (mk.isPopupOpen()) mk.setPopupContent(popup(l));
+    });
+    $('map-count').textContent = 'Showing ' + shown.length + ' of ' + D.locs.length + ' (' + nFit + ' fit the ' + TIER_LABEL[state.tier] + ' budget)';
+    $('map-min-val').textContent = state.min ? state.min : 'any';
+    shown.sort(function (a, b) { return state.tot[b.a] - state.tot[a.a]; });
+    $('map-list').innerHTML = shown.slice(0, 10).map(function (l) {
+      return '<li><button type="button" data-area="' + esc(l.a) + '"><span class="map-li-rank">#' + state.rank[l.a] + '</span><span class="map-li-name">' + esc(l.a) +
+        '</span><span class="map-li-score">' + state.tot[l.a].toFixed(1) + (fits(l) ? '' : ' <em>over</em>') + '</span></button></li>';
+    }).join('') || '<li class="map-empty">No locations match these filters.</li>';
+    $('map-legend-label').textContent = M.label;
+    $('map-legend-lo').textContent = M.fmt(M.lo);
+    $('map-legend-hi').textContent = M.fmt(M.hi);
+  }
+
+  function bind(id, ev, fn) { var e = $(id); if (e) e.addEventListener(ev, fn); }
+  bind('map-scen', 'change', function (e) { state.scen = e.target.value; render(); });
+  bind('map-tier', 'change', function (e) { state.tier = e.target.value; render(); });
+  bind('map-metric', 'change', function (e) { state.metric = e.target.value; render(); });
+  bind('map-min', 'input', function (e) { state.min = +e.target.value; render(); });
+  bind('map-fits', 'change', function (e) { state.fits = e.target.checked; render(); });
+  bind('map-state', 'change', function (e) {
+    state.st = e.target.value; render();
+    var pts = D.locs.filter(function (l) { return !state.st || l.st === state.st; }).map(function (l) { return l.c; });
+    if (pts.length) map.flyToBounds(L.latLngBounds(pts).pad(0.35), { maxZoom: 9, duration: 0.6 });
+  });
+  bind('map-metros', 'change', function (e) { if (e.target.checked) metroLayer.addTo(map); else map.removeLayer(metroLayer); });
+  bind('map-reset', 'click', function () { map.flyToBounds(allBounds, { duration: 0.6 }); });
+  $('map-list').addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-area]'); if (!btn) return;
+    var mk = markers[btn.getAttribute('data-area')]; if (!mk) return;
+    map.flyTo(mk.getLatLng(), Math.max(map.getZoom(), 9), { duration: 0.6 });
+    var l = D.locs.filter(function (x) { return x.a === btn.getAttribute('data-area'); })[0];
+    setTimeout(function () { mk.setPopupContent(popup(l)); mk.openPopup(); }, 650);
+  });
+  root.addEventListener('click', function (e) {
+    var a = e.target.closest('a.map-goto'); if (!a) return;
+    e.preventDefault();
+    var area = a.getAttribute('data-area'), row = null;
+    Array.prototype.forEach.call(document.querySelectorAll('#ranking tr.js-row'), function (r) { if (r.getAttribute('data-area') === area) row = r; });
+    if (!row) return;
+    row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    row.classList.add('row-flash');
+    setTimeout(function () { row.classList.remove('row-flash'); }, 2400);
+  });
+
+  var allBounds = L.latLngBounds(D.locs.map(function (l) { return l.c; }).concat([D.home.c])).pad(0.06);
+  map.fitBounds(allBounds);
+  render();
+  root.setAttribute('data-ready', '1');
+}
+
+function buildMap(data, locations, scenarios) {
+  const leaflet = readLeaflet();
+  const located = locations.filter((l) => Array.isArray(l.coords) && l.coords.length === 2);
+  if (!leaflet || !located.length) return { section: '', nav: '', script: '' };
+  const metros = Array.isArray(data.metros) ? data.metros : [];
+  const tagKeys = ['ai_product', 'fintech', 'sports_tech', 'consumer_retail', 'spouse_content'];
+  const metroOut = {};
+  metros.forEach((m) => {
+    const cos = [...(m.companies || []), ...(m.spouse_content || [])];
+    const n = {};
+    tagKeys.forEach((t) => (n[t] = cos.filter((c) => (c.goal_tags || []).includes(t)).length));
+    const pts = located.filter((l) => l.metro === m.id).map((l) => l.coords);
+    const c = pts.length ? [pts.reduce((s, p) => s + p[0], 0) / pts.length, pts.reduce((s, p) => s + p[1], 0) / pts.length] : null;
+    metroOut[m.id] = { label: m.label, total: cos.length, n, ks: (m.kendra_scott || []).length, rent: m.rent_3br || null, c };
+  });
+  const homeCoords = (data.project && data.project.home_base_coords) || located[0].coords;
+  const payload = {
+    home: { name: 'Spring Hill, TN', c: homeCoords },
+    scenarios: scenarios.filter((s) => s.usable).map((s) => ({ id: s.id, label: s.label, weights: s.weights })),
+    locs: located.map((l) => {
+      const b = l.budget_check || {};
+      return {
+        a: l.area,
+        st: l.state_abbr,
+        m: l.metro,
+        c: l.coords,
+        s: l.scores || {},
+        lbl: l.strategic_label || '',
+        price: b.price_2026,
+        p41: b.proj_2041,
+        b: { current: b.budget_2041_no_stepup, stepup: b.budget_2041_planned, leader: b.budget_2041_ai_leader },
+        home: l.coords[0] === homeCoords[0] && l.coords[1] === homeCoords[1],
+      };
+    }),
+    metros: metroOut,
+  };
+  const states = [...new Set(located.map((l) => l.state_abbr))].sort();
+  const scenOpts = payload.scenarios.map((s) => `<option value="${esc(s.id)}">${esc(s.label)}</option>`).join('');
+  const stateOpts = states.map((s) => `<option value="${esc(s)}">${esc(s)}</option>`).join('');
+  const section = `
+    <section id="map">
+      <div class="section-title">
+        <h2>Map</h2>
+        <p>Every location on one map, scored live. Change the scenario, career tier or filters and the pins recolor; click a pin for its numbers.</p>
+      </div>
+      <style>
+${leaflet.css}
+      </style>
+      <div class="card map-card">
+        <div class="map-controls">
+          <label>Scenario <select id="map-scen">${scenOpts}</select></label>
+          <label>Career tier <select id="map-tier"><option value="current">Current (no step-up)</option><option value="stepup" selected>Planned step-up</option><option value="leader">AI leader</option></select></label>
+          <label>Color by <select id="map-metric"><option value="score">Overall score</option><option value="school">Schools</option><option value="housing">2041 budget headroom</option><option value="rent">Rental feasibility</option><option value="tax">State tax</option></select></label>
+          <label>State <select id="map-state"><option value="">All states</option>${stateOpts}</select></label>
+          <label class="map-range">Min score <span id="map-min-val">any</span><input id="map-min" type="range" min="0" max="85" step="1" value="0" /></label>
+          <label class="map-check"><input id="map-fits" type="checkbox" /> Fits budget only</label>
+          <label class="map-check"><input id="map-metros" type="checkbox" /> Job-market circles</label>
+          <button type="button" id="map-reset" class="map-btn">Reset view</button>
+        </div>
+        <div class="map-wrap">
+          <div class="map-main">
+            <div id="lmap" role="application" aria-label="Map of candidate locations"></div>
+            <div class="map-legend">
+              <span id="map-legend-label">Overall score</span>
+              <span id="map-legend-lo"></span><span class="map-grad"></span><span id="map-legend-hi"></span>
+              <span class="map-key"><i class="map-dot solid"></i>fits budget</span>
+              <span class="map-key"><i class="map-dot hollow"></i>over budget</span>
+              <span class="map-key"><i class="map-star">&#9733;</i>Spring Hill</span>
+            </div>
+            <p class="map-note" id="map-tilenote" hidden>Basemap tiles could not load; the pins and filters still work.</p>
+          </div>
+          <aside class="map-side">
+            <div class="map-count" id="map-count"></div>
+            <h3>Top matches</h3>
+            <ol class="map-list" id="map-list"></ol>
+            <p class="map-note">Use + / &minus; or pinch to zoom. Pin size grows with score; purple circles show each metro's researched employers.</p>
+          </aside>
+        </div>
+      </div>
+    </section>`;
+  const json = JSON.stringify(payload).replace(/</g, '\\u003c');
+  const script =
+    '<script id="map-data" type="application/json">' + json + '</' + 'script>\n' +
+    '<script>\n' + leaflet.js + '\n</' + 'script>\n' +
+    '<script>\n(' + mapClient.toString() + ')();\n</' + 'script>';
+  return { section, nav: '      <a href="#map">Map</a>\n', script };
 }
 
 // --- main -------------------------------------------------------------------

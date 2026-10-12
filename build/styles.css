@@ -869,3 +869,58 @@
   .opp-grid { grid-template-columns: 1fr; }
   .opp-form { grid-template-columns: 1fr 1fr; }
 }
+
+/* Map */
+.map-card { padding: 16px; }
+.map-controls { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: flex-end; margin-bottom: 12px; }
+.map-controls label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; font-weight: 700; color: var(--muted); }
+.map-controls select { font: inherit; font-size: 13.5px; color: var(--ink); padding: 7px 9px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); max-width: 220px; }
+.map-controls .map-range input { width: 140px; accent-color: var(--accent); }
+.map-controls .map-range span { color: var(--ink); }
+.map-controls .map-check { flex-direction: row; align-items: center; gap: 6px; font-size: 13px; color: var(--ink); padding-bottom: 7px; }
+.map-btn { font: inherit; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); cursor: pointer; }
+.map-btn:hover { border-color: var(--accent); }
+.map-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 14px; align-items: start; }
+.map-main { min-width: 0; }
+#lmap { height: 560px; border-radius: 14px; border: 1px solid var(--line); background: #eef2f7; z-index: 0; }
+.map-fallback { padding: 24px; color: var(--muted); }
+.map-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin-top: 8px; font-size: 12px; color: var(--muted); }
+.map-legend #map-legend-label { font-weight: 800; color: var(--ink); }
+.map-grad { display: inline-block; width: 110px; height: 10px; border-radius: 999px; background: linear-gradient(90deg, rgb(220,38,38), rgb(245,158,11), rgb(22,163,74)); }
+.map-key { display: inline-flex; align-items: center; gap: 4px; }
+.map-dot { display: inline-block; width: 11px; height: 11px; border-radius: 50%; border: 2px solid #16a34a; }
+.map-dot.solid { background: #16a34a; }
+.map-dot.hollow { background: transparent; }
+.map-star { font-style: normal; color: #b45309; font-size: 15px; }
+.map-note { font-size: 12px; color: var(--muted); margin: 8px 0 0; }
+.map-side h3 { margin: 10px 0 6px; font-size: 14px; }
+.map-count { font-size: 13px; font-weight: 700; color: var(--ink); }
+.map-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.map-list button { width: 100%; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 8px; align-items: baseline; text-align: left; font: inherit; font-size: 13px; padding: 7px 9px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); cursor: pointer; }
+.map-list button:hover { border-color: var(--accent); }
+.map-li-rank { font-weight: 800; color: var(--muted); }
+.map-li-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.map-li-score { font-weight: 800; font-variant-numeric: tabular-nums; }
+.map-li-score em { font-style: normal; font-size: 10.5px; color: #b91c1c; font-weight: 700; }
+.map-empty { font-size: 13px; color: var(--muted); }
+.map-home { color: #b45309; font-size: 24px; line-height: 26px; text-align: center; text-shadow: 0 0 3px #fff, 0 0 6px #fff; }
+.map-pop { font-size: 12.5px; line-height: 1.45; }
+.map-pop strong { font-size: 14px; }
+.map-pop-st { color: #64748b; font-weight: 700; }
+.map-pop-sub { color: #64748b; margin: 2px 0 6px; }
+.map-pop-score { font-size: 20px; font-weight: 800; margin-bottom: 4px; }
+.map-pop-score span { display: block; font-size: 11px; line-height: 1.3; font-weight: 600; color: #64748b; }
+.map-ok { color: #15803d; font-weight: 700; }
+.map-over { color: #b91c1c; font-weight: 700; }
+.map-pop-metro { margin-top: 6px; }
+.map-pop-tags { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0; }
+.map-pop-tags span { font-size: 10.5px; font-weight: 700; background: #f1f5f9; border-radius: 999px; padding: 1px 7px; }
+.map-pop-foot { margin-top: 6px; color: #64748b; }
+tr.row-flash td { background: #fef3c7 !important; transition: background .3s; }
+@media (max-width: 860px) {
+  .map-wrap { grid-template-columns: 1fr; }
+  #lmap { height: 60vh; min-height: 340px; }
+  .map-controls select { max-width: 100%; width: 100%; min-width: 0; }
+  .map-controls label { flex: 1 1 140px; min-width: 0; }
+  .map-controls .map-range input { width: 100%; }
+}
