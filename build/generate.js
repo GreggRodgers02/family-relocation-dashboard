@@ -848,7 +848,7 @@ ${metroCards}
       '  function br(x,b){ var t=0,lo=0; for(var i=0;i<b.length;i++){ var top=b[i][0], r=b[i][1]; var hi=(top===null)?x:Math.min(x,top); if(hi>lo) t+=(hi-lo)*r; if(top===null||x<=top) break; lo=top; } return t; }\n' +
       '  function taxes(g,s,mid){ var T=D.tax, gross=g+s, f=T.federal_mfj; var fed=br(Math.max(0,gross-f.standard_deduction),f.brackets);\n' +
       '    var fi=T.fica, fica=0; [g,s].forEach(function(x){ fica+=Math.min(x,fi.ss_wage_base)*fi.social_security + x*fi.medicare; }); fica+=Math.max(0,gross-fi.addl_medicare_over_mfj[0])*fi.addl_medicare_over_mfj[1];\n' +
-      '    var st=T.state[T.metro_state[mid]], state=0; if(st.type==="flat") state=st.rate*Math.max(0,gross-st.deduction); else if(st.type==="brackets") state=br(Math.max(0,gross-st.deduction),st.brackets);\n' +
+      '    var st=T.state[T.metro_state[mid]], state=0; if(st.type==="flat") state=st.rate*Math.max(0,gross-st.deduction); else if(st.type==="brackets") state=br(Math.max(0,gross-st.deduction),st.brackets); if(st.credit) state=Math.max(0,state-Math.max(0,st.credit.base-st.credit.phaseout_rate*Math.max(0,gross-st.credit.phaseout_start)));\n' +
       '    var loc=T.local_by_metro[mid], local=loc?loc.rate*gross:0; return {gross:gross,fed:fed,fica:fica,state:state+local,net:gross-fed-fica-state-local}; }\n' +
       '  function Mf(r){ var i=r/12,n=360; return i*Math.pow(1+i,n)/(Math.pow(1+i,n)-1); }\n' +
       '  function scen(g,s,mid){ var m=M[mid], t=taxes(g,s,mid); t.rent=m.rent; t.left=(t.net-m.rent*12)/12; t.budget=0.28*t.gross/12/(0.8*Mf(0.065)+(m.tax+m.ins)/12);\n' +
