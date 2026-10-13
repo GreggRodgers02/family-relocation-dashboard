@@ -2888,7 +2888,7 @@
         "assessment": "Solid Gwinnett private market within ~20 mi, but largely redundant - the point of Buford is its public district.",
         "verified": false
       },
-      "notes": "Buford City Schools ranks #2 of 179 Georgia districts, and one national study ranked it the best district in the U.S. (9.31/10), with a 96% graduation rate and 70% math proficiency. Buford High has won 15 state football championships - second-most in Georgia history - including the 2025 state title and a national championship, the strongest football culture in the matrix. The catch is that it is a small city district: attendance is set by city limits, not the Buford mailing address, and most 30518/30519 addresses are Gwinnett or Hall County schools. In-district homes carry a $50K-$100K+ premium. The Buford-area median sale was $494,000 in August 2026 (485 closings) with entry homes near $412K, so an in-district home runs roughly $515K-$580K - about $789K by 2041 at a $545K working figure - about $68K under a ~$857K planned-path budget. The unlock is that Buford City Schools accepts non-resident tuition students at kindergarten or 9th-grade entry only ($250 application fee; current tuition not published in sources found). A kindergarten entry around 2031-2033 fits the planned timeline exactly. 3BR townhomes in the Buford area rent for $2,227-$2,399 with ~45 listed, inside the ceiling. AACSB density is excellent: Georgia Gwinnett College and the University of North Georgia's Cottrell College are both accredited and close, with Georgia Tech, Georgia State, Emory, Kennesaw State and UGA in the wider radius. Georgia cut its flat income tax to 4.99% for 2026 with scheduled steps toward 3.99% if revenue triggers are met, and city residents pay both city and county property tax.",
+      "notes": "Buford City Schools is Niche's #1 district in Georgia for 2026 (A+; it previously ranked #2 of 179), and one national study ranked it the best district in the U.S. (9.31/10), with a 96% graduation rate and 70% math proficiency. Buford High has won 15 state football championships - second-most in Georgia history - including the 2025 state title and a national championship, the strongest football culture in the matrix. The catch is that it is a small city district: attendance is set by city limits, not the Buford mailing address, and most 30518/30519 addresses are Gwinnett or Hall County schools. In-district homes carry a $50K-$100K+ premium. The Buford-area median sale was $494,000 in August 2026 (485 closings) with entry homes near $412K, so an in-district home runs roughly $515K-$580K - about $789K by 2041 at a $545K working figure - about $68K under a ~$857K planned-path budget. The unlock is that Buford City Schools accepts non-resident tuition students at kindergarten or 9th-grade entry only ($250 application fee; current tuition not published in sources found). A kindergarten entry around 2031-2033 fits the planned timeline exactly. 3BR townhomes in the Buford area rent for $2,227-$2,399 with ~45 listed, inside the ceiling. AACSB density is excellent: Georgia Gwinnett College and the University of North Georgia's Cottrell College are both accredited and close, with Georgia Tech, Georgia State, Emory, Kennesaw State and UGA in the wider radius. Georgia cut its flat income tax to 4.99% for 2026 with scheduled steps toward 3.99% if revenue triggers are met, and city residents pay both city and county property tax.",
       "risks": [
         "School access is set by city limits, not the mailing address - verify every address at parcel level; in-district homes carry a $50K-$100K+ premium",
         "Non-resident tuition seats are only offered at kindergarten or 9th-grade entry, and current tuition and seat counts were not found in public sources",
@@ -2898,7 +2898,10 @@
       ],
       "weighted_total_out_of_100": 76.7,
       "weighted_total_private_scenario": 73.7,
-      "weighted_total_career_max_scenario": 77.65
+      "weighted_total_career_max_scenario": 77.65,
+      "sources": [
+        "https://www.niche.com/k12/search/best-school-districts/s/georgia/"
+      ]
     },
     {
       "rank": 29,
@@ -3491,97 +3494,65 @@
     },
     {
       "rank": 36,
-      "area": "Suwanee / Peachtree Corners",
+      "area": "East Cobb (Marietta)",
       "state": "Georgia",
       "state_abbr": "GA",
       "metro": "atlanta",
       "coords": [
-        34.01,
-        -84.15
+        34.02,
+        -84.43
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "strategic_label": "Best Georgia family-access option",
+      "strategic_label": "Strong Cobb high schools near the Home Depot HQ and the Braves - fits the planned path",
       "scores": {
-        "ai_tech_pm_market": 8.5,
-        "school_quality": 9,
-        "housing_affordability_2041": 6.5,
-        "rental_feasibility_2028": 6,
-        "state_tax_burden": 6,
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 6.0,
+        "rental_feasibility_2028": 7.0,
+        "state_tax_burden": 6.0,
         "aacsb_university_proximity": 9.0,
-        "robotics_fitness_startup_fit": 8.5,
+        "robotics_fitness_startup_fit": 8.0,
         "hs_football_culture": 8.5,
-        "private_school_access": 9.0,
-        "sports_tech_ecosystem": 7.0
+        "private_school_access": 8.5,
+        "sports_tech_ecosystem": 7.5
       },
       "budget_check": {
-        "price_2026": 550000,
-        "price_source": "Suwanee $516,611 / Peachtree Corners $583K",
-        "proj_2041": 796564,
-        "property_tax_effective_pct": 0.8,
-        "property_tax_source": "~0.80%",
+        "price_2026": 580000,
+        "price_source": "FMLS Apr-Oct 2026 median $580K (1,205 sales); mid-2026 report $672.5K",
+        "proj_2041": 840013,
+        "property_tax_effective_pct": 0.85,
+        "property_tax_source": "Cobb Co. ~0.68-0.98% effective",
         "insurance_state_avg_annual": 3225,
-        "budget_2041_planned": 857356,
-        "budget_2041_no_stepup": 659150,
-        "budget_2041_ai_leader": 1089032,
-        "headroom_planned": 60792,
-        "headroom_no_stepup": -137414,
+        "budget_2041_planned": 851657,
+        "budget_2041_no_stepup": 654769,
+        "budget_2041_ai_leader": 1081794,
+        "headroom_planned": 11644,
+        "headroom_no_stepup": -185244,
         "verdict": "fits planned path"
       },
       "private_school_option": {
         "considered": true,
         "basis": "Contingent on income at time of enrollment",
         "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Wesleyan School",
-            "location": "Peachtree Corners, GA",
-            "grades": "K-12",
-            "approx_distance_mi": 3,
-            "annual_tuition_usd": 30555,
-            "enrollment": 1198,
-            "student_teacher_ratio": "7:1",
-            "niche_grade": "A+",
-            "avg_sat": 1310,
-            "avg_act": 31,
-            "football_program": true,
-            "notes": "Athletics power; multiple state titles.",
-            "verified": false
-          },
-          {
-            "name": "Greater Atlanta Christian School",
-            "location": "Norcross, GA",
-            "approx_distance_mi": 8,
-            "football_program": true,
-            "verified": false
-          },
-          {
-            "name": "Cornerstone Christian Academy",
-            "location": "Peachtree Corners, GA",
-            "approx_distance_mi": 4,
-            "verified": false
-          },
-          {
-            "name": "Blessed Trinity Catholic High School",
-            "location": "Roswell, GA",
-            "approx_distance_mi": 15,
-            "football_program": true,
-            "notes": "Part of the adjacent Roswell cluster.",
-            "verified": false
-          }
-        ],
+        "in_radius_options": [],
         "out_of_radius_options": [],
-        "assessment": "Wesleyan School (A+, in Peachtree Corners) anchors a deep North Fulton/Gwinnett cluster that also reaches the Roswell schools within ~15 mi. Strong football/athletics culture.",
+        "assessment": "Private options not researched in detail for this location.",
         "verified": false
       },
-      "notes": "Strong Georgia compromise: Atlanta tech access, strong Gwinnett schools, Curiosity Lab/robotics angle, and better affordability discipline than Alpharetta/Johns Creek.",
+      "notes": "Established suburb northwest of the city, ~20 minutes from the Cumberland/Vinings corridor (The Home Depot HQ) and the Braves' Truist Park and Battery. Cobb County School District ranks #8 in metro Atlanta, and East Cobb's Walton, Wheeler, Pope and Lassiter zones are its strongest - verify the zone per address. The East Cobb median is ~$580K (Walton-zone neighborhoods like Indian Hills ~$840K), projecting to ~$840K by 2041 - ~$12K under a ~$852K planned-path budget. Kennesaw State's Coles College (AACSB) is close. Marietta 3BR rents run ~$2,495. Georgia's flat 4.99% income tax costs roughly $3,700/yr more than Tennessee's zero at today's household income.",
       "risks": [
-        "North Atlanta housing can appreciate quickly",
-        "Traffic and commute patterns are material",
-        "Rental target may require careful submarket selection"
+        "Walton-zone homes run well above the East Cobb median",
+        "Rent close to the ~$2,625 ceiling",
+        "Georgia income tax (4.99%)"
       ],
       "weighted_total_out_of_100": 75.3,
-      "weighted_total_private_scenario": 75.3,
-      "weighted_total_career_max_scenario": 76.6
+      "weighted_total_private_scenario": 74.3,
+      "weighted_total_career_max_scenario": 75.6,
+      "sources": [
+        "https://www.realtynetworkteam.com/cobbcounty/living-in-east-cobb-ga/",
+        "https://www.niche.com/k12/search/best-school-districts/m/atlanta-metro-area/",
+        "https://www.renthop.com/average-rent-in/marietta-ga"
+      ]
     },
     {
       "area": "Mount Juliet",
@@ -4006,6 +3977,167 @@
       "weighted_total_career_max_scenario": 74.8
     },
     {
+      "rank": 42,
+      "area": "Woodstock / Canton (Cherokee County)",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "metro": "atlanta",
+      "coords": [
+        34.17,
+        -84.505
+      ],
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Value pick north of Cobb - A-rated Cherokee schools with real budget room",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 8.0,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 6.5
+      },
+      "budget_check": {
+        "price_2026": 465000,
+        "price_source": "Woodstock Zillow $464,953 (Jun 2026); 12-mo median $457.5K-$477K; Canton ~$514K",
+        "proj_2041": 673459,
+        "property_tax_effective_pct": 0.75,
+        "property_tax_source": "Cherokee Co. ~0.69-0.97% effective",
+        "insurance_state_avg_annual": 3225,
+        "budget_2041_planned": 863131,
+        "budget_2041_no_stepup": 663590,
+        "budget_2041_ai_leader": 1096368,
+        "headroom_planned": 189672,
+        "headroom_no_stepup": -9868,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "I-575 suburbs north of Marietta. Cherokee County School District is Niche A (#17 in Georgia, #9 in metro Atlanta). Woodstock homes run ~$457K-$477K (Canton ~$514K), projecting to ~$673K by 2041 - ~$190K under a ~$863K planned-path budget. 3BR rents run ~$2,393. Georgia's flat 4.99% income tax costs roughly $3,700/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "I-575/I-75 commute into the city",
+        "Georgia income tax (4.99%)"
+      ],
+      "weighted_total_out_of_100": 74.5,
+      "weighted_total_private_scenario": 73.5,
+      "weighted_total_career_max_scenario": 74.5,
+      "sources": [
+        "https://www.zillow.com/home-values/70919/woodstock-ga-30146/",
+        "https://movewithmomentum.com/moving-to-woodstock-ga",
+        "https://www.niche.com/k12/search/best-school-districts/s/georgia/",
+        "https://www.zillow.com/rental-manager/market-trends/woodstock-ga/"
+      ]
+    },
+    {
+      "rank": 43,
+      "area": "Suwanee / Peachtree Corners",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "metro": "atlanta",
+      "coords": [
+        34.01,
+        -84.15
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Best Georgia family-access option",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 9,
+        "housing_affordability_2041": 6.0,
+        "rental_feasibility_2028": 6,
+        "state_tax_burden": 6,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 8.5,
+        "hs_football_culture": 8.5,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 7.0
+      },
+      "budget_check": {
+        "price_2026": 570000,
+        "price_source": "Suwanee Redfin $560K (3 mo. to Apr 2026); Peachtree Corners Redfin $580K",
+        "proj_2041": 825530,
+        "property_tax_effective_pct": 0.8,
+        "property_tax_source": "~0.80%",
+        "insurance_state_avg_annual": 3225,
+        "budget_2041_planned": 857356,
+        "budget_2041_no_stepup": 659150,
+        "budget_2041_ai_leader": 1089032,
+        "headroom_planned": 31826,
+        "headroom_no_stepup": -166380,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Wesleyan School",
+            "location": "Peachtree Corners, GA",
+            "grades": "K-12",
+            "approx_distance_mi": 3,
+            "annual_tuition_usd": 30555,
+            "enrollment": 1198,
+            "student_teacher_ratio": "7:1",
+            "niche_grade": "A+",
+            "avg_sat": 1310,
+            "avg_act": 31,
+            "football_program": true,
+            "notes": "Athletics power; multiple state titles.",
+            "verified": false
+          },
+          {
+            "name": "Greater Atlanta Christian School",
+            "location": "Norcross, GA",
+            "approx_distance_mi": 8,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Cornerstone Christian Academy",
+            "location": "Peachtree Corners, GA",
+            "approx_distance_mi": 4,
+            "verified": false
+          },
+          {
+            "name": "Blessed Trinity Catholic High School",
+            "location": "Roswell, GA",
+            "approx_distance_mi": 15,
+            "football_program": true,
+            "notes": "Part of the adjacent Roswell cluster.",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Wesleyan School (A+, in Peachtree Corners) anchors a deep North Fulton/Gwinnett cluster that also reaches the Roswell schools within ~15 mi. Strong football/athletics culture.",
+        "verified": false
+      },
+      "notes": "Strong Georgia compromise: Atlanta tech access, strong Gwinnett schools, Curiosity Lab/robotics angle, and better affordability discipline than Alpharetta/Johns Creek. Oct 2026 refresh: Suwanee sells for ~$560K and Peachtree Corners ~$580K (Redfin), projecting to ~$826K by 2041 - ~$32K under a ~$857K planned-path budget. Gwinnett County Public Schools is Niche A (#18 in Georgia, #10 in metro Atlanta); Peachtree Corners also has Curiosity Lab, a 5G/autonomous-vehicle test track.",
+      "risks": [
+        "North Atlanta housing can appreciate quickly",
+        "Traffic and commute patterns are material",
+        "Rental target may require careful submarket selection"
+      ],
+      "weighted_total_out_of_100": 74.3,
+      "weighted_total_private_scenario": 74.3,
+      "weighted_total_career_max_scenario": 75.6,
+      "sources": [
+        "https://www.redfin.com/city/18994/GA/Suwanee/housing-market",
+        "https://www.redfin.com/city/35853/GA/Peachtree-Corners/housing-market",
+        "https://www.niche.com/k12/search/best-school-districts/s/georgia/"
+      ]
+    },
+    {
       "area": "Lakeland",
       "state": "Florida",
       "state_abbr": "FL",
@@ -4085,111 +4217,77 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 42,
+      "rank": 44,
       "weighted_total_out_of_100": 74.3,
       "weighted_total_private_scenario": 78.3,
       "weighted_total_career_max_scenario": 74.4
     },
     {
-      "rank": 43,
-      "area": "Alpharetta / Johns Creek",
+      "rank": 45,
+      "area": "Cumming (Forsyth County)",
       "state": "Georgia",
       "state_abbr": "GA",
       "metro": "atlanta",
       "coords": [
-        34.05,
-        -84.25
+        34.2073,
+        -84.1402
       ],
       "tier": "Tier 3 - Watch List",
-      "strategic_label": "Premium but expensive Georgia option",
+      "strategic_label": "Georgia's #3 district with homes that just fit the planned path",
       "scores": {
-        "ai_tech_pm_market": 8.5,
+        "ai_tech_pm_market": 7.5,
         "school_quality": 9.5,
-        "housing_affordability_2041": 5.5,
-        "rental_feasibility_2028": 6,
-        "state_tax_burden": 6,
-        "aacsb_university_proximity": 9.0,
-        "robotics_fitness_startup_fit": 8,
+        "housing_affordability_2041": 6.0,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 7.0,
         "hs_football_culture": 8.5,
-        "private_school_access": 9.0,
-        "sports_tech_ecosystem": 7.0
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 6.5
       },
       "budget_check": {
-        "price_2026": 610000,
-        "price_source": "Alpharetta $513,710 / Johns Creek ~$700K",
-        "proj_2041": 883462,
-        "property_tax_effective_pct": 0.8,
-        "property_tax_source": "~0.80%",
+        "price_2026": 580000,
+        "price_source": "Zillow $600K (Jul 2026); Redfin $559K (3 mo. to Aug 2026); RealtyTrac $576.5K",
+        "proj_2041": 840013,
+        "property_tax_effective_pct": 0.75,
+        "property_tax_source": "Forsyth Co. ~0.71-0.83% effective",
         "insurance_state_avg_annual": 3225,
-        "budget_2041_planned": 857356,
-        "budget_2041_no_stepup": 659150,
-        "budget_2041_ai_leader": 1089032,
-        "headroom_planned": -26106,
-        "headroom_no_stepup": -224312,
-        "verdict": "over planned-path budget"
+        "budget_2041_planned": 863131,
+        "budget_2041_no_stepup": 663590,
+        "budget_2041_ai_leader": 1096368,
+        "headroom_planned": 23118,
+        "headroom_no_stepup": -176423,
+        "verdict": "fits planned path"
       },
       "private_school_option": {
         "considered": true,
         "basis": "Contingent on income at time of enrollment",
         "search_radius_miles": 20,
-        "in_radius_options": [
-          {
-            "name": "Mount Pisgah Christian School",
-            "location": "Johns Creek, GA",
-            "grades": "PK-12",
-            "approx_distance_mi": 4,
-            "annual_tuition_usd": 27800,
-            "niche_grade": "A+",
-            "avg_sat": 1280,
-            "avg_act": 28,
-            "football_program": true,
-            "notes": "#16 private HS in Georgia (Niche); 19 AP courses.",
-            "verified": false
-          },
-          {
-            "name": "Blessed Trinity Catholic High School",
-            "location": "Roswell, GA",
-            "grades": "9-12",
-            "approx_distance_mi": 10,
-            "enrollment": 836,
-            "niche_grade": "A",
-            "football_program": true,
-            "verified": false
-          },
-          {
-            "name": "King's Ridge Christian School",
-            "location": "Alpharetta, GA",
-            "grades": "K-12",
-            "approx_distance_mi": 5,
-            "football_program": true,
-            "verified": false
-          },
-          {
-            "name": "Wesleyan School",
-            "location": "Peachtree Corners, GA",
-            "approx_distance_mi": 14,
-            "niche_grade": "A+",
-            "football_program": true,
-            "notes": "Part of the adjacent Peachtree Corners cluster.",
-            "verified": false
-          }
-        ],
+        "in_radius_options": [],
         "out_of_radius_options": [],
-        "assessment": "Elite North Fulton cluster: Mount Pisgah (A+) and King's Ridge in-area, plus Blessed Trinity and Wesleyan within ~14 mi. Among the deepest private markets in the matrix.",
+        "assessment": "Private options not researched in detail for this location.",
         "verified": false
       },
-      "notes": "Elite Atlanta suburb with strong tech access and schools. Excellent quality but too expensive to be the most practical Georgia answer.",
+      "notes": "North of Alpharetta's tech corridor via GA-400. Forsyth County Schools is Niche's #3 district in Georgia. The median is ~$559K-$600K, projecting to ~$840K by 2041 - ~$23K under a ~$863K planned-path budget, helped by Forsyth's low ~0.75% property tax. 3BR rents run ~$2,195. Alpharetta's Avalon and North Point are 20-25 minutes south. Georgia's flat 4.99% income tax costs roughly $3,700/yr more than Tennessee's zero at today's household income.",
       "risks": [
-        "High purchase price",
-        "Rental target pressure",
-        "May over-index on lifestyle while weakening savings goals"
+        "GA-400 commute congestion to Alpharetta and Atlanta",
+        "Prices have softened in 2026 but the area appreciated quickly before that",
+        "Georgia income tax (4.99%)"
       ],
-      "weighted_total_out_of_100": 74.2,
-      "weighted_total_private_scenario": 73.2,
-      "weighted_total_career_max_scenario": 75.55
+      "weighted_total_out_of_100": 74.3,
+      "weighted_total_private_scenario": 70.3,
+      "weighted_total_career_max_scenario": 74.85,
+      "sources": [
+        "https://www.zillow.com/home-values/127865/coal-mountain-cumming-ga/",
+        "https://www.redfin.com/city/5394/GA/Cumming/housing-market",
+        "https://www.niche.com/k12/search/best-school-districts/s/georgia/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/ga/cumming-city/",
+        "https://propertytaxalmanac.com/georgia/"
+      ]
     },
     {
-      "rank": 44,
+      "rank": 46,
       "area": "Mandeville",
       "state": "Louisiana",
       "state_abbr": "LA",
@@ -4253,7 +4351,7 @@
       ]
     },
     {
-      "rank": 45,
+      "rank": 47,
       "area": "Roanoke (Roanoke County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -4317,7 +4415,7 @@
       ]
     },
     {
-      "rank": 46,
+      "rank": 48,
       "area": "Youngsville / Broussard (Lafayette)",
       "state": "Louisiana",
       "state_abbr": "LA",
@@ -4464,13 +4562,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 47,
+      "rank": 49,
       "weighted_total_out_of_100": 73.7,
       "weighted_total_private_scenario": 78.7,
       "weighted_total_career_max_scenario": 74.25
     },
     {
-      "rank": 48,
+      "rank": 50,
       "area": "Waukee",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -4545,7 +4643,7 @@
       "weighted_total_career_max_scenario": 75.35
     },
     {
-      "rank": 49,
+      "rank": 51,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -4636,7 +4734,109 @@
       "weighted_total_career_max_scenario": 72.05
     },
     {
-      "rank": 50,
+      "rank": 52,
+      "area": "Alpharetta / Johns Creek",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "metro": "atlanta",
+      "coords": [
+        34.05,
+        -84.25
+      ],
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Premium but expensive Georgia option",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 5.5,
+        "rental_feasibility_2028": 6,
+        "state_tax_burden": 6,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 8,
+        "hs_football_culture": 8.5,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 7.0
+      },
+      "budget_check": {
+        "price_2026": 610000,
+        "price_source": "Alpharetta $513,710 / Johns Creek ~$700K",
+        "proj_2041": 883462,
+        "property_tax_effective_pct": 0.8,
+        "property_tax_source": "~0.80%",
+        "insurance_state_avg_annual": 3225,
+        "budget_2041_planned": 857356,
+        "budget_2041_no_stepup": 659150,
+        "budget_2041_ai_leader": 1089032,
+        "headroom_planned": -26106,
+        "headroom_no_stepup": -224312,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [
+          {
+            "name": "Mount Pisgah Christian School",
+            "location": "Johns Creek, GA",
+            "grades": "PK-12",
+            "approx_distance_mi": 4,
+            "annual_tuition_usd": 27800,
+            "niche_grade": "A+",
+            "avg_sat": 1280,
+            "avg_act": 28,
+            "football_program": true,
+            "notes": "#16 private HS in Georgia (Niche); 19 AP courses.",
+            "verified": false
+          },
+          {
+            "name": "Blessed Trinity Catholic High School",
+            "location": "Roswell, GA",
+            "grades": "9-12",
+            "approx_distance_mi": 10,
+            "enrollment": 836,
+            "niche_grade": "A",
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "King's Ridge Christian School",
+            "location": "Alpharetta, GA",
+            "grades": "K-12",
+            "approx_distance_mi": 5,
+            "football_program": true,
+            "verified": false
+          },
+          {
+            "name": "Wesleyan School",
+            "location": "Peachtree Corners, GA",
+            "approx_distance_mi": 14,
+            "niche_grade": "A+",
+            "football_program": true,
+            "notes": "Part of the adjacent Peachtree Corners cluster.",
+            "verified": false
+          }
+        ],
+        "out_of_radius_options": [],
+        "assessment": "Elite North Fulton cluster: Mount Pisgah (A+) and King's Ridge in-area, plus Blessed Trinity and Wesleyan within ~14 mi. Among the deepest private markets in the matrix.",
+        "verified": false
+      },
+      "notes": "Elite Atlanta suburb with strong tech access and schools. Excellent quality but too expensive to be the most practical Georgia answer. Oct 2026 refresh: Johns Creek sold for a median ~$700K in February 2026 (Redfin), so the ~$610K working figure is conservative and the 2041 gap (~$26K at the working price) is likely larger. Fulton County Schools is Niche A (#19 in Georgia); the north Fulton high schools are its strongest, so schools are scored 9.0 rather than 9.5, consistent with Gwinnett and Cherokee.",
+      "risks": [
+        "High purchase price",
+        "Rental target pressure",
+        "May over-index on lifestyle while weakening savings goals"
+      ],
+      "weighted_total_out_of_100": 73.2,
+      "weighted_total_private_scenario": 73.2,
+      "weighted_total_career_max_scenario": 74.55,
+      "sources": [
+        "https://www.redfin.com/city/33537/GA/Johns-Creek/housing-market",
+        "https://www.niche.com/k12/search/best-school-districts/s/georgia/"
+      ]
+    },
+    {
+      "rank": 53,
       "area": "Arlington Heights",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -4778,7 +4978,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 51,
+      "rank": 54,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 71.6,
       "weighted_total_career_max_scenario": 72.25
@@ -4864,7 +5064,7 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 52,
+      "rank": 55,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 75.6,
       "weighted_total_career_max_scenario": 73.4,
@@ -4879,7 +5079,7 @@
       ]
     },
     {
-      "rank": 53,
+      "rank": 56,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -4975,7 +5175,70 @@
       "weighted_total_career_max_scenario": 72.5
     },
     {
-      "rank": 54,
+      "rank": 57,
+      "area": "Peachtree City / Fayetteville (Fayette County)",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "metro": "atlanta",
+      "coords": [
+        33.42,
+        -84.53
+      ],
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Georgia's #4 district on the south side, ~25 minutes from Delta's HQ - fits the planned path",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 6.0,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 8.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 6.5
+      },
+      "budget_check": {
+        "price_2026": 575000,
+        "price_source": "Peachtree City Zillow $571K (Jul 2026); $559K-$590K sale medians",
+        "proj_2041": 832771,
+        "property_tax_effective_pct": 0.8,
+        "property_tax_source": "~0.80%",
+        "insurance_state_avg_annual": 3225,
+        "budget_2041_planned": 857356,
+        "budget_2041_no_stepup": 659150,
+        "budget_2041_ai_leader": 1089032,
+        "headroom_planned": 24584,
+        "headroom_no_stepup": -173621,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Planned golf-cart town on the south side, ~25 minutes from Hartsfield-Jackson and Delta's headquarters. Fayette County School System is Niche's #4 district in Georgia. Homes run ~$559K-$590K, projecting to ~$833K by 2041 - ~$25K under a ~$857K planned-path budget (Georgia average property tax used; no Fayette-specific rate was found). 3BR rents run ~$2,183-$2,875. Georgia's flat 4.99% income tax costs roughly $3,700/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Farther from the northside tech corridor (Alpharetta ~50 miles)",
+        "Rent near or above the ceiling depending on source",
+        "Georgia income tax (4.99%)"
+      ],
+      "weighted_total_out_of_100": 71.7,
+      "weighted_total_private_scenario": 68.7,
+      "weighted_total_career_max_scenario": 71.95,
+      "sources": [
+        "https://www.zillow.com/home-values/26434/peachtree-city-ga/",
+        "https://www.niche.com/k12/search/best-school-districts/s/georgia/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/ga/peachtree-city/",
+        "https://www.renthop.com/average-rent-in/30269-peachtree-city-ga"
+      ]
+    },
+    {
+      "rank": 58,
       "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
@@ -5058,7 +5321,7 @@
       ]
     },
     {
-      "rank": 55,
+      "rank": 59,
       "area": "Draper",
       "state": "Utah",
       "state_abbr": "UT",
@@ -5120,7 +5383,7 @@
       ]
     },
     {
-      "rank": 56,
+      "rank": 60,
       "area": "Lucas (Lovejoy ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -5302,7 +5565,7 @@
       }
     },
     {
-      "rank": 57,
+      "rank": 61,
       "area": "South Jordan / Herriman",
       "state": "Utah",
       "state_abbr": "UT",
@@ -5365,7 +5628,69 @@
       ]
     },
     {
-      "rank": 58,
+      "rank": 62,
+      "area": "McDonough / Locust Grove (Henry County)",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "metro": "atlanta",
+      "coords": [
+        33.4,
+        -84.13
+      ],
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Affordable southern suburb with a big budget cushion - B-range schools",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 6.0,
+        "housing_affordability_2041": 9.5,
+        "rental_feasibility_2028": 8.0,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 7.0,
+        "robotics_fitness_startup_fit": 6.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 6.5,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 335000,
+        "price_source": "McDonough Zillow $336,835 (Jun 2026); Redfin $314K; six-month sold $364K",
+        "proj_2041": 485180,
+        "property_tax_effective_pct": 1.05,
+        "property_tax_source": "Henry Co. ~1.05% effective",
+        "insurance_state_avg_annual": 3225,
+        "budget_2041_planned": 829601,
+        "budget_2041_no_stepup": 637812,
+        "budget_2041_ai_leader": 1053777,
+        "headroom_planned": 344421,
+        "headroom_no_stepup": 152632,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "I-75 suburbs ~30 miles south of downtown. Henry County Schools campuses mostly rate B on Niche (e.g., Dutchtown High B, #213 in Georgia). Homes run ~$314K-$364K, projecting to ~$485K by 2041 - ~$344K under a ~$830K planned-path budget, and inside even the no-step-up budget. 3BR rents run ~$2,093. Georgia's flat 4.99% income tax costs roughly $3,700/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Schools are B-range - a clear step below the northside districts",
+        "Long commute to northside tech jobs",
+        "Georgia income tax (4.99%)"
+      ],
+      "weighted_total_out_of_100": 70.8,
+      "weighted_total_private_scenario": 71.8,
+      "weighted_total_career_max_scenario": 70.5,
+      "sources": [
+        "https://www.zillow.com/home-values/32777/mcdonough-ga/",
+        "https://www.niche.com/k12/search/best-public-schools/d/henry-county-schools-ga/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/ga/mcdonough/"
+      ]
+    },
+    {
+      "rank": 63,
       "area": "Boerne",
       "state": "Texas",
       "state_abbr": "TX",
@@ -5440,7 +5765,7 @@
       ]
     },
     {
-      "rank": 59,
+      "rank": 64,
       "area": "Naperville",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -5505,7 +5830,193 @@
       ]
     },
     {
-      "rank": 60,
+      "rank": 65,
+      "area": "Gainesville / Flowery Branch (Hall County)",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "metro": "atlanta",
+      "coords": [
+        34.24,
+        -83.87
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Lake Lanier affordability at the north end of the corridor - B+ schools and a long commute",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 6.5,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 8.0,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 6.5,
+        "robotics_fitness_startup_fit": 6.5,
+        "hs_football_culture": 8.0,
+        "private_school_access": 7.0,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 420000,
+        "price_source": "Flowery Branch Zillow $421K-$428K (2026); Gainesville city ~$376K",
+        "proj_2041": 608285,
+        "property_tax_effective_pct": 0.8,
+        "property_tax_source": "Hall Co. ~0.73-0.86% effective",
+        "insurance_state_avg_annual": 3225,
+        "budget_2041_planned": 857356,
+        "budget_2041_no_stepup": 659150,
+        "budget_2041_ai_leader": 1089032,
+        "headroom_planned": 249070,
+        "headroom_no_stepup": 50865,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "The northern end of the I-985 corridor on Lake Lanier, ~55 miles from downtown Atlanta and ~15 minutes north of Buford. Hall County Schools is Niche B+ (#68 of 176 in Georgia, #18 in metro Atlanta). Flowery Branch homes run ~$421K-$428K (Gainesville city ~$376K), projecting to ~$608K by 2041 - ~$249K under a ~$857K planned-path budget. 3BR rents start around ~$1,950. Georgia's flat 4.99% income tax costs roughly $3,700/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Longest commute to Atlanta employers (~55 miles)",
+        "Hall County Schools is B+ - well below Buford City Schools next door",
+        "Georgia income tax (4.99%)"
+      ],
+      "weighted_total_out_of_100": 69.4,
+      "weighted_total_private_scenario": 70.4,
+      "weighted_total_career_max_scenario": 69.15,
+      "sources": [
+        "https://www.zillow.com/home-values/8713/flowery-branch-ga/",
+        "https://www.niche.com/k12/d/hall-county-schools-ga/rankings/"
+      ]
+    },
+    {
+      "rank": 66,
+      "area": "Lovejoy / Hampton (Clayton / Henry)",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "metro": "atlanta",
+      "coords": [
+        33.41,
+        -84.3
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Cheapest point in the corridor - schools are the deal-breaker",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 4.5,
+        "housing_affordability_2041": 9.5,
+        "rental_feasibility_2028": 9.0,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 7.0,
+        "robotics_fitness_startup_fit": 5.5,
+        "hs_football_culture": 7.5,
+        "private_school_access": 6.0,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 300000,
+        "price_source": "Lovejoy median sale ~$336K; list ~$270K (2026); 30228 sales $170K-$337K",
+        "proj_2041": 434489,
+        "property_tax_effective_pct": 1.15,
+        "property_tax_source": "Clayton Co. ~0.97-1.43% / Henry ~1.05% effective",
+        "insurance_state_avg_annual": 3225,
+        "budget_2041_planned": 818995,
+        "budget_2041_no_stepup": 629658,
+        "budget_2041_ai_leader": 1040306,
+        "headroom_planned": 384506,
+        "headroom_no_stepup": 195169,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "The southern end of the corridor near Hartsfield-Jackson, ~25 miles south of downtown. Lovejoy High (Clayton County) is Niche C-; Hampton addresses feed Henry County's B-range schools. Homes run ~$270K-$336K, projecting to ~$434K by 2041 - ~$385K under a ~$819K planned-path budget. 3BR rents run ~$1,757-$1,995. (Not to be confused with Lovejoy ISD in Lucas, TX - a different place.) Georgia's flat 4.99% income tax costs roughly $3,700/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Weakest schools of the Atlanta options (Lovejoy High Niche C-)",
+        "Highest property tax in the southern set (Clayton)",
+        "Georgia income tax (4.99%)"
+      ],
+      "weighted_total_out_of_100": 69.0,
+      "weighted_total_private_scenario": 72.0,
+      "weighted_total_career_max_scenario": 68.55,
+      "sources": [
+        "https://www.homes.com/lovejoy-ga/sold/",
+        "https://www.niche.com/k12/search/best-public-schools/t/lovejoy-clayton-ga/",
+        "https://www.zumper.com/rent-research/hampton-ga"
+      ]
+    },
+    {
+      "rank": 67,
+      "area": "Dacula / Hamilton Mill (Gwinnett)",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "metro": "atlanta",
+      "coords": [
+        34.07,
+        -83.9
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Mill Creek-zoned Gwinnett neighborhoods next to Buford - slightly over budget",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 5.0,
+        "rental_feasibility_2028": 7.0,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.5,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 6.5
+      },
+      "budget_check": {
+        "price_2026": 615000,
+        "price_source": "Hamilton Mill ~$600K-$630K (2026 listings and sales)",
+        "proj_2041": 890703,
+        "property_tax_effective_pct": 1.0,
+        "property_tax_source": "Gwinnett Co. ~0.96-1.01% effective",
+        "insurance_state_avg_annual": 3225,
+        "budget_2041_planned": 835007,
+        "budget_2041_no_stepup": 641968,
+        "budget_2041_ai_leader": 1060644,
+        "headroom_planned": -55697,
+        "headroom_no_stepup": -248735,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Golf-course community on Buford's eastern edge, mostly zoned to Pucketts Mill Elementary, Osborne Middle and Mill Creek High in Gwinnett County Public Schools (Niche A, #18 in Georgia) - and close enough to rent near Buford City Schools' tuition-seat option. Homes run ~$600K-$630K, projecting to ~$891K by 2041 - ~$56K over a ~$835K planned-path budget. 3BR rents run ~$2,180-$2,629. Georgia's flat 4.99% income tax costs roughly $3,700/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Just over the planned-path budget at the neighborhood median",
+        "Gwinnett property tax (~1%) is higher than Forsyth or Cherokee",
+        "Georgia income tax (4.99%)"
+      ],
+      "weighted_total_out_of_100": 68.9,
+      "weighted_total_private_scenario": 66.9,
+      "weighted_total_career_max_scenario": 69.0,
+      "sources": [
+        "https://www.homesbymarco.com/neighborhoods/hamilton-mill-in-dacula-ga/top-subdivisions",
+        "https://www.neighborhoods.com/hamilton-mill-dacula-ga",
+        "https://www.niche.com/k12/search/best-school-districts/s/georgia/",
+        "https://www.rentable.co/dacula-ga"
+      ]
+    },
+    {
+      "rank": 68,
       "area": "Thompson's Station",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -5575,7 +6086,7 @@
       "weighted_total_career_max_scenario": 69.15
     },
     {
-      "rank": 61,
+      "rank": 69,
       "area": "Plainfield / Oswego",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -5637,7 +6148,70 @@
       ]
     },
     {
-      "rank": 62,
+      "rank": 70,
+      "area": "Decatur (City Schools of Decatur)",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "metro": "atlanta",
+      "coords": [
+        33.7748,
+        -84.2963
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Walkable close-in city with Georgia's #5 district - rent and the house are both over budget",
+      "scores": {
+        "ai_tech_pm_market": 8.5,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 4.0,
+        "rental_feasibility_2028": 3.0,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 9.5,
+        "robotics_fitness_startup_fit": 8.5,
+        "hs_football_culture": 6.5,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 8.0
+      },
+      "budget_check": {
+        "price_2026": 675000,
+        "price_source": "six-month closed median $674,900 (Sept 2026)",
+        "proj_2041": 977601,
+        "property_tax_effective_pct": 1.26,
+        "property_tax_source": "DeKalb Co. ~0.96-1.26% effective, plus City of Decatur millage (top of range used)",
+        "insurance_state_avg_annual": 3225,
+        "budget_2041_planned": 807638,
+        "budget_2041_no_stepup": 620927,
+        "budget_2041_ai_leader": 1025880,
+        "headroom_planned": -169963,
+        "headroom_no_stepup": -356675,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Small, walkable city just east of Atlanta, near Emory and minutes from Midtown's tech scene. City Schools of Decatur is Niche's #5 district in Georgia. The median closed at ~$675K, projecting to ~$978K by 2041 - ~$170K over a ~$808K planned-path budget at a higher in-city tax rate. Rent is the bigger problem: 3BR rentals run ~$3,449-$3,848, far above the ceiling. Georgia's flat 4.99% income tax costs roughly $3,700/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "3BR rent (~$3,450-$3,850) far above the rent ceiling",
+        "Over the planned-path budget",
+        "Highest property tax of the Atlanta options"
+      ],
+      "weighted_total_out_of_100": 68.0,
+      "weighted_total_private_scenario": 67.0,
+      "weighted_total_career_max_scenario": 69.2,
+      "sources": [
+        "https://resideline.com/blog/decatur-ga-housing-market",
+        "https://www.niche.com/k12/search/best-school-districts/s/georgia/",
+        "https://www.renthop.com/average-rent-in/decatur-ga",
+        "https://www.rentometer.com/average-rent-in/ga/decatur-ga"
+      ]
+    },
+    {
+      "rank": 71,
       "area": "Fairfax / Vienna (Fairfax County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -5701,7 +6275,7 @@
       ]
     },
     {
-      "rank": 63,
+      "rank": 72,
       "area": "Scottsdale",
       "state": "Arizona",
       "state_abbr": "AZ",
@@ -5764,7 +6338,7 @@
       ]
     },
     {
-      "rank": 64,
+      "rank": 73,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5837,7 +6411,7 @@
         "assessment": "Strongest private-school cluster in the matrix, all within Roswell or immediately adjacent. No commute compromise required.",
         "verified": false
       },
-      "notes": "Best AACSB access in the matrix (Georgia Tech Scheller, Emory Goizueta, Georgia State Robinson, Kennesaw State Coles). Elite GA football culture. Fails decisively on both budget phases: Zillow typical home value $607,235 (2026, +2.6% YoY) projects to ~$879K by 2041 at 2.5%, ~$22K over a ~$857K planned-path budget before any school-zone premium; single-family homes specifically average $815,000 today. Median 3BR townhome rent $3,100; townhome average $2,803 - roughly 35% over cap before 2028 escalation. Georgia income tax 5.39%. Fulton County is an A district but Roswell-specific elementaries scatter from #78 to #524 in GA rankings; Roswell North Elementary is A/8-GreatSchools but only 69% math and 66% reading proficiency vs Cox Mill's 90%/83%.",
+      "notes": "Best AACSB access in the matrix (Georgia Tech Scheller, Emory Goizueta, Georgia State Robinson, Kennesaw State Coles). Elite GA football culture. Fails decisively on both budget phases: Zillow typical home value $607,235 (2026, +2.6% YoY) projects to ~$879K by 2041 at 2.5%, ~$22K over a ~$857K planned-path budget before any school-zone premium; single-family homes specifically average $815,000 today. Median 3BR townhome rent $3,100; townhome average $2,803 - roughly 35% over cap before 2028 escalation. Georgia income tax 5.39%. Fulton County is an A district but Roswell-specific elementaries scatter from #78 to #524 in GA rankings; Roswell North Elementary is A/8-GreatSchools but only 69% math and 66% reading proficiency vs Cox Mill's 90%/83%. Oct 2026 refresh: August 2026 median sale ~$699K (Movoto), above the $607K working figure, so the over-budget verdict is if anything understated.",
       "risks": [
         "Housing affordability is the binding constraint - median home already projects to the top of the 2041 range",
         "No viable rental-phase path; 3BR townhome market starts ~$800/mo over cap",
@@ -5848,10 +6422,13 @@
       ],
       "weighted_total_out_of_100": 67.6,
       "weighted_total_private_scenario": 70.6,
-      "weighted_total_career_max_scenario": 69.3
+      "weighted_total_career_max_scenario": 69.3,
+      "sources": [
+        "https://www.movoto.com/roswell-ga/market-trends/"
+      ]
     },
     {
-      "rank": 65,
+      "rank": 74,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -5951,7 +6528,7 @@
       "weighted_total_career_max_scenario": 69.05
     },
     {
-      "rank": 66,
+      "rank": 75,
       "area": "Charlottesville (Albemarle County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -6014,7 +6591,7 @@
       ]
     },
     {
-      "rank": 67,
+      "rank": 76,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -6107,7 +6684,7 @@
       "weighted_total_career_max_scenario": 65.35
     },
     {
-      "rank": 68,
+      "rank": 77,
       "area": "Alamo Heights",
       "state": "Texas",
       "state_abbr": "TX",
@@ -6199,7 +6776,7 @@
       ]
     },
     {
-      "rank": 69,
+      "rank": 78,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -6291,7 +6868,68 @@
       "weighted_total_career_max_scenario": 64.9
     },
     {
-      "rank": 70,
+      "rank": 79,
+      "area": "Milton",
+      "state": "Georgia",
+      "state_abbr": "GA",
+      "metro": "atlanta",
+      "coords": [
+        34.1323,
+        -84.3005
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Estate suburb next to Alpharetta - out of reach at every career tier",
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 1.0,
+        "rental_feasibility_2028": 7.0,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 8.5,
+        "private_school_access": 8.5,
+        "sports_tech_ecosystem": 7.0
+      },
+      "budget_check": {
+        "price_2026": 1100000,
+        "price_source": "closed-sale median $1.10M (Jun 2026); Zillow $956K",
+        "proj_2041": 1593128,
+        "property_tax_effective_pct": 0.9,
+        "property_tax_source": "Fulton Co. ~0.75-1.10% effective",
+        "insurance_state_avg_annual": 3225,
+        "budget_2041_planned": 846034,
+        "budget_2041_no_stepup": 650446,
+        "budget_2041_ai_leader": 1074651,
+        "headroom_planned": -747094,
+        "headroom_no_stepup": -942682,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Horse-country estate suburb just north of Alpharetta, in Fulton County Schools (Niche A, #19 in Georgia). Closed sales run a median ~$1.1M (Zillow typical ~$956K), projecting to ~$1,593K by 2041 - ~$518K over even the AI-leader budget. 3BR rents run ~$2,309-$2,507. Georgia's flat 4.99% income tax costs roughly $3,700/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Out of reach at every career tier",
+        "Estate lots and few townhomes limit the rental-to-buy path"
+      ],
+      "weighted_total_out_of_100": 64.3,
+      "weighted_total_private_scenario": 63.3,
+      "weighted_total_career_max_scenario": 65.05,
+      "sources": [
+        "https://www.readroundabout.com/milton-homes/market",
+        "https://www.zillow.com/home-values/395772/milton-ga/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/ga/milton/"
+      ]
+    },
+    {
+      "rank": 80,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -6396,7 +7034,7 @@
       "weighted_total_career_max_scenario": 65.3
     },
     {
-      "rank": 71,
+      "rank": 81,
       "area": "Hinsdale / Western Springs",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -6458,7 +7096,7 @@
       ]
     },
     {
-      "rank": 72,
+      "rank": 82,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -6562,7 +7200,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 73,
+      "rank": 83,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -6662,7 +7300,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 74,
+      "rank": 84,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -6804,7 +7442,7 @@
     ],
     "Georgia": [
       "Buford (Buford City Schools)",
-      "Suwanee / Peachtree Corners"
+      "East Cobb (Marietta)"
     ],
     "South Carolina": [
       "Fort Mill",
@@ -6910,8 +7548,9 @@
       "Fort Mill",
       "Olathe (Garmin HQ)",
       "Lehi",
-      "Suwanee / Peachtree Corners",
+      "East Cobb (Marietta)",
       "Austin (City Proper)",
+      "Suwanee / Peachtree Corners",
       "Celina"
     ],
     "tier_3_watch_list": [
@@ -6922,17 +7561,21 @@
       "Overland Park (Blue Valley)",
       "Chesapeake / Virginia Beach (Hampton Roads)",
       "Clermont",
+      "Woodstock / Canton (Cherokee County)",
       "Lakeland",
-      "Alpharetta / Johns Creek",
+      "Cumming (Forsyth County)",
       "Mandeville",
       "Roanoke (Roanoke County)",
       "Youngsville / Broussard (Lafayette)",
       "Waukee",
+      "Alpharetta / Johns Creek",
       "Arlington Heights",
+      "Peachtree City / Fayetteville (Fayette County)",
       "Prosper",
       "Draper",
       "Lucas (Lovejoy ISD)",
       "South Jordan / Herriman",
+      "McDonough / Locust Grove (Henry County)",
       "Boerne",
       "Naperville"
     ],
@@ -6943,8 +7586,12 @@
       "Auburn / Opelika",
       "Lake Nona",
       "Glen Allen / Midlothian",
+      "Gainesville / Flowery Branch (Hall County)",
+      "Lovejoy / Hampton (Clayton / Henry)",
+      "Dacula / Hamilton Mill (Gwinnett)",
       "Thompson's Station",
       "Plainfield / Oswego",
+      "Decatur (City Schools of Decatur)",
       "Fairfax / Vienna (Fairfax County)",
       "Scottsdale",
       "Roswell",
@@ -6953,6 +7600,7 @@
       "Farragut",
       "Alamo Heights",
       "Waxhaw",
+      "Milton",
       "Germantown (Nashville)",
       "Hinsdale / Western Springs",
       "Leesburg / Ashburn",
@@ -7172,17 +7820,31 @@
           },
           {
             "area": "Lakeland",
-            "rank": 42,
+            "rank": 44,
             "rental_feasibility_2028": 9,
             "school_quality": 5.5,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Davenport / Four Corners",
-            "rank": 47,
+            "rank": 49,
             "rental_feasibility_2028": 8.5,
             "school_quality": 4,
             "weighted_total_out_of_100": 73.7
+          },
+          {
+            "area": "McDonough / Locust Grove (Henry County)",
+            "rank": 62,
+            "rental_feasibility_2028": 8.0,
+            "school_quality": 6.0,
+            "weighted_total_out_of_100": 70.8
+          },
+          {
+            "area": "Lovejoy / Hampton (Clayton / Henry)",
+            "rank": 66,
+            "rental_feasibility_2028": 9.0,
+            "school_quality": 4.5,
+            "weighted_total_out_of_100": 69.0
           }
         ]
       },
@@ -7192,7 +7854,7 @@
         "locations": [
           {
             "area": "Prosper",
-            "rank": 54,
+            "rank": 58,
             "school_quality": 9.0,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 2.0,
@@ -7201,12 +7863,21 @@
           },
           {
             "area": "Lucas (Lovejoy ISD)",
-            "rank": 56,
+            "rank": 60,
             "school_quality": 9.5,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 1.0,
             "weighted_total_out_of_100": 70.8,
             "purchase_phase_note": "Buy in McKinney (~20 min north, ~$82K of planned-path 2041 headroom) or any Collin County entry that clears the budget."
+          },
+          {
+            "area": "Milton",
+            "rank": 79,
+            "school_quality": 9.0,
+            "rental_feasibility_2028": 7.0,
+            "housing_affordability_2041": 1.0,
+            "weighted_total_out_of_100": 64.3,
+            "purchase_phase_note": "Rent inside the district; buy in a nearby location that clears the budget."
           }
         ]
       },
@@ -7341,29 +8012,36 @@
             "weighted_total_out_of_100": 74.6
           },
           {
-            "area": "Roanoke (Roanoke County)",
+            "area": "Cumming (Forsyth County)",
             "rank": 45,
+            "rental_feasibility_2028": 7.5,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 74.3
+          },
+          {
+            "area": "Roanoke (Roanoke County)",
+            "rank": 47,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.9
           },
           {
             "area": "Waukee",
-            "rank": 48,
+            "rank": 50,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.4
           },
           {
             "area": "Draper",
-            "rank": 55,
+            "rank": 59,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 71.1
           },
           {
             "area": "Farragut",
-            "rank": 67,
+            "rank": 76,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 66.6
@@ -7405,91 +8083,105 @@
           },
           {
             "area": "Suwanee / Peachtree Corners",
-            "rank": 36,
+            "rank": 43,
             "rental_feasibility_2028": 6,
             "school_quality": 9,
-            "weighted_total_out_of_100": 75.3
+            "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Alpharetta / Johns Creek",
-            "rank": 43,
+            "rank": 52,
             "rental_feasibility_2028": 6,
-            "school_quality": 9.5,
-            "weighted_total_out_of_100": 74.2
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 73.2
           },
           {
             "area": "Lake Nona",
-            "rank": 51,
+            "rank": 54,
             "rental_feasibility_2028": 5.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 72.6
           },
           {
+            "area": "Peachtree City / Fayetteville (Fayette County)",
+            "rank": 57,
+            "rental_feasibility_2028": 6.5,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 71.7
+          },
+          {
             "area": "Naperville",
-            "rank": 59,
+            "rank": 64,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 70.1
           },
           {
             "area": "Thompson's Station",
-            "rank": 60,
+            "rank": 68,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 68.2
           },
           {
+            "area": "Decatur (City Schools of Decatur)",
+            "rank": 70,
+            "rental_feasibility_2028": 3.0,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 68.0
+          },
+          {
             "area": "Fairfax / Vienna (Fairfax County)",
-            "rank": 62,
+            "rank": 71,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.9
           },
           {
             "area": "Scottsdale",
-            "rank": 63,
+            "rank": 72,
             "rental_feasibility_2028": 4.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.7
           },
           {
             "area": "Franklin",
-            "rank": 65,
+            "rank": 74,
             "rental_feasibility_2028": 3.5,
             "school_quality": 9,
             "weighted_total_out_of_100": 67.4
           },
           {
             "area": "Charlottesville (Albemarle County)",
-            "rank": 66,
+            "rank": 75,
             "rental_feasibility_2028": 6.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 67.3
           },
           {
             "area": "Alamo Heights",
-            "rank": 68,
+            "rank": 77,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 65.8
           },
           {
             "area": "Waxhaw",
-            "rank": 69,
+            "rank": 78,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 64.7
           },
           {
             "area": "Hinsdale / Western Springs",
-            "rank": 71,
+            "rank": 81,
             "rental_feasibility_2028": 4.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 63.4
           },
           {
             "area": "Leesburg / Ashburn",
-            "rank": 72,
+            "rank": 82,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 61.6
@@ -8011,8 +8703,9 @@
       "GA": {
         "type": "flat",
         "rate": 0.0499,
-        "deduction": 24000,
-        "source": "https://www.bdo.com/insights/tax/georgia-enacts-income-tax-reduction-bill"
+        "deduction": 30000,
+        "source": "https://dor.georgia.gov/taxes/important-tax-updates",
+        "note": "Flat 4.99% for 2026 (HB 463); standard deduction $30,000 MFJ per Georgia DOR."
       },
       "NC": {
         "type": "flat",
@@ -8285,17 +8978,17 @@
         },
         {
           "area": "Thompson's Station",
-          "rank": 60,
+          "rank": 68,
           "score": 68.2
         },
         {
           "area": "Franklin",
-          "rank": 65,
+          "rank": 74,
           "score": 67.4
         },
         {
           "area": "Germantown (Nashville)",
-          "rank": 70,
+          "rank": 80,
           "score": 63.5
         }
       ],
@@ -8704,12 +9397,12 @@
         },
         {
           "area": "Boerne",
-          "rank": 58,
+          "rank": 63,
           "score": 70.5
         },
         {
           "area": "Alamo Heights",
-          "rank": 68,
+          "rank": 77,
           "score": 65.8
         }
       ],
@@ -8863,7 +9556,7 @@
         },
         {
           "area": "Scottsdale",
-          "rank": 63,
+          "rank": 72,
           "score": 67.7
         }
       ],
@@ -9021,12 +9714,12 @@
         },
         {
           "area": "Draper",
-          "rank": 55,
+          "rank": 59,
           "score": 71.1
         },
         {
           "area": "South Jordan / Herriman",
-          "rank": 57,
+          "rank": 61,
           "score": 70.8
         }
       ],
@@ -9173,22 +9866,22 @@
       "locations": [
         {
           "area": "Arlington Heights",
-          "rank": 50,
+          "rank": 53,
           "score": 72.8
         },
         {
           "area": "Naperville",
-          "rank": 59,
+          "rank": 64,
           "score": 70.1
         },
         {
           "area": "Plainfield / Oswego",
-          "rank": 61,
+          "rank": 69,
           "score": 68.1
         },
         {
           "area": "Hinsdale / Western Springs",
-          "rank": 71,
+          "rank": 81,
           "score": 63.4
         }
       ],
@@ -9372,7 +10065,7 @@
       "locations": [
         {
           "area": "Mandeville",
-          "rank": 44,
+          "rank": 46,
           "score": 74.1
         }
       ],
@@ -9528,7 +10221,7 @@
       "locations": [
         {
           "area": "Youngsville / Broussard (Lafayette)",
-          "rank": 46,
+          "rank": 48,
           "score": 73.8
         }
       ],
@@ -9616,17 +10309,17 @@
         },
         {
           "area": "Celina",
-          "rank": 52,
+          "rank": 55,
           "score": 72.6
         },
         {
           "area": "Prosper",
-          "rank": 54,
+          "rank": 58,
           "score": 71.3
         },
         {
           "area": "Lucas (Lovejoy ISD)",
-          "rank": 56,
+          "rank": 60,
           "score": 70.8
         }
       ],
@@ -9838,7 +10531,7 @@
         },
         {
           "area": "Waxhaw",
-          "rank": 69,
+          "rank": 78,
           "score": 64.7
         }
       ],
@@ -9999,19 +10692,69 @@
           "score": 76.7
         },
         {
-          "area": "Suwanee / Peachtree Corners",
+          "area": "East Cobb (Marietta)",
           "rank": 36,
           "score": 75.3
         },
         {
-          "area": "Alpharetta / Johns Creek",
+          "area": "Woodstock / Canton (Cherokee County)",
+          "rank": 42,
+          "score": 74.5
+        },
+        {
+          "area": "Suwanee / Peachtree Corners",
           "rank": 43,
-          "score": 74.2
+          "score": 74.3
+        },
+        {
+          "area": "Cumming (Forsyth County)",
+          "rank": 45,
+          "score": 74.3
+        },
+        {
+          "area": "Alpharetta / Johns Creek",
+          "rank": 52,
+          "score": 73.2
+        },
+        {
+          "area": "Peachtree City / Fayetteville (Fayette County)",
+          "rank": 57,
+          "score": 71.7
+        },
+        {
+          "area": "McDonough / Locust Grove (Henry County)",
+          "rank": 62,
+          "score": 70.8
+        },
+        {
+          "area": "Gainesville / Flowery Branch (Hall County)",
+          "rank": 65,
+          "score": 69.4
+        },
+        {
+          "area": "Lovejoy / Hampton (Clayton / Henry)",
+          "rank": 66,
+          "score": 69.0
+        },
+        {
+          "area": "Dacula / Hamilton Mill (Gwinnett)",
+          "rank": 67,
+          "score": 68.9
+        },
+        {
+          "area": "Decatur (City Schools of Decatur)",
+          "rank": 70,
+          "score": 68.0
         },
         {
           "area": "Roswell",
-          "rank": 64,
+          "rank": 73,
           "score": 67.6
+        },
+        {
+          "area": "Milton",
+          "rank": 79,
+          "score": 64.3
         }
       ],
       "representative": "Buford (Buford City Schools)",
@@ -10300,12 +11043,12 @@
         },
         {
           "area": "Davenport / Four Corners",
-          "rank": 47,
+          "rank": 49,
           "score": 73.7
         },
         {
           "area": "Lake Nona",
-          "rank": 51,
+          "rank": 54,
           "score": 72.6
         }
       ],
@@ -10437,7 +11180,7 @@
         },
         {
           "area": "Lakeland",
-          "rank": 42,
+          "rank": 44,
           "score": 74.3
         }
       ],
@@ -11214,7 +11957,7 @@
         },
         {
           "area": "Waukee",
-          "rank": 48,
+          "rank": 50,
           "score": 73.4
         }
       ],
@@ -11415,7 +12158,7 @@
       "locations": [
         {
           "area": "Farragut",
-          "rank": 67,
+          "rank": 76,
           "score": 66.6
         }
       ],
@@ -11600,7 +12343,7 @@
       "locations": [
         {
           "area": "Auburn / Opelika",
-          "rank": 49,
+          "rank": 51,
           "score": 73.3
         }
       ],
@@ -11655,7 +12398,7 @@
       "locations": [
         {
           "area": "Glen Allen / Midlothian",
-          "rank": 53,
+          "rank": 56,
           "score": 72.4
         }
       ],
@@ -11751,12 +12494,12 @@
       "locations": [
         {
           "area": "Fairfax / Vienna (Fairfax County)",
-          "rank": 62,
+          "rank": 71,
           "score": 67.9
         },
         {
           "area": "Leesburg / Ashburn",
-          "rank": 72,
+          "rank": 82,
           "score": 61.6
         }
       ],
@@ -11969,7 +12712,7 @@
       "locations": [
         {
           "area": "Charlottesville (Albemarle County)",
-          "rank": 66,
+          "rank": 75,
           "score": 67.3
         }
       ],
@@ -12031,7 +12774,7 @@
       "locations": [
         {
           "area": "Roanoke (Roanoke County)",
-          "rank": 45,
+          "rank": 47,
           "score": 73.9
         }
       ],
@@ -12071,12 +12814,12 @@
       "locations": [
         {
           "area": "Jersey City",
-          "rank": 73,
+          "rank": 83,
           "score": 54.8
         },
         {
           "area": "Newport (Jersey City)",
-          "rank": 74,
+          "rank": 84,
           "score": 49.1
         }
       ],
