@@ -3165,6 +3165,69 @@
     },
     {
       "rank": 32,
+      "area": "Greensboro (City)",
+      "state": "North Carolina",
+      "state_abbr": "NC",
+      "metro": "triad",
+      "coords": [
+        36.0726,
+        -79.792
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Very affordable city with three AACSB schools - school zones vary widely",
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 6.0,
+        "housing_affordability_2041": 10.0,
+        "rental_feasibility_2028": 9.0,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 7.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 280000,
+        "price_source": "Zillow $265,428 (Jul 2026); Redfin ~$285K-$292K (early 2026)",
+        "proj_2041": 405523,
+        "property_tax_effective_pct": 1.5,
+        "property_tax_source": "Guilford Co. + Greensboro $1.588 per $100 (2026-27, post-revaluation); median effective ~1.40%",
+        "insurance_state_avg_annual": 2540,
+        "budget_2041_planned": 796437,
+        "budget_2041_no_stepup": 612315,
+        "budget_2041_ai_leader": 1011652,
+        "headroom_planned": 390914,
+        "headroom_no_stepup": 206792,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "North Carolina's third-largest city, home to Qorvo, Volvo Trucks North America and Kontoor Brands headquarters, with UNCG's Bryan School and NC A&T (both AACSB) in town. The typical home is ~$265K-$292K, projecting to ~$406K by 2041 - ~$391K under a ~$796K planned-path budget, and inside even the no-step-up budget. 3BR rents run ~$1,548-$1,800. Guilford County Schools quality varies sharply by zone; the northwest zones (see Summerfield / Oak Ridge) are the strongest. North Carolina's flat income tax (3.99% in the model) costs roughly $3,200/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "School quality varies widely by zone inside the city",
+        "Higher city property tax (~$1.59 per $100) than the county towns",
+        "North Carolina income tax"
+      ],
+      "weighted_total_out_of_100": 75.9,
+      "weighted_total_private_scenario": 79.9,
+      "weighted_total_career_max_scenario": 75.45,
+      "sources": [
+        "https://www.zillow.com/home-values/11722/greensboro-nc/",
+        "https://www.rentcafe.com/average-rent-market-trends/us/nc/greensboro/",
+        "https://www.guilfordcountync.gov/government/departments-and-agencies/tax-department/2026-2027-tax-property-rates",
+        "https://bryan.uncg.edu/bryan-school-receives-accreditation-extension-2/"
+      ]
+    },
+    {
+      "rank": 33,
       "area": "Olathe (Garmin HQ)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -3248,7 +3311,7 @@
       "weighted_total_career_max_scenario": 74.7
     },
     {
-      "rank": 33,
+      "rank": 34,
       "area": "Lehi",
       "state": "Utah",
       "state_abbr": "UT",
@@ -3313,7 +3376,7 @@
       ]
     },
     {
-      "rank": 34,
+      "rank": 35,
       "area": "Crowley / North Crowley (SW Fort Worth)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3409,7 +3472,7 @@
       "weighted_total_career_max_scenario": 74.8
     },
     {
-      "rank": 35,
+      "rank": 36,
       "area": "Overland Park (Blue Valley)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -3493,7 +3556,7 @@
       "weighted_total_career_max_scenario": 74.95
     },
     {
-      "rank": 36,
+      "rank": 37,
       "area": "East Cobb (Marietta)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -3634,13 +3697,13 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 37,
+      "rank": 38,
       "weighted_total_out_of_100": 75.2,
       "weighted_total_private_scenario": 75.2,
       "weighted_total_career_max_scenario": 74.9
     },
     {
-      "rank": 38,
+      "rank": 39,
       "area": "Austin (City Proper)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3738,7 +3801,7 @@
       "weighted_total_career_max_scenario": 76.4
     },
     {
-      "rank": 39,
+      "rank": 40,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -3829,7 +3892,7 @@
       "weighted_total_career_max_scenario": 74.8
     },
     {
-      "rank": 40,
+      "rank": 41,
       "area": "Chesapeake / Virginia Beach (Hampton Roads)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -3971,13 +4034,13 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 41,
+      "rank": 42,
       "weighted_total_out_of_100": 74.5,
       "weighted_total_private_scenario": 77.5,
       "weighted_total_career_max_scenario": 74.8
     },
     {
-      "rank": 42,
+      "rank": 43,
       "area": "Woodstock / Canton (Cherokee County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -4039,7 +4102,7 @@
       ]
     },
     {
-      "rank": 43,
+      "rank": 44,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -4217,13 +4280,13 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 44,
+      "rank": 45,
       "weighted_total_out_of_100": 74.3,
       "weighted_total_private_scenario": 78.3,
       "weighted_total_career_max_scenario": 74.4
     },
     {
-      "rank": 45,
+      "rank": 46,
       "area": "Cumming (Forsyth County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -4287,7 +4350,7 @@
       ]
     },
     {
-      "rank": 46,
+      "rank": 47,
       "area": "Mandeville",
       "state": "Louisiana",
       "state_abbr": "LA",
@@ -4351,7 +4414,7 @@
       ]
     },
     {
-      "rank": 47,
+      "rank": 48,
       "area": "Roanoke (Roanoke County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -4415,7 +4478,7 @@
       ]
     },
     {
-      "rank": 48,
+      "rank": 49,
       "area": "Youngsville / Broussard (Lafayette)",
       "state": "Louisiana",
       "state_abbr": "LA",
@@ -4562,13 +4625,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 49,
+      "rank": 50,
       "weighted_total_out_of_100": 73.7,
       "weighted_total_private_scenario": 78.7,
       "weighted_total_career_max_scenario": 74.25
     },
     {
-      "rank": 50,
+      "rank": 51,
       "area": "Waukee",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -4643,7 +4706,7 @@
       "weighted_total_career_max_scenario": 75.35
     },
     {
-      "rank": 51,
+      "rank": 52,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -4734,7 +4797,7 @@
       "weighted_total_career_max_scenario": 72.05
     },
     {
-      "rank": 52,
+      "rank": 53,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -4836,7 +4899,7 @@
       ]
     },
     {
-      "rank": 53,
+      "rank": 54,
       "area": "Arlington Heights",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -4978,7 +5041,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 54,
+      "rank": 55,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 71.6,
       "weighted_total_career_max_scenario": 72.25
@@ -5064,7 +5127,7 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 55,
+      "rank": 56,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 75.6,
       "weighted_total_career_max_scenario": 73.4,
@@ -5079,7 +5142,7 @@
       ]
     },
     {
-      "rank": 56,
+      "rank": 57,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -5175,7 +5238,7 @@
       "weighted_total_career_max_scenario": 72.5
     },
     {
-      "rank": 57,
+      "rank": 58,
       "area": "Peachtree City / Fayetteville (Fayette County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5238,7 +5301,7 @@
       ]
     },
     {
-      "rank": 58,
+      "rank": 59,
       "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
@@ -5321,7 +5384,7 @@
       ]
     },
     {
-      "rank": 59,
+      "rank": 60,
       "area": "Draper",
       "state": "Utah",
       "state_abbr": "UT",
@@ -5383,7 +5446,7 @@
       ]
     },
     {
-      "rank": 60,
+      "rank": 61,
       "area": "Lucas (Lovejoy ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -5565,7 +5628,7 @@
       }
     },
     {
-      "rank": 61,
+      "rank": 62,
       "area": "South Jordan / Herriman",
       "state": "Utah",
       "state_abbr": "UT",
@@ -5628,7 +5691,7 @@
       ]
     },
     {
-      "rank": 62,
+      "rank": 63,
       "area": "McDonough / Locust Grove (Henry County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5690,7 +5753,7 @@
       ]
     },
     {
-      "rank": 63,
+      "rank": 64,
       "area": "Boerne",
       "state": "Texas",
       "state_abbr": "TX",
@@ -5765,7 +5828,7 @@
       ]
     },
     {
-      "rank": 64,
+      "rank": 65,
       "area": "Naperville",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -5830,7 +5893,7 @@
       ]
     },
     {
-      "rank": 65,
+      "rank": 66,
       "area": "Gainesville / Flowery Branch (Hall County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5891,7 +5954,7 @@
       ]
     },
     {
-      "rank": 66,
+      "rank": 67,
       "area": "Lovejoy / Hampton (Clayton / Henry)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5953,7 +6016,7 @@
       ]
     },
     {
-      "rank": 67,
+      "rank": 68,
       "area": "Dacula / Hamilton Mill (Gwinnett)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6016,7 +6079,71 @@
       ]
     },
     {
-      "rank": 68,
+      "rank": 69,
+      "area": "Summerfield / Oak Ridge (NW Guilford)",
+      "state": "North Carolina",
+      "state_abbr": "NC",
+      "metro": "triad",
+      "coords": [
+        36.19,
+        -79.95
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Greensboro's family suburbs with Northwest Guilford High (A) - just over the planned-path budget, thin AI/product market",
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 5.5,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 7.5,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 625000,
+        "price_source": "Summerfield Sept 2026 median list ~$650K (Redfin sale $663K, Oct 2025); Oak Ridge Zillow ~$600K",
+        "proj_2041": 905186,
+        "property_tax_effective_pct": 0.92,
+        "property_tax_source": "Guilford Co. $0.7895 per $100 (2026-27) plus town and fire-district levies (estimate)",
+        "insurance_state_avg_annual": 2540,
+        "budget_2041_planned": 858325,
+        "budget_2041_no_stepup": 659895,
+        "budget_2041_ai_leader": 1090263,
+        "headroom_planned": -46862,
+        "headroom_no_stepup": -245291,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Semi-rural towns northwest of Greensboro, mostly zoned to Northwest Guilford High (Niche A, #7 in Guilford County, #108 of 635 in North Carolina); Guilford County Schools overall is more mixed, so verify the zone. Homes run ~$600K-$663K, projecting to ~$905K by 2041 - ~$47K over a ~$858K planned-path budget, helped by North Carolina's lower property tax. 3BR houses rent for ~$2,020-$2,500. Kendra Scott is at Greensboro's Friendly Center (~20 minutes). UNCG's Bryan School, NC A&T and Wake Forest (all AACSB) are within ~25 miles. North Carolina's flat income tax (3.99% in the model) costs roughly $3,200/yr more than Tennessee's zero at today's household income.",
+      "risks": [
+        "Thin AI/product and sports-tech market; the Research Triangle is ~75 miles east",
+        "Guilford County Schools is uneven outside the northwest zones",
+        "North Carolina income tax"
+      ],
+      "weighted_total_out_of_100": 68.4,
+      "weighted_total_private_scenario": 67.4,
+      "weighted_total_career_max_scenario": 68.35,
+      "sources": [
+        "https://www.movoto.com/summerfield-nc/",
+        "https://www.zillow.com/home-values/19713/oak-ridge-nc/",
+        "https://www.niche.com/k12/northwest-guilford-high-school-greensboro-nc/rankings/",
+        "https://www.zumper.com/houses-for-rent/summerfield-nc",
+        "https://www.guilfordcountync.gov/government/departments-and-agencies/tax-department/2026-2027-tax-property-rates"
+      ]
+    },
+    {
+      "rank": 70,
       "area": "Thompson's Station",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -6086,7 +6213,7 @@
       "weighted_total_career_max_scenario": 69.15
     },
     {
-      "rank": 69,
+      "rank": 71,
       "area": "Plainfield / Oswego",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -6148,7 +6275,7 @@
       ]
     },
     {
-      "rank": 70,
+      "rank": 72,
       "area": "Decatur (City Schools of Decatur)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6211,7 +6338,7 @@
       ]
     },
     {
-      "rank": 71,
+      "rank": 73,
       "area": "Fairfax / Vienna (Fairfax County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -6275,7 +6402,7 @@
       ]
     },
     {
-      "rank": 72,
+      "rank": 74,
       "area": "Scottsdale",
       "state": "Arizona",
       "state_abbr": "AZ",
@@ -6338,7 +6465,7 @@
       ]
     },
     {
-      "rank": 73,
+      "rank": 75,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6428,7 +6555,7 @@
       ]
     },
     {
-      "rank": 74,
+      "rank": 76,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -6528,7 +6655,7 @@
       "weighted_total_career_max_scenario": 69.05
     },
     {
-      "rank": 75,
+      "rank": 77,
       "area": "Charlottesville (Albemarle County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -6591,7 +6718,7 @@
       ]
     },
     {
-      "rank": 76,
+      "rank": 78,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -6684,7 +6811,7 @@
       "weighted_total_career_max_scenario": 65.35
     },
     {
-      "rank": 77,
+      "rank": 79,
       "area": "Alamo Heights",
       "state": "Texas",
       "state_abbr": "TX",
@@ -6776,7 +6903,7 @@
       ]
     },
     {
-      "rank": 78,
+      "rank": 80,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -6868,7 +6995,7 @@
       "weighted_total_career_max_scenario": 64.9
     },
     {
-      "rank": 79,
+      "rank": 81,
       "area": "Milton",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6929,7 +7056,7 @@
       ]
     },
     {
-      "rank": 80,
+      "rank": 82,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -7034,7 +7161,7 @@
       "weighted_total_career_max_scenario": 65.3
     },
     {
-      "rank": 81,
+      "rank": 83,
       "area": "Hinsdale / Western Springs",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -7096,7 +7223,7 @@
       ]
     },
     {
-      "rank": 82,
+      "rank": 84,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -7200,7 +7327,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 83,
+      "rank": 85,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -7300,7 +7427,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 84,
+      "rank": 86,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -7546,6 +7673,7 @@
       "Buford (Buford City Schools)",
       "Stone Oak (North San Antonio)",
       "Fort Mill",
+      "Greensboro (City)",
       "Olathe (Garmin HQ)",
       "Lehi",
       "East Cobb (Marietta)",
@@ -7589,6 +7717,7 @@
       "Gainesville / Flowery Branch (Hall County)",
       "Lovejoy / Hampton (Clayton / Henry)",
       "Dacula / Hamilton Mill (Gwinnett)",
+      "Summerfield / Oak Ridge (NW Guilford)",
       "Thompson's Station",
       "Plainfield / Oswego",
       "Decatur (City Schools of Decatur)",
@@ -7812,36 +7941,43 @@
             "weighted_total_out_of_100": 76.8
           },
           {
+            "area": "Greensboro (City)",
+            "rank": 32,
+            "rental_feasibility_2028": 9.0,
+            "school_quality": 6.0,
+            "weighted_total_out_of_100": 75.9
+          },
+          {
             "area": "Crowley / North Crowley (SW Fort Worth)",
-            "rank": 34,
+            "rank": 35,
             "rental_feasibility_2028": 9.0,
             "school_quality": 4.0,
             "weighted_total_out_of_100": 75.4
           },
           {
             "area": "Lakeland",
-            "rank": 44,
+            "rank": 45,
             "rental_feasibility_2028": 9,
             "school_quality": 5.5,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Davenport / Four Corners",
-            "rank": 49,
+            "rank": 50,
             "rental_feasibility_2028": 8.5,
             "school_quality": 4,
             "weighted_total_out_of_100": 73.7
           },
           {
             "area": "McDonough / Locust Grove (Henry County)",
-            "rank": 62,
+            "rank": 63,
             "rental_feasibility_2028": 8.0,
             "school_quality": 6.0,
             "weighted_total_out_of_100": 70.8
           },
           {
             "area": "Lovejoy / Hampton (Clayton / Henry)",
-            "rank": 66,
+            "rank": 67,
             "rental_feasibility_2028": 9.0,
             "school_quality": 4.5,
             "weighted_total_out_of_100": 69.0
@@ -7854,7 +7990,7 @@
         "locations": [
           {
             "area": "Prosper",
-            "rank": 58,
+            "rank": 59,
             "school_quality": 9.0,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 2.0,
@@ -7863,7 +7999,7 @@
           },
           {
             "area": "Lucas (Lovejoy ISD)",
-            "rank": 60,
+            "rank": 61,
             "school_quality": 9.5,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 1.0,
@@ -7872,7 +8008,7 @@
           },
           {
             "area": "Milton",
-            "rank": 79,
+            "rank": 81,
             "school_quality": 9.0,
             "rental_feasibility_2028": 7.0,
             "housing_affordability_2041": 1.0,
@@ -7999,49 +8135,49 @@
           },
           {
             "area": "Olathe (Garmin HQ)",
-            "rank": 32,
+            "rank": 33,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 75.6
           },
           {
             "area": "Chesapeake / Virginia Beach (Hampton Roads)",
-            "rank": 40,
+            "rank": 41,
             "rental_feasibility_2028": 8.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 74.6
           },
           {
             "area": "Cumming (Forsyth County)",
-            "rank": 45,
+            "rank": 46,
             "rental_feasibility_2028": 7.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Roanoke (Roanoke County)",
-            "rank": 47,
+            "rank": 48,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.9
           },
           {
             "area": "Waukee",
-            "rank": 50,
+            "rank": 51,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.4
           },
           {
             "area": "Draper",
-            "rank": 59,
+            "rank": 60,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 71.1
           },
           {
             "area": "Farragut",
-            "rank": 76,
+            "rank": 78,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 66.6
@@ -8083,105 +8219,105 @@
           },
           {
             "area": "Suwanee / Peachtree Corners",
-            "rank": 43,
+            "rank": 44,
             "rental_feasibility_2028": 6,
             "school_quality": 9,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Alpharetta / Johns Creek",
-            "rank": 52,
+            "rank": 53,
             "rental_feasibility_2028": 6,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 73.2
           },
           {
             "area": "Lake Nona",
-            "rank": 54,
+            "rank": 55,
             "rental_feasibility_2028": 5.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 72.6
           },
           {
             "area": "Peachtree City / Fayetteville (Fayette County)",
-            "rank": 57,
+            "rank": 58,
             "rental_feasibility_2028": 6.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 71.7
           },
           {
             "area": "Naperville",
-            "rank": 64,
+            "rank": 65,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 70.1
           },
           {
             "area": "Thompson's Station",
-            "rank": 68,
+            "rank": 70,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 68.2
           },
           {
             "area": "Decatur (City Schools of Decatur)",
-            "rank": 70,
+            "rank": 72,
             "rental_feasibility_2028": 3.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 68.0
           },
           {
             "area": "Fairfax / Vienna (Fairfax County)",
-            "rank": 71,
+            "rank": 73,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.9
           },
           {
             "area": "Scottsdale",
-            "rank": 72,
+            "rank": 74,
             "rental_feasibility_2028": 4.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.7
           },
           {
             "area": "Franklin",
-            "rank": 74,
+            "rank": 76,
             "rental_feasibility_2028": 3.5,
             "school_quality": 9,
             "weighted_total_out_of_100": 67.4
           },
           {
             "area": "Charlottesville (Albemarle County)",
-            "rank": 75,
+            "rank": 77,
             "rental_feasibility_2028": 6.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 67.3
           },
           {
             "area": "Alamo Heights",
-            "rank": 77,
+            "rank": 79,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 65.8
           },
           {
             "area": "Waxhaw",
-            "rank": 78,
+            "rank": 80,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 64.7
           },
           {
             "area": "Hinsdale / Western Springs",
-            "rank": 81,
+            "rank": 83,
             "rental_feasibility_2028": 4.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 63.4
           },
           {
             "area": "Leesburg / Ashburn",
-            "rank": 82,
+            "rank": 84,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 61.6
@@ -8939,7 +9075,8 @@
       "lafayette": "LA",
       "hampton_roads": "VA",
       "charlottesville": "VA",
-      "roanoke": "VA"
+      "roanoke": "VA",
+      "triad": "NC"
     }
   },
   "metros": [
@@ -8973,22 +9110,22 @@
         },
         {
           "area": "Mount Juliet",
-          "rank": 37,
+          "rank": 38,
           "score": 75.2
         },
         {
           "area": "Thompson's Station",
-          "rank": 68,
+          "rank": 70,
           "score": 68.2
         },
         {
           "area": "Franklin",
-          "rank": 74,
+          "rank": 76,
           "score": 67.4
         },
         {
           "area": "Germantown (Nashville)",
-          "rank": 80,
+          "rank": 82,
           "score": 63.5
         }
       ],
@@ -9199,7 +9336,7 @@
         },
         {
           "area": "Austin (City Proper)",
-          "rank": 38,
+          "rank": 39,
           "score": 75.0
         }
       ],
@@ -9397,12 +9534,12 @@
         },
         {
           "area": "Boerne",
-          "rank": 63,
+          "rank": 64,
           "score": 70.5
         },
         {
           "area": "Alamo Heights",
-          "rank": 77,
+          "rank": 79,
           "score": 65.8
         }
       ],
@@ -9556,7 +9693,7 @@
         },
         {
           "area": "Scottsdale",
-          "rank": 72,
+          "rank": 74,
           "score": 67.7
         }
       ],
@@ -9709,17 +9846,17 @@
       "locations": [
         {
           "area": "Lehi",
-          "rank": 33,
+          "rank": 34,
           "score": 75.6
         },
         {
           "area": "Draper",
-          "rank": 59,
+          "rank": 60,
           "score": 71.1
         },
         {
           "area": "South Jordan / Herriman",
-          "rank": 61,
+          "rank": 62,
           "score": 70.8
         }
       ],
@@ -9866,22 +10003,22 @@
       "locations": [
         {
           "area": "Arlington Heights",
-          "rank": 53,
+          "rank": 54,
           "score": 72.8
         },
         {
           "area": "Naperville",
-          "rank": 64,
+          "rank": 65,
           "score": 70.1
         },
         {
           "area": "Plainfield / Oswego",
-          "rank": 69,
+          "rank": 71,
           "score": 68.1
         },
         {
           "area": "Hinsdale / Western Springs",
-          "rank": 81,
+          "rank": 83,
           "score": 63.4
         }
       ],
@@ -10065,7 +10202,7 @@
       "locations": [
         {
           "area": "Mandeville",
-          "rank": 46,
+          "rank": 47,
           "score": 74.1
         }
       ],
@@ -10221,7 +10358,7 @@
       "locations": [
         {
           "area": "Youngsville / Broussard (Lafayette)",
-          "rank": 48,
+          "rank": 49,
           "score": 73.8
         }
       ],
@@ -10304,22 +10441,22 @@
         },
         {
           "area": "Crowley / North Crowley (SW Fort Worth)",
-          "rank": 34,
+          "rank": 35,
           "score": 75.4
         },
         {
           "area": "Celina",
-          "rank": 55,
+          "rank": 56,
           "score": 72.6
         },
         {
           "area": "Prosper",
-          "rank": 58,
+          "rank": 59,
           "score": 71.3
         },
         {
           "area": "Lucas (Lovejoy ISD)",
-          "rank": 60,
+          "rank": 61,
           "score": 70.8
         }
       ],
@@ -10531,7 +10668,7 @@
         },
         {
           "area": "Waxhaw",
-          "rank": 78,
+          "rank": 80,
           "score": 64.7
         }
       ],
@@ -10693,67 +10830,67 @@
         },
         {
           "area": "East Cobb (Marietta)",
-          "rank": 36,
+          "rank": 37,
           "score": 75.3
         },
         {
           "area": "Woodstock / Canton (Cherokee County)",
-          "rank": 42,
+          "rank": 43,
           "score": 74.5
         },
         {
           "area": "Suwanee / Peachtree Corners",
-          "rank": 43,
+          "rank": 44,
           "score": 74.3
         },
         {
           "area": "Cumming (Forsyth County)",
-          "rank": 45,
+          "rank": 46,
           "score": 74.3
         },
         {
           "area": "Alpharetta / Johns Creek",
-          "rank": 52,
+          "rank": 53,
           "score": 73.2
         },
         {
           "area": "Peachtree City / Fayetteville (Fayette County)",
-          "rank": 57,
+          "rank": 58,
           "score": 71.7
         },
         {
           "area": "McDonough / Locust Grove (Henry County)",
-          "rank": 62,
+          "rank": 63,
           "score": 70.8
         },
         {
           "area": "Gainesville / Flowery Branch (Hall County)",
-          "rank": 65,
+          "rank": 66,
           "score": 69.4
         },
         {
           "area": "Lovejoy / Hampton (Clayton / Henry)",
-          "rank": 66,
+          "rank": 67,
           "score": 69.0
         },
         {
           "area": "Dacula / Hamilton Mill (Gwinnett)",
-          "rank": 67,
+          "rank": 68,
           "score": 68.9
         },
         {
           "area": "Decatur (City Schools of Decatur)",
-          "rank": 70,
+          "rank": 72,
           "score": 68.0
         },
         {
           "area": "Roswell",
-          "rank": 73,
+          "rank": 75,
           "score": 67.6
         },
         {
           "area": "Milton",
-          "rank": 79,
+          "rank": 81,
           "score": 64.3
         }
       ],
@@ -11038,17 +11175,17 @@
         },
         {
           "area": "Clermont",
-          "rank": 41,
+          "rank": 42,
           "score": 74.5
         },
         {
           "area": "Davenport / Four Corners",
-          "rank": 49,
+          "rank": 50,
           "score": 73.7
         },
         {
           "area": "Lake Nona",
-          "rank": 54,
+          "rank": 55,
           "score": 72.6
         }
       ],
@@ -11180,7 +11317,7 @@
         },
         {
           "area": "Lakeland",
-          "rank": 44,
+          "rank": 45,
           "score": 74.3
         }
       ],
@@ -11583,6 +11720,143 @@
       "gaps": "Sports-tech is thin here."
     },
     {
+      "id": "triad",
+      "label": "Greensboro / Piedmont Triad",
+      "states": "NC",
+      "home_base": false,
+      "wave": 3,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Greensboro (City)",
+          "rank": 32,
+          "score": 75.9
+        },
+        {
+          "area": "Summerfield / Oak Ridge (NW Guilford)",
+          "rank": 69,
+          "score": 68.4
+        }
+      ],
+      "representative": "Greensboro (City)",
+      "rent_3br": 1752,
+      "rent_note": "Greensboro 3BR, Sept 2026 ($1,548-$1,800; Summerfield houses ~$2,020-$2,500)",
+      "rent_source": "https://www.rentcafe.com/average-rent-market-trends/us/nc/greensboro/",
+      "kendra_scott": [
+        {
+          "store": "Greensboro - Friendly Center",
+          "source": "https://www.kendrascott.com/stores/directory"
+        },
+        {
+          "store": "Winston-Salem - Thruway Center",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265168"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Qorvo",
+          "sector": "Semiconductors / RF",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Semiconductor company headquartered in Greensboro.",
+          "role_families": [
+            "Technical product / program manager"
+          ],
+          "office": "Greensboro (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Greensboro,_North_Carolina",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Volvo Trucks North America",
+          "sector": "Trucking / connected vehicles",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "North American headquarters in Greensboro since 2009; connected-truck and uptime software.",
+          "role_families": [
+            "Digital / connected-vehicle product"
+          ],
+          "office": "Greensboro (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Volvo_Trucks",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Kontoor Brands (Wrangler, Lee)",
+          "sector": "Apparel / consumer brands",
+          "goal_tags": [
+            "consumer_retail",
+            "spouse_retail",
+            "spouse_content"
+          ],
+          "why": "Global headquarters in Greensboro for sales, marketing and corporate functions - consumer brand marketing and social content, close to both of your careers.",
+          "role_families": [
+            "Digital / e-commerce product",
+            "Brand and social marketing"
+          ],
+          "office": "Greensboro (HQ)",
+          "source": "https://www.sec.gov/Archives/edgar/data/1760965/000176096526000014/ktb-20260103.htm",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Honda Aircraft",
+          "sector": "Aviation",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Builds the HondaJet in Greensboro (~1,800 employees).",
+          "role_families": [
+            "Program / product roles"
+          ],
+          "office": "Greensboro",
+          "source": "https://rothcapital.com/industrial/top-employers-in-the-greensboro-triad-region-legacy-brands-and-new-giants/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Lincoln Financial Group",
+          "sector": "Insurance / fintech",
+          "goal_tags": [
+            "fintech"
+          ],
+          "why": "A major financial-services employer in Greensboro.",
+          "role_families": [
+            "Digital product (retirement / insurance)"
+          ],
+          "office": "Greensboro",
+          "source": "https://www.greensboroinsider.com/moving-to-greensboro-nc/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Toyota battery megasite / JetZero (new investment)",
+          "sector": "EV batteries / aviation manufacturing",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Toyota's $13.9B battery plant in Randolph County (~5,000 jobs) and JetZero's planned $4.7B campus at Piedmont Triad International Airport - the region's growth story.",
+          "role_families": [
+            "Manufacturing digital / program roles"
+          ],
+          "office": "Liberty / Greensboro (PTI)",
+          "source": "https://rothcapital.com/industrial/top-employers-in-the-greensboro-triad-region-legacy-brands-and-new-giants/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Thin on AI/product and sports-tech compared with the Research Triangle (~75 miles east); manufacturing and aviation are the growth sectors."
+    },
+    {
       "id": "cincinnati",
       "label": "Cincinnati",
       "states": "KY/OH",
@@ -11847,12 +12121,12 @@
       "locations": [
         {
           "area": "Olathe (Garmin HQ)",
-          "rank": 32,
+          "rank": 33,
           "score": 75.6
         },
         {
           "area": "Overland Park (Blue Valley)",
-          "rank": 35,
+          "rank": 36,
           "score": 75.4
         }
       ],
@@ -11957,7 +12231,7 @@
         },
         {
           "area": "Waukee",
-          "rank": 50,
+          "rank": 51,
           "score": 73.4
         }
       ],
@@ -12158,7 +12432,7 @@
       "locations": [
         {
           "area": "Farragut",
-          "rank": 76,
+          "rank": 78,
           "score": 66.6
         }
       ],
@@ -12251,7 +12525,7 @@
       "locations": [
         {
           "area": "Greenville",
-          "rank": 39,
+          "rank": 40,
           "score": 74.9
         }
       ],
@@ -12343,7 +12617,7 @@
       "locations": [
         {
           "area": "Auburn / Opelika",
-          "rank": 51,
+          "rank": 52,
           "score": 73.3
         }
       ],
@@ -12398,7 +12672,7 @@
       "locations": [
         {
           "area": "Glen Allen / Midlothian",
-          "rank": 56,
+          "rank": 57,
           "score": 72.4
         }
       ],
@@ -12494,12 +12768,12 @@
       "locations": [
         {
           "area": "Fairfax / Vienna (Fairfax County)",
-          "rank": 71,
+          "rank": 73,
           "score": 67.9
         },
         {
           "area": "Leesburg / Ashburn",
-          "rank": 82,
+          "rank": 84,
           "score": 61.6
         }
       ],
@@ -12633,7 +12907,7 @@
       "locations": [
         {
           "area": "Chesapeake / Virginia Beach (Hampton Roads)",
-          "rank": 40,
+          "rank": 41,
           "score": 74.6
         }
       ],
@@ -12712,7 +12986,7 @@
       "locations": [
         {
           "area": "Charlottesville (Albemarle County)",
-          "rank": 75,
+          "rank": 77,
           "score": 67.3
         }
       ],
@@ -12774,7 +13048,7 @@
       "locations": [
         {
           "area": "Roanoke (Roanoke County)",
-          "rank": 47,
+          "rank": 48,
           "score": 73.9
         }
       ],
@@ -12814,12 +13088,12 @@
       "locations": [
         {
           "area": "Jersey City",
-          "rank": 83,
+          "rank": 85,
           "score": 54.8
         },
         {
           "area": "Newport (Jersey City)",
-          "rank": 84,
+          "rank": 86,
           "score": 49.1
         }
       ],
