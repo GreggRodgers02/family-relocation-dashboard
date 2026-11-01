@@ -307,6 +307,46 @@
             "no_stepup": 619419,
             "planned": 805677,
             "ai_leader": 1023389
+          },
+          "NY": {
+            "no_stepup": 559283,
+            "planned": 727459,
+            "ai_leader": 924034
+          },
+          "MA": {
+            "no_stepup": 643283,
+            "planned": 836718,
+            "ai_leader": 1062817
+          },
+          "CT": {
+            "no_stepup": 575220,
+            "planned": 748188,
+            "ai_leader": 950365
+          },
+          "RI": {
+            "no_stepup": 603703,
+            "planned": 785236,
+            "ai_leader": 997424
+          },
+          "NH": {
+            "no_stepup": 610740,
+            "planned": 794388,
+            "ai_leader": 1009050
+          },
+          "ME": {
+            "no_stepup": 659564,
+            "planned": 857894,
+            "ai_leader": 1089716
+          },
+          "PA": {
+            "no_stepup": 624603,
+            "planned": 812420,
+            "ai_leader": 1031954
+          },
+          "MD": {
+            "no_stepup": 643535,
+            "planned": 837046,
+            "ai_leader": 1063234
           }
         },
         "rate_sensitivity_planned": {
@@ -2751,6 +2791,67 @@
     },
     {
       "rank": 26,
+      "area": "Cranberry Township",
+      "state": "Pennsylvania",
+      "state_abbr": "PA",
+      "metro": "pittsburgh",
+      "coords": [
+        40.6848,
+        -80.1068
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Pittsburgh's northern suburb - robotics-capital jobs, WPIAL football, fits the budget",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 8.0,
+        "rental_feasibility_2028": 7.0,
+        "state_tax_burden": 6.5,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 10.0,
+        "hs_football_culture": 8.5,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 6.5
+      },
+      "budget_check": {
+        "price_2026": 450000,
+        "price_source": "Cranberry Township median ~$430K-$470K (2026 estimate)",
+        "proj_2041": 651734,
+        "property_tax_effective_pct": 1.6,
+        "property_tax_source": "Butler County / Seneca Valley ~1.5-1.7% effective (estimate)",
+        "insurance_state_avg_annual": 1696,
+        "budget_2041_planned": 802247,
+        "budget_2041_no_stepup": 616781,
+        "budget_2041_ai_leader": 1019032,
+        "headroom_planned": 150512,
+        "headroom_no_stepup": -34953,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Fast-growing suburb ~20 miles north of Pittsburgh in Seneca Valley School District, home to Westinghouse's headquarters and ~20 minutes from Kendra Scott at Ross Park Mall. Homes run ~$430K-$470K, projecting to ~$652K by 2041 - ~$151K under a ~$802K planned-path budget. 3BR rents run ~$2,100-$2,300. Pennsylvania income tax (plus Cranberry Township / Seneca Valley earned-income tax, ~1.0%) costs roughly $4,300/yr more than Tennessee's zero at today's household income, rising to ~$9,300/yr at the 2041 planned income. Kendra Scott: Pittsburgh - Ross Park Mall (~20 minutes).",
+      "risks": [
+        "Property tax ~1.6%",
+        "Local earned-income tax ~1%",
+        "Commute into Pittsburgh ~30-40 minutes"
+      ],
+      "weighted_total_out_of_100": 77.0,
+      "weighted_total_private_scenario": 75.0,
+      "weighted_total_career_max_scenario": 76.6,
+      "sources": [
+        "https://www.redfin.com/city/38999/PA/Cranberry-Township/housing-market",
+        "https://www.svsd.net/"
+      ]
+    },
+    {
+      "rank": 27,
       "area": "West Des Moines",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -2833,7 +2934,7 @@
       "weighted_total_career_max_scenario": 79.2
     },
     {
-      "rank": 27,
+      "rank": 28,
       "area": "Schertz / Cibolo (SCUC ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2895,7 +2996,7 @@
       ]
     },
     {
-      "rank": 28,
+      "rank": 29,
       "area": "Buford (Buford City Schools)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -2989,7 +3090,7 @@
       ]
     },
     {
-      "rank": 29,
+      "rank": 30,
       "area": "Stone Oak (North San Antonio)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3070,7 +3171,7 @@
       ]
     },
     {
-      "rank": 30,
+      "rank": 31,
       "area": "Frisco",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3156,7 +3257,7 @@
       "weighted_total_career_max_scenario": 76.9
     },
     {
-      "rank": 31,
+      "rank": 32,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -3249,7 +3350,7 @@
       "weighted_total_career_max_scenario": 75.4
     },
     {
-      "rank": 32,
+      "rank": 33,
       "area": "Greensboro (City)",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -3312,7 +3413,7 @@
       ]
     },
     {
-      "rank": 33,
+      "rank": 34,
       "area": "Olathe (Garmin HQ)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -3396,7 +3497,7 @@
       "weighted_total_career_max_scenario": 74.7
     },
     {
-      "rank": 34,
+      "rank": 35,
       "area": "Lehi",
       "state": "Utah",
       "state_abbr": "UT",
@@ -3461,7 +3562,7 @@
       ]
     },
     {
-      "rank": 35,
+      "rank": 36,
       "area": "Crowley / North Crowley (SW Fort Worth)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3557,7 +3658,7 @@
       "weighted_total_career_max_scenario": 74.8
     },
     {
-      "rank": 36,
+      "rank": 37,
       "area": "Overland Park (Blue Valley)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -3641,7 +3742,7 @@
       "weighted_total_career_max_scenario": 74.95
     },
     {
-      "rank": 37,
+      "rank": 38,
       "area": "East Cobb (Marietta)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -3782,13 +3883,13 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 38,
+      "rank": 39,
       "weighted_total_out_of_100": 75.2,
       "weighted_total_private_scenario": 75.2,
       "weighted_total_career_max_scenario": 74.9
     },
     {
-      "rank": 39,
+      "rank": 40,
       "area": "Sioux Falls (Harrisburg / Brandon)",
       "state": "South Dakota",
       "state_abbr": "SD",
@@ -3834,7 +3935,7 @@
         "assessment": "Private options not researched in detail for this location.",
         "verified": false
       },
-      "notes": "Sioux Falls and its Harrisburg and Brandon Valley school districts, the strongest in the metro. Homes run ~$327K-$349K, projecting to ~$492K by 2041 - ~$313K under a ~$806K planned-path budget. 3BR rents run ~$1,600-$1,800. South Dakota has no state income tax on wages, like Tennessee. There is no Kendra Scott store in South Dakota; the nearest is Omaha - Village Pointe (~3 hours).",
+      "notes": "Sioux Falls and its Harrisburg and Brandon Valley school districts, the strongest in the metro. Homes run ~$327K-$349K, projecting to ~$492K by 2041 - ~$313K under a ~$806K planned-path budget. 3BR rents run ~$1,600-$1,800. South Dakota has no state income tax on wages, like Tennessee. No Kendra Scott store was found in South Dakota; the nearest confirmed is Omaha - Village Pointe (~3 hours).",
       "risks": [
         "Thin AI/product market",
         "No Kendra Scott store in South Dakota",
@@ -3849,7 +3950,7 @@
       ]
     },
     {
-      "rank": 40,
+      "rank": 41,
       "area": "Austin (City Proper)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3947,7 +4048,7 @@
       "weighted_total_career_max_scenario": 76.4
     },
     {
-      "rank": 41,
+      "rank": 42,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -4038,7 +4139,7 @@
       "weighted_total_career_max_scenario": 74.8
     },
     {
-      "rank": 42,
+      "rank": 43,
       "area": "Chesapeake / Virginia Beach (Hampton Roads)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -4180,13 +4281,13 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 43,
+      "rank": 44,
       "weighted_total_out_of_100": 74.5,
       "weighted_total_private_scenario": 77.5,
       "weighted_total_career_max_scenario": 74.8
     },
     {
-      "rank": 44,
+      "rank": 45,
       "area": "Woodstock / Canton (Cherokee County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -4248,7 +4349,7 @@
       ]
     },
     {
-      "rank": 45,
+      "rank": 46,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -4426,13 +4527,13 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 46,
+      "rank": 47,
       "weighted_total_out_of_100": 74.3,
       "weighted_total_private_scenario": 78.3,
       "weighted_total_career_max_scenario": 74.4
     },
     {
-      "rank": 47,
+      "rank": 48,
       "area": "Cumming (Forsyth County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -4496,7 +4597,7 @@
       ]
     },
     {
-      "rank": 48,
+      "rank": 49,
       "area": "Mandeville",
       "state": "Louisiana",
       "state_abbr": "LA",
@@ -4560,7 +4661,7 @@
       ]
     },
     {
-      "rank": 49,
+      "rank": 50,
       "area": "West Fargo",
       "state": "North Dakota",
       "state_abbr": "ND",
@@ -4606,7 +4707,7 @@
         "assessment": "Private options not researched in detail for this location.",
         "verified": false
       },
-      "notes": "Fast-growing Fargo suburb in West Fargo Public Schools, ~15 minutes from Microsoft's Fargo campus and NDSU. Homes run ~$330K-$370K, projecting to ~$507K by 2041 - ~$296K under a ~$802K planned-path budget. 3BR rents run ~$1,700-$1,900. North Dakota income tax costs roughly $0/yr more than Tennessee's zero at today's household income, rising to ~$2,300/yr at the 2041 planned income. There is no Kendra Scott store in North Dakota; the nearest is Minneapolis area (~3.5 hours).",
+      "notes": "Fast-growing Fargo suburb in West Fargo Public Schools, ~15 minutes from Microsoft's Fargo campus and NDSU. Homes run ~$330K-$370K, projecting to ~$507K by 2041 - ~$296K under a ~$802K planned-path budget. 3BR rents run ~$1,700-$1,900. North Dakota income tax costs roughly $0/yr more than Tennessee's zero at today's household income, rising to ~$2,300/yr at the 2041 planned income. No Kendra Scott store was found in North Dakota; the nearest confirmed is Southdale Center in Edina, Minnesota (~3.5 hours).",
       "risks": [
         "Small market and harsh winters",
         "No Kendra Scott store in North Dakota",
@@ -4621,7 +4722,7 @@
       ]
     },
     {
-      "rank": 50,
+      "rank": 51,
       "area": "Roanoke (Roanoke County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -4685,7 +4786,7 @@
       ]
     },
     {
-      "rank": 51,
+      "rank": 52,
       "area": "Youngsville / Broussard (Lafayette)",
       "state": "Louisiana",
       "state_abbr": "LA",
@@ -4832,13 +4933,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 52,
+      "rank": 53,
       "weighted_total_out_of_100": 73.7,
       "weighted_total_private_scenario": 78.7,
       "weighted_total_career_max_scenario": 74.25
     },
     {
-      "rank": 53,
+      "rank": 54,
       "area": "Waukee",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -4913,7 +5014,7 @@
       "weighted_total_career_max_scenario": 75.35
     },
     {
-      "rank": 54,
+      "rank": 55,
       "area": "Chesterfield / Wildwood",
       "state": "Missouri",
       "state_abbr": "MO",
@@ -4974,7 +5075,7 @@
       ]
     },
     {
-      "rank": 55,
+      "rank": 56,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -5065,7 +5166,7 @@
       "weighted_total_career_max_scenario": 72.05
     },
     {
-      "rank": 56,
+      "rank": 57,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5167,7 +5268,7 @@
       ]
     },
     {
-      "rank": 57,
+      "rank": 58,
       "area": "Arlington Heights",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -5229,7 +5330,7 @@
       ]
     },
     {
-      "rank": 58,
+      "rank": 59,
       "area": "Carmel",
       "state": "Indiana",
       "state_abbr": "IN",
@@ -5370,7 +5471,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 59,
+      "rank": 60,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 71.6,
       "weighted_total_career_max_scenario": 72.25
@@ -5456,7 +5557,7 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 60,
+      "rank": 61,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 75.6,
       "weighted_total_career_max_scenario": 73.4,
@@ -5471,7 +5572,7 @@
       ]
     },
     {
-      "rank": 61,
+      "rank": 62,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -5567,7 +5668,7 @@
       "weighted_total_career_max_scenario": 72.5
     },
     {
-      "rank": 62,
+      "rank": 63,
       "area": "Peachtree City / Fayetteville (Fayette County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5630,7 +5731,7 @@
       ]
     },
     {
-      "rank": 63,
+      "rank": 64,
       "area": "Novi",
       "state": "Michigan",
       "state_abbr": "MI",
@@ -5691,7 +5792,7 @@
       ]
     },
     {
-      "rank": 64,
+      "rank": 65,
       "area": "Cheyenne",
       "state": "Wyoming",
       "state_abbr": "WY",
@@ -5737,7 +5838,7 @@
         "assessment": "Private options not researched in detail for this location.",
         "verified": false
       },
-      "notes": "Wyoming's capital, ~90 miles north of Denver, served by Laramie County School District 1. Homes close around ~$390K, projecting to ~$565K by 2041 - ~$341K under a ~$906K planned-path budget. 3BR rents run ~$1,800-$2,000. Wyoming has no state income tax on wages, like Tennessee. There is no Kendra Scott store in Wyoming; the nearest is Fort Collins / Denver area, Colorado (~1.5 hours).",
+      "notes": "Wyoming's capital, ~90 miles north of Denver, served by Laramie County School District 1. Homes close around ~$390K, projecting to ~$565K by 2041 - ~$341K under a ~$906K planned-path budget. 3BR rents run ~$1,800-$2,000. Wyoming has no state income tax on wages, like Tennessee. No Kendra Scott store was found in Wyoming; the nearest confirmed is Park Meadows in Lone Tree, Colorado (~2 hours).",
       "risks": [
         "Very thin AI/product market - depends on keeping a remote role",
         "No Kendra Scott store in Wyoming",
@@ -5753,7 +5854,7 @@
       ]
     },
     {
-      "rank": 65,
+      "rank": 66,
       "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
@@ -5836,7 +5937,7 @@
       ]
     },
     {
-      "rank": 66,
+      "rank": 67,
       "area": "Draper",
       "state": "Utah",
       "state_abbr": "UT",
@@ -5898,7 +5999,7 @@
       ]
     },
     {
-      "rank": 67,
+      "rank": 68,
       "area": "Henderson",
       "state": "Nevada",
       "state_abbr": "NV",
@@ -5959,7 +6060,7 @@
       ]
     },
     {
-      "rank": 68,
+      "rank": 69,
       "area": "Lucas (Lovejoy ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -6141,7 +6242,7 @@
       }
     },
     {
-      "rank": 69,
+      "rank": 70,
       "area": "South Jordan / Herriman",
       "state": "Utah",
       "state_abbr": "UT",
@@ -6204,7 +6305,7 @@
       ]
     },
     {
-      "rank": 70,
+      "rank": 71,
       "area": "McDonough / Locust Grove (Henry County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6266,7 +6367,7 @@
       ]
     },
     {
-      "rank": 71,
+      "rank": 72,
       "area": "Boerne",
       "state": "Texas",
       "state_abbr": "TX",
@@ -6341,7 +6442,7 @@
       ]
     },
     {
-      "rank": 72,
+      "rank": 73,
       "area": "Naperville",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -6406,7 +6507,7 @@
       ]
     },
     {
-      "rank": 73,
+      "rank": 74,
       "area": "Gainesville / Flowery Branch (Hall County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6467,7 +6568,7 @@
       ]
     },
     {
-      "rank": 74,
+      "rank": 75,
       "area": "Lovejoy / Hampton (Clayton / Henry)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6529,7 +6630,7 @@
       ]
     },
     {
-      "rank": 75,
+      "rank": 76,
       "area": "Dacula / Hamilton Mill (Gwinnett)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6592,7 +6693,7 @@
       ]
     },
     {
-      "rank": 76,
+      "rank": 77,
       "area": "Summerfield / Oak Ridge (NW Guilford)",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -6656,7 +6757,7 @@
       ]
     },
     {
-      "rank": 77,
+      "rank": 78,
       "area": "Thompson's Station",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -6726,7 +6827,7 @@
       "weighted_total_career_max_scenario": 69.15
     },
     {
-      "rank": 78,
+      "rank": 79,
       "area": "Plainfield / Oswego",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -6788,7 +6889,7 @@
       ]
     },
     {
-      "rank": 79,
+      "rank": 80,
       "area": "Decatur (City Schools of Decatur)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6851,7 +6952,7 @@
       ]
     },
     {
-      "rank": 80,
+      "rank": 81,
       "area": "Fairfax / Vienna (Fairfax County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -6915,7 +7016,7 @@
       ]
     },
     {
-      "rank": 81,
+      "rank": 82,
       "area": "Scottsdale",
       "state": "Arizona",
       "state_abbr": "AZ",
@@ -6978,7 +7079,7 @@
       ]
     },
     {
-      "rank": 82,
+      "rank": 83,
       "area": "Eden Prairie",
       "state": "Minnesota",
       "state_abbr": "MN",
@@ -7039,7 +7140,7 @@
       ]
     },
     {
-      "rank": 83,
+      "rank": 84,
       "area": "Brookfield / Elm Grove",
       "state": "Wisconsin",
       "state_abbr": "WI",
@@ -7085,7 +7186,7 @@
         "assessment": "Private options not researched in detail for this location.",
         "verified": false
       },
-      "notes": "Western Milwaukee suburbs in Elmbrook School District (Brookfield Central and East, among Wisconsin's top high schools), with Brookfield Academy for private school. Homes run ~$528K, projecting to ~$765K by 2041 - ~$32K under a ~$796K planned-path budget. 3BR rents run ~$2,400-$2,600. Wisconsin income tax costs roughly $5,000/yr more than Tennessee's zero at today's household income, rising to ~$11,600/yr at the 2041 planned income. There is no Kendra Scott store in Wisconsin; the nearest is Skokie, IL (Westfield Old Orchard, ~1.5 hours); none confirmed in Wisconsin.",
+      "notes": "Western Milwaukee suburbs in Elmbrook School District (Brookfield Central and East, among Wisconsin's top high schools), with Brookfield Academy for private school. Homes run ~$528K, projecting to ~$765K by 2041 - ~$32K under a ~$796K planned-path budget. 3BR rents run ~$2,400-$2,600. Wisconsin income tax costs roughly $5,000/yr more than Tennessee's zero at today's household income, rising to ~$11,600/yr at the 2041 planned income. No Kendra Scott store was found in Wisconsin; the nearest confirmed is Skokie, IL (Westfield Old Orchard, ~1.5 hours).",
       "risks": [
         "High property tax (~1.6%)",
         "Wisconsin income tax up to 7.65%",
@@ -7101,7 +7202,7 @@
       ]
     },
     {
-      "rank": 84,
+      "rank": 85,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -7191,7 +7292,7 @@
       ]
     },
     {
-      "rank": 85,
+      "rank": 86,
       "area": "Meridian",
       "state": "Idaho",
       "state_abbr": "ID",
@@ -7253,7 +7354,7 @@
       ]
     },
     {
-      "rank": 86,
+      "rank": 87,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -7353,7 +7454,7 @@
       "weighted_total_career_max_scenario": 69.05
     },
     {
-      "rank": 87,
+      "rank": 88,
       "area": "Charlottesville (Albemarle County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -7416,7 +7517,7 @@
       ]
     },
     {
-      "rank": 88,
+      "rank": 89,
       "area": "Elkhorn",
       "state": "Nebraska",
       "state_abbr": "NE",
@@ -7477,7 +7578,7 @@
       ]
     },
     {
-      "rank": 89,
+      "rank": 90,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -7570,7 +7671,70 @@
       "weighted_total_career_max_scenario": 65.35
     },
     {
-      "rank": 90,
+      "rank": 91,
+      "area": "Pittsford",
+      "state": "New York",
+      "state_abbr": "NY",
+      "metro": "rochester",
+      "coords": [
+        43.0906,
+        -77.515
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Rochester's top-school suburb - high property tax, thin AI market",
+      "scores": {
+        "ai_tech_pm_market": 5.5,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 6.0,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 3.0,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 6.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 5.0
+      },
+      "budget_check": {
+        "price_2026": 480000,
+        "price_source": "Pittsford ~$400K (early-2026 guide) to $575K (Oct 2026 listings); working figure $480K",
+        "proj_2041": 695183,
+        "property_tax_effective_pct": 2.6,
+        "property_tax_source": "Monroe County / Pittsford ~2.5-2.7% effective (estimate)",
+        "insurance_state_avg_annual": 1808,
+        "budget_2041_planned": 711305,
+        "budget_2041_no_stepup": 546864,
+        "budget_2041_ai_leader": 903516,
+        "headroom_planned": 16122,
+        "headroom_no_stepup": -148319,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Canal-side Rochester suburb in Pittsford Central School District (Niche A+, among New York's best), next to Paychex and ~10 miles from Simon and RIT. Homes run ~$400K-$575K, projecting to ~$695K by 2041 at a $480K working figure - ~$16K under a ~$711K planned-path budget. 3BR rents run ~$2,300-$2,500. New York income tax costs roughly $4,600/yr more than Tennessee's zero at today's household income, rising to ~$11,600/yr at the 2041 planned income. No Kendra Scott store was found near Rochester; New York's confirmed stores are downstate (e.g. Roosevelt Field, Long Island).",
+      "risks": [
+        "Property tax ~2.6% - among the highest in the matrix",
+        "New York income tax",
+        "Thin AI/product market",
+        "No Kendra Scott found in the area"
+      ],
+      "weighted_total_out_of_100": 66.5,
+      "weighted_total_private_scenario": 63.5,
+      "weighted_total_career_max_scenario": 65.7,
+      "sources": [
+        "https://www.movetoroc.com/pittsford-ny/",
+        "https://www.movoto.com/pittsford-ny/market-trends/",
+        "https://www.pittsfordschools.org/"
+      ]
+    },
+    {
+      "rank": 92,
       "area": "Bothell / Mill Creek",
       "state": "Washington",
       "state_abbr": "WA",
@@ -7632,7 +7796,7 @@
       ]
     },
     {
-      "rank": 91,
+      "rank": 93,
       "area": "Alamo Heights",
       "state": "Texas",
       "state_abbr": "TX",
@@ -7724,7 +7888,7 @@
       ]
     },
     {
-      "rank": 92,
+      "rank": 94,
       "area": "Essex / Essex Junction",
       "state": "Vermont",
       "state_abbr": "VT",
@@ -7770,7 +7934,7 @@
         "assessment": "Private options not researched in detail for this location.",
         "verified": false
       },
-      "notes": "Essex and Essex Junction, home of GlobalFoundries' chip fab (Vermont's largest private employer, ~1,800). Essex Westford School District is Niche B+ (#6 in Vermont) and #1 in the state for athletes. Homes run ~$435K-$480K, projecting to ~$666K by 2041 - ~$111K under a ~$778K planned-path budget. Burlington-area 3BR rents run ~$2,600-$2,700. Vermont's progressive income tax (3.35%-8.75%) costs roughly $3,500/yr more than Tennessee's zero at today's household income, rising to ~$12,000/yr at the 2041 planned income. There is no Kendra Scott store in Vermont; the nearest is Burlington, Massachusetts (~3.5 hours).",
+      "notes": "Essex and Essex Junction, home of GlobalFoundries' chip fab (Vermont's largest private employer, ~1,800). Essex Westford School District is Niche B+ (#6 in Vermont) and #1 in the state for athletes. Homes run ~$435K-$480K, projecting to ~$666K by 2041 - ~$111K under a ~$778K planned-path budget. Burlington-area 3BR rents run ~$2,600-$2,700. Vermont's progressive income tax (3.35%-8.75%) costs roughly $3,500/yr more than Tennessee's zero at today's household income, rising to ~$12,000/yr at the 2041 planned income. No Kendra Scott store was found in Vermont; the nearest confirmed is Burlington, Massachusetts (~3.5 hours).",
       "risks": [
         "Vermont income tax up to 8.75%",
         "No Kendra Scott store in the state",
@@ -7787,7 +7951,7 @@
       ]
     },
     {
-      "rank": 93,
+      "rank": 95,
       "area": "Highlands Ranch",
       "state": "Colorado",
       "state_abbr": "CO",
@@ -7849,7 +8013,7 @@
       ]
     },
     {
-      "rank": 94,
+      "rank": 96,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -7941,7 +8105,7 @@
       "weighted_total_career_max_scenario": 64.9
     },
     {
-      "rank": 95,
+      "rank": 97,
       "area": "Milton",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -8002,7 +8166,191 @@
       ]
     },
     {
-      "rank": 96,
+      "rank": 98,
+      "area": "Natick",
+      "state": "Massachusetts",
+      "state_abbr": "MA",
+      "metro": "boston",
+      "coords": [
+        42.2835,
+        -71.3495
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "MetroWest Boston - MathWorks HQ, Kendra Scott in town, Babson next door - far over budget",
+      "scores": {
+        "ai_tech_pm_market": 9.0,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 2.0,
+        "rental_feasibility_2028": 3.5,
+        "state_tax_burden": 5.0,
+        "aacsb_university_proximity": 10.0,
+        "robotics_fitness_startup_fit": 9.5,
+        "hs_football_culture": 6.5,
+        "private_school_access": 9.5,
+        "sports_tech_ecosystem": 8.0
+      },
+      "budget_check": {
+        "price_2026": 899000,
+        "price_source": "Redfin 3-month median $899K (Aug 2026); Zillow $898,769",
+        "proj_2041": 1302020,
+        "property_tax_effective_pct": 1.1,
+        "property_tax_source": "Natick ~$12-13 per $1,000 assessed (~1.1% effective; estimate)",
+        "insurance_state_avg_annual": 2608,
+        "budget_2041_planned": 836718,
+        "budget_2041_no_stepup": 643283,
+        "budget_2041_ai_leader": 1062817,
+        "headroom_planned": -465302,
+        "headroom_no_stepup": -658737,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "MetroWest Boston suburb that is home to MathWorks, with Natick Public Schools (Niche A), a Kendra Scott at the Natick Mall and Babson College next door. Homes run ~$899K, projecting to ~$1,302K by 2041 - ~$465K over a ~$837K planned-path budget. 3BR rents run ~$3,600-$4,000. Massachusetts income tax costs roughly $4,800/yr more than Tennessee's zero at today's household income, rising to ~$11,000/yr at the 2041 planned income. Kendra Scott: Natick Mall.",
+      "risks": [
+        "About $900K homes - far over the planned-path budget",
+        "Rent above the ceiling",
+        "Massachusetts income tax 5%"
+      ],
+      "weighted_total_out_of_100": 64.1,
+      "weighted_total_private_scenario": 65.1,
+      "weighted_total_career_max_scenario": 65.55,
+      "sources": [
+        "https://www.redfin.com/city/29757/MA/Natick/housing-market",
+        "https://www.natickps.org/",
+        "https://www.natickreport.com/2024/12/natick-business-openings-hot-doogy-and-kendra-scott-at-the-mall/"
+      ]
+    },
+    {
+      "rank": 99,
+      "area": "Ellicott City / Columbia (Howard County)",
+      "state": "Maryland",
+      "state_abbr": "MD",
+      "metro": "baltimore",
+      "coords": [
+        39.2673,
+        -76.7983
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Howard County schools between Baltimore and DC - Kendra Scott in Columbia, heavy income tax",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 3.5,
+        "rental_feasibility_2028": 5.0,
+        "state_tax_burden": 3.5,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 7.0,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 7.5
+      },
+      "budget_check": {
+        "price_2026": 747000,
+        "price_source": "Six-month closed median $747K (Resideline, Ellicott City)",
+        "proj_2041": 1081879,
+        "property_tax_effective_pct": 1.2,
+        "property_tax_source": "Howard County ~1.0% + state levy (~1.2% effective; estimate)",
+        "insurance_state_avg_annual": 2592,
+        "budget_2041_planned": 826250,
+        "budget_2041_no_stepup": 635236,
+        "budget_2041_ai_leader": 1049522,
+        "headroom_planned": -255628,
+        "headroom_no_stepup": -446643,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Howard County suburbs between Baltimore and Washington with Howard County Public Schools (Niche A, among Maryland's best) and a Kendra Scott at The Mall in Columbia. Homes close around ~$747K, projecting to ~$1,082K by 2041 - ~$256K over a ~$826K planned-path budget. 3BR rents run ~$2,900-$3,200. Maryland income tax (plus Howard County income tax, 3.2%) costs roughly $7,900/yr more than Tennessee's zero at today's household income, rising to ~$18,000/yr at the 2041 planned income. Kendra Scott: Columbia - The Mall in Columbia.",
+      "risks": [
+        "Over the planned-path budget",
+        "Maryland state plus 3.2% county income tax",
+        "Rent above the ceiling"
+      ],
+      "weighted_total_out_of_100": 63.9,
+      "weighted_total_private_scenario": 63.9,
+      "weighted_total_career_max_scenario": 64.1,
+      "sources": [
+        "https://resideline.com/blog/ellicott-city-md-housing-market",
+        "https://www.hcpss.org/"
+      ]
+    },
+    {
+      "rank": 100,
+      "area": "West Hartford",
+      "state": "Connecticut",
+      "state_abbr": "CT",
+      "metro": "hartford",
+      "coords": [
+        41.7621,
+        -72.742
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "15 minutes from ESPN headquarters - strong schools, heavy property tax",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 4.5,
+        "rental_feasibility_2028": 6.0,
+        "state_tax_burden": 4.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 6.5,
+        "hs_football_culture": 6.0,
+        "private_school_access": 8.5,
+        "sports_tech_ecosystem": 8.0
+      },
+      "budget_check": {
+        "price_2026": 572000,
+        "price_source": "Redfin 3-month median sale $572K (Jul 2026)",
+        "proj_2041": 828427,
+        "property_tax_effective_pct": 2.2,
+        "property_tax_source": "West Hartford mill rate ~42 on 70% assessment (~2.2% effective; estimate)",
+        "insurance_state_avg_annual": 2640,
+        "budget_2041_planned": 731112,
+        "budget_2041_no_stepup": 562092,
+        "budget_2041_ai_leader": 928674,
+        "headroom_planned": -97315,
+        "headroom_no_stepup": -266335,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Walkable Hartford suburb with West Hartford Public Schools (Niche A), ~15 miles from ESPN's Bristol headquarters and near Travelers and Aetna. Homes sell around ~$572K, projecting to ~$828K by 2041 - ~$97K over a ~$731K planned-path budget. 3BR rents run ~$2,600-$2,800. Connecticut income tax costs roughly $4,300/yr more than Tennessee's zero at today's household income, rising to ~$11,600/yr at the 2041 planned income. No Kendra Scott store was found in Connecticut; the nearest confirmed is Natick, MA (~1.5 hours).",
+      "risks": [
+        "Property tax ~2.2%",
+        "Connecticut income tax up to 6.99%",
+        "No Kendra Scott store confirmed in Connecticut"
+      ],
+      "weighted_total_out_of_100": 63.7,
+      "weighted_total_private_scenario": 63.7,
+      "weighted_total_career_max_scenario": 62.05,
+      "sources": [
+        "https://www.redfin.com/city/26659/CT/West-Hartford/housing-market",
+        "https://www.whps.org/"
+      ]
+    },
+    {
+      "rank": 101,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -8107,7 +8455,7 @@
       "weighted_total_career_max_scenario": 65.3
     },
     {
-      "rank": 97,
+      "rank": 102,
       "area": "Hinsdale / Western Springs",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -8169,7 +8517,7 @@
       ]
     },
     {
-      "rank": 98,
+      "rank": 103,
       "area": "West Linn",
       "state": "Oregon",
       "state_abbr": "OR",
@@ -8215,7 +8563,7 @@
         "assessment": "Private options not researched in detail for this location.",
         "verified": false
       },
-      "notes": "Riverside suburb south of Portland in West Linn-Wilsonville School District (Niche A, #3 in Oregon), ~25 minutes from Nike in Beaverton and adidas North America. Homes are valued at ~$775K, projecting to ~$1,122K by 2041 - ~$256K over a ~$866K planned-path budget. 3BR rents average ~$2,900. Oregon income tax (plus Oregon statewide transit tax, 0.1% of wages) costs roughly $8,200/yr more than Tennessee's zero at today's household income, rising to ~$19,200/yr at the 2041 planned income. There is no Kendra Scott store in Oregon; the nearest is Bellevue Square in Washington (~3 hours); none confirmed in Oregon.",
+      "notes": "Riverside suburb south of Portland in West Linn-Wilsonville School District (Niche A, #3 in Oregon), ~25 minutes from Nike in Beaverton and adidas North America. Homes are valued at ~$775K, projecting to ~$1,122K by 2041 - ~$256K over a ~$866K planned-path budget. 3BR rents average ~$2,900. Oregon income tax (plus Oregon statewide transit tax, 0.1% of wages) costs roughly $8,200/yr more than Tennessee's zero at today's household income, rising to ~$19,200/yr at the 2041 planned income. No Kendra Scott store was found in Oregon; the nearest confirmed is Bellevue Square in Washington (~3 hours).",
       "risks": [
         "Over the planned-path budget",
         "Oregon income tax up to 9.9% plus Metro SHS on high earners",
@@ -8231,7 +8579,70 @@
       ]
     },
     {
-      "rank": 99,
+      "rank": 104,
+      "area": "Bedford",
+      "state": "New Hampshire",
+      "state_abbr": "NH",
+      "metro": "manchester",
+      "coords": [
+        42.9465,
+        -71.5159
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "No income tax and NH's top schools, an hour from Boston - over budget",
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 2.5,
+        "rental_feasibility_2028": 5.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 6.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 6.0,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 5.0
+      },
+      "budget_check": {
+        "price_2026": 811000,
+        "price_source": "Six-month closed median $811K (Resideline, Sept 2026); spring 2026 ~$882K",
+        "proj_2041": 1174570,
+        "property_tax_effective_pct": 1.5,
+        "property_tax_source": "Bedford ~$15-17 per $1,000 (~1.5% effective; estimate)",
+        "insurance_state_avg_annual": 1584,
+        "budget_2041_planned": 814589,
+        "budget_2041_no_stepup": 626271,
+        "budget_2041_ai_leader": 1034709,
+        "headroom_planned": -359981,
+        "headroom_no_stepup": -548299,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Manchester suburb with Bedford School District (among New Hampshire's best), about an hour from Boston's tech corridor. Homes close around ~$811K, projecting to ~$1,175K by 2041 - ~$360K over a ~$815K planned-path budget. 3BR rents run ~$2,800-$3,200. New Hampshire has no state income tax on wages, like Tennessee. No Kendra Scott store was found in New Hampshire; the nearest confirmed is Natick, MA (~1 hour).",
+      "risks": [
+        "Over the planned-path budget",
+        "Property tax ~1.5%",
+        "Boston-area jobs mean a long commute",
+        "No Kendra Scott store in New Hampshire"
+      ],
+      "weighted_total_out_of_100": 62.2,
+      "weighted_total_private_scenario": 59.2,
+      "weighted_total_career_max_scenario": 63.35,
+      "sources": [
+        "https://resideline.com/blog/bedford-nh-housing-market",
+        "https://www.teamphinney.com/blog/moving-to-bedford-nh-2026-guide",
+        "https://www.sau25.net/"
+      ]
+    },
+    {
+      "rank": 105,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -8335,7 +8746,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 100,
+      "rank": 106,
       "area": "South Burlington",
       "state": "Vermont",
       "state_abbr": "VT",
@@ -8381,7 +8792,7 @@
         "assessment": "Private options not researched in detail for this location.",
         "verified": false
       },
-      "notes": "Vermont's largest suburb, home to Beta Technologies and Ben & Jerry's headquarters and minutes from Burlington, UVM and the Burlington airport. South Burlington School District is Niche #3 in Vermont. Homes run ~$472K-$713K depending on the mix, projecting to ~$869K by 2041 at a ~$600K working figure - ~$93K over a ~$776K planned-path budget at ~1.9% property tax. 3BR rents run ~$2,400-$2,900. Vermont's progressive income tax (3.35%-8.75%) costs roughly $3,500/yr more than Tennessee's zero at today's household income, rising to ~$12,000/yr at the 2041 planned income. There is no Kendra Scott store in Vermont; the nearest is Burlington, Massachusetts (~3.5 hours).",
+      "notes": "Vermont's largest suburb, home to Beta Technologies and Ben & Jerry's headquarters and minutes from Burlington, UVM and the Burlington airport. South Burlington School District is Niche #3 in Vermont. Homes run ~$472K-$713K depending on the mix, projecting to ~$869K by 2041 at a ~$600K working figure - ~$93K over a ~$776K planned-path budget at ~1.9% property tax. 3BR rents run ~$2,400-$2,900. Vermont's progressive income tax (3.35%-8.75%) costs roughly $3,500/yr more than Tennessee's zero at today's household income, rising to ~$12,000/yr at the 2041 planned income. No Kendra Scott store was found in Vermont; the nearest confirmed is Burlington, Massachusetts (~3.5 hours).",
       "risks": [
         "Vermont income tax up to 8.75% - the second-heaviest state tax in the matrix after New Jersey",
         "No Kendra Scott store in the state",
@@ -8399,7 +8810,7 @@
       ]
     },
     {
-      "rank": 101,
+      "rank": 107,
       "area": "Bozeman",
       "state": "Montana",
       "state_abbr": "MT",
@@ -8445,7 +8856,7 @@
         "assessment": "Private options not researched in detail for this location.",
         "verified": false
       },
-      "notes": "Montana State's college town and the state's tech hub (Oracle's former RightNow campus, outdoor brands such as Simms). Bozeman School District is among Montana's strongest. Homes are valued at ~$725K, projecting to ~$1,050K by 2041 - ~$193K over a ~$857K planned-path budget. 3BR rents run ~$2,900. Montana income tax costs roughly $3,400/yr more than Tennessee's zero at today's household income, rising to ~$10,200/yr at the 2041 planned income. There is no Kendra Scott store in Montana; the nearest is Denver area (~10 hours by car); none found in Montana.",
+      "notes": "Montana State's college town and the state's tech hub (Oracle's former RightNow campus, outdoor brands such as Simms). Bozeman School District is among Montana's strongest. Homes are valued at ~$725K, projecting to ~$1,050K by 2041 - ~$193K over a ~$857K planned-path budget. 3BR rents run ~$2,900. Montana income tax costs roughly $3,400/yr more than Tennessee's zero at today's household income, rising to ~$10,200/yr at the 2041 planned income. No Kendra Scott store was found in Montana; the nearest confirmed is Park Meadows in the Denver area (~10 hours by car).",
       "risks": [
         "Over the planned-path budget",
         "Small job market",
@@ -8462,7 +8873,7 @@
       ]
     },
     {
-      "rank": 102,
+      "rank": 108,
       "area": "Shelburne / Williston",
       "state": "Vermont",
       "state_abbr": "VT",
@@ -8508,7 +8919,7 @@
         "assessment": "Private options not researched in detail for this location.",
         "verified": false
       },
-      "notes": "Lakeside Shelburne and suburban Williston south and east of Burlington, served by Champlain Valley Unified School District (Niche #2 in Vermont). Homes run ~$592K-$787K, projecting to ~$985K by 2041 at a ~$680K working figure - ~$207K over a ~$778K planned-path budget. Burlington-area 3BR rents average ~$2,700. Vermont's progressive income tax (3.35%-8.75%) costs roughly $3,500/yr more than Tennessee's zero at today's household income, rising to ~$12,000/yr at the 2041 planned income. There is no Kendra Scott store in Vermont; the nearest is Burlington, Massachusetts (~3.5 hours).",
+      "notes": "Lakeside Shelburne and suburban Williston south and east of Burlington, served by Champlain Valley Unified School District (Niche #2 in Vermont). Homes run ~$592K-$787K, projecting to ~$985K by 2041 at a ~$680K working figure - ~$207K over a ~$778K planned-path budget. Burlington-area 3BR rents average ~$2,700. Vermont's progressive income tax (3.35%-8.75%) costs roughly $3,500/yr more than Tennessee's zero at today's household income, rising to ~$12,000/yr at the 2041 planned income. No Kendra Scott store was found in Vermont; the nearest confirmed is Burlington, Massachusetts (~3.5 hours).",
       "risks": [
         "Over the planned-path budget",
         "Rent above the ceiling",
@@ -8527,7 +8938,69 @@
       ]
     },
     {
-      "rank": 103,
+      "rank": 109,
+      "area": "Barrington",
+      "state": "Rhode Island",
+      "state_abbr": "RI",
+      "metro": "providence",
+      "coords": [
+        41.7407,
+        -71.3087
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Rhode Island's #1 school district on the bay - far over budget, small job market",
+      "scores": {
+        "ai_tech_pm_market": 5.5,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 1.5,
+        "rental_feasibility_2028": 5.0,
+        "state_tax_burden": 5.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 6.0,
+        "hs_football_culture": 5.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 6.0
+      },
+      "budget_check": {
+        "price_2026": 900000,
+        "price_source": "Redfin 3-month median $942K (Aug 2026, up 34.6% - likely skewed); working figure $900K",
+        "proj_2041": 1303468,
+        "property_tax_effective_pct": 1.6,
+        "property_tax_source": "Barrington ~1.6% effective (estimate)",
+        "insurance_state_avg_annual": 3152,
+        "budget_2041_planned": 775728,
+        "budget_2041_no_stepup": 596393,
+        "budget_2041_ai_leader": 985347,
+        "headroom_planned": -527740,
+        "headroom_no_stepup": -707075,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Bayside suburb ~10 miles from Providence with Barrington Public Schools (among Rhode Island's best). Homes have recently sold around ~$942K (a $900K working figure is used), projecting to ~$1,303K by 2041 - ~$528K over a ~$776K planned-path budget. 3BR rents run ~$2,800-$3,200. Rhode Island income tax costs roughly $2,800/yr more than Tennessee's zero at today's household income, rising to ~$8,800/yr at the 2041 planned income. No Kendra Scott store was found in Rhode Island; the nearest confirmed is Natick, MA (~1 hour).",
+      "risks": [
+        "Far over the planned-path budget",
+        "Small job market",
+        "No Kendra Scott store in Rhode Island",
+        "Coastal flood exposure"
+      ],
+      "weighted_total_out_of_100": 56.7,
+      "weighted_total_private_scenario": 53.7,
+      "weighted_total_career_max_scenario": 55.95,
+      "sources": [
+        "https://www.redfin.com/city/35729/RI/Barrington/housing-market",
+        "https://www.bpsri.net/"
+      ]
+    },
+    {
+      "rank": 110,
       "area": "Irvine",
       "state": "California",
       "state_abbr": "CA",
@@ -8590,7 +9063,7 @@
       ]
     },
     {
-      "rank": 104,
+      "rank": 111,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -8690,7 +9163,69 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 105,
+      "rank": 112,
+      "area": "Falmouth",
+      "state": "Maine",
+      "state_abbr": "ME",
+      "metro": "portland_me",
+      "coords": [
+        43.729,
+        -70.242
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Maine's top school district outside Portland - far over budget, no Kendra Scott",
+      "scores": {
+        "ai_tech_pm_market": 5.0,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 2.0,
+        "rental_feasibility_2028": 5.0,
+        "state_tax_burden": 4.0,
+        "aacsb_university_proximity": 6.5,
+        "robotics_fitness_startup_fit": 5.5,
+        "hs_football_culture": 4.5,
+        "private_school_access": 7.0,
+        "sports_tech_ecosystem": 5.0
+      },
+      "budget_check": {
+        "price_2026": 910000,
+        "price_source": "Zillow typical value $910,067 (Jul 2026)",
+        "proj_2041": 1317951,
+        "property_tax_effective_pct": 1.3,
+        "property_tax_source": "Falmouth ~1.3% effective (estimate)",
+        "insurance_state_avg_annual": 1600,
+        "budget_2041_planned": 835517,
+        "budget_2041_no_stepup": 642360,
+        "budget_2041_ai_leader": 1061293,
+        "headroom_planned": -482434,
+        "headroom_no_stepup": -675591,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Coastal suburb just north of Portland with Falmouth Public Schools (among Maine's best), between IDEXX in Westbrook and L.L.Bean in Freeport. Homes are valued around ~$910K, projecting to ~$1,318K by 2041 - ~$482K over a ~$836K planned-path budget. 3BR rents run ~$2,800-$3,200. Maine income tax costs roughly $4,400/yr more than Tennessee's zero at today's household income, rising to ~$13,100/yr at the 2041 planned income. No Kendra Scott store was found in Maine; the nearest confirmed is Natick, MA (~2 hours).",
+      "risks": [
+        "Far over the planned-path budget",
+        "Small job market",
+        "Maine income tax up to 7.15%",
+        "No Kendra Scott store in Maine"
+      ],
+      "weighted_total_out_of_100": 53.5,
+      "weighted_total_private_scenario": 48.5,
+      "weighted_total_career_max_scenario": 53.15,
+      "sources": [
+        "https://www.zillow.com/home-values/35607/falmouth-me/",
+        "https://www.falmouthschools.org/"
+      ]
+    },
+    {
+      "rank": 113,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -8826,6 +9361,9 @@
       "Madison / Huntsville",
       "Auburn / Opelika"
     ],
+    "Pennsylvania": [
+      "Cranberry Township"
+    ],
     "Iowa": [
       "West Des Moines",
       "Waukee"
@@ -8887,6 +9425,9 @@
     "Nebraska": [
       "Elkhorn"
     ],
+    "New York": [
+      "Pittsford"
+    ],
     "Washington": [
       "Bothell / Mill Creek"
     ],
@@ -8897,11 +9438,26 @@
     "Colorado": [
       "Highlands Ranch"
     ],
+    "Massachusetts": [
+      "Natick"
+    ],
+    "Maryland": [
+      "Ellicott City / Columbia (Howard County)"
+    ],
+    "Connecticut": [
+      "West Hartford"
+    ],
     "Oregon": [
       "West Linn"
     ],
+    "New Hampshire": [
+      "Bedford"
+    ],
     "Montana": [
       "Bozeman"
+    ],
+    "Rhode Island": [
+      "Barrington"
     ],
     "California": [
       "Irvine"
@@ -8909,6 +9465,9 @@
     "New Jersey": [
       "Jersey City",
       "Newport (Jersey City)"
+    ],
+    "Maine": [
+      "Falmouth"
     ]
   },
   "category_winners": {
@@ -8983,6 +9542,7 @@
       "Hendersonville",
       "Oldham County (Crestwood / La Grange)",
       "Gilbert",
+      "Cranberry Township",
       "West Des Moines",
       "Schertz / Cibolo (SCUC ISD)",
       "Buford (Buford City Schools)",
@@ -9053,21 +9613,28 @@
       "Charlottesville (Albemarle County)",
       "Elkhorn",
       "Farragut",
+      "Pittsford",
       "Bothell / Mill Creek",
       "Alamo Heights",
       "Essex / Essex Junction",
       "Highlands Ranch",
       "Waxhaw",
       "Milton",
+      "Natick",
+      "Ellicott City / Columbia (Howard County)",
+      "West Hartford",
       "Germantown (Nashville)",
       "Hinsdale / Western Springs",
       "West Linn",
+      "Bedford",
       "Leesburg / Ashburn",
       "South Burlington",
       "Bozeman",
       "Shelburne / Williston",
+      "Barrington",
       "Irvine",
       "Jersey City",
+      "Falmouth",
       "Newport (Jersey City)"
     ]
   },
@@ -9269,56 +9836,56 @@
           },
           {
             "area": "Schertz / Cibolo (SCUC ISD)",
-            "rank": 27,
+            "rank": 28,
             "rental_feasibility_2028": 8.5,
             "school_quality": 6.5,
             "weighted_total_out_of_100": 76.8
           },
           {
             "area": "Greensboro (City)",
-            "rank": 32,
+            "rank": 33,
             "rental_feasibility_2028": 9.0,
             "school_quality": 6.0,
             "weighted_total_out_of_100": 75.9
           },
           {
             "area": "Crowley / North Crowley (SW Fort Worth)",
-            "rank": 35,
+            "rank": 36,
             "rental_feasibility_2028": 9.0,
             "school_quality": 4.0,
             "weighted_total_out_of_100": 75.4
           },
           {
             "area": "Lakeland",
-            "rank": 46,
+            "rank": 47,
             "rental_feasibility_2028": 9,
             "school_quality": 5.5,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Davenport / Four Corners",
-            "rank": 52,
+            "rank": 53,
             "rental_feasibility_2028": 8.5,
             "school_quality": 4,
             "weighted_total_out_of_100": 73.7
           },
           {
             "area": "Cheyenne",
-            "rank": 64,
+            "rank": 65,
             "rental_feasibility_2028": 8.5,
             "school_quality": 6.5,
             "weighted_total_out_of_100": 71.5
           },
           {
             "area": "McDonough / Locust Grove (Henry County)",
-            "rank": 70,
+            "rank": 71,
             "rental_feasibility_2028": 8.0,
             "school_quality": 6.0,
             "weighted_total_out_of_100": 70.8
           },
           {
             "area": "Lovejoy / Hampton (Clayton / Henry)",
-            "rank": 74,
+            "rank": 75,
             "rental_feasibility_2028": 9.0,
             "school_quality": 4.5,
             "weighted_total_out_of_100": 69.0
@@ -9331,7 +9898,7 @@
         "locations": [
           {
             "area": "Prosper",
-            "rank": 65,
+            "rank": 66,
             "school_quality": 9.0,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 2.0,
@@ -9340,7 +9907,7 @@
           },
           {
             "area": "Lucas (Lovejoy ISD)",
-            "rank": 68,
+            "rank": 69,
             "school_quality": 9.5,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 1.0,
@@ -9349,7 +9916,7 @@
           },
           {
             "area": "Milton",
-            "rank": 95,
+            "rank": 97,
             "school_quality": 9.0,
             "rental_feasibility_2028": 7.0,
             "housing_affordability_2041": 1.0,
@@ -9455,70 +10022,70 @@
           },
           {
             "area": "West Des Moines",
-            "rank": 26,
+            "rank": 27,
             "rental_feasibility_2028": 9.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 76.8
           },
           {
             "area": "Stone Oak (North San Antonio)",
-            "rank": 29,
+            "rank": 30,
             "rental_feasibility_2028": 8.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 76.5
           },
           {
             "area": "Fort Mill",
-            "rank": 31,
+            "rank": 32,
             "rental_feasibility_2028": 8,
             "school_quality": 9,
             "weighted_total_out_of_100": 76.0
           },
           {
             "area": "Olathe (Garmin HQ)",
-            "rank": 33,
+            "rank": 34,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 75.6
           },
           {
             "area": "Chesapeake / Virginia Beach (Hampton Roads)",
-            "rank": 42,
+            "rank": 43,
             "rental_feasibility_2028": 8.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 74.6
           },
           {
             "area": "Cumming (Forsyth County)",
-            "rank": 47,
+            "rank": 48,
             "rental_feasibility_2028": 7.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Roanoke (Roanoke County)",
-            "rank": 50,
+            "rank": 51,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.9
           },
           {
             "area": "Waukee",
-            "rank": 53,
+            "rank": 54,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.4
           },
           {
             "area": "Draper",
-            "rank": 66,
+            "rank": 67,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 71.1
           },
           {
             "area": "Farragut",
-            "rank": 89,
+            "rank": 90,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 66.6
@@ -9553,178 +10120,227 @@
           },
           {
             "area": "Frisco",
-            "rank": 30,
+            "rank": 31,
             "rental_feasibility_2028": 5.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 76.4
           },
           {
             "area": "Suwanee / Peachtree Corners",
-            "rank": 45,
+            "rank": 46,
             "rental_feasibility_2028": 6,
             "school_quality": 9,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Alpharetta / Johns Creek",
-            "rank": 56,
+            "rank": 57,
             "rental_feasibility_2028": 6,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 73.2
           },
           {
             "area": "Carmel",
-            "rank": 58,
+            "rank": 59,
             "rental_feasibility_2028": 6.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 72.8
           },
           {
             "area": "Lake Nona",
-            "rank": 59,
+            "rank": 60,
             "rental_feasibility_2028": 5.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 72.6
           },
           {
             "area": "Peachtree City / Fayetteville (Fayette County)",
-            "rank": 62,
+            "rank": 63,
             "rental_feasibility_2028": 6.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 71.7
           },
           {
             "area": "Novi",
-            "rank": 63,
+            "rank": 64,
             "rental_feasibility_2028": 6.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 71.7
           },
           {
             "area": "Naperville",
-            "rank": 72,
+            "rank": 73,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 70.1
           },
           {
             "area": "Thompson's Station",
-            "rank": 77,
+            "rank": 78,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 68.2
           },
           {
             "area": "Decatur (City Schools of Decatur)",
-            "rank": 79,
+            "rank": 80,
             "rental_feasibility_2028": 3.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 68.0
           },
           {
             "area": "Fairfax / Vienna (Fairfax County)",
-            "rank": 80,
+            "rank": 81,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.9
           },
           {
             "area": "Scottsdale",
-            "rank": 81,
+            "rank": 82,
             "rental_feasibility_2028": 4.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.7
           },
           {
             "area": "Eden Prairie",
-            "rank": 82,
+            "rank": 83,
             "rental_feasibility_2028": 6.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 67.7
           },
           {
             "area": "Brookfield / Elm Grove",
-            "rank": 83,
+            "rank": 84,
             "rental_feasibility_2028": 6.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.7
           },
           {
             "area": "Franklin",
-            "rank": 86,
+            "rank": 87,
             "rental_feasibility_2028": 3.5,
             "school_quality": 9,
             "weighted_total_out_of_100": 67.4
           },
           {
             "area": "Charlottesville (Albemarle County)",
-            "rank": 87,
+            "rank": 88,
             "rental_feasibility_2028": 6.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 67.3
           },
           {
+            "area": "Pittsford",
+            "rank": 91,
+            "rental_feasibility_2028": 6.5,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 66.5
+          },
+          {
             "area": "Bothell / Mill Creek",
-            "rank": 90,
+            "rank": 92,
             "rental_feasibility_2028": 4.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 66.4
           },
           {
             "area": "Alamo Heights",
-            "rank": 91,
+            "rank": 93,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 65.8
           },
           {
             "area": "Waxhaw",
-            "rank": 94,
+            "rank": 96,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 64.7
           },
           {
+            "area": "Natick",
+            "rank": 98,
+            "rental_feasibility_2028": 3.5,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 64.1
+          },
+          {
+            "area": "Ellicott City / Columbia (Howard County)",
+            "rank": 99,
+            "rental_feasibility_2028": 5.0,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 63.9
+          },
+          {
+            "area": "West Hartford",
+            "rank": 100,
+            "rental_feasibility_2028": 6.0,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 63.7
+          },
+          {
             "area": "Hinsdale / Western Springs",
-            "rank": 97,
+            "rank": 102,
             "rental_feasibility_2028": 4.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 63.4
           },
           {
             "area": "West Linn",
-            "rank": 98,
+            "rank": 103,
             "rental_feasibility_2028": 5.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 62.9
           },
           {
+            "area": "Bedford",
+            "rank": 104,
+            "rental_feasibility_2028": 5.0,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 62.2
+          },
+          {
             "area": "Leesburg / Ashburn",
-            "rank": 99,
+            "rank": 105,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 61.6
           },
           {
             "area": "South Burlington",
-            "rank": 100,
+            "rank": 106,
             "rental_feasibility_2028": 6.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 61.6
           },
           {
             "area": "Shelburne / Williston",
-            "rank": 102,
+            "rank": 108,
             "rental_feasibility_2028": 5.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 58.9
           },
           {
+            "area": "Barrington",
+            "rank": 109,
+            "rental_feasibility_2028": 5.0,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 56.7
+          },
+          {
             "area": "Irvine",
-            "rank": 103,
+            "rank": 110,
             "rental_feasibility_2028": 1.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 55.4
+          },
+          {
+            "area": "Falmouth",
+            "rank": 112,
+            "rental_feasibility_2028": 5.0,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 53.5
           }
         ]
       }
@@ -10713,6 +11329,192 @@
       "SD": {
         "type": "none",
         "note": "No state income tax."
+      },
+      "NY": {
+        "type": "brackets",
+        "deduction": 16050,
+        "brackets": [
+          [
+            17150,
+            0.04
+          ],
+          [
+            23600,
+            0.045
+          ],
+          [
+            27900,
+            0.0525
+          ],
+          [
+            161550,
+            0.055
+          ],
+          [
+            323200,
+            0.06
+          ],
+          [
+            2155350,
+            0.0685
+          ],
+          [
+            5000000,
+            0.0965
+          ],
+          [
+            25000000,
+            0.103
+          ],
+          [
+            null,
+            0.109
+          ]
+        ],
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+        "note": "2025 MFJ brackets and $16,050 standard deduction; the 2026 budget trims the lower rates slightly. Verify with NY DTF."
+      },
+      "MA": {
+        "type": "flat",
+        "rate": 0.05,
+        "deduction": 8800,
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+        "note": "Flat 5% plus a 4% surtax on income over ~$1.08M (not reached here); $8,800 MFJ personal exemption. MA PFML payroll contribution is not modeled."
+      },
+      "CT": {
+        "type": "brackets",
+        "deduction": 0,
+        "brackets": [
+          [
+            20000,
+            0.02
+          ],
+          [
+            100000,
+            0.045
+          ],
+          [
+            160000,
+            0.055
+          ],
+          [
+            200000,
+            0.06
+          ],
+          [
+            400000,
+            0.065
+          ],
+          [
+            1000000,
+            0.069
+          ],
+          [
+            null,
+            0.0699
+          ]
+        ],
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+        "note": "2% / 4.5% / 5.5% / 6% / 6.5% / 6.9% / 6.99% MFJ. The personal exemption phases out to zero at this income and benefit-recapture rules are not modeled."
+      },
+      "RI": {
+        "type": "brackets",
+        "deduction": 31350,
+        "brackets": [
+          [
+            79900,
+            0.0375
+          ],
+          [
+            181650,
+            0.0475
+          ],
+          [
+            null,
+            0.0599
+          ]
+        ],
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+        "note": "3.75% / 4.75% / 5.99% (2025 thresholds, same for all filers); deduction is the ~$21,150 MFJ standard deduction plus two exemptions (approximate)."
+      },
+      "NH": {
+        "type": "none",
+        "note": "No tax on wages; the interest-and-dividends tax was repealed for 2025."
+      },
+      "ME": {
+        "type": "brackets",
+        "deduction": 32200,
+        "brackets": [
+          [
+            52100,
+            0.058
+          ],
+          [
+            123250,
+            0.0675
+          ],
+          [
+            null,
+            0.0715
+          ]
+        ],
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+        "note": "5.8% / 6.75% / 7.15% (2025 MFJ thresholds); Maine follows the federal standard deduction. Exemptions phase out at this income."
+      },
+      "PA": {
+        "type": "flat",
+        "rate": 0.0307,
+        "deduction": 0,
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+        "note": "Flat 3.07% with no standard deduction. Local earned-income tax is modeled separately."
+      },
+      "MD": {
+        "type": "brackets",
+        "deduction": 8300,
+        "brackets": [
+          [
+            1000,
+            0.02
+          ],
+          [
+            2000,
+            0.03
+          ],
+          [
+            3000,
+            0.04
+          ],
+          [
+            150000,
+            0.0475
+          ],
+          [
+            175000,
+            0.05
+          ],
+          [
+            225000,
+            0.0525
+          ],
+          [
+            300000,
+            0.055
+          ],
+          [
+            600000,
+            0.0575
+          ],
+          [
+            1200000,
+            0.0625
+          ],
+          [
+            null,
+            0.065
+          ]
+        ],
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+        "note": "2025 law: MFJ brackets 2%-5.75% plus new 6.25% / 6.5% top brackets; flat $6,700 standard deduction plus reduced exemptions (approximate). County income tax is modeled separately."
       }
     },
     "local_by_metro": {
@@ -10750,6 +11552,16 @@
         "rate": 0.011,
         "note": "Hamilton County income tax, 1.10%",
         "source": "https://www.in.gov/dor/files/dn01.pdf"
+      },
+      "pittsburgh": {
+        "rate": 0.01,
+        "note": "Cranberry Township / Seneca Valley earned-income tax, ~1.0%",
+        "source": "https://www.cranberrytownship.org/"
+      },
+      "baltimore": {
+        "rate": 0.032,
+        "note": "Howard County income tax, 3.2%",
+        "source": "https://www.marylandcomptroller.gov/individuals/taxes/local-tax-rates.html"
       }
     },
     "metro_state": {
@@ -10801,7 +11613,15 @@
       "st_louis": "MO",
       "omaha": "NE",
       "fargo": "ND",
-      "sioux_falls": "SD"
+      "sioux_falls": "SD",
+      "rochester": "NY",
+      "boston": "MA",
+      "hartford": "CT",
+      "providence": "RI",
+      "manchester": "NH",
+      "portland_me": "ME",
+      "pittsburgh": "PA",
+      "baltimore": "MD"
     }
   },
   "metros": [
@@ -10835,22 +11655,22 @@
         },
         {
           "area": "Mount Juliet",
-          "rank": 38,
+          "rank": 39,
           "score": 75.2
         },
         {
           "area": "Thompson's Station",
-          "rank": 77,
+          "rank": 78,
           "score": 68.2
         },
         {
           "area": "Franklin",
-          "rank": 86,
+          "rank": 87,
           "score": 67.4
         },
         {
           "area": "Germantown (Nashville)",
-          "rank": 96,
+          "rank": 101,
           "score": 63.5
         }
       ],
@@ -11061,7 +11881,7 @@
         },
         {
           "area": "Austin (City Proper)",
-          "rank": 40,
+          "rank": 41,
           "score": 75.0
         }
       ],
@@ -11249,22 +12069,22 @@
         },
         {
           "area": "Schertz / Cibolo (SCUC ISD)",
-          "rank": 27,
+          "rank": 28,
           "score": 76.8
         },
         {
           "area": "Stone Oak (North San Antonio)",
-          "rank": 29,
+          "rank": 30,
           "score": 76.5
         },
         {
           "area": "Boerne",
-          "rank": 71,
+          "rank": 72,
           "score": 70.5
         },
         {
           "area": "Alamo Heights",
-          "rank": 91,
+          "rank": 93,
           "score": 65.8
         }
       ],
@@ -11418,7 +12238,7 @@
         },
         {
           "area": "Scottsdale",
-          "rank": 81,
+          "rank": 82,
           "score": 67.7
         }
       ],
@@ -11571,17 +12391,17 @@
       "locations": [
         {
           "area": "Lehi",
-          "rank": 34,
+          "rank": 35,
           "score": 75.6
         },
         {
           "area": "Draper",
-          "rank": 66,
+          "rank": 67,
           "score": 71.1
         },
         {
           "area": "South Jordan / Herriman",
-          "rank": 69,
+          "rank": 70,
           "score": 70.8
         }
       ],
@@ -11728,22 +12548,22 @@
       "locations": [
         {
           "area": "Arlington Heights",
-          "rank": 57,
+          "rank": 58,
           "score": 72.8
         },
         {
           "area": "Naperville",
-          "rank": 72,
+          "rank": 73,
           "score": 70.1
         },
         {
           "area": "Plainfield / Oswego",
-          "rank": 78,
+          "rank": 79,
           "score": 68.1
         },
         {
           "area": "Hinsdale / Western Springs",
-          "rank": 97,
+          "rank": 102,
           "score": 63.4
         }
       ],
@@ -11927,7 +12747,7 @@
       "locations": [
         {
           "area": "Mandeville",
-          "rank": 48,
+          "rank": 49,
           "score": 74.1
         }
       ],
@@ -12083,7 +12903,7 @@
       "locations": [
         {
           "area": "Youngsville / Broussard (Lafayette)",
-          "rank": 51,
+          "rank": 52,
           "score": 73.8
         }
       ],
@@ -12161,27 +12981,27 @@
         },
         {
           "area": "Frisco",
-          "rank": 30,
+          "rank": 31,
           "score": 76.4
         },
         {
           "area": "Crowley / North Crowley (SW Fort Worth)",
-          "rank": 35,
+          "rank": 36,
           "score": 75.4
         },
         {
           "area": "Celina",
-          "rank": 60,
+          "rank": 61,
           "score": 72.6
         },
         {
           "area": "Prosper",
-          "rank": 65,
+          "rank": 66,
           "score": 71.3
         },
         {
           "area": "Lucas (Lovejoy ISD)",
-          "rank": 68,
+          "rank": 69,
           "score": 70.8
         }
       ],
@@ -12388,12 +13208,12 @@
         },
         {
           "area": "Fort Mill",
-          "rank": 31,
+          "rank": 32,
           "score": 76.0
         },
         {
           "area": "Waxhaw",
-          "rank": 94,
+          "rank": 96,
           "score": 64.7
         }
       ],
@@ -12550,72 +13370,72 @@
       "locations": [
         {
           "area": "Buford (Buford City Schools)",
-          "rank": 28,
+          "rank": 29,
           "score": 76.7
         },
         {
           "area": "East Cobb (Marietta)",
-          "rank": 37,
+          "rank": 38,
           "score": 75.3
         },
         {
           "area": "Woodstock / Canton (Cherokee County)",
-          "rank": 44,
+          "rank": 45,
           "score": 74.5
         },
         {
           "area": "Suwanee / Peachtree Corners",
-          "rank": 45,
+          "rank": 46,
           "score": 74.3
         },
         {
           "area": "Cumming (Forsyth County)",
-          "rank": 47,
+          "rank": 48,
           "score": 74.3
         },
         {
           "area": "Alpharetta / Johns Creek",
-          "rank": 56,
+          "rank": 57,
           "score": 73.2
         },
         {
           "area": "Peachtree City / Fayetteville (Fayette County)",
-          "rank": 62,
+          "rank": 63,
           "score": 71.7
         },
         {
           "area": "McDonough / Locust Grove (Henry County)",
-          "rank": 70,
+          "rank": 71,
           "score": 70.8
         },
         {
           "area": "Gainesville / Flowery Branch (Hall County)",
-          "rank": 73,
+          "rank": 74,
           "score": 69.4
         },
         {
           "area": "Lovejoy / Hampton (Clayton / Henry)",
-          "rank": 74,
+          "rank": 75,
           "score": 69.0
         },
         {
           "area": "Dacula / Hamilton Mill (Gwinnett)",
-          "rank": 75,
+          "rank": 76,
           "score": 68.9
         },
         {
           "area": "Decatur (City Schools of Decatur)",
-          "rank": 79,
+          "rank": 80,
           "score": 68.0
         },
         {
           "area": "Roswell",
-          "rank": 84,
+          "rank": 85,
           "score": 67.6
         },
         {
           "area": "Milton",
-          "rank": 95,
+          "rank": 97,
           "score": 64.3
         }
       ],
@@ -12900,17 +13720,17 @@
         },
         {
           "area": "Clermont",
-          "rank": 43,
+          "rank": 44,
           "score": 74.5
         },
         {
           "area": "Davenport / Four Corners",
-          "rank": 52,
+          "rank": 53,
           "score": 73.7
         },
         {
           "area": "Lake Nona",
-          "rank": 59,
+          "rank": 60,
           "score": 72.6
         }
       ],
@@ -13042,7 +13862,7 @@
         },
         {
           "area": "Lakeland",
-          "rank": 46,
+          "rank": 47,
           "score": 74.3
         }
       ],
@@ -13454,12 +14274,12 @@
       "locations": [
         {
           "area": "Greensboro (City)",
-          "rank": 32,
+          "rank": 33,
           "score": 75.9
         },
         {
           "area": "Summerfield / Oak Ridge (NW Guilford)",
-          "rank": 76,
+          "rank": 77,
           "score": 68.4
         }
       ],
@@ -13846,12 +14666,12 @@
       "locations": [
         {
           "area": "Olathe (Garmin HQ)",
-          "rank": 33,
+          "rank": 34,
           "score": 75.6
         },
         {
           "area": "Overland Park (Blue Valley)",
-          "rank": 36,
+          "rank": 37,
           "score": 75.4
         }
       ],
@@ -13951,12 +14771,12 @@
       "locations": [
         {
           "area": "West Des Moines",
-          "rank": 26,
+          "rank": 27,
           "score": 76.8
         },
         {
           "area": "Waukee",
-          "rank": 53,
+          "rank": 54,
           "score": 73.4
         }
       ],
@@ -14157,7 +14977,7 @@
       "locations": [
         {
           "area": "Farragut",
-          "rank": 89,
+          "rank": 90,
           "score": 66.6
         }
       ],
@@ -14250,7 +15070,7 @@
       "locations": [
         {
           "area": "Greenville",
-          "rank": 41,
+          "rank": 42,
           "score": 74.9
         }
       ],
@@ -14342,7 +15162,7 @@
       "locations": [
         {
           "area": "Auburn / Opelika",
-          "rank": 55,
+          "rank": 56,
           "score": 73.3
         }
       ],
@@ -14397,7 +15217,7 @@
       "locations": [
         {
           "area": "Glen Allen / Midlothian",
-          "rank": 61,
+          "rank": 62,
           "score": 72.4
         }
       ],
@@ -14493,12 +15313,12 @@
       "locations": [
         {
           "area": "Fairfax / Vienna (Fairfax County)",
-          "rank": 80,
+          "rank": 81,
           "score": 67.9
         },
         {
           "area": "Leesburg / Ashburn",
-          "rank": 99,
+          "rank": 105,
           "score": 61.6
         }
       ],
@@ -14632,17 +15452,17 @@
       "locations": [
         {
           "area": "Essex / Essex Junction",
-          "rank": 92,
+          "rank": 94,
           "score": 65.5
         },
         {
           "area": "South Burlington",
-          "rank": 100,
+          "rank": 106,
           "score": 61.6
         },
         {
           "area": "Shelburne / Williston",
-          "rank": 102,
+          "rank": 108,
           "score": 58.9
         }
       ],
@@ -14751,7 +15571,7 @@
       "locations": [
         {
           "area": "Irvine",
-          "rank": 103,
+          "rank": 110,
           "score": 55.4
         }
       ],
@@ -14866,7 +15686,7 @@
       "locations": [
         {
           "area": "Highlands Ranch",
-          "rank": 93,
+          "rank": 95,
           "score": 64.8
         }
       ],
@@ -14966,7 +15786,7 @@
       "locations": [
         {
           "area": "Bothell / Mill Creek",
-          "rank": 90,
+          "rank": 92,
           "score": 66.4
         }
       ],
@@ -15061,7 +15881,7 @@
       "locations": [
         {
           "area": "West Linn",
-          "rank": 98,
+          "rank": 103,
           "score": 62.9
         }
       ],
@@ -15172,7 +15992,7 @@
       "locations": [
         {
           "area": "Henderson",
-          "rank": 67,
+          "rank": 68,
           "score": 71.0
         }
       ],
@@ -15273,7 +16093,7 @@
       "locations": [
         {
           "area": "Meridian",
-          "rank": 85,
+          "rank": 86,
           "score": 67.6
         }
       ],
@@ -15351,7 +16171,7 @@
       "locations": [
         {
           "area": "Bozeman",
-          "rank": 101,
+          "rank": 107,
           "score": 60.1
         }
       ],
@@ -15424,7 +16244,7 @@
       "locations": [
         {
           "area": "Cheyenne",
-          "rank": 64,
+          "rank": 65,
           "score": 71.5
         }
       ],
@@ -15480,7 +16300,7 @@
       "locations": [
         {
           "area": "Eden Prairie",
-          "rank": 82,
+          "rank": 83,
           "score": 67.7
         }
       ],
@@ -15582,7 +16402,7 @@
       "locations": [
         {
           "area": "Brookfield / Elm Grove",
-          "rank": 83,
+          "rank": 84,
           "score": 67.7
         }
       ],
@@ -15670,7 +16490,7 @@
       "locations": [
         {
           "area": "Novi",
-          "rank": 63,
+          "rank": 64,
           "score": 71.7
         }
       ],
@@ -15764,7 +16584,7 @@
       "locations": [
         {
           "area": "Carmel",
-          "rank": 58,
+          "rank": 59,
           "score": 72.8
         }
       ],
@@ -15858,7 +16678,7 @@
       "locations": [
         {
           "area": "Chesterfield / Wildwood",
-          "rank": 54,
+          "rank": 55,
           "score": 73.4
         }
       ],
@@ -15955,7 +16775,7 @@
       "locations": [
         {
           "area": "Elkhorn",
-          "rank": 88,
+          "rank": 89,
           "score": 66.9
         }
       ],
@@ -16032,7 +16852,7 @@
       "locations": [
         {
           "area": "West Fargo",
-          "rank": 49,
+          "rank": 50,
           "score": 74.0
         }
       ],
@@ -16104,7 +16924,7 @@
       "locations": [
         {
           "area": "Sioux Falls (Harrisburg / Brandon)",
-          "rank": 39,
+          "rank": 40,
           "score": 75.1
         }
       ],
@@ -16169,6 +16989,727 @@
       "gaps": "No income tax and cheap homes, but a thin AI/product market and no Kendra Scott in South Dakota; realistic mainly with a remote role."
     },
     {
+      "id": "rochester",
+      "label": "Rochester",
+      "states": "NY",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Pittsford",
+          "rank": 91,
+          "score": 66.5
+        }
+      ],
+      "representative": "Pittsford",
+      "rent_3br": 2400,
+      "rent_note": "Pittsford 3BR ~$2,300-$2,500 (estimate)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/ny/pittsford-ny",
+      "kendra_scott": [],
+      "companies": [
+        {
+          "name": "Paychex",
+          "sector": "HR / payroll software",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Headquartered in Penfield, next to Pittsford - AI-driven HR product roles.",
+          "role_families": [
+            "Product Manager"
+          ],
+          "office": "Rochester (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Paychex",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Wegmans Food Markets",
+          "sector": "Grocery retail",
+          "goal_tags": [
+            "consumer_retail",
+            "spouse_content"
+          ],
+          "why": "Headquartered in Gates; strong brand and digital-commerce teams.",
+          "role_families": [
+            "Digital product",
+            "Brand / content marketing"
+          ],
+          "office": "Rochester (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Wegmans",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "L3Harris - Rochester",
+          "sector": "Defense / imaging",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Large space and imaging operation in Rochester.",
+          "role_families": [
+            "Technical program manager"
+          ],
+          "office": "Rochester",
+          "source": "https://en.wikipedia.org/wiki/L3Harris_Technologies",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "University of Rochester Simon Business School / RIT Saunders",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "Two AACSB schools within ~10 miles.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Rochester",
+          "source": "https://www.simon.rochester.edu/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Top schools, two AACSB schools and modest prices, but upstate property tax (~2.4%) and New York income tax are heavy, the AI market is thin and no Kendra Scott store was found nearby."
+    },
+    {
+      "id": "boston",
+      "label": "Boston (MetroWest)",
+      "states": "MA",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Natick",
+          "rank": 98,
+          "score": 64.1
+        }
+      ],
+      "representative": "Natick",
+      "rent_3br": 3800,
+      "rent_note": "Natick 3BR ~$3,600-$4,000 (estimate)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/ma/natick-ma",
+      "kendra_scott": [
+        {
+          "store": "Natick Mall",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265162"
+        }
+      ],
+      "companies": [
+        {
+          "name": "MathWorks",
+          "sector": "Technical software / AI",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Headquartered in Natick - MATLAB / Simulink with AI and autonomy toolboxes.",
+          "role_families": [
+            "Product Manager (AI / autonomy)"
+          ],
+          "office": "Natick (HQ)",
+          "source": "https://en.wikipedia.org/wiki/MathWorks",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Boston Dynamics",
+          "sector": "Robotics",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Waltham headquarters, ~10 miles east - Spot, Stretch and Atlas.",
+          "role_families": [
+            "Product Manager (robotics)"
+          ],
+          "office": "Waltham (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Boston_Dynamics",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "WHOOP",
+          "sector": "Fitness wearables",
+          "goal_tags": [
+            "sports_tech",
+            "ai_product"
+          ],
+          "why": "Boston-based athlete-performance wearable with AI coaching.",
+          "role_families": [
+            "Product Manager (wearables / AI)"
+          ],
+          "office": "Boston (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Whoop_(company)",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "New Balance / Kraft Sports + Entertainment",
+          "sector": "Sports",
+          "goal_tags": [
+            "sports_tech",
+            "consumer_retail"
+          ],
+          "why": "New Balance HQ in Brighton and the Patriots / Revolution group in Foxborough.",
+          "role_families": [
+            "Digital product",
+            "Fan experience"
+          ],
+          "office": "Boston / Foxborough",
+          "source": "https://en.wikipedia.org/wiki/New_Balance",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Babson College",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited, next door in Wellesley; Boston College and BU are ~15 miles away.",
+          "role_families": [
+            "Lecturer / adjunct",
+            "Entrepreneurship faculty"
+          ],
+          "office": "Wellesley",
+          "source": "https://www.babson.edu/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "The strongest combined AI, robotics, sports-tech and professor market in the matrix, with Kendra Scott in town, but homes (~$900K) and rent (~$3,800) are far past the budget."
+    },
+    {
+      "id": "hartford",
+      "label": "Hartford",
+      "states": "CT",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "West Hartford",
+          "rank": 100,
+          "score": 63.7
+        }
+      ],
+      "representative": "West Hartford",
+      "rent_3br": 2700,
+      "rent_note": "West Hartford 3BR ~$2,600-$2,800 (estimate)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/ct/west-hartford-ct",
+      "kendra_scott": [],
+      "companies": [
+        {
+          "name": "ESPN",
+          "sector": "Sports media",
+          "goal_tags": [
+            "sports_tech",
+            "spouse_content"
+          ],
+          "why": "Bristol headquarters, ~15 miles from West Hartford - sports streaming, data and content.",
+          "role_families": [
+            "Product Manager (streaming / fantasy)",
+            "Content / social"
+          ],
+          "office": "Bristol (HQ)",
+          "source": "https://en.wikipedia.org/wiki/ESPN",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Travelers",
+          "sector": "Insurance / AI",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Hartford headquarters with a large AI and data-science organization.",
+          "role_families": [
+            "Product Manager (AI / data)"
+          ],
+          "office": "Hartford (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Travelers_Companies",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "CVS Health / Aetna",
+          "sector": "Health tech",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Aetna headquarters in Hartford - digital-health product roles.",
+          "role_families": [
+            "Digital product manager"
+          ],
+          "office": "Hartford",
+          "source": "https://en.wikipedia.org/wiki/Aetna",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "UConn School of Business",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited, with a downtown Hartford campus.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Hartford / Storrs",
+          "source": "https://business.uconn.edu/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "ESPN's headquarters makes this a real sports-media hub, and the schools are strong, but property tax (~2.2%) and income tax are heavy and no Kendra Scott store is confirmed in Connecticut."
+    },
+    {
+      "id": "providence",
+      "label": "Providence",
+      "states": "RI",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Barrington",
+          "rank": 109,
+          "score": 56.7
+        }
+      ],
+      "representative": "Barrington",
+      "rent_3br": 3000,
+      "rent_note": "Barrington 3BR ~$2,800-$3,200 (estimate)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/ri/barrington-ri",
+      "kendra_scott": [],
+      "companies": [
+        {
+          "name": "CVS Health",
+          "sector": "Retail / health",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Woonsocket headquarters - retail and digital-health product roles.",
+          "role_families": [
+            "Digital product manager"
+          ],
+          "office": "Woonsocket (HQ)",
+          "source": "https://en.wikipedia.org/wiki/CVS_Health",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Hasbro",
+          "sector": "Toys / games / media",
+          "goal_tags": [
+            "consumer_retail",
+            "spouse_content"
+          ],
+          "why": "Pawtucket headquarters - brand, gaming and content roles.",
+          "role_families": [
+            "Digital product",
+            "Brand / content"
+          ],
+          "office": "Pawtucket (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Hasbro",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Bryant University College of Business",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited; URI and Providence College are also AACSB.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Smithfield",
+          "source": "https://www.bryant.edu/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Rhode Island's best schools, but homes are expensive, the job market is small and there is no Kendra Scott in the state."
+    },
+    {
+      "id": "manchester",
+      "label": "Manchester / Southern NH",
+      "states": "NH",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Bedford",
+          "rank": 104,
+          "score": 62.2
+        }
+      ],
+      "representative": "Bedford",
+      "rent_3br": 3000,
+      "rent_note": "Bedford 3BR ~$2,800-$3,200 (estimate)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/nh/bedford-nh",
+      "kendra_scott": [],
+      "companies": [
+        {
+          "name": "DEKA Research & Development",
+          "sector": "Robotics / medical devices",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Dean Kamen's Manchester company (iBOT, robotic arms); ARMI BioFabUSA is next door.",
+          "role_families": [
+            "Product / program manager"
+          ],
+          "office": "Manchester",
+          "source": "https://en.wikipedia.org/wiki/DEKA_(company)",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Boston tech corridor (Route 128)",
+          "sector": "AI / robotics",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "About an hour south: Boston Dynamics, MathWorks and the Kendall Square AI cluster.",
+          "role_families": [
+            "Product Manager (hybrid)"
+          ],
+          "office": "Burlington / Waltham, MA",
+          "source": "https://en.wikipedia.org/wiki/Massachusetts_Route_128",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "UNH Peter T. Paul College of Business",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited, ~40 miles east in Durham.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Durham",
+          "source": "https://paulcollege.unh.edu/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "No income tax on wages and top schools within an hour of Boston, but homes (~$810K) and property tax (~1.5%) are high, and there is no Kendra Scott in the state."
+    },
+    {
+      "id": "portland_me",
+      "label": "Portland, ME",
+      "states": "ME",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Falmouth",
+          "rank": 112,
+          "score": 53.5
+        }
+      ],
+      "representative": "Falmouth",
+      "rent_3br": 3000,
+      "rent_note": "Portland-area 3BR ~$2,800-$3,200 (estimate)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/me/falmouth-me",
+      "kendra_scott": [],
+      "companies": [
+        {
+          "name": "IDEXX Laboratories",
+          "sector": "Animal-health diagnostics / software",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Westbrook headquarters, ~10 miles from Falmouth - diagnostics and practice-software products.",
+          "role_families": [
+            "Product Manager (software)"
+          ],
+          "office": "Westbrook (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Idexx_Laboratories",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "L.L.Bean",
+          "sector": "Outdoor retail",
+          "goal_tags": [
+            "consumer_retail",
+            "spouse_content"
+          ],
+          "why": "Freeport headquarters, ~10 miles north - brand, e-commerce and content.",
+          "role_families": [
+            "E-commerce product",
+            "Content marketing"
+          ],
+          "office": "Freeport (HQ)",
+          "source": "https://en.wikipedia.org/wiki/L.L.Bean",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "WEX",
+          "sector": "Fintech",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Portland headquarters - payments and fleet-card platform.",
+          "role_families": [
+            "Product Manager"
+          ],
+          "office": "Portland (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Wex_Inc.",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "University of Southern Maine School of Business",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited, in Portland.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Portland",
+          "source": "https://usm.maine.edu/school-of-business/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Maine's best schools near L.L.Bean and IDEXX, but homes (~$910K) are far over budget, the market is small and there is no Kendra Scott in the state."
+    },
+    {
+      "id": "pittsburgh",
+      "label": "Pittsburgh",
+      "states": "PA",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Cranberry Township",
+          "rank": 26,
+          "score": 77.0
+        }
+      ],
+      "representative": "Cranberry Township",
+      "rent_3br": 2200,
+      "rent_note": "Cranberry Township 3BR ~$2,100-$2,300 (estimate)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/pa/cranberry-township-pa",
+      "kendra_scott": [
+        {
+          "store": "Pittsburgh - Ross Park Mall (~20 minutes)",
+          "source": "https://www.kendrascott.com/stores/directory"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Duolingo",
+          "sector": "Consumer AI / edtech",
+          "goal_tags": [
+            "ai_product",
+            "spouse_content"
+          ],
+          "why": "Pittsburgh headquarters - AI-first consumer product with a famous social-content team.",
+          "role_families": [
+            "Product Manager (AI)",
+            "Social / content"
+          ],
+          "office": "Pittsburgh (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Duolingo",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Aurora Innovation",
+          "sector": "Autonomous trucking",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Major Pittsburgh engineering hub for self-driving trucks.",
+          "role_families": [
+            "Product Manager (autonomy)"
+          ],
+          "office": "Pittsburgh",
+          "source": "https://en.wikipedia.org/wiki/Aurora_Innovation",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Westinghouse Electric",
+          "sector": "Energy / nuclear",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Headquartered in Cranberry Township itself.",
+          "role_families": [
+            "Technical product / program manager"
+          ],
+          "office": "Cranberry Township (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Westinghouse_Electric_Company",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Carnegie Mellon Tepper School of Business",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited; Pitt Katz and Duquesne are also AACSB.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Pittsburgh",
+          "source": "https://www.cmu.edu/tepper/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "America's robotics capital (CMU, Aurora, Duolingo) with low home prices and a Kendra Scott at Ross Park; Pennsylvania's flat tax plus local EIT adds ~4%."
+    },
+    {
+      "id": "baltimore",
+      "label": "Baltimore / Howard County",
+      "states": "MD",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Ellicott City / Columbia (Howard County)",
+          "rank": 99,
+          "score": 63.9
+        }
+      ],
+      "representative": "Ellicott City / Columbia (Howard County)",
+      "rent_3br": 3000,
+      "rent_note": "Ellicott City 3BR ~$2,900-$3,200 (estimate)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/md/ellicott-city-md",
+      "kendra_scott": [
+        {
+          "store": "Columbia - The Mall in Columbia",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265183"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Under Armour",
+          "sector": "Sports apparel / connected fitness",
+          "goal_tags": [
+            "sports_tech",
+            "consumer_retail"
+          ],
+          "why": "Baltimore headquarters, ~15 miles east.",
+          "role_families": [
+            "Digital product",
+            "Brand / content marketing"
+          ],
+          "office": "Baltimore (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Under_Armour",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Johns Hopkins APL",
+          "sector": "Applied research / AI",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Laurel campus next to Howard County - one of the largest AI research employers in the region.",
+          "role_families": [
+            "Program / product manager"
+          ],
+          "office": "Laurel",
+          "source": "https://en.wikipedia.org/wiki/Applied_Physics_Laboratory",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Baltimore Ravens / Orioles",
+          "sector": "Pro sports",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Two franchises with growing analytics groups.",
+          "role_families": [
+            "Fan experience",
+            "Analytics"
+          ],
+          "office": "Baltimore",
+          "source": "https://en.wikipedia.org/wiki/Baltimore_Ravens",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Johns Hopkins Carey Business School",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited; Loyola Sellinger and UMD Smith are also nearby.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Baltimore",
+          "source": "https://carey.jhu.edu/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Howard County schools, Under Armour, a Kendra Scott at the Columbia mall and the Baltimore-DC job corridor; state plus county income tax (~8%) and homes (~$750K) are the drags."
+    },
+    {
       "id": "hampton_roads",
       "label": "Hampton Roads (Norfolk / Virginia Beach)",
       "states": "VA",
@@ -16178,7 +17719,7 @@
       "locations": [
         {
           "area": "Chesapeake / Virginia Beach (Hampton Roads)",
-          "rank": 42,
+          "rank": 43,
           "score": 74.6
         }
       ],
@@ -16257,7 +17798,7 @@
       "locations": [
         {
           "area": "Charlottesville (Albemarle County)",
-          "rank": 87,
+          "rank": 88,
           "score": 67.3
         }
       ],
@@ -16319,7 +17860,7 @@
       "locations": [
         {
           "area": "Roanoke (Roanoke County)",
-          "rank": 50,
+          "rank": 51,
           "score": 73.9
         }
       ],
@@ -16359,12 +17900,12 @@
       "locations": [
         {
           "area": "Jersey City",
-          "rank": 104,
+          "rank": 111,
           "score": 54.8
         },
         {
           "area": "Newport (Jersey City)",
-          "rank": 105,
+          "rank": 113,
           "score": 49.1
         }
       ],
