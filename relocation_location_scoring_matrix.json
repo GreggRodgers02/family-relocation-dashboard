@@ -227,6 +227,46 @@
             "no_stepup": 597778,
             "planned": 777529,
             "ai_leader": 987634
+          },
+          "CA": {
+            "no_stepup": 672165,
+            "planned": 874284,
+            "ai_leader": 1110535
+          },
+          "CO": {
+            "no_stepup": 663116,
+            "planned": 862514,
+            "ai_leader": 1095584
+          },
+          "WA": {
+            "no_stepup": 674836,
+            "planned": 877758,
+            "ai_leader": 1114947
+          },
+          "OR": {
+            "no_stepup": 674928,
+            "planned": 877878,
+            "ai_leader": 1115100
+          },
+          "NV": {
+            "no_stepup": 709234,
+            "planned": 922500,
+            "ai_leader": 1171779
+          },
+          "ID": {
+            "no_stepup": 690831,
+            "planned": 898563,
+            "ai_leader": 1141375
+          },
+          "MT": {
+            "no_stepup": 659034,
+            "planned": 857205,
+            "ai_leader": 1088841
+          },
+          "WY": {
+            "no_stepup": 696300,
+            "planned": 905677,
+            "ai_leader": 1150411
           }
         },
         "rate_sensitivity_planned": {
@@ -5307,6 +5347,68 @@
     },
     {
       "rank": 59,
+      "area": "Cheyenne",
+      "state": "Wyoming",
+      "state_abbr": "WY",
+      "metro": "cheyenne",
+      "coords": [
+        41.14,
+        -104.8202
+      ],
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "No income tax and cheap housing - thin job market, remote-only fit",
+      "scores": {
+        "ai_tech_pm_market": 5.0,
+        "school_quality": 6.5,
+        "housing_affordability_2041": 9.0,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 6.0,
+        "robotics_fitness_startup_fit": 5.5,
+        "hs_football_culture": 6.5,
+        "private_school_access": 6.0,
+        "sports_tech_ecosystem": 4.0
+      },
+      "budget_check": {
+        "price_2026": 390000,
+        "price_source": "Redfin Q1 2026 median sale $387K; six-month closed median $389,900",
+        "proj_2041": 564836,
+        "property_tax_effective_pct": 0.58,
+        "property_tax_source": "Laramie County ~0.55-0.6% effective (estimate)",
+        "insurance_state_avg_annual": 2272,
+        "budget_2041_planned": 905677,
+        "budget_2041_no_stepup": 696300,
+        "budget_2041_ai_leader": 1150411,
+        "headroom_planned": 340840,
+        "headroom_no_stepup": 131464,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Wyoming's capital, ~90 miles north of Denver, served by Laramie County School District 1. Homes close around ~$390K, projecting to ~$565K by 2041 - ~$341K under a ~$906K planned-path budget. 3BR rents run ~$1,800-$2,000. Wyoming has no state income tax on wages, like Tennessee. There is no Kendra Scott store in Wyoming; the nearest is Fort Collins / Denver area, Colorado (~1.5 hours).",
+      "risks": [
+        "Very thin AI/product market - depends on keeping a remote role",
+        "No Kendra Scott store in Wyoming",
+        "Wind and winters"
+      ],
+      "weighted_total_out_of_100": 71.5,
+      "weighted_total_private_scenario": 70.5,
+      "weighted_total_career_max_scenario": 71.15,
+      "sources": [
+        "https://www.redfin.com/city/3616/WY/Cheyenne/housing-market",
+        "https://resideline.com/blog/cheyenne-wy-housing-market",
+        "https://www.laramie1.org/"
+      ]
+    },
+    {
+      "rank": 60,
       "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
@@ -5389,7 +5491,7 @@
       ]
     },
     {
-      "rank": 60,
+      "rank": 61,
       "area": "Draper",
       "state": "Utah",
       "state_abbr": "UT",
@@ -5451,7 +5553,68 @@
       ]
     },
     {
-      "rank": 61,
+      "rank": 62,
+      "area": "Henderson",
+      "state": "Nevada",
+      "state_abbr": "NV",
+      "metro": "las_vegas",
+      "coords": [
+        36.0395,
+        -114.9817
+      ],
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "No income tax, Raiders HQ and Kendra Scott - weak public schools",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 5.5,
+        "housing_affordability_2041": 7.5,
+        "rental_feasibility_2028": 7.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 6.5,
+        "hs_football_culture": 8.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 8.0
+      },
+      "budget_check": {
+        "price_2026": 540000,
+        "price_source": "June 2026 single-family median $540K; all types ~$499K (Las Vegas REALTORS Q1 2026)",
+        "proj_2041": 782081,
+        "property_tax_effective_pct": 0.55,
+        "property_tax_source": "Clark County ~0.5-0.6% effective",
+        "insurance_state_avg_annual": 1744,
+        "budget_2041_planned": 922500,
+        "budget_2041_no_stepup": 709234,
+        "budget_2041_ai_leader": 1171779,
+        "headroom_planned": 140419,
+        "headroom_no_stepup": -72847,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Las Vegas's largest suburb and home of the Raiders headquarters. Schools fall under Clark County School District, where quality varies by zone (Coronado High is the standout). Single-family homes run ~$540K, projecting to ~$782K by 2041 - ~$140K under a ~$922K planned-path budget. 3BR rents run ~$2,300-$2,500. Nevada has no state income tax on wages, like Tennessee. Kendra Scott: Las Vegas - Fashion Show; Downtown Summerlin.",
+      "risks": [
+        "Clark County School District is uneven - Coronado and Green Valley zones are the strongest",
+        "Thin AI/product market",
+        "Summer heat and water constraints"
+      ],
+      "weighted_total_out_of_100": 71.0,
+      "weighted_total_private_scenario": 76.0,
+      "weighted_total_career_max_scenario": 69.25,
+      "sources": [
+        "https://www.nevadarealestategroup.com/blog/henderson-market-report-june-2026/",
+        "https://www.schooldigger.com/go/NV/city/Henderson/search.aspx?level=3"
+      ]
+    },
+    {
+      "rank": 63,
       "area": "Lucas (Lovejoy ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -5633,7 +5796,7 @@
       }
     },
     {
-      "rank": 62,
+      "rank": 64,
       "area": "South Jordan / Herriman",
       "state": "Utah",
       "state_abbr": "UT",
@@ -5696,7 +5859,7 @@
       ]
     },
     {
-      "rank": 63,
+      "rank": 65,
       "area": "McDonough / Locust Grove (Henry County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5758,7 +5921,7 @@
       ]
     },
     {
-      "rank": 64,
+      "rank": 66,
       "area": "Boerne",
       "state": "Texas",
       "state_abbr": "TX",
@@ -5833,7 +5996,7 @@
       ]
     },
     {
-      "rank": 65,
+      "rank": 67,
       "area": "Naperville",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -5898,7 +6061,7 @@
       ]
     },
     {
-      "rank": 66,
+      "rank": 68,
       "area": "Gainesville / Flowery Branch (Hall County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5959,7 +6122,7 @@
       ]
     },
     {
-      "rank": 67,
+      "rank": 69,
       "area": "Lovejoy / Hampton (Clayton / Henry)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6021,7 +6184,7 @@
       ]
     },
     {
-      "rank": 68,
+      "rank": 70,
       "area": "Dacula / Hamilton Mill (Gwinnett)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6084,7 +6247,7 @@
       ]
     },
     {
-      "rank": 69,
+      "rank": 71,
       "area": "Summerfield / Oak Ridge (NW Guilford)",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -6148,7 +6311,7 @@
       ]
     },
     {
-      "rank": 70,
+      "rank": 72,
       "area": "Thompson's Station",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -6218,7 +6381,7 @@
       "weighted_total_career_max_scenario": 69.15
     },
     {
-      "rank": 71,
+      "rank": 73,
       "area": "Plainfield / Oswego",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -6280,7 +6443,7 @@
       ]
     },
     {
-      "rank": 72,
+      "rank": 74,
       "area": "Decatur (City Schools of Decatur)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6343,7 +6506,7 @@
       ]
     },
     {
-      "rank": 73,
+      "rank": 75,
       "area": "Fairfax / Vienna (Fairfax County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -6407,7 +6570,7 @@
       ]
     },
     {
-      "rank": 74,
+      "rank": 76,
       "area": "Scottsdale",
       "state": "Arizona",
       "state_abbr": "AZ",
@@ -6470,7 +6633,7 @@
       ]
     },
     {
-      "rank": 75,
+      "rank": 77,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6560,7 +6723,69 @@
       ]
     },
     {
-      "rank": 76,
+      "rank": 78,
+      "area": "Meridian",
+      "state": "Idaho",
+      "state_abbr": "ID",
+      "metro": "boise",
+      "coords": [
+        43.6121,
+        -116.3915
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Boise's family suburb in West Ada (#4 in Idaho) - fits the budget",
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 7.5,
+        "housing_affordability_2041": 6.5,
+        "rental_feasibility_2028": 7.0,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 7.0,
+        "private_school_access": 7.0,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 560000,
+        "price_source": "Six-month closed median $568,913 (Resideline, Sept 2026); ZIP 83642 $511K",
+        "proj_2041": 811047,
+        "property_tax_effective_pct": 0.63,
+        "property_tax_source": "Ada County ~0.6% effective with homeowner exemption (estimate)",
+        "insurance_state_avg_annual": 2304,
+        "budget_2041_planned": 898563,
+        "budget_2041_no_stepup": 690831,
+        "budget_2041_ai_leader": 1141375,
+        "headroom_planned": 87516,
+        "headroom_no_stepup": -120216,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Boise's largest suburb, in West Ada School District (Niche #4 in Idaho), ~12 miles from Micron's headquarters and Boise State. Homes close around ~$569K, projecting to ~$811K by 2041 - ~$88K under a ~$899K planned-path budget. 3BR rents average ~$2,320. Idaho income tax costs roughly $3,900/yr more than Tennessee's zero at today's household income, rising to ~$10,400/yr at the 2041 planned income. Kendra Scott: The Village at Meridian (planned - permits filed Dec 2025).",
+      "risks": [
+        "Thin AI/product market beyond Micron",
+        "Kendra Scott at The Village is planned, not confirmed open",
+        "Idaho income tax 5.3%"
+      ],
+      "weighted_total_out_of_100": 67.6,
+      "weighted_total_private_scenario": 66.6,
+      "weighted_total_career_max_scenario": 67.85,
+      "sources": [
+        "https://resideline.com/blog/meridian-id-housing-market",
+        "https://www.rentometer.com/average-rent-in/id/meridian-id",
+        "https://www.niche.com/k12/search/best-school-districts/s/idaho/"
+      ]
+    },
+    {
+      "rank": 79,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -6660,7 +6885,7 @@
       "weighted_total_career_max_scenario": 69.05
     },
     {
-      "rank": 77,
+      "rank": 80,
       "area": "Charlottesville (Albemarle County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -6723,7 +6948,7 @@
       ]
     },
     {
-      "rank": 78,
+      "rank": 81,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -6816,7 +7041,69 @@
       "weighted_total_career_max_scenario": 65.35
     },
     {
-      "rank": 79,
+      "rank": 82,
+      "area": "Bothell / Mill Creek",
+      "state": "Washington",
+      "state_abbr": "WA",
+      "metro": "seattle",
+      "coords": [
+        47.79,
+        -122.21
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Microsoft and Amazon commute with Northshore schools and no wage tax - over budget",
+      "scores": {
+        "ai_tech_pm_market": 9.5,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 1.5,
+        "rental_feasibility_2028": 4.0,
+        "state_tax_burden": 9.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 8.5,
+        "hs_football_culture": 6.5,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 7.5
+      },
+      "budget_check": {
+        "price_2026": 1000000,
+        "price_source": "Bothell median ~$0.9M-$1.04M (June 2026); Mill Creek Niche median value $904K",
+        "proj_2041": 1448298,
+        "property_tax_effective_pct": 0.88,
+        "property_tax_source": "King / Snohomish ~0.85-0.95% effective (estimate)",
+        "insurance_state_avg_annual": 1872,
+        "budget_2041_planned": 877758,
+        "budget_2041_no_stepup": 674836,
+        "budget_2041_ai_leader": 1114947,
+        "headroom_planned": -570541,
+        "headroom_no_stepup": -773463,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "North-Eastside suburbs ~12 miles from Microsoft and Bellevue, mostly in Northshore School District (one of Washington's top districts) with Mill Creek rated Niche A for schools. Homes run ~$0.9M-$1.04M, projecting to ~$1,448K by 2041 - ~$571K over a ~$878K planned-path budget. 3BR rents average ~$3,460. Washington has no state income tax on wages, like Tennessee. Kendra Scott: Bellevue Square.",
+      "risks": [
+        "About $1M homes - well over the planned-path budget",
+        "Rent above the ceiling",
+        "Some Mill Creek addresses are Everett School District - verify the zone"
+      ],
+      "weighted_total_out_of_100": 66.4,
+      "weighted_total_private_scenario": 64.4,
+      "weighted_total_career_max_scenario": 69.0,
+      "sources": [
+        "https://rexmont.com/blog/how-to-buy-a-home-in-bothell",
+        "https://www.niche.com/places-to-live/mill-creek-snohomish-wa/",
+        "https://www.rentometer.com/average-rent-in/wa/bothell-wa"
+      ]
+    },
+    {
+      "rank": 83,
       "area": "Alamo Heights",
       "state": "Texas",
       "state_abbr": "TX",
@@ -6908,7 +7195,7 @@
       ]
     },
     {
-      "rank": 80,
+      "rank": 84,
       "area": "Essex / Essex Junction",
       "state": "Vermont",
       "state_abbr": "VT",
@@ -6971,7 +7258,69 @@
       ]
     },
     {
-      "rank": 81,
+      "rank": 85,
+      "area": "Highlands Ranch",
+      "state": "Colorado",
+      "state_abbr": "CO",
+      "metro": "denver",
+      "coords": [
+        39.5539,
+        -104.9694
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Denver's big master-planned suburb - Douglas County schools, Kendra Scott at Park Meadows",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 3.5,
+        "rental_feasibility_2028": 5.5,
+        "state_tax_burden": 6.5,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 7.5,
+        "private_school_access": 8.5,
+        "sports_tech_ecosystem": 7.5
+      },
+      "budget_check": {
+        "price_2026": 745000,
+        "price_source": "Six-month closed median $725K-$760K (Resideline); Q2 2026 MLS median $825K",
+        "proj_2041": 1078982,
+        "property_tax_effective_pct": 0.55,
+        "property_tax_source": "Douglas County residential ~0.5-0.6% effective (estimate)",
+        "insurance_state_avg_annual": 4320,
+        "budget_2041_planned": 862514,
+        "budget_2041_no_stepup": 663116,
+        "budget_2041_ai_leader": 1095584,
+        "headroom_planned": -216469,
+        "headroom_no_stepup": -415866,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Master-planned suburb south of Denver in Douglas County School District, with Valor Christian and other private options nearby and Park Meadows (Kendra Scott) next door. Homes close around ~$725K-$760K, projecting to ~$1,079K by 2041 - ~$216K over a ~$863K planned-path budget. 3BR rents run ~$3,020. Colorado income tax costs roughly $3,200/yr more than Tennessee's zero at today's household income, rising to ~$8,700/yr at the 2041 planned income. Kendra Scott: Lone Tree - Park Meadows; Denver - Cherry Creek.",
+      "risks": [
+        "Over the planned-path budget",
+        "Hail-driven insurance costs",
+        "Colorado income tax 4.4%"
+      ],
+      "weighted_total_out_of_100": 64.8,
+      "weighted_total_private_scenario": 65.8,
+      "weighted_total_career_max_scenario": 65.05,
+      "sources": [
+        "https://resideline.com/blog/highlands-ranch-co-housing-market",
+        "https://www.rentometer.com/average-rent-in/co/highlands-ranch-co",
+        "https://www.dcsdk12.org/"
+      ]
+    },
+    {
+      "rank": 86,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -7063,7 +7412,7 @@
       "weighted_total_career_max_scenario": 64.9
     },
     {
-      "rank": 82,
+      "rank": 87,
       "area": "Milton",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -7124,7 +7473,7 @@
       ]
     },
     {
-      "rank": 83,
+      "rank": 88,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -7229,7 +7578,7 @@
       "weighted_total_career_max_scenario": 65.3
     },
     {
-      "rank": 84,
+      "rank": 89,
       "area": "Hinsdale / Western Springs",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -7291,7 +7640,69 @@
       ]
     },
     {
-      "rank": 85,
+      "rank": 90,
+      "area": "West Linn",
+      "state": "Oregon",
+      "state_abbr": "OR",
+      "metro": "portland",
+      "coords": [
+        45.3657,
+        -122.6123
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Oregon's #3 district near Nike and adidas - heavy income tax",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 3.5,
+        "rental_feasibility_2028": 5.5,
+        "state_tax_burden": 2.5,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 6.5,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 9.5
+      },
+      "budget_check": {
+        "price_2026": 775000,
+        "price_source": "Zillow median value $775,545 (Aug 2026); Niche $770,200",
+        "proj_2041": 1122431,
+        "property_tax_effective_pct": 1.0,
+        "property_tax_source": "Clackamas County ~1.0% effective (estimate)",
+        "insurance_state_avg_annual": 1760,
+        "budget_2041_planned": 866011,
+        "budget_2041_no_stepup": 665805,
+        "budget_2041_ai_leader": 1100027,
+        "headroom_planned": -256420,
+        "headroom_no_stepup": -456626,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Riverside suburb south of Portland in West Linn-Wilsonville School District (Niche A, #3 in Oregon), ~25 minutes from Nike in Beaverton and adidas North America. Homes are valued at ~$775K, projecting to ~$1,122K by 2041 - ~$256K over a ~$866K planned-path budget. 3BR rents average ~$2,900. Oregon income tax (plus Oregon statewide transit tax, 0.1% of wages) costs roughly $8,200/yr more than Tennessee's zero at today's household income, rising to ~$19,200/yr at the 2041 planned income. There is no Kendra Scott store in Oregon; the nearest is Bellevue Square in Washington (~3 hours); none confirmed in Oregon.",
+      "risks": [
+        "Over the planned-path budget",
+        "Oregon income tax up to 9.9% plus Metro SHS on high earners",
+        "No Kendra Scott store confirmed in Oregon"
+      ],
+      "weighted_total_out_of_100": 62.9,
+      "weighted_total_private_scenario": 60.9,
+      "weighted_total_career_max_scenario": 61.55,
+      "sources": [
+        "https://www.zillow.com/west-linn-or/home-values/",
+        "https://www.niche.com/k12/search/best-school-districts/t/west-linn-clackamas-or/",
+        "https://www.rentometer.com/average-rent-in/or/west-linn-or"
+      ]
+    },
+    {
+      "rank": 91,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -7395,7 +7806,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 86,
+      "rank": 92,
       "area": "South Burlington",
       "state": "Vermont",
       "state_abbr": "VT",
@@ -7459,7 +7870,70 @@
       ]
     },
     {
-      "rank": 87,
+      "rank": 93,
+      "area": "Bozeman",
+      "state": "Montana",
+      "state_abbr": "MT",
+      "metro": "bozeman",
+      "coords": [
+        45.677,
+        -111.0429
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Montana's tech and outdoor town - pricey for its job market, no Kendra Scott",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 4.0,
+        "rental_feasibility_2028": 5.5,
+        "state_tax_burden": 6.0,
+        "aacsb_university_proximity": 7.0,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 6.0,
+        "private_school_access": 6.0,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 725000,
+        "price_source": "Zillow typical value $725,769 (Aug 2026); six-month closed median $718K",
+        "proj_2041": 1050016,
+        "property_tax_effective_pct": 0.74,
+        "property_tax_source": "Gallatin County ~0.7-0.8% effective (estimate)",
+        "insurance_state_avg_annual": 3552,
+        "budget_2041_planned": 857205,
+        "budget_2041_no_stepup": 659034,
+        "budget_2041_ai_leader": 1088841,
+        "headroom_planned": -192811,
+        "headroom_no_stepup": -390982,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Montana State's college town and the state's tech hub (Oracle's former RightNow campus, outdoor brands such as Simms). Bozeman School District is among Montana's strongest. Homes are valued at ~$725K, projecting to ~$1,050K by 2041 - ~$193K over a ~$857K planned-path budget. 3BR rents run ~$2,900. Montana income tax costs roughly $3,400/yr more than Tennessee's zero at today's household income, rising to ~$10,200/yr at the 2041 planned income. There is no Kendra Scott store in Montana; the nearest is Denver area (~10 hours by car); none found in Montana.",
+      "risks": [
+        "Over the planned-path budget",
+        "Small job market",
+        "No Kendra Scott store in Montana",
+        "Remote - long drive to any large metro"
+      ],
+      "weighted_total_out_of_100": 60.1,
+      "weighted_total_private_scenario": 56.1,
+      "weighted_total_career_max_scenario": 60.2,
+      "sources": [
+        "https://www.zillow.com/montana-mt/home-values/",
+        "https://resideline.com/blog/bozeman-mt-housing-market",
+        "https://www.bsd7.org/"
+      ]
+    },
+    {
+      "rank": 94,
       "area": "Shelburne / Williston",
       "state": "Vermont",
       "state_abbr": "VT",
@@ -7524,7 +7998,70 @@
       ]
     },
     {
-      "rank": 88,
+      "rank": 95,
+      "area": "Irvine",
+      "state": "California",
+      "state_abbr": "CA",
+      "metro": "orange_county",
+      "coords": [
+        33.6846,
+        -117.8265
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "California's planned-city benchmark - elite schools, far over budget",
+      "scores": {
+        "ai_tech_pm_market": 8.0,
+        "school_quality": 9.5,
+        "housing_affordability_2041": 1.0,
+        "rental_feasibility_2028": 1.5,
+        "state_tax_burden": 2.5,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 8.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 9.0,
+        "sports_tech_ecosystem": 8.0
+      },
+      "budget_check": {
+        "price_2026": 1360000,
+        "price_source": "Six-month closed median $1.36M (Resideline, Sept 2026); AVM median ~$1.49M",
+        "proj_2041": 1969686,
+        "property_tax_effective_pct": 1.25,
+        "property_tax_source": "1% Prop 13 base + voter debt + typical Mello-Roos in newer villages (estimate; varies by tract)",
+        "insurance_state_avg_annual": 2720,
+        "budget_2041_planned": 818439,
+        "budget_2041_no_stepup": 629231,
+        "budget_2041_ai_leader": 1039600,
+        "headroom_planned": -1151246,
+        "headroom_no_stepup": -1340455,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Master-planned Irvine Unified (Niche A+) city in Orange County, home to Blizzard, Edwards Lifesciences and Taco Bell headquarters and UC Irvine's AACSB business school. Homes close at a ~$1.36M six-month median, projecting to ~$1,970K by 2041 - ~$1,151K over a ~$818K planned-path budget. 3BR rents average ~$4,980. California income tax (plus California SDI payroll tax, ~1.3% of wages with no cap) costs roughly $4,100/yr more than Tennessee's zero at today's household income, rising to ~$16,100/yr at the 2041 planned income. Kendra Scott: Newport Beach - Fashion Island.",
+      "risks": [
+        "Home prices about double the planned-path budget",
+        "Rent ~$5,000/mo, far above the ceiling",
+        "California income tax plus 1.3% SDI",
+        "Mello-Roos special taxes in newer villages"
+      ],
+      "weighted_total_out_of_100": 55.4,
+      "weighted_total_private_scenario": 54.4,
+      "weighted_total_career_max_scenario": 56.5,
+      "sources": [
+        "https://resideline.com/blog/irvine-ca-housing-market",
+        "https://www.rentometer.com/average-rent-in/ca/irvine-ca",
+        "https://iusd.org/"
+      ]
+    },
+    {
+      "rank": 96,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -7624,7 +8161,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 89,
+      "rank": 97,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -7788,9 +8325,33 @@
       "Arlington Heights",
       "Naperville"
     ],
+    "Wyoming": [
+      "Cheyenne"
+    ],
+    "Nevada": [
+      "Henderson"
+    ],
+    "Idaho": [
+      "Meridian"
+    ],
+    "Washington": [
+      "Bothell / Mill Creek"
+    ],
     "Vermont": [
       "Essex / Essex Junction",
       "South Burlington"
+    ],
+    "Colorado": [
+      "Highlands Ranch"
+    ],
+    "Oregon": [
+      "West Linn"
+    ],
+    "Montana": [
+      "Bozeman"
+    ],
+    "California": [
+      "Irvine"
     ],
     "New Jersey": [
       "Jersey City",
@@ -7900,8 +8461,10 @@
       "Alpharetta / Johns Creek",
       "Arlington Heights",
       "Peachtree City / Fayetteville (Fayette County)",
+      "Cheyenne",
       "Prosper",
       "Draper",
+      "Henderson",
       "Lucas (Lovejoy ISD)",
       "South Jordan / Herriman",
       "McDonough / Locust Grove (Henry County)",
@@ -7925,18 +8488,24 @@
       "Fairfax / Vienna (Fairfax County)",
       "Scottsdale",
       "Roswell",
+      "Meridian",
       "Franklin",
       "Charlottesville (Albemarle County)",
       "Farragut",
+      "Bothell / Mill Creek",
       "Alamo Heights",
       "Essex / Essex Junction",
+      "Highlands Ranch",
       "Waxhaw",
       "Milton",
       "Germantown (Nashville)",
       "Hinsdale / Western Springs",
+      "West Linn",
       "Leesburg / Ashburn",
       "South Burlington",
+      "Bozeman",
       "Shelburne / Williston",
+      "Irvine",
       "Jersey City",
       "Newport (Jersey City)"
     ]
@@ -8173,15 +8742,22 @@
             "weighted_total_out_of_100": 73.7
           },
           {
+            "area": "Cheyenne",
+            "rank": 59,
+            "rental_feasibility_2028": 8.5,
+            "school_quality": 6.5,
+            "weighted_total_out_of_100": 71.5
+          },
+          {
             "area": "McDonough / Locust Grove (Henry County)",
-            "rank": 63,
+            "rank": 65,
             "rental_feasibility_2028": 8.0,
             "school_quality": 6.0,
             "weighted_total_out_of_100": 70.8
           },
           {
             "area": "Lovejoy / Hampton (Clayton / Henry)",
-            "rank": 67,
+            "rank": 69,
             "rental_feasibility_2028": 9.0,
             "school_quality": 4.5,
             "weighted_total_out_of_100": 69.0
@@ -8194,7 +8770,7 @@
         "locations": [
           {
             "area": "Prosper",
-            "rank": 59,
+            "rank": 60,
             "school_quality": 9.0,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 2.0,
@@ -8203,7 +8779,7 @@
           },
           {
             "area": "Lucas (Lovejoy ISD)",
-            "rank": 61,
+            "rank": 63,
             "school_quality": 9.5,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 1.0,
@@ -8212,7 +8788,7 @@
           },
           {
             "area": "Milton",
-            "rank": 82,
+            "rank": 87,
             "school_quality": 9.0,
             "rental_feasibility_2028": 7.0,
             "housing_affordability_2041": 1.0,
@@ -8374,14 +8950,14 @@
           },
           {
             "area": "Draper",
-            "rank": 60,
+            "rank": 61,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 71.1
           },
           {
             "area": "Farragut",
-            "rank": 78,
+            "rank": 81,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 66.6
@@ -8451,94 +9027,115 @@
           },
           {
             "area": "Naperville",
-            "rank": 65,
+            "rank": 67,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 70.1
           },
           {
             "area": "Thompson's Station",
-            "rank": 70,
+            "rank": 72,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 68.2
           },
           {
             "area": "Decatur (City Schools of Decatur)",
-            "rank": 72,
+            "rank": 74,
             "rental_feasibility_2028": 3.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 68.0
           },
           {
             "area": "Fairfax / Vienna (Fairfax County)",
-            "rank": 73,
+            "rank": 75,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.9
           },
           {
             "area": "Scottsdale",
-            "rank": 74,
+            "rank": 76,
             "rental_feasibility_2028": 4.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.7
           },
           {
             "area": "Franklin",
-            "rank": 76,
+            "rank": 79,
             "rental_feasibility_2028": 3.5,
             "school_quality": 9,
             "weighted_total_out_of_100": 67.4
           },
           {
             "area": "Charlottesville (Albemarle County)",
-            "rank": 77,
+            "rank": 80,
             "rental_feasibility_2028": 6.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 67.3
           },
           {
+            "area": "Bothell / Mill Creek",
+            "rank": 82,
+            "rental_feasibility_2028": 4.0,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 66.4
+          },
+          {
             "area": "Alamo Heights",
-            "rank": 79,
+            "rank": 83,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 65.8
           },
           {
             "area": "Waxhaw",
-            "rank": 81,
+            "rank": 86,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 64.7
           },
           {
             "area": "Hinsdale / Western Springs",
-            "rank": 84,
+            "rank": 89,
             "rental_feasibility_2028": 4.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 63.4
           },
           {
+            "area": "West Linn",
+            "rank": 90,
+            "rental_feasibility_2028": 5.5,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 62.9
+          },
+          {
             "area": "Leesburg / Ashburn",
-            "rank": 85,
+            "rank": 91,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 61.6
           },
           {
             "area": "South Burlington",
-            "rank": 86,
+            "rank": 92,
             "rental_feasibility_2028": 6.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 61.6
           },
           {
             "area": "Shelburne / Williston",
-            "rank": 87,
+            "rank": 94,
             "rental_feasibility_2028": 5.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 58.9
+          },
+          {
+            "area": "Irvine",
+            "rank": 95,
+            "rental_feasibility_2028": 1.5,
+            "school_quality": 9.5,
+            "weighted_total_out_of_100": 55.4
           }
         ]
       }
@@ -9267,6 +9864,116 @@
         ],
         "source": "https://www.vermontagency.com/resource-center/tax/whats-my-tax-bracket-2026",
         "note": "Progressive 3.35%-8.75% (MFJ thresholds approximate for 2026). Standard deduction $15,300 MFJ is the most-cited figure; one source lists $25,000 - verify with the Vermont Department of Taxes."
+      },
+      "CA": {
+        "type": "brackets",
+        "deduction": 11080,
+        "brackets": [
+          [
+            22158,
+            0.01
+          ],
+          [
+            52528,
+            0.02
+          ],
+          [
+            82904,
+            0.04
+          ],
+          [
+            115084,
+            0.06
+          ],
+          [
+            145448,
+            0.08
+          ],
+          [
+            742958,
+            0.093
+          ],
+          [
+            891542,
+            0.103
+          ],
+          [
+            1485906,
+            0.113
+          ],
+          [
+            null,
+            0.123
+          ]
+        ],
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+        "note": "Progressive 1%-12.3% (+1% over $1M). MFJ thresholds and $11,080 standard deduction are 2025 indexed figures; sources list $11,080-$11,412 for 2026. Verify with the FTB."
+      },
+      "CO": {
+        "type": "flat",
+        "rate": 0.044,
+        "deduction": 32200,
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+        "note": "Flat 4.4% on federal taxable income, so the federal standard deduction ($32,200 MFJ) carries over."
+      },
+      "WA": {
+        "type": "none",
+        "note": "No income tax on wages (7% capital-gains tax over $270K does not affect salary). WA Cares long-term-care payroll tax is modeled as a local tax."
+      },
+      "OR": {
+        "type": "brackets",
+        "deduction": 5495,
+        "brackets": [
+          [
+            8600,
+            0.0475
+          ],
+          [
+            21500,
+            0.0675
+          ],
+          [
+            250000,
+            0.0875
+          ],
+          [
+            null,
+            0.099
+          ]
+        ],
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+        "note": "Progressive 4.75%-9.9%; MFJ thresholds and standard deduction are 2025 figures. Metro SHS (1% of taxable income over $200K MFJ) is not modeled. Verify with Oregon DOR."
+      },
+      "NV": {
+        "type": "none",
+        "note": "No state income tax."
+      },
+      "ID": {
+        "type": "flat",
+        "rate": 0.053,
+        "deduction": 32200,
+        "source": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/",
+        "note": "Flat 5.3% for 2026 (some listings still show 5.695%); Idaho follows the federal standard deduction."
+      },
+      "MT": {
+        "type": "brackets",
+        "deduction": 32200,
+        "brackets": [
+          [
+            95000,
+            0.047
+          ],
+          [
+            null,
+            0.0565
+          ]
+        ],
+        "source": "https://ustax.tools/montana-tax-brackets-2026/",
+        "note": "Two brackets for 2026 (HB 337): 4.7% and 5.65%, MFJ threshold ~$95,000 (sources conflict). Montana starts from federal taxable income, so the federal standard deduction carries over."
+      },
+      "WY": {
+        "type": "none",
+        "note": "No state income tax."
       }
     },
     "local_by_metro": {
@@ -9284,6 +9991,21 @@
         "rate": 0.0145,
         "note": "Louisville Metro nonresident occupational tax (applies to a job in Jefferson County; Oldham County levies none)",
         "source": "https://louisvilleky.gov/sites/default/files/2026-01/Louisville%20Metro%20Revenue%20Commission%20Regulations%20(2026).1.pdf"
+      },
+      "orange_county": {
+        "rate": 0.013,
+        "note": "California SDI payroll tax, ~1.3% of wages with no cap",
+        "source": "https://edd.ca.gov/en/payroll_taxes/rates_and_withholding/"
+      },
+      "seattle": {
+        "rate": 0.0058,
+        "note": "WA Cares long-term-care payroll tax, 0.58% of wages",
+        "source": "https://wacaresfund.wa.gov/"
+      },
+      "portland": {
+        "rate": 0.001,
+        "note": "Oregon statewide transit tax, 0.1% of wages",
+        "source": "https://www.oregon.gov/dor/programs/businesses/Pages/Statewide-Transit-Tax.aspx"
       }
     },
     "metro_state": {
@@ -9319,7 +10041,15 @@
       "charlottesville": "VA",
       "roanoke": "VA",
       "triad": "NC",
-      "burlington": "VT"
+      "burlington": "VT",
+      "orange_county": "CA",
+      "denver": "CO",
+      "seattle": "WA",
+      "portland": "OR",
+      "las_vegas": "NV",
+      "boise": "ID",
+      "bozeman": "MT",
+      "cheyenne": "WY"
     }
   },
   "metros": [
@@ -9358,17 +10088,17 @@
         },
         {
           "area": "Thompson's Station",
-          "rank": 70,
+          "rank": 72,
           "score": 68.2
         },
         {
           "area": "Franklin",
-          "rank": 76,
+          "rank": 79,
           "score": 67.4
         },
         {
           "area": "Germantown (Nashville)",
-          "rank": 83,
+          "rank": 88,
           "score": 63.5
         }
       ],
@@ -9777,12 +10507,12 @@
         },
         {
           "area": "Boerne",
-          "rank": 64,
+          "rank": 66,
           "score": 70.5
         },
         {
           "area": "Alamo Heights",
-          "rank": 79,
+          "rank": 83,
           "score": 65.8
         }
       ],
@@ -9936,7 +10666,7 @@
         },
         {
           "area": "Scottsdale",
-          "rank": 74,
+          "rank": 76,
           "score": 67.7
         }
       ],
@@ -10094,12 +10824,12 @@
         },
         {
           "area": "Draper",
-          "rank": 60,
+          "rank": 61,
           "score": 71.1
         },
         {
           "area": "South Jordan / Herriman",
-          "rank": 62,
+          "rank": 64,
           "score": 70.8
         }
       ],
@@ -10251,17 +10981,17 @@
         },
         {
           "area": "Naperville",
-          "rank": 65,
+          "rank": 67,
           "score": 70.1
         },
         {
           "area": "Plainfield / Oswego",
-          "rank": 71,
+          "rank": 73,
           "score": 68.1
         },
         {
           "area": "Hinsdale / Western Springs",
-          "rank": 84,
+          "rank": 89,
           "score": 63.4
         }
       ],
@@ -10694,12 +11424,12 @@
         },
         {
           "area": "Prosper",
-          "rank": 59,
+          "rank": 60,
           "score": 71.3
         },
         {
           "area": "Lucas (Lovejoy ISD)",
-          "rank": 61,
+          "rank": 63,
           "score": 70.8
         }
       ],
@@ -10911,7 +11641,7 @@
         },
         {
           "area": "Waxhaw",
-          "rank": 81,
+          "rank": 86,
           "score": 64.7
         }
       ],
@@ -11103,37 +11833,37 @@
         },
         {
           "area": "McDonough / Locust Grove (Henry County)",
-          "rank": 63,
+          "rank": 65,
           "score": 70.8
         },
         {
           "area": "Gainesville / Flowery Branch (Hall County)",
-          "rank": 66,
+          "rank": 68,
           "score": 69.4
         },
         {
           "area": "Lovejoy / Hampton (Clayton / Henry)",
-          "rank": 67,
+          "rank": 69,
           "score": 69.0
         },
         {
           "area": "Dacula / Hamilton Mill (Gwinnett)",
-          "rank": 68,
+          "rank": 70,
           "score": 68.9
         },
         {
           "area": "Decatur (City Schools of Decatur)",
-          "rank": 72,
+          "rank": 74,
           "score": 68.0
         },
         {
           "area": "Roswell",
-          "rank": 75,
+          "rank": 77,
           "score": 67.6
         },
         {
           "area": "Milton",
-          "rank": 82,
+          "rank": 87,
           "score": 64.3
         }
       ],
@@ -11977,7 +12707,7 @@
         },
         {
           "area": "Summerfield / Oak Ridge (NW Guilford)",
-          "rank": 69,
+          "rank": 71,
           "score": 68.4
         }
       ],
@@ -12675,7 +13405,7 @@
       "locations": [
         {
           "area": "Farragut",
-          "rank": 78,
+          "rank": 81,
           "score": 66.6
         }
       ],
@@ -13011,12 +13741,12 @@
       "locations": [
         {
           "area": "Fairfax / Vienna (Fairfax County)",
-          "rank": 73,
+          "rank": 75,
           "score": 67.9
         },
         {
           "area": "Leesburg / Ashburn",
-          "rank": 85,
+          "rank": 91,
           "score": 61.6
         }
       ],
@@ -13150,17 +13880,17 @@
       "locations": [
         {
           "area": "Essex / Essex Junction",
-          "rank": 80,
+          "rank": 84,
           "score": 65.5
         },
         {
           "area": "South Burlington",
-          "rank": 86,
+          "rank": 92,
           "score": 61.6
         },
         {
           "area": "Shelburne / Williston",
-          "rank": 87,
+          "rank": 94,
           "score": 58.9
         }
       ],
@@ -13260,6 +13990,735 @@
       "gaps": "No Kendra Scott store in Vermont (nearest: Burlington, MA, ~3.5 hours). Small job market overall; Vermont income tax up to 8.75%."
     },
     {
+      "id": "orange_county",
+      "label": "Orange County (Irvine)",
+      "states": "CA",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Irvine",
+          "rank": 95,
+          "score": 55.4
+        }
+      ],
+      "representative": "Irvine",
+      "rent_3br": 4980,
+      "rent_note": "Irvine 3BR average ~$4,855-$4,984 (Rentometer, Jan 2026)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/ca/irvine-ca",
+      "kendra_scott": [
+        {
+          "store": "Newport Beach - Fashion Island",
+          "source": "https://www.mallscenters.com/brands/stores/kendra-scott/newport-beach--california--fashion-island"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Blizzard Entertainment",
+          "sector": "Gaming",
+          "goal_tags": [
+            "ai_product",
+            "sports_tech"
+          ],
+          "why": "Irvine headquarters of the Diablo / Overwatch / WoW studio, with live-ops and esports product roles.",
+          "role_families": [
+            "Product Manager (games / platform)"
+          ],
+          "office": "Irvine (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Blizzard_Entertainment",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Oakley",
+          "sector": "Sports eyewear / performance gear",
+          "goal_tags": [
+            "sports_tech",
+            "consumer_retail"
+          ],
+          "why": "Foothill Ranch headquarters, about 10 miles from Irvine.",
+          "role_families": [
+            "Product / e-commerce",
+            "Brand marketing"
+          ],
+          "office": "Foothill Ranch (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Oakley,_Inc.",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Edwards Lifesciences",
+          "sector": "Medical devices",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Irvine headquarters with digital-health and connected-device product roles.",
+          "role_families": [
+            "Product Manager (digital health)"
+          ],
+          "office": "Irvine (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Edwards_Lifesciences",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Taco Bell (Yum! Brands)",
+          "sector": "Consumer brand",
+          "goal_tags": [
+            "consumer_retail",
+            "spouse_content"
+          ],
+          "why": "Irvine headquarters with one of the most-followed brand social programs.",
+          "role_families": [
+            "Digital product",
+            "Social / content marketing"
+          ],
+          "office": "Irvine (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Taco_Bell",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "UC Irvine Paul Merage School of Business",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited business school in Irvine.",
+          "role_families": [
+            "Lecturer / adjunct",
+            "Executive education"
+          ],
+          "office": "Irvine",
+          "source": "https://merage.uci.edu/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Strongest career market in the West outside Seattle, but homes (~$1.36M) and rent (~$5,000) are far past the budget. California income tax plus SDI is the heaviest in the matrix."
+    },
+    {
+      "id": "denver",
+      "label": "Denver",
+      "states": "CO",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Highlands Ranch",
+          "rank": 85,
+          "score": 64.8
+        }
+      ],
+      "representative": "Highlands Ranch",
+      "rent_3br": 3020,
+      "rent_note": "Highlands Ranch 3BR ~$3,017 (Rentometer 2026)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/co/highlands-ranch-co",
+      "kendra_scott": [
+        {
+          "store": "Lone Tree - Park Meadows",
+          "source": "https://www.kendrascott.com/stores/directory"
+        },
+        {
+          "store": "Denver - Cherry Creek",
+          "source": null
+        }
+      ],
+      "companies": [
+        {
+          "name": "Palantir Technologies",
+          "sector": "AI / data platforms",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Headquartered in Denver; AI platform (AIP) product and deployment roles.",
+          "role_families": [
+            "Product Manager",
+            "Forward-deployed engineer / PM"
+          ],
+          "office": "Denver (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Palantir_Technologies",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Kroenke Sports & Entertainment",
+          "sector": "Pro sports",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Owner of the Nuggets, Avalanche, Rapids and Ball Arena - fan-experience and data roles.",
+          "role_families": [
+            "Digital product",
+            "Fan analytics"
+          ],
+          "office": "Denver",
+          "source": "https://en.wikipedia.org/wiki/Kroenke_Sports_%26_Entertainment",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Ibotta",
+          "sector": "Consumer fintech",
+          "goal_tags": [
+            "ai_product",
+            "consumer_retail"
+          ],
+          "why": "Denver-headquartered performance-marketing platform for retailers and brands.",
+          "role_families": [
+            "Product Manager"
+          ],
+          "office": "Denver (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Ibotta",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "University of Denver Daniels College of Business",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited, ~15 miles north of Highlands Ranch.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Denver",
+          "source": "https://daniels.du.edu/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Strong AI and pro-sports market with Kendra Scott nearby; the main drags are high insurance (hail) and a 4.4% income tax."
+    },
+    {
+      "id": "seattle",
+      "label": "Seattle (Eastside / North)",
+      "states": "WA",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Bothell / Mill Creek",
+          "rank": 82,
+          "score": 66.4
+        }
+      ],
+      "representative": "Bothell / Mill Creek",
+      "rent_3br": 3460,
+      "rent_note": "Bothell 3BR ~$3,458 (Rentometer 2026)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/wa/bothell-wa",
+      "kendra_scott": [
+        {
+          "store": "Bellevue Square",
+          "source": "https://www.mallscenters.com/brands/kendra-scott/washington"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Microsoft",
+          "sector": "AI platforms",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Redmond headquarters, ~12 miles from Bothell - Copilot and Azure AI product roles.",
+          "role_families": [
+            "Product Manager (AI)",
+            "Principal PM"
+          ],
+          "office": "Redmond (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Microsoft",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Amazon",
+          "sector": "AI / e-commerce",
+          "goal_tags": [
+            "ai_product",
+            "consumer_retail"
+          ],
+          "why": "Seattle and Bellevue headquarters; AWS AI and retail product roles.",
+          "role_families": [
+            "Senior Product Manager - Technical"
+          ],
+          "office": "Seattle / Bellevue (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Amazon_(company)",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Seattle Seahawks / Kraken / Sounders",
+          "sector": "Pro sports",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Three pro teams with growing in-house data and fan-tech groups.",
+          "role_families": [
+            "Fan experience / digital product"
+          ],
+          "office": "Seattle / Renton",
+          "source": "https://en.wikipedia.org/wiki/Sports_in_Seattle",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "UW Foster School of Business",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited, plus UW Bothell School of Business in town.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Seattle / Bothell",
+          "source": "https://foster.uw.edu/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "The best AI product market in the matrix with no wage income tax, but homes (~$1M) and rent (~$3,460) are well past the budget."
+    },
+    {
+      "id": "portland",
+      "label": "Portland",
+      "states": "OR",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "West Linn",
+          "rank": 90,
+          "score": 62.9
+        }
+      ],
+      "representative": "West Linn",
+      "rent_3br": 2900,
+      "rent_note": "West Linn 3BR ~$2,902 (Rentometer 2026)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/or/west-linn-or",
+      "kendra_scott": [],
+      "companies": [
+        {
+          "name": "Nike",
+          "sector": "Sports / athletic footwear",
+          "goal_tags": [
+            "sports_tech",
+            "consumer_retail"
+          ],
+          "why": "World headquarters in Beaverton - the largest sports-product employer in the matrix.",
+          "role_families": [
+            "Product Manager (digital / Nike Run Club)",
+            "Data & AI product"
+          ],
+          "office": "Beaverton (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Nike,_Inc.",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "adidas North America",
+          "sector": "Sports apparel",
+          "goal_tags": [
+            "sports_tech",
+            "consumer_retail"
+          ],
+          "why": "North American headquarters in North Portland.",
+          "role_families": [
+            "Digital product",
+            "Brand marketing"
+          ],
+          "office": "Portland",
+          "source": "https://en.wikipedia.org/wiki/Adidas",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Columbia Sportswear",
+          "sector": "Outdoor apparel",
+          "goal_tags": [
+            "sports_tech",
+            "consumer_retail",
+            "spouse_content"
+          ],
+          "why": "Headquartered in Beaverton; brand content and e-commerce roles.",
+          "role_families": [
+            "E-commerce product",
+            "Content marketing"
+          ],
+          "office": "Beaverton (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Columbia_Sportswear",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Intel - Hillsboro",
+          "sector": "Semiconductors / AI hardware",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Intel's largest site (Ronler Acres) - AI hardware and platform roles.",
+          "role_families": [
+            "Technical program / product manager"
+          ],
+          "office": "Hillsboro",
+          "source": "https://en.wikipedia.org/wiki/Intel",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Portland State University School of Business",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited, ~12 miles from West Linn.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Portland",
+          "source": "https://www.pdx.edu/business/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "The top sports-product hub in the matrix (Nike, adidas, Columbia), but Oregon income tax reaches 9.9% and there is no confirmed Kendra Scott store in the state."
+    },
+    {
+      "id": "las_vegas",
+      "label": "Las Vegas (Henderson)",
+      "states": "NV",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Henderson",
+          "rank": 62,
+          "score": 71.0
+        }
+      ],
+      "representative": "Henderson",
+      "rent_3br": 2400,
+      "rent_note": "Henderson 3BR ~$2,300-$2,500 (estimate)",
+      "rent_source": "https://www.zillow.com/rental-manager/market-trends/henderson-nv/",
+      "kendra_scott": [
+        {
+          "store": "Las Vegas - Fashion Show",
+          "source": "https://www.mystore411.com/store/listing/1090/Kendra-Scott-store-locations"
+        },
+        {
+          "store": "Downtown Summerlin",
+          "source": "https://summerlin.com/location/kendra-scott/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "TKO Group (UFC / WWE)",
+          "sector": "Sports media",
+          "goal_tags": [
+            "sports_tech",
+            "spouse_content"
+          ],
+          "why": "UFC Apex and headquarters operations in Las Vegas - sports media and content.",
+          "role_families": [
+            "Digital product",
+            "Content / social"
+          ],
+          "office": "Las Vegas",
+          "source": "https://en.wikipedia.org/wiki/TKO_Group_Holdings",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Las Vegas Raiders / Golden Knights",
+          "sector": "Pro sports",
+          "goal_tags": [
+            "sports_tech"
+          ],
+          "why": "Raiders headquarters is in Henderson; the Golden Knights practice facility is in Summerlin.",
+          "role_families": [
+            "Fan experience",
+            "Data / analytics"
+          ],
+          "office": "Henderson / Las Vegas",
+          "source": "https://en.wikipedia.org/wiki/Las_Vegas_Raiders",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Sphere Entertainment",
+          "sector": "Immersive media tech",
+          "goal_tags": [
+            "sports_tech",
+            "ai_product"
+          ],
+          "why": "Sphere venue - immersive display, audio and content technology.",
+          "role_families": [
+            "Product / experience technology"
+          ],
+          "office": "Las Vegas",
+          "source": "https://en.wikipedia.org/wiki/Sphere_(venue)",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "UNLV Lee Business School",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited, ~15 minutes from Henderson.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Las Vegas",
+          "source": "https://www.unlv.edu/business",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "No income tax, two Kendra Scott stores and a fast-growing sports-media scene; AI product roles and public schools are the weak spots."
+    },
+    {
+      "id": "boise",
+      "label": "Boise",
+      "states": "ID",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Meridian",
+          "rank": 78,
+          "score": 67.6
+        }
+      ],
+      "representative": "Meridian",
+      "rent_3br": 2320,
+      "rent_note": "Meridian 3BR ~$2,320 (Rentometer, Jan 2026)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/id/meridian-id",
+      "kendra_scott": [
+        {
+          "store": "The Village at Meridian (planned - permits filed Dec 2025)",
+          "source": "https://boisedev.com/news/2025/12/09/the-village-meridian-expansion-kendra-scott-paris-baguette/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "Micron Technology",
+          "sector": "Semiconductors / AI memory",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Boise headquarters - AI memory (HBM) is its fastest-growing business.",
+          "role_families": [
+            "Technical product / program manager"
+          ],
+          "office": "Boise (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Micron_Technology",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Albertsons Companies",
+          "sector": "Grocery retail",
+          "goal_tags": [
+            "consumer_retail",
+            "ai_product"
+          ],
+          "why": "Boise headquarters with digital and retail-media product teams.",
+          "role_families": [
+            "Digital product manager"
+          ],
+          "office": "Boise (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Albertsons",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Boise State University College of Business and Economics",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited, ~12 miles from Meridian.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Boise",
+          "source": "https://www.boisestate.edu/cobe/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Affordable, fast-growing and fits the budget, but the AI/product market is mostly Micron and sports-tech is thin. Kendra Scott is planned, not yet confirmed open."
+    },
+    {
+      "id": "bozeman",
+      "label": "Bozeman",
+      "states": "MT",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Bozeman",
+          "rank": 93,
+          "score": 60.1
+        }
+      ],
+      "representative": "Bozeman",
+      "rent_3br": 2900,
+      "rent_note": "Bozeman 3BR ~$2,950 (older Redfin-based estimate); median rent $2,030",
+      "rent_source": "https://ocity.org/city/bozeman-mt/cost-of-living",
+      "kendra_scott": [],
+      "companies": [
+        {
+          "name": "Oracle - Bozeman",
+          "sector": "Enterprise software",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Large Bozeman office (former RightNow Technologies) with cloud and CX product roles.",
+          "role_families": [
+            "Product Manager"
+          ],
+          "office": "Bozeman",
+          "source": "https://en.wikipedia.org/wiki/RightNow_Technologies",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Simms Fishing Products",
+          "sector": "Outdoor gear",
+          "goal_tags": [
+            "sports_tech",
+            "consumer_retail"
+          ],
+          "why": "Bozeman-headquartered fly-fishing gear brand.",
+          "role_families": [
+            "Product / e-commerce"
+          ],
+          "office": "Bozeman (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Simms_Fishing_Products",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "Montana State University Jake Jabs College of Business",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited, in Bozeman.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Bozeman",
+          "source": "https://www.montana.edu/business/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "Mountain-town tech scene and an AACSB school in town, but homes are expensive for the market and there is no Kendra Scott in Montana."
+    },
+    {
+      "id": "cheyenne",
+      "label": "Cheyenne",
+      "states": "WY",
+      "home_base": false,
+      "wave": 5,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Cheyenne",
+          "rank": 59,
+          "score": 71.5
+        }
+      ],
+      "representative": "Cheyenne",
+      "rent_3br": 1900,
+      "rent_note": "Cheyenne 3BR ~$1,800-$2,000 (estimate; citywide average $1,204-$1,340)",
+      "rent_source": "https://www.areavibes.com/cheyenne-wy/real-estate/",
+      "kendra_scott": [],
+      "companies": [
+        {
+          "name": "Microsoft - Cheyenne data centers",
+          "sector": "Cloud / AI infrastructure",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Multi-billion-dollar data-center campus supporting Azure AI.",
+          "role_families": [
+            "Data-center program / operations roles"
+          ],
+          "office": "Cheyenne",
+          "source": "https://en.wikipedia.org/wiki/Cheyenne,_Wyoming",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        },
+        {
+          "name": "University of Wyoming College of Business",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited, in Laramie (~50 miles); Colorado State (AACSB) is ~45 miles south.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Laramie",
+          "source": "https://www.uwyo.edu/business/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 5
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "No income tax and cheap housing, but very few product jobs; realistic only with a remote role. No Kendra Scott in Wyoming."
+    },
+    {
       "id": "hampton_roads",
       "label": "Hampton Roads (Norfolk / Virginia Beach)",
       "states": "VA",
@@ -13348,7 +14807,7 @@
       "locations": [
         {
           "area": "Charlottesville (Albemarle County)",
-          "rank": 77,
+          "rank": 80,
           "score": 67.3
         }
       ],
@@ -13450,12 +14909,12 @@
       "locations": [
         {
           "area": "Jersey City",
-          "rank": 88,
+          "rank": 96,
           "score": 54.8
         },
         {
           "area": "Newport (Jersey City)",
-          "rank": 89,
+          "rank": 97,
           "score": 49.1
         }
       ],
