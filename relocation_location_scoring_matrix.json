@@ -222,6 +222,11 @@
             "no_stepup": 662781,
             "planned": 862078,
             "ai_leader": 1095031
+          },
+          "VT": {
+            "no_stepup": 597778,
+            "planned": 777529,
+            "ai_leader": 987634
           }
         },
         "rate_sensitivity_planned": {
@@ -6904,6 +6909,69 @@
     },
     {
       "rank": 80,
+      "area": "Essex / Essex Junction",
+      "state": "Vermont",
+      "state_abbr": "VT",
+      "metro": "burlington",
+      "coords": [
+        44.4906,
+        -73.1115
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Vermont's most affordable strong-school suburb, next to GlobalFoundries - taxes still bite",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 7.5,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 3.5,
+        "aacsb_university_proximity": 6.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 5.5,
+        "private_school_access": 6.5,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 460000,
+        "price_source": "Essex Junction $435K-$480K (2026 listing and sale medians)",
+        "proj_2041": 666217,
+        "property_tax_effective_pct": 1.9,
+        "property_tax_source": "Essex total ~$2.07 per $100 (older figure); ~1.9% effective assumed",
+        "insurance_state_avg_annual": 1450,
+        "budget_2041_planned": 777529,
+        "budget_2041_no_stepup": 597778,
+        "budget_2041_ai_leader": 987634,
+        "headroom_planned": 111311,
+        "headroom_no_stepup": -68439,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Essex and Essex Junction, home of GlobalFoundries' chip fab (Vermont's largest private employer, ~1,800). Essex Westford School District is Niche B+ (#6 in Vermont) and #1 in the state for athletes. Homes run ~$435K-$480K, projecting to ~$666K by 2041 - ~$111K under a ~$778K planned-path budget. Burlington-area 3BR rents run ~$2,600-$2,700. Vermont's progressive income tax (3.35%-8.75%) costs roughly $5,500/yr more than Tennessee's zero at today's household income, and more as income rises. There is no Kendra Scott store in Vermont; the nearest is Burlington, Massachusetts (~3.5 hours).",
+      "risks": [
+        "Vermont income tax up to 8.75%",
+        "No Kendra Scott store in the state",
+        "Property tax rate is an older figure - verify the current Essex rate"
+      ],
+      "weighted_total_out_of_100": 65.5,
+      "weighted_total_private_scenario": 62.5,
+      "weighted_total_career_max_scenario": 65.45,
+      "sources": [
+        "https://pursuitvt.com/blog/essex-junction-or-williston-choosing-your-first-home-base",
+        "https://www.niche.com/k12/search/best-school-districts/s/vermont/",
+        "https://www.essexreporter.com/news/photos-a-look-inside-the-globalfoundries-fab-in-essex-junction/article_34521e40-4ce3-11ee-b581-af4f78cf7845.html",
+        "https://www.rentometer.com/average-rent-in/metro/burlington-south-burlington-vt"
+      ]
+    },
+    {
+      "rank": 81,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -6995,7 +7063,7 @@
       "weighted_total_career_max_scenario": 64.9
     },
     {
-      "rank": 81,
+      "rank": 82,
       "area": "Milton",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -7056,7 +7124,7 @@
       ]
     },
     {
-      "rank": 82,
+      "rank": 83,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -7161,7 +7229,7 @@
       "weighted_total_career_max_scenario": 65.3
     },
     {
-      "rank": 83,
+      "rank": 84,
       "area": "Hinsdale / Western Springs",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -7223,7 +7291,7 @@
       ]
     },
     {
-      "rank": 84,
+      "rank": 85,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -7327,7 +7395,136 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 85,
+      "rank": 86,
+      "area": "South Burlington",
+      "state": "Vermont",
+      "state_abbr": "VT",
+      "metro": "burlington",
+      "coords": [
+        44.4669,
+        -73.1709
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Vermont's #3 district next to Burlington's employers - high taxes and no Kendra Scott",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 5.0,
+        "rental_feasibility_2028": 6.0,
+        "state_tax_burden": 3.5,
+        "aacsb_university_proximity": 7.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 5.0,
+        "private_school_access": 7.0,
+        "sports_tech_ecosystem": 6.0
+      },
+      "budget_check": {
+        "price_2026": 600000,
+        "price_source": "2026 median $712.5K (single-family-weighted); six-month closed median $471.5K incl. condos",
+        "proj_2041": 868979,
+        "property_tax_effective_pct": 1.92,
+        "property_tax_source": "South Burlington FY2027 homestead $2.16 per $100; ~1.92% median effective",
+        "insurance_state_avg_annual": 1450,
+        "budget_2041_planned": 775646,
+        "budget_2041_no_stepup": 596330,
+        "budget_2041_ai_leader": 985243,
+        "headroom_planned": -93333,
+        "headroom_no_stepup": -272649,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Vermont's largest suburb, home to Beta Technologies and Ben & Jerry's headquarters and minutes from Burlington, UVM and the Burlington airport. South Burlington School District is Niche #3 in Vermont. Homes run ~$472K-$713K depending on the mix, projecting to ~$869K by 2041 at a ~$600K working figure - ~$93K over a ~$776K planned-path budget at ~1.9% property tax. 3BR rents run ~$2,400-$2,900. Vermont's progressive income tax (3.35%-8.75%) costs roughly $5,500/yr more than Tennessee's zero at today's household income, and more as income rises. There is no Kendra Scott store in Vermont; the nearest is Burlington, Massachusetts (~3.5 hours).",
+      "risks": [
+        "Vermont income tax up to 8.75% - the second-heaviest state tax in the matrix after New Jersey",
+        "No Kendra Scott store in the state",
+        "Small AI/product job market",
+        "Long winters"
+      ],
+      "weighted_total_out_of_100": 61.6,
+      "weighted_total_private_scenario": 58.6,
+      "weighted_total_career_max_scenario": 61.25,
+      "sources": [
+        "https://www.nelandmark.com/best-places-buy-real-estate-vermont/",
+        "https://www.niche.com/k12/search/best-school-districts/s/vermont/",
+        "https://www.southburlingtonvt.gov/393/Tax-Rates",
+        "https://www.rentometer.com/average-rent-in/metro/burlington-south-burlington-vt"
+      ]
+    },
+    {
+      "rank": 87,
+      "area": "Shelburne / Williston",
+      "state": "Vermont",
+      "state_abbr": "VT",
+      "metro": "burlington",
+      "coords": [
+        44.42,
+        -73.16
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Vermont's #2 district (Champlain Valley) on Lake Champlain - over budget, high taxes",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 9.0,
+        "housing_affordability_2041": 3.5,
+        "rental_feasibility_2028": 5.5,
+        "state_tax_burden": 3.5,
+        "aacsb_university_proximity": 7.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 5.0,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 6.0
+      },
+      "budget_check": {
+        "price_2026": 680000,
+        "price_source": "Shelburne Zillow $691K, Redfin $642K; Williston list $592K, single-family $787K (2026)",
+        "proj_2041": 984843,
+        "property_tax_effective_pct": 1.9,
+        "property_tax_source": "Shelburne total ~$2.12 per $100 (FY2027); ~1.9% effective",
+        "insurance_state_avg_annual": 1450,
+        "budget_2041_planned": 777529,
+        "budget_2041_no_stepup": 597778,
+        "budget_2041_ai_leader": 987634,
+        "headroom_planned": -207314,
+        "headroom_no_stepup": -387065,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Lakeside Shelburne and suburban Williston south and east of Burlington, served by Champlain Valley Unified School District (Niche #2 in Vermont). Homes run ~$592K-$787K, projecting to ~$985K by 2041 at a ~$680K working figure - ~$207K over a ~$778K planned-path budget. Burlington-area 3BR rents average ~$2,700. Vermont's progressive income tax (3.35%-8.75%) costs roughly $5,500/yr more than Tennessee's zero at today's household income, and more as income rises. There is no Kendra Scott store in Vermont; the nearest is Burlington, Massachusetts (~3.5 hours).",
+      "risks": [
+        "Over the planned-path budget",
+        "Rent above the ceiling",
+        "Vermont income tax up to 8.75%",
+        "No Kendra Scott store in the state"
+      ],
+      "weighted_total_out_of_100": 58.9,
+      "weighted_total_private_scenario": 55.9,
+      "weighted_total_career_max_scenario": 58.65,
+      "sources": [
+        "https://www.zillow.com/home-values/13806/shelburne-vt/",
+        "https://www.redfin.com/city/34611/VT/Shelburne/housing-market",
+        "https://www.niche.com/k12/search/best-school-districts/s/vermont/",
+        "https://tax.vermont.gov/property/education-property-tax-rates",
+        "https://www.rentometer.com/average-rent-in/metro/burlington-south-burlington-vt"
+      ]
+    },
+    {
+      "rank": 88,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -7427,7 +7624,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 86,
+      "rank": 89,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -7591,6 +7788,10 @@
       "Arlington Heights",
       "Naperville"
     ],
+    "Vermont": [
+      "Essex / Essex Junction",
+      "South Burlington"
+    ],
     "New Jersey": [
       "Jersey City",
       "Newport (Jersey City)"
@@ -7728,11 +7929,14 @@
       "Charlottesville (Albemarle County)",
       "Farragut",
       "Alamo Heights",
+      "Essex / Essex Junction",
       "Waxhaw",
       "Milton",
       "Germantown (Nashville)",
       "Hinsdale / Western Springs",
       "Leesburg / Ashburn",
+      "South Burlington",
+      "Shelburne / Williston",
       "Jersey City",
       "Newport (Jersey City)"
     ]
@@ -8008,7 +8212,7 @@
           },
           {
             "area": "Milton",
-            "rank": 81,
+            "rank": 82,
             "school_quality": 9.0,
             "rental_feasibility_2028": 7.0,
             "housing_affordability_2041": 1.0,
@@ -8303,24 +8507,38 @@
           },
           {
             "area": "Waxhaw",
-            "rank": 80,
+            "rank": 81,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 64.7
           },
           {
             "area": "Hinsdale / Western Springs",
-            "rank": 83,
+            "rank": 84,
             "rental_feasibility_2028": 4.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 63.4
           },
           {
             "area": "Leesburg / Ashburn",
-            "rank": 84,
+            "rank": 85,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 61.6
+          },
+          {
+            "area": "South Burlington",
+            "rank": 86,
+            "rental_feasibility_2028": 6.0,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 61.6
+          },
+          {
+            "area": "Shelburne / Williston",
+            "rank": 87,
+            "rental_feasibility_2028": 5.5,
+            "school_quality": 9.0,
+            "weighted_total_out_of_100": 58.9
           }
         ]
       }
@@ -9025,6 +9243,30 @@
         "deduction": 25750,
         "source": "https://nationaltaxtools.com/payroll/louisiana/",
         "note": "Flat 3% since 2025; 2026 standard deduction $25,750 MFJ (inflation-adjusted from $25,000)."
+      },
+      "VT": {
+        "type": "brackets",
+        "deduction": 15300,
+        "brackets": [
+          [
+            75800,
+            0.0335
+          ],
+          [
+            183400,
+            0.066
+          ],
+          [
+            279450,
+            0.076
+          ],
+          [
+            null,
+            0.0875
+          ]
+        ],
+        "source": "https://www.vermontagency.com/resource-center/tax/whats-my-tax-bracket-2026",
+        "note": "Progressive 3.35%-8.75% (MFJ thresholds approximate for 2026). Standard deduction $15,300 MFJ is the most-cited figure; one source lists $25,000 - verify with the Vermont Department of Taxes."
       }
     },
     "local_by_metro": {
@@ -9076,7 +9318,8 @@
       "hampton_roads": "VA",
       "charlottesville": "VA",
       "roanoke": "VA",
-      "triad": "NC"
+      "triad": "NC",
+      "burlington": "VT"
     }
   },
   "metros": [
@@ -9125,7 +9368,7 @@
         },
         {
           "area": "Germantown (Nashville)",
-          "rank": 82,
+          "rank": 83,
           "score": 63.5
         }
       ],
@@ -10018,7 +10261,7 @@
         },
         {
           "area": "Hinsdale / Western Springs",
-          "rank": 83,
+          "rank": 84,
           "score": 63.4
         }
       ],
@@ -10668,7 +10911,7 @@
         },
         {
           "area": "Waxhaw",
-          "rank": 80,
+          "rank": 81,
           "score": 64.7
         }
       ],
@@ -10890,7 +11133,7 @@
         },
         {
           "area": "Milton",
-          "rank": 81,
+          "rank": 82,
           "score": 64.3
         }
       ],
@@ -12773,7 +13016,7 @@
         },
         {
           "area": "Leesburg / Ashburn",
-          "rank": 84,
+          "rank": 85,
           "score": 61.6
         }
       ],
@@ -12896,6 +13139,125 @@
         }
       ],
       "gaps": "The top fintech/AI market in the wave-2 set, but rent (~$3,300) is well above the rent ceiling. Sports-tech is thin."
+    },
+    {
+      "id": "burlington",
+      "label": "Burlington, VT",
+      "states": "VT",
+      "home_base": false,
+      "wave": 3,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Essex / Essex Junction",
+          "rank": 80,
+          "score": 65.5
+        },
+        {
+          "area": "South Burlington",
+          "rank": 86,
+          "score": 61.6
+        },
+        {
+          "area": "Shelburne / Williston",
+          "rank": 87,
+          "score": 58.9
+        }
+      ],
+      "representative": "South Burlington",
+      "rent_3br": 2700,
+      "rent_note": "Burlington-South Burlington metro 3BR apartment average ~$2,672 (houses ~$3,086)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/metro/burlington-south-burlington-vt",
+      "kendra_scott": [],
+      "companies": [
+        {
+          "name": "Beta Technologies",
+          "sector": "Electric aviation",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Electric-aircraft maker based in South Burlington with many open roles in 2026.",
+          "role_families": [
+            "Product / program manager"
+          ],
+          "office": "South Burlington (HQ)",
+          "source": "https://www.ziprecruiter.com/co/beta-technologies/Jobs/-in-South-Burlington,VT",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "GlobalFoundries - Essex Junction",
+          "sector": "Semiconductors",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Chip fab and Vermont's largest private employer (~1,800 on site).",
+          "role_families": [
+            "Technical program / product roles"
+          ],
+          "office": "Essex Junction",
+          "source": "https://www.essexreporter.com/news/photos-a-look-inside-the-globalfoundries-fab-in-essex-junction/article_34521e40-4ce3-11ee-b581-af4f78cf7845.html",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Ben & Jerry's",
+          "sector": "Consumer brand",
+          "goal_tags": [
+            "consumer_retail",
+            "spouse_content"
+          ],
+          "why": "Headquartered in South Burlington - an iconic consumer brand with social and content marketing.",
+          "role_families": [
+            "Brand / digital marketing",
+            "Social content"
+          ],
+          "office": "South Burlington (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Burlington_metropolitan_area,_Vermont",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Burton Snowboards",
+          "sector": "Snow sports / consumer",
+          "goal_tags": [
+            "sports_tech",
+            "consumer_retail"
+          ],
+          "why": "Headquartered in Burlington - board-sports gear and brand.",
+          "role_families": [
+            "Product / e-commerce",
+            "Brand marketing"
+          ],
+          "office": "Burlington (HQ)",
+          "source": "https://en.wikipedia.org/wiki/Burlington_metropolitan_area,_Vermont",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        },
+        {
+          "name": "Dealer.com (Cox Automotive)",
+          "sector": "Automotive marketing tech",
+          "goal_tags": [
+            "ai_product",
+            "consumer_retail"
+          ],
+          "why": "Burlington-based digital marketing and website platform for car dealers.",
+          "role_families": [
+            "Product Manager (marketing tech)"
+          ],
+          "office": "Burlington",
+          "source": "https://en.wikipedia.org/wiki/Burlington_metropolitan_area,_Vermont",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 4
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "No Kendra Scott store in Vermont (nearest: Burlington, MA, ~3.5 hours). Small job market overall; Vermont income tax up to 8.75%."
     },
     {
       "id": "hampton_roads",
@@ -13088,12 +13450,12 @@
       "locations": [
         {
           "area": "Jersey City",
-          "rank": 85,
+          "rank": 88,
           "score": 54.8
         },
         {
           "area": "Newport (Jersey City)",
-          "rank": 86,
+          "rank": 89,
           "score": 49.1
         }
       ],
