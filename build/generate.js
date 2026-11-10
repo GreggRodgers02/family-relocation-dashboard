@@ -1264,7 +1264,7 @@ function mapClient() {
   var METRICS = {
     score: { label: 'Overall score', lo: 60, hi: 85, fmt: function (v) { return v.toFixed(1); } },
     school: { label: 'Schools', lo: 4, hi: 10, fmt: function (v) { return v.toFixed(1); } },
-    housing: { label: '2041 budget headroom', lo: -0.5, hi: 0.5, fmt: function (v) { return Math.round(v * 100) + '%'; } },
+    housing: { label: 'Budget headroom', lo: -0.5, hi: 0.5, fmt: function (v) { return Math.round(v * 100) + '%'; } },
     rent: { label: 'Rental feasibility', lo: 2, hi: 10, fmt: function (v) { return v.toFixed(1); } },
     tax: { label: 'State tax score', lo: 2, hi: 10, fmt: function (v) { return v.toFixed(1); } },
   };
@@ -1330,10 +1330,21 @@ function mapClient() {
     markers[l.a] = mk;
   });
 
-  var state = { scen: D.scenarios[0].id, tier: 'stepup', metric: 'score', min: 0, fits: false, st: '', tot: {}, rank: {} };
+  var state = { scen: D.scenarios[0].id, tier: 'stepup', year: D.inc.end, metric: 'score', min: 0, fits: false, st: '', tot: {}, rank: {} };
 
-  function headroom(l) { var b = l.b[state.tier]; return (b - l.p41) / b; }
-  function fits(l) { return l.p41 <= l.b[state.tier]; }
+  // Household income in a purchase year on each career path (the paths behind the stored 2041 budgets).
+  function income(y, tier) {
+    var I = D.inc, n = y - I.base, g;
+    if (tier === 'current' || y < I.step_year) g = I.gregg * Math.pow(1 + I.growth, n);
+    else if (tier === 'stepup' || y < I.lead_year) g = I.step_pay * Math.pow(1 + I.growth, y - I.step_year);
+    else g = I.lead_pay * Math.pow(1 + I.growth, y - I.lead_year);
+    return g + I.spouse * Math.pow(1 + I.growth, n);
+  }
+  // The stored budgets are used as-is for the end year so the map matches the ranking exactly.
+  function budget(l) { return state.year === D.inc.end ? l.b[state.tier] : income(state.year, state.tier) * l.k; }
+  function priceAt(l) { return state.year === D.inc.end ? l.p41 : l.price * Math.pow(1 + D.inc.appr, state.year - D.inc.base); }
+  function headroom(l) { var b = budget(l); return (b - priceAt(l)) / b; }
+  function fits(l) { return priceAt(l) <= budget(l); }
   function metricValue(l) {
     if (state.metric === 'score') return state.tot[l.a];
     if (state.metric === 'school') return l.s.school_quality;
@@ -1342,13 +1353,13 @@ function mapClient() {
     return l.s.state_tax_burden;
   }
   function popup(l) {
-    var m = D.metros[l.m] || null, b = l.b[state.tier], gap = b - l.p41;
+    var m = D.metros[l.m] || null, b = budget(l), gap = b - priceAt(l);
     var sc = D.scenarios.filter(function (x) { return x.id === state.scen; })[0];
     return '<div class="map-pop"><strong>#' + state.rank[l.a] + ' ' + esc(l.a) + '</strong><span class="map-pop-st"> ' + esc(l.st) + '</span>' +
       '<div class="map-pop-sub">' + esc(l.lbl) + '</div>' +
       '<div class="map-pop-score">' + state.tot[l.a].toFixed(1) + '<span> / 100 &middot; ' + esc(sc.label) + '</span></div>' +
-      '<div>Home ~' + moneyK(l.price) + ' today &rarr; ~' + moneyK(l.p41) + ' in 2041</div>' +
-      '<div class="' + (gap >= 0 ? 'map-ok' : 'map-over') + '">' + (gap >= 0 ? 'Fits' : 'Over') + ' the ' + TIER_LABEL[state.tier] + ' budget (~' + moneyK(b) + ') by ' + moneyK(Math.abs(gap)) + '</div>' +
+      '<div>Home ~' + moneyK(l.price) + ' today &rarr; ~' + moneyK(priceAt(l)) + ' in ' + state.year + '</div>' +
+      '<div class="' + (gap >= 0 ? 'map-ok' : 'map-over') + '">' + (gap >= 0 ? 'Fits' : 'Over') + ' the ' + state.year + ' ' + TIER_LABEL[state.tier] + ' budget (~' + moneyK(b) + ') by ' + moneyK(Math.abs(gap)) + '</div>' +
       (m ? '<div class="map-pop-metro">' + esc(m.label) + ': ' + m.total + ' employers &middot; ' + m.ks + ' Kendra Scott' + (m.rent ? ' &middot; 3BR ~' + money(m.rent) : '') + '</div>' +
         '<div class="map-pop-tags">' + TAGS.map(function (t) { return '<span>' + t[1] + ' ' + (m.n[t[0]] || 0) + '</span>'; }).join('') + '</div>' : '') +
       '<div class="map-pop-foot">' + (l.home ? 'Home base' : miles(D.home.c, l.c) + ' miles from Spring Hill') +
@@ -1371,14 +1382,15 @@ function mapClient() {
       if (visible) { if (!map.hasLayer(mk)) mk.addTo(map); shown.push(l); if (f) nFit++; } else if (map.hasLayer(mk)) map.removeLayer(mk);
       if (mk.isPopupOpen()) mk.setPopupContent(popup(l));
     });
-    $('map-count').textContent = 'Showing ' + shown.length + ' of ' + D.locs.length + ' (' + nFit + ' fit the ' + TIER_LABEL[state.tier] + ' budget)';
+    $('map-count').textContent = 'Showing ' + shown.length + ' of ' + D.locs.length + ' (' + nFit + ' fit the ' + state.year + ' ' + TIER_LABEL[state.tier] + ' budget)';
+    $('map-legend-label').textContent = M.label;
     $('map-min-val').textContent = state.min ? state.min : 'any';
     shown.sort(function (a, b) { return state.tot[b.a] - state.tot[a.a]; });
     $('map-list').innerHTML = shown.slice(0, 10).map(function (l) {
       return '<li><button type="button" data-area="' + esc(l.a) + '"><span class="map-li-rank">#' + state.rank[l.a] + '</span><span class="map-li-name">' + esc(l.a) +
         '</span><span class="map-li-score">' + state.tot[l.a].toFixed(1) + (fits(l) ? '' : ' <em>over</em>') + '</span></button></li>';
     }).join('') || '<li class="map-empty">No locations match these filters.</li>';
-    $('map-legend-label').textContent = M.label;
+    if (state.metric === 'housing') $('map-legend-label').textContent = state.year + ' budget headroom';
     $('map-legend-lo').textContent = M.fmt(M.lo);
     $('map-legend-hi').textContent = M.fmt(M.hi);
   }
@@ -1386,6 +1398,7 @@ function mapClient() {
   function bind(id, ev, fn) { var e = $(id); if (e) e.addEventListener(ev, fn); }
   bind('map-scen', 'change', function (e) { state.scen = e.target.value; render(); });
   bind('map-tier', 'change', function (e) { state.tier = e.target.value; render(); });
+  bind('map-year', 'change', function (e) { state.year = +e.target.value; render(); });
   bind('map-metric', 'change', function (e) { state.metric = e.target.value; render(); });
   bind('map-min', 'input', function (e) { state.min = +e.target.value; render(); });
   bind('map-fits', 'change', function (e) { state.fits = e.target.checked; render(); });
@@ -1436,7 +1449,20 @@ function buildMap(data, locations, scenarios) {
     metroOut[m.id] = { label: m.label, total: cos.length, n, ks: (m.kendra_scott || []).length, rent: m.rent_3br || null, c };
   });
   const homeCoords = (data.project && data.project.home_base_coords) || located[0].coords;
+  const plan = (data.project && data.project.planning_assumptions) || {};
+  const endYear = plan.home_purchase_year || 2041;
+  // Budget per dollar of gross household income: 28% front-end on a 30-year loan, 20% down,
+  // 6.5% rate, plus each location's property tax and insurance (insurance on 75% of price,
+  // quoted on a $400K dwelling) - the same rule as the stored 2041 budgets.
+  const pmt = (r) => { const i = r / 12, n = 360; return (i * (1 + i) ** n) / ((1 + i) ** n - 1); };
+  const budgetFactor = (b) => {
+    const tax = (b.property_tax_effective_pct || 0) / 100;
+    const ins = ((b.insurance_state_avg_annual || 0) / 400000) * 0.75;
+    return 0.28 / 12 / (0.8 * pmt(0.065) + (tax + ins) / 12);
+  };
   const payload = {
+    inc: { base: 2026, end: endYear, gregg: 73000, spouse: 32000, growth: 0.035, appr: 0.025,
+      step_year: 2030, step_pay: 120000, lead_year: 2033, lead_pay: 180000 },
     home: { name: 'Spring Hill, TN', c: homeCoords },
     scenarios: scenarios.filter((s) => s.usable).map((s) => ({ id: s.id, label: s.label, weights: s.weights })),
     locs: located.map((l) => {
@@ -1451,6 +1477,7 @@ function buildMap(data, locations, scenarios) {
         price: b.price_2026,
         p41: b.proj_2041,
         b: { current: b.budget_2041_no_stepup, stepup: b.budget_2041_planned, leader: b.budget_2041_ai_leader },
+        k: budgetFactor(b),
         home: l.coords[0] === homeCoords[0] && l.coords[1] === homeCoords[1],
       };
     }),
@@ -1463,7 +1490,7 @@ function buildMap(data, locations, scenarios) {
     <section id="map">
       <div class="section-title">
         <h2>Map</h2>
-        <p>Every location on one map, scored live. Change the scenario, career tier or filters and the pins recolor; click a pin for its numbers.</p>
+        <p>Every location on one map, scored live. Change the scenario, purchase year, career tier or filters and the pins recolor; click a pin for its numbers. Earlier purchase years use the same lending rules with that year's income and prices.</p>
       </div>
       <style>
 ${leaflet.css}
@@ -1471,8 +1498,9 @@ ${leaflet.css}
       <div class="card map-card">
         <div class="map-controls">
           <label>Scenario <select id="map-scen">${scenOpts}</select></label>
+          <label>Buy in <select id="map-year"><option value="2030">2030</option><option value="2032">2032</option><option value="2035">2035</option><option value="${endYear}" selected>${endYear} (plan)</option></select></label>
           <label>Career tier <select id="map-tier"><option value="current">Current (no step-up)</option><option value="stepup" selected>Planned step-up</option><option value="leader">AI leader</option></select></label>
-          <label>Color by <select id="map-metric"><option value="score">Overall score</option><option value="school">Schools</option><option value="housing">2041 budget headroom</option><option value="rent">Rental feasibility</option><option value="tax">State tax</option></select></label>
+          <label>Color by <select id="map-metric"><option value="score">Overall score</option><option value="school">Schools</option><option value="housing">Budget headroom</option><option value="rent">Rental feasibility</option><option value="tax">State tax</option></select></label>
           <label>State <select id="map-state"><option value="">All states</option>${stateOpts}</select></label>
           <label class="map-range">Min score <span id="map-min-val">any</span><input id="map-min" type="range" min="0" max="85" step="1" value="0" /></label>
           <label class="map-check"><input id="map-fits" type="checkbox" /> Fits budget only</label>
