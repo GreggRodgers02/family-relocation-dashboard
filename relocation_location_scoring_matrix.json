@@ -803,6 +803,68 @@
     },
     {
       "rank": 3,
+      "area": "Gainesville (Haile / SW)",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "metro": "gainesville",
+      "coords": [
+        29.6,
+        -82.41
+      ],
+      "tier": "Tier 1 - Serious Finalist",
+      "strategic_label": "UF's hometown - Warrington (AACSB), Gator athletics, Kendra Scott, affordable",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 7.5,
+        "housing_affordability_2041": 9.0,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 10.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 8.5,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 7.0
+      },
+      "budget_check": {
+        "price_2026": 390000,
+        "price_source": "Haile Plantation median sale $390K (Redfin, Mar 2026)",
+        "proj_2041": 564836,
+        "property_tax_effective_pct": 1.1,
+        "property_tax_source": "Alachua County ~1.1% effective (estimate)",
+        "insurance_state_avg_annual": 3000,
+        "budget_2041_planned": 828762,
+        "budget_2041_no_stepup": 637167,
+        "budget_2041_ai_leader": 1052712,
+        "headroom_planned": 263926,
+        "headroom_no_stepup": 72331,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Southwest Gainesville and Haile Plantation, zoned to Buchholz High, ~10 minutes from the University of Florida (Warrington College of Business, HiPerGator AI) and Kendra Scott at Butler Town Center. Homes sell around ~$390K, projecting to ~$565K by 2041 - ~$264K under a ~$829K planned-path budget. 3BR rents run ~$1,900-$2,100. Florida has no state income tax, like Tennessee. Kendra Scott: Gainesville - Butler Town Center.",
+      "risks": [
+        "Small private-sector product market",
+        "Alachua schools vary - Buchholz / Haile zones are strongest",
+        "Hurricane exposure and Florida insurance volatility"
+      ],
+      "weighted_total_out_of_100": 82.1,
+      "weighted_total_private_scenario": 82.1,
+      "weighted_total_career_max_scenario": 80.05,
+      "sources": [
+        "https://www.redfin.com/neighborhood/619724/FL/Gainesville/Haile-Plantation/housing-market",
+        "https://warrington.ufl.edu/",
+        "https://www.sbac.edu/"
+      ]
+    },
+    {
+      "rank": 4,
       "area": "McKinney",
       "state": "Texas",
       "state_abbr": "TX",
@@ -892,7 +954,7 @@
       "weighted_total_career_max_scenario": 82.3
     },
     {
-      "rank": 4,
+      "rank": 5,
       "area": "St. Johns County",
       "state": "Florida",
       "state_abbr": "FL",
@@ -974,7 +1036,7 @@
       "weighted_total_career_max_scenario": 79.95
     },
     {
-      "rank": 5,
+      "rank": 6,
       "area": "Chandler",
       "state": "Arizona",
       "state_abbr": "AZ",
@@ -1037,7 +1099,7 @@
       ]
     },
     {
-      "rank": 6,
+      "rank": 7,
       "area": "Plano",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1122,7 +1184,7 @@
       "weighted_total_career_max_scenario": 82.05
     },
     {
-      "rank": 7,
+      "rank": 8,
       "area": "Murfreesboro",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -1229,7 +1291,7 @@
       "weighted_total_career_max_scenario": 80.5
     },
     {
-      "rank": 8,
+      "rank": 9,
       "area": "Fort Mitchell / Villa Hills (Beechwood)",
       "state": "Kentucky",
       "state_abbr": "KY",
@@ -1329,7 +1391,7 @@
       "weighted_total_career_max_scenario": 81.75
     },
     {
-      "rank": 9,
+      "rank": 10,
       "area": "Lincoln (South Lincoln)",
       "state": "Nebraska",
       "state_abbr": "NE",
@@ -1391,7 +1453,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "area": "Cedar Park",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1478,7 +1540,7 @@
       "weighted_total_career_max_scenario": 81.95
     },
     {
-      "rank": 11,
+      "rank": 12,
       "area": "Zachary (Baton Rouge)",
       "state": "Louisiana",
       "state_abbr": "LA",
@@ -1637,13 +1699,13 @@
         "purchase_2041": "Open. Spring Hill remains a viable candidate (~$520K median fits budget) but not committed; best 2041 buy city to be chosen on full-model merit."
       },
       "tier": "Tier 1 - Serious Finalist",
-      "rank": 12,
+      "rank": 13,
       "weighted_total_out_of_100": 79.9,
       "weighted_total_private_scenario": 78.9,
       "weighted_total_career_max_scenario": 79.7
     },
     {
-      "rank": 13,
+      "rank": 14,
       "area": "Solon / Rocky River (Cleveland Suburbs)",
       "state": "Ohio",
       "state_abbr": "OH",
@@ -1791,7 +1853,7 @@
       "weighted_total_career_max_scenario": 80.6
     },
     {
-      "rank": 14,
+      "rank": 15,
       "area": "Georgetown",
       "state": "Texas",
       "state_abbr": "TX",
@@ -1880,7 +1942,7 @@
       "weighted_total_career_max_scenario": 80.75
     },
     {
-      "rank": 15,
+      "rank": 16,
       "area": "Bentonville",
       "state": "Arkansas",
       "state_abbr": "AR",
@@ -1942,7 +2004,7 @@
       ]
     },
     {
-      "rank": 16,
+      "rank": 17,
       "area": "Allen",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2024,7 +2086,7 @@
       "weighted_total_career_max_scenario": 79.7
     },
     {
-      "rank": 17,
+      "rank": 18,
       "area": "Oviedo",
       "state": "Florida",
       "state_abbr": "FL",
@@ -2110,7 +2172,7 @@
       "weighted_total_career_max_scenario": 79.25
     },
     {
-      "rank": 18,
+      "rank": 19,
       "area": "Lee's Summit",
       "state": "Missouri",
       "state_abbr": "MO",
@@ -2172,7 +2234,7 @@
       ]
     },
     {
-      "rank": 19,
+      "rank": 20,
       "area": "Melissa",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2336,13 +2398,13 @@
         "Home price data noisy across sources (Zillow +17% vs others flat/down)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 20,
+      "rank": 21,
       "weighted_total_out_of_100": 78.8,
       "weighted_total_private_scenario": 80.8,
       "weighted_total_career_max_scenario": 79.5
     },
     {
-      "rank": 21,
+      "rank": 22,
       "area": "New Braunfels (Comal ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -2404,7 +2466,7 @@
       ]
     },
     {
-      "rank": 22,
+      "rank": 23,
       "area": "Madison / Huntsville",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -2581,13 +2643,13 @@
         "AI/product market is mid-tier and concentrated in finance, insurance and health tech; ceiling is below Austin, DFW, or the Triangle for frontier AI product work"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 23,
+      "rank": 24,
       "weighted_total_out_of_100": 78.0,
       "weighted_total_private_scenario": 82.0,
       "weighted_total_career_max_scenario": 77.25
     },
     {
-      "rank": 24,
+      "rank": 25,
       "area": "Cary",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -2766,13 +2828,13 @@
         "Merrol Hyde Magnet admission is by county-wide lottery and cannot be secured by address"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 25,
+      "rank": 26,
       "weighted_total_out_of_100": 77.9,
       "weighted_total_private_scenario": 77.9,
       "weighted_total_career_max_scenario": 79.1
     },
     {
-      "rank": 26,
+      "rank": 27,
       "area": "Oldham County (Crestwood / La Grange)",
       "state": "Kentucky",
       "state_abbr": "KY",
@@ -2947,13 +3009,135 @@
         "AI/product roles likely require remote or a Nashville commute"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 27,
+      "rank": 28,
       "weighted_total_out_of_100": 77.7,
       "weighted_total_private_scenario": 78.7,
       "weighted_total_career_max_scenario": 76.65
     },
     {
-      "rank": 28,
+      "rank": 29,
+      "area": "Lutz / Land O' Lakes",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "metro": "tampa",
+      "coords": [
+        28.18,
+        -82.45
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Lakes-and-oaks north Tampa suburbs - strong high schools, near USF",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 7.5,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 8.0,
+        "private_school_access": 8.5,
+        "sports_tech_ecosystem": 7.5
+      },
+      "budget_check": {
+        "price_2026": 480000,
+        "price_source": "Lutz / Land O' Lakes ~$450K-$520K (2026 estimate)",
+        "proj_2041": 695183,
+        "property_tax_effective_pct": 1.0,
+        "property_tax_source": "Hillsborough / Pasco ~0.9-1.0% plus some CDDs (estimate)",
+        "insurance_state_avg_annual": 4650,
+        "budget_2041_planned": 806907,
+        "budget_2041_no_stepup": 620365,
+        "budget_2041_ai_leader": 1024951,
+        "headroom_planned": 111724,
+        "headroom_no_stepup": -74819,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "North Tampa suburbs straddling Hillsborough and Pasco, zoned to strong high schools (Steinbrenner in Lutz, Sunlake in Land O' Lakes), ~15 minutes from USF's Muma College of Business and ~20 minutes from Kendra Scott at Wiregrass. Homes run ~$450K-$520K (estimate), projecting to ~$695K by 2041 - ~$112K under a ~$807K planned-path budget. 3BR rents run ~$2,500-$2,700. Florida has no state income tax, like Tennessee. Kendra Scott: Tampa - International Plaza; Wesley Chapel - Shops at Wiregrass (Paseo Dr).",
+      "risks": [
+        "Prices vary widely by subdivision",
+        "Hurricane exposure and Florida insurance volatility"
+      ],
+      "weighted_total_out_of_100": 77.5,
+      "weighted_total_private_scenario": 78.5,
+      "weighted_total_career_max_scenario": 76.95,
+      "sources": [
+        "https://www.redfin.com/city/11164/FL/Lutz/housing-market",
+        "https://www.hillsboroughschools.org/"
+      ]
+    },
+    {
+      "rank": 30,
+      "area": "Viera / Suntree",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "metro": "space_coast",
+      "coords": [
+        28.25,
+        -80.73
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Space Coast master-planned town - L3Harris HQ, Blue Origin and SpaceX nearby, Kendra Scott at The Avenue",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 7.5,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 9.0,
+        "hs_football_culture": 7.5,
+        "private_school_access": 7.5,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 480000,
+        "price_source": "Viera / Suntree ~$450K-$520K (2026 estimate)",
+        "proj_2041": 695183,
+        "property_tax_effective_pct": 0.9,
+        "property_tax_source": "Brevard County ~0.9% effective (estimate)",
+        "insurance_state_avg_annual": 4650,
+        "budget_2041_planned": 817200,
+        "budget_2041_no_stepup": 628278,
+        "budget_2041_ai_leader": 1038025,
+        "headroom_planned": 122017,
+        "headroom_no_stepup": -66906,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Master-planned Viera and neighboring Suntree in Brevard Public Schools (Viera High rated among the county's best), ~10 minutes from L3Harris's Melbourne headquarters and ~40 minutes from Blue Origin and SpaceX at the Cape, with a Kendra Scott at The Avenue Viera. Homes run ~$450K-$520K (estimate), projecting to ~$695K by 2041 - ~$122K under a ~$817K planned-path budget. 3BR rents run ~$2,300-$2,500. Florida has no state income tax, like Tennessee. Kendra Scott: Melbourne - The Avenue Viera.",
+      "risks": [
+        "Coastal insurance and hurricane exposure",
+        "Aerospace/defense-heavy job market",
+        "~1 hour to Orlando"
+      ],
+      "weighted_total_out_of_100": 77.2,
+      "weighted_total_private_scenario": 76.2,
+      "weighted_total_career_max_scenario": 78.25,
+      "sources": [
+        "https://www.avenueviera.com/tenants/kendra-scott/",
+        "https://www.l3harris.com/about-us",
+        "https://www.brevardschools.org/"
+      ]
+    },
+    {
+      "rank": 31,
       "area": "Gilbert",
       "state": "Arizona",
       "state_abbr": "AZ",
@@ -3016,7 +3200,7 @@
       ]
     },
     {
-      "rank": 29,
+      "rank": 32,
       "area": "Cranberry Township",
       "state": "Pennsylvania",
       "state_abbr": "PA",
@@ -3077,7 +3261,68 @@
       ]
     },
     {
-      "rank": 30,
+      "rank": 33,
+      "area": "DeLand (Volusia County)",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "metro": "orlando",
+      "coords": [
+        29.0283,
+        -81.3031
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Historic college town between Orlando and Daytona - Stetson (AACSB), cheap, middling schools",
+      "scores": {
+        "ai_tech_pm_market": 6.0,
+        "school_quality": 6.0,
+        "housing_affordability_2041": 9.5,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 8.0,
+        "robotics_fitness_startup_fit": 6.5,
+        "hs_football_culture": 8.0,
+        "private_school_access": 7.0,
+        "sports_tech_ecosystem": 6.0
+      },
+      "budget_check": {
+        "price_2026": 335000,
+        "price_source": "Median ~$335,000 (2026 suburb guide)",
+        "proj_2041": 485180,
+        "property_tax_effective_pct": 0.95,
+        "property_tax_source": "Volusia County ~0.9-1.0% effective (estimate)",
+        "insurance_state_avg_annual": 3000,
+        "budget_2041_planned": 845162,
+        "budget_2041_no_stepup": 649775,
+        "budget_2041_ai_leader": 1073543,
+        "headroom_planned": 359982,
+        "headroom_no_stepup": 164595,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Historic downtown and home of Stetson University (School of Business Administration, AACSB), ~45 minutes north of Orlando and ~30 minutes from Daytona and Embry-Riddle. Volusia County Schools serve the area. Homes run ~$335K, projecting to ~$485K by 2041 - ~$360K under a ~$845K planned-path budget. 3BR rents run ~$2,000-$2,200. Florida has no state income tax, like Tennessee. Kendra Scott: Disney Springs; The Mall at Millenia; Winter Park Village.",
+      "risks": [
+        "Volusia schools are middling",
+        "~45-minute commute to Orlando jobs",
+        "Hurricane exposure and Florida insurance volatility"
+      ],
+      "weighted_total_out_of_100": 77.0,
+      "weighted_total_private_scenario": 79.0,
+      "weighted_total_career_max_scenario": 76.05,
+      "sources": [
+        "https://www.theshavergroup.net/blog/10-best-orlando-suburbs-and-what-homes-there-cost",
+        "https://www.stetson.edu/business/"
+      ]
+    },
+    {
+      "rank": 34,
       "area": "Springfield (Nixa / Ozark)",
       "state": "Missouri",
       "state_abbr": "MO",
@@ -3137,7 +3382,7 @@
       ]
     },
     {
-      "rank": 31,
+      "rank": 35,
       "area": "West Des Moines",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -3220,7 +3465,7 @@
       "weighted_total_career_max_scenario": 79.2
     },
     {
-      "rank": 32,
+      "rank": 36,
       "area": "Schertz / Cibolo (SCUC ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3282,7 +3527,69 @@
       ]
     },
     {
-      "rank": 33,
+      "rank": 37,
+      "area": "Wesley Chapel",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "metro": "tampa",
+      "coords": [
+        28.2397,
+        -82.3279
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "North Tampa's booming suburb - Kendra Scott at Wiregrass, CDD fees, Pasco schools",
+      "scores": {
+        "ai_tech_pm_market": 7.0,
+        "school_quality": 6.5,
+        "housing_affordability_2041": 8.5,
+        "rental_feasibility_2028": 7.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 7.5,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 7.5
+      },
+      "budget_check": {
+        "price_2026": 415000,
+        "price_source": "Redfin 3-month median $425K (May 2026); ZIP 33543 ~$407K",
+        "proj_2041": 601044,
+        "property_tax_effective_pct": 1.3,
+        "property_tax_source": "Pasco County ~0.9% plus common CDD assessments (~1.3% all-in; estimate)",
+        "insurance_state_avg_annual": 4650,
+        "budget_2041_planned": 777529,
+        "budget_2041_no_stepup": 597778,
+        "budget_2041_ai_leader": 987634,
+        "headroom_planned": 176485,
+        "headroom_no_stepup": -3266,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Master-planned Pasco County suburb ~25 minutes north of Tampa, with the Shops at Wiregrass (Kendra Scott), AdventHealth Center Ice (the Lightning's practice rink) and ~15 minutes to USF. Homes sell around ~$407K-$425K, projecting to ~$601K by 2041 - ~$176K under a ~$778K planned-path budget. 3BR rents run ~$2,300-$2,500. Florida has no state income tax, like Tennessee. Kendra Scott: Tampa - International Plaza; Wesley Chapel - Shops at Wiregrass (Paseo Dr).",
+      "risks": [
+        "CDD assessments in most newer communities",
+        "Pasco schools are uneven - verify the zone",
+        "Hurricane exposure and Florida insurance volatility"
+      ],
+      "weighted_total_out_of_100": 76.8,
+      "weighted_total_private_scenario": 79.8,
+      "weighted_total_career_max_scenario": 76.25,
+      "sources": [
+        "https://www.redfin.com/city/26279/FL/Wesley-Chapel/housing-market",
+        "https://www.prop-metrics.com/zip/33543",
+        "https://www.pasco.k12.fl.us/"
+      ]
+    },
+    {
+      "rank": 38,
       "area": "Buford (Buford City Schools)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -3376,7 +3683,7 @@
       ]
     },
     {
-      "rank": 34,
+      "rank": 39,
       "area": "O'Fallon (St. Charles County)",
       "state": "Missouri",
       "state_abbr": "MO",
@@ -3437,7 +3744,7 @@
       ]
     },
     {
-      "rank": 35,
+      "rank": 40,
       "area": "Jenks",
       "state": "Oklahoma",
       "state_abbr": "OK",
@@ -3499,7 +3806,7 @@
       ]
     },
     {
-      "rank": 36,
+      "rank": 41,
       "area": "Stone Oak (North San Antonio)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3580,7 +3887,7 @@
       ]
     },
     {
-      "rank": 37,
+      "rank": 42,
       "area": "Frisco",
       "state": "Texas",
       "state_abbr": "TX",
@@ -3666,7 +3973,7 @@
       "weighted_total_career_max_scenario": 76.9
     },
     {
-      "rank": 38,
+      "rank": 43,
       "area": "Norman",
       "state": "Oklahoma",
       "state_abbr": "OK",
@@ -3728,7 +4035,7 @@
       ]
     },
     {
-      "rank": 39,
+      "rank": 44,
       "area": "Fort Mill",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -3821,7 +4128,7 @@
       "weighted_total_career_max_scenario": 75.4
     },
     {
-      "rank": 40,
+      "rank": 45,
       "area": "Greensboro (City)",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -3884,7 +4191,7 @@
       ]
     },
     {
-      "rank": 41,
+      "rank": 46,
       "area": "Owasso",
       "state": "Oklahoma",
       "state_abbr": "OK",
@@ -3945,7 +4252,7 @@
       ]
     },
     {
-      "rank": 42,
+      "rank": 47,
       "area": "Olathe (Garmin HQ)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -4029,7 +4336,7 @@
       "weighted_total_career_max_scenario": 74.7
     },
     {
-      "rank": 43,
+      "rank": 48,
       "area": "Lehi",
       "state": "Utah",
       "state_abbr": "UT",
@@ -4094,7 +4401,7 @@
       ]
     },
     {
-      "rank": 44,
+      "rank": 49,
       "area": "Columbia",
       "state": "Missouri",
       "state_abbr": "MO",
@@ -4155,7 +4462,7 @@
       ]
     },
     {
-      "rank": 45,
+      "rank": 50,
       "area": "Crowley / North Crowley (SW Fort Worth)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -4251,7 +4558,7 @@
       "weighted_total_career_max_scenario": 74.8
     },
     {
-      "rank": 46,
+      "rank": 51,
       "area": "Overland Park (Blue Valley)",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -4335,7 +4642,7 @@
       "weighted_total_career_max_scenario": 74.95
     },
     {
-      "rank": 47,
+      "rank": 52,
       "area": "East Cobb (Marietta)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -4394,6 +4701,67 @@
         "https://www.realtynetworkteam.com/cobbcounty/living-in-east-cobb-ga/",
         "https://www.niche.com/k12/search/best-school-districts/m/atlanta-metro-area/",
         "https://www.renthop.com/average-rent-in/marietta-ga"
+      ]
+    },
+    {
+      "rank": 53,
+      "area": "FishHawk Ranch (Lithia)",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "metro": "tampa",
+      "coords": [
+        27.85,
+        -82.23
+      ],
+      "tier": "Tier 2 - Strong Trade-Off",
+      "strategic_label": "Hillsborough's top-school master-planned community - Newsome High, long commute",
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 7.0,
+        "rental_feasibility_2028": 6.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 8.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 7.0
+      },
+      "budget_check": {
+        "price_2026": 490000,
+        "price_source": "Zillow typical value $490,143 (Sep 2026); Town Center 12-month median $478K",
+        "proj_2041": 709666,
+        "property_tax_effective_pct": 1.1,
+        "property_tax_source": "Hillsborough ~0.9% plus FishHawk CDD (~1.1% all-in; estimate)",
+        "insurance_state_avg_annual": 4650,
+        "budget_2041_planned": 796871,
+        "budget_2041_no_stepup": 612648,
+        "budget_2041_ai_leader": 1012203,
+        "headroom_planned": 87205,
+        "headroom_no_stepup": -97018,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Master-planned community southeast of Tampa, zoned to Newsome High and some of Hillsborough County's top-rated schools. Homes are valued around ~$478K-$490K, projecting to ~$710K by 2041 - ~$87K under a ~$797K planned-path budget. 3BR rents run ~$2,500-$2,700. Florida has no state income tax, like Tennessee. Kendra Scott: Tampa - International Plaza; Wesley Chapel - Shops at Wiregrass (Paseo Dr).",
+      "risks": [
+        "~40-minute commute to downtown Tampa",
+        "CDD assessments",
+        "Hurricane exposure and Florida insurance volatility"
+      ],
+      "weighted_total_out_of_100": 75.3,
+      "weighted_total_private_scenario": 74.3,
+      "weighted_total_career_max_scenario": 74.75,
+      "sources": [
+        "https://www.zillow.com/home-values/831164/fishhawk-ranch-lithia-fl/",
+        "https://movewithmomentum.com/neighborhoods/fishhawk-ranch-town-center-lithia"
       ]
     },
     {
@@ -4476,13 +4844,13 @@
         "Median showing slight negative YoY (verify trajectory)"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 48,
+      "rank": 54,
       "weighted_total_out_of_100": 75.2,
       "weighted_total_private_scenario": 75.2,
       "weighted_total_career_max_scenario": 74.9
     },
     {
-      "rank": 49,
+      "rank": 55,
       "area": "Edmond",
       "state": "Oklahoma",
       "state_abbr": "OK",
@@ -4544,7 +4912,7 @@
       ]
     },
     {
-      "rank": 50,
+      "rank": 56,
       "area": "Sioux Falls (Harrisburg / Brandon)",
       "state": "South Dakota",
       "state_abbr": "SD",
@@ -4605,7 +4973,7 @@
       ]
     },
     {
-      "rank": 51,
+      "rank": 57,
       "area": "Bixby",
       "state": "Oklahoma",
       "state_abbr": "OK",
@@ -4666,7 +5034,7 @@
       ]
     },
     {
-      "rank": 52,
+      "rank": 58,
       "area": "Austin (City Proper)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -4764,7 +5132,7 @@
       "weighted_total_career_max_scenario": 76.4
     },
     {
-      "rank": 53,
+      "rank": 59,
       "area": "North Liberty / Iowa City",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -4825,7 +5193,7 @@
       ]
     },
     {
-      "rank": 54,
+      "rank": 60,
       "area": "Lawrence",
       "state": "Kansas",
       "state_abbr": "KS",
@@ -4885,7 +5253,7 @@
       ]
     },
     {
-      "rank": 55,
+      "rank": 61,
       "area": "Greenville",
       "state": "South Carolina",
       "state_abbr": "SC",
@@ -4976,7 +5344,7 @@
       "weighted_total_career_max_scenario": 74.8
     },
     {
-      "rank": 56,
+      "rank": 62,
       "area": "Chesapeake / Virginia Beach (Hampton Roads)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -5118,13 +5486,13 @@
         "Weak AACSB proximity (UCF main campus is a haul)"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 57,
+      "rank": 63,
       "weighted_total_out_of_100": 74.5,
       "weighted_total_private_scenario": 77.5,
       "weighted_total_career_max_scenario": 74.8
     },
     {
-      "rank": 58,
+      "rank": 64,
       "area": "Woodstock / Canton (Cherokee County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5186,7 +5554,7 @@
       ]
     },
     {
-      "rank": 59,
+      "rank": 65,
       "area": "Ankeny",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -5248,7 +5616,7 @@
       ]
     },
     {
-      "rank": 60,
+      "rank": 66,
       "area": "Suwanee / Peachtree Corners",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5426,13 +5794,13 @@
         "Downtown/charter zones can carry premiums vs. county-wide cheap median"
       ],
       "tier": "Tier 3 - Watch List",
-      "rank": 61,
+      "rank": 67,
       "weighted_total_out_of_100": 74.3,
       "weighted_total_private_scenario": 78.3,
       "weighted_total_career_max_scenario": 74.4
     },
     {
-      "rank": 62,
+      "rank": 68,
       "area": "Cumming (Forsyth County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -5496,7 +5864,7 @@
       ]
     },
     {
-      "rank": 63,
+      "rank": 69,
       "area": "Mandeville",
       "state": "Louisiana",
       "state_abbr": "LA",
@@ -5560,7 +5928,7 @@
       ]
     },
     {
-      "rank": 64,
+      "rank": 70,
       "area": "West Fargo",
       "state": "North Dakota",
       "state_abbr": "ND",
@@ -5621,7 +5989,7 @@
       ]
     },
     {
-      "rank": 65,
+      "rank": 71,
       "area": "Roanoke (Roanoke County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -5685,7 +6053,7 @@
       ]
     },
     {
-      "rank": 66,
+      "rank": 72,
       "area": "Youngsville / Broussard (Lafayette)",
       "state": "Louisiana",
       "state_abbr": "LA",
@@ -5832,13 +6200,13 @@
         "Some inland areas are flood-prone; Florida insurance carrying cost should be modeled separately"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 67,
+      "rank": 73,
       "weighted_total_out_of_100": 73.7,
       "weighted_total_private_scenario": 78.7,
       "weighted_total_career_max_scenario": 74.25
     },
     {
-      "rank": 68,
+      "rank": 74,
       "area": "Waukee",
       "state": "Iowa",
       "state_abbr": "IA",
@@ -5913,7 +6281,7 @@
       "weighted_total_career_max_scenario": 75.35
     },
     {
-      "rank": 69,
+      "rank": 75,
       "area": "Chesterfield / Wildwood",
       "state": "Missouri",
       "state_abbr": "MO",
@@ -5974,7 +6342,68 @@
       ]
     },
     {
-      "rank": 70,
+      "rank": 76,
+      "area": "Palm Harbor / East Lake",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "metro": "tampa",
+      "coords": [
+        28.078,
+        -82.7637
+      ],
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "North Pinellas near the Gulf - East Lake and Palm Harbor University High, higher insurance",
+      "scores": {
+        "ai_tech_pm_market": 6.5,
+        "school_quality": 8.5,
+        "housing_affordability_2041": 6.5,
+        "rental_feasibility_2028": 6.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 7.5,
+        "robotics_fitness_startup_fit": 7.0,
+        "hs_football_culture": 7.0,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 7.0
+      },
+      "budget_check": {
+        "price_2026": 500000,
+        "price_source": "Palm Harbor / East Lake ~$450K-$600K (2026 estimate)",
+        "proj_2041": 724149,
+        "property_tax_effective_pct": 0.9,
+        "property_tax_source": "Pinellas County ~0.9% effective (estimate)",
+        "insurance_state_avg_annual": 5500,
+        "budget_2041_planned": 800918,
+        "budget_2041_no_stepup": 615760,
+        "budget_2041_ai_leader": 1017344,
+        "headroom_planned": 76769,
+        "headroom_no_stepup": -108389,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "North Pinellas suburbs zoned to East Lake High and Palm Harbor University High (IB), ~30 minutes from downtown Tampa. Homes run ~$450K-$600K (estimate), projecting to ~$724K by 2041 - ~$77K under a ~$801K planned-path budget. 3BR rents run ~$2,600-$2,800. Florida has no state income tax, like Tennessee. Kendra Scott: Tampa - International Plaza; Wesley Chapel - Shops at Wiregrass (Paseo Dr).",
+      "risks": [
+        "Coastal insurance (~$5,500 on the model basis)",
+        "Flood zones near the coast - check elevation",
+        "Hurricane exposure and Florida insurance volatility"
+      ],
+      "weighted_total_out_of_100": 73.4,
+      "weighted_total_private_scenario": 72.4,
+      "weighted_total_career_max_scenario": 72.95,
+      "sources": [
+        "https://www.redfin.com/city/14094/FL/Palm-Harbor/housing-market",
+        "https://www.pcsb.org/"
+      ]
+    },
+    {
+      "rank": 77,
       "area": "Auburn / Opelika",
       "state": "Alabama",
       "state_abbr": "AL",
@@ -6065,7 +6494,7 @@
       "weighted_total_career_max_scenario": 72.05
     },
     {
-      "rank": 71,
+      "rank": 78,
       "area": "Alpharetta / Johns Creek",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6167,7 +6596,7 @@
       ]
     },
     {
-      "rank": 72,
+      "rank": 79,
       "area": "Arlington Heights",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -6229,7 +6658,7 @@
       ]
     },
     {
-      "rank": 73,
+      "rank": 80,
       "area": "Carmel",
       "state": "Indiana",
       "state_abbr": "IN",
@@ -6290,7 +6719,7 @@
       ]
     },
     {
-      "rank": 74,
+      "rank": 81,
       "area": "Morgantown",
       "state": "West Virginia",
       "state_abbr": "WV",
@@ -6431,7 +6860,7 @@
         "FL insurance/wind; check flood zone near wetlands; fast appreciation (+10%) makes base-year sensitive"
       ],
       "tier": "Tier 4 - Backup Only",
-      "rank": 75,
+      "rank": 82,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 71.6,
       "weighted_total_career_max_scenario": 72.25
@@ -6517,7 +6946,7 @@
         "Master-planned community growth is rapid — verify school zone boundaries before committing, as new neighborhoods may feed different attendance zones"
       ],
       "tier": "Tier 2 - Strong Trade-Off",
-      "rank": 76,
+      "rank": 83,
       "weighted_total_out_of_100": 72.6,
       "weighted_total_private_scenario": 75.6,
       "weighted_total_career_max_scenario": 73.4,
@@ -6532,7 +6961,7 @@
       ]
     },
     {
-      "rank": 77,
+      "rank": 84,
       "area": "Glen Allen / Midlothian",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -6628,7 +7057,7 @@
       "weighted_total_career_max_scenario": 72.5
     },
     {
-      "rank": 78,
+      "rank": 85,
       "area": "Gretna",
       "state": "Nebraska",
       "state_abbr": "NE",
@@ -6689,7 +7118,7 @@
       ]
     },
     {
-      "rank": 79,
+      "rank": 86,
       "area": "Peachtree City / Fayetteville (Fayette County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -6752,7 +7181,7 @@
       ]
     },
     {
-      "rank": 80,
+      "rank": 87,
       "area": "Novi",
       "state": "Michigan",
       "state_abbr": "MI",
@@ -6813,7 +7242,7 @@
       ]
     },
     {
-      "rank": 81,
+      "rank": 88,
       "area": "Cheyenne",
       "state": "Wyoming",
       "state_abbr": "WY",
@@ -6875,7 +7304,7 @@
       ]
     },
     {
-      "rank": 82,
+      "rank": 89,
       "area": "Madison",
       "state": "Mississippi",
       "state_abbr": "MS",
@@ -6937,7 +7366,7 @@
       ]
     },
     {
-      "rank": 83,
+      "rank": 90,
       "area": "Prosper",
       "state": "Texas",
       "state_abbr": "TX",
@@ -7020,7 +7449,68 @@
       ]
     },
     {
-      "rank": 84,
+      "rank": 91,
+      "area": "Ocala",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "metro": "gainesville",
+      "coords": [
+        29.1872,
+        -82.1401
+      ],
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "Horse Capital of the World - very cheap, weak schools and job market",
+      "scores": {
+        "ai_tech_pm_market": 4.5,
+        "school_quality": 5.0,
+        "housing_affordability_2041": 10.0,
+        "rental_feasibility_2028": 8.5,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 6.0,
+        "robotics_fitness_startup_fit": 6.0,
+        "hs_football_culture": 7.5,
+        "private_school_access": 6.5,
+        "sports_tech_ecosystem": 5.5
+      },
+      "budget_check": {
+        "price_2026": 300000,
+        "price_source": "Ocala ~$280K-$320K (estimate; Gainesville-Ocala new-build median $308,499)",
+        "proj_2041": 434489,
+        "property_tax_effective_pct": 0.95,
+        "property_tax_source": "Marion County ~0.95% effective (estimate)",
+        "insurance_state_avg_annual": 3000,
+        "budget_2041_planned": 845162,
+        "budget_2041_no_stepup": 649775,
+        "budget_2041_ai_leader": 1073543,
+        "headroom_planned": 410672,
+        "headroom_no_stepup": 215286,
+        "verdict": "fits planned path"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Marion County's hub, ~40 minutes south of Gainesville and ~75 minutes from Orlando. Homes run ~$280K-$320K (estimate), projecting to ~$434K by 2041 - ~$411K under a ~$845K planned-path budget. 3BR rents run ~$1,800-$2,000. Florida has no state income tax, like Tennessee. Kendra Scott: Gainesville - Butler Town Center.",
+      "risks": [
+        "Marion County schools are weak",
+        "Thin professional job market",
+        "No Kendra Scott in town (Gainesville ~40 minutes)"
+      ],
+      "weighted_total_out_of_100": 71.3,
+      "weighted_total_private_scenario": 74.3,
+      "weighted_total_career_max_scenario": 69.45,
+      "sources": [
+        "https://jome.com/guide/market/ocala-gainesville-fl",
+        "https://www.marionschools.net/"
+      ]
+    },
+    {
+      "rank": 92,
       "area": "Draper",
       "state": "Utah",
       "state_abbr": "UT",
@@ -7082,7 +7572,7 @@
       ]
     },
     {
-      "rank": 85,
+      "rank": 93,
       "area": "Henderson",
       "state": "Nevada",
       "state_abbr": "NV",
@@ -7143,7 +7633,7 @@
       ]
     },
     {
-      "rank": 86,
+      "rank": 94,
       "area": "Lucas (Lovejoy ISD)",
       "state": "Texas",
       "state_abbr": "TX",
@@ -7325,7 +7815,7 @@
       }
     },
     {
-      "rank": 87,
+      "rank": 95,
       "area": "South Jordan / Herriman",
       "state": "Utah",
       "state_abbr": "UT",
@@ -7388,7 +7878,7 @@
       ]
     },
     {
-      "rank": 88,
+      "rank": 96,
       "area": "McDonough / Locust Grove (Henry County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -7450,7 +7940,7 @@
       ]
     },
     {
-      "rank": 89,
+      "rank": 97,
       "area": "Boerne",
       "state": "Texas",
       "state_abbr": "TX",
@@ -7525,7 +8015,69 @@
       ]
     },
     {
-      "rank": 90,
+      "rank": 98,
+      "area": "Winter Garden / Horizon West",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "metro": "orlando",
+      "coords": [
+        28.472,
+        -81.6
+      ],
+      "tier": "Tier 3 - Watch List",
+      "strategic_label": "West Orlando's fast-growing master-planned area - Disney-side jobs, CDD fees",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 7.5,
+        "housing_affordability_2041": 5.5,
+        "rental_feasibility_2028": 6.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 6.5,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 7.5,
+        "private_school_access": 8.0,
+        "sports_tech_ecosystem": 7.5
+      },
+      "budget_check": {
+        "price_2026": 596000,
+        "price_source": "Six-month closed median $595,995 (Resideline, Oct 2026); Horizon West ~$583K",
+        "proj_2041": 863186,
+        "property_tax_effective_pct": 1.2,
+        "property_tax_source": "Orange County ~0.85% plus typical CDD assessments (~1.2% all-in; estimate)",
+        "insurance_state_avg_annual": 3000,
+        "budget_2041_planned": 818178,
+        "budget_2041_no_stepup": 629030,
+        "budget_2041_ai_leader": 1039268,
+        "headroom_planned": -45008,
+        "headroom_no_stepup": -234156,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Winter Garden's historic downtown and the Horizon West master-planned villages, ~20 minutes from Disney, EA Orlando and the Mall at Millenia Kendra Scott, zoned largely to Windermere and West Orange high schools. Homes close around ~$583K-$596K, projecting to ~$863K by 2041 - ~$45K over a ~$818K planned-path budget. 3BR rents run ~$2,600-$2,800. Florida has no state income tax, like Tennessee. Kendra Scott: Disney Springs; The Mall at Millenia; Winter Park Village.",
+      "risks": [
+        "CDD assessments in newer neighborhoods",
+        "Over-capacity schools in fast-growth zones",
+        "Hurricane exposure and Florida insurance volatility"
+      ],
+      "weighted_total_out_of_100": 70.4,
+      "weighted_total_private_scenario": 71.4,
+      "weighted_total_career_max_scenario": 70.9,
+      "sources": [
+        "https://resideline.com/blog/winter-garden-fl-housing-market",
+        "https://www.redfin.com/city/19737/FL/Winter-Garden/housing-market",
+        "https://www.ocps.net/"
+      ]
+    },
+    {
+      "rank": 99,
       "area": "Naperville",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -7590,7 +8142,7 @@
       ]
     },
     {
-      "rank": 91,
+      "rank": 100,
       "area": "Gainesville / Flowery Branch (Hall County)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -7651,7 +8203,7 @@
       ]
     },
     {
-      "rank": 92,
+      "rank": 101,
       "area": "Lovejoy / Hampton (Clayton / Henry)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -7713,7 +8265,7 @@
       ]
     },
     {
-      "rank": 93,
+      "rank": 102,
       "area": "Rio Rancho",
       "state": "New Mexico",
       "state_abbr": "NM",
@@ -7775,7 +8327,7 @@
       ]
     },
     {
-      "rank": 94,
+      "rank": 103,
       "area": "Dacula / Hamilton Mill (Gwinnett)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -7838,7 +8390,68 @@
       ]
     },
     {
-      "rank": 95,
+      "rank": 104,
+      "area": "Winter Park",
+      "state": "Florida",
+      "state_abbr": "FL",
+      "metro": "orlando",
+      "coords": [
+        28.6,
+        -81.3392
+      ],
+      "tier": "Tier 4 - Backup Only",
+      "strategic_label": "Orlando's old-money college town - Rollins (AACSB), elite private schools, over budget",
+      "scores": {
+        "ai_tech_pm_market": 7.5,
+        "school_quality": 8.0,
+        "housing_affordability_2041": 3.5,
+        "rental_feasibility_2028": 5.0,
+        "state_tax_burden": 10.0,
+        "aacsb_university_proximity": 9.0,
+        "robotics_fitness_startup_fit": 7.5,
+        "hs_football_culture": 7.5,
+        "private_school_access": 9.5,
+        "sports_tech_ecosystem": 7.5
+      },
+      "budget_check": {
+        "price_2026": 750000,
+        "price_source": "Census median value $731,400; Redfin ~$889K; east side ~$400K, west side ~$1M - working figure $750K",
+        "proj_2041": 1086224,
+        "property_tax_effective_pct": 0.9,
+        "property_tax_source": "Orange County / Winter Park ~0.9% effective (estimate)",
+        "insurance_state_avg_annual": 3000,
+        "budget_2041_planned": 850773,
+        "budget_2041_no_stepup": 654090,
+        "budget_2041_ai_leader": 1080671,
+        "headroom_planned": -235450,
+        "headroom_no_stepup": -432134,
+        "verdict": "over planned-path budget"
+      },
+      "private_school_option": {
+        "considered": true,
+        "basis": "Contingent on income at time of enrollment",
+        "search_radius_miles": 20,
+        "in_radius_options": [],
+        "out_of_radius_options": [],
+        "assessment": "Private options not researched in detail for this location.",
+        "verified": false
+      },
+      "notes": "Walkable Park Avenue town north of downtown Orlando, home to Rollins College (Crummer Graduate School, AACSB), Winter Park High and private schools such as Trinity Prep and Lake Highland, with a Kendra Scott at Winter Park Village. Homes run ~$400K (east) to ~$1M (west), projecting to ~$1,086K by 2041 at a $750K working figure - ~$235K over a ~$851K planned-path budget. 3BR rents run ~$2,900-$3,200. Florida has no state income tax, like Tennessee. Kendra Scott: Disney Springs; The Mall at Millenia; Winter Park Village.",
+      "risks": [
+        "Over the planned-path budget",
+        "Rent above the ceiling",
+        "Hurricane exposure and Florida insurance volatility"
+      ],
+      "weighted_total_out_of_100": 68.5,
+      "weighted_total_private_scenario": 71.5,
+      "weighted_total_career_max_scenario": 68.7,
+      "sources": [
+        "https://www.theshavergroup.net/blog/10-best-orlando-suburbs-and-what-homes-there-cost",
+        "https://www.rollins.edu/business/"
+      ]
+    },
+    {
+      "rank": 105,
       "area": "Summerfield / Oak Ridge (NW Guilford)",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -7902,7 +8515,7 @@
       ]
     },
     {
-      "rank": 96,
+      "rank": 106,
       "area": "Thompson's Station",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -7972,7 +8585,7 @@
       "weighted_total_career_max_scenario": 69.15
     },
     {
-      "rank": 97,
+      "rank": 107,
       "area": "Plainfield / Oswego",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -8034,7 +8647,7 @@
       ]
     },
     {
-      "rank": 98,
+      "rank": 108,
       "area": "Decatur (City Schools of Decatur)",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -8097,7 +8710,7 @@
       ]
     },
     {
-      "rank": 99,
+      "rank": 109,
       "area": "Fairfax / Vienna (Fairfax County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -8161,7 +8774,7 @@
       ]
     },
     {
-      "rank": 100,
+      "rank": 110,
       "area": "Scottsdale",
       "state": "Arizona",
       "state_abbr": "AZ",
@@ -8224,7 +8837,7 @@
       ]
     },
     {
-      "rank": 101,
+      "rank": 111,
       "area": "Eden Prairie",
       "state": "Minnesota",
       "state_abbr": "MN",
@@ -8285,7 +8898,7 @@
       ]
     },
     {
-      "rank": 102,
+      "rank": 112,
       "area": "Brookfield / Elm Grove",
       "state": "Wisconsin",
       "state_abbr": "WI",
@@ -8347,7 +8960,7 @@
       ]
     },
     {
-      "rank": 103,
+      "rank": 113,
       "area": "Roswell",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -8437,7 +9050,7 @@
       ]
     },
     {
-      "rank": 104,
+      "rank": 114,
       "area": "Meridian",
       "state": "Idaho",
       "state_abbr": "ID",
@@ -8499,7 +9112,7 @@
       ]
     },
     {
-      "rank": 105,
+      "rank": 115,
       "area": "Franklin",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -8599,7 +9212,7 @@
       "weighted_total_career_max_scenario": 69.05
     },
     {
-      "rank": 106,
+      "rank": 116,
       "area": "Charlottesville (Albemarle County)",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -8662,7 +9275,7 @@
       ]
     },
     {
-      "rank": 107,
+      "rank": 117,
       "area": "Elkhorn",
       "state": "Nebraska",
       "state_abbr": "NE",
@@ -8723,7 +9336,7 @@
       ]
     },
     {
-      "rank": 108,
+      "rank": 118,
       "area": "Farragut",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -8816,7 +9429,7 @@
       "weighted_total_career_max_scenario": 65.35
     },
     {
-      "rank": 109,
+      "rank": 119,
       "area": "Pittsford",
       "state": "New York",
       "state_abbr": "NY",
@@ -8879,7 +9492,7 @@
       ]
     },
     {
-      "rank": 110,
+      "rank": 120,
       "area": "Bothell / Mill Creek",
       "state": "Washington",
       "state_abbr": "WA",
@@ -8941,7 +9554,7 @@
       ]
     },
     {
-      "rank": 111,
+      "rank": 121,
       "area": "Alamo Heights",
       "state": "Texas",
       "state_abbr": "TX",
@@ -9033,7 +9646,7 @@
       ]
     },
     {
-      "rank": 112,
+      "rank": 122,
       "area": "Essex / Essex Junction",
       "state": "Vermont",
       "state_abbr": "VT",
@@ -9096,7 +9709,7 @@
       ]
     },
     {
-      "rank": 113,
+      "rank": 123,
       "area": "Highlands Ranch",
       "state": "Colorado",
       "state_abbr": "CO",
@@ -9158,7 +9771,7 @@
       ]
     },
     {
-      "rank": 114,
+      "rank": 124,
       "area": "Waxhaw",
       "state": "North Carolina",
       "state_abbr": "NC",
@@ -9250,7 +9863,7 @@
       "weighted_total_career_max_scenario": 64.9
     },
     {
-      "rank": 115,
+      "rank": 125,
       "area": "Milton",
       "state": "Georgia",
       "state_abbr": "GA",
@@ -9311,7 +9924,7 @@
       ]
     },
     {
-      "rank": 116,
+      "rank": 126,
       "area": "Natick",
       "state": "Massachusetts",
       "state_abbr": "MA",
@@ -9373,7 +9986,7 @@
       ]
     },
     {
-      "rank": 117,
+      "rank": 127,
       "area": "Hockessin / Pike Creek",
       "state": "Delaware",
       "state_abbr": "DE",
@@ -9435,7 +10048,7 @@
       ]
     },
     {
-      "rank": 118,
+      "rank": 128,
       "area": "Ellicott City / Columbia (Howard County)",
       "state": "Maryland",
       "state_abbr": "MD",
@@ -9496,7 +10109,7 @@
       ]
     },
     {
-      "rank": 119,
+      "rank": 129,
       "area": "West Hartford",
       "state": "Connecticut",
       "state_abbr": "CT",
@@ -9557,7 +10170,7 @@
       ]
     },
     {
-      "rank": 120,
+      "rank": 130,
       "area": "Germantown (Nashville)",
       "state": "Tennessee",
       "state_abbr": "TN",
@@ -9662,7 +10275,7 @@
       "weighted_total_career_max_scenario": 65.3
     },
     {
-      "rank": 121,
+      "rank": 131,
       "area": "Hinsdale / Western Springs",
       "state": "Illinois",
       "state_abbr": "IL",
@@ -9724,7 +10337,7 @@
       ]
     },
     {
-      "rank": 122,
+      "rank": 132,
       "area": "South Anchorage",
       "state": "Alaska",
       "state_abbr": "AK",
@@ -9787,7 +10400,7 @@
       ]
     },
     {
-      "rank": 123,
+      "rank": 133,
       "area": "West Linn",
       "state": "Oregon",
       "state_abbr": "OR",
@@ -9849,7 +10462,7 @@
       ]
     },
     {
-      "rank": 124,
+      "rank": 134,
       "area": "Bedford",
       "state": "New Hampshire",
       "state_abbr": "NH",
@@ -9912,7 +10525,7 @@
       ]
     },
     {
-      "rank": 125,
+      "rank": 135,
       "area": "Leesburg / Ashburn",
       "state": "Virginia",
       "state_abbr": "VA",
@@ -10016,7 +10629,7 @@
       "weighted_total_career_max_scenario": 63.3
     },
     {
-      "rank": 126,
+      "rank": 136,
       "area": "South Burlington",
       "state": "Vermont",
       "state_abbr": "VT",
@@ -10080,7 +10693,7 @@
       ]
     },
     {
-      "rank": 127,
+      "rank": 137,
       "area": "Bozeman",
       "state": "Montana",
       "state_abbr": "MT",
@@ -10143,7 +10756,7 @@
       ]
     },
     {
-      "rank": 128,
+      "rank": 138,
       "area": "Shelburne / Williston",
       "state": "Vermont",
       "state_abbr": "VT",
@@ -10208,7 +10821,7 @@
       ]
     },
     {
-      "rank": 129,
+      "rank": 139,
       "area": "Barrington",
       "state": "Rhode Island",
       "state_abbr": "RI",
@@ -10270,7 +10883,7 @@
       ]
     },
     {
-      "rank": 130,
+      "rank": 140,
       "area": "Irvine",
       "state": "California",
       "state_abbr": "CA",
@@ -10333,7 +10946,7 @@
       ]
     },
     {
-      "rank": 131,
+      "rank": 141,
       "area": "Jersey City",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -10433,7 +11046,7 @@
       "weighted_total_career_max_scenario": 57.05
     },
     {
-      "rank": 132,
+      "rank": 142,
       "area": "Falmouth",
       "state": "Maine",
       "state_abbr": "ME",
@@ -10495,7 +11108,7 @@
       ]
     },
     {
-      "rank": 133,
+      "rank": 143,
       "area": "Newport (Jersey City)",
       "state": "New Jersey",
       "state_abbr": "NJ",
@@ -10595,7 +11208,7 @@
       "weighted_total_career_max_scenario": 51.45
     },
     {
-      "rank": 134,
+      "rank": 144,
       "area": "Mililani",
       "state": "Hawaii",
       "state_abbr": "HI",
@@ -10667,8 +11280,8 @@
       "Cary"
     ],
     "Florida": [
-      "St. Johns County",
-      "Oviedo"
+      "Gainesville (Haile / SW)",
+      "St. Johns County"
     ],
     "Arizona": [
       "Chandler",
@@ -10870,14 +11483,15 @@
   "recommended_top_five": [
     "Round Rock",
     "Concord / Northwest Cabarrus",
+    "Gainesville (Haile / SW)",
     "McKinney",
-    "St. Johns County",
-    "Chandler"
+    "St. Johns County"
   ],
   "decision_tiers": {
     "tier_1_serious_finalists": [
       "Round Rock",
       "Concord / Northwest Cabarrus",
+      "Gainesville (Haile / SW)",
       "McKinney",
       "Chandler",
       "Fort Mitchell / Villa Hills (Beechwood)",
@@ -10903,11 +11517,15 @@
       "Tampa",
       "Hendersonville",
       "Oldham County (Crestwood / La Grange)",
+      "Lutz / Land O' Lakes",
+      "Viera / Suntree",
       "Gilbert",
       "Cranberry Township",
+      "DeLand (Volusia County)",
       "Springfield (Nixa / Ozark)",
       "West Des Moines",
       "Schertz / Cibolo (SCUC ISD)",
+      "Wesley Chapel",
       "Buford (Buford City Schools)",
       "O'Fallon (St. Charles County)",
       "Jenks",
@@ -10920,6 +11538,7 @@
       "Lehi",
       "Columbia",
       "East Cobb (Marietta)",
+      "FishHawk Ranch (Lithia)",
       "Edmond",
       "Sioux Falls (Harrisburg / Brandon)",
       "Bixby",
@@ -10947,6 +11566,7 @@
       "Youngsville / Broussard (Lafayette)",
       "Waukee",
       "Chesterfield / Wildwood",
+      "Palm Harbor / East Lake",
       "Alpharetta / Johns Creek",
       "Arlington Heights",
       "Carmel",
@@ -10957,12 +11577,14 @@
       "Cheyenne",
       "Madison",
       "Prosper",
+      "Ocala",
       "Draper",
       "Henderson",
       "Lucas (Lovejoy ISD)",
       "South Jordan / Herriman",
       "McDonough / Locust Grove (Henry County)",
       "Boerne",
+      "Winter Garden / Horizon West",
       "Naperville"
     ],
     "tier_4_backup_only": [
@@ -10976,6 +11598,7 @@
       "Lovejoy / Hampton (Clayton / Henry)",
       "Rio Rancho",
       "Dacula / Hamilton Mill (Gwinnett)",
+      "Winter Park",
       "Summerfield / Oak Ridge (NW Guilford)",
       "Thompson's Station",
       "Plainfield / Oswego",
@@ -11209,70 +11832,84 @@
         "locations": [
           {
             "area": "Gallatin",
-            "rank": 27,
+            "rank": 28,
             "rental_feasibility_2028": 9,
             "school_quality": 7,
             "weighted_total_out_of_100": 77.7
           },
           {
+            "area": "DeLand (Volusia County)",
+            "rank": 33,
+            "rental_feasibility_2028": 8.5,
+            "school_quality": 6.0,
+            "weighted_total_out_of_100": 77.0
+          },
+          {
             "area": "Schertz / Cibolo (SCUC ISD)",
-            "rank": 32,
+            "rank": 36,
             "rental_feasibility_2028": 8.5,
             "school_quality": 6.5,
             "weighted_total_out_of_100": 76.8
           },
           {
             "area": "Greensboro (City)",
-            "rank": 40,
+            "rank": 45,
             "rental_feasibility_2028": 9.0,
             "school_quality": 6.0,
             "weighted_total_out_of_100": 75.9
           },
           {
             "area": "Crowley / North Crowley (SW Fort Worth)",
-            "rank": 45,
+            "rank": 50,
             "rental_feasibility_2028": 9.0,
             "school_quality": 4.0,
             "weighted_total_out_of_100": 75.4
           },
           {
             "area": "Lakeland",
-            "rank": 61,
+            "rank": 67,
             "rental_feasibility_2028": 9,
             "school_quality": 5.5,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Davenport / Four Corners",
-            "rank": 67,
+            "rank": 73,
             "rental_feasibility_2028": 8.5,
             "school_quality": 4,
             "weighted_total_out_of_100": 73.7
           },
           {
             "area": "Cheyenne",
-            "rank": 81,
+            "rank": 88,
             "rental_feasibility_2028": 8.5,
             "school_quality": 6.5,
             "weighted_total_out_of_100": 71.5
           },
           {
+            "area": "Ocala",
+            "rank": 91,
+            "rental_feasibility_2028": 8.5,
+            "school_quality": 5.0,
+            "weighted_total_out_of_100": 71.3
+          },
+          {
             "area": "McDonough / Locust Grove (Henry County)",
-            "rank": 88,
+            "rank": 96,
             "rental_feasibility_2028": 8.0,
             "school_quality": 6.0,
             "weighted_total_out_of_100": 70.8
           },
           {
             "area": "Lovejoy / Hampton (Clayton / Henry)",
-            "rank": 92,
+            "rank": 101,
             "rental_feasibility_2028": 9.0,
             "school_quality": 4.5,
             "weighted_total_out_of_100": 69.0
           },
           {
             "area": "Rio Rancho",
-            "rank": 93,
+            "rank": 102,
             "rental_feasibility_2028": 8.0,
             "school_quality": 6.0,
             "weighted_total_out_of_100": 69.0
@@ -11285,7 +11922,7 @@
         "locations": [
           {
             "area": "Prosper",
-            "rank": 83,
+            "rank": 90,
             "school_quality": 9.0,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 2.0,
@@ -11294,7 +11931,7 @@
           },
           {
             "area": "Lucas (Lovejoy ISD)",
-            "rank": 86,
+            "rank": 94,
             "school_quality": 9.5,
             "rental_feasibility_2028": 6.5,
             "housing_affordability_2041": 1.0,
@@ -11303,7 +11940,7 @@
           },
           {
             "area": "Milton",
-            "rank": 115,
+            "rank": 125,
             "school_quality": 9.0,
             "rental_feasibility_2028": 7.0,
             "housing_affordability_2041": 1.0,
@@ -11332,189 +11969,189 @@
           },
           {
             "area": "McKinney",
-            "rank": 3,
+            "rank": 4,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 82.0
           },
           {
             "area": "St. Johns County",
-            "rank": 4,
+            "rank": 5,
             "rental_feasibility_2028": 8,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 82.0
           },
           {
             "area": "Chandler",
-            "rank": 5,
+            "rank": 6,
             "rental_feasibility_2028": 7.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 81.8
           },
           {
             "area": "Fort Mitchell / Villa Hills (Beechwood)",
-            "rank": 8,
+            "rank": 9,
             "rental_feasibility_2028": 8.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 80.7
           },
           {
             "area": "Cedar Park",
-            "rank": 10,
+            "rank": 11,
             "rental_feasibility_2028": 7.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 80.2
           },
           {
             "area": "Zachary (Baton Rouge)",
-            "rank": 11,
+            "rank": 12,
             "rental_feasibility_2028": 8.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 80.2
           },
           {
             "area": "Spring Hill (Summit / Page Zones, Williamson County)",
-            "rank": 12,
+            "rank": 13,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 79.9
           },
           {
             "area": "Solon / Rocky River (Cleveland Suburbs)",
-            "rank": 13,
+            "rank": 14,
             "rental_feasibility_2028": 8.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 79.8
           },
           {
             "area": "Bentonville",
-            "rank": 15,
+            "rank": 16,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 79.4
           },
           {
             "area": "Lee's Summit",
-            "rank": 18,
+            "rank": 19,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 79.2
           },
           {
             "area": "Madison / Huntsville",
-            "rank": 22,
+            "rank": 23,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 78.1
           },
           {
             "area": "Oldham County (Crestwood / La Grange)",
-            "rank": 26,
+            "rank": 27,
             "rental_feasibility_2028": 8.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 77.7
           },
           {
             "area": "Gilbert",
-            "rank": 28,
+            "rank": 31,
             "rental_feasibility_2028": 7.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 77.0
           },
           {
             "area": "West Des Moines",
-            "rank": 31,
+            "rank": 35,
             "rental_feasibility_2028": 9.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 76.8
           },
           {
             "area": "Jenks",
-            "rank": 35,
+            "rank": 40,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 76.6
           },
           {
             "area": "Stone Oak (North San Antonio)",
-            "rank": 36,
+            "rank": 41,
             "rental_feasibility_2028": 8.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 76.5
           },
           {
             "area": "Fort Mill",
-            "rank": 39,
+            "rank": 44,
             "rental_feasibility_2028": 8,
             "school_quality": 9,
             "weighted_total_out_of_100": 76.0
           },
           {
             "area": "Olathe (Garmin HQ)",
-            "rank": 42,
+            "rank": 47,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 75.6
           },
           {
             "area": "Bixby",
-            "rank": 51,
+            "rank": 57,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 75.1
           },
           {
             "area": "Chesapeake / Virginia Beach (Hampton Roads)",
-            "rank": 56,
+            "rank": 62,
             "rental_feasibility_2028": 8.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 74.6
           },
           {
             "area": "Ankeny",
-            "rank": 59,
+            "rank": 65,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 74.5
           },
           {
             "area": "Cumming (Forsyth County)",
-            "rank": 62,
+            "rank": 68,
             "rental_feasibility_2028": 7.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 74.3
           },
           {
             "area": "Roanoke (Roanoke County)",
-            "rank": 65,
+            "rank": 71,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.9
           },
           {
             "area": "Waukee",
-            "rank": 68,
+            "rank": 74,
             "rental_feasibility_2028": 8.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 73.4
           },
           {
             "area": "Madison",
-            "rank": 82,
+            "rank": 89,
             "rental_feasibility_2028": 8.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 71.5
           },
           {
             "area": "Draper",
-            "rank": 84,
+            "rank": 92,
             "rental_feasibility_2028": 7.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 71.1
           },
           {
             "area": "Farragut",
-            "rank": 108,
+            "rank": 118,
             "rental_feasibility_2028": 8,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 66.6
@@ -11528,245 +12165,259 @@
         "locations": [
           {
             "area": "Plano",
-            "rank": 6,
+            "rank": 7,
             "rental_feasibility_2028": 6.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 80.9
           },
           {
             "area": "Allen",
-            "rank": 16,
+            "rank": 17,
             "rental_feasibility_2028": 6.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 79.3
           },
           {
             "area": "Cary",
-            "rank": 24,
+            "rank": 25,
             "rental_feasibility_2028": 6,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 77.9
           },
           {
             "area": "Frisco",
-            "rank": 37,
+            "rank": 42,
             "rental_feasibility_2028": 5.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 76.4
           },
           {
+            "area": "FishHawk Ranch (Lithia)",
+            "rank": 53,
+            "rental_feasibility_2028": 6.5,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 75.3
+          },
+          {
             "area": "Suwanee / Peachtree Corners",
-            "rank": 60,
+            "rank": 66,
             "rental_feasibility_2028": 6,
             "school_quality": 9,
             "weighted_total_out_of_100": 74.3
           },
           {
+            "area": "Palm Harbor / East Lake",
+            "rank": 76,
+            "rental_feasibility_2028": 6.0,
+            "school_quality": 8.5,
+            "weighted_total_out_of_100": 73.4
+          },
+          {
             "area": "Alpharetta / Johns Creek",
-            "rank": 71,
+            "rank": 78,
             "rental_feasibility_2028": 6,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 73.2
           },
           {
             "area": "Carmel",
-            "rank": 73,
+            "rank": 80,
             "rental_feasibility_2028": 6.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 72.8
           },
           {
             "area": "Lake Nona",
-            "rank": 75,
+            "rank": 82,
             "rental_feasibility_2028": 5.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 72.6
           },
           {
             "area": "Peachtree City / Fayetteville (Fayette County)",
-            "rank": 79,
+            "rank": 86,
             "rental_feasibility_2028": 6.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 71.7
           },
           {
             "area": "Novi",
-            "rank": 80,
+            "rank": 87,
             "rental_feasibility_2028": 6.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 71.7
           },
           {
             "area": "Naperville",
-            "rank": 90,
+            "rank": 99,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 70.1
           },
           {
             "area": "Thompson's Station",
-            "rank": 96,
+            "rank": 106,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 68.2
           },
           {
             "area": "Decatur (City Schools of Decatur)",
-            "rank": 98,
+            "rank": 108,
             "rental_feasibility_2028": 3.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 68.0
           },
           {
             "area": "Fairfax / Vienna (Fairfax County)",
-            "rank": 99,
+            "rank": 109,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.9
           },
           {
             "area": "Scottsdale",
-            "rank": 100,
+            "rank": 110,
             "rental_feasibility_2028": 4.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.7
           },
           {
             "area": "Eden Prairie",
-            "rank": 101,
+            "rank": 111,
             "rental_feasibility_2028": 6.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 67.7
           },
           {
             "area": "Brookfield / Elm Grove",
-            "rank": 102,
+            "rank": 112,
             "rental_feasibility_2028": 6.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 67.7
           },
           {
             "area": "Franklin",
-            "rank": 105,
+            "rank": 115,
             "rental_feasibility_2028": 3.5,
             "school_quality": 9,
             "weighted_total_out_of_100": 67.4
           },
           {
             "area": "Charlottesville (Albemarle County)",
-            "rank": 106,
+            "rank": 116,
             "rental_feasibility_2028": 6.5,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 67.3
           },
           {
             "area": "Pittsford",
-            "rank": 109,
+            "rank": 119,
             "rental_feasibility_2028": 6.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 66.5
           },
           {
             "area": "Bothell / Mill Creek",
-            "rank": 110,
+            "rank": 120,
             "rental_feasibility_2028": 4.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 66.4
           },
           {
             "area": "Alamo Heights",
-            "rank": 111,
+            "rank": 121,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 65.8
           },
           {
             "area": "Waxhaw",
-            "rank": 114,
+            "rank": 124,
             "rental_feasibility_2028": 6,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 64.7
           },
           {
             "area": "Natick",
-            "rank": 116,
+            "rank": 126,
             "rental_feasibility_2028": 3.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 64.1
           },
           {
             "area": "Ellicott City / Columbia (Howard County)",
-            "rank": 118,
+            "rank": 128,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 63.9
           },
           {
             "area": "West Hartford",
-            "rank": 119,
+            "rank": 129,
             "rental_feasibility_2028": 6.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 63.7
           },
           {
             "area": "Hinsdale / Western Springs",
-            "rank": 121,
+            "rank": 131,
             "rental_feasibility_2028": 4.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 63.4
           },
           {
             "area": "West Linn",
-            "rank": 123,
+            "rank": 133,
             "rental_feasibility_2028": 5.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 62.9
           },
           {
             "area": "Bedford",
-            "rank": 124,
+            "rank": 134,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 62.2
           },
           {
             "area": "Leesburg / Ashburn",
-            "rank": 125,
+            "rank": 135,
             "rental_feasibility_2028": 1,
             "school_quality": 9,
             "weighted_total_out_of_100": 61.6
           },
           {
             "area": "South Burlington",
-            "rank": 126,
+            "rank": 136,
             "rental_feasibility_2028": 6.0,
             "school_quality": 8.5,
             "weighted_total_out_of_100": 61.6
           },
           {
             "area": "Shelburne / Williston",
-            "rank": 128,
+            "rank": 138,
             "rental_feasibility_2028": 5.5,
             "school_quality": 9.0,
             "weighted_total_out_of_100": 58.9
           },
           {
             "area": "Barrington",
-            "rank": 129,
+            "rank": 139,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 56.7
           },
           {
             "area": "Irvine",
-            "rank": 130,
+            "rank": 140,
             "rental_feasibility_2028": 1.5,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 55.4
           },
           {
             "area": "Falmouth",
-            "rank": 132,
+            "rank": 142,
             "rental_feasibility_2028": 5.0,
             "school_quality": 9.5,
             "weighted_total_out_of_100": 53.5
@@ -13284,7 +13935,9 @@
       "columbia_mo": "MO",
       "springfield_mo": "MO",
       "iowa_city": "IA",
-      "tulsa": "OK"
+      "tulsa": "OK",
+      "space_coast": "FL",
+      "gainesville": "FL"
     }
   },
   "metros": [
@@ -13298,42 +13951,42 @@
       "locations": [
         {
           "area": "Murfreesboro",
-          "rank": 7,
+          "rank": 8,
           "score": 80.9
         },
         {
           "area": "Spring Hill (Summit / Page Zones, Williamson County)",
-          "rank": 12,
+          "rank": 13,
           "score": 79.9
         },
         {
           "area": "Hendersonville",
-          "rank": 25,
+          "rank": 26,
           "score": 77.9
         },
         {
           "area": "Gallatin",
-          "rank": 27,
+          "rank": 28,
           "score": 77.7
         },
         {
           "area": "Mount Juliet",
-          "rank": 48,
+          "rank": 54,
           "score": 75.2
         },
         {
           "area": "Thompson's Station",
-          "rank": 96,
+          "rank": 106,
           "score": 68.2
         },
         {
           "area": "Franklin",
-          "rank": 105,
+          "rank": 115,
           "score": 67.4
         },
         {
           "area": "Germantown (Nashville)",
-          "rank": 120,
+          "rank": 130,
           "score": 63.5
         }
       ],
@@ -13534,17 +14187,17 @@
         },
         {
           "area": "Cedar Park",
-          "rank": 10,
+          "rank": 11,
           "score": 80.2
         },
         {
           "area": "Georgetown",
-          "rank": 14,
+          "rank": 15,
           "score": 79.6
         },
         {
           "area": "Austin (City Proper)",
-          "rank": 52,
+          "rank": 58,
           "score": 75.0
         }
       ],
@@ -13727,27 +14380,27 @@
       "locations": [
         {
           "area": "New Braunfels (Comal ISD)",
-          "rank": 21,
+          "rank": 22,
           "score": 78.8
         },
         {
           "area": "Schertz / Cibolo (SCUC ISD)",
-          "rank": 32,
+          "rank": 36,
           "score": 76.8
         },
         {
           "area": "Stone Oak (North San Antonio)",
-          "rank": 36,
+          "rank": 41,
           "score": 76.5
         },
         {
           "area": "Boerne",
-          "rank": 89,
+          "rank": 97,
           "score": 70.5
         },
         {
           "area": "Alamo Heights",
-          "rank": 111,
+          "rank": 121,
           "score": 65.8
         }
       ],
@@ -13891,17 +14544,17 @@
       "locations": [
         {
           "area": "Chandler",
-          "rank": 5,
+          "rank": 6,
           "score": 81.8
         },
         {
           "area": "Gilbert",
-          "rank": 28,
+          "rank": 31,
           "score": 77.0
         },
         {
           "area": "Scottsdale",
-          "rank": 100,
+          "rank": 110,
           "score": 67.7
         }
       ],
@@ -14054,17 +14707,17 @@
       "locations": [
         {
           "area": "Lehi",
-          "rank": 43,
+          "rank": 48,
           "score": 75.6
         },
         {
           "area": "Draper",
-          "rank": 84,
+          "rank": 92,
           "score": 71.1
         },
         {
           "area": "South Jordan / Herriman",
-          "rank": 87,
+          "rank": 95,
           "score": 70.8
         }
       ],
@@ -14211,22 +14864,22 @@
       "locations": [
         {
           "area": "Arlington Heights",
-          "rank": 72,
+          "rank": 79,
           "score": 72.8
         },
         {
           "area": "Naperville",
-          "rank": 90,
+          "rank": 99,
           "score": 70.1
         },
         {
           "area": "Plainfield / Oswego",
-          "rank": 97,
+          "rank": 107,
           "score": 68.1
         },
         {
           "area": "Hinsdale / Western Springs",
-          "rank": 121,
+          "rank": 131,
           "score": 63.4
         }
       ],
@@ -14410,7 +15063,7 @@
       "locations": [
         {
           "area": "Mandeville",
-          "rank": 63,
+          "rank": 69,
           "score": 74.1
         }
       ],
@@ -14487,7 +15140,7 @@
       "locations": [
         {
           "area": "Zachary (Baton Rouge)",
-          "rank": 11,
+          "rank": 12,
           "score": 80.2
         }
       ],
@@ -14566,7 +15219,7 @@
       "locations": [
         {
           "area": "Youngsville / Broussard (Lafayette)",
-          "rank": 66,
+          "rank": 72,
           "score": 73.8
         }
       ],
@@ -14624,47 +15277,47 @@
       "locations": [
         {
           "area": "McKinney",
-          "rank": 3,
+          "rank": 4,
           "score": 82.0
         },
         {
           "area": "Plano",
-          "rank": 6,
+          "rank": 7,
           "score": 80.9
         },
         {
           "area": "Allen",
-          "rank": 16,
+          "rank": 17,
           "score": 79.3
         },
         {
           "area": "Melissa",
-          "rank": 19,
+          "rank": 20,
           "score": 79.1
         },
         {
           "area": "Frisco",
-          "rank": 37,
+          "rank": 42,
           "score": 76.4
         },
         {
           "area": "Crowley / North Crowley (SW Fort Worth)",
-          "rank": 45,
+          "rank": 50,
           "score": 75.4
         },
         {
           "area": "Celina",
-          "rank": 76,
+          "rank": 83,
           "score": 72.6
         },
         {
           "area": "Prosper",
-          "rank": 83,
+          "rank": 90,
           "score": 71.3
         },
         {
           "area": "Lucas (Lovejoy ISD)",
-          "rank": 86,
+          "rank": 94,
           "score": 70.8
         }
       ],
@@ -14871,12 +15524,12 @@
         },
         {
           "area": "Fort Mill",
-          "rank": 39,
+          "rank": 44,
           "score": 76.0
         },
         {
           "area": "Waxhaw",
-          "rank": 114,
+          "rank": 124,
           "score": 64.7
         }
       ],
@@ -15033,72 +15686,72 @@
       "locations": [
         {
           "area": "Buford (Buford City Schools)",
-          "rank": 33,
+          "rank": 38,
           "score": 76.7
         },
         {
           "area": "East Cobb (Marietta)",
-          "rank": 47,
+          "rank": 52,
           "score": 75.3
         },
         {
           "area": "Woodstock / Canton (Cherokee County)",
-          "rank": 58,
+          "rank": 64,
           "score": 74.5
         },
         {
           "area": "Suwanee / Peachtree Corners",
-          "rank": 60,
+          "rank": 66,
           "score": 74.3
         },
         {
           "area": "Cumming (Forsyth County)",
-          "rank": 62,
+          "rank": 68,
           "score": 74.3
         },
         {
           "area": "Alpharetta / Johns Creek",
-          "rank": 71,
+          "rank": 78,
           "score": 73.2
         },
         {
           "area": "Peachtree City / Fayetteville (Fayette County)",
-          "rank": 79,
+          "rank": 86,
           "score": 71.7
         },
         {
           "area": "McDonough / Locust Grove (Henry County)",
-          "rank": 88,
+          "rank": 96,
           "score": 70.8
         },
         {
           "area": "Gainesville / Flowery Branch (Hall County)",
-          "rank": 91,
+          "rank": 100,
           "score": 69.4
         },
         {
           "area": "Lovejoy / Hampton (Clayton / Henry)",
-          "rank": 92,
+          "rank": 101,
           "score": 69.0
         },
         {
           "area": "Dacula / Hamilton Mill (Gwinnett)",
-          "rank": 94,
+          "rank": 103,
           "score": 68.9
         },
         {
           "area": "Decatur (City Schools of Decatur)",
-          "rank": 98,
+          "rank": 108,
           "score": 68.0
         },
         {
           "area": "Roswell",
-          "rank": 103,
+          "rank": 113,
           "score": 67.6
         },
         {
           "area": "Milton",
-          "rank": 115,
+          "rank": 125,
           "score": 64.3
         }
       ],
@@ -15261,7 +15914,7 @@
       "locations": [
         {
           "area": "Solon / Rocky River (Cleveland Suburbs)",
-          "rank": 13,
+          "rank": 14,
           "score": 79.8
         }
       ],
@@ -15373,28 +16026,43 @@
       "locations": [
         {
           "area": "Oviedo",
-          "rank": 17,
+          "rank": 18,
           "score": 79.3
         },
         {
           "area": "Lake Mary",
-          "rank": 20,
+          "rank": 21,
           "score": 78.8
         },
         {
+          "area": "DeLand (Volusia County)",
+          "rank": 33,
+          "score": 77.0
+        },
+        {
           "area": "Clermont",
-          "rank": 57,
+          "rank": 63,
           "score": 74.5
         },
         {
           "area": "Davenport / Four Corners",
-          "rank": 67,
+          "rank": 73,
           "score": 73.7
         },
         {
           "area": "Lake Nona",
-          "rank": 75,
+          "rank": 82,
           "score": 72.6
+        },
+        {
+          "area": "Winter Garden / Horizon West",
+          "rank": 98,
+          "score": 70.4
+        },
+        {
+          "area": "Winter Park",
+          "rank": 104,
+          "score": 68.5
         }
       ],
       "representative": "Oviedo",
@@ -15409,6 +16077,10 @@
         {
           "store": "The Mall at Millenia",
           "source": null
+        },
+        {
+          "store": "Winter Park Village",
+          "source": "https://www.kendrascott.com/stores/directory"
         }
       ],
       "companies": [
@@ -15520,13 +16192,33 @@
       "locations": [
         {
           "area": "Tampa",
-          "rank": 23,
+          "rank": 24,
           "score": 78.0
         },
         {
+          "area": "Lutz / Land O' Lakes",
+          "rank": 29,
+          "score": 77.5
+        },
+        {
+          "area": "Wesley Chapel",
+          "rank": 37,
+          "score": 76.8
+        },
+        {
+          "area": "FishHawk Ranch (Lithia)",
+          "rank": 53,
+          "score": 75.3
+        },
+        {
           "area": "Lakeland",
-          "rank": 61,
+          "rank": 67,
           "score": 74.3
+        },
+        {
+          "area": "Palm Harbor / East Lake",
+          "rank": 76,
+          "score": 73.4
         }
       ],
       "representative": "Tampa",
@@ -15537,6 +16229,10 @@
         {
           "store": "Tampa - International Plaza",
           "source": "https://www.simon.com/mall/international-plaza/stores/kendra-scott"
+        },
+        {
+          "store": "Wesley Chapel - Shops at Wiregrass (Paseo Dr)",
+          "source": "https://www.kendrascott.com/stores/directory"
         }
       ],
       "companies": [
@@ -15669,7 +16365,7 @@
       "locations": [
         {
           "area": "St. Johns County",
-          "rank": 4,
+          "rank": 5,
           "score": 82.0
         }
       ],
@@ -15802,6 +16498,185 @@
       "gaps": null
     },
     {
+      "id": "gainesville",
+      "label": "Gainesville / Ocala",
+      "states": "FL",
+      "home_base": false,
+      "wave": 6,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Gainesville (Haile / SW)",
+          "rank": 3,
+          "score": 82.1
+        },
+        {
+          "area": "Ocala",
+          "rank": 91,
+          "score": 71.3
+        }
+      ],
+      "representative": "Gainesville (Haile / SW)",
+      "rent_3br": 2000,
+      "rent_note": "Gainesville 3BR ~$1,900-$2,100 (estimate)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/fl/gainesville-fl",
+      "kendra_scott": [
+        {
+          "store": "Gainesville - Butler Town Center",
+          "source": "https://www.kendrascott.com/stores/directory/store?StoreID=265138"
+        }
+      ],
+      "companies": [
+        {
+          "name": "University of Florida (HiPerGator AI)",
+          "sector": "University / AI research",
+          "goal_tags": [
+            "ai_product",
+            "professor"
+          ],
+          "why": "Top-5 public university with one of the largest university AI supercomputers (built with NVIDIA).",
+          "role_families": [
+            "AI research / program roles",
+            "Faculty"
+          ],
+          "office": "Gainesville",
+          "source": "https://en.wikipedia.org/wiki/University_of_Florida",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 6
+        },
+        {
+          "name": "UF Health",
+          "sector": "Health system",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Academic medical center with clinical-AI programs.",
+          "role_families": [
+            "Digital / data product roles"
+          ],
+          "office": "Gainesville",
+          "source": "https://en.wikipedia.org/wiki/UF_Health",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 6
+        },
+        {
+          "name": "UF Warrington College of Business",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited and highly ranked; the strongest professor-path anchor in Florida.",
+          "role_families": [
+            "Lecturer / adjunct",
+            "Clinical faculty"
+          ],
+          "office": "Gainesville",
+          "source": "https://warrington.ufl.edu/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 6
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "A college town anchored by UF (Warrington, HiPerGator, Gator athletics) with a Kendra Scott and low prices; the private-sector product market is small."
+    },
+    {
+      "id": "space_coast",
+      "label": "Space Coast (Melbourne / Viera)",
+      "states": "FL",
+      "home_base": false,
+      "wave": 6,
+      "researched": true,
+      "locations": [
+        {
+          "area": "Viera / Suntree",
+          "rank": 30,
+          "score": 77.2
+        }
+      ],
+      "representative": "Viera / Suntree",
+      "rent_3br": 2400,
+      "rent_note": "Viera / Melbourne 3BR ~$2,300-$2,500 (estimate)",
+      "rent_source": "https://www.rentometer.com/average-rent-in/fl/melbourne-fl",
+      "kendra_scott": [
+        {
+          "store": "Melbourne - The Avenue Viera",
+          "source": "https://www.avenueviera.com/tenants/kendra-scott/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "L3Harris Technologies",
+          "sector": "Defense / space tech",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Headquartered in Melbourne (1025 W. NASA Blvd), ~10 minutes from Viera.",
+          "role_families": [
+            "Technical product / program manager"
+          ],
+          "office": "Melbourne (HQ)",
+          "source": "https://www.l3harris.com/about-us",
+          "verified": true,
+          "checked": "2026-10",
+          "wave": 6
+        },
+        {
+          "name": "Blue Origin / SpaceX (Cape Canaveral)",
+          "sector": "Commercial space",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Rocket manufacturing and launch operations at Exploration Park and Kennedy Space Center, ~40 minutes north.",
+          "role_families": [
+            "Program / product roles",
+            "Launch operations"
+          ],
+          "office": "Merritt Island / Cape Canaveral",
+          "source": "https://en.wikipedia.org/wiki/Space_Coast",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 6
+        },
+        {
+          "name": "Northrop Grumman - Melbourne",
+          "sector": "Aerospace",
+          "goal_tags": [
+            "ai_product"
+          ],
+          "why": "Large aircraft-systems campus at Melbourne Orlando International Airport.",
+          "role_families": [
+            "Technical program manager"
+          ],
+          "office": "Melbourne",
+          "source": "https://en.wikipedia.org/wiki/Northrop_Grumman",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 6
+        },
+        {
+          "name": "Florida Tech Bisk College of Business",
+          "sector": "University",
+          "goal_tags": [
+            "professor"
+          ],
+          "why": "AACSB-accredited, in Melbourne.",
+          "role_families": [
+            "Lecturer / adjunct"
+          ],
+          "office": "Melbourne",
+          "source": "https://www.fit.edu/business/",
+          "verified": false,
+          "checked": "2026-10",
+          "wave": 6
+        }
+      ],
+      "spouse_content": [],
+      "gaps": "The aerospace and space-launch hub of the matrix with a Kendra Scott at The Avenue Viera; coastal insurance and hurricane exposure are the drags."
+    },
+    {
       "id": "raleigh",
       "label": "Raleigh–Durham",
       "states": "NC",
@@ -15811,7 +16686,7 @@
       "locations": [
         {
           "area": "Cary",
-          "rank": 24,
+          "rank": 25,
           "score": 77.9
         }
       ],
@@ -15937,12 +16812,12 @@
       "locations": [
         {
           "area": "Greensboro (City)",
-          "rank": 40,
+          "rank": 45,
           "score": 75.9
         },
         {
           "area": "Summerfield / Oak Ridge (NW Guilford)",
-          "rank": 95,
+          "rank": 105,
           "score": 68.4
         }
       ],
@@ -16074,7 +16949,7 @@
       "locations": [
         {
           "area": "Fort Mitchell / Villa Hills (Beechwood)",
-          "rank": 8,
+          "rank": 9,
           "score": 80.7
         }
       ],
@@ -16205,7 +17080,7 @@
       "locations": [
         {
           "area": "Oldham County (Crestwood / La Grange)",
-          "rank": 26,
+          "rank": 27,
           "score": 77.7
         }
       ],
@@ -16329,17 +17204,17 @@
       "locations": [
         {
           "area": "Olathe (Garmin HQ)",
-          "rank": 42,
+          "rank": 47,
           "score": 75.6
         },
         {
           "area": "Overland Park (Blue Valley)",
-          "rank": 46,
+          "rank": 51,
           "score": 75.4
         },
         {
           "area": "Lawrence",
-          "rank": 54,
+          "rank": 60,
           "score": 75.0
         }
       ],
@@ -16439,17 +17314,17 @@
       "locations": [
         {
           "area": "West Des Moines",
-          "rank": 31,
+          "rank": 35,
           "score": 76.8
         },
         {
           "area": "Ankeny",
-          "rank": 59,
+          "rank": 65,
           "score": 74.5
         },
         {
           "area": "Waukee",
-          "rank": 68,
+          "rank": 74,
           "score": 73.4
         }
       ],
@@ -16573,7 +17448,7 @@
       "locations": [
         {
           "area": "Madison / Huntsville",
-          "rank": 22,
+          "rank": 23,
           "score": 78.1
         }
       ],
@@ -16650,7 +17525,7 @@
       "locations": [
         {
           "area": "Farragut",
-          "rank": 108,
+          "rank": 118,
           "score": 66.6
         }
       ],
@@ -16743,7 +17618,7 @@
       "locations": [
         {
           "area": "Greenville",
-          "rank": 55,
+          "rank": 61,
           "score": 74.9
         }
       ],
@@ -16835,7 +17710,7 @@
       "locations": [
         {
           "area": "Auburn / Opelika",
-          "rank": 70,
+          "rank": 77,
           "score": 73.3
         }
       ],
@@ -16890,7 +17765,7 @@
       "locations": [
         {
           "area": "Glen Allen / Midlothian",
-          "rank": 77,
+          "rank": 84,
           "score": 72.4
         }
       ],
@@ -16986,12 +17861,12 @@
       "locations": [
         {
           "area": "Fairfax / Vienna (Fairfax County)",
-          "rank": 99,
+          "rank": 109,
           "score": 67.9
         },
         {
           "area": "Leesburg / Ashburn",
-          "rank": 125,
+          "rank": 135,
           "score": 61.6
         }
       ],
@@ -17125,17 +18000,17 @@
       "locations": [
         {
           "area": "Essex / Essex Junction",
-          "rank": 112,
+          "rank": 122,
           "score": 65.5
         },
         {
           "area": "South Burlington",
-          "rank": 126,
+          "rank": 136,
           "score": 61.6
         },
         {
           "area": "Shelburne / Williston",
-          "rank": 128,
+          "rank": 138,
           "score": 58.9
         }
       ],
@@ -17244,7 +18119,7 @@
       "locations": [
         {
           "area": "Irvine",
-          "rank": 130,
+          "rank": 140,
           "score": 55.4
         }
       ],
@@ -17359,7 +18234,7 @@
       "locations": [
         {
           "area": "Highlands Ranch",
-          "rank": 113,
+          "rank": 123,
           "score": 64.8
         }
       ],
@@ -17459,7 +18334,7 @@
       "locations": [
         {
           "area": "Bothell / Mill Creek",
-          "rank": 110,
+          "rank": 120,
           "score": 66.4
         }
       ],
@@ -17554,7 +18429,7 @@
       "locations": [
         {
           "area": "West Linn",
-          "rank": 123,
+          "rank": 133,
           "score": 62.9
         }
       ],
@@ -17665,7 +18540,7 @@
       "locations": [
         {
           "area": "Henderson",
-          "rank": 85,
+          "rank": 93,
           "score": 71.0
         }
       ],
@@ -17766,7 +18641,7 @@
       "locations": [
         {
           "area": "Meridian",
-          "rank": 104,
+          "rank": 114,
           "score": 67.6
         }
       ],
@@ -17844,7 +18719,7 @@
       "locations": [
         {
           "area": "Bozeman",
-          "rank": 127,
+          "rank": 137,
           "score": 60.1
         }
       ],
@@ -17917,7 +18792,7 @@
       "locations": [
         {
           "area": "Cheyenne",
-          "rank": 81,
+          "rank": 88,
           "score": 71.5
         }
       ],
@@ -17973,7 +18848,7 @@
       "locations": [
         {
           "area": "Eden Prairie",
-          "rank": 101,
+          "rank": 111,
           "score": 67.7
         }
       ],
@@ -18075,7 +18950,7 @@
       "locations": [
         {
           "area": "Brookfield / Elm Grove",
-          "rank": 102,
+          "rank": 112,
           "score": 67.7
         }
       ],
@@ -18163,7 +19038,7 @@
       "locations": [
         {
           "area": "Novi",
-          "rank": 80,
+          "rank": 87,
           "score": 71.7
         }
       ],
@@ -18257,7 +19132,7 @@
       "locations": [
         {
           "area": "Carmel",
-          "rank": 73,
+          "rank": 80,
           "score": 72.8
         }
       ],
@@ -18351,12 +19226,12 @@
       "locations": [
         {
           "area": "O'Fallon (St. Charles County)",
-          "rank": 34,
+          "rank": 39,
           "score": 76.7
         },
         {
           "area": "Chesterfield / Wildwood",
-          "rank": 69,
+          "rank": 75,
           "score": 73.4
         }
       ],
@@ -18453,12 +19328,12 @@
       "locations": [
         {
           "area": "Gretna",
-          "rank": 78,
+          "rank": 85,
           "score": 72.4
         },
         {
           "area": "Elkhorn",
-          "rank": 107,
+          "rank": 117,
           "score": 66.9
         }
       ],
@@ -18535,7 +19410,7 @@
       "locations": [
         {
           "area": "West Fargo",
-          "rank": 64,
+          "rank": 70,
           "score": 74.0
         }
       ],
@@ -18607,7 +19482,7 @@
       "locations": [
         {
           "area": "Sioux Falls (Harrisburg / Brandon)",
-          "rank": 50,
+          "rank": 56,
           "score": 75.1
         }
       ],
@@ -18681,7 +19556,7 @@
       "locations": [
         {
           "area": "Pittsford",
-          "rank": 109,
+          "rank": 119,
           "score": 66.5
         }
       ],
@@ -18771,7 +19646,7 @@
       "locations": [
         {
           "area": "Natick",
-          "rank": 116,
+          "rank": 126,
           "score": 64.1
         }
       ],
@@ -18884,7 +19759,7 @@
       "locations": [
         {
           "area": "West Hartford",
-          "rank": 119,
+          "rank": 129,
           "score": 63.7
         }
       ],
@@ -18974,7 +19849,7 @@
       "locations": [
         {
           "area": "Barrington",
-          "rank": 129,
+          "rank": 139,
           "score": 56.7
         }
       ],
@@ -19049,7 +19924,7 @@
       "locations": [
         {
           "area": "Bedford",
-          "rank": 124,
+          "rank": 134,
           "score": 62.2
         }
       ],
@@ -19121,7 +19996,7 @@
       "locations": [
         {
           "area": "Falmouth",
-          "rank": 132,
+          "rank": 142,
           "score": 53.5
         }
       ],
@@ -19211,7 +20086,7 @@
       "locations": [
         {
           "area": "Cranberry Township",
-          "rank": 29,
+          "rank": 32,
           "score": 77.0
         }
       ],
@@ -19306,7 +20181,7 @@
       "locations": [
         {
           "area": "Ellicott City / Columbia (Howard County)",
-          "rank": 118,
+          "rank": 128,
           "score": 63.9
         }
       ],
@@ -19402,7 +20277,7 @@
       "locations": [
         {
           "area": "Lincoln (South Lincoln)",
-          "rank": 9,
+          "rank": 10,
           "score": 80.7
         }
       ],
@@ -19499,7 +20374,7 @@
       "locations": [
         {
           "area": "Lee's Summit",
-          "rank": 18,
+          "rank": 19,
           "score": 79.2
         }
       ],
@@ -19593,7 +20468,7 @@
       "locations": [
         {
           "area": "Columbia",
-          "rank": 44,
+          "rank": 49,
           "score": 75.5
         }
       ],
@@ -19667,7 +20542,7 @@
       "locations": [
         {
           "area": "Springfield (Nixa / Ozark)",
-          "rank": 30,
+          "rank": 34,
           "score": 76.9
         }
       ],
@@ -19765,7 +20640,7 @@
       "locations": [
         {
           "area": "North Liberty / Iowa City",
-          "rank": 53,
+          "rank": 59,
           "score": 75.0
         }
       ],
@@ -19853,7 +20728,7 @@
       "locations": [
         {
           "area": "Hockessin / Pike Creek",
-          "rank": 117,
+          "rank": 127,
           "score": 64.1
         }
       ],
@@ -19946,7 +20821,7 @@
       "locations": [
         {
           "area": "Morgantown",
-          "rank": 74,
+          "rank": 81,
           "score": 72.8
         }
       ],
@@ -20018,7 +20893,7 @@
       "locations": [
         {
           "area": "Bentonville",
-          "rank": 15,
+          "rank": 16,
           "score": 79.4
         }
       ],
@@ -20116,7 +20991,7 @@
       "locations": [
         {
           "area": "Madison",
-          "rank": 82,
+          "rank": 89,
           "score": 71.5
         }
       ],
@@ -20193,12 +21068,12 @@
       "locations": [
         {
           "area": "Norman",
-          "rank": 38,
+          "rank": 43,
           "score": 76.3
         },
         {
           "area": "Edmond",
-          "rank": 49,
+          "rank": 55,
           "score": 75.2
         }
       ],
@@ -20296,17 +21171,17 @@
       "locations": [
         {
           "area": "Jenks",
-          "rank": 35,
+          "rank": 40,
           "score": 76.6
         },
         {
           "area": "Owasso",
-          "rank": 41,
+          "rank": 46,
           "score": 75.9
         },
         {
           "area": "Bixby",
-          "rank": 51,
+          "rank": 57,
           "score": 75.1
         }
       ],
@@ -20422,7 +21297,7 @@
       "locations": [
         {
           "area": "Rio Rancho",
-          "rank": 93,
+          "rank": 102,
           "score": 69.0
         }
       ],
@@ -20499,7 +21374,7 @@
       "locations": [
         {
           "area": "South Anchorage",
-          "rank": 122,
+          "rank": 132,
           "score": 63.2
         }
       ],
@@ -20571,7 +21446,7 @@
       "locations": [
         {
           "area": "Mililani",
-          "rank": 134,
+          "rank": 144,
           "score": 44.3
         }
       ],
@@ -20644,7 +21519,7 @@
       "locations": [
         {
           "area": "Chesapeake / Virginia Beach (Hampton Roads)",
-          "rank": 56,
+          "rank": 62,
           "score": 74.6
         }
       ],
@@ -20723,7 +21598,7 @@
       "locations": [
         {
           "area": "Charlottesville (Albemarle County)",
-          "rank": 106,
+          "rank": 116,
           "score": 67.3
         }
       ],
@@ -20785,7 +21660,7 @@
       "locations": [
         {
           "area": "Roanoke (Roanoke County)",
-          "rank": 65,
+          "rank": 71,
           "score": 73.9
         }
       ],
@@ -20825,12 +21700,12 @@
       "locations": [
         {
           "area": "Jersey City",
-          "rank": 131,
+          "rank": 141,
           "score": 54.8
         },
         {
           "area": "Newport (Jersey City)",
-          "rank": 133,
+          "rank": 143,
           "score": 49.1
         }
       ],
