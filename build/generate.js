@@ -1267,6 +1267,7 @@ function mapClient() {
     housing: { label: 'Budget headroom', lo: -0.5, hi: 0.5, fmt: function (v) { return Math.round(v * 100) + '%'; } },
     rent: { label: 'Rental feasibility', lo: 2, hi: 10, fmt: function (v) { return v.toFixed(1); } },
     tax: { label: 'State tax score', lo: 2, hi: 10, fmt: function (v) { return v.toFixed(1); } },
+    safety: { label: 'Safety (FBI crime)', lo: 3, hi: 10, fmt: function (v) { return v.toFixed(1); } },
   };
   // red -> amber -> green
   var STOPS = [[220, 38, 38], [245, 158, 11], [22, 163, 74]];
@@ -1350,6 +1351,7 @@ function mapClient() {
     if (state.metric === 'school') return l.s.school_quality;
     if (state.metric === 'housing') return headroom(l);
     if (state.metric === 'rent') return l.s.rental_feasibility_2028;
+    if (state.metric === 'safety') return typeof l.s.safety === 'number' ? l.s.safety : 5;
     return l.s.state_tax_burden;
   }
   function popup(l) {
@@ -1500,7 +1502,7 @@ ${leaflet.css}
           <label>Scenario <select id="map-scen">${scenOpts}</select></label>
           <label>Buy in <select id="map-year"><option value="2030">2030</option><option value="2032">2032</option><option value="2035">2035</option><option value="${endYear}" selected>${endYear} (plan)</option></select></label>
           <label>Career tier <select id="map-tier"><option value="current">Current (no step-up)</option><option value="stepup" selected>Planned step-up</option><option value="leader">AI leader</option></select></label>
-          <label>Color by <select id="map-metric"><option value="score">Overall score</option><option value="school">Schools</option><option value="housing">Budget headroom</option><option value="rent">Rental feasibility</option><option value="tax">State tax</option></select></label>
+          <label>Color by <select id="map-metric"><option value="score">Overall score</option><option value="school">Schools</option><option value="housing">Budget headroom</option><option value="rent">Rental feasibility</option><option value="tax">State tax</option><option value="safety">Safety</option></select></label>
           <label>State <select id="map-state"><option value="">All states</option>${stateOpts}</select></label>
           <label class="map-range">Min score <span id="map-min-val">any</span><input id="map-min" type="range" min="0" max="85" step="1" value="0" /></label>
           <label class="map-check"><input id="map-fits" type="checkbox" /> Fits budget only</label>
