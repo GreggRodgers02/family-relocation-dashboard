@@ -883,6 +883,7 @@ ${metroCards}
   }
   const oppNav = opportunities ? '      <a href="#opportunities">Opportunities</a>\n' : '';
   const mapView = buildMap(data, locations, matrixPayload.scenarios);
+  const buyView = buildBuying(data, locations);
 
   // Decision tiers
   const tierOrder = [
@@ -934,7 +935,7 @@ ${heroStats}
     <div class="wrap nav-inner">
       <a href="#summary">Summary</a>
       <a href="#top5">Top 5</a>
-${mapView.nav}      <a href="#ranking">Full Ranking</a>
+${mapView.nav}${buyView.nav}      <a href="#ranking">Full Ranking</a>
       <a href="#categories">Category Winners</a>
       <a href="#states">State Picks</a>
       <a href="#nashville">Nashville Metro</a>
@@ -979,6 +980,7 @@ ${top5}
       </div>
     </section>
 ${mapView.section}
+${buyView.section}
 
     <section id="ranking">
       <div class="section-title">
@@ -1067,7 +1069,8 @@ ${recs}
 ${clientScript}
 ${pathsScript}
 ${oppScript}
-${mapView.script}`;
+${mapView.script}
+${buyView.script}`;
 }
 
 function buildFullPage(data, styles) {
@@ -1559,3 +1562,123 @@ function main() {
 }
 
 main();
+
+// Browser-side calculator for the "Buying your first home" section. Serialized with
+// .toString(), so it may only use browser globals and the #buy-data payload.
+function buyClient() {
+  var el = document.getElementById('buy-data'); if (!el) return;
+  var D = JSON.parse(el.textContent);
+  function $(id) { return document.getElementById(id); }
+  function esc(v) { return String(v == null ? '' : v).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function f0(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
+  function fK(n) { return '$' + Math.round(n / 1000).toLocaleString('en-US') + 'K'; }
+  function pmt(r) { var i = r / 12, n = 360; return i * Math.pow(1 + i, n) / (Math.pow(1 + i, n) - 1); }
+  function income(y, path) {
+    var I = D.inc, n = y - I.base, g;
+    if (path === 'current' || y < I.step_year) g = I.gregg * Math.pow(1 + I.growth, n);
+    else g = I.step_pay * Math.pow(1 + I.growth, y - I.step_year);
+    return g + I.spouse * Math.pow(1 + I.growth, n);
+  }
+  function calc(l, y, opt, path) {
+    var C = D.cash, price = l.price * Math.pow(1 + D.inc.appr, y - D.inc.base);
+    var down = price * opt.down, loan = (price - down) * (1 + (opt.upfront_mi || 0));
+    var pay = loan * pmt(C.rate) + price * l.tax / 12 + (l.ins / 400000 * 0.75 * price) / 12 + loan * opt.mi_annual / 12;
+    var closing = price * (C.base_closing_pct + (C.state_add[l.st] || 0)), reserves = pay * C.reserves_months;
+    var total = down + closing + reserves, months = Math.max(1, (y - 2027) * 12 + 1);
+    var inc = income(y, path), prog = D.programs[l.st], elig = 'none';
+    if (prog) elig = inc > prog.limit ? 'no' : (prog.cap && price > prog.cap) ? 'cap' : 'yes';
+    return { price: price, down: down, closing: closing, reserves: reserves, total: total, pay: pay, pct: pay * 12 / inc, perMonth: total / months, months: months, elig: elig, prog: prog, inc: inc };
+  }
+  var state = { year: 2032, opt: D.cash.options[0].id, path: 'stepup', show: 25 };
+  function render() {
+    var opt = D.cash.options.filter(function (o) { return o.id === state.opt; })[0];
+    var rows = D.locs.slice(0, state.show === 'all' ? D.locs.length : state.show).map(function (l) {
+      var r = calc(l, state.year, opt, state.path);
+      var badge = r.elig === 'yes' ? '<span class="buy-ok">likely eligible</span>' : r.elig === 'no' ? '<span class="buy-no">income over limit</span>' : r.elig === 'cap' ? '<span class="buy-no">price over cap</span>' : '<span class="buy-na">check state agency</span>';
+      var prog = r.prog ? '<a href="#buy-st-' + esc(l.st) + '">' + esc(l.st) + '</a> ' + badge : esc(l.st) + ' ' + badge;
+      return '<tr><td>#' + l.rank + '</td><td>' + esc(l.area) + '</td><td>' + fK(r.price) + '</td><td>' + f0(r.down) + '</td><td>' + f0(r.closing) + '</td><td>' + f0(r.reserves) +
+        '</td><td><strong>' + f0(r.total) + '</strong></td><td>' + f0(r.perMonth) + '</td><td>' + f0(r.pay) + ' <span class="buy-pct' + (r.pct > 0.28 ? ' hi' : '') + '">' + Math.round(r.pct * 100) + '%</span></td><td>' + prog + '</td></tr>';
+    }).join('');
+    $('buy-body').innerHTML = rows;
+    var inc = income(state.year, state.path);
+    $('buy-sum').textContent = 'Buying in ' + state.year + ' with ' + opt.label.toLowerCase() + '. Household income that year: ~' + fK(inc) + '. Savings per month counts from January 2027 (' + Math.max(1, (state.year - 2027) * 12 + 1) + ' months).';
+    Array.prototype.forEach.call(document.querySelectorAll('[data-buy-limit]'), function (c) {
+      var lim = +c.getAttribute('data-buy-limit'); var v = c.querySelector('.buy-verdict'); if (!v) return;
+      var ok = inc <= lim; v.textContent = ok ? 'Your projected ' + state.year + ' income (~' + fK(inc) + ') is under this limit' : 'Your projected ' + state.year + ' income (~' + fK(inc) + ') is over this limit';
+      v.className = 'buy-verdict ' + (ok ? 'buy-ok' : 'buy-no');
+    });
+  }
+  ['buy-year', 'buy-opt', 'buy-path', 'buy-show'].forEach(function (id) {
+    var e = $(id); if (!e) return;
+    e.addEventListener('change', function () {
+      var v = e.value;
+      if (id === 'buy-year') state.year = +v; else if (id === 'buy-opt') state.opt = v; else if (id === 'buy-path') state.path = v; else state.show = v === 'all' ? 'all' : +v;
+      render();
+    });
+  });
+  render();
+}
+
+function buildBuying(data, locations) {
+  const proj = data.project || {};
+  const pa = proj.planning_assumptions || {};
+  const C = pa.cash_to_close, F = proj.first_time_buyer_programs;
+  if (!C || !F) return { section: '', nav: '', script: '' };
+  const by = F.by_state || {};
+  const payload = {
+    inc: { base: 2026, gregg: 73000, spouse: 32000, growth: 0.035, appr: 0.025, step_year: 2030, step_pay: 120000 },
+    cash: { base_closing_pct: C.base_closing_pct, state_add: C.state_closing_add_pct || {}, reserves_months: C.reserves_months, rate: C.rate, options: C.options },
+    programs: Object.fromEntries(Object.entries(by).map(([k, v]) => [k, { limit: v.income_limit_3plus, cap: v.price_cap || null }])),
+    locs: locations.map((l) => {
+      const b = l.budget_check || {};
+      return { rank: l.rank, area: l.area, st: l.state_abbr, price: b.price_2026, tax: (b.property_tax_effective_pct || 0) / 100, ins: b.insurance_state_avg_annual || 0 };
+    }),
+  };
+  const optOpts = C.options.map((o) => `<option value="${esc(o.id)}">${esc(o.label)}</option>`).join('');
+  const national = (F.national || [])
+    .map((n) => `<div class="card buy-prog"><h4>${esc(n.program)} <span class="buy-fit">${esc(n.fit)}</span></h4><p>${esc(n.detail)}</p><a href="${esc(n.url)}" target="_blank" rel="noopener">Learn more</a></div>`)
+    .join('\n');
+  const statesInMatrix = new Set(locations.map((l) => l.state_abbr));
+  const stateCards = Object.entries(by)
+    .filter(([k]) => statesInMatrix.has(k))
+    .map(([k, v]) => `<div class="card buy-prog" id="buy-st-${esc(k)}" data-buy-limit="${esc(v.income_limit_3plus)}"><h4>${esc(k)}: ${esc(v.program)}</h4>
+          <p><strong>Help:</strong> ${esc(v.assistance)}</p>
+          <p><strong>Income limit (household of 3+):</strong> ~$${Math.round(v.income_limit_3plus).toLocaleString('en-US')}${v.price_cap ? ` &middot; <strong>price cap</strong> ~$${Math.round(v.price_cap).toLocaleString('en-US')}` : ''} <span class="buy-conf">${esc(v.confidence)}</span></p>
+          <p class="buy-note">${esc(v.income_note)}</p>
+          <p class="buy-verdict"></p>
+          <a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.agency)}</a></div>`)
+    .join('\n');
+  const section = `
+    <section id="buying">
+      <div class="section-title">
+        <h2>Buying your first home</h2>
+        <p>${esc(C.summary)}</p>
+      </div>
+      <div class="card buy-card">
+        <div class="map-controls">
+          <label>Buy in <select id="buy-year"><option value="2030">2030</option><option value="2031">2031</option><option value="2032" selected>2032</option><option value="2033">2033</option><option value="2035">2035</option></select></label>
+          <label>Loan <select id="buy-opt">${optOpts}</select></label>
+          <label>Career path <select id="buy-path"><option value="current">Current (no promotion)</option><option value="stepup" selected>Planned step-up (~$120K by 2030)</option></select></label>
+          <label>Show <select id="buy-show"><option value="10">Top 10</option><option value="25" selected>Top 25</option><option value="50">Top 50</option><option value="all">All</option></select></label>
+        </div>
+        <p class="ptier-help" id="buy-sum"></p>
+        <div class="table-wrap"><table class="buy-table">
+          <thead><tr><th>Rank</th><th>Location</th><th>Price</th><th>Down payment</th><th>Closing costs</th><th>Reserves (2 mo)</th><th>Cash to save</th><th>Save / month</th><th>Monthly payment (% of income)</th><th>State program</th></tr></thead>
+          <tbody id="buy-body"></tbody>
+        </table></div>
+        <p class="map-note">Monthly payment = principal and interest at ${(C.rate * 100).toFixed(1)}%, property tax, homeowners insurance and mortgage insurance. Lenders prefer 28% of gross income or less (red above 28%). "Likely eligible" compares your projected income that year with the state program's income limit for a household of 3+; county limits differ, so confirm with the agency.</p>
+      </div>
+      <h3 class="buy-h3">Programs open to you anywhere</h3>
+      <div class="buy-grid">
+${national}
+      </div>
+      <h3 class="buy-h3">State programs</h3>
+      <p class="ptier-help">${esc(F.summary)} ${esc((F.household_income_check || {}).note || '')} Other states: <a href="${esc(F.directory)}" target="_blank" rel="noopener">find your state's housing finance agency</a>.</p>
+      <div class="buy-grid">
+${stateCards}
+      </div>
+    </section>`;
+  const json = JSON.stringify(payload).replace(/</g, '\\u003c');
+  const script = '<script id="buy-data" type="application/json">' + json + '</' + 'script>\n<script>\n(' + buyClient.toString() + ')();\n</' + 'script>';
+  return { section, nav: '      <a href="#buying">First Home</a>\n', script };
+}

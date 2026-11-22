@@ -924,3 +924,22 @@ tr.row-flash td { background: #fef3c7 !important; transition: background .3s; }
   .map-controls label { flex: 1 1 140px; min-width: 0; }
   .map-controls .map-range input { width: 100%; }
 }
+
+/* Buying your first home */
+.buy-card { margin-bottom: 18px; }
+.buy-table { font-size: 13px; min-width: 860px; }
+.buy-table td, .buy-table th { white-space: nowrap; }
+.buy-pct { font-size: 11.5px; font-weight: 700; color: #15803d; }
+.buy-pct.hi { color: #b91c1c; }
+.buy-ok, .buy-no, .buy-na { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+.buy-ok { background: #dcfce7; color: #166534; }
+.buy-no { background: #fee2e2; color: #991b1b; }
+.buy-na { background: #f1f5f9; color: #475569; }
+.buy-h3 { margin: 22px 0 10px; }
+.buy-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.buy-prog h4 { margin: 0 0 6px; font-size: 15px; }
+.buy-prog p { margin: 4px 0; font-size: 13.5px; }
+.buy-fit, .buy-conf { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: #eef2ff; color: var(--accent); margin-left: 4px; }
+.buy-note { color: #64748b; }
+.buy-verdict:empty { display: none; }
+@media (max-width: 640px) { .buy-grid { grid-template-columns: 1fr; } }
