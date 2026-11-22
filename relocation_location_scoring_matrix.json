@@ -406,13 +406,332 @@
       "appreciation_assumption": "2–3% annual appreciation planning assumption based on the user's stated May 2026 consensus framing.",
       "football_weighting_note": "High school football culture is treated as a nice-to-have, not a hard requirement.",
       "family_status": "No children yet. The timeline assumes a first child arriving ~2026-2028 (age 0-2 when the rental phase starts in 2028). Gregg will say when this changes; then re-anchor the child-age and kindergarten dates.",
-      "first_child_assumed_birth": "2026-2028 (planning assumption)"
+      "first_child_assumed_birth": "2026-2028 (planning assumption)",
+      "cash_to_close": {
+        "summary": "Cash needed before applying for a mortgage = down payment + closing costs + 2 months of payments in reserve. Closing costs use a 3% planning rate (lender fees, title, prepaid interest, insurance and tax escrow) plus each state's buyer-paid transfer or mortgage taxes. Keep a separate 3-6 month emergency fund on top of this.",
+        "base_closing_pct": 0.03,
+        "state_closing_add_pct": {
+          "DE": 0.02,
+          "NY": 0.01,
+          "MD": 0.015,
+          "PA": 0.01,
+          "VT": 0.0125,
+          "NH": 0.0075,
+          "CT": 0.0075,
+          "FL": 0.0055,
+          "MN": 0.004,
+          "VA": 0.0025,
+          "WA": 0.003
+        },
+        "reserves_months": 2,
+        "rate": 0.065,
+        "options": [
+          {
+            "id": "conv3",
+            "label": "Conventional 3% down (first-time buyer)",
+            "down": 0.03,
+            "mi_annual": 0.006
+          },
+          {
+            "id": "fha",
+            "label": "FHA 3.5% down",
+            "down": 0.035,
+            "mi_annual": 0.0055,
+            "upfront_mi": 0.0175
+          },
+          {
+            "id": "conv10",
+            "label": "Conventional 10% down",
+            "down": 0.1,
+            "mi_annual": 0.003
+          },
+          {
+            "id": "conv20",
+            "label": "Conventional 20% down (no mortgage insurance)",
+            "down": 0.2,
+            "mi_annual": 0.0
+          }
+        ],
+        "savings_start": "2026-12",
+        "sources": [
+          "https://nationalmortgageprofessional.com/news/closing-costs-stay-near-1-nationally-state-level-taxes-drive-variability",
+          "https://www.bankrate.com/real-estate/average-closing-costs-by-state/"
+        ]
+      }
     },
     "home_base_coords": [
       35.7512,
       -86.93
     ],
-    "coords_note": "Location coords are approximate town or area centroids (midpoints for multi-town entries), for the dashboard map only."
+    "coords_note": "Location coords are approximate town or area centroids (midpoints for multi-town entries), for the dashboard map only.",
+    "first_time_buyer_programs": {
+      "summary": "State programs are run by each state housing finance agency and usually cap household income (often 80-150% of area median) and sometimes home price; limits depend on county and household size, and income is counted when you apply. Counts every adult in the home in some states (e.g. Georgia).",
+      "household_income_check": {
+        "note": "Projected household income in 2032: ~$129K without a promotion, ~$168K on the planned step-up path (household of 3 assumed with a child).",
+        "current_2032": 129000,
+        "planned_2032": 168000
+      },
+      "national": [
+        {
+          "program": "Conventional 3% down (Fannie Mae HomeReady / Freddie Mac Home Possible, or standard 97% LTV)",
+          "fit": "Likely fit",
+          "detail": "3% down for first-time buyers. The standard 97% loans have no income limit; HomeReady and Home Possible cap income at 80% of area median, which you will likely exceed. Mortgage insurance drops off at 20% equity.",
+          "url": "https://singlefamily.fanniemae.com/originating-underwriting/mortgage-products/97-ltv-options"
+        },
+        {
+          "program": "FHA loan",
+          "fit": "Likely fit",
+          "detail": "3.5% down with a 580+ credit score; no income limit. Mortgage insurance (1.75% upfront plus ~0.55%/yr) usually lasts the life of the loan unless you put 10%+ down.",
+          "url": "https://www.hud.gov/buying/loans"
+        },
+        {
+          "program": "USDA Rural Development guaranteed loan",
+          "fit": "Maybe",
+          "detail": "0% down in eligible rural areas (some outer suburbs qualify). Household income cap is about 115% of area median - roughly $112K-$120K in most counties - so it works only before the planned promotion.",
+          "url": "https://eligibility.sc.egov.usda.gov/eligibility/welcomeAction.do"
+        },
+        {
+          "program": "State down payment assistance (see your state below)",
+          "fit": "Depends on income",
+          "detail": "Most require a first-time buyer (no ownership in the last 3 years), a homebuyer education class, a 620-640+ credit score and an approved lender.",
+          "url": "https://www.ncsha.org/housing-help/"
+        },
+        {
+          "program": "Mortgage Credit Certificate (MCC)",
+          "fit": "Maybe",
+          "detail": "A federal tax credit for part of your mortgage interest (often 20-40%, max $2,000/yr), offered through some state agencies with similar income limits.",
+          "url": "https://www.ncsha.org/housing-help/"
+        },
+        {
+          "program": "IRA first-home withdrawal",
+          "fit": "Likely fit",
+          "detail": "Each spouse can take up to $10,000 from an IRA for a first home without the 10% early-withdrawal penalty (income tax still applies to traditional IRAs; Roth contributions can always come out tax-free).",
+          "url": "https://www.irs.gov/taxtopics/tc557"
+        },
+        {
+          "program": "401(k) loan",
+          "fit": "Option",
+          "detail": "Borrow up to $50,000 or half the balance from a workplace 401(k) and repay through payroll; check the Sherwin-Williams plan rules.",
+          "url": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-loans"
+        },
+        {
+          "program": "Employer and local grants",
+          "fit": "Ask",
+          "detail": "Ask Sherwin-Williams HR and Kendra Scott about homebuying benefits, and search the city or county where you buy - many offer their own down payment grants.",
+          "url": "https://www.consumerfinance.gov/owning-a-home/"
+        }
+      ],
+      "by_state": {
+        "TX": {
+          "program": "My First Texas Home (TDHCA) / Home Sweet Texas (TSAHC)",
+          "agency": "Texas Department of Housing and Community Affairs",
+          "url": "https://www.tdhca.texas.gov/homeownership-programs",
+          "assistance": "Up to 5% of the loan as a 0% deferred second lien (repaid when you sell or refinance)",
+          "income_limit_3plus": 111000,
+          "income_note": "Most counties ~$97K (1-2 people) / ~$111K (3+); Harris County $104K / $119.6K (Jul 2026). Varies by county.",
+          "confidence": "approximate",
+          "price_cap": null
+        },
+        "NC": {
+          "program": "NC Home Advantage Mortgage",
+          "agency": "North Carolina Housing Finance Agency",
+          "url": "https://www.nchfa.com/home-buyers",
+          "assistance": "3% (up to 5% reported) down payment help as a 0% deferred, forgivable second mortgage",
+          "income_limit_3plus": 126000,
+          "income_note": "Sources range ~$105K-$126K; verify with NCHFA.",
+          "confidence": "verify",
+          "price_cap": null
+        },
+        "KY": {
+          "program": "KHC Regular Down Payment Assistance",
+          "agency": "Kentucky Housing Corporation",
+          "url": "https://www.kyhousing.org/Homeownership/",
+          "assistance": "$10,000 (some sources $12,500) repayable second mortgage",
+          "income_limit_3plus": 115000,
+          "income_note": "About 115% of area median income; sources conflict.",
+          "confidence": "verify",
+          "price_cap": null
+        },
+        "TN": {
+          "program": "Great Choice Home Loan + Great Choice Plus (THDA)",
+          "agency": "Tennessee Housing Development Agency",
+          "url": "https://thda.org/homebuyers",
+          "assistance": "$6,000 deferred or up to $15,000 amortizing down payment help; homebuyer education required",
+          "income_limit_3plus": 131880,
+          "income_note": "Maury County 2025: $113,040 (1-2) / $131,880 (3+); acquisition-cost cap ~$400K in Maury.",
+          "confidence": "official 2025",
+          "price_cap": 400000
+        },
+        "FL": {
+          "program": "Florida Assist / Hometown Heroes (Florida Housing)",
+          "agency": "Florida Housing Finance Corporation",
+          "url": "https://www.floridahousing.org/programs/homebuyer-overview-page",
+          "assistance": "Florida Assist up to $10,000 0% deferred; Hometown Heroes up to 5% for eligible full-time Florida workers",
+          "income_limit_3plus": 150000,
+          "income_note": "Hometown Heroes uses ~150% AMI (higher than most programs); Florida Assist lower. Check whether a Kendra Scott role qualifies for Hometown Heroes.",
+          "confidence": "verify",
+          "price_cap": null
+        },
+        "AZ": {
+          "program": "HOME+Plus",
+          "agency": "Arizona Industrial Development Authority",
+          "url": "https://www.homeplusaz.com/",
+          "assistance": "3-5% forgivable down payment assistance (up to ~$15K reported)",
+          "income_limit_3plus": 136000,
+          "income_note": "Sources range ~$112K-$146K by county and household size.",
+          "confidence": "verify",
+          "price_cap": null
+        },
+        "NE": {
+          "program": "NIFA First Home + Homebuyer Assistance",
+          "agency": "Nebraska Investment Finance Authority",
+          "url": "https://www.nifa.org/homebuyers",
+          "assistance": "About $10,000 deferred assistance",
+          "income_limit_3plus": 115000,
+          "income_note": "About 115% AMI (secondary source).",
+          "confidence": "verify",
+          "price_cap": null
+        },
+        "OH": {
+          "program": "Your Choice! Down Payment Assistance (OHFA)",
+          "agency": "Ohio Housing Finance Agency",
+          "url": "https://myohiohome.org/",
+          "assistance": "2.5% or 5% of the price, forgivable after 7 years",
+          "income_limit_3plus": 115000,
+          "income_note": "Sources conflict (some areas no limit, others ~115% AMI).",
+          "confidence": "verify",
+          "price_cap": null
+        },
+        "AR": {
+          "program": "ADFA Move-Up + Down Payment Assistance",
+          "agency": "Arkansas Development Finance Authority",
+          "url": "https://adfa.arkansas.gov/homeownership/",
+          "assistance": "$1,000-$15,000 down payment assistance loan",
+          "income_limit_3plus": 142000,
+          "income_note": "Maximum qualifying income $142,000 (ADFA guidelines revised Apr 24, 2026).",
+          "confidence": "official 2026",
+          "price_cap": null
+        },
+        "MO": {
+          "program": "First Place Loan + Cash Assistance (MHDC)",
+          "agency": "Missouri Housing Development Commission",
+          "url": "https://www.mhdc.com/homebuyers",
+          "assistance": "Cash assistance of about 4% of the loan",
+          "income_limit_3plus": 111665,
+          "income_note": "Most areas ~$97K / $111.7K (May 2026); Kansas City and Columbia higher (~$130K for 3+).",
+          "confidence": "approximate",
+          "price_cap": null
+        },
+        "LA": {
+          "program": "LHC Mortgage Revenue Bond + DPA",
+          "agency": "Louisiana Housing Corporation",
+          "url": "https://www.lhc.la.gov/homebuyers",
+          "assistance": "Down payment / closing-cost assistance with bond or market-rate loans",
+          "income_limit_3plus": 101890,
+          "income_note": "Varies by parish; e.g. Orleans $88.6K / $101.9K (May 2026).",
+          "confidence": "approximate",
+          "price_cap": null
+        },
+        "PA": {
+          "program": "Keystone Home Loan + Keystone Advantage (PHFA)",
+          "agency": "Pennsylvania Housing Finance Agency",
+          "url": "https://www.phfa.org/programs/",
+          "assistance": "Up to 4% of price (max $6,000) 0% 10-year second loan",
+          "income_limit_3plus": 150000,
+          "income_note": "County limits roughly $120K-$170K; verify for Butler County.",
+          "confidence": "verify",
+          "price_cap": null
+        },
+        "AL": {
+          "program": "Step Up (AHFA)",
+          "agency": "Alabama Housing Finance Authority",
+          "url": "https://www.ahfa.com/homebuyers",
+          "assistance": "Down payment assistance second mortgage (about 4%, up to ~$10K)",
+          "income_limit_3plus": 172800,
+          "income_note": "Statewide $172,800 (2026, secondary sources agree).",
+          "confidence": "approximate",
+          "price_cap": null
+        },
+        "OK": {
+          "program": "OHFA Homebuyer Program",
+          "agency": "Oklahoma Housing Finance Agency",
+          "url": "https://www.ohfa.org/homebuyers",
+          "assistance": "Down payment / closing-cost assistance (about 3.5%)",
+          "income_limit_3plus": 95000,
+          "income_note": "Only an unverified ~$95K aggregator figure found.",
+          "confidence": "verify",
+          "price_cap": null
+        },
+        "UT": {
+          "program": "FirstHome / Score (Utah Housing Corporation)",
+          "agency": "Utah Housing Corporation",
+          "url": "https://utahhousingcorp.org/",
+          "assistance": "Down payment assistance second loan",
+          "income_limit_3plus": 165200,
+          "income_note": "Salt Lake $145K (3+), Utah County $165.2K (3+) per a 2026 table.",
+          "confidence": "approximate",
+          "price_cap": null
+        },
+        "IA": {
+          "program": "FirstHome + FirstHome Plus (Iowa Finance Authority)",
+          "agency": "Iowa Finance Authority",
+          "url": "https://opportunityiowa.gov/housing/homeownership-programs/firsthome-program",
+          "assistance": "FirstHome Plus grant (about $2,500) with a FirstHome loan",
+          "income_limit_3plus": 171360,
+          "income_note": "Official page: $102,100-$171,360 by county and household size.",
+          "confidence": "official 2026",
+          "price_cap": null
+        },
+        "SC": {
+          "program": "SC Housing Homeownership + DPA",
+          "agency": "SC Housing",
+          "url": "https://www.schousing.com/",
+          "assistance": "Down payment assistance second mortgage",
+          "income_limit_3plus": 135125,
+          "income_note": "e.g. Charleston County $117.5K / $135.1K (Jun 2026); varies by county.",
+          "confidence": "approximate",
+          "price_cap": null
+        },
+        "GA": {
+          "program": "Georgia Dream",
+          "agency": "Georgia Department of Community Affairs",
+          "url": "https://www.dca.ga.gov/safe-affordable-housing/homeownership/georgia-dream",
+          "assistance": "Up to $10,000 down payment assistance (more for teachers, first responders, military)",
+          "income_limit_3plus": 158188,
+          "income_note": "Atlanta metro $137.6K / $158.2K (Jul 2026); counts every adult living in the home.",
+          "confidence": "approximate",
+          "price_cap": null
+        },
+        "SD": {
+          "program": "SDHDA First-Time Homebuyer + Fixed Assistance",
+          "agency": "South Dakota Housing Development Authority",
+          "url": "https://www.sdhousing.org/homebuyers",
+          "assistance": "Fixed down payment assistance",
+          "income_limit_3plus": 90000,
+          "income_note": "Only an unverified ~$90K figure found.",
+          "confidence": "verify",
+          "price_cap": null
+        },
+        "ND": {
+          "program": "NDHFA FirstHome + Down Payment and Closing Cost Assistance",
+          "agency": "North Dakota Housing Finance Agency",
+          "url": "https://www.ndhfa.org/",
+          "assistance": "Down payment and closing-cost assistance",
+          "income_limit_3plus": 90000,
+          "income_note": "Only an unverified ~$90K figure found.",
+          "confidence": "verify",
+          "price_cap": null
+        }
+      },
+      "directory": "https://www.ncsha.org/housing-help/",
+      "sources": [
+        "https://adfa.arkansas.gov/wp-content/uploads/2025/03/ADFA-PROGRAM-GUIDELINES-ALL-4.24.26-1.pdf",
+        "https://opportunityiowa.gov/housing/homeownership-programs/firsthome-program",
+        "https://thdadev.exemplifi.io/wp-content/uploads/2025/07/Acquisition-Income-Limits-Web.pdf",
+        "https://themortgagereports.com/136064/first-time-home-buyer-income-limits-by-state",
+        "https://mortgage-info.com/blog/first-time-homebuyer-grants-2026-50-state-database"
+      ]
+    }
   },
   "scoring_scale": {
     "min": 1,
